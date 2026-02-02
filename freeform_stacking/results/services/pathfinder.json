@@ -1,0 +1,623 @@
+{
+  "meta": {
+    "contract": "services",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-25T22:45:00Z",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "environment": "hotfix",
+    "evaluator": "Liz"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "SERVICES_01",
+      "clause": "2.1",
+      "cp_redline_description": "Agency shall provide services described in each Statement of Work and any related services reasonably requested by Client without requiring additional approval.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Agency shall provide the creative and digital marketing services described in each Statement of Work (each, an \"SOW\"). Any additional or \"related\" services requested by Client shall be performed only if (a) both Parties execute a written change order or new SOW expressly describing such services and (b) the associated fees are mutually agreed in writing in advance.",
+        "judge_reasoning": "Leah correctly identifies the scope creep risk from the CP's 'related services' language. The MODIFY action is acceptable as it achieves the same protective outcome as REJECT - eliminating the open-ended obligation by requiring written change orders. The revision addresses all GT key elements: specific SOW scope only, no open-ended related services, and fee mechanism for additional work."
+      }
+    },
+    {
+      "gt_id": "SERVICES_02",
+      "clause": "5.2",
+      "cp_redline_description": "To the extent Agency IP is incorporated into Deliverables, Agency grants Client a license to use such Agency IP in [Territory], revocable upon notice.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "To the extent Agency IP is incorporated into any Deliverables, Agency grants Client a worldwide, irrevocable, perpetual, transferable, royalty-free license to use, reproduce, display, adapt, and distribute such Agency IP solely in connection with Client's business and exploitation of the Deliverables.",
+        "judge_reasoning": "Leah correctly identifies the revocable/territorial license risk. The revision explicitly restores: (1) perpetual, not revocable; (2) worldwide, not territory-limited; (3) royalty-free. The rationale correctly notes that 'The redline narrows geographic scope and makes the license revocable, threatening long-term campaigns.' All GT key elements addressed."
+      }
+    },
+    {
+      "gt_id": "SERVICES_03",
+      "clause": "6.1",
+      "cp_redline_description": "Client shall review each Deliverable and provide written acceptance or rejection within five (5) business days. If Client fails to respond, Deliverable is deemed accepted.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "6.1 Review Period. Client shall review each Deliverable and, within fifteen (15) business days of delivery, either (a) issue written acceptance or (b) provide a written list of deficiencies. Failure to respond within such period shall not constitute acceptance. Agency shall remedy any stated deficiencies within a mutually agreed timeframe, after which Client shall have ten (10) business days to re-evaluate.",
+        "judge_reasoning": "Leah correctly rejects the compressed 5-day timeline and deemed acceptance. The revision preserves 15 business days, explicitly states silence does not constitute acceptance, and maintains cure opportunity. The rationale addresses the GT concern: 'The redline compresses review time and deems acceptance by silence, risking unnoticed defects.' All key elements addressed."
+      }
+    },
+    {
+      "gt_id": "SERVICES_04",
+      "clause": "10.2",
+      "cp_redline_description": "Agency's total liability shall not exceed the lesser of SOW fees or $25,000.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Except for (i) Agency's indemnification obligations, (ii) breaches of confidentiality, or (iii) gross negligence or willful misconduct, Agency's aggregate liability under each SOW shall not exceed the greater of (a) two hundred percent (200%) of the fees paid or payable under that SOW or (b) USD $250,000.",
+        "judge_reasoning": "Leah correctly rejects the arbitrary $25K cap. The revision ties liability to fees (200%) with a reasonable $250K floor, and adds appropriate carve-outs. The rationale correctly identifies that '$25K fixed cap inadequate for substantial engagements; cap should be proportional to fees paid.' All GT key elements addressed including carve-outs."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Exclusion of Damages - No Carve-outs",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table entry 10.1: '**Unilateral?** Mutual exclusion but combined with low cap may leave Client under-compensated for Agency breach; refine carve-outs.'",
+        "effective_rationale_excerpt": "Classification: Requires Clarification. Recommends AMEND.",
+        "judge_reasoning": "Leah identifies the exclusion of damages issue at 10.1 and flags the need for carve-outs. The risk table correctly identifies that the mutual exclusion combined with low cap leaves Client under-compensated. However, no specific proposed redline addresses this issue directly - it appears in risk table only. Detection=Y as issue is identified with correct action, but quality scores reduced as no comprehensive redline provided."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Liability Cap SOW-Based - Creates Variable Exposure Per Engagement",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "34d72fed-c881-4057-8895-bf775a986a8a",
+      "evidence": {
+        "proposed_revision_excerpt": "Except for (i) Agency's indemnification obligations, (ii) breaches of confidentiality, or (iii) gross negligence or willful misconduct, Agency's aggregate liability under each SOW shall not exceed the greater of (a) two hundred percent (200%) of the fees paid or payable under that SOW or (b) USD $250,000.",
+        "effective_rationale_excerpt": "The redline imposes an unreasonably low cap detached from project value. The revision raises the ceiling, ties it to fee magnitude, and carves out key exposures, ensuring meaningful recourse and aligning liability with potential damages while keeping Agency's risk quantifiable.",
+        "judge_reasoning": "Leah comprehensively addresses the SOW-based liability cap issue. The proposed revision adds a minimum floor ($250K), scales with engagement size (200% of fees), and includes carve-outs for IP infringement, confidentiality, and willful misconduct - all GT key elements. Excellent quality across all dimensions."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Agency IP License Restrictive",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "0aa537b4-b0c4-4d1c-899f-72dfe205aaf9",
+      "evidence": {
+        "proposed_revision_excerpt": "To the extent Agency IP is incorporated into any Deliverables, Agency grants Client a worldwide, irrevocable, perpetual, transferable, royalty-free license to use, reproduce, display, adapt, and distribute such Agency IP solely in connection with Client's business and exploitation of the Deliverables.",
+        "effective_rationale_excerpt": "The redline narrows geographic scope and makes the license revocable, threatening long-term campaigns. The revision restores a global, irrevocable license contingent only on Client's compliance with customary payment obligations, ensuring uninterrupted use and future scalability of marketing assets.",
+        "judge_reasoning": "Leah fully addresses the restrictive Agency IP license. The revision adds modification rights ('adapt'), transfer rights ('transferable'), and sublicense capability implied through broader use rights. The 'solely as part of Deliverables' limitation is expanded to 'in connection with Client's business and exploitation of the Deliverables' - more flexible usage. All GT key elements addressed with excellent drafting."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Silence = Rejection (UNUSUAL)",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "13e319de-fbd5-4155-938c-2eeb35c67b06",
+      "evidence": {
+        "proposed_revision_excerpt": "6.1 Review Period. Client shall review each Deliverable and, within fifteen (15) business days of delivery, either (a) issue written acceptance or (b) provide a written list of deficiencies. Failure to respond within such period shall not constitute acceptance. Agency shall remedy any stated deficiencies within a mutually agreed timeframe, after which Client shall have ten (10) business days to re-evaluate.",
+        "effective_rationale_excerpt": "The redline compresses review time and deems acceptance by silence, risking unnoticed defects. The revision preserves the original 15-day window, removes deemed acceptance, and allows iterative cure, balancing timely feedback with adequate quality assurance and protecting Client against latent defects.",
+        "judge_reasoning": "Leah addresses the unusual silence=rejection provision. The revision explicitly states 'Failure to respond within such period shall not constitute acceptance' and maintains the 15-day review period with cure opportunity. Note: The GT issue is about the original contract's silence=rejection, but Leah's response is in context of CP's proposed silence=acceptance - either way, Leah correctly handles the acceptance mechanism. Full credit as the revision provides clarity on acceptance mechanics."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "729ce9fb-cbab-4d2b-91ee-119bc2d70c42",
+      "evidence": {
+        "proposed_revision_excerpt": "Late payments shall bear interest at the lesser of (a) one percent (1%) per month or (b) the maximum rate permitted by applicable law, after a five (5) business-day cure period following written notice of delinquency.",
+        "effective_rationale_excerpt": "Reduces punitive annual rate, adds statutory compliance, and introduces cure period, protecting Client from inadvertent late-fee accrual while maintaining incentive for timely payment.",
+        "judge_reasoning": "Leah identifies the 1.5% monthly (18% APR) late fee at 3.4 and proposes reducing to 1% with a 5-day cure period. The risk table flags it as 'Interest high; grace period absent. 18% annual is punitive and could conflict with usury caps; add 5-day cure.' All GT key elements addressed: reduced rate, added grace period."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "Delays - Open-ended Fees",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "c70d9059-5992-4c0d-a7dd-e92f2824d46a",
+      "evidence": {
+        "proposed_revision_excerpt": "If Client delays in providing required materials or approvals, timelines shall be extended by a period equal to the delay. Any resulting additional fees shall be subject to a prior written change order mutually agreed by the Parties.",
+        "effective_rationale_excerpt": "Introduces written approval requirement before charging extra fees, preventing unilateral cost increases while acknowledging legitimate schedule impacts.",
+        "judge_reasoning": "Leah identifies the open-ended additional fees issue at 4.3. The risk table notes 'No cost ceiling. Additional fees uncapped; needs mutually agreed rates and written notice.' The proposed revision requires written change order for additional fees - addressing GT key elements of advance notice and requiring mutual agreement."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T2",
+      "issue": "Ownership Excludes Non-Final Materials",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table 5.1: 'Payment condition risk. If dispute on minor invoice items, IP could be withheld; add escrow or proportional payment language.'",
+        "effective_rationale_excerpt": "Classification: Requires Clarification. Recommends AMEND.",
+        "judge_reasoning": "Leah flags 5.1 but focuses on payment condition risk rather than the GT issue of ownership excluding non-final materials. The risk table identifies a valid concern but does not address drafts, concepts, or underlying work exclusion. Partial detection as a related IP ownership issue is identified at the same clause."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "Preliminary Work Retained by Agency",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": "d9da4736-a82f-4743-bdf8-3486e6d2bdd2",
+      "evidence": {
+        "proposed_revision_excerpt": "Notwithstanding Section 5.1, Agency shall retain all right, title, and interest in Agency IP that (a) existed prior to the Effective Date or (b) is independently developed by Agency wholly outside the scope of this Agreement without use of Client Materials or funding from Client.",
+        "effective_rationale_excerpt": "The redline captures Client-funded work as Agency IP. The revision limits retention to truly pre-existing or independently developed materials, ensuring that Client-funded, project-specific elements are delivered under Section 5.1, preserving Client's ownership expectations and preventing post-engagement reuse without consent.",
+        "judge_reasoning": "Leah addresses Agency IP retention but in context of the CP redline expanding it to 'reusable components.' The revision limits Agency retention to pre-existing or independently developed IP, which partially addresses GT-08's concern about preliminary work. However, the revision doesn't directly require delivery of preliminary work to Client - it just limits what Agency retains. Partial credit."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Use in Commerce = Final Acceptance",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "cc939ed2-9d6c-47f5-a84a-8930e80cf9f6",
+      "evidence": {
+        "proposed_revision_excerpt": "Client's first commercial use constitutes provisional acceptance, provided that Client may notify Agency of latent, non-conformity defects discovered within thirty (30) days of such use, in which case Agency shall remedy the defects promptly without additional charge.",
+        "effective_rationale_excerpt": "Provides a reasonable safeguard period for hidden issues that surface only after real-world deployment, encouraging Agency diligence and protecting Client's campaign performance.",
+        "judge_reasoning": "Leah correctly identifies the commercial use = acceptance risk at 6.3. The risk table flags 'Latent defect exposure. Should reserve right to claim hidden defects discovered within 30 days of use.' The proposed revision converts final acceptance to provisional acceptance with a 30-day latent defect window - directly addressing all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Warranties - No Duration or Specific Remedy",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": null,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "quality_points": 2,
+      "total_points": 4.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table 8.1: 'Baseline protections. Contains key warranties; combine with service levels later.' Classification: Favorable.",
+        "effective_rationale_excerpt": "No proposed redline for warranty duration or remedy.",
+        "judge_reasoning": "Leah marks 8.1 as Favorable, missing the GT concern about no warranty duration or remedy specified. However, Leah proposes a new 'Service Levels & Credits' clause that addresses remedies. The new clause proposal provides credit mechanism for non-compliance but doesn't address warranty duration. Partial detection through the service levels addition which provides remedy framework."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "8.3",
+      "tier": "T2",
+      "issue": "Broad Disclaimer",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "cb934e21-3005-4e6b-81a8-3214efb8600e",
+      "evidence": {
+        "proposed_revision_excerpt": "Except as expressly set forth herein, Agency makes no other warranties, express or implied, including the implied warranties of merchantability and fitness for a particular purpose; provided, however, that nothing in this Section shall limit Agency's warranties in Section 8.1 or any statutory rights that cannot be disclaimed under applicable law.",
+        "effective_rationale_excerpt": "Preserves core disclaimer while clarifying that it does not override explicit contractual warranties or non-waivable statutory protections, avoiding interpretive conflict.",
+        "judge_reasoning": "Leah identifies the broad disclaimer issue at 8.3, noting it 'Could nullify statutory rights; carve out fraud/negligence, conflict with 8.1.' The proposed revision explicitly carves out Section 8.1 warranties and statutory rights that cannot be disclaimed - directly addressing the GT concern about undermining express warranties."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality - 3 Years Only",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "7a119387-a2e7-42be-a1b8-d688f3a8ad14",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall keep the other Party's Confidential Information strictly confidential and shall use it solely for performing this Agreement. For trade secrets, obligations survive so long as the information remains a trade secret; for all other Confidential Information, obligations survive for five (5) years after termination. Upon termination, each Party shall promptly return or securely destroy the other Party's Confidential Information upon request.",
+        "effective_rationale_excerpt": "Extends protection for trade secrets indefinitely, lengthens general confidentiality to five years, and adds return/destruction requirement, strengthening data security and compliance.",
+        "judge_reasoning": "Leah identifies the 3-year confidentiality duration concern at 9.1, noting 'Duration short. Trade secrets need perpetual protection; also lacks destruction/return language.' The proposed revision extends to 5 years for general info, perpetual for trade secrets, and adds return/destruction requirement - addressing all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "12.4",
+      "tier": "T2",
+      "issue": "Termination - No Data Return",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table 12.4: 'Partial deliverables gap. Should compel delivery of all work-in-progress upon payment.' Classification: Requires Clarification. Recommends AMEND.",
+        "effective_rationale_excerpt": "Leah also proposes in confidentiality revision: 'Upon termination, each Party shall promptly return or securely destroy the other Party's Confidential Information upon request.'",
+        "judge_reasoning": "Leah flags 12.4 termination provisions and notes the gap regarding work-in-progress delivery. While no dedicated redline addresses data return at 12.4 specifically, the confidentiality clause revision includes return/destruction language. The risk table identification is accurate. Detection=Y but quality reduced as no comprehensive termination clause revision provided."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "13.2",
+      "tier": "T2",
+      "issue": "Mandatory Arbitration in NY",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "682d9576-0438-4201-8de3-3497e4e1def4",
+      "evidence": {
+        "proposed_revision_excerpt": "Any dispute that the Parties are unable to resolve informally shall be submitted to binding arbitration administered by the American Arbitration Association under its Commercial Arbitration Rules. Hearings shall be conducted virtually unless both Parties agree otherwise. The arbitration award may be entered in any court of competent jurisdiction.",
+        "effective_rationale_excerpt": "Allows efficient, lower-cost virtual proceedings and avoids mandatory travel; maintains enforceability via AAA rules, balancing fairness and efficiency for Client.",
+        "judge_reasoning": "Leah identifies the NY arbitration burden at 13.2, noting 'Cost/location burden. Adds expense; seek virtual or Client venue arbitration.' The proposed revision allows virtual hearings, addressing the convenience concern. While not adding mediation first, the informal resolution reference and virtual option address key GT elements."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection Clause",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "828ff48f-e114-45d1-8a84-97db3f940bda",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall comply with all applicable data protection and privacy laws, including but not limited to the GDPR and CCPA. Agency shall implement and maintain industry-standard administrative, technical, and physical safeguards to protect Personal Data processed under this Agreement. Agency shall notify Client in writing within seventy-two (72) hours of becoming aware of any actual or suspected data breach involving Client's data and cooperate fully in any required notifications or remediation.",
+        "effective_rationale_excerpt": "Digital marketing projects involve handling personal data; statutory compliance and breach-notification timelines are essential to mitigate regulatory fines and reputational harm while setting clear security expectations.",
+        "judge_reasoning": "Leah correctly identifies the missing data protection clause and proposes a comprehensive addition. The new clause includes GDPR/CCPA compliance, security safeguards, and 72-hour breach notification - addressing all GT key elements for data protection."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "74921af1-db1a-4809-ad18-64ae2aac4bab",
+      "evidence": {
+        "proposed_revision_excerpt": "Agency shall, at its own expense, maintain at all times during the Term (a) Commercial General Liability insurance with limits of at least USD $1,000,000 per occurrence, (b) Professional Errors & Omissions insurance with limits of at least USD $1,000,000, and (c) Cyber/Privacy Liability insurance with limits of at least USD $1,000,000. Upon Client's request, Agency shall provide certificates of insurance evidencing such coverage.",
+        "effective_rationale_excerpt": "Ensures Agency has adequate financial resources to cover potential claims, reducing Client's risk exposure and aligning with industry standards for digital marketing engagements.",
+        "judge_reasoning": "Leah correctly identifies the missing insurance requirements and proposes a comprehensive addition including CGL, E&O, and Cyber liability insurance with $1M minimums. This addresses all GT key elements. The new_clauses_proposed section also flags this: 'No obligation on Agency to maintain E&O/Cyber insurance; exposes Client to uninsured loss.'"
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.4",
+      "tier": "T3",
+      "issue": "Portfolio Rights - Subject to Confidentiality",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "34429443-95d4-4319-8dc7-9924072c96e6",
+      "evidence": {
+        "proposed_revision_excerpt": "Agency may display Deliverables in its portfolio or marketing materials only with Client's prior written consent, which shall not be unreasonably withheld, and not earlier than public launch or distribution by Client.",
+        "effective_rationale_excerpt": "Adds consent mechanism and timing restriction to protect Client's brand strategy and embargoed campaigns while still allowing reasonable Agency self-promotion.",
+        "judge_reasoning": "Leah identifies the portfolio rights concern at 5.4, noting 'Brand control. No approval mechanism or embargo for stealth launches; needs prior written consent.' The proposed revision adds explicit consent requirement and timing restriction (not before Client's public launch) - exceeding GT requirements by adding more protection than the existing confidentiality carve-out."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "1.1",
+      "tier": "T3",
+      "issue": "Agency IP Definition Broad",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table 1.1-1.5: 'Missing data definitions. No definition for \"Personal Data,\" \"Confidential Information\" cross-references later obligations; may cause interpretive gaps.' Classification: Requires Clarification.",
+        "effective_rationale_excerpt": "Related concern identified but different focus (missing definitions vs. broad Agency IP definition).",
+        "judge_reasoning": "Leah flags the definitions section at 1.1-1.5 as requiring clarification. While the specific focus is on missing definitions rather than the breadth of Agency IP definition, Leah does address Agency IP scope through the revision at 5.2/5.3 that limits Agency retention to pre-existing or independently developed IP. The concern about broad definitions is partially addressed. Detection=Y as the issue area is identified and addressed through related revisions."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Change Orders - No Response Timeline",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table 2.2: 'Clear written safeguard. Protects Client from unauthorized scope changes and unagreed costs.' Classification: Favorable.",
+        "effective_rationale_excerpt": "No redline proposed.",
+        "judge_reasoning": "Leah marks 2.2 Change Orders as Favorable, missing the GT concern about no response timeline for Agency to respond to change order requests. This is a direct miss - the issue exists but Leah classified the clause positively."
+      }
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Expenses - Documentation Unclear",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table 3.2: 'Budget control present. Threshold manageable; advance approval retained.' Classification: Favorable.",
+        "effective_rationale_excerpt": "No redline proposed.",
+        "judge_reasoning": "Leah marks 3.2 Expenses as Favorable, missing the GT concern about unclear documentation requirements for receipts. The issue exists but was not flagged."
+      }
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Deposit Triggers Unclear",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "No risk table entry for 3.3.",
+        "effective_rationale_excerpt": "Clause not mentioned in Leah's output.",
+        "judge_reasoning": "Leah does not mention clause 3.3 regarding unclear deposit triggers. This is a complete miss - the clause was not assessed in the risk table."
+      }
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Revisions - No Definition",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table 6.2: 'Reasonable limit. Aligns expectations; excess work billed.' Classification: Favorable.",
+        "effective_rationale_excerpt": "No redline proposed.",
+        "judge_reasoning": "Leah marks 6.2 Revisions as Favorable, missing the GT concern that 'revision' is undefined - could mean one minor change or complete redo. The issue exists but Leah classified positively."
+      }
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "13.1",
+      "tier": "T3",
+      "issue": "Governing Law - No Flexibility",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "be09ca94-7efc-403c-a09f-8e0ea9fdacb8",
+      "evidence": {
+        "proposed_revision_excerpt": "This Agreement shall be governed by and construed in accordance with the laws of the State of New York, without regard to its conflict-of-laws principles, and any arbitration or court proceeding shall take place virtually or, at Client's election, in the state where Client maintains its principal place of business.",
+        "effective_rationale_excerpt": "Retains substantive New York law for predictability but shifts venue flexibility to Client's home state or virtual proceedings, reducing travel burden and litigation costs.",
+        "judge_reasoning": "Leah identifies the NY governing law issue at 13.1, noting 'Neutral but distant. If Client outside NY, costlier; prefer home jurisdiction or mutual venue.' The proposed revision retains NY law but adds Client venue election - directly addressing the GT concern about flexibility."
+      }
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "N/A (Missing)",
+      "tier": "T3",
+      "issue": "No Force Majeure",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "a5c9e2df-2316-4a50-a31b-4c74e8d0b088",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Party shall be liable for any delay or failure to perform its obligations (except payment obligations) resulting from events beyond its reasonable control, including acts of God, epidemics, governmental actions, or internet outages, provided the affected Party promptly notifies the other Party and uses commercially reasonable efforts to mitigate the impact. If a force-majeure event continues for more than thirty (30) days, either Party may terminate the affected SOW without penalty.",
+        "effective_rationale_excerpt": "Establishes a balanced mechanism for handling unforeseeable disruptions while granting Client a clear exit right if performance is materially impeded.",
+        "judge_reasoning": "Leah correctly identifies the missing force majeure clause and proposes a comprehensive addition. The new_clauses_proposed flags: 'Agreement silent; unpredictable events could trigger disputes; standard force-majeure clause needed.' The proposed revision includes all GT key elements with termination right after 30 days."
+      }
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "N/A (Missing)",
+      "tier": "T3",
+      "issue": "No Service Level Commitments",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "02aed818-e94e-4449-ad5a-6ba9f2456687",
+      "evidence": {
+        "proposed_revision_excerpt": "Agency shall perform the Services in accordance with the service levels set forth in the applicable SOW, including but not limited to delivery milestones, responsiveness metrics, and quality standards. If Agency fails to meet any service level, Agency shall, as Client's sole remedy, provide a service credit equal to five percent (5%) of the fees attributable to the affected milestone for each week of non-compliance, up to twenty percent (20%) of such fees.",
+        "effective_rationale_excerpt": "Adds measurable performance expectations and financial incentive for timely, quality execution, aligning Agency performance with Client's campaign goals without resorting immediately to litigation.",
+        "judge_reasoning": "Leah correctly identifies the missing service level commitments and proposes a comprehensive SLA clause with response time references ('responsiveness metrics'), quality metrics, and escalation via credit mechanism. The new_clauses_proposed flags this: 'No performance metrics or credits; need measurable KPIs to ensure timely, effective campaigns.'"
+      }
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "13.3",
+      "tier": "T3",
+      "issue": "Assignment - No M&A Exception (Mutual)",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table 13.3: 'Protects relationship. Prevents Agency from transferring without approval.' Classification: Favorable.",
+        "effective_rationale_excerpt": "No redline proposed.",
+        "judge_reasoning": "Leah marks 13.3 Assignment as Favorable, missing the GT concern about no M&A exception for either party. The mutual restriction exists but Leah does not identify the gap regarding standard M&A/affiliate exceptions."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 19,
+      "P": 4,
+      "N": 5,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 9,
+        "P": 2,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 6,
+        "P": 2,
+        "N": 5,
+        "NMI": 1
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_detected": 4,
+    "total_detection_points": 80.5,
+    "total_quality_points": 162,
+    "total_points": 242.5,
+    "max_detection_points": 98,
+    "detection_percentage": 82.14,
+    "part_a_score": 24,
+    "part_a_max": 24,
+    "part_a_percentage": 100.0,
+    "part_b_weighted_score": 80.5,
+    "part_b_weighted_max": 98,
+    "part_b_percentage": 82.14,
+    "combined_pass": true
+  }
+}

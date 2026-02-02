@@ -1,0 +1,813 @@
+{
+  "meta": {
+    "contract": "sla",
+    "model_id": "scale",
+    "evaluation_timestamp": "2026-01-25T18:35:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "Unlimited Licensee Liability",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Liability (Section 8.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "DELETE",
+        "effective_rationale_excerpt": "The clause states Licensee 'acknowledges that any breach ... may result in unlimited liability to Licensor' which is one-sided, punitive, and lacks reciprocity. It creates substantial asymmetric exposure for Licensee and is unconscionable.",
+        "judge_reasoning": "Scale fully detected the unlimited liability issue and recommended deletion with replacement by mutual, limited liability language. The risk_table classifies it as favorable (tick) but the detailed_reasoning clearly identifies it as 'one-sided, punitive, and lacks reciprocity' - unconscionable. The proposed_redline implements full deletion."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "8.3",
+      "tier": "T1",
+      "issue": "Full AS-IS Disclaimer",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The AS-IS disclaimer at 8.3 is not present in Scale's risk_table or proposed_redlines. The clause is not analyzed or addressed, leaving this T1 issue undetected."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Consequential Damages Exclusion - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Limitation of Liability (Section 10.1 / 10.2)",
+      "evidence": {
+        "proposed_revision_excerpt": "Except for liability arising from (a) Licensor's willful misconduct or gross negligence, (b) Licensor's breach of its confidentiality obligations, (c) Licensor's indemnity obligations under Section 9, and (d) Licensor's failure to implement security measures required under Section 5, neither Party shall be liable for indirect, incidental, special, consequential, or punitive damages...",
+        "effective_rationale_excerpt": "The original broadly disclaims consequential damages and caps liability at prior 12 months' fees without carve-outs. This amendment preserves a cap while adding essential carve-outs.",
+        "judge_reasoning": "Scale identified the one-sided exclusion and proposed making it mutual with carve-outs for willful misconduct, confidentiality, indemnity, and security failures. This fully addresses the GT concern about one-sided protection."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Low Liability Cap - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Limitation of Liability (Section 10.1 / 10.2)",
+      "evidence": {
+        "proposed_revision_excerpt": "each Party's aggregate liability arising out of or related to this Agreement shall not exceed the greater of (i) the fees paid by Licensee to Licensor in the twelve (12) months preceding the claim or (ii) $250,000.",
+        "effective_rationale_excerpt": "The original cap is low and one-sided. Making it mutual and adding a floor ($250,000) provides meaningful recovery while carving out serious harms.",
+        "judge_reasoning": "Scale detected the one-sided cap and proposed making it mutual with a $250,000 floor plus carve-outs for serious harms. This addresses the GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "12.4",
+      "tier": "T1",
+      "issue": "Asymmetric Assignment",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Assignment (Section 12.4)",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee may not assign this Agreement without Licensor's prior written consent, which shall not be unreasonably withheld. Licensor may not assign this Agreement without Licensee's prior written consent, except that Licensor may assign this Agreement without Licensee consent in connection with a merger, acquisition, or sale of all or substantially all of Licensor's assets or to an Affiliate...",
+        "effective_rationale_excerpt": "Licensee may not assign without Licensor consent while Licensor may assign 'without restriction' which is one-sided, exposing Licensee to unknown assignees or changes in service without recourse.",
+        "judge_reasoning": "Scale identified the asymmetric assignment and proposed mutual consent with M&A exceptions and notice requirements. This directly addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "9.1 / 9.2",
+      "tier": "T1",
+      "issue": "Narrow Indemnification - No Licensee Protection Defined",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Indemnification (Section 9.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor's obligations include (a) defending the claim at Licensor's expense with counsel reasonably satisfactory to Licensee, (b) paying any final judgment or settlement, and (c) at its option, procuring for Licensee the right to continue using the Software or replacing/modifying the Software to avoid infringement without material loss of functionality.",
+        "effective_rationale_excerpt": "The original provides an IP indemnity but lacks defense obligations, settlement controls, and remediation options.",
+        "judge_reasoning": "Scale detected the narrow indemnification and expanded it with defense obligations, settlement controls, and the classic remedy triad. A new narrow Licensee indemnity clause is also proposed."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Security Measures (Section 5.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall implement and maintain administrative, technical, and physical safeguards consistent with industry standards such as SOC 2 Type II or ISO 27001. Such safeguards shall include encryption of Licensee Data at rest and in transit using strong cryptography, role-based access controls, multi-factor authentication for administrative access, periodic vulnerability scanning and annual penetration testing, logging and monitoring of access, and written information security policies.",
+        "effective_rationale_excerpt": "'Reasonable administrative, technical, and physical safeguards' is vague; no specific standards, certifications (SOC 2/ISO 27001), encryption, access controls, testing, breach notification timelines, or audit rights are specified.",
+        "judge_reasoning": "Scale comprehensively addressed the vague security by specifying SOC 2/ISO 27001 standards, encryption, MFA, pen testing, and audit access. This addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "11.4",
+      "tier": "T1",
+      "issue": "No Data Export on Termination",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Effect of Termination (Section 11.4)",
+      "evidence": {
+        "proposed_revision_excerpt": "within thirty (30) days after termination, Licensor shall, at Licensee's option, provide Licensee with an export of Licensee Data in a commonly used, machine-readable format and shall securely delete Licensee Data from production systems within ninety (90) days unless retention is required by law; (d) Licensor shall provide reasonable transition assistance for a period of up to sixty (60) days at no additional charge...",
+        "effective_rationale_excerpt": "Requires immediate cessation and return/destruction of Confidential Information but lacks data return/export, transition assistance, and timelines for Licensee to retrieve its data.",
+        "judge_reasoning": "Scale fully addressed the data export gap by proposing 30-day export window, machine-readable format, 90-day deletion, and 60-day transition assistance. This comprehensively addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "2.1",
+      "tier": "T2",
+      "issue": "Non-Transferable License",
+      "detection": "P",
+      "detection_points": 2.5,
+      "match_strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "matched_redline_id": "Risk table at 2.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Amend to define user model, permitted concurrency, and audit/usage reporting",
+        "effective_rationale_excerpt": "The grant is standard but lacks clarity on concurrency, limits, portability, and auditing rights. It is unclear whether access restrictions apply and how sublicensing or emergency access is treated.",
+        "judge_reasoning": "Scale's risk_table identifies issues with the license grant but focuses on concurrency and user model rather than transferability and affiliate rights. No proposed_redline explicitly addresses making the license transferable or adding affiliate rights. Partial detection."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.1",
+      "tier": "T3",
+      "issue": "Annual Advance Payment",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The annual advance payment at 3.1 is not present in Scale's risk_table. The clause is not analyzed or addressed."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": "Risk table at 3.3",
+      "evidence": {
+        "proposed_revision_excerpt": "Amend to add dispute rights, grace period, and cap consistent with law",
+        "effective_rationale_excerpt": "Interest at 1.5% per month is high and may compound into an excessive penalty. The clause lacks a grace, dispute resolution for invoices, or caps consistent with applicable law.",
+        "judge_reasoning": "Scale identified the high late fee issue in the risk_table and recommended adding dispute rights and grace period. No specific proposed_redline exists, but the issue is flagged with correct remediation direction."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Weak Uptime SLA",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Availability (Section 4.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "Availability shall be calculated as: (Total minutes in the month minus minutes of downtime excluding scheduled maintenance and Force Majeure) divided by Total minutes in the month. If monthly availability falls below 99.5%, Licensee shall be entitled to service credits as follows: availability 99.0% - 99.49%: 10% credit of monthly fees; 98.0% - 98.99%: 25% credit; below 98.0%: 50% credit.",
+        "effective_rationale_excerpt": "The 99.5% availability target is stated without measurement methodology, credits/remedies, exclusion detail, or uptime reporting. Without financial remedies or clear measurement, Licensee lacks enforceable recourse.",
+        "judge_reasoning": "Scale fully addressed the weak SLA by adding measurement methodology, tiered service credits, and reporting requirements. This comprehensively addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "Limited Support Hours",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Support (Section 4.2)",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall provide technical support to Licensee twenty-four (24) hours per day, seven (7) days per week for Severity 1 incidents, and during normal business hours for other severities. Support requests shall be categorized by severity and responded to within: Severity 1 (service down/critical): one (1) hour; Severity 2 (major degradation): four (4) hours; Severity 3 (minor impact): one (1) business day.",
+        "effective_rationale_excerpt": "Support limited to business hours (PST 9-5) with a 4-hour response time is insufficient for critical production services; no priority levels, escalation, or 24/7 support for outages.",
+        "judge_reasoning": "Scale comprehensively addressed limited support by proposing 24/7 for critical incidents, severity tiers with specific response times, and escalation matrix. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Feedback Ownership",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Feedback (Section 6.2)",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee retains ownership of Feedback that contains Licensee's Confidential Information or customer-specific information. For all other Feedback, Licensee grants Licensor a non-exclusive, worldwide, royalty-free, perpetual license to use and incorporate such Feedback solely to improve or operate the Software; Licensor shall not attribute or publish Licensee-specific Feedback without Licensee's prior written consent.",
+        "effective_rationale_excerpt": "Assigning all right, title, and interest in Feedback to Licensor without limitation is overly broad and could strip Licensee of ownership of valuable business ideas or improvements.",
+        "judge_reasoning": "Scale detected the overbroad feedback ownership and converted it to a limited license with protection for confidential and customer-specific information. This addresses the GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "11.1",
+      "tier": "T2",
+      "issue": "Auto-Renewal Terms",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Risk table at 11.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Amend to allow shorter renewal notice for Licensee, right to non-renew for convenience, and price increase limits on renewal",
+        "effective_rationale_excerpt": "One-year initial term with automatic one-year renewals and 60-day non-renewal notice is acceptable but could lock Licensee into renewals; no mid-term termination for convenience is provided, and renewal pricing mechanics are unclear.",
+        "judge_reasoning": "Scale identified the auto-renewal issues and recommended convenience termination and price limits. While no specific redline exists, the issue is flagged with appropriate remediation direction."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "2.3",
+      "tier": "T2",
+      "issue": "Usage Restrictions Overbroad",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Risk table at 2.3",
+      "evidence": {
+        "proposed_revision_excerpt": "Amend to carve out permitted integrations, backup, and use with Affiliates/third-party processors",
+        "effective_rationale_excerpt": "Broad prohibitions (reverse engineering, sublicensing, third-party benefit) are typical but leave ambiguous exceptions for permitted integrations, API use, or permitted third-party service providers.",
+        "judge_reasoning": "Scale identified the overbroad restrictions and recommended carve-outs for integrations, backup, and affiliates. The risk_table flags the issue correctly though no specific redline implements the fix."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "DPA Optional / No Timing",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Data Processing (Section 5.3)",
+      "evidence": {
+        "proposed_revision_excerpt": "Prior to Licensor processing any personal data of Licensee or its end users, the Parties shall execute a Data Processing Agreement (DPA) that includes, at minimum: documented processing purposes, categories of personal data, data subject categories, security measures consistent with Section 5.1, subprocessors list and change notification procedures, data residency and cross-border transfer mechanisms, data subject request cooperation, breach notification timelines not to exceed 72 hours, and deletion/return procedures on termination. Licensor shall not process personal data until the DPA is executed.",
+        "effective_rationale_excerpt": "The clause requires a separate Data Processing Agreement (DPA) but does not make execution of a DPA a condition precedent to processing.",
+        "judge_reasoning": "Scale fully addressed the DPA timing issue by making DPA execution a condition precedent and specifying minimum terms including 72-hour breach notification. This comprehensively addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "8.2",
+      "tier": "T2",
+      "issue": "Performance Warranty Weak",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Performance Warranty (Section 8.2)",
+      "evidence": {
+        "proposed_revision_excerpt": "If Licensor fails to correct a material non-conformity within a commercially reasonable period after notice (not to exceed thirty (30) days for Severity 1 issues), Licensee may (a) require a pro rata refund or service credit for the affected period, and if the material non-conformity persists for more than sixty (60) days, (b) terminate the affected Subscription for convenience and receive a pro rata refund of prepaid fees.",
+        "effective_rationale_excerpt": "Warranty that Software will perform 'substantially in accordance with the Documentation' with sole remedy being correction is narrow. There is no service credit, termination for material breach, or refund remedy for persistent failures.",
+        "judge_reasoning": "Scale addressed the weak warranty by adding 30-day cure period, service credits, refunds, and termination for persistent failures. This comprehensively addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "12.10",
+      "tier": "T2",
+      "issue": "Survival Incomplete",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The survival clause at 12.10 is not present in Scale's risk_table or proposed_redlines. The issue about incomplete survival provisions and Article 5 not being included is not flagged."
+      }
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Audit Rights",
+      "detection": "P",
+      "detection_points": 2.5,
+      "match_strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": "Redline-Security Measures (Section 5.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall provide evidence of applicable certifications upon request and permit Licensee, or a mutually agreed third-party auditor, to conduct audits or to receive summary SOC 2 reports under confidentiality.",
+        "effective_rationale_excerpt": "Audit rights mentioned within security measures amendment rather than as standalone provision.",
+        "judge_reasoning": "Scale includes audit rights within the security measures amendment (5.1) rather than as a standalone clause. The right to conduct audits or receive SOC 2 reports is present but less comprehensive than a dedicated audit clause."
+      }
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Business Continuity",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No business continuity or disaster recovery provisions are proposed or identified as missing. The absence of RTO/RPO requirements is not flagged."
+      }
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Force Majeure",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No force majeure clause is proposed or identified as missing. The availability amendment references 'Force Majeure' but does not propose adding a force majeure definition clause."
+      }
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Vendor Insurance Requirements",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No vendor insurance requirements are proposed or identified as missing. This gap is not flagged in Scale's output."
+      }
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "6.3",
+      "tier": "T3",
+      "issue": "Aggregated Data Use",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Aggregated Data (Section 6.3)",
+      "evidence": {
+        "proposed_revision_excerpt": "'Anonymised' means data that has been de-identified in accordance with generally accepted industry standards such that re-identification is not reasonably possible. Licensor shall not attempt to re-identify data and shall implement technical and organizational safeguards to prevent re-identification.",
+        "effective_rationale_excerpt": "Permits Licensor to use aggregated, anonymised data but lacks definition of anonymised, prevents re-identification, and provides no notice or opt-out.",
+        "judge_reasoning": "Scale detected the aggregated data issue and proposed defining anonymization, prohibiting re-identification, and adding safeguards. This fully addresses the GT key element about re-identification prohibition."
+      }
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "12.2",
+      "tier": "T3",
+      "issue": "Arbitration Required",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Dispute Resolution (Section 12.2)",
+      "evidence": {
+        "proposed_revision_excerpt": "Any dispute arising out of or relating to this Agreement shall first be subject to good faith negotiations between senior executives for thirty (30) days. If unresolved, the dispute shall be resolved by binding arbitration... The arbitration shall be conducted at a mutually agreed location; if the Parties cannot agree, venue shall be the county where Licensee's primary place of business is located. Nothing in this Section shall prevent either Party from seeking provisional or injunctive relief in a court of competent jurisdiction...",
+        "effective_rationale_excerpt": "The original mandates arbitration in San Francisco and does not require pre-arbitration negotiation or allow injunctive relief.",
+        "judge_reasoning": "Scale addressed the arbitration issue by adding negotiation step, flexible venue, and injunctive relief carve-out. This addresses the GT key element about adding negotiation/mediation first."
+      }
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "4.3",
+      "tier": "T3",
+      "issue": "Short Maintenance Notice",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": "Risk table at 4.3",
+      "evidence": {
+        "proposed_revision_excerpt": "Amend to set maintenance windows, maximum duration per month, and notice exceptions",
+        "effective_rationale_excerpt": "Scheduled maintenance notice of 'at least 48 hours' is reasonable but lacks limits on duration, frequency, and disallowed timing.",
+        "judge_reasoning": "Scale identified the maintenance notice issue in the risk_table and recommended setting maintenance windows and duration limits, though does not specifically recommend extending notice beyond 48 hours."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.1",
+      "issue_summary": "Grant of License",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define user",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The grant is standard but lacks clarity on concurrency, limits, portability, and auditing rights. It is unclear whether access restrictions (e.g., named users vs. seats) apply and how sublicensing or "
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Usage Restrictions",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to carve out p",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad prohibitions (reverse engineering, sublicensing, third-party benefit) are typical but leave ambiguous exceptions for permitted integrations, API use, or permitted third-party service providers, "
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Late Fees",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add dispute",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Interest at 1.5% per month is high and may compound into an excessive penalty. The clause lacks a grace, dispute resolution for invoices, or caps consistent with applicable law, potentially creating u"
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Maintenance",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to set mainten",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Scheduled maintenance notice of \"at least 48 hours\" is reasonable but lacks limits on duration, frequency, and disallowed timing (e.g., business-critical windows) and no opt-out or emergency rollback "
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Data Processing",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require an ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause requires a separate Data Processing Agreement (DPA) but does not make execution of a DPA a condition precedent to processing. Without a DPA in the contract, Licensee lacks assurance of comp"
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Aggregated Data",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define anon",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Permits Licensor to use aggregated, anonymised data but lacks definition of anonymised , prevents re-identification, and provides no notice or opt-out. Unclear safeguards raise privacy and competitive"
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Performance Warranty / Remedy",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add additio",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Warranty that Software will perform \"substantially in accordance with the Documentation\" with sole remedy being correction is narrow. There is no service credit, termination for material breach, or re"
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Term and Auto-Renewal",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to allow short",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "One-year initial term with automatic one-year renewals and 60-day non-renewal notice is acceptable but could lock Licensee into renewals; no mid-term termination for convenience is provided, and renew"
+    },
+    {
+      "clause": "Availability (Section 4.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace the existing sentence in Section 4.1. The original clause sets an availability target but lacks measurement, remedies, and reporting. This amendment defines a clear measurement form"
+    },
+    {
+      "clause": "Support (Section 4.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace the existing paragraph in Section 4.2. The current support clause restricts help to business hours and a four-hour response, insufficient for production services. This amendment cre"
+    },
+    {
+      "clause": "Security Measures (Section 5.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace the existing sentence in Section 5.1. The original \"reasonable safeguards\" language is too vague to ensure concrete protections. This amendment specifies recognised security standar"
+    },
+    {
+      "clause": "Data Processing (Section 5.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.2. The existing contract references a separate DPA but does not require it to be executed before processing begins. This new clause makes execution of a DPA a conditi"
+    },
+    {
+      "clause": "Feedback (Section 6.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace the existing paragraph in Section 6.2. The original assigns all Feedback to Licensor, risking loss of Licensee's proprietary ideas. The amendment preserves Licensee ownership for co"
+    },
+    {
+      "clause": "Aggregated Data (Section 6.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace the existing paragraph in Section 6.3. The original allows use of aggregated data but does not define \"anonymised\" or forbid re-identification. This amendment defines anonymization,"
+    },
+    {
+      "clause": "Liability (Section 8.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Delete the existing sentence in Section 8.1. The clause as written imposes an unconscionable and one‑sided recognition of unlimited liability on Licensee. Deleting it removes an asymmetric "
+    },
+    {
+      "clause": "Performance Warranty (Section 8.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace the existing paragraph in Section 8.2. The original limits Licensee to repair-only remedies. This amendment adds service credits, pro rata refunds, and termination for persistent fa"
+    },
+    {
+      "clause": "Indemnification (Section 9.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace the existing paragraph in Section 9.1. The original provides an IP indemnity but lacks defense obligations, settlement controls, and remediation options. Adding these specifics ensu"
+    },
+    {
+      "clause": "Indemnification by Licensee (New narrow clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 9.1. The contract currently has limited indemnity language; a narrow Licensee indemnity clarifies responsibilities tied to Licensee-controlled data or misuse while expr"
+    },
+    {
+      "clause": "Limitation of Liability (Section 10.1 / 10.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace Sections 10.1 and 10.2. The original broadly disclaims consequential damages and caps liability at prior 12 months' fees without carve-outs. This amendment preserves a cap while add"
+    },
+    {
+      "clause": "Effect of Termination (Section 11.4)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace the existing paragraph in Section 11.4. The original requires immediate cessation and destruction but has no data export/transition assistance. This amendment ensures Licensee can r"
+    },
+    {
+      "clause": "Assignment (Section 12.4)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace the existing paragraph in Section 12.4. The original permits Licensor unfettered assignment, which risks service changes without Licensee consent. This amendment narrows Licensor's "
+    },
+    {
+      "clause": "Dispute Resolution (Section 12.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace the existing paragraph in Section 12.2. The original mandates arbitration in San Francisco and does not require pre-arbitration negotiation or allow injunctive relief. This amendmen"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 19,
+      "P": 2,
+      "N": 0,
+      "NMI": 5
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 7,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      },
+      "T2": {
+        "Y": 9,
+        "P": 2,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 3
+      }
+    },
+    "t1_all_detected": false,
+    "t1_count": 8,
+    "total_detection_points": 96.0,
+    "total_quality_points": 160,
+    "total_points": 256.0,
+    "additional_issues_count": 22
+  }
+}

@@ -1,0 +1,920 @@
+{
+  "meta": {
+    "contract": "jv",
+    "model_id": "pioneer_deep",
+    "evaluation_timestamp": "2026-01-25T19:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "No Deadlock Resolution - Article 8 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-8.1 Deadlock",
+      "evidence": {
+        "proposed_revision_excerpt": "8.1 Deadlock. If the Steering Committee cannot resolve a matter requiring approval within 20 days, the matter shall be escalated to senior executives of each Party for 15 days. If unresolved, the Parties shall submit the issue to non-binding expert determination. If still unresolved, either Party may initiate a buy-sell process whereby one Party offers to buy the other Party's JV interest at a stated price per unit, and the offeree must elect to sell or buy at that price.",
+        "effective_rationale_excerpt": "No deadlock mechanism. This can stall operations and value realization, harming Quantum Dynamics LLC.",
+        "judge_reasoning": "Excellent detection. Risk table at 8.1 identifies no deadlock mechanism causing operational harm. The proposed redline provides comprehensive staged escalation (20-day SC, 15-day executives, expert determination, buy-sell shotgun provision) covering all GT key elements including escalation, mediation equivalent, and buyout mechanism. Market-standard remedy."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Rights",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-10.2 Termination for Cause",
+      "evidence": {
+        "proposed_revision_excerpt": "Either Party may terminate this MOU upon written notice if the other Party materially breaches and fails to cure within sixty (60) days, or upon the other Party's insolvency, assignment for the benefit of creditors, bankruptcy filing, or a change of control to a direct competitor of the terminating Party.",
+        "effective_rationale_excerpt": "Cure rights exist, but no insolvency/change-of-control triggers benefiting Quantum Dynamics LLC.",
+        "judge_reasoning": "Pioneer Deep addresses exit comprehensively: 10.2 adds insolvency and change-of-control termination triggers, and the 8.1 deadlock buy-sell provides a valuation-based buyout mechanism. Combined these provide exit paths matching GT requirements for buyout mechanism and CoC termination. Strong detection with comprehensive multi-clause fix."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent + No Tiebreaker",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-4.2 Steering Committee",
+      "evidence": {
+        "proposed_revision_excerpt": "4.2 Steering Committee... A quorum requires at least one representative from each Party. Actions may be taken by unanimous written consent. Ties shall be addressed under Article 8 (Deadlock).",
+        "effective_rationale_excerpt": "Unanimity for material decisions protects Quantum Dynamics LLC's veto power on key matters, preventing unfavorable unilateral moves.",
+        "judge_reasoning": "Risk table at 4.1 and 4.2 identifies governance mechanics and links ties to Article 8 for resolution. The 4.4 voting redline enumerates Material Decisions requiring unanimous consent with explicit deadlock linkage. Combined with comprehensive 8.1 deadlock mechanism, this addresses the GT paralysis concern through linked provisions."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Broad Post-Term Non-Compete",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-9.1 Non-Compete",
+      "evidence": {
+        "proposed_revision_excerpt": "9.1 Non-Solicit and Non-Interference. During the Term and for 12 months thereafter, neither Party shall solicit for employment employees of the other Party or the JV who materially participated in the JV, nor knowingly solicit customers to divert existing JV contracts, in each case solely with respect to the Purpose and within the United States. This Section shall be interpreted to comply with applicable law and does not restrict general advertising.",
+        "effective_rationale_excerpt": "Broad non-compete for two years post-term, no territory or field, and likely unenforceable against a California party. Risks restraining Quantum Dynamics LLC's core business.",
+        "judge_reasoning": "Excellent detection. Risk table at 9.1 identifies all GT concerns: 2-year duration, no territory, California enforceability issues. The redline converts overbroad non-compete to narrower non-solicit, reduces to 12 months, limits to US, adds California compliance language. Comprehensively addresses scope and enforceability concerns."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.2",
+      "tier": "T1",
+      "issue": "Developed IP Consent Lock-Up",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-6.2 Developed IP",
+      "evidence": {
+        "proposed_revision_excerpt": "6.2 Developed IP. All Developed IP shall be assigned to and owned by the JV Entity. The JV Entity shall grant each Party a non-exclusive, worldwide, royalty-free license to use Developed IP outside the Purpose, provided such use does not compete with the JV's then-current offerings.",
+        "effective_rationale_excerpt": "Joint ownership without usage rules enables Party A to monetize Developed IP outside JV without adequate revenue sharing or control. Quantum Dynamics LLC should prefer JV Entity ownership or field-exclusive licensing to JV.",
+        "judge_reasoning": "Excellent detection. Risk table at 6.2 identifies joint ownership problems and commercialization veto risk. The redline assigns IP to JV Entity with license-back for outside-field use, addressing the commercialization lock-up. This exceeds GT suggestions by centralizing ownership while preserving exploitation rights."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Limitation of Liability (New)",
+      "evidence": {
+        "proposed_revision_excerpt": "12.8 Limitation of Liability. Except for a Party's breach of confidentiality, infringement/misappropriation of IP, willful misconduct, or indemnity obligations, neither Party shall be liable for indirect, incidental, consequential, special, or punitive damages. Each Party's aggregate liability arising out of this MOU shall not exceed the total amounts contributed or paid by such Party to the JV in the twelve (12) months preceding the claim.",
+        "effective_rationale_excerpt": "No cap on damages, no exclusion of indirect damages, and no carve-outs definition. Quantum Dynamics LLC faces unbounded exposure incompatible with R&D risk.",
+        "judge_reasoning": "Excellent detection. Risk table NC1 identifies missing liability cap and unlimited exposure for R&D venture. The proposed redline adds mutual cap tied to contributions, excludes consequential damages, and includes appropriate carve-outs. All GT key elements addressed."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Capital Call Dilution Risk",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-3.4 Additional Capital",
+      "evidence": {
+        "proposed_revision_excerpt": "3.4 Additional Capital. Additional capital contributions require unanimous Steering Committee approval, a written notice describing use of proceeds, and a 30-day cure period. Any dilution shall be proportional to the unpaid amount and subject to a cap such that no Party's ownership may be reduced below 35% without that Party's consent. Each Party shall have a preemptive right to purchase additional interests on the same terms before any third-party financing.",
+        "effective_rationale_excerpt": "Open-ended capital calls with automatic dilution are risky. Quantum Dynamics LLC needs caps, preemptive rights, cure periods, and dispute resolution to avoid coercive dilution.",
+        "judge_reasoning": "Excellent detection. Risk table at 3.4 identifies open-ended calls and automatic dilution risks. The redline adds 30-day cure, 35% ownership floor, preemptive rights, and notice requirements. Exceeds GT requirements by adding ownership floor protection and third-party financing ROFR."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Improvement Ownership Unclear on Termination",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-6.3 Improvements",
+      "evidence": {
+        "proposed_revision_excerpt": "6.3 Improvements. Any improvements to a Party's Contributed IP developed using Joint Venture resources shall be owned by the contributing Party, subject to a perpetual, irrevocable, worldwide, royalty-free, fully paid, transferable and sublicensable license to the Joint Venture to use, reproduce, modify, and distribute such improvements solely for the Purpose and to support customers of the JV's offerings.",
+        "effective_rationale_excerpt": "Ownership to contributing Party is fine, but license scope to JV is vague. Quantum Dynamics LLC needs perpetual, irrevocable, worldwide, royalty-free, sublicensable rights.",
+        "judge_reasoning": "Excellent detection. Risk table at 6.3 correctly identifies vague JV license scope concern. The redline specifies perpetual, irrevocable, worldwide, royalty-free, sublicensable license with customer support rights. Directly addresses GT concern about post-termination license scope clarity."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "General Manager Authority Unbounded",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "quality_points": 5,
+      "total_points": 10.0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "GM powers are broad 'within approved budgets,' but procurement thresholds and policy scope are undefined. This risks unauthorized commitments impacting Quantum Dynamics LLC.",
+        "judge_reasoning": "Risk table at 4.3 correctly identifies GM authority issues: broad powers, undefined thresholds, no mandatory SC policies. Recommended action is to define authority limits, thresholds, and mandatory policies. However, no specific proposed redline exists for 4.3. Detection is strong via risk table but fix is recommendation only, not implemented as redline."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "6.1",
+      "tier": "T2",
+      "issue": "Contributed IP License Gaps",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-6.1 Contributed IP",
+      "evidence": {
+        "proposed_revision_excerpt": "6.1 Contributed IP. Each Party retains ownership of its Contributed IP. Each Party grants the Joint Venture a non-exclusive, non-transferable, non-sublicensable (except to approved subcontractors under confidentiality), royalty-free license to use its Contributed IP solely for the Purpose during the Term, subject to confidentiality. No reverse engineering, decompilation, or modification of a Party's Contributed IP is permitted except as expressly authorized.",
+        "effective_rationale_excerpt": "Non-exclusive, royalty-free license without restrictions or sublicensing limits risks leakage of Quantum Dynamics LLC quantum IP.",
+        "judge_reasoning": "Excellent detection. Risk table at 6.1 identifies lack of field limits, sublicensing risks, and reverse engineering concerns. The redline adds non-sublicensable restriction with subcontractor exception, confidentiality requirement, and anti-reverse engineering clause. Addresses all GT concerns."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.4",
+      "tier": "T2",
+      "issue": "Termination IP Allocation Undefined",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-10.4 Effect of Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "10.4 Effect of Termination. Upon termination: (a) each Party shall return or destroy the other's Contributed IP; (b) absent agreement within 30 days, each Party receives a non-exclusive, perpetual, worldwide, royalty-free license (with right to sublicense to customers and service providers) to use Developed IP, excluding use that competes with then-active JV customer contracts; (c) remaining assets shall be distributed per ownership interests; and (d) each Party shall provide reasonable transition assistance for 90 days at cost.",
+        "effective_rationale_excerpt": "Division/licensing of Developed IP 'as agreed' is too open-ended, risking stalemate and loss of use by Quantum Dynamics LLC.",
+        "judge_reasoning": "Excellent detection. Risk table at 10.4 identifies 'as agreed' creates deadlock risk. The redline provides concrete default: 30-day negotiation window, then automatic perpetual license to each party with customer protection carve-out and 90-day transition assistance. Directly addresses GT concern about default allocation mechanism."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Indemnification Regime",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Mutual Indemnities (New)",
+      "evidence": {
+        "proposed_revision_excerpt": "12.9 Indemnification. Each Party shall indemnify, defend, and hold harmless the other Party and the JV from third-party claims arising from (a) alleged infringement or misappropriation by its Contributed IP; (b) bodily injury or property damage caused by its negligence or willful misconduct; and (c) its violation of law. The indemnified Party shall provide prompt notice, reasonable cooperation, and the indemnifying Party shall control the defense.",
+        "effective_rationale_excerpt": "No indemnity. Quantum Dynamics LLC needs protection against third-party IP claims, data breaches, and gross negligence of Party A/JV.",
+        "judge_reasoning": "Excellent detection. Risk table NC2 identifies missing indemnification and need for IP claims and negligence coverage. The proposed redline provides mutual indemnification for IP infringement, bodily injury, and legal violations with defense control procedures. All GT key elements addressed."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Change of Control Provision",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-10.2 Termination for Cause",
+      "evidence": {
+        "proposed_revision_excerpt": "...or upon the other Party's insolvency, assignment for the benefit of creditors, bankruptcy filing, or a change of control to a direct competitor of the terminating Party.",
+        "effective_rationale_excerpt": "Cure rights exist, but no insolvency/change-of-control triggers benefiting Quantum Dynamics LLC.",
+        "judge_reasoning": "Strong detection. Risk table at 10.2 specifically identifies missing change-of-control triggers. The proposed redline adds CoC to direct competitor as a termination right, addressing the primary GT concern about termination rights on CoC to competitor."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vague Reserve Rights",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "quality_points": 4,
+      "total_points": 5.0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "'Reasonable reserves' determined by Steering Committee is subjective. This could delay returns to Quantum Dynamics LLC.",
+        "judge_reasoning": "Detection via risk table at 5.2 which identifies subjective reserves could delay returns. Recommended action is to set reserve parameters and require written justification with time-limited holds. However, no specific redline is proposed. Detection is present but fix is recommendation only."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "11.1-11.3",
+      "tier": "T3",
+      "issue": "Multi-Step Dispute Resolution",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9.0,
+      "matched_redline_id": "Redline-11.3 Arbitration",
+      "evidence": {
+        "proposed_revision_excerpt": "11.3 Arbitration. If mediation fails, disputes shall be resolved by confidential, binding arbitration administered by the American Arbitration Association under its Commercial Arbitration Rules before a single arbitrator with technical expertise in AI/quantum computing, seated in San Francisco, California. Either Party may seek interim injunctive relief in any court of competent jurisdiction to protect intellectual property or Confidential Information.",
+        "effective_rationale_excerpt": "Lacks rules (e.g., AAA), injunctive carve-out, confidentiality, and arbitrator expertise. These omissions can prejudice Quantum Dynamics LLC.",
+        "judge_reasoning": "Detection present via risk table at 11.3 noting missing rules, injunctive relief, confidentiality, and arbitrator expertise. The redline adds AAA rules, technical arbitrator requirement, confidentiality, and interim relief carve-out. Addresses core GT issues via improved process including emergency relief option."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "1.4",
+      "tier": "T3",
+      "issue": "No Conditions Precedent for JV Entity",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Conditions Precedent (New)",
+      "evidence": {
+        "proposed_revision_excerpt": "2.5 Conditions Precedent. No Party shall be obligated to contribute capital, license Contributed IP, or commence performance until (a) the JV Entity is formed, (b) definitive JV agreements (including operating agreement and IP schedules) are executed, and (c) the initial annual budget and business plan are approved by the Steering Committee.",
+        "effective_rationale_excerpt": "Formation is optional. Without conditions precedent, capital/IP could flow before entity formed. Quantum Dynamics LLC requires entity formation triggers before performance.",
+        "judge_reasoning": "Excellent detection. Risk table at 1.4 identifies optional formation and missing conditions precedent. The redline adds comprehensive conditions: entity formation, definitive agreements, IP schedules, and budget approval before obligations commence. All GT key elements addressed."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Data Protection (New)",
+      "evidence": {
+        "proposed_revision_excerpt": "12.10 Data Protection. The Parties shall comply with applicable data protection laws and maintain appropriate technical and organizational measures to protect personal data processed under this MOU. Each Party shall promptly notify the other of any personal data breach affecting the JV and cooperate in remediation. Cross-border transfers shall comply with applicable transfer mechanisms.",
+        "effective_rationale_excerpt": "No data/privacy obligations. Quantum Dynamics LLC risks regulatory exposure if personal or sensitive data is processed.",
+        "judge_reasoning": "Excellent detection. Risk table NC3 identifies missing data protection, security controls, breach notification, and cross-border concerns. The redline adds compliance obligation, security measures, breach notification, and cross-border transfer requirements. All GT key elements addressed."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-7.2 Confidentiality Survival",
+      "evidence": {
+        "proposed_revision_excerpt": "7.2 Survival. The confidentiality obligations shall survive termination of this MOU for a period of five (5) years, except that obligations with respect to trade secrets shall survive for so long as such information remains a trade secret under applicable law.",
+        "effective_rationale_excerpt": "Five years may be insufficient for trade secrets. Quantum Dynamics LLC needs indefinite protection for trade secrets.",
+        "judge_reasoning": "Excellent detection. Risk table at 7.2 identifies 5-year inadequacy for trade secrets. The redline adds indefinite protection for trade secrets while maintaining 5 years for other info. This precisely matches GT key element for differentiated treatment."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Contributed IP",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify sco",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The definition lacks detail on scope, exclusions, and updates to Exhibit A. Without clear boundaries and procedures to update, there is risk of inadvertent inclusion of proprietary IP. This threatens "
+    },
+    {
+      "clause": "1.2",
+      "issue_summary": "Definition of Developed IP",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to tie Develop",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Developed IP is broadly defined without field limitations or ownership allocation mechanics. For a quantum AI JV, this breadth risks joint ownership disputes. Quantum Dynamics LLC needs clarity to avo"
+    },
+    {
+      "clause": "1.3",
+      "issue_summary": "Definition of Joint Venture",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to state JV is",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The JV is referenced as a “business arrangement” without confirming whether it is contractual-only or an entity. Ambiguity complicates liability, tax, and IP title decisions, disadvantaging Quantum Dy"
+    },
+    {
+      "clause": "1.4",
+      "issue_summary": "Definition of JV Entity",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require JV ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Formation is optional. Without conditions precedent, capital/IP could flow before proper entity formation and protections. Quantum Dynamics LLC requires entity formation triggers before performance."
+    },
+    {
+      "clause": "1.5",
+      "issue_summary": "Definition of Purpose",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to narrow Purp",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Purpose is broad. Broad purposes expand exclusivity and non-compete exposure. Narrowing to defined use-cases/customers/industries benefits Quantum Dynamics LLC by limiting restraints exposure."
+    },
+    {
+      "clause": "2.1",
+      "issue_summary": "Purpose establishment",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to reference m",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad combination of technologies without performance standards or milestones risks open-ended obligations. Quantum Dynamics LLC needs measurable objectives to assess success and trigger remedies."
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Scope of Activities",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require Ste",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Activities are expansive with “such other activities” language, creating scope creep. This can overextend resource commitments by Quantum Dynamics LLC."
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Party A Contributions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require pre",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Use of its brand” and “customer relationships” access lack scope, approval, and revocability. Risk of brand misuse and uncontrolled commitments harmful to Quantum Dynamics LLC’s joint go-to-market."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Party B Contributions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add SLAs, s",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides hardware/software/platform access without uptime, support SLAs, security standards, export controls, or cost allocations, potentially creating unbounded obligations for Quantum Dynamics LLC."
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Steering Committee",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add quorum,",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Quarterly cadence and responsibilities are broad. Lack of quorum rules, tie-breakers, and escalation path invites deadlock."
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "General Manager appointment",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define auth",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "GM powers are broad “within approved budgets,” but procurement thresholds and policy scope are undefined. This risks unauthorized commitments impacting Quantum Dynamics LLC."
+    },
+    {
+      "clause": "4.4",
+      "issue_summary": "Voting mechanics",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to enumerate m",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Majority voting with one vote per Party conflicts with unanimity on “material decisions,” but lacks a clear list. Ambiguity invites disputes."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Profit/loss equal split",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include GAA",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Equal allocation is acceptable, but without waterfall definitions, audit rights, or GAAP consistency, disagreements may arise."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Distributions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to set reserve",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Reasonable reserves” determined by Steering Committee is subjective. This could delay returns to Quantum Dynamics LLC."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Tax matters",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to appoint a t",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cooperation is noted, but no tax representative, partnership status, or information-sharing timelines."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Improvements ownership and JV license",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify lic",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ownership to contributing Party is fine, but license scope to JV is vague. Quantum Dynamics LLC needs perpetual, irrevocable, worldwide, royalty-free, sublicensable rights."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Confidentiality",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add standar",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No standard exceptions (public domain, independently developed, legally compelled disclosure) or residuals. Risk of overbroad restrictions on Quantum Dynamics LLC personnel."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Confidentiality survival",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to state trade",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Five years may be insufficient for trade secrets. Quantum Dynamics LLC needs indefinite protection for trade secrets."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Term",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include ren",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Five-year term is fine, but lacks renewal mechanics. Quantum Dynamics LLC may want auto-renew with opt-out."
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Termination for cause",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add insolve",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cure rights exist, but no insolvency/change-of-control triggers benefiting Quantum Dynamics LLC."
+    },
+    {
+      "clause": "10.4",
+      "issue_summary": "Effect of termination",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include def",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Division/licensing of Developed IP “as agreed” is too open-ended, risking stalemate and loss of use by Quantum Dynamics LLC."
+    },
+    {
+      "clause": "11.3",
+      "issue_summary": "Arbitration in San Francisco",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add rules, ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Lacks rules (e.g., AAA), injunctive carve-out, confidentiality, and arbitrator expertise. These omissions can prejudice Quantum Dynamics LLC."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Governing law Delaware",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add that ma",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Delaware law is acceptable, but interplay with California non-compete laws should be acknowledged to protect Quantum Dynamics LLC."
+    },
+    {
+      "clause": "12.4",
+      "issue_summary": "Assignment",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to permit assi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Blanket consent requirement may block intra-group restructuring by Quantum Dynamics LLC."
+    },
+    {
+      "clause": "Exhibit A",
+      "issue_summary": "Contributed IP schedule",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require det",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Not attached; without a detailed list, scope ambiguity risks accidental over-licensing of Quantum Dynamics LLC IP."
+    },
+    {
+      "clause": "NC4",
+      "issue_summary": "New Clause Recommendation: Force Majeure",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD force majeure wi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absent. External disruptions could unfairly be treated as breach by Quantum Dynamics LLC."
+    },
+    {
+      "clause": "NC5",
+      "issue_summary": "New Clause Recommendation: Export/Trade Compliance",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD mutual complianc",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No export/sanctions compliance language; critical for quantum tech. Quantum Dynamics LLC could face regulatory penalties."
+    },
+    {
+      "clause": "NC6",
+      "issue_summary": "New Clause Recommendation: Employee Non-Solicit (mutual)",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD narrowly tailore",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No protection for key talent; non-compete is overbroad. Reasonable mutual non-solicit better protects Quantum Dynamics LLC’s team."
+    },
+    {
+      "clause": "NC8",
+      "issue_summary": "New Clause Recommendation: Performance Standards & Milestones",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD milestone plan, ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No deliverables, milestones, or acceptance criteria; this weakens accountability for Party A/JV performance impacting Quantum Dynamics LLC."
+    },
+    {
+      "clause": "NC10",
+      "issue_summary": "New Clause Recommendation: Interim Injunctive Relief",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD clause permittin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No express right to injunctive relief for IP/confidentiality breaches. Quantum Dynamics LLC needs swift protection."
+    },
+    {
+      "clause": "Section 2.3 Exclusivity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause imposes a blanket non-compete without territory, field narrowing, or carve-outs. Narrowing it to the Territory and the Purpose, grandfathering pre-existing obligations, and adding "
+    },
+    {
+      "clause": "Section 3.1 Capital Contributions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause requires funding without foundational protections in place. Conditioning funding on entity formation, definitive agreements, and an approved budget ensures Quantum Dynamics LLC doe"
+    },
+    {
+      "clause": "Section 3.4 Additional Capital",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause allows open-ended dilution with minimal process safeguards. Requiring unanimous approval, notice, cure, and a floor on dilution protects Quantum Dynamics LLC from coercive capital "
+    },
+    {
+      "clause": "Section 6.1 Contributed IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original license is overly broad and silent on sublicensing and reverse engineering, risking leakage of Quantum Dynamics LLC’s quantum IP. Adding non-transferability, controlled sublicensing, and "
+    },
+    {
+      "clause": "Section 6.2 Developed IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Joint ownership without ground rules invites conflict and uncontrolled use. Assigning Developed IP to the JV Entity centralizes control and monetization, while giving each Party limited outside-field "
+    },
+    {
+      "clause": "Section 6.3 Improvements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original license lacks scope and key attributes, risking later disputes. Specifying perpetual, irrevocable scope, geographic reach, and rights ensures the JV can fully commercialize improvements w"
+    },
+    {
+      "clause": "Section 7.1 Confidentiality",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks standard exclusions and process, creating overbreadth and operational friction. Adding care standards, customary exclusions, compelled disclosure mechanics, and residuals pro"
+    },
+    {
+      "clause": "Section 7.2 Confidentiality Survival",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limiting all confidentiality to five years risks loss of trade secret protection for critical quantum designs. Extending survival for trade secrets aligns with law and commercial practice, ensuring Qu"
+    },
+    {
+      "clause": "Section 8.1 Deadlock",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert within Article 8 (Deadlock) replacing “Reserved”. A clear deadlock mechanism is essential for timely decision-making in a two-party JV. The staged escalation, expert input, and buy-s"
+    },
+    {
+      "clause": "Section 9.1 Non-Compete",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original non-compete is overbroad and likely unenforceable, especially for a California company. Replacing it with a narrow, lawful non-solicit/non-interference preserves legitimate JV interests w"
+    },
+    {
+      "clause": "Section 10.2 Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause omits common-sense triggers that leave Quantum Dynamics LLC exposed if the counterparty becomes insolvent or is acquired by a competitor. Adding these triggers provides a clean exi"
+    },
+    {
+      "clause": "Section 10.4 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause’s “as agreed” invites deadlock and jeopardizes continuity. Establishing a default license split and transition assistance ensures Quantum Dynamics LLC can continue serving customer"
+    },
+    {
+      "clause": "Section 11.3 Arbitration",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original lacks rules, confidentiality, and interim relief, creating uncertainty and risk to critical IP. Specifying AAA rules, confidentiality, and a technically qualified arbitrator ensures effic"
+    },
+    {
+      "clause": "Section 12.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original choice-of-law could be used to support broader restraints. Clarifying that mandatory non-waivable local laws apply to restraints ensures compliance with California law protecting Quantum "
+    },
+    {
+      "clause": "Force Majeure (New)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 12.7 in Article 12 (General Provisions). The absence of force majeure exposes Quantum Dynamics LLC to breach risk for uncontrollable events affecting hardware supply c"
+    },
+    {
+      "clause": "Limitation of Liability (New)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 12.8 in Article 12 (General Provisions). Without a cap, Quantum Dynamics LLC faces disproportionate exposure relative to early-stage R&D uncertainty. A mutual cap and "
+    },
+    {
+      "clause": "Mutual Indemnities (New)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 12.9 in Article 12 (General Provisions). The MOU lacks any indemnity, leaving Quantum Dynamics LLC exposed to third-party claims, particularly IP infringement tied to "
+    },
+    {
+      "clause": "Data Protection (New)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 12.10 in Article 12 (General Provisions). Quantum AI solutions may process sensitive data; absent obligations create regulatory and reputational risks for Quantum Dyna"
+    },
+    {
+      "clause": "Export/Trade Compliance (New)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 12.11 in Article 12 (General Provisions). Quantum technologies often implicate export controls; explicit commitments reduce regulatory risk and ensure disciplined mark"
+    },
+    {
+      "clause": "Conditions Precedent (New)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 2.5 after Section 2.4 (if added) or after Section 2.3. This prevents premature commitments by Quantum Dynamics LLC before core protections are in place. Tying obligati"
+    },
+    {
+      "clause": "Performance Standards & Milestones (New)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 2.4 after Section 2.3. Clear milestones and acceptance criteria establish accountability for both Parties and the JV. This protects Quantum Dynamics LLC by defining su"
+    },
+    {
+      "clause": "Section 12.4 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause may impede normal corporate transactions or internal reorganizations. Allowing assignments to affiliates and in change-of-control events with assumption of obligations preserves fl"
+    },
+    {
+      "clause": "Section 4.2 Steering Committee",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks quorum and tie-resolution, inviting procedural disputes and paralysis. Adding quorum, written consent, and a link to deadlock procedures provides predictable governance and a"
+    },
+    {
+      "clause": "Section 4.4 Voting",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original text risks conflict between majority voting and undefined “Material Decisions.” Enumerating Material Decisions reduces ambiguity and protects Quantum Dynamics LLC’s veto on critical matte"
+    },
+    {
+      "clause": "Employee Non-Solicit (New)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 9.2 following revised Section 9.1. A mutual non-solicit is a narrower, more enforceable protection than a non-compete and guards the JV’s and Quantum Dynamics LLC’s ta"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 18,
+      "P": 0,
+      "N": 0,
+      "NMI": 0
+    },
+    "t1_gate_pass": true,
+    "t1_count": 5,
+    "t1_all_detected": true,
+    "total_detection_points": 93.0,
+    "total_quality_points": 152,
+    "total_points": 245.0,
+    "additional_issues_count": 55
+  }
+}

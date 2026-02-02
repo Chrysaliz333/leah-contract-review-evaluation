@@ -1,0 +1,738 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "sonnet45",
+    "evaluation_timestamp": "2026-01-25T18:15:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-10 - Exit and Buyout",
+      "evidence": {
+        "proposed_revision_excerpt": "ARTICLE 10 - EXIT AND BUYOUT [8 detailed subsections covering voluntary exit rights, forced buyout triggers, buyout procedures, FMV determination, buy-sell provision, drag-along rights, tag-along rights, and post-exit obligations]",
+        "effective_rationale_excerpt": "The complete absence of exit and buyout provisions creates unacceptable lock-in risk for Growth Dynamics Partners LP, potentially trapping capital indefinitely in an unproductive partnership. This comprehensive article provides multiple exit mechanisms tailored to different scenarios.",
+        "judge_reasoning": "Sonnet45 correctly identifies that Article 10 is Reserved with no exit/buyout provisions and recognizes this as a critical structural deficiency. The proposed Article 10 is exceptionally comprehensive with 8 subsections covering voluntary exits (after year 3), forced buyouts (breach, insolvency, change of control, funding failures), valuation methodology, buy-sell deadlock resolution, drag/tag-along rights, and post-exit obligations. This is the most thorough exit framework among all models and fully addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-4.1 - Management",
+      "evidence": {
+        "proposed_revision_excerpt": "Major decisions require approval of Partners holding at least seventy-five percent (75%) of the aggregate capital commitments to the Partnership... If Partners cannot reach agreement on a major decision within thirty (30) days of the matter being presented, either Partner may invoke the deadlock resolution procedures in Section 4.4.",
+        "effective_rationale_excerpt": "The original unanimous consent requirement creates unacceptable deadlock risk and gives Partner A unilateral veto power over all decisions... implements supermajority voting (75%) for truly major decisions while allowing majority Investment Committee approval for routine investments... deadlock resolution reference provides an escape mechanism if Partners cannot agree...",
+        "judge_reasoning": "Sonnet45 correctly identifies the extreme deadlock risk from unanimous consent with no tie-breaker. The redline replaces unanimous consent with 75% supermajority for major decisions, defines specific categories requiring this threshold, allows majority approval for smaller investments, and references deadlock resolution procedures. This comprehensively addresses the GT concern by reducing veto power while maintaining appropriate governance."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-3.3 - Default",
+      "evidence": {
+        "proposed_revision_excerpt": "The non-defaulting Partner may, at its option: (a) fund the defaulting Partner's capital commitment and receive a priority return equal to 15% per annum on the advanced amount, payable from the defaulting Partner's share of distributions; (b) dilute the defaulting Partner's ownership interest in the specific Co-Investment proportionally to reflect the non-defaulting Partner's increased contribution; (c) require the defaulting Partner to reimburse all due diligence costs and expenses incurred in connection with the Co-Investment; or (d) exercise the buyout rights set forth in Section 10.4.",
+        "effective_rationale_excerpt": "The original provision references non-existent Section 10.3, creating unenforceable obligations. This amendment establishes comprehensive default remedies that protect Growth Dynamics Partners LP if Partner A fails to fund commitments.",
+        "judge_reasoning": "Sonnet45 identifies the broken cross-reference and provides detailed default remedies including priority return (15% p.a.), dilution rights, due diligence cost reimbursement, buyout rights, 10-day cure period with late fee, and explicit statement that remedies are cumulative. This comprehensively addresses both the reference error and provides substantive enforcement mechanisms."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-6.1 - Sharing Ratio",
+      "evidence": {
+        "proposed_revision_excerpt": "All profits and losses from Co-Investments shall be allocated to the Partners in proportion to their respective capital contributions to each specific Co-Investment. Each Partner shall receive a preferred return of eight percent (8%) per annum on its contributed capital, calculated from the funding date and payable before any other distributions. After payment of preferred returns, remaining profits shall be allocated: (a) first, to return each Partner's contributed capital; (b) second, twenty percent (20%) to Growth Dynamics Partners LP as operational value-added carry...",
+        "effective_rationale_excerpt": "The original equal split regardless of capital creates severe economic misalignment and penalizes Growth Dynamics Partners LP for contributing more capital or operational resources. This amendment implements proportional allocation based on actual capital contributions...",
+        "judge_reasoning": "Sonnet45 identifies the severe misalignment from fixed 50/50 sharing and proposes a sophisticated waterfall: pro-rata allocation, 8% preferred return, return of capital, 20% operational carry for Growth Dynamics' value-add, then pro-rata profit split. This goes beyond the GT requirement (which expects proportional allocation or preferred return) to create a complete alignment structure recognizing both capital and operational contributions."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract contains no limitation of liability clause. While Sonnet45 proposes many comprehensive redlines, there is no provision that caps aggregate liability or excludes consequential damages. This is a complete miss of a critical T1 structural gap."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract has no indemnification provisions. Sonnet45 does not propose adding mutual indemnification for breaches, gross negligence, or third-party claims. This is a complete miss of a critical T1 issue."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-5.3 - Exclusivity Period",
+      "evidence": {
+        "proposed_revision_excerpt": "Once a Target Company is presented to the Investment Committee, neither Partner may pursue an independent investment in such company for one hundred twenty (120) days from the date of presentation... If the Investment Committee formally declines the opportunity, the exclusivity period shall terminate immediately upon written notice of declination. Each Partner shall disclose to the other Partner any subsequent contact with or investment in such Target Company within twelve (12) months following the exclusivity period. Any Partner that breaches this exclusivity obligation shall: (a) disgorge to the Partnership all profits realized from the investment; and (b) reimburse the Partnership for all due diligence expenses incurred...",
+        "effective_rationale_excerpt": "The original sixty-day period is insufficient for complex growth equity due diligence involving operational assessment, market analysis, and management evaluation. This amendment extends exclusivity to 120 days...",
+        "judge_reasoning": "Sonnet45 identifies that 60 days is too short for thorough growth-equity due diligence. The redline extends to 120 days with immediate termination on declination, 12-month disclosure requirement, and strong breach remedies (disgorgement + expense reimbursement). This comprehensively addresses the GT concern with additional enforcement mechanisms."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The GT expects concern about indefinite post-termination continuation without time limits or buyout options. Sonnet45's risk table does not address 12.3 specifically. While the broader exit/buyout framework in Article 10 could provide mechanisms, there is no specific identification that post-termination management could continue for years. This specific GT concern is not detected."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-15 - Information Rights and Reporting",
+      "evidence": {
+        "proposed_revision_excerpt": "ARTICLE 15 - INFORMATION RIGHTS AND REPORTING [6 detailed subsections covering quarterly portfolio reports, annual audited financials, material event notices, access to portfolio company information, independent investment activity disclosure, and inspection rights]",
+        "effective_rationale_excerpt": "The complete absence of information rights and reporting obligations creates information asymmetry that disadvantages Growth Dynamics Partners LP and prevents effective monitoring of Partner A's compliance and portfolio performance.",
+        "judge_reasoning": "Sonnet45 recognizes the absence of formal information rights and proposes a comprehensive Article 15 with quarterly portfolio reports (20-day deadline), annual audited financials (90-day deadline), material event notices (5-day deadline), portfolio company information access, independent investment disclosure (30-day deadline), and inspection rights. This fully addresses all GT key elements for transparency and oversight."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-11.2 - Non-Solicitation",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Partner shall directly solicit or encourage employees of the other Partner to terminate their employment during the Term and for one (1) year thereafter. \"Solicit\" means active recruitment efforts... This restriction does not apply to: (a) employees who independently initiate contact and apply without solicitation; (b) general advertisements or recruiting not specifically targeted at the other Partner; (c) employees of portfolio companies (who may be recruited by either Partner for portfolio company or Partner roles); or (d) employees terminated by their employer.",
+        "effective_rationale_excerpt": "The original provision's undefined \"solicit\" creates ambiguity... This amendment defines \"solicit\" as active recruitment only, protecting Growth Dynamics Partners LP's ability to hire talent that approaches independently.",
+        "judge_reasoning": "Sonnet45 refines the non-solicitation provision with clear definitions and carve-outs (independent applications, general advertising, portfolio company employees, terminated employees). While this improves the provision, the GT suggests considering whether it's needed at all. The redline makes the restriction more reasonable but doesn't question its necessity. Full quality scores awarded for comprehensive drafting even though it doesn't address the GT's core point about reconsidering the need."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-9.1 - Confidentiality Obligations",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Partner shall maintain strict confidentiality regarding: (a) Proprietary Information: investment strategies, operational methodologies, valuation models, and analytical frameworks (protected perpetually as trade secrets); (b) Deal Flow Information: target company identities, investment terms, and transaction structures (protected for ten (10) years post-termination); (c) Portfolio Company Information: financial data, business plans, and strategic initiatives (protected for seven (7) years post-termination or until public disclosure); and (d) Agreement Terms: economic terms and governance provisions of this Agreement (protected for ten (10) years post-termination).",
+        "effective_rationale_excerpt": "The original five-year survival inadequately protects Growth Dynamics Partners LP's proprietary operational improvement methodologies and investment strategies that provide long-term competitive advantage. This amendment establishes tiered protection periods based on information sensitivity, with perpetual protection for true trade secrets...",
+        "judge_reasoning": "Sonnet45 identifies that 5-year survival is insufficient for trade secrets and proprietary methodologies. The redline creates a sophisticated tiered structure: perpetual for trade secrets, 10 years for deal flow and agreement terms, 7 years for portfolio company info. Includes injunctive relief provision and $500K liquidated damages per breach. This comprehensively exceeds GT expectations by creating category-specific protection with strong enforcement."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.1 - Term",
+      "evidence": {
+        "proposed_revision_excerpt": "This Agreement shall continue for five (5) years from the Effective Date (the \"Initial Term\"). At the end of the Initial Term, this Agreement shall continue only if both Partners affirmatively agree in writing to renewal at least one hundred eighty (180) days prior to expiration of the Initial Term... Either Partner may elect not to renew by providing written notice at least one hundred eighty (180) days prior to the end of the then-current term.",
+        "effective_rationale_excerpt": "The original automatic renewal with one-year opt-out notice creates excessive lock-in and forces Growth Dynamics Partners LP to make renewal decisions far in advance without adequate information about partnership performance. This amendment replaces automatic renewal with affirmative mutual consent, ensuring both Partners actively choose to continue... The 180-day notice period (reduced from one year) provides adequate planning time...",
+        "judge_reasoning": "Sonnet45 identifies that one-year notice is excessive (at 12.1, semantically related to 10.2). The redline reduces to 180 days, replaces automatic renewal with affirmative consent, prohibits new investments post-notice, and requires good-faith wind-down negotiation. The GT expects 180 days minimum; Sonnet45 meets this and adds structural improvements to the renewal process. This fully addresses the GT concern."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.3",
+      "issue_summary": "Non-Exclusivity Provision",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to include mut",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Unilateral exposure exists where Partner A can pursue competing investments without restriction while Growth Dynamics Partners LP shares deal flow and expertise. The phrase \"except as otherwise provid"
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Default Provisions Reference",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to add compreh",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Critical enforcement mechanism missing - Section 10.3 is referenced but does not exist in the contract. This creates unenforceable obligations for capital calls and leaves Growth Dynamics Partners LP "
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Unanimous Consent Requirement",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to implement s",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Deadlock risk is extreme with unanimous consent required for all major decisions. This gives Partner A unilateral veto power over Growth Dynamics Partners LP's ability to execute investment strategy. "
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Exclusivity Period Limitation",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend excl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Sixty-day exclusivity may be insufficient for complex growth equity transactions requiring extensive operational due diligence. The provision lacks consequences for violations and does not address sit"
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Equal Profit Sharing Regardless of Capital",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to allocate pr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Severe economic misalignment - Growth Dynamics Partners LP receives only 50% of profits regardless of contributing potentially more capital to specific deals. This creates adverse incentives for Partn"
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "No Management Fee Structure",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to implement m",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cost recovery absent - Growth Dynamics Partners LP cannot recover operational expenses for deal sourcing, due diligence, and portfolio management despite bringing operational improvement expertise. Th"
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Confidentiality Survival Period",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend surv",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Five-year survival may be insufficient for proprietary investment strategies and operational methodologies that provide long-term competitive advantage. The provision does not distinguish between diff"
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Missing Exit and Buyout Provisions",
+      "leah_classification": "❌",
+      "leah_action": "ADD comprehensive Ar",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Critical article entirely absent - No buyout rights, valuation mechanisms, or exit procedures exist. This creates lock-in risk where Growth Dynamics Partners LP cannot exit even if the partnership bec"
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Portfolio Company Non-Compete",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define \"dir",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Consent requirement gives Partner A veto power over Growth Dynamics Partners LP's independent investment opportunities in adjacent markets. The term \"directly competes\" is undefined and subject to bro"
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Employee Non-Solicitation",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define \"sol",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "One-year post-termination restriction may be reasonable in duration but lacks scope definition. The term \"solicit\" is undefined - unclear if this prohibits responding to unsolicited applications or ge"
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Automatic Renewal with One-Year Notice",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to reduce non-",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "One-year non-renewal notice is excessively long and creates strategic disadvantage for Growth Dynamics Partners LP. Partner A can effectively lock in Growth Dynamics Partners LP for up to three years "
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Termination for Cause Cure Period",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to reduce cure",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Sixty-day cure period for material breach is excessively long in fast-moving growth equity markets. Partner A could continue harmful conduct for two months before termination becomes effective. The te"
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Negotiation Requirement",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify 30-",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Good faith negotiation between senior principals lacks timeframe limits and could be used by Partner A to delay resolution of disputes. No definition of \"senior principals\" exists - Partner A could de"
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "New York Arbitration Venue",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow Bosto",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "New York venue may create logistical burden and increased costs for Growth Dynamics Partners LP based in Boston. While AAA rules are standard, the provision does not specify arbitrator qualifications "
+    },
+    {
+      "clause": "14.2",
+      "issue_summary": "Assignment Restriction",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to permit assi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual consent requirement for assignment creates illiquidity for Growth Dynamics Partners LP's partnership interest. No exception exists for assignments to Growth Dynamics Partners LP affiliates or i"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Capital Contribution Proportionality Tracking",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Section 3.4 ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of tracking mechanism for relative capital contributions creates accounting disputes and makes the equal profit-sharing provision in 6.1 even more problematic. Without documented contribution "
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Investment Committee Deadlock Resolution",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Section 4.4 ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No tiebreaker mechanism exists when Investment Committee representatives disagree on investment decisions. This creates operational paralysis where valuable opportunities are lost due to procedural gr"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Portfolio Company Board Representation",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Section 5.4 ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Complete silence on board representation rights in portfolio companies creates governance vacuum and prevents Growth Dynamics Partners LP from exercising operational improvement expertise. Without def"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Key Person Provisions",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Section 4.5 ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No key person clause exists to protect Growth Dynamics Partners LP if Partner A's critical investment professionals depart or become unavailable. This creates continuity risk where the partnership con"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Expense Allocation and Reimbursement",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Section 6.4 ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Section 6.3 equal expense sharing is inadequate without defining what constitutes \"Partnership expenses\" versus partner operating costs. Growth Dynamics Partners LP's operational due diligence and pos"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Conflicting Investment Opportunities",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Section 5.4 ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Section 5.1 deal flow sharing lacks enforcement mechanism and does not address competing opportunities where both partners independently source the same target. No right of first refusal exists for op"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Representations and Warranties - Financial Capacity",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Section 8.3 ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Article 8 representations are inadequate - no representation regarding financial capacity to fund capital commitments exists. Partner A could enter partnership without sufficient capital to honor comm"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Information Rights and Reporting",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Article 15 r",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No information rights are specified beyond Investment Committee meetings. Growth Dynamics Partners LP lacks transparency into portfolio company performance, Partner A's independent investment activiti"
+    },
+    {
+      "clause": "Section 2.3 - Non-Exclusivity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision allows Partner A to compete directly with the Partnership while benefiting from Growth Dynamics Partners LP's deal flow and operational expertise. This amendment establishes mut"
+    },
+    {
+      "clause": "Section 3.3 - Default",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision references non-existent Section 10.3, creating unenforceable obligations. This amendment establishes comprehensive default remedies that protect Growth Dynamics Partners LP if P"
+    },
+    {
+      "clause": "Section 4.1 - Management",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original unanimous consent requirement creates unacceptable deadlock risk and gives Partner A unilateral veto power over all decisions. This amendment implements supermajority voting (75%) for tru"
+    },
+    {
+      "clause": "Section 5.3 - Exclusivity Period",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original sixty-day period is insufficient for complex growth equity due diligence involving operational assessment, market analysis, and management evaluation. This amendment extends exclusivity t"
+    },
+    {
+      "clause": "Section 6.1 - Sharing Ratio",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original equal split regardless of capital creates severe economic misalignment and penalizes Growth Dynamics Partners LP for contributing more capital or operational resources. This amendment imp"
+    },
+    {
+      "clause": "Section 7.1 - Management Fees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original no-fee structure forces Growth Dynamics Partners LP to subsidize Partnership activities despite providing substantial operational expertise and due diligence resources. This amendment imp"
+    },
+    {
+      "clause": "Section 9.1 - Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original five-year survival inadequately protects Growth Dynamics Partners LP's proprietary operational improvement methodologies and investment strategies that provide long-term competitive advan"
+    },
+    {
+      "clause": "Article 10 - Exit and Buyout",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 10, renumbering subsequent articles accordingly. The complete absence of exit and buyout provisions creates unacceptable lock-in risk for Growth Dynamics Partners LP, "
+    },
+    {
+      "clause": "Section 11.1 - Portfolio Company Non-Compete",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's undefined \"directly competes\" creates excessive restriction and litigation risk for Growth Dynamics Partners LP's independent investment activities. This amendment establishes"
+    },
+    {
+      "clause": "Section 11.2 - Non-Solicitation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's undefined \"solicit\" creates ambiguity about whether Growth Dynamics Partners LP can hire employees who independently apply or recruit from portfolio companies. This amendment "
+    },
+    {
+      "clause": "Section 12.1 - Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original automatic renewal with one-year opt-out notice creates excessive lock-in and forces Growth Dynamics Partners LP to make renewal decisions far in advance without adequate information about"
+    },
+    {
+      "clause": "Section 12.2 - Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original sixty-day cure period is excessively long and allows Partner A to continue harmful conduct for two months before Growth Dynamics Partners LP can terminate. This amendment reduces the cure"
+    },
+    {
+      "clause": "Section 13.1 - Negotiation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's undefined timeframes and process allow Partner A to delay dispute resolution indefinitely through prolonged \"negotiation.\" This amendment establishes specific deadlines (5 day"
+    },
+    {
+      "clause": "Section 13.2 - Arbitration",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's mandatory New York venue creates logistical burden and increased costs for Growth Dynamics Partners LP based in Boston. This amendment provides venue election to the initiatin"
+    },
+    {
+      "clause": "Section 14.2 - Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original absolute consent requirement creates illiquidity and gives Partner A unilateral power to trap Growth Dynamics Partners LP's capital indefinitely. This amendment adds reasonableness standa"
+    },
+    {
+      "clause": "Section 3.4 - Capital Contribution Records",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 3.4 within Article 3 (Capital Contributions). The absence of capital contribution tracking creates accounting disputes and makes the problematic equal profit-sharing p"
+    },
+    {
+      "clause": "Section 4.4 - Investment Committee Deadlock Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 4.4 within Article 4 (Governance). The absence of deadlock resolution mechanisms creates operational paralysis where valuable growth equity opportunities are lost due "
+    },
+    {
+      "clause": "Section 5.4 - Portfolio Company Board Representation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 5.4 within Article 5 (Deal Sourcing and Evaluation). The complete absence of board representation provisions creates governance vacuum and prevents Growth Dynamics Par"
+    },
+    {
+      "clause": "Section 4.5 - Key Person Provisions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 4.5 within Article 4 (Governance). The absence of key person provisions creates continuity risk where the Partnership continues despite departure of critical investmen"
+    },
+    {
+      "clause": "Section 6.4 - Expense Allocation and Reimbursement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 6.4 within Article 6 (Profit and Loss Sharing). Section 6.3's vague \"Partnership expenses\" creates disputes and enables Partner A to shift inappropriate costs to Growt"
+    },
+    {
+      "clause": "Section 5.5 - Conflicting Investment Opportunities and Right of First Refusal",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 5.5 within Article 5 (Deal Sourcing and Evaluation). Section 5.1's vague deal flow sharing lacks enforcement mechanism and does not address competing opportunities whe"
+    },
+    {
+      "clause": "Section 8.3 - Financial Capacity and Solvency",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 8.3 within Article 8 (Representations and Warranties). Article 8's inadequate representations fail to address financial capacity to fund capital commitments, creating "
+    },
+    {
+      "clause": "Article 15 - Information Rights and Reporting",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 15, renumbering subsequent articles accordingly. The complete absence of information rights and reporting obligations creates information asymmetry that disadvantages "
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 8,
+      "P": 0,
+      "N": 0,
+      "NMI": 4
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      },
+      "T2": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "total_detection_points": 49.0,
+    "total_quality_points": 81,
+    "weighted_score": 76.0,
+    "max_possible": 70.0,
+    "percentage": 108.57,
+    "total_points": 130.0,
+    "additional_issues_count": 46
+  }
+}

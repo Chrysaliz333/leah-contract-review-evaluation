@@ -1,0 +1,400 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "pathfinder",
+    "environment": "hotfix",
+    "gt_version": "1.0",
+    "part_b_gt_version": "3.0_v4-enhanced_LOCKED",
+    "evaluation_timestamp": "2026-01-25T22:00:00Z",
+    "evaluator": "evaluation_agent"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "RESELLER_01",
+      "clause": "4.1",
+      "section": "Pricing",
+      "cp_redline_description": "Notice shortened to 7 days, retroactive application to unfulfilled orders",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "cp_redline_responses entry for '4.1 Price Change Notice': recommended_action='MODIFY'. Proposed Revision: 'Vendor may modify prices, discounts, or product offerings no more than once per calendar quarter, effective sixty (60) days after written notice to Reseller. Any modifications shall not apply to purchase orders accepted by Vendor before the effective date.' Rationale: 'The existing redline's seven-day window is commercially impractical and exposes Reseller to margin loss. The revision restores a workable sixty-day buffer, limits frequency to quarterly, and protects existing accepted orders.'",
+        "judge_reasoning": "Leah chose MODIFY instead of the expected REJECT. However, the revision effectively reverts the problematic changes: restores a longer notice period (60 days vs 7), removes retroactive application, and protects accepted orders. The reasoning addresses all GT points (inadequate notice, retroactive application risk). Action score 1 (acceptable but not primary REJECT), Revision score 2 (exceeds baseline with 60-day + quarterly cap + protects orders), Reasoning score 2 (comprehensive business impact analysis)."
+      }
+    },
+    {
+      "gt_id": "RESELLER_02",
+      "clause": "5.1",
+      "section": "Payment Terms",
+      "cp_redline_description": "15-day payment (vs 30), 2% interest (vs 1.5%), suspension for any past-due",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "cp_redline_responses entry for '5.1 Payment Terms': recommended_action='MODIFY'. existing_redlines_check shows: 'Reseller shall pay all undisputed invoices within thirty (30) days of invoice date. Late payments shall accrue interest at the lower of one and one-half percent (1.5%) per month or the maximum rate permitted by law. Vendor may suspend new order acceptance if any undisputed amount remains unpaid forty-five (45) days past due after written notice.'",
+        "judge_reasoning": "Leah chose MODIFY instead of REJECT. The revision restores 30-day payment terms, caps interest at 1.5% (or legal max), and conditions suspension on 45-day past-due with notice rather than immediate suspension for any past-due. This addresses all key elements from GT. Action score 1 (MODIFY acceptable per GT variations), Revision score 2 (restores baseline terms with additional dispute protection), Reasoning score 2 (addresses cash flow, interest rate, and suspension concerns)."
+      }
+    },
+    {
+      "gt_id": "RESELLER_03",
+      "clause": "9.1",
+      "section": "Term",
+      "cp_redline_description": "1-year term (vs 2), Vendor-only 30-day convenience termination",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "cp_redline_responses entry for '9.1 Term & Termination': recommended_action='REJECT'. Rationale: 'The redline grants Vendor a unilateral convenience exit and shortens the term, undermining Reseller's investment horizon. Rejecting the change preserves balanced renewal mechanics and prevents sudden termination that could strand Reseller's customer obligations and inventory.'",
+        "judge_reasoning": "Leah correctly identified REJECT as the appropriate action. The reasoning addresses all GT key elements: 1-year insufficient for investment recovery, Vendor-only convenience termination creates imbalance, inadequate notice. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "RESELLER_04",
+      "clause": "12.2",
+      "section": "Liability Cap",
+      "cp_redline_description": "Cap reduced to lesser of product price or $25K (vs 12-month amounts paid)",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "cp_redline_responses entry for '12.2 Liability Cap': recommended_action='MODIFY'. Proposed Revision: 'EXCEPT FOR LIABILITY ARISING FROM GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR INFRINGEMENT OF THIRD-PARTY INTELLECTUAL PROPERTY RIGHTS, EITHER PARTY'S AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE GREATER OF (A) TWO HUNDRED FIFTY THOUSAND DOLLARS (US $250,000) OR (B) THE TOTAL AMOUNTS PAID BY RESELLER TO VENDOR UNDER THIS AGREEMENT DURING THE TWENTY-FOUR (24) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM.'",
+        "judge_reasoning": "Leah chose MODIFY instead of REJECT. However, the revision significantly improves on baseline: extends to 24 months (vs 12), adds $250K floor, adds carve-outs for gross negligence/willful misconduct/IP. This exceeds the GT's 'better' acceptable variations. Action score 1 (MODIFY acceptable per variations), Revision score 2 (exceeds baseline requirements), Reasoning score 2 (addresses meaningless product-price cap and inadequate $25K ceiling)."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 21,
+    "max_score": 24,
+    "percentage": 87.5,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 16,
+      "matched_redline_id": "risk_table_4.1",
+      "evidence": {
+        "proposed_revision_excerpt": "From existing_redlines_check: 'Vendor may modify prices, discounts, or product offerings no more than once per calendar quarter, effective sixty (60) days after written notice to Reseller. Any modifications shall not apply to purchase orders accepted by Vendor before the effective date.'",
+        "effective_rationale_excerpt": "risk_table 4.1 (original): 'Frequency/limit undefined; annual cap desirable; tie to CPI.' - classified as Requires Clarification with AMEND action.",
+        "judge_reasoning": "Leah flags 4.1 Price Modifications as Requires Clarification in risk_table and provides comprehensive revision addressing: extended notice (60 days), frequency limit (quarterly), protects accepted orders. All GT key elements addressed. Detection Y, quality scores high."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "No termination for convenience during Term",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_9.1",
+      "evidence": {
+        "proposed_revision_excerpt": "risk_table 9.1 Term (original): classified as Requires Clarification, detailed_reasoning: 'Lacks Reseller convenience termination or post-termination sell-off period.' recommended_action: AMEND.",
+        "effective_rationale_excerpt": "existing_redlines_check Term and Termination entry rejects CP's changes and preserves 'balanced renewal mechanics'.",
+        "judge_reasoning": "Leah identifies the lack of convenience termination in risk_table at 9.1 and flags for amendment. The response to CP redline explicitly rejects asymmetric termination. However, no specific revision language provided for the underlying issue (just rejection of CP changes). Detection Y, quality moderate as no affirmative convenience termination added."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Vendor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "existing_redlines_check_12.2",
+      "evidence": {
+        "proposed_revision_excerpt": "existing_redlines_check Liability Cap: 'EITHER PARTY'S AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE GREATER OF (A) TWO HUNDRED FIFTY THOUSAND DOLLARS (US $250,000) OR (B) THE TOTAL AMOUNTS PAID BY RESELLER TO VENDOR UNDER THIS AGREEMENT DURING THE TWENTY-FOUR (24) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM.' Adds carve-outs for gross negligence, willful misconduct, IP infringement.",
+        "effective_rationale_excerpt": "Rationale: 'The redline's cap is unreasonably low and product-specific, offering insufficient protection for significant breaches. The proposed revision raises the cap to a commercially reasonable level, applies mutuality, excludes egregious conduct, and extends the look-back period.'",
+        "judge_reasoning": "Leah addresses all GT key elements: increases to 24 months (GT: 24+), adds $250K minimum floor (GT: consider floor), adds carve-outs for IP infringement and willful misconduct (GT: add carve-outs). Excellent revision exceeding GT expectations. Full quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.2",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 16,
+      "matched_redline_id": "risk_table_11.2",
+      "evidence": {
+        "proposed_revision_excerpt": "risk_table 11.2 Disclaimer: classification=Unfavorable, detailed_reasoning: 'One-sided; strips implied warranties without alternative remedies; conflicts with channel expectations.' recommended_action: AMEND. existing_redlines_check Warranty Enhancement proposes: 'Vendor warrants that (a) the Products will perform materially in accordance with the Documentation; and (b) the Products do not infringe any third-party intellectual property rights. Vendor shall, at its expense, correct any non-conformity or provide a refund.'",
+        "effective_rationale_excerpt": "Rationale: 'Adds IP non-infringement warranty and clear remedy, mitigating litigation exposure and assuring product quality for Reseller and its customers.'",
+        "judge_reasoning": "Leah flags 11.2 as Unfavorable (correct classification) and proposes comprehensive warranty enhancement: adds IP non-infringement warranty (key GT element), adds specific remedy (refund/correction). Addresses GT key elements about express warranties and non-infringement. Detection Y, high quality."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "2.1 / 2.2",
+      "tier": "T2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_2.1_2.2",
+      "evidence": {
+        "proposed_revision_excerpt": "risk_table 2.1: classification=Requires Clarification, 'Non-exclusivity acceptable, but lacks guaranteed minimum discount or territory protection; risk of channel conflict.' risk_table 2.2: classification=Unfavorable, 'Direct competition without safeguards threatens margins; missing deal-registration or incumbency protection.' existing_redlines_check Non-Exclusivity Safeguards: 'Vendor shall (a) honor Reseller's properly registered deals for a period of six (6) months after registration, and (b) not undercut Reseller's quoted price to the same End User.'",
+        "effective_rationale_excerpt": "Rationale: 'Adds a deal-registration and no-undercut protection to mitigate channel conflict while preserving Vendor's right to appoint multiple resellers.'",
+        "judge_reasoning": "Leah identifies both aspects: 2.1 non-exclusivity and 2.2 direct sales rights. Proposes deal-registration protection (6 months) and no-undercut clause - directly addressing GT key elements about protecting Reseller investment and limiting Vendor competition on Reseller-sourced leads. Detection Y, excellent revision."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": "existing_redlines_check_5.1",
+      "evidence": {
+        "proposed_revision_excerpt": "existing_redlines_check Payment Terms revision: 'Late payments shall accrue interest at the lower of one and one-half percent (1.5%) per month or the maximum rate permitted by law.'",
+        "effective_rationale_excerpt": "Part of broader 5.1 analysis addressing payment terms. Rationale mentions 'caps interest to legal limits'.",
+        "judge_reasoning": "The revision maintains 1.5% but adds 'or maximum rate permitted by law' cap. While GT suggests reducing to 1% or prime+margin, the revision provides some improvement by capping at legal maximum. The dispute exclusion is also added. Detection Y as issue is addressed, quality moderate as rate not reduced but legal cap added."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vendor can require prepayment on credit issues",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": "risk_table_5.2",
+      "evidence": {
+        "proposed_revision_excerpt": "risk_table 5.2 Credit & Prepayment: classification=Requires Clarification, detailed_reasoning: 'Unilateral discretion could disrupt sales cycles; need objective criteria and notice.' recommended_action: AMEND.",
+        "effective_rationale_excerpt": "Rationale identifies the issue of 'Unilateral discretion' disrupting operations.",
+        "judge_reasoning": "Leah flags 5.2 with correct concern about unilateral discretion and recommends AMEND with objective criteria and notice requirement. Addresses GT key element about notice requirement before prepayment. Detection Y, reasonable quality."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Sales reports require End User information",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "risk_table_8.1",
+      "evidence": {
+        "proposed_revision_excerpt": "risk_table 8.1 Sales Reports: classification=Requires Clarification, detailed_reasoning: 'Competitive intelligence exposure; need confidentiality carve-out and limit PII.' recommended_action: AMEND.",
+        "effective_rationale_excerpt": "Identifies privacy/data concerns and competitive intelligence exposure risk.",
+        "judge_reasoning": "Leah identifies the core GT issue: End User information disclosure creates competitive intelligence exposure and privacy concerns. Proposes confidentiality carve-out and PII limits - addressing GT key elements about limiting to aggregate data and adding confidentiality. Detection Y, quality moderate as no specific revision language."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_12.1",
+      "evidence": {
+        "proposed_revision_excerpt": "risk_table 12.1: classification=Requires Clarification, 'Lacks carve-outs for IP and confidentiality breaches that affect Reseller.' existing_redlines_check Indirect Damages Carve-Out: 'NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, EXCEPT FOR DAMAGES ARISING FROM (I) A PARTY'S BREACH OF CONFIDENTIALITY, (II) INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS, OR (III) INDEMNIFICATION OBLIGATIONS.'",
+        "effective_rationale_excerpt": "Rationale: 'Introduces targeted carve-outs where indirect damages are foreseeable, ensuring meaningful recovery for critical breaches without broadly undermining the exclusion.'",
+        "judge_reasoning": "Leah identifies the missing carve-outs issue and proposes specific carve-outs for: confidentiality breach, IP infringement, indemnification - exactly matching GT key elements. Excellent revision addressing all GT requirements. Detection Y, high quality."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "9.3",
+      "tier": "T2",
+      "issue": "Termination effects - no sell-off period",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_9.3",
+      "evidence": {
+        "proposed_revision_excerpt": "risk_table 9.3: classification=Requires Clarification, detailed_reasoning: 'No sell-off period or transition assistance; inventory risk.' existing_redlines_check Sell-Off Period: 'Reseller shall cease marketing and selling Products after a sell-off period of ninety (90) days for existing inventory and committed End-User orders; trademark licenses shall remain in effect during the sell-off period solely for fulfillment purposes.'",
+        "effective_rationale_excerpt": "Rationale: 'Provides a reasonable inventory liquidation window, preventing stranded stock losses and ensuring contractual commitments to End Users can be honored without infringing trademarks.'",
+        "judge_reasoning": "Leah identifies the missing sell-off period issue at 9.3 and proposes 90-day sell-off period - exactly matching GT key element ('Should add 90-day inventory sell-off'). Also addresses trademark license continuation during sell-off. Detection Y, excellent revision."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table_IP_Indemnity",
+      "evidence": {
+        "proposed_revision_excerpt": "risk_table 'IP Indemnity' (Absent clause): classification=Unfavorable, 'No Vendor indemnity for infringement; high reseller litigation risk.' recommended_action=ADD. existing_redlines_check IP Indemnity: 'Vendor shall defend, indemnify, and hold harmless Reseller and its End Users from any third-party claim alleging that the Products infringe or misappropriate any patent, copyright, trademark, or trade secret, and shall pay all resulting damages, costs, and reasonable attorneys' fees awarded against Reseller, provided Reseller promptly notifies Vendor and allows Vendor to control the defense.'",
+        "effective_rationale_excerpt": "Rationale: 'Provides essential protection against intellectual property claims arising from Vendor's products, enabling Reseller to sell with confidence and mitigating costly litigation exposure.'",
+        "judge_reasoning": "Leah identifies the missing indemnification clause as a critical gap (Unfavorable) and proposes comprehensive IP indemnification covering patents, copyrights, trademarks, and trade secrets. Addresses all GT key elements: IP infringement indemnification, protection from End User claims, proper defense control provisions. Excellent detection and revision."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_Data_Protection",
+      "evidence": {
+        "proposed_revision_excerpt": "risk_table 'Data Protection' (Absent clause): classification=Unfavorable, 'No obligations on Vendor for data security or compliance; significant regulatory exposure.' recommended_action=ADD. existing_redlines_check Data Protection: 'Vendor shall implement and maintain administrative, technical, and physical safeguards that comply with applicable data-protection laws to protect any personal data processed on behalf of Reseller or End Users. Vendor shall promptly notify Reseller of any data breach and cooperate in remediation efforts at Vendor's expense.'",
+        "effective_rationale_excerpt": "Rationale: 'Addresses regulatory obligations and brand risk by requiring Vendor to safeguard End-User data and manage breaches responsibly, reducing potential liability for Reseller.'",
+        "judge_reasoning": "Leah identifies the missing data protection clause as Unfavorable and proposes comprehensive clause with: compliance with data protection laws, safeguards for personal data, breach notification, remediation at Vendor expense. Addresses GT key elements about GDPR/CCPA compliance and data handling responsibilities. Detection Y, high quality."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_7.2_Service_Levels",
+      "evidence": {
+        "proposed_revision_excerpt": "risk_table 7.2 Support: classification=Requires Clarification, 'Escalation timelines and severity levels missing; need formal SLA.' risk_table 'Service Levels' (Absent clause): classification=Requires Clarification, 'No uptime or support response commitment.' existing_redlines_check Support SLA: 'Vendor shall provide second-level technical support to Reseller with response times not exceeding (i) four (4) business hours for Severity 1 issues, (ii) one (1) business day for Severity 2 issues, and (iii) two (2) business days for all other issues.' Also proposes 7.3 Service Level Agreement with 99.5% uptime and credit remedies.",
+        "effective_rationale_excerpt": "Rationale: 'Establishes objective response timelines, enhancing service quality and enabling Reseller to meet End-User expectations.'",
+        "judge_reasoning": "Leah identifies the SLA gap at 7.2 and proposes tiered response times (4hr/1day/2days for Sev1/2/other) - directly matching GT key element about tiered SLA. Also proposes uptime commitments with credit remedies. Addresses all GT requirements. Detection Y, excellent revision."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "total_detection_points": 69,
+    "max_detection_points": 69,
+    "detection_percentage": 100.0,
+    "total_quality_points": 98,
+    "max_quality_points": 117,
+    "quality_percentage": 83.8,
+    "total_points": 167,
+    "max_points": 186,
+    "percentage": 89.8,
+    "t1_gate": "PASS",
+    "t1_count": 4,
+    "t1_detected": 4,
+    "detection_counts": {
+      "Y": 13,
+      "P": 0,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 7,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "pass_fail": "PASS",
+    "weighted_max": 69
+  },
+  "additional_issues": [],
+  "summary": {
+    "part_a": {
+      "total_score": 21,
+      "max_score": 24,
+      "percentage": 87.5,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "total_detection_points": 69,
+      "detection_percentage": 100.0,
+      "total_quality_points": 98,
+      "total_points": 167,
+      "t1_gate": "PASS",
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true
+    }
+  }
+}

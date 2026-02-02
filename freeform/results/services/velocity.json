@@ -1,0 +1,754 @@
+{
+  "meta": {
+    "contract": "services",
+    "model_id": "velocity",
+    "evaluation_timestamp": "2026-01-25T19:15:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.1",
+        "excerpt": "Exclusion of indirect/special/consequential damages is standard; protects both parties from outsized exposure. Maintain, but ensure carve-outs for IP infringement are covered under indemnity.",
+        "reasoning": "Velocity proposes carve-outs for IP, confidentiality, data/security, gross negligence, and indemnity in redline. Addresses GT comprehensively."
+      },
+      "rationale_score": 2,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 7,
+      "total_points": 15.0
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.2",
+        "excerpt": "Cap limited to Fees under the relevant SOW; does not carve out IP infringement or confidentiality breaches, which could leave Client underprotected in key risk areas. Amend to carve-outs for IP infringement, data breaches/privacy, confidentiality breaches, and gross negligence/willful misconduct; consider a higher cap or separate cap for those risks.",
+        "reasoning": "Velocity proposes comprehensive carve-outs for IP, data breaches, confidentiality, and willful misconduct. Fully addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 7,
+      "total_points": 15.0
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T1",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "5.2",
+        "excerpt": "Agency retains Agency IP; Client gets a non-exclusive, perpetual, royalty-free license to use Agency IP as part of Deliverables. This supports Client's ongoing use but limits broader re-use of Agency IP outside Deliverables. Consider clarifying scope of license to include ongoing, internal, and public use of Deliverables; ensure no restriction on sub-licensing to Client's affiliates for Deliverables' use.",
+        "reasoning": "Velocity identifies the restrictive license issue in risk table but doesn't propose explicit fix in redlines. No redline addresses modification or sublicensing rights. Partial detection."
+      },
+      "rationale_score": 1,
+      "amendment_score": 0,
+      "redline_quality_score": 2,
+      "detection_points": 4.0,
+      "quality_points": 3,
+      "total_points": 7.0
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.1",
+        "excerpt": "15 business days; combined with deemed rejection if no written notice is problematic—Client could be penalized for silence amid busy approvals or iterative feedback needs. This creates misalignment between Client's operational tempo and acceptance mechanics. Add a mutual acceptance mechanism, clarify cure rights, and avoid automatic rejection on silence; allow deemed acceptance with express written confirmation after cure.",
+        "reasoning": "Velocity correctly identifies deemed rejection issue and proposes dual-track acceptance with cure process. Comprehensive fix."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 8,
+      "total_points": 16.0
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T3",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "GT-05 concerns 3.4 high late fee. Velocity flags 3.4 as minor issue but marks it Favorable and doesn't propose reduction of 1.5% rate in redlines."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "4.3",
+        "excerpt": "Delays extend timelines and may incur additional fees; no cap on delay-related charges or delivery-extension mechanics. Add a formal delay-management clause with extensions formula, and cap potential fees due to Client delays; require written notice of anticipated delays.",
+        "reasoning": "Velocity identifies open-ended delay fees and proposes notice and proportionality requirements. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T2",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "5.1",
+        "excerpt": "Client owns final Deliverables upon full payment; this is strong for Client's rights to the created work. Consider adding a post-termination wind-down provision ensuring Client retains access to Deliverables for ongoing use and any required license to Agency IP embedded in Deliverables.",
+        "reasoning": "Velocity marks 5.1 as Favorable without identifying that 'final approved' excludes drafts and underlying materials. Partial detection."
+      },
+      "rationale_score": 1,
+      "amendment_score": 0,
+      "redline_quality_score": 2,
+      "detection_points": 2.5,
+      "quality_points": 3,
+      "total_points": 5.5
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T2",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "5.3",
+        "excerpt": "Preliminary work remains Agency's property; typical but could create ambiguity about rights to concepts/drafts used in Deliverables. Add a clause clarifying that any concepts used in final Deliverables that originated in Agency preliminary work but are not unique to Client remains with Agency; if incorporated, license to Client becomes as part of Deliverables.",
+        "reasoning": "Velocity identifies ambiguity but doesn't propose granting Client license to paid-for work. Partial detection."
+      },
+      "rationale_score": 1,
+      "amendment_score": 0,
+      "redline_quality_score": 2,
+      "detection_points": 2.5,
+      "quality_points": 3,
+      "total_points": 5.5
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.3",
+        "excerpt": "Acceptance is triggered by Client's use in commerce/public distribution; this can prematurely close disputes and limit post-acceptance corrections. Replace with explicit written acceptance criteria and a defined acceptance period; ensure post-acceptance remedy rights remain for unresolved deficiencies.",
+        "reasoning": "Velocity correctly identifies premature acceptance issue and proposes explicit written acceptance standard in redline. Comprehensive."
+      },
+      "rationale_score": 2,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 7,
+      "total_points": 12.0
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T2",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "8.1",
+        "excerpt": "Warranties address authority, professional performance, deliverables' conformity, and non-infringement. Maintain; consider adding a warranty period post-delivery for bug fixes and performance.",
+        "reasoning": "Velocity identifies warranties as adequate without recognizing missing duration and remedy. Partial detection."
+      },
+      "rationale_score": 1,
+      "amendment_score": 0,
+      "redline_quality_score": 2,
+      "detection_points": 2.5,
+      "quality_points": 3,
+      "total_points": 5.5
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T2",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "8.3",
+        "excerpt": "Broad warranty disclaimer; standard in marketing services; can limit recourse for non-specified issues. Consider narrowing the implied warranty baseline or adding specific service-level assurances in SOWs.",
+        "reasoning": "Velocity marks 8.3 as Favorable without identifying that it may undermine express warranties. Partial detection."
+      },
+      "rationale_score": 1,
+      "amendment_score": 0,
+      "redline_quality_score": 2,
+      "detection_points": 2.5,
+      "quality_points": 3,
+      "total_points": 5.5
+    },
+    {
+      "gt_id": "GT-12",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "9.1",
+        "excerpt": "3-year survival is fairly standard for many items but may be insufficient for trade secrets; lacks explicit treatment of trade secrets and cross-use obligations. Extend duration for trade secrets (indefinite or defined as long as secret); specify permissible disclosures and return/destruction at end.",
+        "reasoning": "Velocity correctly identifies 3-year limit as insufficient and proposes 5-year standard with indefinite for trade secrets in redline. Comprehensive."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-13",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "12.4",
+        "excerpt": "Pay for services through termination; deliver completed work; may not address work in progress and transition assistance. Add transitional support, data delivery timelines, and continued rights to use Deliverables during a wind-down period.",
+        "reasoning": "Velocity identifies missing WIP and transition provisions and proposes adding these in redline. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-14",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.2",
+        "excerpt": "Arbitration in NY; while efficient, it may increase cost for Client depending on location. Add optional mediation prior to arbitration and specify the arbitration rules; consider a more accessible seat if Client is outside NY.",
+        "reasoning": "Velocity proposes adding AAA rules and confidentiality in redline. Addresses GT partially (missing mediation escalation)."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-15",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New Clause 1",
+        "excerpt": "This MSA lacks a data privacy framework for handling personal data, cross-border transfers, breach notification, data retention, and security measures—critical given digital marketing activities. Without a DPA, Client faces compliance risk under GDPR/CCPA/other laws and potential liability for data breaches. Add a comprehensive DPA governing personal data processing, roles, data security measures, breach notification timelines, data retention, cross-border transfers, subcontractor controls, and audit rights.",
+        "reasoning": "Velocity proposes comprehensive DPA addition. Fully addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-16",
+      "tier": "T2",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "GT-16 concerns missing insurance requirements. Velocity does not propose adding insurance clause."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    },
+    {
+      "gt_id": "GT-17",
+      "tier": "T3",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "5.4",
+        "excerpt": "Agency may display Deliverables in portfolio, subject to confidentiality. Could risk leakage of sensitive Client content. Add explicit confidentiality triggers for portfolio use; require Client approval for any public-facing materials that reveal sensitive information.",
+        "reasoning": "Velocity identifies portfolio risk but doesn't propose explicit consent requirement in redlines. Partial detection."
+      },
+      "rationale_score": 1,
+      "amendment_score": 0,
+      "redline_quality_score": 2,
+      "detection_points": 0.5,
+      "quality_points": 3,
+      "total_points": 3.5
+    },
+    {
+      "gt_id": "GT-18",
+      "tier": "T3",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "GT-18 concerns 1.1 Agency IP definition being too broad. Velocity does not flag clause 1.1."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    },
+    {
+      "gt_id": "GT-19",
+      "tier": "T3",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "GT-19 concerns 2.2 change orders lacking response timeline. Velocity marks 2.2 as Favorable without identifying this gap."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    },
+    {
+      "gt_id": "GT-20",
+      "tier": "T3",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "3.2",
+        "excerpt": "Client-approved out-of-pocket expenses and explicit threshold (> $500 requiring prior approval) protect Client from unexpected costs. Consider adding a cap on monthly travel expenses and a quarterly expense summary to improve transparency.",
+        "reasoning": "Velocity marks 3.2 as Favorable without recognizing documentation gap. Partial detection."
+      },
+      "rationale_score": 1,
+      "amendment_score": 0,
+      "redline_quality_score": 2,
+      "detection_points": 0.5,
+      "quality_points": 3,
+      "total_points": 3.5
+    },
+    {
+      "gt_id": "GT-21",
+      "tier": "T3",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "3.3",
+        "excerpt": "Deposit up to 50% before starting is common but leaves risk if project is delayed or cancelled; no refund policy is stated. Could create cash-flow risk for Client if Deliverables are late or non-conforming. Add refund/credit policy for deposits in cases of non-performance, late delivery, or material breach, or tie deposits to milestone-based releases.",
+        "reasoning": "Velocity identifies deposit risk but doesn't propose refund/milestone linkage in redlines. Partial detection."
+      },
+      "rationale_score": 1,
+      "amendment_score": 0,
+      "redline_quality_score": 2,
+      "detection_points": 0.5,
+      "quality_points": 3,
+      "total_points": 3.5
+    },
+    {
+      "gt_id": "GT-22",
+      "tier": "T3",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "6.2",
+        "excerpt": "Up to two rounds of revisions at no charge; predictable for Client; additional revisions costed at prevailing rates. Keep; consider adding objective revision limits tied to milestones in the SOW to prevent endless cycles.",
+        "reasoning": "Velocity marks 6.2 as Favorable without identifying undefined revision scope. Partial detection."
+      },
+      "rationale_score": 1,
+      "amendment_score": 0,
+      "redline_quality_score": 2,
+      "detection_points": 0.5,
+      "quality_points": 3,
+      "total_points": 3.5
+    },
+    {
+      "gt_id": "GT-23",
+      "tier": "T3",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "13.1",
+        "excerpt": "NY law; possible misalignment if Client is not located in NY or if venue matters; arbitration is in NY too. Consider aligning governing law with Client's locale or adding a choice to designate venue that minimizes cost for Client; keep NY as governing law if preferred.",
+        "reasoning": "Velocity identifies potential misalignment but doesn't propose flexibility in redlines. Partial detection."
+      },
+      "rationale_score": 1,
+      "amendment_score": 0,
+      "redline_quality_score": 2,
+      "detection_points": 0.5,
+      "quality_points": 3,
+      "total_points": 3.5
+    },
+    {
+      "gt_id": "GT-24",
+      "tier": "T3",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "GT-24 concerns missing force majeure. Velocity does not propose adding force majeure clause."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    },
+    {
+      "gt_id": "GT-25",
+      "tier": "T3",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "GT-25 concerns missing service level commitments. Velocity does not propose this addition."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    },
+    {
+      "gt_id": "GT-26",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.3",
+        "excerpt": "Prohibits assignment without consent; could hinder corporate restructurings or Affiliate transfers beneficial to Client or Agency. Amend to permit assignment to affiliate or successor on notice, subject to ensuring the assignee adheres to Agreement terms.",
+        "reasoning": "Velocity correctly identifies assignment restriction and proposes allowing affiliate and M&A assignments in redline. Fully addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 7,
+      "total_points": 8.0
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "3.3",
+      "issue_summary": "Invoicing & Deposits",
+      "leah_classification": "⚠️",
+      "leah_action": "Add refund/credit po",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Deposit up to 50% before starting is common but leaves risk if project is delayed or cancelled; no refund policy is stated. Could create cash-flow risk for Client if Deliverables are late or non-confo"
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Payment Terms & Late Interest",
+      "leah_classification": "⚠️",
+      "leah_action": "Confirm grace period",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day Net terms with 1.5% monthly late interest is standard; however, it can be onerous for Client if disputes arise or if there are late SOW deliveries."
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Approvals",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a defined approv",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires an authorised Client representative; lacks specifics on response time or escalation if approvals are delayed. Could slow delivery."
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Delays",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a formal delay-m",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Delays extend timelines and may incur additional fees; no cap on delay-related charges or delivery-extension mechanics."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Preliminary Work",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a clause clarify",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Preliminary work remains Agency's property; typical but could create ambiguity about rights to concepts/drafts used in Deliverables."
+    },
+    {
+      "clause": "5.4",
+      "issue_summary": "Portfolio Rights",
+      "leah_classification": "⚠️",
+      "leah_action": "Add explicit confide",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Agency may display Deliverables in portfolio, subject to confidentiality. Could risk leakage of sensitive Client content."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Confidentiality",
+      "leah_classification": "⚠️",
+      "leah_action": "Extend duration for ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "3-year survival is fairly standard for many items but may be insufficient for trade secrets; lacks explicit treatment of trade secrets and cross-use obligations."
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Liability Cap",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to carve-outs ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cap limited to Fees under the relevant SOW; does not carve out IP infringement or confidentiality breaches, which could leave Client underprotected in key risk areas."
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Client Indemnification",
+      "leah_classification": "⚠️",
+      "leah_action": "Narrow scope to reas",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Client indemnities cover Client Materials, instructions, and use beyond scope; risk to Client if milestones or scope evolve."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Term",
+      "leah_classification": "⚠️",
+      "leah_action": "Set a defined initia",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Indefinite term with termination rights; creates potential continuity risk and uncertainty for both sides; may affect budgeting and resource planning."
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Termination for Convenience",
+      "leah_classification": "⚠️",
+      "leah_action": "Add minimum service ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30 days’ notice; convenient termination can disrupt Client programs."
+    },
+    {
+      "clause": "12.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "Add transitional sup",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Pay for services through termination; deliver completed work; may not address work in progress and transition assistance."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider aligning go",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "NY law; possible misalignment if Client is not located in NY or if venue matters; arbitration is in NY too."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution (Arbitration)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add optional mediati",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Arbitration in NY; while efficient, it may increase cost for Client depending on location."
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Assignment",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to permit assi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prohibits assignment without consent; could hinder corporate restructurings or Affiliate transfers beneficial to Client or Agency."
+    },
+    {
+      "clause": "New Clause 1",
+      "issue_summary": "New Clause Recommendation: Data Processing & Privacy (DPA)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a comprehensive ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This MSA lacks a data privacy framework for handling personal data, cross-border transfers, breach notification, data retention, and security measures—critical given digital marketing activities. With"
+    },
+    {
+      "clause": "New Clause 2",
+      "issue_summary": "New Clause Recommendation: Affiliate Assignment & Change of Control",
+      "leah_classification": "⚠️",
+      "leah_action": "Add language permitt",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The current 13.3 restricts assignment to consent; corporate restructurings (merger, acquisition, affiliate retention) are common. Without this, business continuity could be disrupted."
+    },
+    {
+      "clause": "6.1 Review Period",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After delivery. This change replaces a strict deemed rejection on silence with a dual-track approach: silence does not automatically reject but requires written notice of deficiencies withi"
+    },
+    {
+      "clause": "6.3 Final Acceptance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After delivery. The current language ties final acceptance to usage, which can happen quickly and limit remedy windows. The amendment requires explicit written acceptance, shortens the risk"
+    },
+    {
+      "clause": "10.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After liability clause. This amendment preserves the standard cap but carves out critical risk areas where Client needs greater protection (IP infringement, confidentiality, privacy/data br"
+    },
+    {
+      "clause": "9.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After termination; This broadens protection by extending confidentiality for standard confidential information to five years and makes trade secrets perpetual, aligning with best practices "
+    },
+    {
+      "clause": "13.3 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Within the Assignment clause. This preserves the protection against unwanted transfers while allowing corporate restructurings and affiliate arrangements that are common in marketing servic"
+    },
+    {
+      "clause": "13.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Within Dispute Resolution. This clarifies confidentiality expectations and selects a well-known administering body with a clear procedural framework, which can reduce cost and increase pred"
+    },
+    {
+      "clause": "12.1 Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Beginning of Term. A fixed initial term with auto-renewal provides business predictability and ensures continuity while giving each Party a clear exit window. It protects Client from abrupt"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 9,
+      "N": 0,
+      "NMI": 6
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 7,
+        "P": 3,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 1,
+        "P": 5,
+        "N": 0,
+        "NMI": 5
+      }
+    },
+    "t1_all_detected": true,
+    "total_detection_points": 71.5,
+    "total_quality_points": 100,
+    "total_points": 171.5,
+    "additional_issues_count": 24
+  }
+}

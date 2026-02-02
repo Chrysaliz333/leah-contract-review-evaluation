@@ -1,0 +1,842 @@
+{
+  "gt_metadata": {
+    "mode": "rules",
+    "contract_type": "Subcontract",
+    "representing_party": "Subcontractor",
+    "rule_file": "Subcontractor_Rules_Deterministic.csv",
+    "gt_version": "1.0_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-14",
+    "total_tests": 40,
+    "notes": "Converted from Rules Evaluation.xlsx"
+  },
+  "contracts": [
+    "Subcontract_HVAC_TitanConstruction",
+    "Subcontract_FireProtection_ApexBuilders",
+    "Subcontract_Masonry_SterlingGC",
+    "Subcontract_Landscaping_OmegaDevelopment",
+    "Subcontract_Demolition_PrimeBuilders",
+    "Subcontract_Flooring_NexusConstruction",
+    "Subcontract_Waterproofing_AtlasGC",
+    "Subcontract_Curtainwall_VectorBuilders",
+    "Subcontract_Sitework_FrontierConstruction",
+    "Subcontract_Millwork_CrestConstruction"
+  ],
+  "ground_truth": [
+    {
+      "test_id": "SUB_HVAC_TitanC_01",
+      "contract": "Subcontract_HVAC_TitanConstruction",
+      "clause_ref": "5.1",
+      "rule_name": "Indemnity - Broad-form to Proportionate Fault Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "whether caused in whole or in part by the negligence of the Contractor",
+      "key_elements": [
+        "to the extent caused by",
+        "negligent acts or omissions of Subcontractor",
+        "its employees, agents"
+      ],
+      "rationale_must_include": [
+        "Broad-form indemnity shifts risk unfairly",
+        "Subcontractor should not indemnify for Contractor negligence"
+      ],
+      "unacceptable": [
+        "Keeping any Contractor negligence language",
+        "Deleting entire indemnity",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_HVAC_TitanC_02",
+      "contract": "Subcontract_HVAC_TitanConstruction",
+      "clause_ref": "6.D",
+      "rule_name": "Umbrella Excess Liability Limits - Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "$12,000,000",
+      "key_elements": [
+        "$5,000,000",
+        "per occurrence and aggregate"
+      ],
+      "rationale_must_include": [
+        "$12M exceeds standard $10M threshold",
+        "Reduce to $5M per rule"
+      ],
+      "unacceptable": [
+        "Limits > $10M",
+        "Deleting umbrella requirement",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_HVAC_TitanC_03",
+      "contract": "Subcontract_HVAC_TitanConstruction",
+      "clause_ref": "8.1",
+      "rule_name": "Liquidated Damages - Direct to Pass-through Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "$3,000 per calendar day",
+      "key_elements": [
+        "only liable for liquidated damages",
+        "to the extent Contractor is assessed",
+        "by Owner under Prime Contract",
+        "proportionate share",
+        "attributable to its fault"
+      ],
+      "rationale_must_include": [
+        "Direct LD unfair",
+        "Should be pass-through only",
+        "Proportionate to Subcontractor fault"
+      ],
+      "unacceptable": [
+        "Keeping direct LD amount",
+        "Deleting LD provision entirely",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_HVAC_TitanC_04",
+      "contract": "Subcontract_HVAC_TitanConstruction",
+      "clause_ref": "11.1",
+      "rule_name": "Restrictive Covenants - Non-compete Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "eighteen (18) months...shall not provide services",
+      "key_elements": [
+        "Delete entire non-compete provision"
+      ],
+      "rationale_must_include": [
+        "Non-compete restricts business",
+        "Inappropriate in subcontract context"
+      ],
+      "unacceptable": [
+        "Keeping any non-compete",
+        "Amending duration instead of deletion",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_FireProtect_01",
+      "contract": "Subcontract_FireProtection_ApexBuilders",
+      "clause_ref": "6.2",
+      "rule_name": "Additional Insured Endorsements - Form Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "CG 2010 10/01",
+      "key_elements": [
+        "CG 2010 04/13",
+        "CG 2037 04/13"
+      ],
+      "rationale_must_include": [
+        "10/01 forms outdated",
+        "04/13 forms provide proper coverage"
+      ],
+      "unacceptable": [
+        "Keeping 10/01 or 11/85 forms",
+        "Deleting additional insured requirement",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_FireProtect_02",
+      "contract": "Subcontract_FireProtection_ApexBuilders",
+      "clause_ref": "6.G",
+      "rule_name": "Professional Liability Insurance Limits - Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "$4,000,000 per claim and $8,000,000 aggregate",
+      "key_elements": [
+        "$2,000,000 per claim",
+        "$3,000,000 aggregate"
+      ],
+      "rationale_must_include": [
+        "Limits exceed $3M threshold",
+        "Standard is $2M/$3M"
+      ],
+      "unacceptable": [
+        "Per-claim > $3M",
+        "Aggregate > $3M",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_FireProtect_03",
+      "contract": "Subcontract_FireProtection_ApexBuilders",
+      "clause_ref": "6.2",
+      "rule_name": "Consequential Damages - Exposure to Mutual Waiver Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "liable for all consequential, indirect",
+      "key_elements": [
+        "Neither party shall be liable",
+        "consequential, indirect, incidental, special, or punitive damages",
+        "mutual waiver"
+      ],
+      "rationale_must_include": [
+        "One-sided exposure unfair",
+        "Should be mutual waiver"
+      ],
+      "unacceptable": [
+        "Keeping one-sided liability",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_FireProtect_04",
+      "contract": "Subcontract_FireProtection_ApexBuilders",
+      "clause_ref": "7.1",
+      "rule_name": "Vaccination Requirements - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "COVID-19 vaccination",
+      "key_elements": [
+        "Delete vaccination requirement"
+      ],
+      "rationale_must_include": [
+        "Mandatory vaccination inappropriate",
+        "Delete requirement"
+      ],
+      "unacceptable": [
+        "Keeping any vaccination mandate",
+        "Amending instead of deletion"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Masonry_Ste_01",
+      "contract": "Subcontract_Masonry_SterlingGC",
+      "clause_ref": "5.1",
+      "rule_name": "Indemnity - Broad-form to Proportionate Fault Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "sole negligence or fault of Contractor",
+      "key_elements": [
+        "to the extent caused by",
+        "Subcontractor"
+      ],
+      "rationale_must_include": [
+        "Broad-form unfair",
+        "Proportionate fault only"
+      ],
+      "unacceptable": [
+        "Keeping sole/concurrent negligence",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Masonry_Ste_02",
+      "contract": "Subcontract_Masonry_SterlingGC",
+      "clause_ref": "6.3",
+      "rule_name": "Insurance Documentation - Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "notarized, certified true copies",
+      "key_elements": [
+        "Certificates of Insurance",
+        "copies of endorsements"
+      ],
+      "rationale_must_include": [
+        "Full policy copies excessive",
+        "Certificates sufficient"
+      ],
+      "unacceptable": [
+        "Keeping certified copies requirement",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Masonry_Ste_03",
+      "contract": "Subcontract_Masonry_SterlingGC",
+      "clause_ref": "9.1",
+      "rule_name": "Personal Guarantee - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "personally and unconditionally guarantee",
+      "key_elements": [
+        "Delete entire personal guarantee",
+        "Delete guarantor signature block"
+      ],
+      "rationale_must_include": [
+        "Personal guarantees inappropriate",
+        "Individuals should not guarantee corporate obligations"
+      ],
+      "unacceptable": [
+        "Keeping any personal guarantee",
+        "Amending instead of deletion"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Masonry_Ste_04",
+      "contract": "Subcontract_Masonry_SterlingGC",
+      "clause_ref": "10.1",
+      "rule_name": "Union and PLA Obligations - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "Project Labor Agreement...Letter of Assent",
+      "key_elements": [
+        "Delete PLA requirement",
+        "Delete Letter of Assent requirement"
+      ],
+      "rationale_must_include": [
+        "PLA/union requirements incompatible with non-union status"
+      ],
+      "unacceptable": [
+        "Keeping any PLA/LOA requirement",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Landscaping_01",
+      "contract": "Subcontract_Landscaping_OmegaDevelopment",
+      "clause_ref": "6.D",
+      "rule_name": "Insurance - Non-standard Coverage Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "Pollution Liability",
+      "key_elements": [
+        "Delete Pollution Liability requirement"
+      ],
+      "rationale_must_include": [
+        "Non-standard coverage",
+        "Not typically available"
+      ],
+      "unacceptable": [
+        "Keeping pollution liability",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Landscaping_02",
+      "contract": "Subcontract_Landscaping_OmegaDevelopment",
+      "clause_ref": "6.E",
+      "rule_name": "Alternate Employer Endorsement - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "WC 00 03 01",
+      "key_elements": [
+        "Delete Alternate Employer Endorsement",
+        "Delete AEE requirement"
+      ],
+      "rationale_must_include": [
+        "AEE creates employment liability issues",
+        "Delete requirement"
+      ],
+      "unacceptable": [
+        "Keeping AEE",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Landscaping_03",
+      "contract": "Subcontract_Landscaping_OmegaDevelopment",
+      "clause_ref": "11.1",
+      "rule_name": "Restrictive Covenants - MFN Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "lowest prices...pricing no less favorable",
+      "key_elements": [
+        "Delete entire MFN provision"
+      ],
+      "rationale_must_include": [
+        "MFN restricts pricing flexibility",
+        "Delete entirely"
+      ],
+      "unacceptable": [
+        "Keeping any MFN language",
+        "Amending instead of deletion"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Landscaping_04",
+      "contract": "Subcontract_Landscaping_OmegaDevelopment",
+      "clause_ref": "8.1",
+      "rule_name": "Liquidated Damages - Direct to Pass-through Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "$2,000 per day",
+      "key_elements": [
+        "pass-through only",
+        "proportionate share",
+        "attributable to fault"
+      ],
+      "rationale_must_include": [
+        "Direct LD unfair",
+        "Pass-through only"
+      ],
+      "unacceptable": [
+        "Keeping direct LD",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Demolition__01",
+      "contract": "Subcontract_Demolition_PrimeBuilders",
+      "clause_ref": "5.1",
+      "rule_name": "Indemnity - Broad-form to Proportionate Fault Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "concurrent, contributing, or sole negligence",
+      "key_elements": [
+        "to the extent caused by",
+        "Subcontractor"
+      ],
+      "rationale_must_include": [
+        "Broad-form unfair"
+      ],
+      "unacceptable": [
+        "Keeping concurrent/sole negligence",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Demolition__02",
+      "contract": "Subcontract_Demolition_PrimeBuilders",
+      "clause_ref": "6.2",
+      "rule_name": "Additional Insured Endorsements - Form Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "11/85 edition",
+      "key_elements": [
+        "CG 2010 04/13"
+      ],
+      "rationale_must_include": [
+        "11/85 outdated",
+        "04/13 required"
+      ],
+      "unacceptable": [
+        "Keeping 11/85",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Demolition__03",
+      "contract": "Subcontract_Demolition_PrimeBuilders",
+      "clause_ref": "6.C",
+      "rule_name": "Umbrella Excess Liability Limits - Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "$15,000,000",
+      "key_elements": [
+        "$5,000,000"
+      ],
+      "rationale_must_include": [
+        "$15M exceeds threshold",
+        "Reduce to $5M"
+      ],
+      "unacceptable": [
+        "Limits > $10M",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Demolition__04",
+      "contract": "Subcontract_Demolition_PrimeBuilders",
+      "clause_ref": "8.2",
+      "rule_name": "Consequential Damages - Exposure to Mutual Waiver Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "lost bonding capacity...lost business",
+      "key_elements": [
+        "Neither party",
+        "mutual waiver"
+      ],
+      "rationale_must_include": [
+        "One-sided unfair",
+        "Mutual waiver needed"
+      ],
+      "unacceptable": [
+        "Keeping one-sided",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Flooring_Ne_01",
+      "contract": "Subcontract_Flooring_NexusConstruction",
+      "clause_ref": "6.1",
+      "rule_name": "Insurance Documentation - Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "certified copies of all insurance policies",
+      "key_elements": [
+        "Certificates of Insurance",
+        "endorsements"
+      ],
+      "rationale_must_include": [
+        "Full policies excessive",
+        "Certificates sufficient"
+      ],
+      "unacceptable": [
+        "Keeping full policy requirement",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Flooring_Ne_02",
+      "contract": "Subcontract_Flooring_NexusConstruction",
+      "clause_ref": "6.G",
+      "rule_name": "Professional Liability Insurance Limits - Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "$5,000,000 per claim",
+      "key_elements": [
+        "$2,000,000 per claim",
+        "$3,000,000 aggregate"
+      ],
+      "rationale_must_include": [
+        "$5M exceeds threshold"
+      ],
+      "unacceptable": [
+        "Per-claim > $3M",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Flooring_Ne_03",
+      "contract": "Subcontract_Flooring_NexusConstruction",
+      "clause_ref": "9.1",
+      "rule_name": "Personal Guarantee - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "personal guarantee",
+      "key_elements": [
+        "Delete personal guarantee"
+      ],
+      "rationale_must_include": [
+        "Personal guarantees inappropriate"
+      ],
+      "unacceptable": [
+        "Keeping guarantee",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Flooring_Ne_04",
+      "contract": "Subcontract_Flooring_NexusConstruction",
+      "clause_ref": "7.1",
+      "rule_name": "Vaccination Requirements - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "influenza vaccination",
+      "key_elements": [
+        "Delete vaccination requirement"
+      ],
+      "rationale_must_include": [
+        "Mandatory vaccination inappropriate"
+      ],
+      "unacceptable": [
+        "Keeping vaccination",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Waterproofi_01",
+      "contract": "Subcontract_Waterproofing_AtlasGC",
+      "clause_ref": "5.1",
+      "rule_name": "Indemnity - Broad-form to Proportionate Fault Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "caused in whole or in part",
+      "key_elements": [
+        "to the extent caused by",
+        "Subcontractor"
+      ],
+      "rationale_must_include": [
+        "Broad-form unfair"
+      ],
+      "unacceptable": [
+        "Keeping whole or in part",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Waterproofi_02",
+      "contract": "Subcontract_Waterproofing_AtlasGC",
+      "clause_ref": "6.D",
+      "rule_name": "Insurance - Non-standard Coverage Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "Cyber Liability",
+      "key_elements": [
+        "Delete Cyber Liability"
+      ],
+      "rationale_must_include": [
+        "Non-standard coverage"
+      ],
+      "unacceptable": [
+        "Keeping Cyber",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Waterproofi_03",
+      "contract": "Subcontract_Waterproofing_AtlasGC",
+      "clause_ref": "6.E",
+      "rule_name": "Alternate Employer Endorsement - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "Alternate Employer Endorsement",
+      "key_elements": [
+        "Delete AEE"
+      ],
+      "rationale_must_include": [
+        "AEE creates liability issues"
+      ],
+      "unacceptable": [
+        "Keeping AEE",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Waterproofi_04",
+      "contract": "Subcontract_Waterproofing_AtlasGC",
+      "clause_ref": "10.1",
+      "rule_name": "Union and PLA Obligations - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "Letter of Assent",
+      "key_elements": [
+        "Delete PLA/LOA"
+      ],
+      "rationale_must_include": [
+        "PLA incompatible with non-union"
+      ],
+      "unacceptable": [
+        "Keeping PLA",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Curtainwall_01",
+      "contract": "Subcontract_Curtainwall_VectorBuilders",
+      "clause_ref": "6.2",
+      "rule_name": "Additional Insured Endorsements - Form Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "CG 2010 11/85",
+      "key_elements": [
+        "CG 2010 04/13"
+      ],
+      "rationale_must_include": [
+        "11/85 outdated"
+      ],
+      "unacceptable": [
+        "Keeping 11/85",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Curtainwall_02",
+      "contract": "Subcontract_Curtainwall_VectorBuilders",
+      "clause_ref": "6.C",
+      "rule_name": "Umbrella Excess Liability Limits - Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "$20,000,000",
+      "key_elements": [
+        "$5,000,000"
+      ],
+      "rationale_must_include": [
+        "$20M exceeds threshold"
+      ],
+      "unacceptable": [
+        "Limits > $10M",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Curtainwall_03",
+      "contract": "Subcontract_Curtainwall_VectorBuilders",
+      "clause_ref": "8.1",
+      "rule_name": "Liquidated Damages - Direct to Pass-through Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "$5,000 per calendar day",
+      "key_elements": [
+        "pass-through",
+        "proportionate share"
+      ],
+      "rationale_must_include": [
+        "Direct LD unfair"
+      ],
+      "unacceptable": [
+        "Keeping direct LD",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Curtainwall_04",
+      "contract": "Subcontract_Curtainwall_VectorBuilders",
+      "clause_ref": "11.1",
+      "rule_name": "Restrictive Covenants - Non-compete Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "non-compete",
+      "key_elements": [
+        "Delete non-compete"
+      ],
+      "rationale_must_include": [
+        "Non-compete inappropriate"
+      ],
+      "unacceptable": [
+        "Keeping non-compete",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Sitework_Fr_01",
+      "contract": "Subcontract_Sitework_FrontierConstruction",
+      "clause_ref": "5.1",
+      "rule_name": "Indemnity - Broad-form to Proportionate Fault Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "including the negligence of any Indemnified Party",
+      "key_elements": [
+        "to the extent caused by",
+        "Subcontractor"
+      ],
+      "rationale_must_include": [
+        "Broad-form unfair"
+      ],
+      "unacceptable": [
+        "Keeping negligence of Indemnified Party",
+        "Marking as compliant"
+      ],
+      "marker": "[COMPOUND]"
+    },
+    {
+      "test_id": "SUB_Sitework_Fr_02",
+      "contract": "Subcontract_Sitework_FrontierConstruction",
+      "clause_ref": "5.1",
+      "rule_name": "Insurance Documentation - Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "complete certified copies",
+      "key_elements": [
+        "Certificates of Insurance",
+        "endorsements"
+      ],
+      "rationale_must_include": [
+        "Full policies excessive"
+      ],
+      "unacceptable": [
+        "Keeping certified copies",
+        "Marking as compliant"
+      ],
+      "marker": "[COMPOUND]"
+    },
+    {
+      "test_id": "SUB_Sitework_Fr_03",
+      "contract": "Subcontract_Sitework_FrontierConstruction",
+      "clause_ref": "5.1",
+      "rule_name": "Consequential Damages - Exposure to Mutual Waiver Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "special damages, punitive damages",
+      "key_elements": [
+        "Neither party",
+        "mutual waiver"
+      ],
+      "rationale_must_include": [
+        "One-sided unfair"
+      ],
+      "unacceptable": [
+        "Keeping one-sided",
+        "Marking as compliant"
+      ],
+      "marker": "[COMPOUND]"
+    },
+    {
+      "test_id": "SUB_Sitework_Fr_04",
+      "contract": "Subcontract_Sitework_FrontierConstruction",
+      "clause_ref": "5.1",
+      "rule_name": "Personal Guarantee - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "unconditionally guarantees",
+      "key_elements": [
+        "Delete personal guarantee"
+      ],
+      "rationale_must_include": [
+        "Personal guarantees inappropriate"
+      ],
+      "unacceptable": [
+        "Keeping guarantee",
+        "Marking as compliant"
+      ],
+      "marker": "[COMPOUND]"
+    },
+    {
+      "test_id": "SUB_Millwork_Cr_01",
+      "contract": "Subcontract_Millwork_CrestConstruction",
+      "clause_ref": "6.D",
+      "rule_name": "Insurance - Non-standard Coverage Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "Railroad Protective Liability",
+      "key_elements": [
+        "Delete Railroad Protective"
+      ],
+      "rationale_must_include": [
+        "Non-standard coverage"
+      ],
+      "unacceptable": [
+        "Keeping Railroad",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Millwork_Cr_02",
+      "contract": "Subcontract_Millwork_CrestConstruction",
+      "clause_ref": "6.G",
+      "rule_name": "Professional Liability Insurance Limits - Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "$3,500,000 per claim",
+      "key_elements": [
+        "$2,000,000 per claim",
+        "$3,000,000 aggregate"
+      ],
+      "rationale_must_include": [
+        "$3.5M exceeds threshold"
+      ],
+      "unacceptable": [
+        "Per-claim > $3M",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Millwork_Cr_03",
+      "contract": "Subcontract_Millwork_CrestConstruction",
+      "clause_ref": "10.1",
+      "rule_name": "Union and PLA Obligations - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "PLA and Letter of Assent",
+      "key_elements": [
+        "Delete PLA",
+        "Delete LOA"
+      ],
+      "rationale_must_include": [
+        "PLA incompatible"
+      ],
+      "unacceptable": [
+        "Keeping PLA",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "SUB_Millwork_Cr_04",
+      "contract": "Subcontract_Millwork_CrestConstruction",
+      "clause_ref": "7.1",
+      "rule_name": "Vaccination Requirements - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "COVID-19 vaccination",
+      "key_elements": [
+        "Delete vaccination"
+      ],
+      "rationale_must_include": [
+        "Mandatory vaccination inappropriate"
+      ],
+      "unacceptable": [
+        "Keeping vaccination",
+        "Marking as compliant"
+      ],
+      "marker": null
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "gt_metadata": {
+    "mode": "freeform_stacking",
+    "contract_id": "Services_DigitalAgency",
+    "contract_type": "Services Agreement",
+    "parties": {
+      "agency": "Creative Digital Agency Inc.",
+      "client": "[Unnamed Client]"
+    },
+    "representing_party": "Client",
+    "gt_version": "1.0",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-23",
+    "schema_version": "1.0",
+    "note": "Freeform Stacking: Leah reviews entire document including CP redlines. Representing party is SAME as Freeform Baseline."
+  },
+  "input_files": {
+    "clause_analysis": {
+      "pattern": "*_Cl*.doc",
+      "format": "HTML",
+      "used_for": [
+        "part_a",
+        "part_b"
+      ]
+    },
+    "redline_document": {
+      "pattern": "*_Redline_*.docx",
+      "format": "Word with tracked changes",
+      "used_for": [
+        "part_c"
+      ]
+    }
+  },
+  "part_a_cp_redlines": [
+    {
+      "test_id": "SERVICES_01",
+      "clause_ref": "Scope",
+      "section": "2.1",
+      "original_text": "Agency shall provide the creative and digital marketing services described in each Statement of Work executed by the Parties pursuant to this Agreement.",
+      "cp_redline": "Agency shall provide services described in each Statement of Work and any related services reasonably requested by Client without requiring additional approval.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: Services limited to those in executed SOWs. Reject any 'related services' or Client-unilateral scope expansion without defined fee mechanism.",
+      "key_elements": [
+        "1) Specific SOW scope only 2) No open-ended 'related services' 3) Agency bills for work outside SOW without approval = risk"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May add: expedited change order process",
+        "May add: small change threshold (under $X or Y hours) requiring documented approval"
+      ],
+      "unacceptable_responses": [
+        "Accepting 'related services' without approval",
+        "Services outside signed SOWs",
+        "Unilateral Client scope expansion",
+        "No fee mechanism for additional work"
+      ],
+      "reasoning_must_address": "Scope creep; undefined obligation; Agency could be required to provide unbilled services",
+      "category": "1. Obligations & Performance",
+      "subcategory": "Clarity of obligations"
+    },
+    {
+      "test_id": "SERVICES_02",
+      "clause_ref": "Agency IP",
+      "section": "5.2",
+      "original_text": "To the extent Agency IP is incorporated into any Deliverables, Agency grants Client a non-exclusive, perpetual, royalty-free license to use such Agency IP solely as part of the Deliverables.",
+      "cp_redline": "To the extent Agency IP is incorporated into Deliverables, Agency grants Client a license to use such Agency IP in [Territory], revocable upon notice.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: Non-exclusive, perpetual, royalty-free license. Reject territory limitation and revocability.",
+      "key_elements": [
+        "1) Perpetual, not revocable 2) Worldwide, not territory-limited 3) Royalty-free 4) For use as part of Deliverables"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May add: modification rights for Client",
+        "May add: sublicense rights to affiliates"
+      ],
+      "unacceptable_responses": [
+        "Revocable license",
+        "Territory-limited license",
+        "Royalty-bearing license",
+        "License narrower than baseline"
+      ],
+      "reasoning_must_address": "Client cannot use deliverables effectively with territory limitation or revocability; baseline already protects Agency IP ownership",
+      "category": "3. Intellectual Property & Data",
+      "subcategory": "IP ownership"
+    },
+    {
+      "test_id": "SERVICES_03",
+      "clause_ref": "Review Period",
+      "section": "6.1",
+      "original_text": "Client shall review each Deliverable and provide written acceptance or rejection within fifteen (15) business days. If rejected, Agency has opportunity to cure.",
+      "cp_redline": "Client shall review each Deliverable and provide written acceptance or rejection within five (5) business days. If Client fails to respond, Deliverable is deemed accepted.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: 15 business days for review. Reject 5-day acceptance default.",
+      "key_elements": [
+        "1) Minimum 15 business days review period 2) Silence = rejection, not acceptance (baseline provision) 3) Agency has cure opportunity"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "15 days minimum review period",
+        "May add: reminder process before deemed acceptance",
+        "May clarify: cure period duration"
+      ],
+      "unacceptable_responses": [
+        "5-day deemed acceptance",
+        "Acceptance as default for silence",
+        "Review period under 10 business days",
+        "No cure opportunity"
+      ],
+      "reasoning_must_address": "5 days insufficient for stakeholder review; silence=acceptance creates risk of accepting defective deliverables",
+      "category": "1. Obligations & Performance",
+      "subcategory": "Conditions and timeframes"
+    },
+    {
+      "test_id": "SERVICES_04",
+      "clause_ref": "Liability Cap",
+      "section": "10.2",
+      "original_text": "AGENCY'S TOTAL LIABILITY SHALL NOT EXCEED THE FEES PAID BY CLIENT UNDER THE APPLICABLE STATEMENT OF WORK.",
+      "cp_redline": "Agency's total liability shall not exceed the lesser of SOW fees or $25,000.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: Liability cap tied to SOW fees without arbitrary fixed ceiling.",
+      "key_elements": [
+        "1) Cap tied to fees paid 2) No arbitrary low fixed cap 3) Scales with engagement size 4) Minimum floor acceptable"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "Cap at SOW fees (no fixed ceiling)",
+        "May add: minimum floor of $50K+",
+        "May add: carve-outs for gross negligence, willful misconduct"
+      ],
+      "unacceptable_responses": [
+        "Fixed $25K cap",
+        "Cap below SOW fees",
+        "Cap that does not scale with engagement",
+        "Arbitrary low ceiling disconnected from fees"
+      ],
+      "reasoning_must_address": "$25K fixed cap inadequate for substantial engagements; cap should be proportional to fees paid",
+      "category": "2. Liability & Redress",
+      "subcategory": "Limitation of liability"
+    }
+  ],
+  "part_b_whole_document": {
+    "reference": {
+      "source_file": "../../freeform/ground_truth/services.json",
+      "gt_version": "3.0_v4-enhanced_LOCKED",
+      "total_issues": 26,
+      "tier_breakdown": {
+        "T1": 4,
+        "T2": 11,
+        "T3": 11
+      },
+      "weighted_max": 98
+    },
+    "note": "Part B uses the Freeform Baseline GT. Same contract, same issues. Evaluate whether Leah still detects these risks when CP redlines are present."
+  },
+  "part_c_document_quality": {
+    "scope": "Every redline Leah produces in the output .docx",
+    "per_redline_capture": {
+      "redline_id": "Sequential ID (e.g., RL-01)",
+      "location": "Clause/section reference",
+      "type": "CP_RESPONSE | NEW_REDLINE",
+      "linked_gt_id": "GT ID if NEW_REDLINE addresses Part B issue, else null",
+      "action_stated": "ACCEPT | MODIFY | REJECT | ADD | DELETE",
+      "redline_exists": "Y | N",
+      "action_executed": "ACCEPT | MODIFY | REJECT | ADD | DELETE | NONE",
+      "execution_match": "Y | N | NA (NA if redline_exists=N)",
+      "is_wholesale": "Y | N",
+      "precision_score": "0-2 (aligned pair average)",
+      "insertion_accuracy": "0-2 | NA (aligned pair average, NA for DELETE/simple swaps)",
+      "notes": "Optional observations"
+    },
+    "aggregation_rules": {
+      "binary_fields": "Most confident determination wins",
+      "quality_fields": "Averaged across evaluations; median used for divergent scores",
+      "na_handling": "Exclude from averages"
+    }
+  },
+  "scoring_summary": {
+    "part_a": {
+      "items": 4,
+      "max_per_item": 6,
+      "max_total": 24,
+      "dimensions": {
+        "action": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "revision": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "reasoning": {
+          "max": 2,
+          "weight": "20%"
+        }
+      },
+      "pass_threshold": ">=70% AND 0 critical failures",
+      "critical_failures": [
+        "REJECT-only scored as ACCEPT",
+        "ACCEPT-only scored as REJECT",
+        "Revision contains unacceptable element"
+      ]
+    },
+    "part_b": {
+      "items": 26,
+      "weighted_max": 98,
+      "tier_weights": {
+        "T1": 8,
+        "T2": 5,
+        "T3": 1
+      },
+      "pass_threshold": "T1 Gate PASS AND >=70%",
+      "t1_gate": "Any T1 miss = FAIL"
+    },
+    "part_c": {
+      "per_redline_max": 6,
+      "dimensions": {
+        "precision": "0-2",
+        "insertion_accuracy": "0-2 or NA"
+      },
+      "metrics": [
+        "Wholesale Rate",
+        "Execution Mismatch Count",
+        "Missing Redline Count",
+        "Avg Precision",
+        "Avg Insertion Accuracy"
+      ],
+      "separate_reporting": [
+        "CP_RESPONSE",
+        "NEW_REDLINE"
+      ]
+    }
+  }
+}

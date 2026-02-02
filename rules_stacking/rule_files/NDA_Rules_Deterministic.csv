@@ -1,0 +1,177 @@
+Rule Name,Rule
+CI Definition - Unmarked Information Deletion,"IDENTIFY
+Identify the definition of Confidential Information, Proprietary Information, or Evaluation Material. Look for clauses defining what information is protected, typically in the definitions section or early in the agreement.
+
+ANALYSE
+Analyse the definition to determine whether it includes language such as ""whether or not marked as confidential"" or ""whether or not designated as confidential.""
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no ""whether or not marked"" language is present, make no changes. (b) If the definition includes ""whether or not marked as confidential,"" delete that phrase. (c) If the definition includes ""whether or not designated,"" delete that phrase. Delete only the unmarked information expansion; do not delete the entire definition."
+CI Definition - Public Information Deletion,"IDENTIFY
+Identify the definition of Confidential Information. Look for language improperly including publicly available information within the scope of protection.
+
+ANALYSE
+Analyse the definition to determine whether it includes language such as ""regardless of whether such information is publicly available"" or ""including information in the public domain.""
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no public information inclusion language is present, make no changes. (b) If the definition includes ""regardless of whether such information is publicly available,"" delete that phrase. (c) If the definition includes ""including information in the public domain,"" delete that phrase. Delete only the public information expansion; do not delete the entire definition."
+CI Definition - Residual Knowledge Deletion,"IDENTIFY
+Identify the definition of Confidential Information. Look for language including residual knowledge or general skills within the scope of protection.
+
+ANALYSE
+Analyse the definition to determine whether it includes language such as ""retained in unaided memory,"" ""residual knowledge,"" or ""general skills, knowledge, and experience.""
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no residual knowledge language is present, make no changes. (b) If the definition includes ""retained in unaided memory,"" delete that phrase. (c) If the definition includes ""residual knowledge,"" delete that phrase. (d) If the definition includes ""general skills, knowledge, and experience,"" delete that phrase. Delete only the residual knowledge expansion; do not delete the entire definition."
+CI Definition - Oral Disclosure Amendment,"IDENTIFY
+Identify the definition of Confidential Information. Look for provisions addressing how oral disclosures are treated.
+
+ANALYSE
+Analyse the definition to determine whether oral disclosures require written confirmation to be deemed Confidential Information, or whether they are included without confirmation.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If oral disclosures require written confirmation, make no changes. (b) If the definition states ""oral disclosures need not be confirmed in writing,"" amend to replace that phrase with ""oral disclosures shall be confirmed in writing within ten (10) business days to be deemed Confidential Information."" Amend only the oral disclosure treatment; do not delete the entire definition."
+CI Carve-Outs - Public Domain Addition,"IDENTIFY
+Identify the exclusions or carve-outs from the Confidential Information definition. Look for language such as ""shall not include,"" ""does not include,"" ""excludes,"" or ""exceptions.""
+
+ANALYSE
+Analyse the carve-outs to determine whether a Public Domain exclusion is present covering information that is or becomes publicly available through no fault of the Receiving Party.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If a Public Domain carve-out is present, make no changes. (b) If no Public Domain carve-out is present, add the following to the existing exclusions list: ""information that is or becomes publicly available through no fault of the Receiving Party."" Insert at the end of the existing carve-out list, maintaining the existing numbering format."
+CI Carve-Outs - Prior Knowledge Addition,"IDENTIFY
+Identify the exclusions or carve-outs from the Confidential Information definition.
+
+ANALYSE
+Analyse the carve-outs to determine whether a Prior Knowledge exclusion is present covering information known to the Receiving Party before disclosure.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If a Prior Knowledge carve-out is present, make no changes. (b) If no Prior Knowledge carve-out is present, add the following to the existing exclusions list: ""information that was known to the Receiving Party prior to disclosure, as evidenced by written records."" Insert at the end of the existing carve-out list, maintaining the existing numbering format."
+CI Carve-Outs - Third Party Source Addition,"IDENTIFY
+Identify the exclusions or carve-outs from the Confidential Information definition.
+
+ANALYSE
+Analyse the carve-outs to determine whether a Third Party Source exclusion is present covering information received from a third party not bound by confidentiality.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If a Third Party Source carve-out is present, make no changes. (b) If no Third Party Source carve-out is present, add the following to the existing exclusions list: ""information received from a third party not bound by confidentiality obligations to the Disclosing Party."" Insert at the end of the existing carve-out list, maintaining the existing numbering format."
+CI Carve-Outs - Independent Development Addition,"IDENTIFY
+Identify the exclusions or carve-outs from the Confidential Information definition.
+
+ANALYSE
+Analyse the carve-outs to determine whether an Independent Development exclusion is present covering information developed without use of Confidential Information.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If an Independent Development carve-out is present, make no changes. (b) If no Independent Development carve-out is present, add the following to the existing exclusions list: ""information independently developed by the Receiving Party without use of or reference to the Confidential Information."" Insert at the end of the existing carve-out list, maintaining the existing numbering format."
+Term and Survival - Perpetual Amendment,"IDENTIFY
+Identify clauses addressing the survival of confidentiality obligations. Look for sections titled ""Term,"" ""Duration,"" ""Confidentiality Period,"" or ""Survival.""
+
+ANALYSE
+Analyse each survival provision to determine whether survival is stated as ""perpetual,"" ""in perpetuity,"" ""indefinite,"" ""indefinitely,"" or ""without limitation as to time.""
+
+ACTION
+Based on your analysis, apply the following rules: (a) If survival is stated with a defined period, make no changes. (b) If survival is stated as ""perpetual,"" ""in perpetuity,"" ""indefinite,"" ""indefinitely,"" or ""without limitation as to time,"" amend to replace that phrase with ""three (3) years following the termination or expiration of this Agreement."" Amend only the survival period; do not delete the survival provision."
+Term and Survival - Excessive Duration Amendment,"IDENTIFY
+Identify clauses addressing the survival of confidentiality obligations with a defined duration.
+
+ANALYSE
+Analyse whether the survival period exceeds five years.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If survival is five years or less, make no changes. (b) If survival exceeds five years (such as ten years, seven years, or similar), amend to replace the duration with ""three (3) years following the termination or expiration of this Agreement."" Amend only the survival period; do not delete the survival provision."
+Term and Survival - Missing Duration Addition,"IDENTIFY
+Identify agreements that lack any specified survival period for confidentiality obligations.
+
+ANALYSE
+Analyse whether the agreement specifies how long confidentiality obligations continue after termination or expiration.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If a survival period is specified, make no changes. (b) If no survival period is specified, add the following at the end of the Term section: ""The confidentiality obligations shall survive for a period of three (3) years following the termination or expiration of this Agreement."""
+Compelled Disclosure - Prohibition Amendment,"IDENTIFY
+Identify provisions addressing legally required or compelled disclosure. Look for language such as ""required by law,"" ""legal process,"" ""subpoena,"" ""court order,"" or ""governmental request.""
+
+ANALYSE
+Analyse whether the Receiving Party is prohibited from disclosure even when legally compelled, or requires prior consent before legally compelled disclosure. Look for language such as ""under no circumstances shall disclose,"" ""shall not disclose under any circumstances including legal process,"" ""prior written consent required before any legally compelled disclosure,"" or ""consent may be withheld in sole discretion.""
+
+ACTION
+Based on your analysis, apply the following rules: (a) If a reasonable compelled disclosure permission already exists, make no changes. (b) If the Receiving Party is prohibited from disclosure when legally compelled, or prior consent is required, amend by replacing the prohibitive language with: ""Notwithstanding the foregoing, the Receiving Party may disclose Confidential Information to the extent required by applicable law, regulation, or legal process, provided that the Receiving Party (to the extent legally permitted) gives the Disclosing Party prompt written notice of such requirement prior to disclosure to enable the Disclosing Party to seek a protective order."" Amend only the compelled disclosure treatment; do not delete notice requirements that should be retained."
+Non-Solicitation - Excessive Duration Amendment,"IDENTIFY
+Identify any non-solicitation provisions restricting solicitation, recruitment, or hiring of employees. Look for language such as ""non-solicitation,"" ""shall not solicit,"" ""shall not recruit,"" or ""shall not hire.""
+
+ANALYSE
+Analyse the duration of the non-solicitation restriction to determine whether it exceeds twelve months.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If non-solicitation period is twelve months or less, make no changes. (b) If non-solicitation period exceeds twelve months (such as eighteen months, twenty-four months, or thirty-six months), amend to replace the duration with ""twelve (12) months."" Amend only the duration; do not delete the non-solicitation provision."
+Non-Compete - Deletion,"IDENTIFY
+Identify any non-compete or non-competition provisions. Look for language such as ""non-compete,"" ""non-competition,"" ""shall not compete,"" ""competitive activities,"" ""competing business,"" or ""services to competitors.""
+
+ANALYSE
+Analyse whether a non-compete provision exists restricting the Receiving Party from competing or providing services to competitors.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no non-compete provision exists, make no changes. (b) If any non-compete provision exists, delete the entire non-compete provision. Delete the non-compete provision entirely; do not delete non-solicitation provisions."
+Return and Destruction - Compliance Exception Addition,"IDENTIFY
+Identify provisions requiring return or destruction of Confidential Information. Look for language such as ""return or destroy,"" ""return and destruction,"" ""destroy all copies,"" or ""without exception.""
+
+ANALYSE
+Analyse whether the Receiving Party is required to destroy all copies without exception and without permission to retain archival copies for legal compliance.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If reasonable retention exceptions exist for legal compliance, make no changes. (b) If destruction without exception is required, add the following immediately after the destruction requirement: ""; provided, however, that the Receiving Party may retain (i) one archival copy for legal compliance purposes, and (ii) copies residing on routine backup systems, in each case subject to the continuing confidentiality obligations of this Agreement."" Insert in place within the existing destruction clause."
+Injunctive Relief - Bond Waiver Deletion,"IDENTIFY
+Identify provisions addressing injunctive relief or equitable remedies. Look for language such as ""injunctive relief,"" ""equitable relief,"" ""specific performance,"" or ""irreparable harm.""
+
+ANALYSE
+Analyse whether the provision waives the requirement to post bond with language such as ""without posting bond,"" ""without the necessity of posting any bond,"" or ""waives any requirement for bond.""
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no bond waiver language is present, make no changes. (b) If bond waiver language is present, delete only the bond waiver phrase. Delete only the bond waiver; do not delete the injunctive relief provision or waiver of proving actual damages."
+Indemnification - Broad-form Trigger Deletion,"IDENTIFY
+Identify indemnification provisions related to breach of the agreement. Look for language such as ""indemnify,"" ""hold harmless,"" or ""indemnification.""
+
+ANALYSE
+Analyse whether broad-form triggers are present requiring indemnification regardless of the Disclosing Party's fault. Look for language such as ""regardless of fault,"" ""regardless of the fault or negligence,"" ""whether or not caused by the negligence of,"" or ""including the negligence of.""
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no broad-form trigger is present, make no changes. (b) If ""regardless of fault"" is present, delete that phrase. (c) If ""regardless of the fault or negligence"" is present, delete that phrase. (d) If ""whether or not caused by the negligence of"" is present, delete that phrase. (e) If ""including the negligence of"" is present, delete that phrase. Delete only the broad-form trigger; do not delete the entire indemnification clause."
+Assignment - Asymmetric Rights Amendment,"IDENTIFY
+Identify provisions addressing assignment of rights or obligations. Look for language such as ""assignment,"" ""assign,"" or ""transfer.""
+
+ANALYSE
+Analyse whether the Disclosing Party may assign without consent while the Receiving Party requires consent. Look for language such as ""may freely assign,"" ""may assign without consent,"" or ""may assign at its sole discretion"" applying only to the Disclosing Party.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If assignment rights are mutual, make no changes. (b) If the Disclosing Party may assign without consent but the Receiving Party requires consent, amend to replace the asymmetric provision with: ""Neither party may assign this Agreement without the prior written consent of the other party, which consent shall not be unreasonably withheld."" Amend to make assignment rights mutual."
+Governing Law - Offshore Jurisdiction Flag,"IDENTIFY
+Identify governing law and jurisdiction clauses. Look for sections titled ""Governing Law,"" ""Jurisdiction,"" ""Venue,"" or ""Forum.""
+
+ANALYSE
+Analyse whether the jurisdiction is offshore, including Cayman Islands, British Virgin Islands, Bermuda, Channel Islands, or Isle of Man.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If jurisdiction is not offshore, make no changes. (b) If jurisdiction is Cayman Islands, British Virgin Islands, Bermuda, Channel Islands, or Isle of Man, flag for review with note: ""Offshore jurisdiction identified. Recommend amending to jurisdiction with nexus to the parties."" Do not automatically amend; flag for commercial discussion."
+Governing Law - Distant Jurisdiction Flag,"IDENTIFY
+Identify governing law and jurisdiction clauses.
+
+ANALYSE
+Analyse whether the jurisdiction is distant or inconvenient with no apparent nexus to the parties, such as Dubai, UAE, Singapore, or Hong Kong when the parties have no presence there.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If jurisdiction has nexus to the parties, make no changes. (b) If jurisdiction is Dubai, UAE, Singapore, or Hong Kong and appears to have no nexus to the parties, flag for review with note: ""Distant jurisdiction with no apparent nexus to the parties. Recommend amending."" Do not automatically amend; flag for commercial discussion."
+Limitation of Liability - Unlimited Exposure Flag,"IDENTIFY
+Identify any limitation of liability provisions or statements that liability is unlimited. Look for language such as ""limitation of liability,"" ""unlimited liability,"" ""uncapped,"" or ""without limitation.""
+
+ANALYSE
+Analyse whether liability is stated as unlimited, uncapped, or without limitation.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If a reasonable liability cap exists, make no changes. (b) If liability is stated as ""unlimited,"" ""uncapped,"" ""without limitation,"" or ""without any monetary limitation,"" flag for review with note: ""Unlimited liability exposure identified. Recommend adding mutual liability cap."" Do not automatically amend; flag for commercial discussion."
+Limitation of Liability - Missing Provision Flag,"IDENTIFY
+Identify whether the agreement contains any limitation of liability provision.
+
+ANALYSE
+Analyse whether the agreement lacks any limitation of liability provision.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If a limitation of liability provision exists, make no changes. (b) If no limitation of liability provision exists, flag for review with note: ""No limitation of liability provision found. Consider adding mutual liability cap."" Do not automatically add; flag for commercial discussion."

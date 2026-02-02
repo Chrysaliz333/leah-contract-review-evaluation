@@ -1,0 +1,654 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T19:00:00Z",
+    "evaluator_model": "opus",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Pricing and Modifications",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor may modify prices, discounts, or product offerings only upon ninety (90) days' prior written notice to Reseller, and any such changes shall not apply to orders placed or quotes issued prior to the effective date of such changes. Any material changes to pricing or discounts shall require the mutual written agreement of both Parties.",
+        "effective_rationale_excerpt": "The original clause allows Vendor to unilaterally change pricing and discounts with minimal notice, harming Pacific Tech Distributors LLC's ability to plan and price. This amendment extends notice, protects pending orders, and requires mutual agreement for material changes.",
+        "judge_reasoning": "Starliner correctly identifies the unilateral price change risk at clause 4.1 and classifies it as Favorable (with recommendation to amend). The risk_table notes 'unilaterally modify prices, discounts, or product offerings with 30 days' notice'. The proposed redline extends notice to 90 days, protects pending orders/quotes, and requires mutual agreement for material changes. Comprehensive fix addressing all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "No termination for convenience during Term",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Term and Renewal",
+      "evidence": {
+        "proposed_revision_excerpt": "After the initial term, Reseller may terminate this Agreement for convenience upon ninety (90) days' prior written notice.",
+        "effective_rationale_excerpt": "The original clause prevents Pacific Tech Distributors LLC from terminating for convenience, which could lock it into unfavorable terms. This amendment allows for termination after the initial term, increasing flexibility and reducing long-term risk.",
+        "judge_reasoning": "Starliner correctly identifies the no-TfC restriction at clause 9.1 and classifies it as Favorable (with recommendation to amend). The risk_table notes 'No termination for convenience during the term, and automatic renewal unless 90 days' notice is given, which may lock Pacific Tech Distributors LLC into unfavorable terms.' The proposed amendment adds convenience termination after initial term with 90 days' notice. Directly addresses GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Vendor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Liability Cap",
+      "evidence": {
+        "proposed_revision_excerpt": "VENDOR'S TOTAL LIABILITY SHALL NOT EXCEED TWO (2) TIMES THE AMOUNTS PAID BY RESELLER IN THE TWELVE MONTHS PRECEDING THE CLAIM; PROVIDED, HOWEVER, THAT THIS LIMITATION SHALL NOT APPLY TO VENDOR'S INDEMNIFICATION, WARRANTY, OR INTELLECTUAL PROPERTY OBLIGATIONS.",
+        "effective_rationale_excerpt": "The original cap may be insufficient to cover actual losses, especially for IP or warranty claims. Raising the cap and excluding key obligations ensures Pacific Tech Distributors LLC can recover for significant Vendor failures.",
+        "judge_reasoning": "Starliner correctly identifies the insufficient liability cap at clause 12.2 and classifies it as Favorable with recommendation to amend. The risk_table notes 'may be insufficient to cover actual losses'. The proposed redline doubles the cap to 2x fees and adds carve-outs for indemnification, warranty, and IP. Addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.2",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Disclaimer",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS EXPRESSLY SET FORTH HEREIN, VENDOR MAKES NO WARRANTIES OF ANY KIND; PROVIDED, HOWEVER, THAT THIS DISCLAIMER SHALL NOT APPLY TO VENDOR'S INDEMNIFICATION, WARRANTY, OR THIRD-PARTY INTELLECTUAL PROPERTY OBLIGATIONS UNDER THIS AGREEMENT.",
+        "effective_rationale_excerpt": "The original disclaimer is overly broad and could negate critical protections. Carving out indemnity, warranty, and IP obligations preserves Pacific Tech Distributors LLC's remedies for serious breaches or third-party claims.",
+        "judge_reasoning": "Starliner correctly identifies the broad warranty disclaimer at clause 11.2 and classifies it as Favorable with recommendation to amend. The risk_table notes 'Broad disclaimer limits Vendor's liability and warranties, exposing Pacific Tech Distributors LLC to risk if products are defective or infringe third-party rights.' The proposed redline carves out indemnification, warranty, and IP from disclaimer. Addresses GT concerns."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "2.1 / 2.2",
+      "tier": "T2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-No Exclusivity Reservation",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor reserves the right to sell Products directly and to appoint other resellers within the Territory, provided that Vendor shall give Reseller at least sixty (60) days' advance written notice of any new reseller appointments in the Territory and shall not directly solicit or sell Products to any End User that is an existing customer of Reseller without Reseller's prior written consent.",
+        "effective_rationale_excerpt": "The original clause allows Vendor to undermine Pacific Tech Distributors LLC's market position by appointing competitors or selling directly without restriction. This amendment adds notice and non-solicitation requirements, protecting Pacific Tech Distributors LLC's investments and customer relationships.",
+        "judge_reasoning": "Starliner identifies the non-exclusivity issue at 2.2 and classifies it as Favorable with recommendation to amend. The risk_table notes 'Vendor reserves broad rights to appoint other resellers and sell directly, limiting Pacific Tech Distributors LLC's market opportunity.' The proposed redline adds 60-day notice for new reseller appointments and non-solicitation of existing customers. Addresses GT concern about protecting Reseller investment."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 5,
+      "total_points": 5.5,
+      "matched_redline_id": "Redline-Payment Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Reseller shall pay all undisputed invoices within thirty (30) days of invoice date. Reseller may withhold payment for any disputed or defective Products upon written notice to Vendor, and late payments on undisputed amounts bear interest at 1.5% per month.",
+        "effective_rationale_excerpt": "The original clause does not allow for invoice disputes or withholding payment for defective products, exposing Pacific Tech Distributors LLC to unfair payment demands.",
+        "judge_reasoning": "Starliner identifies payment terms at 5.1 as Requires Clarification and notes the 'high late interest' with 'no mechanism for disputing invoices'. However, the proposed redline does not address the high interest rate (1.5% per month / 18% APR) which is the core GT concern - it retains the rate. The amendment adds dispute mechanism but doesn't cap or reduce the rate. Partial detection - issue acknowledged but not fully remedied."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vendor can require prepayment on credit issues",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Credit Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor may establish and modify credit limits for Reseller upon at least thirty (30) days' prior written notice, based on objective, pre-disclosed criteria. Vendor may require prepayment only if Reseller is in material breach of payment obligations and after providing written notice and an opportunity to cure.",
+        "effective_rationale_excerpt": "The original clause allows Vendor to change credit terms or require prepayment at will, which could disrupt Pacific Tech Distributors LLC's operations. This amendment adds notice, objective criteria, and cure rights, ensuring changes are fair and predictable.",
+        "judge_reasoning": "Starliner correctly identifies the credit control issue at 5.2 and classifies it as Favorable with recommendation to amend. The risk_table notes 'Vendor may unilaterally change credit terms or require prepayment, which could disrupt operations.' The proposed amendment adds 30-day notice, objective criteria, material breach requirement, and cure opportunity. Comprehensively addresses GT concerns."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Sales reports require End User information",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13.0,
+      "matched_redline_id": "Redline-Sales Reports",
+      "evidence": {
+        "proposed_revision_excerpt": "Reseller shall provide quarterly reports detailing Products sold and End User information strictly limited to what is necessary for Vendor's legitimate business purposes and in compliance with all applicable privacy laws. Reports are due within fifteen (15) days after each quarter end.",
+        "effective_rationale_excerpt": "The original clause requires broad End User information, risking privacy violations and competitive exposure. This amendment limits data to what is necessary and requires compliance with privacy laws.",
+        "judge_reasoning": "Starliner correctly identifies the reporting issue at 8.1 as Requires Clarification. The risk_table notes 'scope of End User information is not limited and could raise privacy or competitive concerns.' The proposed redline limits data to what's necessary and requires privacy law compliance. Addresses GT concerns but doesn't add confidentiality treatment of the data or make pipeline optional. Amendment score 2 for partial fix."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, EXCEPT FOR DAMAGES ARISING FROM GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR VENDOR'S BREACH OF ITS INDEMNIFICATION OR INTELLECTUAL PROPERTY OBLIGATIONS.",
+        "effective_rationale_excerpt": "The original clause's blanket exclusion could leave Pacific Tech Distributors LLC uncompensated for serious Vendor misconduct or IP breaches. This amendment carves out key exceptions, ensuring meaningful remedies for egregious Vendor actions.",
+        "judge_reasoning": "Starliner correctly identifies the consequential damages exclusion at 12.1 and classifies it as Favorable with recommendation to amend. The risk_table notes 'may disproportionately impact Pacific Tech Distributors LLC if Vendor's breach causes business loss.' The proposed redline adds carve-outs for gross negligence, willful misconduct, and IP/indemnification obligations. Addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "9.3",
+      "tier": "T2",
+      "issue": "Termination effects - no sell-off period",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Effect of Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "(d) Reseller shall have a period of ninety (90) days to sell off existing inventory and fulfill outstanding End User commitments.",
+        "effective_rationale_excerpt": "The original clause requires immediate cessation of sales, risking loss on unsold inventory and customer commitments. This amendment provides a reasonable sell-off period, protecting Pacific Tech Distributors LLC's investments and customer relationships.",
+        "judge_reasoning": "Starliner correctly identifies the missing sell-off period at 9.3 as Requires Clarification. The risk_table notes 'no provision for sell-off period for existing inventory or licenses.' The proposed amendment adds a 90-day sell-off period for existing inventory and End User commitments. Directly addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Indemnification by Vendor",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor shall indemnify, defend, and hold harmless Reseller and its affiliates, officers, directors, and employees from and against any and all claims, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or relating to: (a) any third-party claim that the Products infringe, misappropriate, or otherwise violate any intellectual property right; (b) Vendor's breach of this Agreement; or (c) Vendor's gross negligence or willful misconduct.",
+        "effective_rationale_excerpt": "The agreement lacks an explicit indemnification provision, exposing Pacific Tech Distributors LLC to third-party claims and Vendor breaches. Adding this clause ensures Vendor is responsible for its products and conduct, aligning risk allocation with industry standards.",
+        "judge_reasoning": "Starliner correctly identifies the missing indemnification through a new clause recommendation in the risk_table. The proposed redline adds comprehensive indemnification covering IP infringement, breach, and misconduct, with defense obligation and attorneys' fees. Directly addresses the T1 GT issue about missing IP indemnification."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13.0,
+      "matched_redline_id": "Redline-Data Protection Compliance",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall comply with all applicable data protection and privacy laws in connection with the collection, processing, and transfer of any personal data under this Agreement. The Parties shall implement appropriate technical and organizational measures to protect personal data against unauthorized access, loss, or disclosure.",
+        "effective_rationale_excerpt": "No clause addresses compliance with data protection or privacy laws, which is critical for handling End User data. Adding a clause requiring both parties to comply with applicable data protection and privacy laws reduces regulatory risk.",
+        "judge_reasoning": "Starliner correctly identifies the missing data protection clause through a new clause recommendation. The proposed redline requires compliance with data protection laws and implementation of security measures. Addresses core GT concern but is less comprehensive than ideal (doesn't specify GDPR/CCPA, processing roles, or breach notification). Amendment score 2."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 5,
+      "total_points": 7.5,
+      "matched_redline_id": "Redline-End User Support",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor shall provide second-level technical support to Reseller within commercially reasonable response times, and shall maintain an escalation process for unresolved issues.",
+        "effective_rationale_excerpt": "The original clause lacks defined response times or escalation for Vendor support, risking delays for Pacific Tech Distributors LLC's customers.",
+        "judge_reasoning": "Starliner identifies the missing SLAs at 7.2 as Requires Clarification. The risk_table notes 'no specification of Vendor's second-level support response times or escalation process.' However, the proposed amendment only adds 'commercially reasonable response times' and 'escalation process' without specific metrics. The GT expects tiered SLAs with actual response/resolution times and remedies. Partial detection - issue identified but fix is vague rather than specific."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Discount",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to reference t",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Discount is defined, but the actual percentage or methodology is not included here or referenced to a specific schedule. This could lead to disputes if Exhibit B is unclear or not attached."
+    },
+    {
+      "clause": "1.3",
+      "issue_summary": "Definition of Products",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require Exh",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Products are defined by reference to Exhibit A, which is not attached. Lack of specificity can cause ambiguity about what is covered, increasing risk for Pacific Tech Distributors LLC."
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Ordering Process",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include obj",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While order submission and confirmation timelines are stated, there is no obligation for Vendor to accept orders except at Vendor’s discretion, which could be abused."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Payment Terms",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow for i",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Payment due in 30 days with high late interest; no mechanism for disputing invoices or withholding payment for defective products."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Trademark License",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include Ven",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Trademark license is limited and subject to Vendor’s brand guidelines, but there is no indemnity for IP infringement claims against Pacific Tech Distributors LLC."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "End User Support",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require def",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Pacific Tech Distributors LLC is responsible for first-level support, but there is no specification of Vendor’s second-level support response times or escalation process."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Sales Reports",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to limit requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Quarterly reporting is required, but the scope of End User information is not limited and could raise privacy or competitive concerns."
+    },
+    {
+      "clause": "9.3",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow Pacif",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Obligations upon termination are listed, but there is no provision for sell-off period for existing inventory or licenses."
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Assignment",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow assig",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Neither party may assign without consent, but there is no carve-out for assignment in connection with merger, acquisition, or sale of business."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Indemnification by Vendor",
+      "leah_classification": "🆕",
+      "leah_action": "ADD an indemnificati",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The agreement lacks an explicit indemnification provision protecting Pacific Tech Distributors LLC against third-party IP claims or Vendor’s breach. This is a significant business risk."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "🆕",
+      "leah_action": "ADD a force majeure ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No provision excuses performance for events outside either party’s control, which could expose Pacific Tech Distributors LLC to liability for unforeseeable events."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Data Protection Compliance",
+      "leah_classification": "🆕",
+      "leah_action": "ADD a clause requiri",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No clause addresses compliance with data protection or privacy laws, which is critical for handling End User data."
+    },
+    {
+      "clause": "Definition of Discount",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause defines Discount but does not ensure the percentage or methodology is binding or attached. This creates risk if Exhibit B is missing or unclear. Amending to require that Exhibit B "
+    },
+    {
+      "clause": "Definition of Products",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause references Exhibit A but does not require its attachment, risking disputes over what is included. This amendment mandates Exhibit A’s inclusion and incorporation, ensuring Pacific Tech Dist"
+    },
+    {
+      "clause": "No Exclusivity Reservation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause allows Vendor to undermine Pacific Tech Distributors LLC’s market position by appointing competitors or selling directly without restriction. This amendment adds notice and non-sol"
+    },
+    {
+      "clause": "Ordering Process",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause gives Vendor broad discretion to reject orders, which could be abused. Requiring objective criteria and good faith obligations ensures Pacific Tech Distributors LLC’s orders are pr"
+    },
+    {
+      "clause": "End User Agreements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause exposes Pacific Tech Distributors LLC to risk from EULA changes outside its control. This amendment requires Vendor to provide advance notice and restricts EULA changes from increa"
+    },
+    {
+      "clause": "Pricing and Modifications",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause allows Vendor to unilaterally change pricing and discounts with minimal notice, harming Pacific Tech Distributors LLC’s ability to plan and price. This amendment extends notice, pr"
+    },
+    {
+      "clause": "Payment Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause does not allow for invoice disputes or withholding payment for defective products, exposing Pacific Tech Distributors LLC to unfair payment demands. This amendment introduces a dis"
+    },
+    {
+      "clause": "Credit Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause allows Vendor to change credit terms or require prepayment at will, which could disrupt Pacific Tech Distributors LLC’s operations. This amendment adds notice, objective criteria, "
+    },
+    {
+      "clause": "Trademark License",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause grants a limited license but does not protect Pacific Tech Distributors LLC from third-party IP claims. This amendment adds Vendor indemnity for authorized use, reducing legal expo"
+    },
+    {
+      "clause": "End User Support",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks defined response times or escalation for Vendor support, risking delays for Pacific Tech Distributors LLC’s customers. This amendment introduces reasonable response standards"
+    },
+    {
+      "clause": "Sales Reports",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause requires broad End User information, risking privacy violations and competitive exposure. This amendment limits data to what is necessary and requires compliance with privacy laws,"
+    },
+    {
+      "clause": "Term and Renewal",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause prevents Pacific Tech Distributors LLC from terminating for convenience, which could lock it into unfavorable terms. This amendment allows for termination after the initial term, i"
+    },
+    {
+      "clause": "Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause requires immediate cessation of sales, risking loss on unsold inventory and customer commitments. This amendment provides a reasonable sell-off period, protecting Pacific Tech Dist"
+    },
+    {
+      "clause": "Confidentiality",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause’s three-year term may be too short for sensitive business information. Extending the obligation to five years or as long as the information remains confidential better protects Pac"
+    },
+    {
+      "clause": "Vendor Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause limits direct warranties to Pacific Tech Distributors LLC. This amendment provides a clear, direct warranty with remedies, ensuring Pacific Tech Distributors LLC is not left withou"
+    },
+    {
+      "clause": "Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original disclaimer is overly broad and could negate critical protections. Carving out indemnity, warranty, and IP obligations preserves Pacific Tech Distributors LLC’s remedies for serious breach"
+    },
+    {
+      "clause": "Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause’s blanket exclusion could leave Pacific Tech Distributors LLC uncompensated for serious Vendor misconduct or IP breaches. This amendment carves out key exceptions, ensuring meaning"
+    },
+    {
+      "clause": "Liability Cap",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original cap may be insufficient to cover actual losses, especially for IP or warranty claims. Raising the cap and excluding key obligations ensures Pacific Tech Distributors LLC can recover for s"
+    },
+    {
+      "clause": "Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause selects Washington law, which is less favorable for Pacific Tech Distributors LLC as a California entity. Amending to California law aligns with Pacific Tech Distributors LLC’s loc"
+    },
+    {
+      "clause": "Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause requires arbitration in Seattle, which is inconvenient and costly for Pacific Tech Distributors LLC. Amending to California or a mutually agreed location reduces travel and legal c"
+    },
+    {
+      "clause": "Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause restricts assignment, which could impede Pacific Tech Distributors LLC’s corporate transactions. This amendment allows assignment in connection with major business events, supporti"
+    },
+    {
+      "clause": "Indemnification by Vendor",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 12.2. The agreement lacks an explicit indemnification provision, exposing Pacific Tech Distributors LLC to third-party claims and Vendor breaches. Adding this clause en"
+    },
+    {
+      "clause": "Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 13.5. The contract does not address events beyond the parties’ control, creating risk for Pacific Tech Distributors LLC if unforeseen events prevent performance. This c"
+    },
+    {
+      "clause": "Data Protection Compliance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 10.1. The contract does not address compliance with data protection laws, which is a significant risk given the handling of End User information. Adding this clause ens"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 2,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 6,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "total_detection_points": 66.0,
+    "total_quality_points": 107,
+    "total_points": 173.0,
+    "additional_issues_count": 36,
+    "additional_issues_points": 7
+  }
+}

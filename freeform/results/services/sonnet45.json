@@ -1,0 +1,1224 @@
+{
+  "meta": {
+    "contract": "services",
+    "model_id": "sonnet45",
+    "evaluation_timestamp": "2026-01-25T18:45:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.1",
+        "excerpt": "Broad mutual waiver could eliminate Client recovery for foreseeable Agency-caused losses like failed campaigns or data breaches requiring careful carve-out.",
+        "reasoning": "Sonnet45 identifies the exclusion and proposes comprehensive carve-outs for confidentiality, IP, gross negligence, data breaches, and indemnities. Fully addresses all GT key elements."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 8,
+      "total_points": 16.0
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.2",
+        "excerpt": "Minimal per-SOW cap may be grossly inadequate for IP infringement, reputational damage, or data breaches. Without aggregate measure or carve-outs, Client exposure remains high.",
+        "reasoning": "Sonnet45 correctly identifies SOW-based cap as insufficient and proposes greater-of formula (2x fees or $500K minimum) with comprehensive carve-outs. Addresses all GT elements."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 8,
+      "total_points": 16.0
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.2",
+        "excerpt": "'Solely as part of Deliverables' prohibits Client from modifying embedded Agency tools or sublicensing to affiliates/vendors, creating future-use friction.",
+        "reasoning": "Sonnet45 correctly identifies the restrictive license and proposes expanding to allow modifications, derivative works, and sublicensing. Comprehensive fix."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 8,
+      "total_points": 16.0
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.1",
+        "excerpt": "Silence = rejection reverses industry norm (deemed acceptance) and exposes Client to perpetual revision loops if approvals delayed.",
+        "reasoning": "Sonnet45 correctly identifies the unusual deemed rejection mechanism and proposes replacing with deemed acceptance standard. Comprehensive fix."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 8,
+      "total_points": 16.0
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.4",
+        "excerpt": "1.5% monthly (18% APR) exceeds typical market rates and some state usury caps, creating punitive risk for Client.",
+        "reasoning": "Sonnet45 identifies high interest rate and proposes capping at 1% or legal max with good-faith dispute mechanism. Comprehensive."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "4.3",
+        "excerpt": "'May apply' language is vague, lacks proportionality requirement, notice triggers, or caps, enabling Agency to charge arbitrary fees.",
+        "reasoning": "Sonnet45 correctly identifies open-ended delay fees and proposes requiring written notice, documented costs, and Client approval. Comprehensive."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.1",
+        "excerpt": "'Final approved Deliverables' could exclude working files, source code, or design files essential for future modifications.",
+        "reasoning": "Sonnet45 identifies missing source files and proposes work-for-hire language with source file delivery. Addresses GT comprehensively."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.3",
+        "excerpt": "Agency retention of rejected concepts prevents Client from using valuable ideas even if paid for during development process.",
+        "reasoning": "Sonnet45 identifies the issue and proposes granting Client license to paid-for preliminary work. Addresses GT concern."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.3",
+        "excerpt": "Premature acceptance via public use could waive Client rights to require post-launch corrections for latent defects.",
+        "reasoning": "Sonnet45 identifies use=acceptance issue and proposes excluding internal testing and allowing post-launch defect reporting. Comprehensive."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "8.1",
+        "excerpt": "No warranty survival period or breach remedy makes enforcement difficult and leaves Client without recourse for defects.",
+        "reasoning": "Sonnet45 proposes adding 12-month warranty period with re-performance or refund remedy. Addresses GT comprehensively."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "8.3",
+        "excerpt": "Blanket disclaimer could negate Section 8.1 warranties, undermining Client protections for non-conforming Deliverables.",
+        "reasoning": "Sonnet45 identifies contradiction with express warranties and proposes preserving express warranties and carving out fraud/negligence. Comprehensive."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-12",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "9.1",
+        "excerpt": "Three-year survival insufficient for proprietary methodologies and customer data that retain competitive value indefinitely.",
+        "reasoning": "Sonnet45 correctly identifies 3-year limit as insufficient and proposes indefinite protection for trade secrets. Comprehensive."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-13",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "12.4",
+        "excerpt": "Silence on WIP delivery and transition assistance could strand Client mid-project requiring expensive re-procurement.",
+        "reasoning": "Sonnet45 identifies missing WIP delivery and transition support, proposing comprehensive termination provisions. Addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-14",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.2",
+        "excerpt": "Mandatory NY arbitration without mediation pre-step or injunctive carve-out may be costly and slow for time-sensitive IP/confidentiality disputes.",
+        "reasoning": "Sonnet45 proposes adding mediation escalation and court access for injunctive relief. Addresses GT comprehensively."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-15",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New Data Protection Clause",
+        "excerpt": "Agency likely handles customer data for campaign targeting; lack of GDPR/CCPA compliance obligations exposes Client to regulatory fines.",
+        "reasoning": "Sonnet45 proposes comprehensive data protection clause with security, breach notification, and DPA requirements. Fully addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-16",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New Insurance Clause",
+        "excerpt": "No insurance requirements leave Client exposed if Agency lacks coverage to satisfy judgments for IP infringement or negligence.",
+        "reasoning": "Sonnet45 proposes comprehensive insurance requirements including E&O, media liability, and cyber coverage. Fully addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-17",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.4",
+        "excerpt": "'Subject to confidentiality' is vague; lacks pre-launch timing control or opt-out for sensitive campaigns.",
+        "reasoning": "Sonnet45 correctly identifies missing consent and timing control, proposing prior consent and post-launch restriction. Comprehensive."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-18",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "1.1",
+        "excerpt": "Broad definition could capture project-specific tools developed for Client, blurring ownership lines.",
+        "reasoning": "Sonnet45 identifies broad Agency IP definition and proposes clarifying exclusion of Client-funded work. Addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-19",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "2.2",
+        "excerpt": "No Agency deadline to respond to change requests could indefinitely delay project adjustments, harming timeline.",
+        "reasoning": "Sonnet45 identifies missing response timeframe and proposes adding 5-day response requirement. Addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-20",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.2",
+        "excerpt": "Lack of receipt documentation and expense caps enables padding or non-transparent pass-through costs.",
+        "reasoning": "Sonnet45 identifies expense documentation gaps and proposes requiring itemized receipts and monthly caps. Addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-21",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.3",
+        "excerpt": "50% upfront deposit with no milestone linkage or refund terms shifts performance risk entirely to Client.",
+        "reasoning": "Sonnet45 identifies deposit issues and proposes milestone-based billing with refund rights. Addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-22",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.2",
+        "excerpt": "No definition of 'revision' scope invites disputes over whether Client requests constitute new work or included changes.",
+        "reasoning": "Sonnet45 identifies undefined revision scope and proposes clear definition with dispute escalation. Addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-23",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.1",
+        "excerpt": "Fixed NY law may disadvantage non-NY Client with unfamiliar legal framework and increased counsel costs.",
+        "reasoning": "Sonnet45 proposes allowing Client's home jurisdiction as alternative. Addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-24",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New Force Majeure Clause",
+        "excerpt": "No FM provision leaves parties liable for uncontrollable events (pandemic, natural disaster) creating unfair breach risk.",
+        "reasoning": "Sonnet45 proposes comprehensive force majeure clause with notice and termination rights. Fully addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-25",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New Service Level Clause",
+        "excerpt": "Absence of response-time or quality SLAs undermines accountability for timely, quality delivery.",
+        "reasoning": "Sonnet45 proposes adding service level commitments and escalation procedures. Fully addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-26",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.3",
+        "excerpt": "Mutual restriction without M&A carve-out could block legitimate corporate restructuring or affiliate transfers.",
+        "reasoning": "Sonnet45 proposes allowing assignment to affiliates and in M&A transactions. Fully addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.1",
+      "issue_summary": "Scope of Services",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include min",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause references SOWs for specific deliverables but lacks minimum service standards or quality benchmarks. Client has no contractual baseline for performance quality outside individual SOWs, crea"
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Change Orders",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add respons",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While requiring written change orders protects against scope creep, the clause lacks timeframes for Agency to respond to change requests and provides no mechanism for Client to dispute unreasonable pr"
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Additional Work",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify pro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Agency controls the proposal process for additional work with no specified turnaround time or pricing guidelines. Client cannot compel timely responses or challenge excessive pricing, creating depende"
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Fees",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include max",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Fee structure is entirely SOW-dependent with no rate caps, annual increase limits, or pricing transparency requirements. Agency has complete discretion to set pricing for each SOW, potentially leading"
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Expenses",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to lower pre-a",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The $500 threshold for pre-approval is too high for routine expenses and creates budget risk. Agency can incur substantial cumulative expenses below this threshold without oversight. The clause lacks "
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Invoicing and Deposit",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to reduce depo",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 50% deposit requirement creates significant cash flow risk for Client before any work is performed or value delivered. Combined with vague acceptance criteria elsewhere, Client could pay half upfr"
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Payment Terms and Late Fees",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to reduce late",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 1.5% monthly interest rate (18% annually) is excessive and punitive, particularly given the 30-day payment terms are standard. This creates disproportionate penalty exposure for Client compared to"
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Client-Caused Delays",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require mut",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clause creates one-sided liability where Client bears all timeline and cost consequences of delays, even when delays result from Agency's unclear requests or inadequate briefing. No burden of pro"
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Ownership of Deliverables",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to provide Cli",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ownership transfer is contingent on full payment, meaning Client has no rights to work product if payment disputes arise, even for substantially completed work. This creates hostage risk where Agency "
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Agency IP License",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify sco",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The non-exclusive license means Agency can license identical methodologies and frameworks to Client's direct competitors. The \"perpetual, royalty-free\" terms are favorable, but the license is limited "
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Preliminary Work Ownership",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to grant Clien",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Agency retains all preliminary work, meaning Client pays for concepts and drafts but receives no rights to them. Agency can reuse Client-funded creative exploration for competitors. This creates value"
+    },
+    {
+      "clause": "5.4",
+      "issue_summary": "Portfolio Rights",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require exp",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Agency has unrestricted portfolio rights \"subject to confidentiality restrictions,\" but confidentiality is defined separately with limited scope. Agency can publicly display Client's proprietary creat"
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Acceptance Review Period",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to correct dee",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause states Deliverables are \"deemed rejected\" if Client fails to respond within 15 business days, but this is contradictory and likely a drafting error (should be \"deemed accepted\"). However, t"
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Revision Limits",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to increase in",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limiting revisions to two rounds is highly restrictive for creative work where iteration is standard practice. Agency's \"then-current hourly rates\" for additional revisions are undefined and uncapped,"
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Deemed Acceptance by Use",
+      "leah_classification": "❌",
+      "leah_action": "DELETE this provisio",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Use in commerce or public distribution\" triggers automatic acceptance, eliminating Client's ability to claim defects after launch. This is extremely unfavorable as defects often only become apparent "
+    },
+    {
+      "clause": "7.1-7.2",
+      "issue_summary": "Third-Party Materials",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require pre",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Agency \"shall identify\" third-party materials and \"ensure appropriate licenses,\" but there's no timing requirement for disclosure and no warranty that licenses are actually obtained before delivery. C"
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Agency Warranties",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include fit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Warranties are limited to SOW specifications and non-infringement, but lack fitness for purpose or merchantability guarantees (which are explicitly disclaimed in 8.3). Agency only warrants work matche"
+    },
+    {
+      "clause": "8.3",
+      "issue_summary": "Warranty Disclaimer",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to limit discl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The blanket disclaimer of implied warranties is heavily one-sided, eliminating Client's statutory protections while Agency retains full contractual remedies. This is particularly problematic given the"
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Confidentiality Obligations",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend surv",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The three-year survival period is insufficient for creative and strategic marketing work, which may contain long-term competitive insights. The clause lacks definition of confidential information, exc"
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Exclusion of Consequential Damages",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to carve out c",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual exclusion appears balanced but is asymmetric in practice. Client's consequential damages from defective marketing work (lost sales, brand damage, market opportunity costs) typically far exceed "
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Liability Cap",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to set liabili",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Capping liability at fees paid under the applicable SOW is grossly inadequate for marketing work where a single campaign failure could cause millions in damages. A failed product launch campaign, for "
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Agency Indemnification",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify def",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Agency indemnifies only for IP infringement of Deliverables, excluding Client Materials. However, the exclusion of preliminary work (per 5.3) means Agency has no indemnification obligation for concept"
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Client Indemnification",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to define \"int",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Client must indemnify for \"Client's instructions to Agency\" and \"use of Deliverables beyond intended scope\", but \"intended scope\" is undefined and Agency controls the specifications. This creates open"
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Termination for Convenience",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify Cli",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day notice for termination is reasonable, but the clause states termination \"shall not affect any SOW already in progress.\" This is ambiguous—does Client remain obligated to complete and pay for in"
+    },
+    {
+      "clause": "12.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to condition p",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Client must \"pay for all Services performed and expenses incurred through termination\" with no quality or acceptance condition. Agency can deliver substandard work, get terminated, and still demand fu"
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add negotia",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Arbitration in New York may be inconvenient and expensive for Client depending on their location. The clause lacks arbitration rules (AAA, JAMS, etc.), arbitrator selection process, discovery limitati"
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Assignment Restrictions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add standar",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual consent requirement for assignment protects both parties but lacks exceptions for corporate restructuring, mergers, or assignments to affiliates. This could create business friction if Client u"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Service Level Agreements",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause estab",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract contains no SLAs defining response times, revision turnaround times, or communication standards. This creates operational uncertainty and gives Agency unlimited discretion over project ti"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Key Personnel",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause ident",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "There is no key personnel provision ensuring that the specific Agency team members Client relies upon remain assigned to the account. Agency can substitute personnel freely, potentially degrading serv"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Insurance Requirements",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract lacks insurance requirements for Agency, including professional liability (errors & omissions), general liability, and cyber liability coverage. Given the potential for significant damage"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Audit Rights",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause grant",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Client has no right to audit Agency's expense records, time tracking, or third-party license procurement. This creates verification risk where Client must accept Agency's invoicing and expense claims "
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Work Product Delivery Format",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract does not specify file formats, source files, or working files that Agency must deliver. Client may receive only final PDFs or JPEGs without editable source files (e.g., Adobe, Sketch file"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Performance Metrics and Reporting",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "There are no reporting obligations for Agency to provide campaign performance data, analytics, or results measurement. Client cannot verify whether Services are achieving business objectives or provid"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Data Security and Breach Notification",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause estab",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Beyond general confidentiality, there are no specific data security requirements or breach notification obligations. Agency will handle Client's customer data, brand assets, and strategic information "
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Subcontractor Disclosure and Approval",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While Section 13.3 addresses assignment, there is no provision governing subcontractors. Agency can subcontract work to unknown third parties without Client knowledge or consent, creating quality cont"
+    },
+    {
+      "clause": "Article 2.1 - Scope of Services",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause delegates all performance standards to individual SOWs without establishing baseline quality expectations. This amendment protects Client by establishing minimum service quality st"
+    },
+    {
+      "clause": "Article 2.2 - Change Orders",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause gives Agency unlimited time to respond to change requests and complete pricing discretion, creating operational delays and cost uncertainty for Client. This amendment establishes a"
+    },
+    {
+      "clause": "Article 2.3 - Additional Work",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause gives Agency unlimited discretion over proposal timing and content, creating uncertainty when Client has urgent additional needs. This amendment establishes clear turnaround requir"
+    },
+    {
+      "clause": "Article 3.1 - Fees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause gives Agency unlimited pricing discretion across SOWs, creating cost escalation risk over the relationship term. This amendment caps annual rate increases at five percent, protecti"
+    },
+    {
+      "clause": "Article 3.2 - Expenses",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original five-hundred-dollar threshold is too high, allowing Agency to incur substantial cumulative expenses without oversight. This amendment lowers the per-item threshold to two hundred fifty do"
+    },
+    {
+      "clause": "Article 3.3 - Invoicing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original fifty-percent deposit creates excessive cash flow risk for Client, requiring substantial payment before any value is delivered or quality can be assessed. This amendment reduces the depos"
+    },
+    {
+      "clause": "Article 3.4 - Payment Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original one-point-five-percent monthly interest (eighteen percent annually) is excessive and punitive, particularly for a thirty-day payment term. This amendment reduces late fees to zero-point-f"
+    },
+    {
+      "clause": "Article 4.3 - Delays",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause creates one-sided liability where Agency can unilaterally declare delays \"Client-caused\" and impose timeline extensions and additional fees without justification or Client agreemen"
+    },
+    {
+      "clause": "Article 5.1 - Ownership of Deliverables",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause creates hostage risk where Agency can withhold critical business assets over billing disputes, even when Client has substantially paid and the dispute involves a small amount or le"
+    },
+    {
+      "clause": "Article 5.2 - Agency IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original \"solely as part of the Deliverables\" limitation creates uncertainty about Client's ability to modify, adapt, or build upon the work, potentially requiring re-engagement with Agency for mi"
+    },
+    {
+      "clause": "Article 5.3 - Preliminary Work",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause allows Agency to retain and potentially reuse all preliminary work that Client paid for but didn't select for final execution, creating value leakage where Client's investment bene"
+    },
+    {
+      "clause": "Article 5.4 - Portfolio Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original unrestricted portfolio rights allow Agency to publicly display Client's proprietary creative work, potentially revealing competitive strategies, pre-launch campaigns, or confidential busi"
+    },
+    {
+      "clause": "Article 6.1 - Review Period",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original \"deemed rejected\" language appears to be a drafting error (should be \"deemed accepted\") and creates confusion about consequences of Client's non-response. This amendment corrects the lang"
+    },
+    {
+      "clause": "Article 6.2 - Revisions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original two-round limit is highly restrictive for creative work where iteration is standard practice and necessary to achieve optimal results. This amendment increases included revisions to four "
+    },
+    {
+      "clause": "Article 6.3 - Final Acceptance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause eliminates all of Client's warranty and remedy rights the moment work goes live, which is extremely unfavorable because many defects only become apparent post-launch through user i"
+    },
+    {
+      "clause": "Article 7.1 - Third-Party Licenses",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause gives Agency unilateral discretion to select and incorporate third-party materials without Client approval or verification, creating IP infringement risk and potential surprise cos"
+    },
+    {
+      "clause": "Article 7.2 - License Costs",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause makes Client responsible for all third-party license costs without approval thresholds, cost controls, or transparency requirements, creating unlimited cost exposure. This amendmen"
+    },
+    {
+      "clause": "Article 8.1 - Agency Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original warranties are limited to SOW conformance and non-infringement, but don't ensure the work actually achieves Client's business objectives or is free from defects. This amendment adds a fit"
+    },
+    {
+      "clause": "Article 8.3 - Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original blanket disclaimer eliminates all implied warranties, leaving Client with minimal protection given the limited express warranties in Section 8.1. This amendment carves out material defect"
+    },
+    {
+      "clause": "Article 9.1 - Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original three-year survival period is insufficient for creative and strategic marketing work, which may contain long-term competitive insights and strategies that remain valuable beyond three yea"
+    },
+    {
+      "clause": "Article 10.1 - Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original mutual exclusion appears balanced but is asymmetric in practice because Client's consequential damages from defective marketing work (lost sales, brand damage, market opportunity costs) t"
+    },
+    {
+      "clause": "Article 10.2 - Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original cap at SOW fees is grossly inadequate for marketing work where a single campaign failure could cause damages far exceeding the project fee. A fifty-thousand-dollar campaign that fails due"
+    },
+    {
+      "clause": "Article 11.1 - Agency Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original indemnification is limited to IP infringement and lacks defense cost coverage and procedural details, creating uncertainty about Agency's obligations when claims arise. This amendment exp"
+    },
+    {
+      "clause": "Article 11.2 - Client Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original indemnification for \"Client's instructions\" and \"use beyond intended scope\" is dangerously open-ended, potentially making Client liable for any Agency claim that Client's instructions or "
+    },
+    {
+      "clause": "Article 12.2 - Termination for Convenience",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause's statement that termination \"shall not affect any SOW already in progress\" is ambiguous and could be interpreted to lock Client into completing and paying for all in-progress SOWs"
+    },
+    {
+      "clause": "Article 12.4 - Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause requires Client to pay for \"all Services performed\" without any quality or acceptance condition, meaning Agency can deliver substandard work, get terminated, and still demand full "
+    },
+    {
+      "clause": "Article 13.2 - Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause mandates immediate arbitration without negotiation or mediation steps, eliminating opportunities for cost-effective dispute resolution and potentially escalating minor disagreement"
+    },
+    {
+      "clause": "Article 13.3 - Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original blanket consent requirement for all assignments creates business friction by requiring counterparty consent for routine corporate transactions like internal reorganizations, mergers, or a"
+    },
+    {
+      "clause": "New Section 2.4 - Service Level Agreements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 2.3 as new Section 2.4. The contract currently lacks any service level commitments, giving Agency unlimited discretion over response times, revision turnaround, and com"
+    },
+    {
+      "clause": "New Section 2.5 - Key Personnel",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 2.4 as new Section 2.5. The contract contains no key personnel provision, allowing Agency to freely substitute team members without Client input or consent. This create"
+    },
+    {
+      "clause": "New Section 8.4 - Insurance Requirements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 8.3 as new Section 8.4. The contract lacks any insurance requirements, meaning Client has no assurance that Agency can satisfy judgments or indemnification obligations "
+    },
+    {
+      "clause": "New Section 3.5 - Audit Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 3.4 as new Section 3.5. The contract provides no audit rights, meaning Client must accept Agency's invoicing and expense claims without ability to verify accuracy or de"
+    },
+    {
+      "clause": "New Section 5.5 - Work Product Delivery Format",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.4 as new Section 5.5. The contract does not specify what file formats or materials Agency must deliver, creating risk that Client receives only final PDFs or JPEGs wi"
+    },
+    {
+      "clause": "New Section 2.6 - Performance Metrics and Reporting",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 2.5 as new Section 2.6. The contract contains no reporting obligations, meaning Agency has no requirement to provide campaign performance data, analytics, or results me"
+    },
+    {
+      "clause": "New Section 9.2 - Data Security and Breach Notification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 9.1 as new Section 9.2. Beyond general confidentiality obligations, the contract lacks specific data security requirements or breach notification obligations. Agency wi"
+    },
+    {
+      "clause": "New Section 2.7 - Subcontractors",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 2.6 as new Section 2.7. While Section 13.3 addresses assignment, there is no provision governing subcontractors, allowing Agency to subcontract work to unknown third pa"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 26,
+      "P": 0,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 11,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 11,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "total_detection_points": 98.0,
+    "total_quality_points": 208,
+    "total_points": 306.0,
+    "additional_issues_count": 71
+  }
+}

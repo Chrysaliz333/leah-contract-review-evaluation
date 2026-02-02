@@ -1,0 +1,664 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "pioneer_deep",
+    "evaluation_timestamp": "2026-01-25T18:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-4.1 General Authorisation",
+      "evidence": {
+        "proposed_revision_excerpt": "If Controller objects within the notice period, the parties shall discuss in good faith. If not resolved, Controller may suspend the affected Processing or terminate the affected services without penalty.",
+        "effective_rationale_excerpt": "The clause allows objections but lacks due diligence and resolution mechanisms, weakening oversight of downstream processors. Adding information rights, good-faith resolution, and suspension/termination options maintains service continuity while protecting data.",
+        "judge_reasoning": "Pioneer Deep identifies the sub-processor authorization issue at clause 4.1, classifying it as ⚠️ and noting '30-day notice and objection right exist, but there's no resolution mechanism, no termination right if unresolved.' The proposed redline addresses all key GT elements by requiring due diligence information, establishing a good-faith resolution process, and granting Controller suspension/termination rights if objection persists. The rationale explains the oversight gap clearly. The redline is well-drafted and immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-5.1 Technical and Organisational Measures",
+      "evidence": {
+        "proposed_revision_excerpt": "including, at a minimum, encryption in transit and at rest, pseudonymisation where appropriate, role-based access controls and logging, vulnerability and patch management, business continuity and disaster recovery, and regular independent security testing with timely remediation.",
+        "effective_rationale_excerpt": "The clause lists examples but lacks key controls and evidence requirements. Clarifying minimum TOMs enhances security baselines and accountability without being overly prescriptive.",
+        "judge_reasoning": "Pioneer Deep identifies the vague security measures at clause 5.1, flagging it as ⚠️ and noting 'Mentions appropriate measures but lacks specificity (e.g., encryption at rest/in transit, access logs, vulnerability management, incident response). Exhibit B is blank. Weak verifiability.' The proposed redline comprehensively addresses the GT concern by specifying minimum TOMs including encryption in transit and at rest, access controls with logging, vulnerability management, business continuity, and independent security testing with remediation. The rationale correctly identifies the verification gap. The redline is precise and legally sound."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "8.1",
+      "tier": "T3",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-8.1 Notification",
+      "evidence": {
+        "proposed_revision_excerpt": "Processor shall notify Controller of any Personal Data Breach without undue delay and in any event within twenty-four (24) hours of becoming aware of such breach, followed by regular updates",
+        "effective_rationale_excerpt": "While 72 hours meets baseline, initial notice should be asap (e.g., 24 hours) with rolling updates. Also missing cost allocation when Processor at fault.",
+        "judge_reasoning": "Pioneer Deep correctly identifies that the 72-hour timeframe may be too slow, classifying clause 8.1 as ⚠️ and noting the need for faster initial notice with ongoing updates. The proposed redline changes the notification requirement to 24 hours with regular updates, which directly addresses the GT concern that 72 hours is the GDPR maximum and may be too slow for high-risk breaches. The rationale explains the need for early notice and the redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1 / 9.2",
+      "tier": "T2",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 9.5,
+      "matched_redline_id": "Redline-9.1 Allocation of Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall be liable for damages... with liability allocated in proportion to each Party's responsibility for the event giving rise to the damage and consistent with Articles 82–83 GDPR/UK GDPR.",
+        "effective_rationale_excerpt": "High-level allocation may prompt disputes in multi-party chains. Clarifying proportional, fault-based allocation reduces ambiguity and aligns with statutory principles.",
+        "judge_reasoning": "Pioneer Deep identifies liability allocation concerns at clause 9.1, flagging it as ⚠️ and noting the lack of clarity on fault allocation and interface with indemnities. The proposed redline adds proportional fault-based allocation language, which addresses the ambiguity concern. However, it does not explicitly address the GT issue about indemnification being potentially subject to hidden caps from the Principal Agreement. The redline clarifies allocation but misses the specific cap/carve-out issue raised in GT. Partial detection awarded for identifying the liability ambiguity but not the specific indemnification cap risk."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability in DPA",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Pioneer Deep does not propose a new limitation of liability clause for the DPA. While redlines to 9.1 and 9.2 address liability allocation and indemnification scope, there is no proposal to add a specific Controller liability cap or carve-out provision. The GT issue about the DPA lacking its own limitation of liability clause is not explicitly addressed."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Deletion Timeline Unspecified",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-3.4 Deletion",
+      "evidence": {
+        "proposed_revision_excerpt": "Processor shall provide written certification of deletion and shall ensure deletion of Personal Data from backups within ninety (90) days thereafter",
+        "effective_rationale_excerpt": "The clause allows return or deletion but lacks certification and backup timelines, risking residual retention. Requiring certification and defined backup purge periods improves accountability and auditability.",
+        "judge_reasoning": "Pioneer Deep identifies the deletion timeline gap at clause 3.4, flagging it as ⚠️ and noting 'Allows deletion or return at Controller's option but lacks certification, backup deletion timelines, and secure destruction standards. Ambiguity risks residual data retention.' The proposed redline adds written certification and a 90-day backup deletion timeline, directly addressing the GT concern. The rationale explains the residual retention risk clearly. The redline is well-drafted and comprehensive."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.2",
+      "tier": "T3",
+      "issue": "All Audit Costs on Controller",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-7.2 Audit Procedures",
+      "evidence": {
+        "proposed_revision_excerpt": "Controller may conduct additional audits following a Personal Data Breach, material security incident, material non-compliance finding, or regulator request. Where non-compliance is identified, Processor shall bear reasonable audit costs",
+        "effective_rationale_excerpt": "Limiting audits to once yearly and at Controller expense undermines oversight when issues arise. Allowing trigger-based audits and shifting costs where non-compliance is found incentivizes remediation",
+        "judge_reasoning": "Pioneer Deep identifies the audit cost issue at clause 7.2, classifying it as ✅ (though the reasoning indicates it should be ⚠️) and noting the limitation and cost burden. The proposed redline addresses the GT concern by allowing additional audits for cause and shifting costs to Processor when non-compliance is found. The rationale correctly explains how Controller-only costs discourage oversight. The redline is comprehensive and addresses the GT concern effectively."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "10.1",
+      "tier": "T3",
+      "issue": "Indefinite Duration",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 8.0,
+      "matched_redline_id": "Redline-10.1 Term",
+      "evidence": {
+        "proposed_revision_excerpt": "10.1A Suspension and Termination. Controller may suspend Processing or terminate the affected services or this DPA upon written notice if Processor materially breaches this DPA",
+        "effective_rationale_excerpt": "The DPA ties to the Principal Agreement but lacks Controller-specific remedies. Adding suspension and termination-for-cause rights addresses ongoing non-compliant processing.",
+        "judge_reasoning": "Pioneer Deep identifies a concern with clause 10.1 by proposing a new termination-for-cause provision (10.1A). The proposed redline adds Controller suspension and termination rights for material breach. While this addresses control over the DPA relationship, it does not directly address the GT concern about indefinite duration and the need to clarify maximum retention periods or add periodic review requirements. Partial credit awarded for recognizing the need for Controller exit rights, though the specific indefinite duration concern is not fully addressed."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "Exhibit A / 2.2",
+      "tier": "T2",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-2.2 Processing Details",
+      "evidence": {
+        "proposed_revision_excerpt": "No Processing shall commence until Exhibit A has been completed in full and approved in writing by Controller. Any changes to Exhibit A require Controller's prior written approval.",
+        "effective_rationale_excerpt": "The clause relies on a blank exhibit, creating scope ambiguity and compliance risk. Making completion and Controller approval a condition precedent prevents scope creep and ensures purpose limitation and minimization.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the blank Exhibit A as a critical compliance gap at clause 2.2, classifying it as ✅ (though reasoning indicates ⚠️ concern) and noting 'Exhibit A is blank; absent defined subject matter, duration, data types, and purposes, there is material ambiguity that threatens purpose limitation.' The proposed redline makes Exhibit A completion and approval a condition precedent to processing, directly addressing the GT concern about GDPR Art 28 non-compliance. The rationale explains the scope ambiguity and compliance risk clearly. The redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "Exhibit B / 5.1",
+      "tier": "T2",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12.0,
+      "matched_redline_id": "Redline-Exhibit B - Technical and Organisational Measures",
+      "evidence": {
+        "proposed_revision_excerpt": "Processor shall, at least annually, provide Controller with a summary of independent security assessments and penetration tests relevant to the services, including remediation timelines for high and critical findings",
+        "effective_rationale_excerpt": "Exhibit B is blank, hindering verification. Requiring evidence summaries and remediation timelines ensures visibility into security posture and continuous improvement.",
+        "judge_reasoning": "Pioneer Deep identifies the blank Exhibit B issue by proposing a new clause to be inserted in Exhibit B. The proposed redline requires annual security assessment summaries and remediation timelines, which addresses the verification gap. However, it does not require that Exhibit B be populated before processing commences, which is the core GT concern. The redline improves ongoing visibility but doesn't fully address the initial compliance gap of starting with a blank exhibit. Partial quality scores awarded."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit C / 4.1",
+      "tier": "T2",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exhibit C - Approved Sub-processors",
+      "evidence": {
+        "proposed_revision_excerpt": "Processor shall maintain and provide an up-to-date list of Sub-processors, including legal name, service provided, processing location(s), and applicable data transfer mechanism for any restricted transfers.",
+        "effective_rationale_excerpt": "The sub-processor list is blank, preventing assessment of data flows and transfer risks. Requiring a current, detailed list improves transparency and supports Controller due diligence and objection rights.",
+        "judge_reasoning": "Pioneer Deep identifies the blank Exhibit C issue by proposing a new clause requiring an up-to-date Sub-processor list with detailed information. The proposed redline directly addresses the GT concern that without a baseline list, objection rights are meaningless. The rationale explains the due diligence and transparency benefits clearly. The redline is well-drafted and comprehensive."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Cyber Insurance Requirement",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Cyber Insurance",
+      "evidence": {
+        "proposed_revision_excerpt": "Processor shall maintain throughout the term cyber and privacy liability insurance with coverage and limits appropriate to the nature of the Processing and industry standards and shall provide certificates of insurance upon request.",
+        "effective_rationale_excerpt": "The DPA lacks financial backstop for breach losses. Requiring cyber insurance reduces counterparty credit risk and supports recovery if incidents occur.",
+        "judge_reasoning": "Pioneer Deep identifies the missing cyber insurance requirement as a new clause recommendation. The proposed redline requires cyber and privacy liability insurance with appropriate coverage and proof upon request. The rationale explains the financial protection benefit. The redline directly addresses the GT concern about ensuring Processor has financial resources to honor indemnification obligations."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Personal Data Laws definition",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to include EU ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The definition of Data Protection Laws is broad but may omit other relevant regimes (e.g., EU GDPR if EEA data is processed, ePrivacy rules). This can create scope ambiguity and disputes about what st"
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Process only on instructions",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require pri",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Good baseline but lacks requirement to notify Controller of conflicting legal requests, to challenge unlawful disclosures, and to limit disclosure to what is strictly necessary. This weakens Controlle"
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Return or deletion",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require wri",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allows deletion or return at Controller’s option but lacks certification , backup deletion timelines, and secure destruction standards. Ambiguity risks residual data retention."
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "General authorization and notice",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require due",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day notice and objection right exist, but there’s no resolution mechanism, no termination right if unresolved, and no requirement to provide due diligence information. This increases sub-processor "
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Sub-processor obligations",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to specify flo",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "States “equivalent” obligations but lacks explicit flow-down on audits, data location disclosure, and transfer mechanisms. Insufficient for verifiable compliance."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Technical and organizational measures",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to incorporate",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mentions appropriate measures but lacks specificity (e.g., encryption at rest/in transit, access logs, vulnerability management, incident response). Exhibit B is blank. Weak verifiability for Controll"
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "International transfer restrictions",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to mandate TIA",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires safeguards but lacks specifics on TIAs, data importers, and FISA 702 risk mitigation. This leaves Controller exposed on cross-border compliance."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Breach notification timing",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require ini",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Without undue delay and within 72 hours” meets baseline, but initial notice should be asap (e.g., 24 hours) with rolling updates. Also missing cost allocation when Processor at fault."
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Breach notification contents",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require ite",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Lists core elements but lacks commitment to provide updates as facts evolve and to assist with regulator/data subject notifications within Controller-set timelines."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Allocation of liability",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to clarify fau",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "High-level statement aligned with law but lacks clarity on fault allocation in joint processing scenarios and interface with indemnities. Could invite dispute."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Term",
+      "leah_classification": "⚠️",
+      "leah_action": "Add Controller suspe",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ties duration to Principal Agreement but does not expressly allow Controller to suspend processing for risk or to terminate the DPA for material Processor breach."
+    },
+    {
+      "clause": "11.3",
+      "issue_summary": "Amendment",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to allow Proce",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Only by signed writing; acceptable generally, but Controller may need change-control agility to reflect legal changes promptly."
+    },
+    {
+      "clause": "1.1 Data Protection Laws",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause defines applicable laws but may omit EU GDPR and ePrivacy regimes relevant to cross-border services. Expanding the definition ensures comprehensive legal coverage for Processing and avoids "
+    },
+    {
+      "clause": "2.2 Processing Details",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause relies on a blank exhibit, creating scope ambiguity and compliance risk. Making completion and Controller approval a condition precedent prevents scope creep and ensures purpose limitation "
+    },
+    {
+      "clause": "2.3 Controller Instructions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause ensures instruction-based processing but lacks safeguards for compelled disclosures. Adding notice, challenge obligations, and minimization improves control and transparency. This aligns wi"
+    },
+    {
+      "clause": "3.3 Assistance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Assistance is required but lacks timelines and cost allocation, risking delays and unexpected charges. Adding clear SLAs and defaulting costs to the Processor ensures responsiveness and supports statu"
+    },
+    {
+      "clause": "3.4 Deletion",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause allows return or deletion but lacks certification and backup timelines, risking residual retention. Requiring certification and defined backup purge periods improves accountability and audi"
+    },
+    {
+      "clause": "4.1 General Authorisation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause allows objections but lacks due diligence and resolution mechanisms, weakening oversight of downstream processors. Adding information rights, good-faith resolution, and suspension/terminati"
+    },
+    {
+      "clause": "4.2 Sub-processor Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Equivalent” is vague without specifics on audits, locations, and transfers. Explicit flow-down requirements improve verifiability and reduce transfer and security risks. This change aligns sub-proces"
+    },
+    {
+      "clause": "5.1 Technical and Organisational Measures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause lists examples but lacks key controls and evidence requirements. Clarifying minimum TOMs enhances security baselines and accountability without being overly prescriptive. This favors the Co"
+    },
+    {
+      "clause": "5.2 Security Standards",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "ISO certification is positive but needs evidence and change notification for ongoing assurance. Requiring proof and prompt notice helps the Controller monitor posture and respond to risks. This benefi"
+    },
+    {
+      "clause": "6.1 Transfer Restrictions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause lacks specific obligations to perform TIAs and disclose destinations and mechanisms. Adding these requirements strengthens Controller oversight and ensures documented compliance with post-S"
+    },
+    {
+      "clause": "6.2 Transfer Mechanisms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The baseline is acceptable but should explicitly reference UK instruments and provide copies for verification. This enables the Controller to evidence compliance and review sufficiency. The change fav"
+    },
+    {
+      "clause": "7.2 Audit Procedures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limiting audits to once yearly and at Controller expense undermines oversight when issues arise. Allowing trigger-based audits and shifting costs where non-compliance is found incentivizes remediation"
+    },
+    {
+      "clause": "8.1 Notification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While 72 hours meets a regulatory outer limit, early notice enables faster containment and regulatory decision-making. Requiring 24-hour initial notice with ongoing updates gives the Controller time t"
+    },
+    {
+      "clause": "8.2 Notification Contents",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The current clause lists initial elements but omits update and assistance commitments necessary to meet evolving facts and deadlines. Adding update cadence and explicit assistance within Controller ti"
+    },
+    {
+      "clause": "8.3 Cooperation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cooperation is required but cost allocation is undefined, potentially shifting expenses onto the Controller. Tying costs to Processor-attributable breaches aligns with fault-based principles and incen"
+    },
+    {
+      "clause": "9.1 Allocation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "High-level allocation may prompt disputes in multi-party chains. Clarifying proportional, fault-based allocation reduces ambiguity and aligns with statutory principles. This favors the Controller by i"
+    },
+    {
+      "clause": "9.2 Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The indemnity is favorable but can expressly include sub-processor acts, transfer failures, and breach-related costs. This expansion clarifies coverage for key risk areas and strengthens the Controlle"
+    },
+    {
+      "clause": "10.1 Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 10.1. The DPA ties to the Principal Agreement but lacks Controller-specific remedies. Adding suspension and termination-for-cause rights addresses ongoing non-compliant"
+    },
+    {
+      "clause": "11.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 11.1. Governing law is specified but forum is not. Adding exclusive jurisdiction improves predictability and reduces parallel proceedings risk. This helps the Controlle"
+    },
+    {
+      "clause": "11.3 Amendment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Static amendment language can impede timely compliance updates. Allowing law-driven changes with notice preserves agility while giving the Controller an exit if adversely affected. This balances compl"
+    },
+    {
+      "clause": "11.4 Entire Agreement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensuring SCCs/IDTA and Exhibits are incorporated by reference clarifies their contractual force and avoids integration disputes. This benefits the Controller by securing enforceability of key complian"
+    },
+    {
+      "clause": "Exhibit B - Technical and Organisational Measures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert in Exhibit B. Exhibit B is blank, hindering verification. Requiring evidence summaries and remediation timelines ensures visibility into security posture and continuous improvement. "
+    },
+    {
+      "clause": "Exhibit C - Approved Sub-processors",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert in Exhibit C. The sub-processor list is blank, preventing assessment of data flows and transfer risks. Requiring a current, detailed list improves transparency and supports Controlle"
+    },
+    {
+      "clause": "Data Subject Request SLA",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert in Article 3 after Section 3.3. No SLA exists for data subject requests, risking missed statutory deadlines. Adding clear timelines and a no-direct-response rule preserves Controller"
+    },
+    {
+      "clause": "Cyber Insurance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert in Article 11 before Section 11.1. The DPA lacks financial backstop for breach losses. Requiring cyber insurance reduces counterparty credit risk and supports recovery if incidents o"
+    },
+    {
+      "clause": "Fault-based Cost Allocation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert in Article 7 after Section 7.2 and cross-reference Article 8. Costs currently default to Controller, reducing incentives to maintain compliance. Assigning costs to the at-fault Proce"
+    },
+    {
+      "clause": "Backup Deletion Timeline",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert in Article 3 after Section 3.4. Backup data can persist beyond primary deletion, creating residual risk. Setting a clear purge timeline with lawful retention carve-outs improves cert"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 10,
+      "P": 1,
+      "N": 0,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      },
+      "T2": {
+        "Y": 5,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "total_detection_points": 46.5,
+    "total_quality_points": 93,
+    "total_points": 139.5,
+    "additional_issues_count": 39
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "gt_metadata": {
+    "mode": "rules_stacking",
+    "contract_type": "NDA",
+    "representing_party": "Receiving Party",
+    "rule_file": "NDA_Rules_Deterministic.csv",
+    "scope": "redlines_only",
+    "gt_version": "1.0_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-14",
+    "total_tests": 15,
+    "total_contracts": 5,
+    "actions": [
+      "DELETE",
+      "AMEND",
+      "REJECT DELETION",
+      "ACCEPT WITH RISK ANALYSIS"
+    ],
+    "note": "Rules Stacking evaluates ONLY redlined clauses against deterministic rules"
+  },
+  "contracts": [
+    "NDA_Vertex_Strategic_Stacking.docx",
+    "NDA_Vanguard_Technical_Stacking.docx",
+    "NDA_TechPartners_Bilateral_Stacking.docx",
+    "NDA_Meridian_Unilateral_Stacking.docx",
+    "NDA_Atlas_Employment_Stacking_Fixed.docx"
+  ],
+  "ground_truth": [
+    {
+      "test_id": "V1",
+      "contract": "NDA_Vertex_Strategic_Stacking.docx",
+      "section": "\u00a71.1 CI Definition",
+      "original_text": "[end of standard CI definition]",
+      "redline_text": ", including any residual knowledge, skills, ideas, or concepts retained in the unaided memory of the Receiving Party's personnel",
+      "difficulty": "SUBTLE",
+      "applicable_rule": "CI Definition - Residual Knowledge Deletion",
+      "expected_action": "REJECT",
+      "expected_language": "[original text without the insertion]"
+    },
+    {
+      "test_id": "V2",
+      "contract": "NDA_Vertex_Strategic_Stacking.docx",
+      "section": "\u00a78.2 Remedies",
+      "original_text": "[standard injunctive relief clause]",
+      "redline_text": ". The Disclosing Party shall be entitled to seek injunctive relief without the necessity of posting any bond or other security",
+      "difficulty": "SUBTLE",
+      "applicable_rule": "Injunctive Relief - Bond Waiver Deletion",
+      "expected_action": "REJECT",
+      "expected_language": "[original text without bond waiver]"
+    },
+    {
+      "test_id": "VG1",
+      "contract": "NDA_Vanguard_Technical_Stacking.docx",
+      "section": "\u00a75.1 Return/Destruction",
+      "original_text": "provided that the Receiving Party may retain one archival copy for legal compliance purposes",
+      "redline_text": "[DELETED]",
+      "difficulty": "SUBTLE",
+      "applicable_rule": "Return and Destruction - Compliance Exception Addition",
+      "expected_action": "REJECT",
+      "expected_language": "provided that the Receiving Party may retain one archival copy for legal compliance purposes"
+    },
+    {
+      "test_id": "VG2",
+      "contract": "NDA_Vanguard_Technical_Stacking.docx",
+      "section": "\u00a75.1 Return/Destruction",
+      "original_text": "[see VG1]",
+      "redline_text": "destroy all Confidential Information without exception and without retaining any copies for any purpose, including legal or regulatory compliance",
+      "difficulty": "EXPLICIT",
+      "applicable_rule": "Return and Destruction - Compliance Exception Addition",
+      "expected_action": "MODIFY",
+      "expected_language": "[restore compliance exception language]"
+    },
+    {
+      "test_id": "VG3",
+      "contract": "NDA_Vanguard_Technical_Stacking.docx",
+      "section": "\u00a710.1 Governing Law",
+      "original_text": "the laws applicable in the jurisdiction of the courts of State of New York",
+      "redline_text": "the laws of the Cayman Islands",
+      "difficulty": "EXPLICIT",
+      "applicable_rule": "Governing Law - Offshore Jurisdiction Flag",
+      "expected_action": "ACCEPT",
+      "expected_language": "the laws of the Cayman Islands"
+    },
+    {
+      "test_id": "TP1",
+      "contract": "NDA_TechPartners_Bilateral_Stacking.docx",
+      "section": "\u00a71 CI Definition",
+      "original_text": "[within CI definition]",
+      "redline_text": ", whether or not marked or designated as confidential",
+      "difficulty": "SUBTLE",
+      "applicable_rule": "CI Definition - Unmarked Information Deletion",
+      "expected_action": "REJECT",
+      "expected_language": "[definition without unmarked language]"
+    },
+    {
+      "test_id": "TP2",
+      "contract": "NDA_TechPartners_Bilateral_Stacking.docx",
+      "section": "\u00a74.1 Term/Survival",
+      "original_text": "three (3) years",
+      "redline_text": "in perpetuity",
+      "difficulty": "EXPLICIT",
+      "applicable_rule": "Term and Survival - Perpetual Amendment",
+      "expected_action": "MODIFY",
+      "expected_language": "three (3) years following the termination or expiration of this Agreement"
+    },
+    {
+      "test_id": "TP3",
+      "contract": "NDA_TechPartners_Bilateral_Stacking.docx",
+      "section": "\u00a77.1 Non-Solicitation",
+      "original_text": "twelve (12) months",
+      "redline_text": "twenty-four (24) months",
+      "difficulty": "EXPLICIT",
+      "applicable_rule": "Non-Solicitation - Excessive Duration Amendment",
+      "expected_action": "MODIFY",
+      "expected_language": "twelve (12) months"
+    },
+    {
+      "test_id": "TP4",
+      "contract": "NDA_TechPartners_Bilateral_Stacking.docx",
+      "section": "\u00a78.1 Indemnification",
+      "original_text": "[end of indemnification clause]",
+      "redline_text": ", regardless of the fault or negligence of the Disclosing Party",
+      "difficulty": "SUBTLE",
+      "applicable_rule": "Indemnification - Broad-form Trigger Deletion",
+      "expected_action": "REJECT",
+      "expected_language": "[indemnification without broad-form trigger]"
+    },
+    {
+      "test_id": "M1",
+      "contract": "NDA_Meridian_Unilateral_Stacking.docx",
+      "section": "\u00a73.2 Permitted Disclosures",
+      "original_text": "[within compelled disclosure clause]",
+      "redline_text": ", and under no circumstances including legal process or court order without express written consent of the Disclosing Party which may be withheld in its sole discretion,",
+      "difficulty": "SUBTLE",
+      "applicable_rule": "Compelled Disclosure - Prohibition Amendment",
+      "expected_action": "MODIFY",
+      "expected_language": "Notwithstanding the foregoing, the Receiving Party may disclose Confidential Information to the extent required by applicable law, regulation, or legal process, provided that the Receiving Party (to the extent legally permitted) gives the Disclosing Party prompt written notice of such requirement prior to disclosure to enable the Disclosing Party to seek a protective order."
+    },
+    {
+      "test_id": "M2",
+      "contract": "NDA_Meridian_Unilateral_Stacking.docx",
+      "section": "\u00a77.1 Non-Competition",
+      "original_text": "[none - new provision]",
+      "redline_text": "7.1 Non-Competition. The Receiving Party shall not compete with the Disclosing Party or provide services to any competitor for a period of two (2) years following termination of this Agreement.",
+      "difficulty": "EXPLICIT",
+      "applicable_rule": "Non-Compete - Deletion",
+      "expected_action": "REJECT",
+      "expected_language": "[delete entire provision]"
+    },
+    {
+      "test_id": "M3",
+      "contract": "NDA_Meridian_Unilateral_Stacking.docx",
+      "section": "\u00a78.3 Liability",
+      "original_text": "shall not exceed the greater of (a) the fees paid under this Agreement, or (b) One Million Dollars ($1,000,000)",
+      "redline_text": "shall be unlimited",
+      "difficulty": "EXPLICIT",
+      "applicable_rule": "Limitation of Liability - Unlimited Exposure Flag",
+      "expected_action": "ACCEPT",
+      "expected_language": "shall be unlimited"
+    },
+    {
+      "test_id": "M4",
+      "contract": "NDA_Meridian_Unilateral_Stacking.docx",
+      "section": "\u00a79.3 Audit Rights",
+      "original_text": "[none - new provision]",
+      "redline_text": "9.3 Audit Rights. The Disclosing Party may audit the Receiving Party's premises, systems, and records at any time without prior notice to verify compliance with this Agreement.",
+      "difficulty": "SUBTLE",
+      "applicable_rule": "NONE",
+      "expected_action": "ACCEPT",
+      "expected_language": "9.3 Audit Rights. The Disclosing Party may audit the Receiving Party's premises, systems, and records at any time without prior notice to verify compliance with this Agreement."
+    },
+    {
+      "test_id": "A1",
+      "contract": "NDA_Atlas_Employment_Stacking_Fixed.docx",
+      "section": "\u00a74.1 Term/Survival",
+      "original_text": "three (3) years",
+      "redline_text": "ten (10) years",
+      "difficulty": "EXPLICIT",
+      "applicable_rule": "Term and Survival - Excessive Duration Amendment",
+      "expected_action": "MODIFY",
+      "expected_language": "three (3) years following the termination or expiration of this Agreement"
+    },
+    {
+      "test_id": "A2",
+      "contract": "NDA_Atlas_Employment_Stacking_Fixed.docx",
+      "section": "\u00a79.2 Assignment",
+      "original_text": "Neither party may assign this Agreement without prior written consent of the other party",
+      "redline_text": "The Disclosing Party may assign this Agreement at its sole discretion without consent. The Receiving Party may not assign this Agreement without the prior written consent of the Disclosing Party",
+      "difficulty": "EXPLICIT",
+      "applicable_rule": "Assignment - Asymmetric Rights Amendment",
+      "expected_action": "MODIFY",
+      "expected_language": "Neither party may assign this Agreement without the prior written consent of the other party, which consent shall not be unreasonably withheld."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "mode": "freeform_stacking",
+  "display_name": "Freeform Stacking",
+  "description": "Dual evaluation: CP redline response (Part A) + whole document review (Part B).",
+  "contracts": [
+    "consulting",
+    "dpa",
+    "distribution",
+    "jv",
+    "license",
+    "partnership",
+    "reseller",
+    "services",
+    "sla",
+    "supply"
+  ],
+  "contract_types": null,
+  "models": [
+    "pathfinder",
+    "starliner",
+    "velocity",
+    "scale",
+    "sonnet45",
+    "pioneer_deep"
+  ],
+  "paths": {
+    "base_dir": "freeform_stacking",
+    "canonical_json": "canonical_json",
+    "canonical_json_pattern": "canonical_json_{env}",
+    "ground_truth": "ground_truth",
+    "gt_pattern": {
+      "part_a": "{contract}_part_a.json",
+      "part_b": "../freeform/ground_truth/{contract}.json"
+    }
+  },
+  "gt_structure": {
+    "type": "dual_part",
+    "parts": {
+      "part_a": {
+        "id_field": "redline_id",
+        "clause_field": "clause",
+        "issue_field": "cp_change_summary"
+      },
+      "part_b": {
+        "id_field": "gt_id",
+        "tier_field": "tier",
+        "clause_field": "clause",
+        "issue_field": "issue"
+      }
+    }
+  },
+  "evaluation_structure": {
+    "type": "dual_part",
+    "parts": {
+      "part_a": {
+        "evaluations_key": "part_a_evaluations",
+        "detection_field": "action_correct"
+      },
+      "part_b": {
+        "evaluations_key": "part_b_evaluations",
+        "detection_field": "detection"
+      }
+    }
+  },
+  "detection_points": {
+    "part_a": {
+      "per_redline": 6,
+      "dimensions": [
+        "action",
+        "revision",
+        "reasoning"
+      ],
+      "max_per_dimension": 2
+    },
+    "part_b": {
+      "T1": {
+        "Y": 8,
+        "P": 4,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 2.5,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0.5,
+        "N": 0,
+        "NMI": 0
+      }
+    }
+  },
+  "quality_scores": {
+    "enabled": true,
+    "part_b_only": true,
+    "dimensions": [
+      "amendment_score",
+      "rationale_score",
+      "redline_quality_score"
+    ],
+    "max_per_dimension": 3
+  },
+  "gates": {
+    "critical_failure_gate": true,
+    "critical_failure_types": [
+      "REJECT_AS_ACCEPT",
+      "ACCEPT_AS_REJECT",
+      "UNACCEPTABLE_ELEMENT"
+    ],
+    "t1_gate": true,
+    "t1_gate_applies_to": "part_b"
+  },
+  "additional_issues": {
+    "enabled": true,
+    "classifications_to_capture": [
+      "\u274c",
+      "Unfavourable",
+      "\u26a0\ufe0f",
+      "Requires Clarification"
+    ],
+    "skip_classifications": [
+      "\u2705",
+      "Favourable",
+      "Standard"
+    ],
+    "gt_sources": [
+      "part_a",
+      "part_b"
+    ]
+  },
+  "semantic_matching": {
+    "enabled": true,
+    "applies_to": "part_b",
+    "model": "sonnet-4",
+    "max_tokens": 500,
+    "note": "Part A uses clause matching only; Part B uses two-phase matching (clause + semantic)"
+  }
+}

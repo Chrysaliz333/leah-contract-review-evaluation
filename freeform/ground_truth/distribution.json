@@ -1,0 +1,412 @@
+{
+  "gt_metadata": {
+    "contract_id": "Distribution_GlobalPartners",
+    "contract_type": "Distribution",
+    "parties": {
+      "supplier": "Global Products Manufacturing Inc.",
+      "distributor": "[Unnamed Distributor]"
+    },
+    "representing_party": "Distributor",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "revision_notes": "v3.0: Tier changes: GT-05: T1 -> T2; GT-08: T2 -> T3; GT-11: T2 -> T1. Previous: 2.2_corrected_2026-01-14_v3_LOCKED",
+    "schema_version": "3.0",
+    "v3_migration_date": "2026-01-14",
+    "v4_enhancement_date": "2026-01-20"
+  },
+  "ground_truth": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.1 / 3.2",
+      "tier": "T1",
+      "issue": "Non-exclusive appointment with Supplier competition rights",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Non-exclusive distributor status",
+        "Supplier can sell directly within Territory",
+        "Supplier can appoint other distributors",
+        "Cross-territory sales permitted (customers outside Territory can resell within)",
+        "Distributor's investment in territory development unprotected",
+        "Should negotiate exclusive territory OR exclusive product lines",
+        "Limit or prohibit direct Supplier competition on Distributor-sourced leads"
+      ],
+      "contract_text": "Supplier hereby appoints Distributor as a non-exclusive distributor of the Products within the Territory... Supplier reserves the right to: (a) sell Products directly to customers within the Territory; (b) appoint other distributors within the Territory; and (c) sell Products to customers outside the Territory who may resell such Products within the Territory.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Unilateral price changes with no cap",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Supplier can modify prices with only 60 days notice",
+        "No cap on price increases",
+        "No right to terminate if price unacceptable",
+        "Distributor locked into minimum purchases at unknown future prices",
+        "Should add price cap (CPI or 5% annual max)",
+        "Longer notice period (90+ days)",
+        "Right to terminate on material price increase (>10%)"
+      ],
+      "contract_text": "Distributor shall purchase Products at the prices set forth in Supplier's then-current price list. Supplier may modify prices upon sixty (60) days' prior written notice.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Mandatory minimum purchase with automatic breach trigger",
+      "expected_classification": "❌",
+      "key_elements": [
+        "$100K per quarter minimum ($400K/year)",
+        "2 consecutive misses = automatic material breach",
+        "No cure period before breach declaration",
+        "No good faith negotiation on shortfall",
+        "No adjustment for market conditions or force majeure",
+        "Should reduce minimum or make adjustable based on territory performance",
+        "Add cure period (e.g., 60 days to make up shortfall)",
+        "Add negotiation rights before breach declared"
+      ],
+      "contract_text": "Distributor agrees to purchase a minimum of One Hundred Thousand Dollars ($100,000) of Products per calendar quarter during the Term of this Agreement. Failure to meet minimum purchase requirements for two (2) consecutive quarters shall constitute a material breach.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "13.3",
+      "tier": "T1",
+      "issue": "Asymmetric assignment rights",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Distributor cannot assign without Supplier consent",
+        "No restriction stated on Supplier assignment",
+        "Supplier could assign to competitor or unfavorable party",
+        "Blocks Distributor M&A or business sale",
+        "Should have mutual assignment provisions",
+        "Add M&A/affiliate exception for Distributor",
+        "Add consent not to be unreasonably withheld"
+      ],
+      "contract_text": "Distributor may not assign this Agreement without Supplier's prior written consent.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Low liability cap for both parties",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Cap at 12 months payments applies to BOTH parties",
+        "May be insufficient for product liability or recalls",
+        "No carve-outs for IP, willful misconduct, gross negligence",
+        "No carve-outs for indemnification obligations",
+        "Increase to 24+ months",
+        "Add carve-outs for critical claims",
+        "Consider higher cap for Supplier (product manufacturer)"
+      ],
+      "contract_text": "NEITHER PARTY'S TOTAL LIABILITY SHALL EXCEED THE AMOUNT PAID BY DISTRIBUTOR TO SUPPLIER IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause - Distributor exposed to product claims",
+      "expected_classification": "❌",
+      "key_elements": [
+        "No product liability indemnification from Supplier",
+        "No IP infringement protection",
+        "Distributor exposed to third-party claims for product defects",
+        "Distributor has no control over product design or manufacturing",
+        "Critical for physical goods distribution",
+        "Should add Supplier indemnification for product defects, recalls",
+        "Should add IP infringement indemnification",
+        "Should cover defense costs and settlements"
+      ],
+      "contract_text": "N/A - No indemnification clause exists in contract. Articles 1-13 contain no indemnification provisions.",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "FOB shipping terms shift all transit risk to Distributor",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Risk passes at Supplier facility",
+        "Distributor bears all transit risk including damage, loss, delay",
+        "Distributor pays shipping, freight, insurance, handling (4.3)",
+        "Should negotiate DDP or CIF terms",
+        "Require Supplier-arranged transit insurance",
+        "Risk to pass at Distributor facility"
+      ],
+      "contract_text": "Unless otherwise agreed in writing, all Products shall be delivered FOB Supplier's facility. Title and risk of loss shall pass to Distributor upon delivery to the carrier.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "1.5% per month = 18% APR",
+        "Above typical commercial rates (prime + 2-3%)",
+        "No exclusion for disputed amounts",
+        "Should reduce to 1% or prime + margin",
+        "Exclude disputed amounts from interest",
+        "Add grace period before interest accrues"
+      ],
+      "contract_text": "Any amounts not paid when due shall bear interest at the rate of one and one-half percent (1.5%) per month.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Marketing approval required for all materials",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "ALL advertising must be submitted for approval",
+        "No timeline for approval/rejection",
+        "No deemed approval mechanism",
+        "Could delay time-sensitive marketing",
+        "Add deemed approval if no response within 10 business days",
+        "Limit approval requirement to major campaigns only",
+        "Pre-approve standard templates"
+      ],
+      "contract_text": "All advertising and promotional materials prepared by Distributor shall be submitted to Supplier for approval prior to use.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.3",
+      "tier": "T2",
+      "issue": "Termination effects lack buyback and transition",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "90-day sell-off period (better than Reseller which has none)",
+        "No inventory buyback right - stuck with unsold inventory after 90 days",
+        "No transition assistance from Supplier",
+        "No refund of prepaid amounts",
+        "Rights terminate immediately except sell-off",
+        "Should add Supplier buyback at cost for remaining inventory",
+        "Add transition period for customer handover",
+        "Add refund of prepaid but undelivered orders"
+      ],
+      "contract_text": "Upon termination: (a) all rights granted to Distributor shall terminate; (b) Distributor shall cease use of the Trademarks; (c) Distributor may sell remaining inventory for ninety (90) days.",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "❌"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Supplier can reject purchase orders - no supply obligation",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Supplier can accept OR reject each purchase order",
+        "Only 5 business days to respond",
+        "No obligation to accept orders even within forecast",
+        "Distributor commits to minimums but Supplier doesn't commit to supply",
+        "Creates supply uncertainty",
+        "Should require acceptance of orders within agreed capacity/forecast",
+        "Add deemed acceptance if no rejection within period",
+        "Add supply assurance for forecasted quantities"
+      ],
+      "contract_text": "Distributor shall submit purchase orders to Supplier in writing. Supplier shall accept or reject each purchase order within five (5) business days of receipt.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "required_concepts": [
+        "reject",
+        "discretion",
+        "no obligation"
+      ]
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Territory restriction on outside sales",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Cannot actively solicit outside Territory",
+        "Cannot establish operations outside Territory without consent",
+        "Standard distribution restriction",
+        "May limit growth opportunities",
+        "Passive sales outside Territory should be permitted"
+      ],
+      "contract_text": "Distributor shall not actively solicit sales or establish any branch, warehouse, or distribution centre outside the Territory without Supplier's prior written consent.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consequential Damages Exclusion Missing Critical Carve-Outs",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Mutual exclusion of indirect/consequential damages",
+        "Blocks recovery for lost profits from product defects or supply failures",
+        "No carve-out for indemnification obligations",
+        "No carve-out for breach of confidentiality",
+        "No carve-out for willful misconduct or gross negligence",
+        "No carve-out for IP infringement claims",
+        "Distribution relationship involves significant opportunity costs",
+        "Should add carve-outs for: confidentiality breach, IP infringement, willful misconduct, indemnification obligations"
+      ],
+      "contract_text": "10.1 NEITHER PARTY SHALL BE LIABLE TO THE OTHER FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, INCLUDING WITHOUT LIMITATION LOST PROFITS OR LOST BUSINESS OPPORTUNITIES.",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    }
+  ],
+  "tier_summary": {
+    "T1": {
+      "count": 6,
+      "weight": 8,
+      "issues": [
+        "GT-01 (3.1 / 3.2 - Non-exclusive appointment with)",
+        "GT-02 (5.1 - Unilateral price changes with )",
+        "GT-03 (6.1 - Mandatory minimum purchase wit)",
+        "GT-04 (13.3 - Asymmetric assignment rights)",
+        "GT-06 (N/A (Missing) - No indemnification clause - Di)",
+        "GT-11 (4.1 - Supplier can reject purchase o)"
+      ]
+    },
+    "T2": {
+      "count": 5,
+      "weight": 5,
+      "issues": [
+        "GT-05 (10.2 - Low liability cap for both par)",
+        "GT-07 (4.2 - FOB shipping terms shift all t)",
+        "GT-09 (7.2 - Marketing approval required fo)",
+        "GT-10 (11.3 - Termination effects lack buyba)",
+        "GT-13 (10.1 - Consequential Damages Exclusio)"
+      ]
+    },
+    "T3": {
+      "count": 2,
+      "weight": 1,
+      "issues": [
+        "GT-08 (5.3 - High late payment interest rat)",
+        "GT-12 (3.3 - Territory restriction on outsi)"
+      ]
+    },
+    "weighted_max": 75
+  },
+  "validation_notes": {
+    "v2.1_changes": [
+      "PROMOTED GT-06 (missing indemnification) from T2 to T1 - critical for physical goods distribution",
+      "ADDED GT-11 (4.1 PO rejection) as T2 - supply risk similar to Supply contract",
+      "Renumbered GT items for logical flow",
+      "Enhanced key_elements with more specific remediation guidance"
+    ],
+    "contract_verification": [
+      "All clause references verified against actual contract text",
+      "4.1 verified: 'Supplier shall accept or reject each purchase order within five (5) business days'",
+      "No indemnification article exists in Articles 1-13",
+      "Article 12 is Confidentiality only (12.1) - no 12.2 exists (phantom clause in original GT was correct to remove)"
+    ],
+    "alignment_with_other_gts": [
+      "Indemnification now T1 across all three contracts (Distribution, Reseller, License missing)",
+      "Non-exclusivity T1 for Distribution (physical goods investment), T2 for Reseller (lower capital risk)",
+      "PO rejection risk now tracked in both Supply and Distribution"
+    ]
+  }
+}

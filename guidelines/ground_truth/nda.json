@@ -1,0 +1,922 @@
+{
+  "gt_metadata": {
+    "mode": "guidelines",
+    "contract_type": "NDA",
+    "representing_party": "Receiving Party",
+    "playbook": "NDA Receiving Party Playbook",
+    "gt_version": "1.0_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-14",
+    "total_tests": 45,
+    "total_contracts": 10,
+    "tier_breakdown": {
+      "T1": 40,
+      "T2": 2,
+      "T3": 3
+    }
+  },
+  "contracts": [
+    "NDA_TechPartners_Bilateral",
+    "NDA_Meridian_Unilateral",
+    "NDA_GlobalPharm_Research",
+    "NDA_Vertex_Strategic",
+    "NDA_Quantum_JointVenture",
+    "NDA_Sterling_Mutual",
+    "NDA_Cascade_Supplier",
+    "NDA_Nexus_Investment",
+    "NDA_Atlas_Employment",
+    "NDA_Vanguard_Technical"
+  ],
+  "ground_truth": [
+    {
+      "test_id": "TechPartnersBilateral_01",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "Section 1.1",
+      "clause_name": "CI Definition",
+      "playbook_ref": 1,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "whether or not marked as confidential",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Remove 'whether or not marked as confidential' and require written marking",
+      "key_elements": [
+        "Identifies overbroad CI language"
+      ],
+      "rationale_must_include": [
+        "Cites specific trigger phrase from playbook rule 1"
+      ]
+    },
+    {
+      "test_id": "TechPartnersBilateral_02",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "Section 4.1",
+      "clause_name": "Term and Survival",
+      "playbook_ref": 4,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "shall survive in perpetuity",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "three (3) years following termination",
+      "key_elements": [
+        "Identifies excessive survival period"
+      ],
+      "rationale_must_include": [
+        "Cites specific duration",
+        "references 3-year standard from rule 4"
+      ]
+    },
+    {
+      "test_id": "TechPartnersBilateral_03",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "Section 7.1",
+      "clause_name": "Non-Solicitation",
+      "playbook_ref": 5,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "twenty-four (24) months",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "twelve (12) months",
+      "key_elements": [
+        "Flags period exceeding 12 months"
+      ],
+      "rationale_must_include": [
+        "Cites specific duration",
+        "references 12-month maximum"
+      ]
+    },
+    {
+      "test_id": "TechPartnersBilateral_04",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "Section 8.1",
+      "clause_name": "Indemnification",
+      "playbook_ref": 9,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "whether or not caused by the negligence",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Remove 'whether or not caused by the negligence' and add proportionate fault qualifier",
+      "key_elements": [
+        "Flags broad-form trigger"
+      ],
+      "rationale_must_include": [
+        "Identifies negligence/fault language",
+        "references rule 9"
+      ]
+    },
+    {
+      "test_id": "MeridianUnilateral_05",
+      "contract": "NDA_Meridian_Unilateral",
+      "clause_ref": "Section 2.1",
+      "clause_name": "Reciprocity",
+      "playbook_ref": 2,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "shall apply solely to the Receiving Party",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Each party receiving CI shall",
+      "key_elements": [
+        "Flags unilateral obligations"
+      ],
+      "rationale_must_include": [
+        "References playbook rule 2",
+        "explains mutual obligation requirement"
+      ]
+    },
+    {
+      "test_id": "MeridianUnilateral_06",
+      "contract": "NDA_Meridian_Unilateral",
+      "clause_ref": "Section 3.2",
+      "clause_name": "Compelled Disclosure",
+      "playbook_ref": 3,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "under no circumstances",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "may disclose if required by law, with notice",
+      "key_elements": [
+        "Flags absolute disclosure prohibition"
+      ],
+      "rationale_must_include": [
+        "Cites \"under no circumstances\" language",
+        "references rule 3"
+      ]
+    },
+    {
+      "test_id": "MeridianUnilateral_07",
+      "contract": "NDA_Meridian_Unilateral",
+      "clause_ref": "Section 7.2",
+      "clause_name": "Non-Compete",
+      "playbook_ref": 6,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "shall not compete",
+      "expected_classification": "\u274c",
+      "expected_action": "DELETE",
+      "expected_amendment": "[DELETE ENTIRE SECTION]",
+      "key_elements": [
+        "Identifies non-compete in NDA"
+      ],
+      "rationale_must_include": [
+        "Notes non-compete unacceptable per rule 6"
+      ]
+    },
+    {
+      "test_id": "MeridianUnilateral_08",
+      "contract": "NDA_Meridian_Unilateral",
+      "clause_ref": "Section 8.3",
+      "clause_name": "Limitation of Liability",
+      "playbook_ref": 12,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "unlimited liability",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "AMEND",
+      "expected_amendment": "Add mutual liability cap",
+      "key_elements": [
+        "Flags unlimited/missing liability cap"
+      ],
+      "rationale_must_include": [
+        "Identifies cap issue",
+        "recommends mutual cap"
+      ]
+    },
+    {
+      "test_id": "GlobalPharmResearch_09",
+      "contract": "NDA_GlobalPharm_Research",
+      "clause_ref": "Section 1.1",
+      "clause_name": "CI Definition",
+      "playbook_ref": 1,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "regardless of whether publicly available",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Remove 'whether or not marked as confidential' and require written marking",
+      "key_elements": [
+        "Identifies overbroad CI language"
+      ],
+      "rationale_must_include": [
+        "Cites specific trigger phrase from playbook rule 1"
+      ]
+    },
+    {
+      "test_id": "GlobalPharmResearch_10",
+      "contract": "NDA_GlobalPharm_Research",
+      "clause_ref": "Section 5.1",
+      "clause_name": "Return and Destruction",
+      "playbook_ref": 7,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "destroy all copies without exception",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "AMEND",
+      "expected_amendment": "may retain archival copy + backups",
+      "key_elements": [
+        "Flags no retention exception"
+      ],
+      "rationale_must_include": [
+        "References archival copy requirement from rule 7"
+      ]
+    },
+    {
+      "test_id": "GlobalPharmResearch_11",
+      "contract": "NDA_GlobalPharm_Research",
+      "clause_ref": "Section 8.2",
+      "clause_name": "Injunctive Relief",
+      "playbook_ref": 8,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "without the necessity of posting any bond",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Remove bond waiver language; retain injunctive relief provision",
+      "key_elements": [
+        "Identifies bond waiver"
+      ],
+      "rationale_must_include": [
+        "Cites bond waiver language",
+        "references rule 8"
+      ]
+    },
+    {
+      "test_id": "GlobalPharmResearch_12",
+      "contract": "NDA_GlobalPharm_Research",
+      "clause_ref": "Section 10.1",
+      "clause_name": "Governing Law",
+      "playbook_ref": 11,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "courts of the Cayman Islands",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "AMEND",
+      "expected_amendment": "Jurisdiction with party nexus",
+      "key_elements": [
+        "Flags offshore/distant jurisdiction"
+      ],
+      "rationale_must_include": [
+        "Identifies jurisdiction issue",
+        "recommends nexus-based forum"
+      ]
+    },
+    {
+      "test_id": "VertexStrategic_13",
+      "contract": "NDA_Vertex_Strategic",
+      "clause_ref": "Section 2.1",
+      "clause_name": "Reciprocity",
+      "playbook_ref": 2,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "shall apply solely to the Receiving Party",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Each party receiving CI shall",
+      "key_elements": [
+        "Flags unilateral obligations"
+      ],
+      "rationale_must_include": [
+        "References playbook rule 2",
+        "explains mutual obligation requirement"
+      ]
+    },
+    {
+      "test_id": "VertexStrategic_14",
+      "contract": "NDA_Vertex_Strategic",
+      "clause_ref": "Section 4.1",
+      "clause_name": "Term and Survival",
+      "playbook_ref": 4,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "indefinitely following termination",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "three (3) years following termination",
+      "key_elements": [
+        "Identifies excessive survival period"
+      ],
+      "rationale_must_include": [
+        "Cites specific duration",
+        "references 3-year standard from rule 4"
+      ]
+    },
+    {
+      "test_id": "VertexStrategic_15",
+      "contract": "NDA_Vertex_Strategic",
+      "clause_ref": "Section 9.2",
+      "clause_name": "Assignment",
+      "playbook_ref": 10,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "may freely assign without consent",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Neither party may assign without consent",
+      "key_elements": [
+        "Flags asymmetric assignment"
+      ],
+      "rationale_must_include": [
+        "Notes unilateral assignment right",
+        "references mutual requirement"
+      ]
+    },
+    {
+      "test_id": "VertexStrategic_16",
+      "contract": "NDA_Vertex_Strategic",
+      "clause_ref": "Section 8.3",
+      "clause_name": "Limitation of Liability",
+      "playbook_ref": 12,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "all damages without limitation",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "AMEND",
+      "expected_amendment": "Add mutual liability cap",
+      "key_elements": [
+        "Flags unlimited/missing liability cap"
+      ],
+      "rationale_must_include": [
+        "Identifies cap issue",
+        "recommends mutual cap"
+      ]
+    },
+    {
+      "test_id": "QuantumJointVenture_17",
+      "contract": "NDA_Quantum_JointVenture",
+      "clause_ref": "Section 1.1",
+      "clause_name": "CI Definition",
+      "playbook_ref": 1,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "including information retained in unaided memory",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Remove residual knowledge clause or add reasonable use limitations",
+      "key_elements": [
+        "Identifies overbroad CI language"
+      ],
+      "rationale_must_include": [
+        "Cites specific trigger phrase from playbook rule 1"
+      ]
+    },
+    {
+      "test_id": "QuantumJointVenture_18",
+      "contract": "NDA_Quantum_JointVenture",
+      "clause_ref": "Section 3.2",
+      "clause_name": "Compelled Disclosure",
+      "playbook_ref": 3,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "shall not disclose under any circumstances",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "may disclose if required by law, with notice",
+      "key_elements": [
+        "Flags absolute disclosure prohibition"
+      ],
+      "rationale_must_include": [
+        "Cites \"under no circumstances\" language",
+        "references rule 3"
+      ]
+    },
+    {
+      "test_id": "QuantumJointVenture_19",
+      "contract": "NDA_Quantum_JointVenture",
+      "clause_ref": "Section 7.1",
+      "clause_name": "Non-Solicitation",
+      "playbook_ref": 5,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "thirty-six (36) months",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "twelve (12) months",
+      "key_elements": [
+        "Flags period exceeding 12 months"
+      ],
+      "rationale_must_include": [
+        "Cites specific duration",
+        "references 12-month maximum"
+      ]
+    },
+    {
+      "test_id": "QuantumJointVenture_20",
+      "contract": "NDA_Quantum_JointVenture",
+      "clause_ref": "Section 8.2",
+      "clause_name": "Injunctive Relief",
+      "playbook_ref": 8,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "without posting bond or security",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Remove bond waiver language; retain injunctive relief provision",
+      "key_elements": [
+        "Identifies bond waiver"
+      ],
+      "rationale_must_include": [
+        "Cites bond waiver language",
+        "references rule 8"
+      ]
+    },
+    {
+      "test_id": "SterlingMutual_21",
+      "contract": "NDA_Sterling_Mutual",
+      "clause_ref": "Section 4.1",
+      "clause_name": "Term and Survival",
+      "playbook_ref": 4,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "ten (10) years form such expiration",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "three (3) years following termination",
+      "key_elements": [
+        "Identifies excessive survival period"
+      ],
+      "rationale_must_include": [
+        "Cites specific duration",
+        "references 3-year standard from rule 4"
+      ]
+    },
+    {
+      "test_id": "SterlingMutual_22",
+      "contract": "NDA_Sterling_Mutual",
+      "clause_ref": "Section 7.2",
+      "clause_name": "Non-Compete",
+      "playbook_ref": 6,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "for two (2) years thereafter",
+      "expected_classification": "\u274c",
+      "expected_action": "DELETE",
+      "expected_amendment": "[DELETE ENTIRE SECTION]",
+      "key_elements": [
+        "Identifies non-compete in NDA"
+      ],
+      "rationale_must_include": [
+        "Notes non-compete unacceptable per rule 6"
+      ]
+    },
+    {
+      "test_id": "SterlingMutual_23",
+      "contract": "NDA_Sterling_Mutual",
+      "clause_ref": "Section 8.1",
+      "clause_name": "Indemnification",
+      "playbook_ref": 9,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "regardless of the fault or negligence",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Remove broad-form trigger and add proportionate fault qualifier",
+      "key_elements": [
+        "Flags broad-form trigger"
+      ],
+      "rationale_must_include": [
+        "Identifies negligence/fault language",
+        "references rule 9"
+      ]
+    },
+    {
+      "test_id": "SterlingMutual_24",
+      "contract": "NDA_Sterling_Mutual",
+      "clause_ref": "Section 10.1",
+      "clause_name": "Governing Law",
+      "playbook_ref": 11,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "exclusive jurisdiction of Singapore",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "AMEND",
+      "expected_amendment": "Jurisdiction with party nexus",
+      "key_elements": [
+        "Flags offshore/distant jurisdiction"
+      ],
+      "rationale_must_include": [
+        "Identifies jurisdiction issue",
+        "recommends nexus-based forum"
+      ]
+    },
+    {
+      "test_id": "CascadeSupplier_25",
+      "contract": "NDA_Cascade_Supplier",
+      "clause_ref": "Section 1.1",
+      "clause_name": "CI Definition",
+      "playbook_ref": 1,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "Information may be disclosed in any form or medium, whether tangible or intangible, written, oral, visual, or electronic.",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Oral disclosures confirmed in writing within 10 days",
+      "key_elements": [
+        "Identifies overbroad CI language"
+      ],
+      "rationale_must_include": [
+        "Cites specific trigger phrase from playbook rule 1"
+      ]
+    },
+    {
+      "test_id": "CascadeSupplier_26",
+      "contract": "NDA_Cascade_Supplier",
+      "clause_ref": "Section 2.1",
+      "clause_name": "Reciprocity",
+      "playbook_ref": 2,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "the recieving party shall [...]",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Each party receiving CI shall",
+      "key_elements": [
+        "Flags unilateral obligations"
+      ],
+      "rationale_must_include": [
+        "References playbook rule 2",
+        "explains mutual obligation requirement"
+      ]
+    },
+    {
+      "test_id": "CascadeSupplier_27",
+      "contract": "NDA_Cascade_Supplier",
+      "clause_ref": "Section 5.1",
+      "clause_name": "Return and Destruction",
+      "playbook_ref": 7,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "destroy all copies, notes, derivatives without retention",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "AMEND",
+      "expected_amendment": "may retain archival copy + backups",
+      "key_elements": [
+        "Flags no retention exception"
+      ],
+      "rationale_must_include": [
+        "References archival copy requirement from rule 7"
+      ]
+    },
+    {
+      "test_id": "CascadeSupplier_28",
+      "contract": "NDA_Cascade_Supplier",
+      "clause_ref": "Section 9.2",
+      "clause_name": "Assignment",
+      "playbook_ref": 10,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "may assign at its sole discretion",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Neither party may assign without consent",
+      "key_elements": [
+        "Flags asymmetric assignment"
+      ],
+      "rationale_must_include": [
+        "Notes unilateral assignment right",
+        "references mutual requirement"
+      ]
+    },
+    {
+      "test_id": "NexusInvestment_29",
+      "contract": "NDA_Nexus_Investment",
+      "clause_ref": "Section 3.2",
+      "clause_name": "Compelled Disclosure",
+      "playbook_ref": 3,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "shall not make any disclosure whatsoever",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "may disclose if required by law, with notice",
+      "key_elements": [
+        "Flags absolute disclosure prohibition"
+      ],
+      "rationale_must_include": [
+        "Cites \"under no circumstances\" language",
+        "references rule 3"
+      ]
+    },
+    {
+      "test_id": "NexusInvestment_30",
+      "contract": "NDA_Nexus_Investment",
+      "clause_ref": "Section 7.1",
+      "clause_name": "Non-Solicitation",
+      "playbook_ref": 5,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "eighteen (18) months following",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "twelve (12) months",
+      "key_elements": [
+        "Flags period exceeding 12 months"
+      ],
+      "rationale_must_include": [
+        "Cites specific duration",
+        "references 12-month maximum"
+      ]
+    },
+    {
+      "test_id": "NexusInvestment_31",
+      "contract": "NDA_Nexus_Investment",
+      "clause_ref": "Section 8.2",
+      "clause_name": "Injunctive Relief",
+      "playbook_ref": 8,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "waives any requirement for bond",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Remove bond waiver language; retain injunctive relief provision",
+      "key_elements": [
+        "Identifies bond waiver"
+      ],
+      "rationale_must_include": [
+        "Cites bond waiver language",
+        "references rule 8"
+      ]
+    },
+    {
+      "test_id": "NexusInvestment_32",
+      "contract": "NDA_Nexus_Investment",
+      "clause_ref": "Section 8.3",
+      "clause_name": "Limitation of Liability",
+      "playbook_ref": 12,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "monetary damages may not provide adequate compensation",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "AMEND",
+      "expected_amendment": "Add mutual liability cap",
+      "key_elements": [
+        "Flags unlimited/missing liability cap"
+      ],
+      "rationale_must_include": [
+        "Identifies cap issue",
+        "recommends mutual cap"
+      ]
+    },
+    {
+      "test_id": "AtlasEmployment_33",
+      "contract": "NDA_Atlas_Employment",
+      "clause_ref": "Section 1.1",
+      "clause_name": "CI Definition",
+      "playbook_ref": 1,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "general skills, knowledge, and experience",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Remove 'whether or not marked as confidential' and require written marking",
+      "key_elements": [
+        "Identifies overbroad CI language"
+      ],
+      "rationale_must_include": [
+        "Cites specific trigger phrase from playbook rule 1"
+      ]
+    },
+    {
+      "test_id": "AtlasEmployment_34",
+      "contract": "NDA_Atlas_Employment",
+      "clause_ref": "Section 4.2",
+      "clause_name": "Term and Survival",
+      "playbook_ref": 4,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "shall remain in full force and effect for so long as the information retains its confidential character",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "three (3) years following termination",
+      "key_elements": [
+        "Identifies excessive survival period"
+      ],
+      "rationale_must_include": [
+        "Cites specific duration",
+        "references 3-year standard from rule 4"
+      ]
+    },
+    {
+      "test_id": "AtlasEmployment_35",
+      "contract": "NDA_Atlas_Employment",
+      "clause_ref": "Section 7.2",
+      "clause_name": "Non-Compete",
+      "playbook_ref": 6,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "shall not provide similar services to competitors",
+      "expected_classification": "\u274c",
+      "expected_action": "DELETE",
+      "expected_amendment": "[DELETE ENTIRE SECTION]",
+      "key_elements": [
+        "Identifies non-compete in NDA"
+      ],
+      "rationale_must_include": [
+        "Notes non-compete unacceptable per rule 6"
+      ]
+    },
+    {
+      "test_id": "AtlasEmployment_36",
+      "contract": "NDA_Atlas_Employment",
+      "clause_ref": "Section 8.1",
+      "clause_name": "Indemnification",
+      "playbook_ref": 9,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "fully indemnify and hold harmless",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Remove broad-form trigger or add fault qualifier per Gold Standard",
+      "key_elements": [
+        "Flags broad-form trigger"
+      ],
+      "rationale_must_include": [
+        "Identifies negligence/fault language",
+        "references rule 9"
+      ]
+    },
+    {
+      "test_id": "VanguardTechnical_37",
+      "contract": "NDA_Vanguard_Technical",
+      "clause_ref": "Section 2.1",
+      "clause_name": "Reciprocity",
+      "playbook_ref": 2,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "This Agreement sets forth the obligations of the Receiving Party with respect to the Confidential Information disclosed by the Disclosing Party hereunder.",
+      "expected_classification": "\u274c",
+      "expected_action": "AMEND",
+      "expected_amendment": "Each party receiving CI shall",
+      "key_elements": [
+        "Flags unilateral obligations"
+      ],
+      "rationale_must_include": [
+        "References playbook rule 2",
+        "explains mutual obligation requirement"
+      ]
+    },
+    {
+      "test_id": "VanguardTechnical_38",
+      "contract": "NDA_Vanguard_Technical",
+      "clause_ref": "Section 5.1",
+      "clause_name": "Return and Destruction",
+      "playbook_ref": 7,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "no copies may be retained for any purpose",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "AMEND",
+      "expected_amendment": "may retain archival copy + backups",
+      "key_elements": [
+        "Flags no retention exception"
+      ],
+      "rationale_must_include": [
+        "References archival copy requirement from rule 7"
+      ]
+    },
+    {
+      "test_id": "VanguardTechnical_39",
+      "contract": "NDA_Vanguard_Technical",
+      "clause_ref": "Section 10.1",
+      "clause_name": "Governing Law",
+      "playbook_ref": 11,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "courts of Dubai, UAE",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "AMEND",
+      "expected_amendment": "Jurisdiction with party nexus",
+      "key_elements": [
+        "Flags offshore/distant jurisdiction"
+      ],
+      "rationale_must_include": [
+        "Identifies jurisdiction issue",
+        "recommends nexus-based forum"
+      ]
+    },
+    {
+      "test_id": "VanguardTechnical_40",
+      "contract": "NDA_Vanguard_Technical",
+      "clause_ref": "Section 8.3",
+      "clause_name": "Limitation of Liability",
+      "playbook_ref": 12,
+      "playbook_standard": "Red Flag",
+      "tier": 1,
+      "trigger_phrase": "The Receiving Party shall be fully liable for all damages, losses, and expenses arising from or related to any breach of its obligations under this Agreement.",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "AMEND",
+      "expected_amendment": "Add mutual liability cap",
+      "key_elements": [
+        "Flags unlimited/missing liability cap"
+      ],
+      "rationale_must_include": [
+        "Identifies cap issue",
+        "recommends mutual cap"
+      ]
+    },
+    {
+      "test_id": "TechPartnersBilateral_41",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "Sections 3.1-3.2",
+      "clause_name": "Compelled Disclosure",
+      "playbook_ref": 3,
+      "playbook_standard": "Fallback 1",
+      "tier": 2,
+      "trigger_phrase": "may disclose... if required by applicable law (3.1) with prompt notice (3.2) but no prior notice before disclosure",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "FLAG",
+      "expected_amendment": "Add to Section 3.1: \"provided that the Receiving Party shall, where legally permitted, give prior written notice to the Disclosing Party before such disclosure\"",
+      "key_elements": [
+        "Prior notice requirement where legally permitted",
+        "opportunity for protective order before disclosure"
+      ],
+      "rationale_must_include": [
+        "Current language permits disclosure with only post-hoc notice",
+        "Gold Standard requires prior notice to enable protective order"
+      ]
+    },
+    {
+      "test_id": "TechPartnersBilateral_42",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "Section 9.2",
+      "clause_name": "Assignment",
+      "playbook_ref": 10,
+      "playbook_standard": "Fallback 1",
+      "tier": 2,
+      "trigger_phrase": "Neither party may assign... without prior written consent",
+      "expected_classification": "\u26a0\ufe0f",
+      "expected_action": "FLAG",
+      "expected_amendment": "Add: \"which consent shall not be unreasonably withheld or delayed\"",
+      "key_elements": [
+        "Reasonableness standard for consent",
+        "prevents arbitrary refusal"
+      ],
+      "rationale_must_include": [
+        "Mutual restriction is good but lacks reasonableness qualifier",
+        "could enable bad-faith refusal"
+      ]
+    },
+    {
+      "test_id": "TechPartnersBilateral_43",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "Section 1.2",
+      "clause_name": "CI Carve-Out Evidence",
+      "playbook_ref": 1,
+      "playbook_standard": "Near Gold",
+      "tier": 3,
+      "trigger_phrase": "was rightfully in possession... is rightfully obtained... is independently developed",
+      "expected_classification": "\u2705",
+      "expected_action": "FLAG",
+      "expected_amendment": "Consider adding \"as evidenced by written records\" to prior knowledge and independent development carve-outs",
+      "key_elements": [
+        "Evidence requirement clarification"
+      ],
+      "rationale_must_include": [
+        "Minor drafting improvement",
+        "evidentiary standard implicit but could be explicit"
+      ]
+    },
+    {
+      "test_id": "TechPartnersBilateral_44",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "Section 2.1(d)",
+      "clause_name": "Standard of Care",
+      "playbook_ref": 2,
+      "playbook_standard": "Gold Standard",
+      "tier": 3,
+      "trigger_phrase": "at least the same degree of care used to protect its own confidential information",
+      "expected_classification": "\u2705",
+      "expected_action": "FLAG",
+      "expected_amendment": "Consider adding \"but in no event less than reasonable care\"",
+      "key_elements": [
+        "Minimum care floor"
+      ],
+      "rationale_must_include": [
+        "Acceptable language but adding minimum floor prevents argument that lax internal practices justify lax protection"
+      ]
+    },
+    {
+      "test_id": "TechPartnersBilateral_45",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "Section 6.1",
+      "clause_name": "No Licence",
+      "playbook_ref": null,
+      "playbook_standard": "Gold Standard",
+      "tier": 3,
+      "trigger_phrase": "Nothing in this Agreement grants any licence or rights to any intellectual property",
+      "expected_classification": "\u2705",
+      "expected_action": "FLAG",
+      "expected_amendment": "Consider adding: \"All Confidential Information and any intellectual property rights therein remain the sole property of the Disclosing Party\"",
+      "key_elements": [
+        "Explicit ownership confirmation"
+      ],
+      "rationale_must_include": [
+        "Minor enhancement",
+        "ownership implied but explicit statement adds clarity"
+      ]
+    }
+  ]
+}

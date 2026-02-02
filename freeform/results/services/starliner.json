@@ -1,0 +1,934 @@
+{
+  "meta": {
+    "contract": "services",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T19:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.1",
+        "excerpt": "Excludes consequential and other damages, which may leave Client without adequate remedies for significant losses. AMEND to allow recovery of consequential damages for Agency's willful misconduct or gross negligence.",
+        "reasoning": "Starliner identifies the exclusion and proposes carve-outs for willful misconduct and gross negligence. Addresses core GT elements though missing confidentiality/IP carve-outs."
+      },
+      "rationale_score": 2,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 7,
+      "total_points": 15.0
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.2",
+        "excerpt": "Caps Agency's liability at fees paid under the relevant SOW, potentially insufficient for serious breaches or IP infringement. AMEND to increase cap for certain breaches (e.g., IP, confidentiality) or remove cap for willful misconduct.",
+        "reasoning": "Starliner proposes greater-of formula with $250K minimum and carve-outs. Comprehensive fix addressing GT concerns."
+      },
+      "rationale_score": 2,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 7,
+      "total_points": 15.0
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.2",
+        "excerpt": "The license to Agency IP is non-exclusive and perpetual but does not expressly allow modification, sublicensing, or transfer, which may restrict Client's business needs. AMEND to broaden license rights to include modification, sublicensing, and transfer as needed for Client's business.",
+        "reasoning": "Starliner correctly identifies the restrictive license and proposes comprehensive expansion including modification, sublicensing, transfer, and irrevocability. Fully addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 8,
+      "total_points": 16.0
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.1",
+        "excerpt": "If Client fails to respond within 15 business days, deliverables are deemed rejected, which is unusual and may disadvantage Client by requiring active rejection. AMEND to provide that lack of response is deemed acceptance, or at minimum, require Agency to seek confirmation before treating as rejected.",
+        "reasoning": "Starliner correctly identifies unusual deemed rejection and proposes deemed acceptance standard. Fully addresses GT concern."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 8.0,
+      "quality_points": 8,
+      "total_points": 16.0
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.4",
+        "excerpt": "The late payment interest rate (1.5% per month) is high and may be punitive for Client. AMEND to reduce the late payment interest rate to a commercially reasonable level (e.g., 0.5%-1% per month).",
+        "reasoning": "Starliner identifies high interest rate and proposes reduction to 1% or legal max. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 6,
+      "total_points": 7.0
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "4.3",
+        "excerpt": "The clause allows Agency to extend timelines and charge additional fees for Client delays, but lacks a process for dispute or proportionality of added fees. AMEND to require reasonable notice, documentation, and proportionality for additional fees due to Client delays.",
+        "reasoning": "Starliner identifies open-ended delay fees and proposes notice, documentation, and proportionality. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.1",
+        "excerpt": "Client owns deliverables upon full payment, but the definition of 'final approved Deliverables' could be interpreted narrowly, potentially excluding drafts or underlying materials. AMEND to clarify that Client receives all materials necessary for intended use, not just final versions.",
+        "reasoning": "Starliner identifies missing underlying materials and proposes broader ownership including all materials necessary for use. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.3",
+        "excerpt": "Agency retains all rights to preliminary work, which could prevent Client from using valuable concepts not included in the final deliverables. AMEND to allow Client access and use of preliminary work if paid for or necessary for project completion.",
+        "reasoning": "Starliner identifies the issue and proposes license to paid-for preliminary work. Addresses GT concern."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.3",
+        "excerpt": "Client's use of deliverable in commerce constitutes final acceptance, which may be unfair if defects are discovered post-launch. AMEND to allow for post-launch defect reporting and remediation before acceptance is final.",
+        "reasoning": "Starliner identifies use=acceptance issue and proposes 30-day post-use defect reporting window. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "8.1",
+        "excerpt": "Agency warrants professional performance and non-infringement, but does not specify remedies or duration of warranties. AMEND to specify warranty duration and remedies for breach of warranty.",
+        "reasoning": "Starliner proposes 12-month warranty period with re-performance or refund remedy. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "8.3",
+        "excerpt": "Broad disclaimer of implied warranties may reduce Client's protection if deliverables are defective or unfit for purpose. AMEND to carve out minimum warranties or remedies for defective deliverables.",
+        "reasoning": "Starliner identifies contradiction with Section 8.1 and proposes preserving express warranties and remedies. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-12",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "9.1",
+        "excerpt": "Confidentiality is limited to three years post-termination, which may be insufficient for trade secrets or sensitive business information. AMEND to provide indefinite protection for trade secrets and sensitive information.",
+        "reasoning": "Starliner correctly identifies 3-year limit as insufficient and proposes indefinite protection for trade secrets. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-13",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "12.4",
+        "excerpt": "Obligations upon termination are outlined, but there is no mention of data return, transition assistance, or ongoing confidentiality. AMEND to require data return, transition assistance, and ongoing confidentiality.",
+        "reasoning": "Starliner identifies missing post-termination obligations and proposes comprehensive provisions. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-14",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.2",
+        "excerpt": "Mandatory arbitration in New York may be costly or inconvenient for Client; lacks escalation process before arbitration. AMEND to allow for negotiation/mediation before arbitration and flexibility in location.",
+        "reasoning": "Starliner proposes adding negotiation/mediation escalation and flexible location. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 6,
+      "total_points": 11.0
+    },
+    {
+      "gt_id": "GT-15",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New Clause Recommendation - Data Protection & Privacy",
+        "excerpt": "The contract does not address compliance with data protection laws or define obligations regarding personal data, exposing Client to regulatory and reputational risk. ADD a clause requiring Agency to comply with all applicable data protection laws and implement appropriate safeguards.",
+        "reasoning": "Starliner proposes comprehensive data protection clause. Fully addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 5.0,
+      "quality_points": 8,
+      "total_points": 13.0
+    },
+    {
+      "gt_id": "GT-16",
+      "tier": "T2",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "GT-16 concerns missing insurance requirements. Starliner does not propose adding insurance clause."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    },
+    {
+      "gt_id": "GT-17",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.4",
+        "excerpt": "Agency may display deliverables in its portfolio, but there is no requirement to obtain Client's consent or limit disclosure of sensitive information. AMEND to require Client's prior written consent and exclude confidential or sensitive materials.",
+        "reasoning": "Starliner identifies missing consent requirement and proposes prior consent with confidentiality carve-out. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 6,
+      "total_points": 7.0
+    },
+    {
+      "gt_id": "GT-18",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "1.1",
+        "excerpt": "The definition of Agency IP is broad and may capture tools or methodologies developed during the project, potentially limiting Client's use of deliverables. Ambiguity exists about what constitutes 'pre-existing' versus 'new' IP. AMEND to clarify the scope of Agency IP and ensure Client's rights to use all deliverables as intended.",
+        "reasoning": "Starliner identifies broad Agency IP definition and proposes clarifying exclusion of Client-funded work. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 6,
+      "total_points": 7.0
+    },
+    {
+      "gt_id": "GT-19",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "2.2",
+        "excerpt": "The process for change orders is outlined, but lacks detail on timelines for approval and consequences if either party refuses a change. Potential for project delays or disputes. AMEND to specify timelines for change order responses and dispute resolution mechanism.",
+        "reasoning": "Starliner identifies missing response timeframe and proposes 5-day response requirement with dispute process. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 6,
+      "total_points": 7.0
+    },
+    {
+      "gt_id": "GT-20",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.2",
+        "excerpt": "Client is responsible for pre-approved expenses, but the approval process and documentation requirements are not detailed, which could lead to misunderstandings. AMEND to require detailed documentation and advance written approval for all expenses.",
+        "reasoning": "Starliner identifies expense documentation gaps and proposes requiring receipts and lowering approval threshold to $250. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 6,
+      "total_points": 7.0
+    },
+    {
+      "gt_id": "GT-21",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.3",
+        "excerpt": "The Agency may require up to 50% deposit, but the timing and conditions for such deposits are not fully specified, which could affect Client's cash flow. AMEND to clarify deposit triggers and ensure proportionality to project milestones.",
+        "reasoning": "Starliner identifies deposit issues and proposes milestone-based deposits with mutual agreement requirement. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 6,
+      "total_points": 7.0
+    },
+    {
+      "gt_id": "GT-22",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.2",
+        "excerpt": "The number of included revisions is limited to two, but there is no detail on what constitutes a 'revision' or process for dispute if quality is not met. AMEND to define 'revision' and include a dispute resolution process for disagreements over deliverable quality.",
+        "reasoning": "Starliner identifies undefined revision scope and proposes definition with dispute process. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 6,
+      "total_points": 7.0
+    },
+    {
+      "gt_id": "GT-23",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.1",
+        "excerpt": "New York law governs, which may not be optimal if Client is located elsewhere; no flexibility for Client's jurisdiction. AMEND to allow Client's home jurisdiction or mutual agreement on governing law.",
+        "reasoning": "Starliner proposes allowing Client's home jurisdiction as alternative. Addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 6,
+      "total_points": 7.0
+    },
+    {
+      "gt_id": "GT-24",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New Clause Recommendation - Force Majeure",
+        "excerpt": "No provision excuses performance for events beyond either party's control, which could result in unfair liability for Client if unforeseen events occur. ADD a force majeure clause excusing performance for defined uncontrollable events.",
+        "reasoning": "Starliner proposes comprehensive force majeure clause. Fully addresses GT."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 8,
+      "total_points": 9.0
+    },
+    {
+      "gt_id": "GT-25",
+      "tier": "T3",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "GT-25 concerns missing service level commitments. Starliner does not propose this addition."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    },
+    {
+      "gt_id": "GT-26",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.3",
+        "excerpt": "Neither party may assign without consent, which could restrict Client's ability to restructure or sell its business. AMEND to allow assignment by Client to affiliates or in connection with a merger/acquisition.",
+        "reasoning": "Starliner proposes allowing Client assignment to affiliates and in M&A transactions. Fully addresses GT."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 1.0,
+      "quality_points": 6,
+      "total_points": 7.0
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Agency IP",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify the",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The definition of Agency IP is broad and may capture tools or methodologies developed during the project, potentially limiting Client’s use of deliverables. Ambiguity exists about what constitutes “pr"
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Change Orders",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify tim",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The process for change orders is outlined, but lacks detail on timelines for approval and consequences if either party refuses a change. Potential for project delays or disputes."
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Expenses",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require det",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Client is responsible for pre-approved expenses, but the approval process and documentation requirements are not detailed, which could lead to misunderstandings."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Invoicing",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify dep",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The Agency may require up to 50% deposit, but the timing and conditions for such deposits are not fully specified, which could affect Client’s cash flow."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Ownership of Deliverables",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify tha",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Client owns deliverables upon full payment, but the definition of “final approved Deliverables” could be interpreted narrowly, potentially excluding drafts or underlying materials."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Revisions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define “rev",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The number of included revisions is limited to two, but there is no detail on what constitutes a “revision” or process for dispute if quality is not met."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Agency Warranties",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify war",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Agency warrants professional performance and non-infringement, but does not specify remedies or duration of warranties."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Confidentiality Obligations",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to provide ind",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Confidentiality is limited to three years post-termination, which may be insufficient for trade secrets or sensitive business information."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Term",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify min",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The term is open-ended but lacks detail on minimum commitment or notice periods, which could create uncertainty."
+    },
+    {
+      "clause": "12.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require dat",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Obligations upon termination are outlined, but there is no mention of data return, transition assistance, or ongoing confidentiality."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow Clien",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "New York law governs, which may not be optimal if Client is located elsewhere; no flexibility for Client’s jurisdiction."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow for n",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mandatory arbitration in New York may be costly or inconvenient for Client; lacks escalation process before arbitration."
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Assignment",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow assig",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Neither party may assign without consent, which could restrict Client’s ability to restructure or sell its business."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Data Protection & Privacy",
+      "leah_classification": "🆕",
+      "leah_action": "ADD a clause requiri",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract does not address compliance with data protection laws or define obligations regarding personal data, exposing Client to regulatory and reputational risk."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "🆕",
+      "leah_action": "ADD a force majeure ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No provision excuses performance for events beyond either party’s control, which could result in unfair liability for Client if unforeseen events occur."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Ambiguity & Interpretation",
+      "leah_classification": "🆕",
+      "leah_action": "ADD a clause stating",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract lacks a clause specifying that ambiguities are interpreted against the drafter, which could disadvantage Client in a dispute."
+    },
+    {
+      "clause": "Definition of Agency IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause is overly broad and could capture project-specific developments, limiting Client’s use of deliverables. This amendment clarifies that only pre-existing IP is excluded, while ensuri"
+    },
+    {
+      "clause": "Change Orders",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 2.2. The original clause lacks timelines for response and a dispute mechanism, risking project delays. Adding response deadlines and a dispute process ensures prompt handling "
+    },
+    {
+      "clause": "Expenses",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 3.2. The original clause lacks sufficient documentation requirements, risking disputes over reimbursement. Lowering the approval threshold and requiring documentation increase"
+    },
+    {
+      "clause": "Invoicing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 3.3. The original clause allows for large upfront deposits without clear triggers, potentially straining Client’s cash flow. The amendment ties deposits to project phases and "
+    },
+    {
+      "clause": "Payment Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 3.4. The original late payment rate is high and may be punitive. Reducing the rate to a commercially reasonable level protects Client from excessive penalties while maintainin"
+    },
+    {
+      "clause": "Delays",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 4.3. The original clause allows for open-ended extensions and fees, exposing Client to disproportionate costs. This amendment requires notice, documentation, and proportionali"
+    },
+    {
+      "clause": "Ownership of Deliverables",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 5.1. The original clause may exclude essential materials needed by Client. This amendment ensures Client receives all necessary work product, supporting business continuity an"
+    },
+    {
+      "clause": "Agency IP License",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 5.2. The original license is restrictive and may not meet Client’s operational needs. Expanding the license to include modification, sublicensing, and transfer ensures Client "
+    },
+    {
+      "clause": "Preliminary Work",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 5.3. Without access to preliminary work, Client may be unable to complete or adapt deliverables. This amendment ensures Client can use necessary materials, reducing business r"
+    },
+    {
+      "clause": "Portfolio Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 5.4. The original clause allows public display without Client’s consent, risking exposure of confidential or sensitive materials. This amendment grants Client control over dis"
+    },
+    {
+      "clause": "Review Period",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 6.1. Deeming silence as rejection is highly unusual and burdensome for Client. This amendment aligns with market practice, reducing administrative risk and ensuring deliverabl"
+    },
+    {
+      "clause": "Revisions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 6.2. The original clause lacks a clear definition of “revision” and a dispute process, risking disagreements. This amendment provides clarity and a fair process for resolving "
+    },
+    {
+      "clause": "Final Acceptance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 6.3. The original clause could force Client to accept defective deliverables. This amendment allows for post-launch defect reporting and remediation, ensuring Client receives "
+    },
+    {
+      "clause": "Agency Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 8.1. The original clause lacks duration and remedies, limiting Client’s recourse. This amendment ensures warranties are meaningful and enforceable, providing clear remedies fo"
+    },
+    {
+      "clause": "Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 8.3. The original disclaimer could nullify important protections for Client. This amendment preserves Client’s rights to remedies for defective deliverables, balancing risk mo"
+    },
+    {
+      "clause": "Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 9.1. Limiting confidentiality to three years is insufficient for trade secrets. This amendment ensures indefinite protection for sensitive information, reducing long-term risk"
+    },
+    {
+      "clause": "Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 10.1. The original clause could shield Agency from liability for serious misconduct. The amendment preserves Client’s right to recover consequential damages in cases of egregi"
+    },
+    {
+      "clause": "Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 10.2. The original cap may be too low for serious breaches. Raising the cap and carving out key claims ensures adequate remedies for Client and incentivizes Agency compliance."
+    },
+    {
+      "clause": "Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 12.1. The original clause is open-ended and lacks minimum notice, creating uncertainty. This amendment provides clarity and stability for ongoing projects, reducing operationa"
+    },
+    {
+      "clause": "Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 12.4. The original clause omits key post-termination obligations. This amendment ensures data return, transition support, and ongoing confidentiality, protecting Client’s inte"
+    },
+    {
+      "clause": "Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 13.1. The original clause may disadvantage Client if located outside New York. Allowing Client to select its home jurisdiction increases convenience and reduces legal costs fo"
+    },
+    {
+      "clause": "Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 13.2. The original clause mandates arbitration in New York, which may be inconvenient and costly for Client. Adding negotiation and location flexibility reduces costs and incr"
+    },
+    {
+      "clause": "Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 13.3. The original clause restricts Client’s ability to restructure or sell its business. This amendment provides necessary flexibility for Client’s corporate transactions."
+    },
+    {
+      "clause": "Data Protection & Privacy",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 9.1. The contract is silent on data protection, exposing Client to regulatory and reputational risk. Adding this clause ensures Agency is legally obligated to safeguard"
+    },
+    {
+      "clause": "Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 12.4. The absence of a force majeure clause could unfairly expose Client to liability for uncontrollable events. Adding this clause protects both Parties from unforesee"
+    },
+    {
+      "clause": "Ambiguity & Interpretation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 13.5. Without this clause, ambiguous language could be construed against Client. Adding it ensures that any unclear terms are interpreted in Client’s favor, reducing li"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 24,
+      "P": 0,
+      "N": 0,
+      "NMI": 2
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 10,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 10,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      }
+    },
+    "t1_all_detected": true,
+    "total_detection_points": 92.0,
+    "total_quality_points": 154,
+    "total_points": 246.0,
+    "additional_issues_count": 42
+  }
+}

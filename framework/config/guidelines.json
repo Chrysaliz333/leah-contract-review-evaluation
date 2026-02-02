@@ -1,0 +1,102 @@
+{
+  "mode": "guidelines",
+  "display_name": "Guidelines",
+  "description": "Playbook-based evaluation with position hierarchy (GS/FB1/FB2/RF).",
+  "contracts": null,
+  "contract_types": [
+    "nda",
+    "subcontract"
+  ],
+  "paths": {
+    "base_dir": "guidelines",
+    "canonical_json": "canonical_json",
+    "canonical_json_pattern": "canonical_json_{env}",
+    "ground_truth": "ground_truth",
+    "gt_pattern": "{contract_type}.json"
+  },
+  "gt_structure": {
+    "type": "flat",
+    "id_field": "test_id",
+    "tier_field": "tier",
+    "clause_field": "clause_ref",
+    "issue_field": "clause_name",
+    "extra_fields": [
+      "playbook_ref",
+      "playbook_standard",
+      "trigger_phrase"
+    ]
+  },
+  "evaluation_structure": {
+    "type": "flat",
+    "evaluations_key": "gt_evaluations",
+    "issue_array_field": "scored_issues",
+    "detection_field": "detected"
+  },
+  "quality_fields": [
+    "location_score",
+    "action_score",
+    "amendment_score",
+    "rationale_score"
+  ],
+  "detection_points": {
+    "T1": {
+      "Y": 1,
+      "P": 0.5,
+      "N": 0,
+      "NMI": 0
+    },
+    "T2": {
+      "Y": 1,
+      "P": 0.5,
+      "N": 0,
+      "NMI": 0
+    },
+    "T3": {
+      "Y": 0.5,
+      "P": 0.25,
+      "N": 0,
+      "NMI": 0
+    }
+  },
+  "quality_scores": {
+    "enabled": true,
+    "dimensions": [
+      "location_score",
+      "action_score",
+      "amendment_score",
+      "rationale_score"
+    ],
+    "max_per_dimension": {
+      "T1": {
+        "location": 1,
+        "action": 1,
+        "amendment": 2,
+        "rationale": 2
+      },
+      "T2": {
+        "location": 1,
+        "action": 1,
+        "amendment": 1,
+        "rationale": 1
+      }
+    }
+  },
+  "gates": {
+    "red_flag_gate": true,
+    "red_flag_gate_description": "All Red Flag issues must be detected to pass"
+  },
+  "additional_issues": {
+    "enabled": true,
+    "classifications_to_capture": [
+      "\u274c",
+      "Unfavourable",
+      "\u26a0\ufe0f",
+      "Requires Clarification"
+    ],
+    "skip_classifications": [
+      "\u2705",
+      "Favourable",
+      "Standard"
+    ]
+  }
+}

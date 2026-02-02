@@ -1,0 +1,373 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "sonnet45",
+    "evaluation_timestamp": "2026-01-25T22:30:00Z",
+    "gt_version": "1.0",
+    "environment": "hotfix",
+    "representing_party": "Controller"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "DPA_CP_01",
+      "clause": "4.1",
+      "cp_redline_description": "Controller hereby provides general written authorisation for Processor to engage Sub-processors for the Processing of Personal Data. Processor shall maintain an up-to-date list of Sub-processors available upon Controller's request.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The existing redline eliminates Controller's critical objection mechanism, removing the 30-day advance notice and explicit objection rights that enable meaningful oversight of Sub-processor selection. This shifts control entirely to Processor for unilateral decisions on who accesses Personal Data, fundamentally weakening Controller's data governance position and creating compliance risk under GDPR Article 28(2) which requires Controller authorization. The original clause provides appropriate balance between operational flexibility and Controller oversight. Rejection preserves Controller's ability to prevent unsuitable Sub-processors from accessing Personal Data.",
+        "judge_reasoning": "Leah correctly identified the CP redline at section 4.1 and recommended REJECT. The rationale comprehensively addresses all required reasoning points: (1) advance notice enables due diligence, (2) objection right is fundamental Controller protection, (3) passive list maintenance is inadequate, and (4) references GDPR Art 28(2) requirement for Controller authorisation. The revision to restore original language preserves all key elements including 30-day notice, objection right, and consequence framework."
+      }
+    },
+    {
+      "gt_id": "DPA_CP_02",
+      "clause": "8.1",
+      "cp_redline_description": "Processor shall notify Controller of any Personal Data Breach without undue delay and in any event within five (5) business days of confirming such breach. Notification shall be limited to information Processor determines is necessary.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Extension from 72 hours to 5 business days directly conflicts with GDPR Article 33 requirements for Controller notification, creating regulatory compliance risk. The phrase 'confirming such breach' introduces ambiguity about when the clock starts, potentially delaying notification further. Language stating 'information Processor determines is necessary' grants unilateral discretion to withhold critical breach details, preventing Controller from meeting its own regulatory notification obligations to supervisory authorities within required timeframes.",
+        "judge_reasoning": "Leah correctly identified the CP redline at section 8.1 and recommended REJECT. The rationale addresses all GT reasoning requirements: (1) Controller has 72-hour regulatory notification obligation under GDPR Art 33, (2) 'becoming aware' is the legal standard vs problematic 'confirming' trigger, (3) Controller needs information to assess regulatory obligations. The proposed reversion to 72-hour notification preserves all key elements."
+      }
+    },
+    {
+      "gt_id": "DPA_CP_03",
+      "clause": "9.2",
+      "cp_redline_description": "Processor shall indemnify Controller against direct damages arising from Processor's gross negligence or wilful misconduct in breach of this DPA, excluding any regulatory fines, penalties, or administrative sanctions.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Exclusion of regulatory fines is fundamentally problematic as Controllers face direct GDPR penalties (up to EUR 20M or 4% global turnover) for Processor failures under Article 82. Narrowing standard from 'breach' to 'gross negligence or willful misconduct' creates an impossibly high bar, leaving Controller exposed to losses from ordinary negligence. Limitation to 'direct damages' excludes consequential losses like reputational harm and business interruption. This creates severe financial asymmetry where Controller bears all regulatory and indirect risk.",
+        "judge_reasoning": "Leah correctly identified the CP redline at section 9.2 and recommended REJECT. The rationale comprehensively addresses GT reasoning requirements: (1) GDPR fines can reach EUR 20M or 4% global turnover, (2) gross negligence standard effectively eliminates indemnification, (3) Processor breach creates Controller regulatory exposure, (4) Controller cannot absorb Processor-caused fines. The revision restores indemnification for breach (not just gross negligence) and includes regulatory fines."
+      }
+    },
+    {
+      "gt_id": "DPA_CP_04",
+      "clause": "7.2",
+      "cp_redline_description": "Audits shall be conducted with no less than sixty (60) days' prior written notice during normal business hours, no more than once every two (2) years, and at Controller's sole expense. Controller shall provide Processor with the audit scope and methodology for approval prior to any audit. Processor may satisfy audit requirements by providing a SOC 2 Type II report in lieu of on-site audit.",
+      "expected_action": "MODIFY",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The existing redline significantly diminishes Controller's oversight capabilities by reducing audit frequency from annual to biennial, extending notice from reasonable to 60 days, and requiring Processor approval of audit scope/methodology. This creates Processor veto power over verification activities, undermining Controller's GDPR Article 28(3)(h) audit rights. The 60-day notice provides excessive warning time potentially allowing remediation before inspection, while SOC 2 substitution may not address Controller-specific compliance needs.",
+        "judge_reasoning": "Leah recommended REJECT where GT expected MODIFY as primary action. However, REJECT is an acceptable action per GT acceptable_actions list. The rationale addresses all required reasoning points: (1) GDPR Art 28(3)(h) requires Controller audit rights, (2) 60 days notice undermines audit effectiveness, (3) Processor scope approval defeats audit independence, (4) SOC 2 is point-in-time and may not cover Controller-specific concerns. The revision preserves annual audit right, reasonable notice, and Controller control of audit scope."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "existing_redlines_check_4.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Rejection preserves Controller's ability to prevent unsuitable Sub-processors from accessing Personal Data. The original clause provides appropriate balance between operational flexibility and Controller oversight.",
+        "effective_rationale_excerpt": "The existing redline eliminates Controller's critical objection mechanism, removing the 30-day advance notice and explicit objection rights that enable meaningful oversight of Sub-processor selection. This shifts control entirely to Processor for unilateral decisions on who accesses Personal Data, fundamentally weakening Controller's data governance position and creating compliance risk under GDPR Article 28(2).",
+        "judge_reasoning": "Leah fully detected this T1 issue. The risk_table entry and existing_redlines_check both identify the problem with general authorization and the weakened objection mechanism. Leah specifically notes the 30-day notice requirement, objection rights, and consequences gap. The REJECT recommendation with reversion to original clause addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table_5.1",
+      "evidence": {
+        "proposed_revision_excerpt": "The revised language establishes mandatory baseline requirements (AES-256 encryption, TLS 1.2, MFA, annual penetration testing, quarterly vulnerability scanning, 12-month log retention) while maintaining risk-based flexibility through the GDPR Article 32 factors.",
+        "effective_rationale_excerpt": "Requires 'appropriate technical and organisational measures' with examples (encryption, pseudonymisation, access controls) but lacks mandatory baseline requirements or specific implementation standards. The term 'appropriate to the risk' is subjective and provides no objective benchmarks. Without defined minimum security controls (e.g., AES-256 encryption, MFA, penetration testing frequency), Controller cannot verify adequacy.",
+        "judge_reasoning": "Leah fully detected this T1 issue. Risk table entry at 5.1 classified as Requires Clarification correctly identifies that 'appropriate' measures is a subjective standard, examples are not mandatory requirements, and specific minimum controls are needed. The proposed amendment adds mandatory baseline requirements including annual pen testing, addressing all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "8.1",
+      "tier": "T3",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 6.5,
+      "matched_redline_id": "risk_table_8.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Processor shall provide updates to Controller as additional information becomes available and shall provide a final written incident report within thirty (30) days of initial notification.",
+        "effective_rationale_excerpt": "The original clause's term 'approximate number' of affected Data Subjects allows imprecision that may hinder Controller's regulatory reporting under GDPR Article 33, and lacks requirements for ongoing updates as investigation progresses or final incident reports with root cause analysis.",
+        "judge_reasoning": "Partial detection. The GT issue is that 72 hours meets GDPR minimum but may be too slow for high-risk breaches, suggesting 24-hour notification for high-severity breaches. Leah's focus is primarily on the CP redline extending to 5 business days and on improving notification contents (8.2), not on enhancing the baseline 72-hour requirement with tiered severity-based timelines. The proposed amendments improve notification quality but don't specifically address faster initial notification for high-severity breaches."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1 / 9.2",
+      "tier": "T2",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_9.1",
+      "evidence": {
+        "proposed_revision_excerpt": "The revised language explicitly incorporates GDPR Articles 82 (compensation) and 83 (administrative fines), establishes joint and several liability framework ensuring Data Subjects receive full compensation, provides claim-back mechanism based on proportional responsibility.",
+        "effective_rationale_excerpt": "States each Party is liable 'in accordance with applicable law' without specifying liability caps, exclusions, or allocation methodology between Controller and Processor. This creates uncertainty about financial exposure and potential for disputes over which party bears costs for joint failures. The reference to 'applicable law' without incorporating GDPR Article 82 joint liability provisions may create conflicts with statutory requirements. Absence of liability insurance requirements or financial capability standards leaves Controller exposed if Processor lacks resources to satisfy claims.",
+        "judge_reasoning": "Leah fully detected this T2 issue. Risk table entry at 9.1 identifies the 'in accordance with applicable law' ambiguity and potential for Principal Agreement caps to apply. Leah correctly notes the uncertainty about financial exposure and missing liability caps. The proposed amendment explicitly addresses carving indemnification out of caps and establishes clear liability framework."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability in DPA",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "new_clause_data_breach_liability",
+      "evidence": {
+        "proposed_revision_excerpt": "9.3 Data Breach Costs. In addition to the liability provisions in Articles 9.1 and 9.2, Processor shall be responsible for and shall reimburse Controller for all reasonable costs and expenses incurred by Controller in connection with any Personal Data Breach caused by Processor's breach of this DPA or failure to comply with applicable Data Protection Laws, including: (a) costs of forensic investigation; (b) costs of breach notification; (c) costs of credit monitoring; (d) legal fees; (e) costs of remediation measures; (f) regulatory fines, penalties, and administrative sanctions; and (g) compensation paid to Data Subjects.",
+        "effective_rationale_excerpt": "The DPA lacks provisions allocating costs associated with Personal Data Breaches, including forensic investigation, legal fees, notification expenses, credit monitoring, regulatory fines, and remediation. Given that GDPR fines can reach EUR 20M or 4% of global turnover under Article 83, and breach notification/remediation costs frequently exceed millions, this creates significant financial uncertainty and risk for Controller.",
+        "judge_reasoning": "Leah fully detected this T1 issue. The new clause recommendation at 9.3 addresses the missing limitation of liability by explicitly allocating data breach costs and carving regulatory fines out of any caps. The rationale correctly identifies that the DPA lacks its own liability provisions and Controller faces financial uncertainty. The comprehensive new clause addresses all GT key elements regarding liability for data breaches and regulatory fines."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Deletion Timeline Unspecified",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_3.4",
+      "evidence": {
+        "proposed_revision_excerpt": "Such return or deletion shall be completed within thirty (30) days of termination unless Controller specifies a different timeframe. Within forty-five (45) days of termination, Processor shall provide Controller with written certification signed by an authorized officer confirming completion of return or deletion, specifying the data destruction methods used.",
+        "effective_rationale_excerpt": "Clause requires deletion or return 'at Controller's option' but lacks specific timeframes for completion or certification requirements. The exception 'unless retention is required by law' provides no obligation for Processor to document legal basis or notify Controller of retained data. Without deletion deadlines, Controller cannot ensure timely data minimization post-termination. Absence of deletion certification prevents Controller from verifying compliance, creating audit trail gaps and potential ongoing liability.",
+        "judge_reasoning": "Leah fully detected this T2 issue. Risk table entry at 3.4 correctly identifies the missing deletion timeline and certification requirement. The proposed amendment adds a 30-day deletion deadline and 45-day certification requirement with deletion certificate, addressing all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.2",
+      "tier": "T3",
+      "issue": "All Audit Costs on Controller",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "risk_table_7.1",
+      "evidence": {
+        "proposed_revision_excerpt": "The revised language defines 'contribute to' with specific obligations (access, response timeframes, cooperation, evidence provision), requires auditor confidentiality agreements to protect Processor's legitimate interests, establishes Controller ownership of audit reports with sharing rights, and allocates costs (Processor bears own costs unless audits exceed 8 hours annually).",
+        "effective_rationale_excerpt": "The original clause's undefined term 'contribute to' creates ambiguity about scope of Processor cooperation and lacks cost allocation for Processor time/resources. Without audit report ownership clarification, Processor might claim proprietary rights over findings.",
+        "judge_reasoning": "Leah fully detected this T3 issue. Risk table entries at 7.1 and 7.2 address audit provisions. The proposed amendments include cost allocation shifting costs to Processor if deficiencies found (Processor bears own costs unless audits exceed 8 hours annually), and adds SOC 2 report option as supplement. This addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "10.1",
+      "tier": "T3",
+      "issue": "Indefinite Duration",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 6.5,
+      "matched_redline_id": "risk_table_10.2",
+      "evidence": {
+        "proposed_revision_excerpt": "The following provisions of this DPA shall survive termination or expiration of the Principal Agreement: (a) Article 1 (Definitions); (b) Article 3.2 (Confidentiality); (c) Article 3.4 (Deletion); (d) Article 7 (Audit Rights), for a period of three (3) years following termination.",
+        "effective_rationale_excerpt": "Specifies that confidentiality, liability, and data deletion provisions survive termination but omits critical provisions like audit rights (to verify deletion), indemnification (for post-termination claims), and breach notification (for incidents discovered after termination). The lack of survival timeframes creates indefinite obligations without clarity on statute of limitations alignment.",
+        "judge_reasoning": "Partial detection. Risk table entry at 10.2 addresses survival provisions but focuses on which provisions survive rather than the GT issue of indefinite duration and potential indefinite processing. Leah's amendments add timeframes to survival provisions but don't specifically address periodic review requirements or maximum retention periods as the GT suggests."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "Exhibit A / 2.2",
+      "tier": "T2",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_exhibit_a",
+      "evidence": {
+        "proposed_revision_excerpt": "EXHIBIT A - PROCESSING DETAILS: Subject Matter of Processing: Processor shall provide [specify services] to Controller pursuant to the Principal Agreement. Duration of Processing: [specify]. Nature and Purpose of Processing: Processor shall perform the following Processing activities on behalf of Controller. Types of Personal Data: [detailed categories]. Categories of Data Subjects: [detailed categories].",
+        "effective_rationale_excerpt": "Exhibit A contains only placeholder headings without actual content defining subject matter, duration, nature, purpose, data types, or Data Subject categories. This creates fundamental ambiguity about Processing scope and prevents Controller from fulfilling GDPR Article 28(3) documentation requirements. Without defined Processing parameters, Controller cannot assess necessity and proportionality, verify purpose limitation, or enforce scope restrictions. The incomplete Exhibit renders the entire DPA non-compliant with mandatory documentation standards.",
+        "judge_reasoning": "Leah fully detected this T2 issue. Risk table entry for Exhibit A classified as Unfavourable correctly identifies the blank exhibit and GDPR Art 28(3) non-compliance. The proposed revision provides comprehensive template with all required elements for completion."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "Exhibit B / 5.1",
+      "tier": "T2",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_exhibit_b",
+      "evidence": {
+        "proposed_revision_excerpt": "EXHIBIT B - TECHNICAL AND ORGANISATIONAL MEASURES: 1. ACCESS CONTROL: Role-based access controls, Multi-factor authentication, Unique user credentials, Automated access revocation within 24 hours. 2. ENCRYPTION: AES-256 at rest, TLS 1.2 in transit. 3. NETWORK SECURITY: Firewalls, IDS/IPS, quarterly vulnerability scanning, annual penetration testing.",
+        "effective_rationale_excerpt": "Exhibit B is referenced for 'Technical and Organisational Measures' but contains only placeholder text stating 'to be attached.' This creates complete absence of enforceable security standards beyond the vague Article 5.1 language. Without documented security measures, Controller cannot verify GDPR Article 32 compliance, assess adequacy of safeguards, or enforce specific controls. The missing Exhibit prevents Controller from demonstrating due diligence in Processor selection and creates regulatory audit risk.",
+        "judge_reasoning": "Leah fully detected this T2 issue. Risk table entry for Exhibit B classified as Unfavourable correctly identifies the placeholder text and GDPR Art 32 compliance gap. The proposed revision provides comprehensive technical and organisational measures schedule with specific controls."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit C / 4.1",
+      "tier": "T2",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_exhibit_c",
+      "evidence": {
+        "proposed_revision_excerpt": "The following Sub-processors are authorized by Controller to process Personal Data on Controller's behalf: For each Sub-processor, provide: Sub-processor Name, Location, Services Provided, Personal Data Processed, Security Certifications, Contract Date. Processor shall maintain a current version of this Exhibit C and make it available to Controller upon request.",
+        "effective_rationale_excerpt": "Exhibit C for 'Approved Sub-processors' contains only placeholder text stating 'to be attached.' Combined with the weakened Article 4.1 (per existing redline), this creates complete lack of Sub-processor transparency. Controller has no visibility into who will access Personal Data, their locations, or security capabilities. This prevents Controller from fulfilling GDPR Article 28(2) and 28(4) requirements for Sub-processor authorization and creates uncontrolled data sharing risk.",
+        "judge_reasoning": "Leah fully detected this T2 issue. Risk table entry for Exhibit C classified as Unfavourable correctly identifies the blank exhibit means objection rights are meaningless without a baseline list. The proposed revision provides structured template for sub-processor list with required information fields."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Cyber Insurance Requirement",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_9.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Requires Processor to maintain minimum GBP 5M professional liability insurance covering data processing liabilities, and mandates insurance certificates and notice of coverage changes.",
+        "effective_rationale_excerpt": "Absence of liability insurance requirements or financial capability standards leaves Controller exposed if Processor lacks resources to satisfy claims. The revised language requires Processor to maintain minimum GBP 5M professional liability insurance covering data processing liabilities, and mandates insurance certificates and notice of coverage changes.",
+        "judge_reasoning": "Leah fully detected this T2 issue. Risk table entry at 9.1 explicitly identifies the absence of liability insurance requirements and proposes adding minimum GBP 5M professional liability insurance with Controller as additional insured. This addresses all GT key elements."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "total_detection_points": 55.0,
+    "max_detection_points": 57,
+    "total_quality_points": 102,
+    "max_quality_points": 108,
+    "total_points": 157.0,
+    "max_points": 165,
+    "detection_counts": {
+      "Y": 10,
+      "P": 2,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 0,
+        "count": 3
+      },
+      "T2": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 0,
+        "count": 6
+      },
+      "T3": {
+        "Y": 1,
+        "P": 2,
+        "N": 0,
+        "NMI": 0,
+        "count": 3
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 3,
+    "t1_detected": 3,
+    "percentage": 95.2,
+    "pass_fail": "PASS",
+    "weighted_max": 57
+  },
+  "additional_issues": [],
+  "summary": {
+    "part_a": {
+      "percentage": 100.0,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "percentage": 95.2,
+      "t1_gate": "PASS",
+      "baseline_delta": null,
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true
+    }
+  }
+}

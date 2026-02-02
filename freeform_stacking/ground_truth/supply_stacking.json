@@ -1,0 +1,248 @@
+{
+  "gt_metadata": {
+    "mode": "freeform_stacking",
+    "contract_id": "Supply_ManufacturingCo",
+    "contract_type": "Supply Agreement",
+    "parties": {
+      "supplier": "Precision Manufacturing Co.",
+      "buyer": "Apex Automotive Inc."
+    },
+    "representing_party": "Buyer",
+    "gt_version": "1.0",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-23",
+    "schema_version": "1.0",
+    "note": "Freeform Stacking: Leah reviews entire document including CP redlines. Representing party is SAME as Freeform Baseline."
+  },
+  "input_files": {
+    "clause_analysis": {
+      "pattern": "*_Cl*.doc",
+      "format": "HTML",
+      "used_for": [
+        "part_a",
+        "part_b"
+      ]
+    },
+    "redline_document": {
+      "pattern": "*_Redline_*.docx",
+      "format": "Word with tracked changes",
+      "used_for": [
+        "part_c"
+      ]
+    }
+  },
+  "part_a_cp_redlines": [
+    {
+      "test_id": "SUPPLY_01",
+      "clause_ref": "Payment Terms",
+      "section": "4.2",
+      "original_text": "Buyer shall pay all invoices within thirty (30) days of invoice date. Late payments bear interest at 1% per month.",
+      "cp_redline": "Buyer shall pay all invoices within fifteen (15) days of invoice date. Supplier may suspend deliveries if payment is late.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: Net 30 payment terms. Reject 15-day requirement and unilateral suspension rights.",
+      "key_elements": [
+        "1) Minimum 30-day payment terms 2) Suspension requires cure period and notice 3) Standard commercial terms"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May add: 2% early payment discount for 10 days",
+        "May clarify: suspension requires 15 days notice and cure opportunity",
+        "May add: late payment protections for Supplier"
+      ],
+      "unacceptable_responses": [
+        "15-day payment terms",
+        "Net under 30 days",
+        "Immediate suspension without notice",
+        "Suspension without cure opportunity"
+      ],
+      "reasoning_must_address": "15 days insufficient for AP cycles; suspension needs due process; industry standard is Net 30",
+      "category": "1. Obligations & Performance",
+      "subcategory": "Conditions and timeframes"
+    },
+    {
+      "test_id": "SUPPLY_02",
+      "clause_ref": "Product Warranty",
+      "section": "5.1",
+      "original_text": "Supplier warrants Products shall be free from defects in materials and workmanship for one (1) year from delivery.",
+      "cp_redline": "Supplier warrants Products free from defects for sixty (60) days from delivery, excluding normal wear, improper use, unauthorised modifications, environmental damage, and third-party components.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: One (1) year warranty from delivery. Reject 60-day reduction and extensive exclusions.",
+      "key_elements": [
+        "1) Minimum 12 months warranty 2) From delivery date 3) Reasonable exclusions only"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May add: reasonable exclusions (misuse, unauthorised modification)",
+        "12 months minimum required",
+        "May clarify: manufacturing defects covered"
+      ],
+      "unacceptable_responses": [
+        "60-day warranty",
+        "Warranty under 12 months",
+        "Excessive exclusions",
+        "Normal wear excluded (reasonable but needs definition)"
+      ],
+      "reasoning_must_address": "60 days grossly inadequate; automotive industry standard 12-24 months; many defects manifest beyond 60 days",
+      "category": "2. Liability & Redress",
+      "subcategory": "Warranties and representations"
+    },
+    {
+      "test_id": "SUPPLY_03",
+      "clause_ref": "Liability Cap",
+      "section": "11.2",
+      "original_text": "Supplier's total liability shall not exceed amounts paid by Buyer for Products in the twelve (12) months preceding the claim.",
+      "cp_redline": "Supplier's total liability shall not exceed the lesser of product price or $50,000.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: 12-month product payments cap. Reject fixed $50K ceiling.",
+      "key_elements": [
+        "1) Cap tied to 12-month product payments 2) Proportional to relationship value 3) No arbitrary low fixed cap"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May add: minimum floor of $100K+",
+        "May add: carve-outs for IP, gross negligence, willful misconduct",
+        "May increase to 24-month fees"
+      ],
+      "unacceptable_responses": [
+        "Fixed $50K cap",
+        "Lesser of product price or fixed amount",
+        "Cap below 12-month payments",
+        "Arbitrary low ceiling"
+      ],
+      "reasoning_must_address": "$50K inadequate for automotive supply relationship; cap should scale with purchase volume",
+      "category": "2. Liability & Redress",
+      "subcategory": "Limitation of liability"
+    },
+    {
+      "test_id": "SUPPLY_04",
+      "clause_ref": "Termination",
+      "section": "14.3",
+      "original_text": "Either party may terminate this Agreement upon 180 days written notice.",
+      "cp_redline": "Supplier may terminate upon 30 days notice. Buyer may not terminate for convenience.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: Either party may terminate on 180 days notice. Reject asymmetric provision.",
+      "key_elements": [
+        "1) Symmetric termination rights 2) Reasonable notice period (90-180 days) 3) Both parties can terminate for convenience"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "180 days notice for both parties",
+        "May compromise: 90 days notice for both",
+        "May add: payment for work in progress"
+      ],
+      "unacceptable_responses": [
+        "Asymmetric termination rights",
+        "Supplier 30 days while Buyer cannot terminate",
+        "Removing Buyer termination for convenience",
+        "Notice period under 90 days"
+      ],
+      "reasoning_must_address": "Buyer needs termination flexibility for supply strategy changes; asymmetric provision creates vendor lock-in",
+      "category": "4. Term, Termination & Exit",
+      "subcategory": "Termination rights"
+    }
+  ],
+  "part_b_whole_document": {
+    "reference": {
+      "source_file": "../../freeform/ground_truth/supply.json",
+      "gt_version": "3.0_v4-enhanced_LOCKED",
+      "total_issues": 14,
+      "tier_breakdown": {
+        "T1": 4,
+        "T2": 8,
+        "T3": 2
+      },
+      "weighted_max": 74
+    },
+    "note": "Part B uses the Freeform Baseline GT. Same contract, same issues. Evaluate whether Leah still detects these risks when CP redlines are present."
+  },
+  "part_c_document_quality": {
+    "scope": "Every redline Leah produces in the output .docx",
+    "per_redline_capture": {
+      "redline_id": "Sequential ID (e.g., RL-01)",
+      "location": "Clause/section reference",
+      "type": "CP_RESPONSE | NEW_REDLINE",
+      "linked_gt_id": "GT ID if NEW_REDLINE addresses Part B issue, else null",
+      "action_stated": "ACCEPT | MODIFY | REJECT | ADD | DELETE",
+      "redline_exists": "Y | N",
+      "action_executed": "ACCEPT | MODIFY | REJECT | ADD | DELETE | NONE",
+      "execution_match": "Y | N | NA (NA if redline_exists=N)",
+      "is_wholesale": "Y | N",
+      "precision_score": "0-2 (aligned pair average)",
+      "insertion_accuracy": "0-2 | NA (aligned pair average, NA for DELETE/simple swaps)",
+      "notes": "Optional observations"
+    },
+    "aggregation_rules": {
+      "binary_fields": "Most confident determination wins",
+      "quality_fields": "Averaged across evaluations; median used for divergent scores",
+      "na_handling": "Exclude from averages"
+    }
+  },
+  "scoring_summary": {
+    "part_a": {
+      "items": 4,
+      "max_per_item": 6,
+      "max_total": 24,
+      "dimensions": {
+        "action": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "revision": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "reasoning": {
+          "max": 2,
+          "weight": "20%"
+        }
+      },
+      "pass_threshold": ">=70% AND 0 critical failures",
+      "critical_failures": [
+        "REJECT-only scored as ACCEPT",
+        "ACCEPT-only scored as REJECT",
+        "Revision contains unacceptable element"
+      ]
+    },
+    "part_b": {
+      "items": 14,
+      "weighted_max": 74,
+      "tier_weights": {
+        "T1": 8,
+        "T2": 5,
+        "T3": 1
+      },
+      "pass_threshold": "T1 Gate PASS AND >=70%",
+      "t1_gate": "Any T1 miss = FAIL"
+    },
+    "part_c": {
+      "per_redline_max": 6,
+      "dimensions": {
+        "precision": "0-2",
+        "insertion_accuracy": "0-2 or NA"
+      },
+      "metrics": [
+        "Wholesale Rate",
+        "Execution Mismatch Count",
+        "Missing Redline Count",
+        "Avg Precision",
+        "Avg Insertion Accuracy"
+      ],
+      "separate_reporting": [
+        "CP_RESPONSE",
+        "NEW_REDLINE"
+      ]
+    }
+  }
+}

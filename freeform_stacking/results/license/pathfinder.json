@@ -1,0 +1,549 @@
+{
+  "meta": {
+    "contract": "license",
+    "model_id": "pathfinder",
+    "model_display_name": "Pathfinder",
+    "environment": "hotfix",
+    "evaluation_timestamp": "2026-01-25T22:30:00Z",
+    "gt_version": "1.0",
+    "freeform_gt_version": "3.0_v4-enhanced_LOCKED",
+    "evaluator": "Liz"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "LICENSE_01",
+      "clause": "3.2",
+      "section": "Improvements",
+      "cp_redline_description": "CP adds grant-back of Licensee Background Technology to Licensor in addition to improvement ownership transfer",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "3.2 Improvements. As between the Parties, Licensee shall own all right, title, and interest in any enhancements, modifications, derivative works, or other improvements to the Licensed IP that are conceived, developed, or created by or on behalf of Licensee ('Licensee Improvements'). Licensor is granted a non-exclusive, worldwide, royalty-free licence to use Licensee Improvements solely outside the Field of Use for Licensor's own products. Nothing herein transfers ownership of Licensee Improvements to Licensor.",
+        "judge_reasoning": "Leah recommends MODIFY rather than outright REJECT. The revision correctly addresses the core GT concern by reversing improvement ownership to Licensee and explicitly stating 'Nothing herein transfers ownership of Licensee Improvements to Licensor'. The revision removes the grant-back of Licensee Background Technology. While REJECT would be cleaner, the MODIFY achieves the key elements: (1) rejects grant-back of Licensee Background Technology, (2) gives Licensee ownership of improvements, (3) provides limited license-back to Licensor. Action score 1 (MODIFY vs expected REJECT), revision score 2 (addresses key elements with reasonable alternative), reasoning score 2 (explains R&D investment loss and competitive handicap)."
+      }
+    },
+    {
+      "gt_id": "LICENSE_02",
+      "clause": "4.1",
+      "section": "Minimum Royalty",
+      "cp_redline_description": "CP changes Year 2 start to Year 1, doubles minimum from $250K to $500K, adds 15% annual escalator, removes credit for running royalties",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "4.1 Minimum Annual Royalty. No minimum royalty shall be payable for the first two (2) Contract Years. Thereafter, a minimum annual royalty of US$100,000 applies only if cumulative running royalties for the applicable year are less than that amount, and any running royalties actually paid shall be fully credited against such minimum.",
+        "judge_reasoning": "Leah recommends MODIFY rather than REJECT. The revision addresses all GT key elements: (1) reverts beyond Year 2 to no minimum for first 2 years, (2) reduces amount below baseline $250K to $100K, (3) removes the 15% escalator entirely, (4) maintains running royalty credit. The revision goes further than baseline reversion by reducing the minimum and extending the grace period. While REJECT would suffice, MODIFY with improved terms is acceptable. Action score 1 (MODIFY vs expected REJECT), revision score 2 (all key elements addressed, better than baseline), reasoning score 2 (addresses cash burn and default risk)."
+      }
+    },
+    {
+      "gt_id": "LICENSE_03",
+      "clause": "12.2",
+      "section": "Liability Cap",
+      "cp_redline_description": "CP changes cap from 12-month royalties to upfront fee only, excludes product recalls, lost profits, and commercial losses from Licensed Product defects",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "12.2 Cap. Except for a Party's indemnification obligations, breach of confidentiality, or gross negligence or wilful misconduct, each Party's aggregate liability under this Agreement shall not exceed the greater of (i) US$5,000,000 or (ii) two (2) times the total amounts paid and payable by Licensee during the twelve (12) months immediately preceding the event giving rise to the claim.",
+        "judge_reasoning": "Leah recommends MODIFY rather than REJECT. The revision addresses all GT key elements: (1) reverts cap to 12-month royalties basis plus adds $5M floor, (2) removes exclusion for product recall damages (carve-outs for serious misconduct), (3) removes exclusion for lost profits from defects. The revision improves on baseline by adding carve-outs and minimum floor. While REJECT would suffice, MODIFY with enhanced protections is acceptable. Action score 1 (MODIFY vs expected REJECT), revision score 2 (exceeds baseline protection), reasoning score 2 (addresses asymmetric exposure)."
+      }
+    },
+    {
+      "gt_id": "LICENSE_04",
+      "clause": "13.2",
+      "section": "Termination for Cause",
+      "cp_redline_description": "CP creates asymmetric termination: Licensor can terminate immediately for any Licensee breach, Licensee must wait 120 days for Licensor breach",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "13.2 Termination for Cause. Either Party may terminate this Agreement upon the other Party's material breach that remains uncured for thirty (30) days following written notice detailing the breach. Licensor's failure to provide necessary technical support or maintain the Licensed IP free of third-party claims constitutes a material breach.",
+        "judge_reasoning": "Leah recommends MODIFY rather than REJECT. The revision addresses all GT key elements: (1) restores symmetric termination rights (both parties equal), (2) sets reasonable cure period for both (30 days, even shorter than baseline 60), (3) maintains material breach standard for both, (4) keeps written notice requirement. The revision improves on baseline by adding specific Licensor obligations. Action score 1 (MODIFY vs expected REJECT), revision score 2 (achieves symmetric rights with enhanced protections), reasoning score 2 (addresses investment security and bilateral symmetry)."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 20,
+    "max_score": 24,
+    "percentage": 83.3,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.2",
+      "tier": "T1",
+      "issue": "Improvements owned by Licensor - loses R&D investment",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table[0]",
+      "evidence": {
+        "proposed_revision_excerpt": "3.2 Improvements. As between the Parties, Licensee shall own all right, title, and interest in any enhancements, modifications, derivative works, or other improvements to the Licensed IP that are conceived, developed, or created by or on behalf of Licensee ('Licensee Improvements'). Licensor is granted a non-exclusive, worldwide, royalty-free licence to use Licensee Improvements solely outside the Field of Use for Licensor's own products. Nothing herein transfers ownership of Licensee Improvements to Licensor.",
+        "effective_rationale_excerpt": "Ownership shift to Licensor strips Licensee of valuable derivative rights and imposes a free license back, creating significant competitive handicap and revenue loss. Language is fully one-sided, non-reciprocal, and undermines Licensee's R&D investment.",
+        "judge_reasoning": "Full detection. Risk table entry at 3.2 classified as Unfavorable with MODIFY action. The proposed revision completely addresses the GT issue by reversing ownership to Licensee and providing only limited license-back to Licensor. All GT key elements covered: (1) identifies Licensor ownership problem, (2) notes R&D investment loss, (3) proposes Licensee ownership of improvements, (4) provides reciprocal license-back structure. Amendment score 3: comprehensive fix with all key elements. Rationale score 3: explains competitive handicap, R&D investment loss, and one-sidedness. Redline quality score 3: precise language, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Licensor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table[2]",
+      "evidence": {
+        "proposed_revision_excerpt": "12.2 Cap. Except for a Party's indemnification obligations, breach of confidentiality, or gross negligence or wilful misconduct, each Party's aggregate liability under this Agreement shall not exceed the greater of (i) US$5,000,000 or (ii) two (2) times the total amounts paid and payable by Licensee during the twelve (12) months immediately preceding the event giving rise to the claim.",
+        "effective_rationale_excerpt": "Cap asymmetry shields Licensor while leaving Licensee exposed; new cap is lower than original and excludes Licensor from consequential exposures, eroding leverage in dispute scenarios.",
+        "judge_reasoning": "Full detection. Risk table entry at 12.2 classified as Unfavorable with MODIFY action. The proposed revision addresses the GT concern about cap being too low by: (1) adding $5M minimum floor, (2) extending to 2x royalties (vs baseline 1x), (3) adding carve-outs for IP title failure (via indemnification carve-out) and willful misconduct. Amendment score 3: exceeds GT key elements. Rationale score 2: identifies asymmetry issue but doesn't cite specific royalty values. Redline quality score 3: precise, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Mandatory minimum royalty regardless of sales",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table[1]",
+      "evidence": {
+        "proposed_revision_excerpt": "4.1 Minimum Annual Royalty. No minimum royalty shall be payable for the first two (2) Contract Years. Thereafter, a minimum annual royalty of US$100,000 applies only if cumulative running royalties for the applicable year are less than that amount, and any running royalties actually paid shall be fully credited against such minimum.",
+        "effective_rationale_excerpt": "Escalating minimums start earlier, double the base, and remove credits, exposing Licensee to large fixed costs irrespective of sales, impairing cashflow and heightening breach risk.",
+        "judge_reasoning": "Full detection. Risk table entry at 4.1 classified as Unfavorable with MODIFY action. The proposed revision addresses all GT key elements: (1) reduces minimum from $250K to $100K, (2) extends grace period to 2 years, (3) maintains running royalty credit, (4) effectively adds market condition adjustment by making it a shortfall mechanism. Amendment score 3: exceeds baseline protection. Rationale score 2: addresses fixed cost and breach risk but doesn't suggest force majeure adjustment. Redline quality score 3: clean, usable language."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.2",
+      "tier": "T1",
+      "issue": "AS-IS disclaimer with limited warranties",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not mentioned. No risk table entry for clause 9.2 or warranty-related concerns. The canonical JSON does not flag the AS-IS disclaimer or the 'to knowledge' qualifier on non-infringement warranty. The GT expects this issue to be identified as the warranty language is inadequate for a commercial IP license. T1 gate impact."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High royalty rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "risk_table[7]",
+      "evidence": {
+        "proposed_revision_excerpt": "5.1 Running Royalty. Licensee shall pay royalties equal to (a) six percent (6%) of annual Net Sales up to US$50,000,000 and (b) four percent (4%) of annual Net Sales exceeding that amount, payable forty-five (45) days after quarter-end.",
+        "effective_rationale_excerpt": "Flat 10 % ignores volume scaling, risking margin erosion on high-volume products; payment timeline tight (30 days) without audit grace.",
+        "judge_reasoning": "Full detection. Risk table entry at 5.1 classified as Requires Clarification with AMEND action. The proposed revision addresses all GT key elements: (1) reduces rate from 10% to tiered 6%/4%, (2) introduces volume discounts at higher sales levels, (3) extends payment window. Amendment score 3: comprehensive tiered structure. Rationale score 2: identifies margin erosion but doesn't cite industry benchmarks. Redline quality score 3: precise tiered structure."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Sublicensing requires Licensor consent",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "risk_table[5]",
+      "evidence": {
+        "proposed_revision_excerpt": "2.2 Sublicensing. Licensee may grant sublicenses without Licensor's consent, provided that each sublicensee agrees in writing to terms no less protective of Licensor's rights than those contained herein and Licensee remains primarily liable for all obligations.",
+        "effective_rationale_excerpt": "Consent bottleneck lets Licensor veto growth partnerships, undercutting commercialisation speed and enterprise value; no objective consent standard.",
+        "judge_reasoning": "Full detection. Risk table entry at 2.2 classified as Unfavorable with AMEND action. The proposed revision addresses GT key elements by removing consent requirement entirely (stronger than 'consent not to be unreasonably withheld') while maintaining Licensor protection via flow-down terms. Amendment score 3: exceeds GT expectations. Rationale score 2: identifies veto risk but doesn't mention affiliate or manufacturing specific concerns. Redline quality score 3: clean, balanced language."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "risk_table[11]",
+      "evidence": {
+        "proposed_revision_excerpt": "Broad carve-out may bar recovery of lost profits even for Licensor breach of exclusivity; needs exceptions for IP infringement and confidentiality breaches.",
+        "effective_rationale_excerpt": "Broad carve-out may bar recovery of lost profits even for Licensor breach of exclusivity; needs exceptions for IP infringement and confidentiality breaches.",
+        "judge_reasoning": "Detected via risk table entry at 12.1 classified as Requires Clarification with AMEND action. The rationale identifies the need for carve-outs for IP infringement and confidentiality breaches, which aligns with GT key elements (IP title failure, willful misconduct, breach of exclusivity). However, no specific proposed redline text is provided in the canonical JSON for this clause - only identification in risk table. Amendment score 2: identifies need for carve-outs but no detailed revision. Rationale score 2: correctly identifies lost profits concern. Redline quality score 2: recommendation only, no draft language."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No termination for convenience - 10-year lock-in",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not mentioned. The canonical JSON does not flag the absence of a termination for convenience clause despite the 10-year term. No new clause proposed for TfC. This is a missing clause issue that Leah did not identify."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Non-refundable upfront fee",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not mentioned. No risk table entry for clause 5.2 regarding the non-refundable $500K upfront fee. The GT concern about sunk cost if IP proves unusable is not flagged."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "7.1",
+      "tier": "T3",
+      "issue": "Audit cost-shifting threshold favors Licensor",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not mentioned. No risk table entry for clause 7.1 regarding the 5% audit cost-shifting threshold. The GT concern about the low threshold favouring Licensor is not identified."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit A",
+      "tier": "T2",
+      "issue": "Licensed IP schedule (Exhibit A) not attached - undefined scope",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not mentioned. No risk table entry flagging that Exhibit A (Licensed IP schedule) is blank. This is a fundamental issue - the Licensee cannot know what IP they are licensing."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "Exhibit B",
+      "tier": "T2",
+      "issue": "Territory definition (Exhibit B) not attached - exclusivity meaningless",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not mentioned. No risk table entry flagging that Exhibit B (Territory definition) is blank. Without defined geographic scope, the exclusivity grant is meaningless."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No IP infringement indemnification from Licensor",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "new_clauses_proposed[0]",
+      "evidence": {
+        "proposed_revision_excerpt": "15.1 Indemnification. Licensor shall defend, indemnify, and hold harmless Licensee, its Affiliates, and their respective officers, directors, and employees against any third-party claim alleging that the Licensed IP or Licensed Products infringe such third party's intellectual property rights, and shall pay all damages, costs, and reasonable attorneys' fees finally awarded or agreed in settlement.",
+        "effective_rationale_excerpt": "Absence of IP infringement indemnity exposes Licensee to third-party claims, jeopardising product launches and investor confidence.",
+        "judge_reasoning": "Full detection. New clause proposed for Indemnification addresses all GT key elements: (1) adds Licensor indemnity for IP infringement claims, (2) includes defense obligation, (3) covers settlement and damages, (4) hold-harmless provision. Amendment score 3: comprehensive indemnification clause. Rationale score 3: identifies third-party claim exposure, product launch risk, and investor confidence. Redline quality score 3: precise, standard indemnification language."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table embedded",
+      "evidence": {
+        "proposed_revision_excerpt": "11.1 Confidentiality Obligations. Each Party shall keep the other's Confidential Information confidential during the Term and for five (5) years thereafter; however, obligations concerning trade secrets shall survive so long as such information remains a trade secret under applicable law. Each Party is entitled to seek injunctive relief for breach of this Section.",
+        "effective_rationale_excerpt": "Five-year limit insufficient for trade secrets; no explicit injunctive relief or return/destruction timeline on termination.",
+        "judge_reasoning": "Full detection. Risk table entry at 11.1 (GT references 8.1 but contract has this at 11.1) classified as Requires Clarification with AMEND action. The proposed revision addresses all GT key elements: (1) adds perpetual protection for trade secrets ('so long as such information remains a trade secret'), (2) adds explicit injunctive relief provision. Note: The GT references clause 8.1 but the canonical JSON shows this issue at 11.1 - semantic match as same confidentiality survival concern. Amendment score 3: comprehensive fix. Rationale score 2: identifies duration issue but not competitive protection angle. Redline quality score 3: precise language."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "Non-infringement warranty qualified 'to knowledge' - inadequate for IP license",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not mentioned. No risk table entry for clause 9.1 specifically addressing the 'to knowledge' qualifier on the non-infringement warranty. While GT-13 (indemnification) is detected, this separate warranty qualification issue is not flagged. The GT expects Leah to identify that the knowledge qualifier shifts due diligence burden inappropriately. T1 gate impact."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.4",
+      "issue_summary": "Net Sales definition - narrow deduction scope",
+      "leah_classification": "Requires Clarification",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": "T3",
+      "gt_candidate": false,
+      "notes": "Leah flags that deduction scope is narrow, omits rebates, duties, freight insurance, and currency adjustments. Valid commercial concern not in GT."
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Reservation of rights - ambiguity on exclusivity scope",
+      "leah_classification": "Requires Clarification",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": "T3",
+      "gt_candidate": false,
+      "notes": "Leah flags ambiguity on reserved rights that could allow Licensor to compete in grey areas of Field of Use."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Quality control - subjective standards and unfettered inspections",
+      "leah_classification": "Requires Clarification",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": "T3",
+      "gt_candidate": false,
+      "notes": "Leah flags subjective quality standards and inspection rights without cure period. Note: GT 8.1 refers to confidentiality survival at different clause numbering."
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Infringement enforcement - no step-in right for Licensee",
+      "leah_classification": "Unfavorable",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": "T2",
+      "gt_candidate": true,
+      "notes": "Leah flags that Licensor-only control may leave Licensee unprotected with no step-in right if Licensor delays. Material concern for exclusive license."
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Post-termination sell-off period too short",
+      "leah_classification": "Requires Clarification",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": "T3",
+      "gt_candidate": false,
+      "notes": "Leah flags 90-day window too short for channel depletion with no residual license for warranty obligations."
+    },
+    {
+      "clause": "14.1",
+      "issue_summary": "Governing law - England & Wales disadvantages US Licensee",
+      "leah_classification": "Unfavorable",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": "T3",
+      "gt_candidate": false,
+      "notes": "Leah flags foreign law complexity and costs for US-based Licensee."
+    },
+    {
+      "clause": "14.2",
+      "issue_summary": "Arbitration venue - London seat increases costs",
+      "leah_classification": "Unfavorable",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": "T3",
+      "gt_candidate": false,
+      "notes": "Leah flags London seat increases travel and legal expense with costly LCIA rules."
+    },
+    {
+      "clause": "14.3",
+      "issue_summary": "Assignment prohibition - bars M&A flexibility",
+      "leah_classification": "Requires Clarification",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": "T3",
+      "gt_candidate": false,
+      "notes": "Leah flags absolute bar hampering M&A or restructurings, affecting valuation."
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Force Majeure clause missing",
+      "leah_classification": "New Clause Recommendation",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": "T3",
+      "gt_candidate": false,
+      "notes": "Leah proposes adding force majeure clause for events beyond control."
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Data security & privacy clause missing",
+      "leah_classification": "New Clause Recommendation",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": "T3",
+      "gt_candidate": false,
+      "notes": "Leah proposes adding GDPR/CCPA compliance and breach notification provisions."
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Technical support & updates clause missing",
+      "leah_classification": "New Clause Recommendation",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": "T3",
+      "gt_candidate": false,
+      "notes": "Leah proposes adding obligation for Licensor to provide know-how transfer and bug fixes."
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 0,
+      "N": 0,
+      "NMI": 6
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      },
+      "T2": {
+        "Y": 5,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      }
+    },
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "t1_detected": 2,
+    "t1_missed": ["GT-04 (9.2 AS-IS disclaimer)", "GT-15 (9.1 Non-infringement warranty 'to knowledge')"],
+    "total_detection_points": 38,
+    "total_quality_points": 64,
+    "total_part_b_points": 102,
+    "max_detection_points": 71,
+    "part_b_percentage": 53.5,
+    "additional_issues_count": 11,
+    "additional_issues_valid": 11,
+    "additional_issues_gt_candidates": 1
+  },
+  "combined_summary": {
+    "part_a": {
+      "total_score": 20,
+      "max_score": 24,
+      "percentage": 83.3,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "detection_points": 38,
+      "quality_points": 64,
+      "total_points": 102,
+      "max_detection_points": 71,
+      "percentage": 53.5,
+      "t1_gate": "FAIL",
+      "t1_missed_count": 2,
+      "pass_fail": "FAIL"
+    },
+    "overall_pass": false,
+    "notes": "Part A PASS (83.3%, no critical failures). Part B FAIL due to T1 gate failure - missed GT-04 (AS-IS disclaimer) and GT-15 (non-infringement warranty 'to knowledge' qualifier). Strong detection on commercial terms but missed critical warranty issues."
+  }
+}

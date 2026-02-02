@@ -1,0 +1,489 @@
+{
+  "meta": {
+    "contract": "jv",
+    "model_id": "pioneer_deep",
+    "model_display_name": "Pioneer Deep",
+    "environment": "hotfix",
+    "evaluation_timestamp": "2026-01-25T22:15:00Z",
+    "gt_version": "1.0",
+    "freeform_gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "JV_01",
+      "clause": "4.1",
+      "cp_redline_description": "CP changed unanimous consent for material decisions to 'sole discretion of Party A'",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The counterparty's proposal removes Quantum Dynamics' veto, creating unilateral control by Party A over budgets, contracts, and equity, which is unacceptable. The revision preserves unanimity, raises objective thresholds to reduce friction, and enumerates key decisions requiring consent.",
+        "proposed_revision_excerpt": "4.1 Material Decisions. All material decisions regarding the Joint Venture, including without limitation approval of annual budgets, capital expenditures exceeding $100,000 per item or $250,000 in the aggregate per quarter, entry into contracts with a value exceeding $250,000 or a term longer than one (1) year, hiring or terminating the General Manager, issuance of additional equity or capital calls, and any changes to the approved business plan, shall require the unanimous written consent of both Parties.",
+        "judge_reasoning": "Leah correctly identified the CP redline as unacceptable and proposed restoring unanimous consent, which achieves the same protective outcome as REJECT. The revision fully restores Party B's veto rights and adds enhanced thresholds. While MODIFY rather than REJECT, the revision contains all key elements: unanimous consent, both parties veto rights, no unilateral decision-making. Action score 1 (acceptable alternative to REJECT). Revision score 2 (fully addresses with enhancements). Reasoning score 2 (addresses 50/50 governance, Party B control, mutual consent requirements)."
+      }
+    },
+    {
+      "gt_id": "JV_02",
+      "clause": "5.1",
+      "cp_redline_description": "CP changed profit allocation from 50/50 to 60% Party A and 40% Party B, with losses still equal",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The counterparty's edit skews economics by giving Party A disproportionate profits while keeping losses equal, unfairly harming Quantum Dynamics. The proposed revision restores 50/50 symmetry and allows future adjustments only by unanimous agreement tied to mutually approved additional capital.",
+        "proposed_revision_excerpt": "5.1 Allocation. Profits and losses of the Joint Venture shall be allocated equally between the Parties, with each Party entitled to fifty percent (50%) of all distributions, unless otherwise unanimously agreed in writing in proportion to additional capital contributions made by both Parties pursuant to Section 3.4.",
+        "judge_reasoning": "Leah correctly identified the asymmetric profit allocation as unfair and proposed restoring 50/50 allocation. The revision achieves full reversion to baseline equal allocation with a sensible enhancement allowing future adjustment only by unanimous agreement. Action score 1 (MODIFY achieves REJECT outcome). Revision score 2 (all key elements: equal profit, equal loss, symmetric allocation). Reasoning score 2 (addresses equal ownership = equal economics, unfair risk transfer)."
+      }
+    },
+    {
+      "gt_id": "JV_03",
+      "clause": "6.2",
+      "cp_redline_description": "CP changed joint IP ownership to exclusive Party A ownership with Party B getting only a royalty-bearing license",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Exclusive ownership by Party A eliminates Quantum Dynamics' long-term rights to JV results. Joint ownership with defined exploitation rights preserves commercial freedom for both Parties while protecting Confidential Information. Perpetual licenses for the JV ensure continuity. Unanimous consent for exclusivity prevents unilateral lock-ups of Developed IP.",
+        "proposed_revision_excerpt": "6.2 Developed IP. All Developed IP shall be jointly owned by the Parties in equal, undivided shares. Each Party shall have a perpetual, worldwide, royalty-free, transferable (to Affiliates) license, with the right to sublicense to customers and partners, to use, reproduce, modify, distribute, and otherwise exploit Developed IP outside the Joint Venture, provided that neither Party discloses the other Party's Confidential Information except as permitted herein. The Joint Venture and any JV Entity shall have a perpetual, worldwide, royalty-free license to the Developed IP for the Purpose. Any exclusive license or transfer to a third party shall require the unanimous written consent of the Parties.",
+        "judge_reasoning": "Leah correctly identified the exclusive ownership proposal as expropriating Party B's contribution. The revision restores joint ownership in equal shares with enhanced licensing terms. All key elements present: joint ownership, equal shares, mutual consent for third-party licensing. Action score 1 (MODIFY achieves REJECT outcome). Revision score 2 (comprehensive fix). Reasoning score 2 (addresses Party B contribution, value protection, joint ownership fundamentals)."
+      }
+    },
+    {
+      "gt_id": "JV_04",
+      "clause": "9.1",
+      "cp_redline_description": "CP changed mutual 2-year non-compete to 5-year worldwide restriction on Party B only in all quantum/AI fields",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The counterparty's proposal is overbroad, non-mutual, and likely unenforceable, effectively sidelining Quantum Dynamics from its core business. The revision narrows scope to JV customers, shortens duration, defines territory, includes mutuality, and adds reasonable carve-outs.",
+        "proposed_revision_excerpt": "9.1 Non-Compete and Non-Solicit. During the Term and for twelve (12) months thereafter, neither Party shall, without the other Party's prior written consent, directly target and solicit paying customers of the Joint Venture for substantially similar quantum-AI solutions within the United States based on customer lists developed by the Joint Venture. This restriction shall not apply to (a) pre-existing customers of a Party, (b) general advertising not targeted at JV customers, (c) research, prototypes, or products outside the Purpose, or (d) activities required to comply with law. For the same period, neither Party shall solicit for employment employees of the other Party or of the Joint Venture with whom they had material contact, except through general solicitations.",
+        "judge_reasoning": "Leah correctly identified the asymmetric 5-year global restriction as unacceptable. The revision converts to mutual non-solicit with 12-month term, US territory, and reasonable carve-outs. All key elements present: mutuality, reasonable duration (shorter than original 2 years), narrow scope, territorial limitation. Action score 1 (MODIFY achieves REJECT outcome). Revision score 2 (comprehensive protection). Reasoning score 2 (addresses asymmetry, overbreadth, Party A's free pass, Party B business protection)."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 20,
+    "max_score": 24,
+    "percentage": 83.3,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "No Deadlock Resolution - Article 8 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "afa65206-c995-4192-a878-659c879faf2a",
+      "evidence": {
+        "proposed_revision_excerpt": "8.1 Deadlock. If the Steering Committee cannot reach agreement on a matter within fifteen (15) Business Days, the matter shall escalate to the Parties' CEOs for ten (10) Business Days. If unresolved, technical matters go to binding expert determination; all others proceed to mediation under Section 11.2. If still unresolved, either Party may initiate a mutual buy-sell procedure at fair market value determined by an independent valuation firm.",
+        "effective_rationale_excerpt": "The reserved clause leaves a critical governance vacuum. The proposed staged process provides timely resolution, protects operations, and includes a fair exit mechanism, ensuring Quantum Dynamics is not trapped in paralysis or value-destructive stalemates.",
+        "judge_reasoning": "Leah identified the [Reserved] deadlock clause as unfavorable and proposed comprehensive staged resolution: escalation to CEOs, expert determination for technical matters, mediation, and buy-sell mechanism. Covers all GT key elements including escalation path and buy-sell provision. Full detection with high-quality amendment."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Rights",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 16,
+      "matched_redline_id": "afa65206-c995-4192-a878-659c879faf2a",
+      "evidence": {
+        "proposed_revision_excerpt": "If still unresolved, either Party may initiate a mutual buy-sell procedure at fair market value determined by an independent valuation firm.",
+        "effective_rationale_excerpt": "The proposed staged process provides timely resolution, protects operations, and includes a fair exit mechanism, ensuring Quantum Dynamics is not trapped in paralysis or value-destructive stalemates.",
+        "judge_reasoning": "Leah's deadlock resolution clause (8.1) includes a buy-sell mechanism at fair market value, addressing the exit/buyout gap. While not a standalone exit provision, it provides buyout rights tied to deadlock. GT key elements partially covered: buyout at FMV present, but no explicit put/call options or post-Year-3 exit triggers. Amendment addresses the core exit concern."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent + No Tiebreaker",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "b1c19249-d503-4a2b-b6f0-ac2dea279e02",
+      "evidence": {
+        "proposed_revision_excerpt": "4.1 Material Decisions. All material decisions regarding the Joint Venture, including without limitation approval of annual budgets, capital expenditures exceeding $100,000 per item or $250,000 in the aggregate per quarter... shall require the unanimous written consent of both Parties.",
+        "effective_rationale_excerpt": "The counterparty's proposal removes Quantum Dynamics' veto, creating unilateral control by Party A over budgets, contracts, and equity, which is unacceptable. The revision preserves unanimity, raises objective thresholds to reduce friction, and enumerates key decisions requiring consent.",
+        "judge_reasoning": "Leah identified the governance risk from unanimous consent combined with no tiebreaker. The risk_table entry at 4.1 notes the deadlock risk, and proposed amendments to both 4.1 (thresholds) and 8.1 (deadlock resolution) address the issue comprehensively. Key elements covered: tiered decision thresholds and deadlock path."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Broad Post-Term Non-Compete",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "6f0ea754-fcac-4210-a6b1-d699363dd862",
+      "evidence": {
+        "proposed_revision_excerpt": "9.1 Non-Compete and Non-Solicit. During the Term and for twelve (12) months thereafter, neither Party shall... directly target and solicit paying customers of the Joint Venture for substantially similar quantum-AI solutions within the United States...",
+        "effective_rationale_excerpt": "The counterparty's proposal is overbroad, non-mutual, and likely unenforceable, effectively sidelining Quantum Dynamics from its core business. The revision narrows scope to JV customers, shortens duration, defines territory, includes mutuality, and adds reasonable carve-outs.",
+        "judge_reasoning": "Leah identified the non-compete as unfavorable due to broad scope and proposed narrowing to customer non-solicit with 12-month term, US territory, and carve-outs. Addresses GT concerns about broad scope and wrongful termination scenarios through territorial and scope limitations. Comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.2",
+      "tier": "T1",
+      "issue": "Developed IP Consent Lock-Up",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "b3d74af5-4f66-42ce-8ff8-ed98b322e18f",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall have a perpetual, worldwide, royalty-free, transferable (to Affiliates) license, with the right to sublicense to customers and partners, to use, reproduce, modify, distribute, and otherwise exploit Developed IP outside the Joint Venture... Any exclusive license or transfer to a third party shall require the unanimous written consent of the Parties.",
+        "effective_rationale_excerpt": "Exclusive ownership by Party A eliminates Quantum Dynamics' long-term rights to JV results. Joint ownership with defined exploitation rights preserves commercial freedom for both Parties while protecting Confidential Information.",
+        "judge_reasoning": "Leah identified the commercialization veto risk in 6.2 and proposed comprehensive licensing rights allowing each party to exploit Developed IP. Key elements addressed: licensing rights with revenue potential (via sublicensing to customers), buyout mechanism implicit in broader framework. Removes the lock-up by granting independent exploitation rights."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "ac79c2b6-b577-4b76-9470-b66788279810",
+      "evidence": {
+        "proposed_revision_excerpt": "12.X Limitation of Liability. Except for (a) a Party's breach of confidentiality, (b) infringement or misappropriation of the other Party's intellectual property rights, (c) a Party's willful misconduct or fraud, and (d) amounts owed for fees or capital contributions, in no event shall either Party be liable for indirect, incidental, consequential, special, exemplary, or punitive damages, and each Party's aggregate liability... shall not exceed the total amounts contributed or paid by such Party to the Joint Venture in the twelve (12) months preceding the event giving rise to liability.",
+        "effective_rationale_excerpt": "No liability cap, exclusions, or special carve-outs exposed. Quantum Dynamics faces uncapped exposure without reciprocal protections. A mutual cap and standard exclusions balance risk and protect Quantum Dynamics while preserving recourse for critical misconduct and IP breaches, aligning with market norms.",
+        "judge_reasoning": "Leah identified the missing liability limitation as unfavorable (NC1) and proposed a comprehensive clause with mutual cap, consequential damages exclusion, and carve-outs for IP, fraud, and confidentiality. Addresses all GT key elements: mutual cap, consequential exclusion, appropriate carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Capital Call Dilution Risk",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "e6cdc7c4-6e6c-41a0-b8c1-c6a582855d32",
+      "evidence": {
+        "proposed_revision_excerpt": "3.4 Additional Capital. Additional capital contributions shall require unanimous approval, including amount, timing, and use of proceeds. Each Party shall have pre-emptive rights to maintain its ownership. Dilution may occur only after (i) offering pro-rata participation on the same terms, (ii) pursuing commercially reasonable third-party financing options, and (iii) failure to fund after ten (10) Business Days' notice.",
+        "effective_rationale_excerpt": "Automatic dilution without safeguards can coerce Quantum Dynamics. The proposed language adds pre-emptive rights, requires unanimity, explores external financing first, and includes notice, preserving ownership balance and preventing opportunistic dilution.",
+        "judge_reasoning": "Leah identified the dilution risk at 3.4 as unfavorable and proposed comprehensive protections: pre-emptive rights, cure period (10 business days notice), alternative financing requirement. All GT key elements addressed: cure period, dispute mechanism (unanimity), anti-strategic dilution safeguards."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Improvement Ownership Unclear on Termination",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "95f23897-a399-450b-8490-802c1b0d096e",
+      "evidence": {
+        "proposed_revision_excerpt": "6.3 Improvements. 'Improvements' means modifications, enhancements, bug fixes, or derivative works to a Party's Contributed IP. Improvements developed using JV resources shall be owned by the contributing Party, subject to a perpetual, worldwide, irrevocable, royalty-free license to the Joint Venture and any JV Entity, including the right to sublicense to JV customers as necessary to use JV products.",
+        "effective_rationale_excerpt": "The existing clause lacks a definition and license scope. The revision clarifies the term and strengthens the JV's perpetual rights, including sublicensing to customers, ensuring continuity of offerings and protecting Quantum Dynamics' commercial interests.",
+        "judge_reasoning": "Leah identified 6.3 as requiring clarification and proposed perpetual, worldwide license surviving termination (implicitly). The revision defines 'Improvements' clearly and grants perpetual JV license. GT concern about post-termination license scope addressed through perpetual license grant."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "General Manager Authority Unbounded",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "d9763474-15ea-42fb-ad1b-9e6eccb02d90",
+      "evidence": {
+        "proposed_revision_excerpt": "4.3 Day-to-Day Management. The Parties shall jointly appoint and may remove the General Manager by mutual written consent. The General Manager shall operate within approved budgets and policies, provide monthly reports to the Steering Committee against KPIs approved by the Steering Committee, and shall not approve expenditures exceeding $50,000 per item outside approved budgets without unanimous Steering Committee consent.",
+        "effective_rationale_excerpt": "Managerial authority needs guardrails to prevent scope creep and overspending. The revision introduces joint removal rights, reporting, KPIs, and spend limits within budget, securing Quantum Dynamics' oversight while maintaining operational agility.",
+        "judge_reasoning": "Leah identified the unbounded GM authority and proposed comprehensive controls: joint appointment/removal, monthly reporting, KPIs, spending limits ($50k threshold). All GT key elements addressed: reporting requirements, removal process, oversight mechanism."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "6.1",
+      "tier": "T2",
+      "issue": "Contributed IP License Gaps",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "ac770b7e-1c1c-4c42-8623-e55741adef47",
+      "evidence": {
+        "proposed_revision_excerpt": "6.1 Contributed IP. Each Party retains ownership of its Contributed IP. Each grants to the Joint Venture and any JV Entity a non-exclusive, non-transferable, royalty-free license, limited to the Purpose, with no right to sublicense except to JV customers as necessary to use JV products. Upon termination, the Joint Venture may continue to use Contributed IP solely for a six (6) month wind-down.",
+        "effective_rationale_excerpt": "The original lacks field limits, JV Entity coverage, and wind-down rights, risking misuse or operational cliff-edge. The revision narrows scope, extends rights to the JV Entity, limits sublicensing, and includes a short wind-down to protect customers and Quantum Dynamics.",
+        "judge_reasoning": "Leah identified 6.1 license gaps and proposed: field limitation (Purpose), JV Entity coverage, sublicensing restrictions, and 6-month wind-down period. Key elements addressed: transition period, sublicensing rules clarified."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.4",
+      "tier": "T2",
+      "issue": "Termination IP Allocation Undefined",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "48e6e297-46a1-4b9c-8959-1497cff1bebf",
+      "evidence": {
+        "proposed_revision_excerpt": "10.4 Effect of Termination. Upon termination: (a) each Party shall return or destroy the other's Confidential Information and cease use of Contributed IP, subject to a six (6) month wind-down; (b) Developed IP shall remain jointly owned with perpetual, worldwide, royalty-free cross-licenses as in Section 6.2; (c) the JV shall provide reasonable transition assistance to existing customers at cost; and (d) remaining assets, including code repositories and documentation, shall be distributed per ownership interests.",
+        "effective_rationale_excerpt": "The original clause defers critical IP outcomes to future agreement, risking disputes and service disruption. The revision sets clear, durable rights and customer continuity measures, protecting Quantum Dynamics' ability to leverage Developed IP after termination.",
+        "judge_reasoning": "Leah identified the undefined IP allocation as unfavorable and proposed specific mechanics: perpetual cross-licenses per 6.2, wind-down period, customer transition, asset distribution. Key elements addressed: default allocation via perpetual cross-licenses, implicit buyout mechanism through defined ownership."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Indemnification Regime",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "f4fca070-d738-44cd-b7fb-859d5bcc3e70",
+      "evidence": {
+        "proposed_revision_excerpt": "12.Y Indemnification. Each Party shall indemnify, defend, and hold harmless the other Party, its Affiliates, and their respective officers, directors, and employees from and against third-party claims, losses, and expenses arising from: (i) allegations that such Party's Contributed IP or materials infringe or misappropriate third-party IP rights; (ii) such Party's breach of this MOU, including confidentiality or data protection obligations; or (iii) gross negligence or willful misconduct.",
+        "effective_rationale_excerpt": "No indemnities exist, leaving major gaps for IP claims and misconduct. Balanced, mutual indemnities protect Quantum Dynamics and allocate third-party risks appropriately while providing standard defense and settlement controls.",
+        "judge_reasoning": "Leah identified the missing indemnification as unfavorable (NC2) and proposed comprehensive mutual indemnity covering: IP infringement, breach of contract, gross negligence. All GT key elements addressed: mutual indemnity, IP indemnity, third-party claims coverage."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Change of Control Provision",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "c0a9e9ff-5742-441c-897f-ff7f711d3e0d",
+      "evidence": {
+        "proposed_revision_excerpt": "12.4 Assignment. Neither Party may assign this MOU without the other Party's prior written consent, not to be unreasonably withheld, except either Party may assign to an Affiliate or in connection with a merger, acquisition, or sale of substantially all assets or equity upon notice.",
+        "effective_rationale_excerpt": "Absolute prohibitions impede corporate transactions and internal reorganizations. Allowing affiliate and change-of-control assignments with notice preserves flexibility for Quantum Dynamics while maintaining consent rights for other transfers.",
+        "judge_reasoning": "Leah addressed assignment flexibility at 12.4 which includes change-of-control via merger/acquisition. Partial coverage: allows CoC assignment with notice but lacks termination/buyout rights on competitor acquisition. GT key elements partially addressed: no consent required for CoC (notice only), but no termination option."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vague Reserve Rights",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "c09f549a-0c68-4363-bf92-703aa265a862",
+      "evidence": {
+        "proposed_revision_excerpt": "5.2 Distributions. Distributions shall be made quarterly following repayment of approved JV obligations and establishment of reserves not to exceed the greater of (i) 90 days of budgeted operating expenses or (ii) amounts required under existing financing covenants, as approved by the Steering Committee.",
+        "effective_rationale_excerpt": "'Reasonable reserves' is vague and could defer distributions indefinitely. The revision sets objective caps tied to budget and covenants, prevents leakage to related parties, and keeps cash flow predictable, protecting Quantum Dynamics' return profile.",
+        "judge_reasoning": "Leah identified the vague 'reasonable reserves' language and proposed specific caps: 90 days operating expenses or covenant requirements. GT key element addressed: cap on reserves defined objectively. Comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "11.1-11.3",
+      "tier": "T3",
+      "issue": "Multi-Step Dispute Resolution",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": "b0fd105c-fddb-4fe2-b139-4a7840c5ee11",
+      "evidence": {
+        "proposed_revision_excerpt": "11.3 Arbitration. If mediation fails, disputes shall be resolved by binding arbitration in San Francisco, California under the JAMS Comprehensive Arbitration Rules. Notwithstanding the foregoing, either Party may seek temporary, preliminary, or injunctive relief in a court of competent jurisdiction to protect intellectual property or Confidential Information.",
+        "effective_rationale_excerpt": "Arbitration is acceptable but lacks an express injunctive relief carve-out. The revision preserves swift court access to protect IP and confidentiality, critical for Quantum Dynamics, while specifying rules to reduce procedural ambiguity.",
+        "judge_reasoning": "Leah addressed 11.3 by adding injunctive relief carve-out and specifying JAMS rules. Does not directly address the GT concern about timelines or emergency arbitration. Partial fix addressing procedural clarity but not expedited resolution mechanism."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "1.4",
+      "tier": "T3",
+      "issue": "No Conditions Precedent for JV Entity",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "f4004c94-0191-4d19-b52a-fe9ac53fa4d0",
+      "evidence": {
+        "proposed_revision_excerpt": "12.AI Formation and Funding. The Parties shall form a Delaware limited liability company as the JV Entity within sixty (60) days. Bank accounts shall require dual signatories (one per Party). Use of funds shall align with Steering Committee-approved budgets.",
+        "effective_rationale_excerpt": "Clear formation timeline and financial controls reduce risk of premature funding and ensure fiduciary discipline, protecting Quantum Dynamics' contributions.",
+        "judge_reasoning": "Leah identified the open-ended entity formation at 1.4 as requiring clarification and proposed NC14/12.AI with 60-day formation timeline, dual signatories, and budget alignment. GT key elements addressed: timeline for formation, conditions precedent (budget approval, dual control)."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "9ac8f677-7837-42a0-bc52-9b7e127d7919",
+      "evidence": {
+        "proposed_revision_excerpt": "12.AA Data Protection and Security. Each Party shall comply with applicable data protection laws and implement reasonable and appropriate technical and organizational measures to protect Personal Data processed in connection with the Joint Venture. The Parties shall promptly notify each other of any Personal Data breach affecting the Joint Venture, cooperate in investigation and remediation, and execute additional data processing terms as required by law.",
+        "effective_rationale_excerpt": "Quantum AI solutions may involve Personal Data and regulated datasets. Explicit privacy and security obligations reduce regulatory exposure and operational risk for Quantum Dynamics and the JV.",
+        "judge_reasoning": "Leah identified missing data protection as unfavorable (NC4) and proposed comprehensive clause covering: compliance with data protection laws, security measures, breach notification, cooperation. GT key elements addressed: GDPR/CCPA compliance requirements implied, data security obligations stated."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "cf40232a-3042-4886-a2f1-8eb14b2e21ce",
+      "evidence": {
+        "proposed_revision_excerpt": "7.2 Survival. Confidentiality obligations survive for five (5) years, except for trade secrets, which shall be protected for so long as they remain trade secrets under applicable law.",
+        "effective_rationale_excerpt": "Time-limited protection is insufficient for trade secrets central to quantum technologies. The revision preserves long-term value by extending protection to the legal life of trade secrets, aligning with standard practice and safeguarding Quantum Dynamics' core IP.",
+        "judge_reasoning": "Leah identified the 5-year survival as unfavorable (inadequate for trade secrets) and proposed perpetual protection for trade secrets while maintaining 5 years for general confidential information. GT key elements fully addressed: perpetual protection for trade secrets, differentiation from general confidential info."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 18,
+      "P": 0,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 5,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 10,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 5,
+    "t1_detected": 5,
+    "total_detection_points": 93,
+    "total_quality_points": 150,
+    "weighted_max": 93,
+    "percentage": 100.0,
+    "pass_fail": "PASS"
+  },
+  "summary": {
+    "part_a": {
+      "total_score": 20,
+      "max_score": 24,
+      "percentage": 83.3,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "detection_percentage": 100.0,
+      "t1_gate": "PASS",
+      "weighted_score": 93,
+      "weighted_max": 93,
+      "total_points": 243,
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true
+    }
+  }
+}

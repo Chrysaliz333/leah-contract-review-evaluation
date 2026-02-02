@@ -1,0 +1,245 @@
+{
+  "gt_metadata": {
+    "mode": "freeform_stacking",
+    "contract_id": "SLA_CloudServices_Alpha",
+    "contract_type": "SaaS License",
+    "parties": {
+      "licensor": "CloudServices Alpha Inc.",
+      "licensee": "[Unnamed Licensee]"
+    },
+    "representing_party": "Licensee",
+    "gt_version": "1.0",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-23",
+    "schema_version": "1.0",
+    "note": "Freeform Stacking: Leah reviews entire document including CP redlines. Representing party is SAME as Freeform Baseline."
+  },
+  "input_files": {
+    "clause_analysis": {
+      "pattern": "*_Cl*.doc",
+      "format": "HTML",
+      "used_for": [
+        "part_a",
+        "part_b"
+      ]
+    },
+    "redline_document": {
+      "pattern": "*_Redline_*.docx",
+      "format": "Word with tracked changes",
+      "used_for": [
+        "part_c"
+      ]
+    }
+  },
+  "part_a_cp_redlines": [
+    {
+      "test_id": "SLA_01",
+      "clause_ref": "Indemnification",
+      "section": "9.1",
+      "original_text": "Licensor shall indemnify, defend, and hold harmless Licensee from and against any third-party claims arising from infringement of intellectual property rights by the Software.",
+      "cp_redline": "Each party shall indemnify, defend, and hold harmless the other party from and against any third-party claims.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: IP-specific indemnification from Licensor. Reject generic mutual indemnification that removes IP protection.",
+      "key_elements": [
+        "1) IP infringement indemnification from Licensor 2) Not watered down to generic mutual indemnity 3) Protects Licensee from Software IP claims"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May add: procedural requirements (notice, cooperation)",
+        "May clarify: scope of covered IP rights",
+        "May add: carve-outs for Licensee modifications"
+      ],
+      "unacceptable_responses": [
+        "Generic mutual indemnification",
+        "Removing IP-specific protection",
+        "Equal obligations on both parties",
+        "Licensee indemnifying Licensor for Software IP"
+      ],
+      "reasoning_must_address": "Licensor provides Software, should indemnify IP claims; mutual generic indemnity removes critical protection",
+      "category": "2. Liability & Redress",
+      "subcategory": "Indemnification obligations"
+    },
+    {
+      "test_id": "SLA_02",
+      "clause_ref": "Liability Cap",
+      "section": "10.2",
+      "original_text": "Licensor's total liability shall not exceed the Subscription Fees paid by Licensee in the twelve (12) months preceding the claim.",
+      "cp_redline": "Licensor's total liability shall not exceed $50,000.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: 12-month fees cap. Reject fixed $50K cap that may be inadequate for substantial subscriptions.",
+      "key_elements": [
+        "1) Cap tied to 12-month fees 2) Proportional to contract value 3) No arbitrary low fixed cap"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May add: minimum floor of $100K+",
+        "May add: carve-outs for IP, data breach, wilful misconduct"
+      ],
+      "unacceptable_responses": [
+        "Fixed $50K cap",
+        "Cap below 12-month fees",
+        "Cap disconnected from contract value",
+        "Arbitrary low ceiling"
+      ],
+      "reasoning_must_address": "$50K fixed cap inadequate for enterprise subscriptions; cap should scale with fees paid",
+      "category": "2. Liability & Redress",
+      "subcategory": "Limitation of liability"
+    },
+    {
+      "test_id": "SLA_03",
+      "clause_ref": "Termination for Cause",
+      "section": "11.2",
+      "original_text": "Either party may terminate upon 30 days notice if other party materially breaches and fails to cure within 30 days.",
+      "cp_redline": "Licensor may terminate immediately upon material breach. Licensee may terminate if Licensor fails to cure breach within 60 days notice.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: Symmetric 30-day cure period for both parties. Reject asymmetric provision favouring Licensor.",
+      "key_elements": [
+        "1) Equal cure periods 2) Minimum 30 days for both parties 3) No immediate termination without cure opportunity"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May differentiate: immediate for security breaches, 30 days for others",
+        "May add: suspension before termination"
+      ],
+      "unacceptable_responses": [
+        "Asymmetric cure periods",
+        "Licensor immediate termination rights",
+        "Licensee 60 days while Licensor immediate",
+        "No cure opportunity for Licensee breaches"
+      ],
+      "reasoning_must_address": "Asymmetry unfairly favours Licensor; both parties need reasonable cure opportunity",
+      "category": "4. Term, Termination & Exit",
+      "subcategory": "Termination rights"
+    },
+    {
+      "test_id": "SLA_04",
+      "clause_ref": "Assignment",
+      "section": "12.4",
+      "original_text": "Neither party may assign this Agreement without the other party's prior written consent, except Licensee may assign to affiliates or in connection with merger or acquisition.",
+      "cp_redline": "Licensee may not assign this Agreement in connection with change of control without Licensor consent. Violation of this Section shall constitute material breach.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Revert to baseline: Licensee may assign to affiliates or in M&A transactions. Reject restriction on M&A assignments.",
+      "key_elements": [
+        "1) Licensee M&A assignment rights preserved 2) No consent required for change of control 3) Not a material breach"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May add: notice requirement for M&A (not consent)",
+        "May add: successor assumes obligations"
+      ],
+      "unacceptable_responses": [
+        "Blocking M&A assignments",
+        "Requiring Licensor consent for change of control",
+        "Material breach for M&A assignment",
+        "No M&A carve-out"
+      ],
+      "reasoning_must_address": "M&A restrictions block business transactions; Licensee must have change-of-control flexibility",
+      "category": "6. General Risk & Fairness",
+      "subcategory": "Unilateral rights"
+    }
+  ],
+  "part_b_whole_document": {
+    "reference": {
+      "source_file": "../../freeform/ground_truth/sla.json",
+      "gt_version": "3.0_v4-enhanced_LOCKED",
+      "total_issues": 26,
+      "tier_breakdown": {
+        "T1": 8,
+        "T2": 12,
+        "T3": 6
+      },
+      "weighted_max": 130
+    },
+    "note": "Part B uses the Freeform Baseline GT. Same contract, same issues. Evaluate whether Leah still detects these risks when CP redlines are present."
+  },
+  "part_c_document_quality": {
+    "scope": "Every redline Leah produces in the output .docx",
+    "per_redline_capture": {
+      "redline_id": "Sequential ID (e.g., RL-01)",
+      "location": "Clause/section reference",
+      "type": "CP_RESPONSE | NEW_REDLINE",
+      "linked_gt_id": "GT ID if NEW_REDLINE addresses Part B issue, else null",
+      "action_stated": "ACCEPT | MODIFY | REJECT | ADD | DELETE",
+      "redline_exists": "Y | N",
+      "action_executed": "ACCEPT | MODIFY | REJECT | ADD | DELETE | NONE",
+      "execution_match": "Y | N | NA (NA if redline_exists=N)",
+      "is_wholesale": "Y | N",
+      "precision_score": "0-2 (aligned pair average)",
+      "insertion_accuracy": "0-2 | NA (aligned pair average, NA for DELETE/simple swaps)",
+      "notes": "Optional observations"
+    },
+    "aggregation_rules": {
+      "binary_fields": "Most confident determination wins",
+      "quality_fields": "Averaged across evaluations; median used for divergent scores",
+      "na_handling": "Exclude from averages"
+    }
+  },
+  "scoring_summary": {
+    "part_a": {
+      "items": 4,
+      "max_per_item": 6,
+      "max_total": 24,
+      "dimensions": {
+        "action": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "revision": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "reasoning": {
+          "max": 2,
+          "weight": "20%"
+        }
+      },
+      "pass_threshold": ">=70% AND 0 critical failures",
+      "critical_failures": [
+        "REJECT-only scored as ACCEPT",
+        "ACCEPT-only scored as REJECT",
+        "Revision contains unacceptable element"
+      ]
+    },
+    "part_b": {
+      "items": 26,
+      "weighted_max": 130,
+      "tier_weights": {
+        "T1": 8,
+        "T2": 5,
+        "T3": 1
+      },
+      "pass_threshold": "T1 Gate PASS AND >=70%",
+      "t1_gate": "Any T1 miss = FAIL"
+    },
+    "part_c": {
+      "per_redline_max": 6,
+      "dimensions": {
+        "precision": "0-2",
+        "insertion_accuracy": "0-2 or NA"
+      },
+      "metrics": [
+        "Wholesale Rate",
+        "Execution Mismatch Count",
+        "Missing Redline Count",
+        "Avg Precision",
+        "Avg Insertion Accuracy"
+      ],
+      "separate_reporting": [
+        "CP_RESPONSE",
+        "NEW_REDLINE"
+      ]
+    }
+  }
+}

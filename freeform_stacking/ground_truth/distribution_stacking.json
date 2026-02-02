@@ -1,0 +1,249 @@
+{
+  "gt_metadata": {
+    "mode": "freeform_stacking",
+    "contract_id": "Distribution_GlobalPartners",
+    "contract_type": "Distribution",
+    "parties": {
+      "supplier": "Global Products Manufacturing Inc.",
+      "distributor": "[Unnamed Distributor]"
+    },
+    "representing_party": "Distributor",
+    "gt_version": "1.0",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "schema_version": "1.0",
+    "note": "Freeform Stacking: Leah reviews entire document including CP redlines. Representing party is SAME as Freeform Baseline."
+  },
+  "input_files": {
+    "clause_analysis": {
+      "pattern": "*_Cl*.doc",
+      "format": "HTML",
+      "used_for": [
+        "part_a",
+        "part_b"
+      ]
+    },
+    "redline_document": {
+      "pattern": "*_Redline_*.docx",
+      "format": "Word with tracked changes",
+      "used_for": [
+        "part_c"
+      ]
+    }
+  },
+  "part_a_cp_redlines": [
+    {
+      "test_id": "DISTRIBUTION_01",
+      "clause_ref": "Prices",
+      "section": "5.1",
+      "original_text": "Distributor shall purchase Products at the prices set forth in Supplier's then-current price list. Supplier may modify prices upon sixty (60) days' prior written notice.",
+      "cp_redline": "Distributor shall purchase Products at the prices set forth in Supplier's then-current price list. Supplier may modify prices upon fifteen (15) days' prior written notice, and such changes shall apply retroactively to purchase orders placed but not yet fulfilled.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Distributor shall purchase Products at the prices set forth in Supplier's then-current price list. Supplier may modify prices upon sixty (60) days' prior written notice.",
+      "key_elements": [
+        "1) 60-day notice period retained 2) No retroactive price changes 3) Changes apply only to future orders"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline 60 days (required)",
+        "May extend to 90 days with price cap (CPI + 3%)",
+        "May add termination right if price increase exceeds 10%",
+        "May clarify: changes apply only to orders placed after effective date"
+      ],
+      "unacceptable_responses": [
+        "Accepting 15-day notice",
+        "Notice period under 60 days",
+        "Retroactive price changes",
+        "Price changes applying to accepted orders",
+        "No notice requirement"
+      ],
+      "reasoning_must_address": "15 days insufficient for planning; retroactive changes violate pipeline protection; Distributor needs time to adjust customer pricing; 60 days is market standard",
+      "category": "6. General Risk & Fairness",
+      "subcategory": "Unilateral rights"
+    },
+    {
+      "test_id": "DISTRIBUTION_02",
+      "clause_ref": "Minimum Purchase",
+      "section": "6.1",
+      "original_text": "Distributor agrees to purchase a minimum of One Hundred Thousand Dollars ($100,000) of Products per calendar quarter during the Term of this Agreement. Failure to meet minimum purchase requirements for two (2) consecutive quarters shall constitute a material breach.",
+      "cp_redline": "Distributor agrees to purchase a minimum of Two Hundred Fifty Thousand Dollars ($250,000) of Products per calendar quarter during the Term of this Agreement, with an automatic ten percent (10%) annual escalator. Failure to meet minimum purchase requirements for one (1) quarter shall constitute a material breach.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Distributor agrees to purchase a minimum of One Hundred Thousand Dollars ($100,000) of Products per calendar quarter during the Term of this Agreement. Failure to meet minimum purchase requirements for two (2) consecutive quarters shall constitute a material breach.",
+      "key_elements": [
+        "1) Minimum remains at $100K/quarter 2) No automatic escalator 3) Two consecutive quarter grace period before breach"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline $100K (required)",
+        "May accept modest increase if justified by territory ($125K-$150K)",
+        "May add ramp-up period for new products",
+        "May add cure period (60 days) before breach declared"
+      ],
+      "unacceptable_responses": [
+        "Accepting $250K minimum (2.5x increase)",
+        "Accepting automatic escalators",
+        "One quarter miss = breach (no grace period)",
+        "Minimums exceeding $150K without corresponding rights increase"
+      ],
+      "reasoning_must_address": "2.5x increase plus escalator creates unsustainable commitment; one-quarter breach eliminates flexibility; automatic escalators compound exposure; no justification for increase",
+      "category": "1. Obligations & Performance",
+      "subcategory": "Performance standards"
+    },
+    {
+      "test_id": "DISTRIBUTION_03",
+      "clause_ref": "Non-Exclusive",
+      "section": "3.1",
+      "original_text": "Supplier hereby appoints Distributor as a non-exclusive distributor of the Products within the Territory.",
+      "cp_redline": "Supplier hereby appoints Distributor as a non-exclusive distributor of the Products within the Territory. Distributor agrees not to distribute, market, or sell any products that compete with the Products during the Term and for two (2) years thereafter.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Supplier hereby appoints Distributor as a non-exclusive distributor of the Products within the Territory.",
+      "key_elements": [
+        "1) Non-exclusive appointment without non-compete 2) Distributor retains right to carry competing products 3) No post-term restrictions"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "If adding non-compete: must convert to exclusive territory",
+        "If adding non-compete: must be narrow (specific products only)",
+        "May accept limited during-term non-compete if exclusive granted"
+      ],
+      "unacceptable_responses": [
+        "Non-compete with non-exclusive appointment",
+        "Post-term non-compete (2 years)",
+        "Broad competitive product restrictions",
+        "Non-compete without exclusive territory grant"
+      ],
+      "reasoning_must_address": "Non-compete with non-exclusive is one-sided; Distributor needs portfolio diversification; Supplier retains right to compete directly; post-term restriction blocks business development",
+      "category": "1. Obligations & Performance",
+      "subcategory": "Clarity of obligations"
+    },
+    {
+      "test_id": "DISTRIBUTION_04",
+      "clause_ref": "Term",
+      "section": "11.1",
+      "original_text": "This Agreement shall have an initial term of three (3) years from the Effective Date. Thereafter, it shall automatically renew for successive one (1) year periods unless either Party provides ninety (90) days' notice of non-renewal prior to the expiration.",
+      "cp_redline": "This Agreement shall have an initial term of one (1) year from the Effective Date. Thereafter, it shall automatically renew for successive one (1) year periods unless either Party provides ninety (90) days' notice of non-renewal prior to the expiration. Supplier may terminate this Agreement for convenience upon sixty (60) days' written notice at any time.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "This Agreement shall have an initial term of three (3) years from the Effective Date. Thereafter, it shall automatically renew for successive one (1) year periods unless either Party provides ninety (90) days' notice of non-renewal prior to the expiration.",
+      "key_elements": [
+        "1) Three-year initial term 2) No unilateral Supplier termination for convenience 3) Symmetric renewal/termination rights"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline 3 years (required)",
+        "May accept 2-year initial if market investment is lower",
+        "May add mutual termination for convenience with notice",
+        "May add performance-based early exit (if minimums not met)"
+      ],
+      "unacceptable_responses": [
+        "Accepting 1-year initial term",
+        "Unilateral Supplier termination for convenience",
+        "Asymmetric termination rights favouring Supplier",
+        "Initial term under 2 years"
+      ],
+      "reasoning_must_address": "1-year term insufficient to recover market investment; unilateral Supplier termination eliminates Distributor certainty; 3-year term is standard for territory development; asymmetry creates one-sided risk",
+      "category": "4. Term, Termination & Exit",
+      "subcategory": "Duration and renewal"
+    }
+  ],
+  "part_b_whole_document": {
+    "reference": {
+      "source_file": "../../freeform/ground_truth/distribution.json",
+      "gt_version": "3.0_v4-enhanced_LOCKED",
+      "total_issues": 13,
+      "tier_breakdown": {
+        "T1": 6,
+        "T2": 5,
+        "T3": 2
+      },
+      "weighted_max": 75
+    },
+    "note": "Part B uses the Freeform Baseline GT. Same contract, same issues. Evaluate whether Leah still detects these risks when CP redlines are present."
+  },
+  "part_c_document_quality": {
+    "scope": "Every redline Leah produces in the output .docx",
+    "per_redline_capture": {
+      "redline_id": "Sequential ID (e.g., RL-01)",
+      "location": "Clause/section reference",
+      "type": "CP_RESPONSE | NEW_REDLINE",
+      "linked_gt_id": "GT ID if NEW_REDLINE addresses Part B issue, else null",
+      "action_stated": "ACCEPT | MODIFY | REJECT | ADD | DELETE",
+      "redline_exists": "Y | N",
+      "action_executed": "ACCEPT | MODIFY | REJECT | ADD | DELETE | NONE",
+      "execution_match": "Y | N | NA (NA if redline_exists=N)",
+      "is_wholesale": "Y | N",
+      "precision_score": "0-2 (aligned pair average)",
+      "insertion_accuracy": "0-2 | NA (aligned pair average, NA for DELETE/simple swaps)",
+      "notes": "Optional observations"
+    },
+    "aggregation_rules": {
+      "binary_fields": "Most confident determination wins",
+      "quality_fields": "Averaged across evaluations; median used for divergent scores",
+      "na_handling": "Exclude from averages"
+    }
+  },
+  "scoring_summary": {
+    "part_a": {
+      "items": 4,
+      "max_per_item": 6,
+      "max_total": 24,
+      "dimensions": {
+        "action": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "revision": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "reasoning": {
+          "max": 2,
+          "weight": "20%"
+        }
+      },
+      "pass_threshold": ">=70% AND 0 critical failures",
+      "critical_failures": [
+        "REJECT-only scored as ACCEPT",
+        "ACCEPT-only scored as REJECT",
+        "Revision contains unacceptable element"
+      ]
+    },
+    "part_b": {
+      "items": 13,
+      "weighted_max": 75,
+      "tier_weights": {
+        "T1": 8,
+        "T2": 5,
+        "T3": 1
+      },
+      "pass_threshold": "T1 Gate PASS AND >=70%",
+      "t1_gate": "Any T1 miss = FAIL"
+    },
+    "part_c": {
+      "per_redline_max": 6,
+      "dimensions": {
+        "precision": "0-2",
+        "insertion_accuracy": "0-2 or NA"
+      },
+      "metrics": [
+        "Wholesale Rate",
+        "Execution Mismatch Count",
+        "Missing Redline Count",
+        "Avg Precision",
+        "Avg Insertion Accuracy"
+      ],
+      "separate_reporting": [
+        "CP_RESPONSE",
+        "NEW_REDLINE"
+      ]
+    }
+  }
+}

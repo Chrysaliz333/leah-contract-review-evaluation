@@ -1,0 +1,98 @@
+{
+  "mode": "freeform",
+  "display_name": "Freeform",
+  "description": "Base evaluation with no additional configuration. Whole document review.",
+  "contracts": [
+    "consulting",
+    "dpa",
+    "distribution",
+    "jv",
+    "license",
+    "partnership",
+    "reseller",
+    "services",
+    "sla",
+    "supply"
+  ],
+  "contract_types": null,
+  "models": [
+    "pathfinder",
+    "starliner",
+    "velocity",
+    "scale",
+    "sonnet45",
+    "pioneer_deep"
+  ],
+  "paths": {
+    "base_dir": "freeform",
+    "canonical_json": "canonical_json",
+    "canonical_json_pattern": "canonical_json_{env}",
+    "ground_truth": "ground_truth",
+    "gt_pattern": "{contract}.json"
+  },
+  "gt_structure": {
+    "type": "flat",
+    "id_field": "gt_id",
+    "tier_field": "gt_tier",
+    "clause_field": "clause",
+    "issue_field": "issue"
+  },
+  "quality_fields": [
+    "amendment_score",
+    "rationale_score",
+    "redline_quality_score"
+  ],
+  "evaluation_structure": {
+    "type": "flat",
+    "evaluations_key": "gt_evaluations",
+    "issue_array_field": "scored_issues",
+    "detection_field": "detection"
+  },
+  "detection_points": {
+    "T1": {
+      "Y": 8,
+      "P": 4,
+      "N": 0,
+      "NMI": 0
+    },
+    "T2": {
+      "Y": 5,
+      "P": 2.5,
+      "N": 0,
+      "NMI": 0
+    },
+    "T3": {
+      "Y": 1,
+      "P": 0.5,
+      "N": 0,
+      "NMI": 0
+    }
+  },
+  "quality_scores": {
+    "enabled": true,
+    "dimensions": [
+      "amendment_score",
+      "rationale_score",
+      "redline_quality_score"
+    ],
+    "max_per_dimension": 3
+  },
+  "gates": {
+    "t1_gate": true,
+    "t1_gate_description": "All T1 issues must be detected (Y or P) to pass"
+  },
+  "additional_issues": {
+    "enabled": true,
+    "classifications_to_capture": [
+      "\u274c",
+      "Unfavourable",
+      "\u26a0\ufe0f",
+      "Requires Clarification"
+    ],
+    "skip_classifications": [
+      "\u2705",
+      "Favourable",
+      "Standard"
+    ]
+  }
+}

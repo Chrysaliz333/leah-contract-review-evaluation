@@ -1,0 +1,577 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "scale",
+    "evaluation_timestamp": "2026-01-25T18:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Ownership of Deliverables (Section 5.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "All deliverables... shall, upon their creation, be the sole and exclusive property of Client. Consultant hereby irrevocably assigns, transfers and conveys to Client all right, title and interest... To the extent any Deliverable contains Consultant Background IP that cannot be assigned, Consultant hereby grants to Client a perpetual, royalty-free, worldwide, transferable, sublicensable license...",
+        "effective_rationale_excerpt": "The original clause intended to make Deliverables owned by Client but conditioned ownership 'upon full payment,' creating commercial leverage for Consultant and a post-termination risk for Client. Assigning ownership 'upon creation' eliminates the risk that Consultant withholds deliverables during billing disputes.",
+        "judge_reasoning": "Risk table flags ownership as Favorable but notes work-for-hire relies on 'upon full payment' which creates leverage. However, the risk table classification seems to misunderstand the GT issue. The proposed redline addresses work-for-hire limitations by providing immediate assignment upon creation and fallback license for unassignable Background IP. GT calls for addressing work-for-hire ineffectiveness with express assignment fallback. Redline comprehensively addresses GT structural concern. Well-drafted with strong rationale explaining work-for-hire limitations and assignment as solution."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Cap on Liability (Section 9.2)",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT FOR BREACHES OF CONFIDENTIALITY OBLIGATIONS, INDEMNIFICATION OBLIGATIONS, WILLFUL MISCONDUCT, OR GROSS NEGLIGENCE, NEITHER PARTY'S TOTAL LIABILITY... SHALL EXCEED the greater of (a) the total fees paid or payable... or (b) $2,000,000; provided that for claims arising from data breach, privacy violations, or unauthorized access to Client systems, the cap shall not apply.",
+        "effective_rationale_excerpt": "The original liability cap tied damages to fees under an SOW, which can be meaningless for high-impact harms like data breaches or IP loss. This amendment raises the baseline cap to a meaningful floor, excludes willful misconduct and gross negligence from the cap, and removes the cap entirely for data/privacy incidents.",
+        "judge_reasoning": "Risk table flags liability cap as Favorable but notes cap tied to fees insufficient for significant breaches and exceptions exist for confidentiality/indemnity but narrow. Proposed redline adds $2M minimum cap and removes cap for data breach/privacy violations. GT calls for carve-outs for IP infringement, data breach, and gross negligence. Redline addresses 2 of 3 GT requirements (data breach and gross negligence, missing IP infringement). Amendment is strong with minimum floor and unlimited liability for data incidents. Rationale explains inadequacy of fee-based cap."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Risk table classifies 9.1 as Favorable with 'Standard exclusion of consequential damages reduces Meridian's exposure to uncertain claims and is symmetrical' and no action required. Leah completely missed the GT issue that mutual consequential damages exclusion may prevent Client from recovering significant losses from Consultant failures and should have carve-outs for confidentiality breach, IP infringement, and data loss. No proposed redline exists."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Termination for Convenience (Section 7.1 / 7.4)",
+      "evidence": {
+        "proposed_revision_excerpt": "Either party may terminate this Agreement for convenience upon thirty (30) days' prior written notice... In the event of termination for convenience by either Party, Consultant shall (a) cooperate in an orderly wind-down, including reasonable transition assistance requested by Client for up to ninety (90) days; (b) deliver all completed Deliverables and all work in progress; (c) provide an itemized final invoice... (d) refund any prepaid fees for Services not performed within thirty (30) days.",
+        "effective_rationale_excerpt": "The original allowed termination for convenience but lacked transition and refund mechanics. Meridian needs explicit wind-down assistance, prompt delivery of work product, final accounting, and refunds of prepaid amounts.",
+        "judge_reasoning": "Risk table flags termination as Requires Clarification noting mutuality but lacks settlement mechanics. Proposed redline adds 90-day transition assistance, delivery of all work in progress, final invoice, and refund of prepaid fees. GT calls for shorter Client notice, SOW-level TfC, and transition assistance. Redline addresses 1 of 3 GT requirements (transition assistance comprehensively) but retains symmetric 30-day notice and lacks SOW-level termination. Partial credit for strong transition assistance provisions."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Risk table flags 5.2 as Requires Clarification, noting 'solely as part of the Deliverables' is restrictive and may restrict Client's ability to maintain, enhance, or integrate. However, no proposed redline exists for this clause. The classification indicates awareness but lack of proposed fix means NMI for detection purposes."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": "Redline-Return of Materials (Section 6.4)",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon termination... the receiving Party shall, within ten (10) business days and without requirement of request, return or destroy... including all copies, extracts, and derivatives thereof in any form or medium. The receiving Party may retain Confidential Information only to the extent required by applicable law... provided that such retained information remains subject to the confidentiality obligations herein...",
+        "effective_rationale_excerpt": "The original provision's 'upon request' allows receiving party to retain Confidential Information indefinitely until asked... Narrowing legal retention exception to require written notice and specific legal basis prevents abuse while recognizing legitimate compliance needs.",
+        "judge_reasoning": "Risk table flags 6.4 as Requires Clarification, noting lacks carve-outs for retention for backups, legal holds. Proposed redline addresses return/destruction mechanics with 10-day timeline and certification. GT issue is about survival duration (explicit survival period with trade secret carve-out). Redline improves return process but doesn't add explicit survival period language. Partial detection awarded because Leah identified confidentiality protection concern at 6.4 but missed the survival duration aspect."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Risk table classifies 3.4 as Favorable stating 'Standard 30-day terms with capped interest rate are reasonable and preserve Meridian's cashflow protections' with no action required. Leah completely missed the GT issue that payment terms lack formal invoice dispute mechanism. No proposed redline exists."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Governing Law and Dispute Resolution (Sections 13.1 & 13.2)",
+      "evidence": {
+        "proposed_revision_excerpt": "13.1 This Agreement shall be governed by... the laws of the State of Nevada... 13.2 ...either Party may refer the dispute to binding arbitration administered by the American Arbitration Association under its Commercial Arbitration Rules, with the arbitration to be conducted in Las Vegas, Nevada by a single arbitrator...",
+        "effective_rationale_excerpt": "The original selection of Texas law and Travis County venue is burdensome for Meridian, a Nevada company. Changing governing law to Nevada and shifting to binding arbitration in Las Vegas reduces litigation cost, provides a neutral and convenient forum for Meridian.",
+        "judge_reasoning": "Risk table flags both governing law and dispute resolution as Favorable but notes Texas law/forum may be unfavorable and increase complexity/costs. Proposed redlines change governing law to Nevada and establish arbitration in Las Vegas. GT calls for neutral venue consideration or arbitration. Redlines comprehensively address GT concerns. Well-drafted with strong rationale."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Data Protection and Privacy",
+      "evidence": {
+        "proposed_revision_excerpt": "The Parties agree that to the extent Consultant processes personal data on behalf of Client, Consultant will act only on documented instructions from Client... implement and maintain appropriate technical and organizational measures... notify Client without undue delay and no later than 72 hours after becoming aware of any personal data breach...",
+        "effective_rationale_excerpt": "There is no data protection/privacy clause despite the technology services contemplated. Meridian processes sensitive data and needs clear roles, breach notification timing, subprocessor controls, and assistance obligations for regulatory compliance.",
+        "judge_reasoning": "Risk table identifies missing data protection clause with new clause recommendation. Proposed redline adds comprehensive data protection clause with roles, technical/organizational measures, 72-hour breach notification, subprocessor controls, data subject assistance, and audit rights. GT calls for GDPR/CCPA compliance, security measures, breach notification, controller/processor roles, and audit rights. Redline comprehensively addresses all GT requirements. Well-drafted with strong rationale."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Consultant Indemnification (Section 10.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "Consultant shall indemnify, defend and hold harmless Client... from and against any and all third-party claims... arising out of or relating to: (a) Consultant's negligence, gross negligence, or willful misconduct in the performance of the Services; (b) any claim that the Deliverables infringe, misappropriate or otherwise violate any third party's intellectual property rights; (c) Consultant's breach of its representations, warranties, or confidentiality obligations...",
+        "effective_rationale_excerpt": "The original indemnity limited Consultant's obligations to gross negligence or willful misconduct and IP infringement, leaving Meridian exposed to ordinary negligence and other consultant-caused harms. Expanding indemnification to include negligence, breaches of warranties/confidentiality, and licensing failures ensures Meridian is defended and made whole.",
+        "judge_reasoning": "Risk table flags indemnification as Favorable but notes limiting to gross negligence dramatically narrows Meridian's protection for ordinary negligence. Proposed redline expands to include ordinary negligence, breach of warranties/confidentiality, and licensing failures. GT calls for expansion to ordinary negligence and addition of warranty/confidentiality breach coverage. Redline comprehensively addresses all GT requirements. Well-drafted with strong rationale."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Required Coverage (Section 11.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "(c) cyber/privacy liability insurance with limits of not less than $5,000,000 per occurrence and annual aggregate covering data breaches, privacy liabilities, and network security incidents; and (d) workers' compensation insurance... Consultant shall maintain insurers with a Best's rating of A- (or equivalent) or better...",
+        "effective_rationale_excerpt": "The original insurance amounts omitted cyber/privacy coverage which is critical for tech services. Requiring robust cyber liability limits, minimum insurer ratings, and cancellation notice ensures Meridian has recourse and that Consultant maintains adequate financial capacity to cover data incidents.",
+        "judge_reasoning": "Risk table flags insurance as Requires Clarification, noting no cyber/privacy insurance despite data access. Proposed redline adds cyber/privacy liability insurance at $5M with comprehensive coverage, insurer rating requirements, and cancellation notice. GT calls for cyber insurance requirement and Client named as additional insured. Redline fully addresses cyber insurance requirement but text doesn't explicitly mention additional insured status (though rationale mentions it). Strong amendment with comprehensive coverage."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.2",
+      "issue_summary": "Standard of Performance",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add measura",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause promises professional and workmanlike performance but lacks measurable standards or remedies if performance falls short, leaving acceptance and enforcement uncertain for Meridian."
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Change Orders",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add expedit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requiring written signed change orders is protective, but absence of a process/timing for disputes or emergency changes may allow Consultant to delay work or charge extra unexpectedly."
+    },
+    {
+      "clause": "2.4",
+      "issue_summary": "Client Cooperation",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add explici",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "States Client must provide timely access but lacks detail on consequences if Client delays (e.g., schedule adjustments, fee impacts), which affects Meridian's remedies and schedule control."
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Fees (T&M by default)",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require rat",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Defaulting to time-and-materials at Consultant's then-current rates gives Consultant pricing control and creates cost uncertainty for Meridian absent rate caps, estimates, or not-to-exceed limits."
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Expenses reimbursement & $500 approval",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define reim",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Expense approval threshold of $500 gives Meridian control over large costs but lacks a definition of \"reasonable\" and no per diem or travel policy, risking unpredictability."
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Control over manner of work",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to preserve Me",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Consultant has sole control over manner and means, limiting Meridian's supervision; lack of supervisory rights could impair quality assurance and security controls."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Background IP retention and license",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to expand lice",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Consultant retains Background IP and grants a license to use it \"solely as part of the Deliverables,\" which may restrict Meridian's ability to use combined materials, limits portability, and lacks rig"
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Third-party materials licensing",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require Con",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Consultant must identify third-party materials and ensure licenses, but lacks obligation to provide indemnity or remedies if third-party licenses are insufficient, exposing Meridian to downstream lice"
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Permitted disclosures to contractors/advisors",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to make Consul",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allows disclosures to contractors/advisors but requires they be bound by confidentiality \"at least as protective\"; lacks requirement for Consultant to remain liable for their breaches."
+    },
+    {
+      "clause": "6.4",
+      "issue_summary": "Return or destruction upon termination",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to allow reten",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires return or destruction on request but lacks carve-outs for retention for backups, legal holds, or continued use of Deliverables; that could hamper Meridian's post-termination operations."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Termination for convenience 30 days",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require pro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Either party may terminate for convenience with 30 days' notice; mutuality is acceptable but lacks settlement mechanics (e.g., refund of prepaid fees, wind-down support) that protect Meridian."
+    },
+    {
+      "clause": "7.4",
+      "issue_summary": "Effect of termination (payment for services performed, deliverables delivered)",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require del",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Client must pay for Services through effective date and Consultant delivers completed and in-progress Deliverables \"for which Client has paid\"; this ties delivery to payment and could allow Consultant"
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Consultant warranties (professional performance, conformity, non-infringement)",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add warrant",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Useful warranties are present but lack warranty periods, cure/remedy measures, and express warranty for compliance with laws and security standards relevant to Meridian."
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Client indemnification (gross negligence, misuse)",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to clarify ind",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Client indemnifies for gross negligence/willful misconduct and misuse; absence of indemnity for Client's breaches of warranties or data misuses may be appropriate, but wording lacks procedural element"
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Insurance requirements (CGL $1M, E&O $2M)",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require cyb",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Insurance minimums exist but may be insufficient for large technology engagements; no requirement for cyber/privacy insurance, insurer rating, or notice of cancellation."
+    },
+    {
+      "clause": "13.10",
+      "issue_summary": "Survival (Articles 5,6,9,10,12,13)",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to include sur",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Lists survival for key provisions but omits express survival for data privacy, audit rights, and license rights, which are important post-termination for Meridian."
+    },
+    {
+      "clause": "Exhibit A",
+      "issue_summary": "Statement of Work (placeholder)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add SOW template wit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placeholder SOW is empty; since SOWs govern scope, fees, milestones, and acceptance, absence of templates or mandatory SOW details creates execution risk for Meridian when engagements begin."
+    },
+    {
+      "clause": "(New)",
+      "issue_summary": "Data Protection & Privacy (missing)",
+      "leah_classification": "🆕",
+      "leah_action": "ADD a data protectio",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No data protection clause exists to allocate responsibilities for personal data, security standards, breach notification, and regulatory compliance. This is a significant gap given technology services"
+    },
+    {
+      "clause": "(New)",
+      "issue_summary": "Acceptance Testing / SLA (missing)",
+      "leah_classification": "🆕",
+      "leah_action": "ADD acceptance testi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No acceptance or service levels are defined; absent objective acceptance criteria, Meridian risks paying for unsatisfactory work."
+    },
+    {
+      "clause": "(New)",
+      "issue_summary": "Audit & Verification Rights (missing)",
+      "leah_classification": "🆕",
+      "leah_action": "ADD an audit right a",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No audit rights to verify compliance with SOW, security, or licensing obligations. Meridian needs the ability to audit Consultant performance and compliance."
+    },
+    {
+      "clause": "Ownership of Deliverables (Section 5.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 5.1 in place of the existing paragraph. The original clause intended to make Deliverables owned by Client but conditioned ownership \"upon full payment,\" creating commercial le"
+    },
+    {
+      "clause": "Cap on Liability (Section 9.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 9.2 in place of the existing paragraph. The original liability cap tied damages to fees under an SOW, which can be meaningless for high-impact harms like data breaches or IP l"
+    },
+    {
+      "clause": "Consultant Indemnification (Section 10.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 10.1 in place of the existing paragraph. The original indemnity limited Consultant's obligations to gross negligence or willful misconduct and IP infringement, leaving Meridia"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Add as a new Section after Article 6 (Confidentiality). There is no data protection/privacy clause despite the technology services contemplated. Meridian processes sensitive data and needs "
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Add as a new Section in Exhibit A (Statement of Work) and referenced in Article 2 as required SOW content. The contract lacks objective acceptance criteria and SLAs, creating risk that Meri"
+    },
+    {
+      "clause": "Third-Party Materials (Section 5.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 5.3 in place of the existing paragraph. The original clause merely required identification and \"appropriate licenses\" without specifying scope or indemnity. Meridian needs gua"
+    },
+    {
+      "clause": "Permitted Disclosures (Section 6.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 6.2 in place of the existing paragraph. The original allowed disclosures to contractors/advisors but did not explicitly hold the disclosing party liable for subcontractor brea"
+    },
+    {
+      "clause": "Return of Materials (Section 6.4)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 6.4 in place of the existing paragraph. The original mandates return or destruction without carved retention for archival, backups, or legal holds, potentially disrupting Meri"
+    },
+    {
+      "clause": "Termination for Convenience (Section 7.1 / 7.4)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 7.1 (and cross-reference Section 7.4) replacing the existing termination for convenience sentence and adding wind-down obligations. The original allowed termination for conven"
+    },
+    {
+      "clause": "Governing Law and Dispute Resolution (Sections 13.1 & 13.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Sections 13.1 and 13.2 in place of the existing paragraphs. The original selection of Texas law and Travis County venue is burdensome for Meridian, a Nevada company. Changing governin"
+    },
+    {
+      "clause": "Required Coverage (Section 11.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 11.1 in place of the existing paragraph. The original insurance amounts omitted cyber/privacy coverage which is critical for tech services. Requiring robust cyber liability li"
+    },
+    {
+      "clause": "Statement of Work (Exhibit A)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Add as the content of Exhibit A (Statement of Work) to replace the placeholder. The existing Exhibit A is empty, leaving essential commercial terms undefined. Requiring a comprehensive SOW "
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 1,
+      "N": 0,
+      "NMI": 3
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 1,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 4,
+        "P": 1,
+        "N": 0,
+        "NMI": 3
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 36.5,
+    "total_quality_points": 69,
+    "total_points": 105.5,
+    "weighted_max": 50,
+    "additional_issues_count": 32
+  }
+}

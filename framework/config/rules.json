@@ -1,0 +1,103 @@
+{
+  "mode": "rules",
+  "display_name": "Rules Evaluation",
+  "description": "Evaluates Leah's compliance with deterministic rules. Binary pass/fail.",
+  "contract_types": [
+    "nda",
+    "subcontract"
+  ],
+  "contracts_per_type": 10,
+  "models": [
+    "pathfinder",
+    "starliner",
+    "velocity",
+    "scale",
+    "sonnet45",
+    "pioneer_deep"
+  ],
+  "paths": {
+    "base_dir": "rules",
+    "canonical_json_pattern": "canonical_json_{env}",
+    "ground_truth": "ground_truth",
+    "rule_files": "rule_files"
+  },
+  "gt_structure": {
+    "type": "per_contract_type",
+    "files": [
+      "nda.json",
+      "subcontract.json"
+    ],
+    "item_key": "ground_truth",
+    "id_field": "rule_id",
+    "tier_field": "rule_tier"
+  },
+  "evaluation_structure": {
+    "type": "flat",
+    "evaluations_key": "rule_evaluations",
+    "issue_array_field": "rule_evaluations",
+    "detection_field": "detection"
+  },
+  "quality_fields": [
+    "action_score",
+    "language_score",
+    "rationale_score"
+  ],
+  "detection_points": {
+    "per_rule_max": 9,
+    "detection": 2,
+    "compliance": 1,
+    "action": 2,
+    "language": 2,
+    "rationale": 2
+  },
+  "scoring": {
+    "per_rule_max": 9,
+    "dimensions": {
+      "detection": {
+        "max": 2,
+        "description": "Rule triggered correctly"
+      },
+      "compliance": {
+        "max": 1,
+        "description": "Compliance status confirmed"
+      },
+      "action": {
+        "max": 2,
+        "description": "Correct action selected"
+      },
+      "language": {
+        "max": 2,
+        "description": "Prescribed language used"
+      },
+      "rationale": {
+        "max": 2,
+        "description": "Rule citation present"
+      }
+    }
+  },
+  "detection_values": [
+    "Y",
+    "P",
+    "N",
+    "NMI",
+    "N/A"
+  ],
+  "pass_criteria": {
+    "pass": {
+      "min_percentage": 80
+    },
+    "marginal": {
+      "min_percentage": 60
+    },
+    "fail": {
+      "below": 60,
+      "or": "critical_rule_violation"
+    }
+  },
+  "actions": [
+    "DELETE",
+    "AMEND",
+    "ADD",
+    "FLAG"
+  ]
+}

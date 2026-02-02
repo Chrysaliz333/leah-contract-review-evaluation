@@ -1,0 +1,598 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T19:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Limitation of Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM THIS AGREEMENT, EXCEPT FOR DAMAGES ARISING FROM SUPPLIER'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, INTELLECTUAL PROPERTY INFRINGEMENT, OR PRODUCT LIABILITY. SUPPLIER'S TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNTS PAID BY BUYER FOR PRODUCTS IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, EXCEPT WITH RESPECT TO CLAIMS ARISING FROM SUPPLIER'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, INTELLECTUAL PROPERTY INFRINGEMENT, OR PRODUCT LIABILITY, FOR WHICH NO SUCH LIMITATION SHALL APPLY.",
+        "effective_rationale_excerpt": "The original clause's blanket exclusion and low cap expose Apex to unrecoverable losses for serious supplier misconduct or product failures. Carving out exceptions for key risks and removing the cap for such events ensures Apex can recover full damages where warranted.",
+        "judge_reasoning": "Starliner addresses this T2 issue in the combined liability limitation redline. The risk table classifies 11.1/11.2 as 'Favorable' but notes the cap is 'disproportionately low for Apex, given potential downstream liabilities' and recommends carve-outs and increasing/removing the cap for key events. The proposed redline removes the cap entirely for gross negligence, willful misconduct, IP infringement, and product liability. While it doesn't raise the baseline cap to 24 months, removing the cap for key categories provides stronger protection than a higher capped amount. Addresses GT key elements about carve-outs for IP, willful misconduct, and unlimited for certain claims."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Warranty Claims",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier's obligation shall be, at Buyer's option, to repair, replace, or refund the purchase price of defective Products. In addition, Supplier shall be liable for all reasonable costs incurred by Buyer as a result of defective Products, including but not limited to recall costs, consequential damages, and third-party claims.",
+        "effective_rationale_excerpt": "Limiting remedies to Supplier's discretion and excluding consequential damages restricts Apex's ability to recover losses. Expanding remedies and shifting the option to Buyer ensures Apex can fully recover losses and manage risk arising from defective products.",
+        "judge_reasoning": "Starliner detects this critical T1 issue. The risk table classifies 5.2 as 'Favorable' but notes 'Supplier's sole obligation is to repair, replace, or refund at its option, with no reference to consequential damages, recall costs, or third-party claims.' The proposed redline shifts remedy choice to Buyer ('at Buyer's option'), adds liability for recall costs, consequential damages, and third-party claims. Fully addresses GT key elements including removing Supplier's sole control and adding recall cost coverage."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10.0,
+      "matched_redline_id": "Risk table implied via 5.1 Product Warranty",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table entry for 5.1 notes: 'Supplier warrants Products for one year, but does not specify remedies for latent defects, nor address extended warranty for safety-critical parts.' The 5.2 redline addresses warranty remedies but there is no specific redline targeting the 5.3 warranty disclaimer.",
+        "effective_rationale_excerpt": "One-year defect warranty, but the disclaimer issue at 5.3 is not directly addressed in the risk table or proposed redlines.",
+        "judge_reasoning": "Starliner's canonical JSON does not have a specific risk table entry or proposed redline for clause 5.3 (warranty disclaimer). The risk table covers 5.1 (Product Warranty) and 5.2 (Warranty Claims) but not the broad disclaimer of implied warranties at 5.3. The 5.1 redline addresses latent defects and extended warranty for safety-critical components but doesn't amend the disclaimer to preserve fitness for purpose or add express warranties. Partial detection because warranty issues are addressed at adjacent clauses but the specific disclaimer concern at 5.3 is not identified or remediated."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Limitation of Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM THIS AGREEMENT, EXCEPT FOR DAMAGES ARISING FROM SUPPLIER'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, INTELLECTUAL PROPERTY INFRINGEMENT, OR PRODUCT LIABILITY. SUPPLIER'S TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNTS PAID BY BUYER FOR PRODUCTS IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, EXCEPT WITH RESPECT TO CLAIMS ARISING FROM SUPPLIER'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, INTELLECTUAL PROPERTY INFRINGEMENT, OR PRODUCT LIABILITY, FOR WHICH NO SUCH LIMITATION SHALL APPLY.",
+        "effective_rationale_excerpt": "The original clause's blanket exclusion and low cap expose Apex to unrecoverable losses for serious supplier misconduct or product failures. Carving out exceptions for key risks and removing the cap for such events ensures Apex can recover full damages where warranted.",
+        "judge_reasoning": "Starliner fully detects this T1 issue. The risk table at 11.1/11.2 classifies it as 'Favorable' but notes 'Excludes all indirect damages' and recommends carve-outs 'for gross negligence, willful misconduct, IP infringement, and product liability.' The proposed redline adds exactly those carve-outs, excluding them from both the consequential damages waiver and the liability cap. Fully addresses all GT key elements including product liability, IP, and willful misconduct carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Delivery Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Unless otherwise agreed, all Products shall be delivered FCA Supplier's facility (Incoterms 2020). Title and risk of loss shall pass to Buyer upon delivery to the carrier. Supplier shall be liable for any delays or incomplete deliveries, and shall promptly notify Buyer of any anticipated delays. Buyer shall be entitled to liquidated damages or other agreed remedies for late or incomplete deliveries.",
+        "effective_rationale_excerpt": "The original clause does not address Supplier's liability for delivery failures. Adding remedies and notification obligations protects Apex from supply disruptions and provides enforceable recourse for late or incomplete shipments.",
+        "judge_reasoning": "Starliner identifies delivery issues but does not change the FCA Incoterms. The risk table flags 6.1 as 'Clarify' noting 'FCA Supplier's facility shifts risk and cost to Apex at shipment' but the recommended action focuses on 'penalties or remedies for late or incomplete deliveries' rather than changing to DAP/DDP. The proposed redline maintains FCA terms and adds liability for delays/incomplete deliveries but does NOT shift risk transfer to Buyer's facility. Partial detection because the issue is identified but the fix doesn't address the core GT concern about transit risk remaining with Supplier until delivery to Buyer."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-Purchase Orders",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall accept or reject each purchase order within five (5) business days. Supplier may only reject a purchase order for legitimate reasons, including lack of capacity, force majeure, or non-conformance with this Agreement, and must provide written justification for any rejection.",
+        "effective_rationale_excerpt": "The original clause allows Supplier broad discretion to reject orders, creating uncertainty for Apex. Limiting rejection to legitimate reasons and requiring written justification ensures transparency and supply reliability. This amendment protects Apex from arbitrary supply interruptions and supports stable manufacturing operations.",
+        "judge_reasoning": "Starliner identifies the supply uncertainty issue. The risk table flags 2.2 as 'Clarify' noting 'Supplier may reject purchase orders within 5 days, but no criteria are provided for rejection.' The proposed redline limits rejection to legitimate reasons (capacity, force majeure, non-conformance) and requires written justification. This addresses some GT concerns about supply assurance, but notably does NOT add deemed acceptance language if Supplier fails to respond. Quality scores reduced because GT specifically expects deemed acceptance mechanism which is not included."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Inspection and Acceptance",
+      "evidence": {
+        "proposed_revision_excerpt": "Buyer shall inspect all Products within thirty (30) business days of receipt and shall notify Supplier in writing of any non-conformities or defects. Discovery of latent defects not reasonably discoverable within this period shall not be deemed acceptance, and Buyer may reject such Products upon discovery.",
+        "effective_rationale_excerpt": "The 10-day inspection period is insufficient for complex parts, risking acceptance of latent defects. Extending the period and allowing rejection for latent defects protects Apex from quality issues that may only become apparent after initial inspection.",
+        "judge_reasoning": "Starliner correctly identifies both issues. The risk table flags 7.1/7.2 as 'Favorable' but notes '10-day inspection period is short for complex automotive parts' and 'Products are deemed accepted if not rejected in that window.' The proposed redline extends inspection to 30 business days and explicitly states latent defects don't constitute deemed acceptance and can be rejected upon discovery. Fully addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Supplier Indemnification",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall indemnify Buyer against all losses, damages, costs, and expenses (including recall costs, regulatory fines, and third-party claims) arising from: (a) defects in Products; (b) Supplier's negligence or willful misconduct; or (c) infringement of intellectual property rights.",
+        "effective_rationale_excerpt": "The original clause does not explicitly cover recall costs or regulatory fines, limiting Apex's recovery. Expanding the scope ensures Apex is fully protected from all losses associated with Supplier's actions or product defects.",
+        "judge_reasoning": "Starliner detects the indemnification gap. The risk table flags 12.1 as 'Clarify' noting 'scope is not clearly defined (e.g., recall costs, regulatory fines).' The proposed redline explicitly adds 'recall costs, regulatory fines, and third-party claims' to the indemnification scope. Combined with the 11.1/11.2 redline that removes liability cap for product liability claims, this effectively provides unlimited coverage for indemnification-type claims. Fully addresses GT key elements about recall costs and uncapped coverage."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Payment Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Buyer shall pay all invoices within thirty (30) days of the invoice date (Net 30). Late payments shall bear interest at the rate of one percent (1.0%) per month. No interest shall accrue on amounts disputed in good faith, and payment of undisputed amounts shall not be delayed due to such disputes.",
+        "effective_rationale_excerpt": "The original late payment interest rate is high and applies even to disputed amounts, potentially penalizing Apex for legitimate disputes. Lowering the rate and suspending interest on disputed sums ensures fairness and preserves Apex's cash flow during good faith disagreements.",
+        "judge_reasoning": "Starliner correctly identifies the high interest rate. The risk table flags 4.2 as 'Favorable' but notes 'interest at 1.5% monthly equals 18% annual which is high' and 'no flexibility for disputed invoices.' The proposed redline reduces interest from 1.5% to 1% monthly and explicitly excludes disputed amounts from interest accrual. Fully addresses GT key elements: reduce to 1% per month and exclude disputed amounts."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Price Adjustments",
+      "evidence": {
+        "proposed_revision_excerpt": "After the initial twelve-month period, Supplier may adjust prices annually upon ninety (90) days' prior written notice, provided that no single adjustment shall exceed five percent (5%), and any price adjustment must be justified by objective increases in Supplier's documented costs of materials, labor, or regulatory changes. In the event that cumulative price increases exceed ten percent (10%) over the term, Buyer shall have the right to terminate this Agreement upon thirty (30) days' written notice.",
+        "effective_rationale_excerpt": "The original clause permits price increases without objective justification, exposing Apex to arbitrary cost escalation. Requiring cost-based justification and a termination right if increases are excessive protects Apex's cost structure and provides leverage to manage supplier pricing practices.",
+        "judge_reasoning": "Starliner identifies the compounding price adjustment issue. The risk table classifies 3.2 as 'Favorable' but recommends requiring objective cost justification and caps. The proposed redline requires documented cost justification and adds a Buyer termination right if cumulative increases exceed 10% over the term. This addresses GT key elements about cost justification and termination right for unacceptable increases. Maintains 5% per adjustment cap but adds cumulative limit and exit right."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Business Continuity/Disaster Recovery",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall maintain, implement, and periodically test business continuity and disaster recovery plans reasonably designed to ensure uninterrupted supply of Products to Buyer. Supplier shall promptly notify Buyer of any event that may disrupt supply and cooperate with Buyer to mitigate the impact of such disruption.",
+        "effective_rationale_excerpt": "Placement: Insert after Section 13 (Insurance). The absence of a business continuity clause exposes Apex to supply chain disruptions from unforeseen events. Requiring Supplier to maintain and test such plans ensures proactive risk management and supports Apex's operational resilience.",
+        "judge_reasoning": "Starliner identifies the missing business continuity provisions. The risk table has a 'Gap' entry for 'Business Continuity/Disaster Recovery' flagged as a new clause needed. The proposed redline adds a comprehensive business continuity clause requiring Supplier to maintain and test disaster recovery plans, notify Buyer of disruptions, and cooperate to mitigate impacts. This addresses GT key elements about disaster recovery. Note: Starliner doesn't explicitly address last-time-buy rights, dual sourcing, or capacity reservation, but disaster recovery/continuity plans cover the core supply assurance concern."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Confidentiality Obligations",
+      "evidence": {
+        "proposed_revision_excerpt": "This obligation shall survive termination for five (5) years, and with respect to trade secrets, shall continue for so long as the information remains a trade secret under applicable law.",
+        "effective_rationale_excerpt": "Three years is insufficient for long-term sensitive information. Extending the period to five years and providing indefinite protection for trade secrets ensures Apex's confidential information remains protected for an appropriate duration.",
+        "judge_reasoning": "Starliner correctly identifies the 3-year survival issue. The risk table flags 10.1 as 'Clarify' noting 'Confidentiality survives only 3 years post-termination, which may be insufficient for long-term sensitive information.' The proposed redline extends survival to 5 years for general information and indefinitely for trade secrets 'for so long as the information remains a trade secret under applicable law.' Fully addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-Insurance",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall maintain: (a) commercial general liability insurance of $2,000,000 per occurrence; (b) products liability insurance of $5,000,000 per occurrence; and (c) workers' compensation as required by law. Supplier shall name Buyer as an additional insured on all applicable policies and provide certificates of insurance upon request.",
+        "effective_rationale_excerpt": "Without naming Apex as additional insured or providing proof of coverage, Apex may lack direct protection or visibility into Supplier's insurance. This amendment ensures Apex is covered and can verify Supplier's compliance.",
+        "judge_reasoning": "Starliner identifies insurance gaps. The risk table flags 13.1 as 'Clarify' noting 'no requirement to name Apex as additional insured or provide certificates of insurance.' The proposed redline adds additional insured status and certificates of insurance upon request. However, Starliner's fix doesn't include cancellation notice period (GT expects advance notice of material changes) or completed operations coverage. Quality scores slightly reduced for incomplete fix, but core requirements of additional insured and verification are addressed."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Starliner's canonical JSON does not contain any risk table entry or proposed redline addressing clause 14.2 (Termination for Cause). The GT issue concerns the asymmetric 30-day cure period being too long for critical supply/quality breaches, requiring immediate termination rights for safety-critical defects. Starliner's risk table does not flag 14.2. The 14.3 entry addresses Termination for Convenience but not the cure period asymmetry in 14.2. Not mentioned in the output."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.1",
+      "issue_summary": "Agreement to Supply",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify Sup",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause states that Supplier will manufacture and sell, and Buyer will purchase, Products per the Agreement. However, it lacks specificity regarding minimum purchase commitments, Supplier's obligat"
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Purchase Orders",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to limit Suppl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Supplier may reject purchase orders within 5 days, but no criteria are provided for rejection. This exposes Apex to supply uncertainty and potential disruptions."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Product Warranty",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include rem",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Supplier warrants Products for one year, but does not specify remedies for latent defects, nor address extended warranty for safety-critical parts. Apex may face downstream liabilities if defects aris"
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Delivery Terms",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify pen",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "FCA Supplier’s facility shifts risk and cost to Apex at shipment, but does not address Supplier’s liability for late or incomplete deliveries, or remedies for missed deadlines."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Confidentiality Obligations",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend conf",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Confidentiality survives only 3 years post-termination, which may be insufficient for long-term sensitive information."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Supplier Indemnification",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to explicitly ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Supplier indemnifies for defects, negligence, and IP infringement, but scope is not clearly defined (e.g., recall costs, regulatory fines)."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Insurance",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require Sup",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Supplier must maintain insurance, but no requirement to name Apex as additional insured or provide certificates of insurance."
+    },
+    {
+      "clause": "16.2",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add escalat",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Disputes are resolved by arbitration in Detroit, Michigan. No escalation or mediation step, and no provision for interim injunctive relief, which may be needed for urgent supply issues."
+    },
+    {
+      "clause": "Gap",
+      "issue_summary": "Business Continuity/Disaster Recovery",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause requiring",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No clause addresses Supplier’s obligation to maintain business continuity or disaster recovery plans, exposing Apex to supply chain risk in case of disruptions."
+    },
+    {
+      "clause": "Gap",
+      "issue_summary": "Change of Control",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause requiring",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No clause requires Supplier to notify Apex of a change of control or allows Apex to terminate if Supplier is acquired by a competitor or unsuitable entity."
+    },
+    {
+      "clause": "Gap",
+      "issue_summary": "Setoff Rights",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause granting ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No setoff right for Apex to deduct amounts owed by Supplier from payments due, limiting Apex’s leverage in case of disputes or Supplier’s breach."
+    },
+    {
+      "clause": "Agreement to Supply",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks specificity regarding Supplier’s obligation to fulfill all valid purchase orders and remedies for failure. Clarifying this ensures Apex can rely on consistent supply and has "
+    },
+    {
+      "clause": "Purchase Orders",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause allows Supplier broad discretion to reject orders, creating uncertainty for Apex. Limiting rejection to legitimate reasons and requiring written justification ensures transparency "
+    },
+    {
+      "clause": "Price Adjustments",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause permits price increases without objective justification, exposing Apex to arbitrary cost escalation. Requiring cost-based justification and a termination right if increases are exc"
+    },
+    {
+      "clause": "Payment Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original late payment interest rate is high and applies even to disputed amounts, potentially penalizing Apex for legitimate disputes. Lowering the rate and suspending interest on disputed sums en"
+    },
+    {
+      "clause": "Product Warranty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original warranty does not address latent defects or safety-critical parts, exposing Apex to downstream liability. Extending the warranty for these cases ensures Apex is protected from hidden defe"
+    },
+    {
+      "clause": "Warranty Claims",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limiting remedies to Supplier’s discretion and excluding consequential damages restricts Apex’s ability to recover losses. Expanding remedies and shifting the option to Buyer ensures Apex can fully re"
+    },
+    {
+      "clause": "Delivery Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause does not address Supplier’s liability for delivery failures. Adding remedies and notification obligations protects Apex from supply disruptions and provides enforceable recourse fo"
+    },
+    {
+      "clause": "Inspection and Acceptance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 10-day inspection period is insufficient for complex parts, risking acceptance of latent defects. Extending the period and allowing rejection for latent defects protects Apex from quality issues t"
+    },
+    {
+      "clause": "Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Three years is insufficient for long-term sensitive information. Extending the period to five years and providing indefinite protection for trade secrets ensures Apex’s confidential information remain"
+    },
+    {
+      "clause": "Limitation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause’s blanket exclusion and low cap expose Apex to unrecoverable losses for serious supplier misconduct or product failures. Carving out exceptions for key risks and removing the cap f"
+    },
+    {
+      "clause": "Supplier Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause does not explicitly cover recall costs or regulatory fines, limiting Apex’s recovery. Expanding the scope ensures Apex is fully protected from all losses associated with Supplier’s"
+    },
+    {
+      "clause": "Insurance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Without naming Apex as additional insured or providing proof of coverage, Apex may lack direct protection or visibility into Supplier’s insurance. This amendment ensures Apex is covered and can verify"
+    },
+    {
+      "clause": "Termination for Convenience",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allowing Supplier to terminate on 180 days’ notice exposes Apex to supply risk. Extending the notice period and requiring transition support gives Apex time to secure alternatives and avoid operationa"
+    },
+    {
+      "clause": "Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks escalation steps and does not allow for urgent court relief. Adding negotiation, mediation, and interim relief options provides a more balanced and practical dispute resoluti"
+    },
+    {
+      "clause": "Business Continuity/Disaster Recovery",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 13 (Insurance). The absence of a business continuity clause exposes Apex to supply chain disruptions from unforeseen events. Requiring Supplier to maintain and test suc"
+    },
+    {
+      "clause": "Change of Control",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 14 (Term and Termination). Without a change of control clause, Apex may be forced to work with an unsuitable or competitor-owned supplier. This addition allows Apex to "
+    },
+    {
+      "clause": "Setoff Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 4 (Payment). Without a setoff right, Apex may have to pay Supplier even when Supplier owes Apex for damages or credits. This clause provides Apex with leverage and an e"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 2,
+      "N": 0,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 7,
+        "P": 1,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 61.0,
+    "total_quality_points": 105,
+    "weighted_score": 98.0,
+    "max_possible_score": 74.0,
+    "t1_count": 4,
+    "t2_count": 8,
+    "t3_count": 2,
+    "total_points": 166.0,
+    "additional_issues_count": 28
+  }
+}

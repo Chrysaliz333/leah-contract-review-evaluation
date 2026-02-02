@@ -1,0 +1,828 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "pioneer_deep",
+    "evaluation_timestamp": "2026-01-25T18:05:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Exit and Buyout (10.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "10.1 Exit and Buyout. A Partner may initiate a buyout upon (a) uncured material breach, (b) change in control of the other Partner, or (c) repeated deadlocks materially impairing operations. Valuation shall be determined by an independent appraiser if not agreed...",
+        "effective_rationale_excerpt": "The absence of exit mechanics creates significant friction if the relationship deteriorates. Providing buyout triggers, valuation, ROFR, and bad-leaver adjustments offers a predictable path to separation.",
+        "judge_reasoning": "Pioneer Deep correctly identifies that Section 10.1 is Reserved with no exit/buyout provisions. The proposed clause provides comprehensive mechanisms: buyout triggers (breach, change of control, deadlock), independent valuation, ROFR, and bad-leaver discounts. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Management / Major Decisions (4.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "4.1 Management. The Partners shall jointly manage the Partnership Activities. Major decisions require unanimous consent of both Partners and include, without limitation: approval of Co-Investments and exits, capital calls, budgets and expenses exceeding approved thresholds, conflicts of interest approvals, amendments to this Agreement, assignment of rights, and any action reasonably expected to materially impact economics or governance.",
+        "effective_rationale_excerpt": "The original clause lacks a defined list, inviting disputes over what constitutes a major decision. Enumerating key items protects Growth Dynamics' veto on critical matters, improving governance clarity and preventing unilateral actions...",
+        "judge_reasoning": "Pioneer Deep identifies the undefined 'major decisions' and proposes an enumerated list. However, the GT concern is about deadlock risk from unanimous consent itself, not just definition ambiguity. The redline adds clarity but does NOT address the core issue: no escalation or tie-breaker when partners disagree. Amendment score should reflect this gap."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Default regime (3.3 reference / 10.3 gap)",
+      "evidence": {
+        "proposed_revision_excerpt": "10.3 Default Remedies. If a Partner fails to fund a capital call when due and such failure continues beyond any applicable cure period, the non-defaulting Partner may elect one or more of the following: (a) dilution of the defaulting Partner's economic interest... (b) temporary suspension of voting rights... (c) default interest at the lesser of 12% per annum... (d) the right to fund the shortfall and receive priority return thereon.",
+        "effective_rationale_excerpt": "Section 3.3 references default remedies that do not exist, creating uncertainty and leverage gaps. Adding clear, balanced remedies protects Growth Dynamics from counterparty non-performance and provides predictable consequences...",
+        "judge_reasoning": "Pioneer Deep correctly identifies the broken cross-reference to non-existent Section 10.3 and proposes a comprehensive new Section 10.3 with dilution, voting suspension, default interest, and priority return rights. This addresses both the reference error and provides substantive default remedies as GT expects."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Profit and Loss Sharing (6.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "6.1 Sharing Ratio. All profits and losses from each Co-Investment shall be allocated between the Partners in proportion to their respective capital contributions to such Co-Investment, unless otherwise agreed in writing for a specific Co-Investment.",
+        "effective_rationale_excerpt": "A fixed 50/50 split regardless of funding creates severe misalignment and penalizes larger contributors. Pro-rata allocation aligns economics with capital at risk and market practice, protecting Growth Dynamics when it contributes more...",
+        "judge_reasoning": "Pioneer Deep identifies the severe economic misalignment from fixed 50/50 sharing regardless of capital contributions. The redline shifts to proportional allocation based on actual capital, with flexibility for written deviations. This fully addresses the GT concern and aligns with market standards."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract contains no limitation of liability clause. While Pioneer Deep proposes many new clauses, there is no redline that adds a liability cap or excludes consequential damages. This is a complete miss of a critical T1 structural gap."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract has no indemnification provisions. Pioneer Deep does not propose adding mutual indemnification for breaches or third-party claims. This is a complete miss of a critical T1 issue."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Exclusivity Period (5.3)",
+      "evidence": {
+        "proposed_revision_excerpt": "Once a Target Company is presented to the Investment Committee, neither Partner may pursue an independent investment in such company for one hundred twenty (120) days, automatically extended while a good-faith term sheet or definitive documentation is being negotiated. A 12-month tail applies to opportunities where material diligence was conducted.",
+        "effective_rationale_excerpt": "Sixty days is often insufficient for diligence and negotiation. Extending the period with automatic extensions, a tail, and a standstill protects Growth Dynamics from being bypassed during active engagement.",
+        "judge_reasoning": "Pioneer Deep identifies that 60 days may be insufficient for growth-equity diligence. The redline extends to 120 days with automatic extensions during negotiation and adds a 12-month tail for material diligence. This comprehensively addresses the GT concern with additional protections."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Effect of Termination (12.3)",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon termination, the Partners shall continue to manage existing Co-Investments until liquidation or transfer, sharing profits and losses per Section 6.1. A wind-down committee with one representative from each Partner shall oversee matters, approve expense budgets, and determine exit strategies. Each Partner shall have customary information and inspection rights and a mutual right of first refusal on transfers of interests.",
+        "effective_rationale_excerpt": "The original provides minimal guidance, risking disputes during wind-down. Adding a committee, budget control, information rights, and ROFR ensures orderly management and protects Growth Dynamics' economics and visibility until exits occur.",
+        "judge_reasoning": "Pioneer Deep recognizes that indefinite continuation without structure is problematic. The redline adds a wind-down committee, expense controls, information rights, and ROFR for transfers. While it doesn't specify a maximum time period, it provides governance mechanisms to manage the wind-down, substantially addressing the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract lacks formal information rights and reporting requirements. While Pioneer Deep notes meeting requirements (4.3), there is no redline proposing quarterly reports, material event notices, or inspection rights. This T2 structural gap is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9.0,
+      "matched_redline_id": "Redline-Non-Solicitation (11.2)",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Partner shall solicit or hire employees of the other Partner during the Term and for one (1) year thereafter, except for general solicitations not targeted at the other Partner's employees and hires resulting from employee-initiated contact without prior solicitation.",
+        "effective_rationale_excerpt": "The original clause may over-restrict normal hiring channels. Carve-outs for general solicitations and employee-initiated contact are standard and reduce inadvertent breaches while maintaining protection against targeted poaching.",
+        "judge_reasoning": "Pioneer Deep proposes adding carve-outs to the non-solicitation clause, which refines it but does not question whether the 1-year restriction is necessary at all (as GT suggests). The amendment improves the provision but doesn't address the GT's core point about reconsidering the need for the restriction. Amendment score reduced to 2."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Confidentiality (9.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "Confidentiality obligations shall survive for seven (7) years with respect to MNPI.",
+        "effective_rationale_excerpt": "The original lacks standard exceptions and compelled disclosure procedures and may under-protect MNPI. Adding carve-outs, notice, and equitable relief aligns with norms and strengthens enforceability. Extending MNPI protection to seven years better addresses securities sensitivities...",
+        "judge_reasoning": "Pioneer Deep identifies that 5-year survival may be inadequate for MNPI and trade secrets. The redline extends MNPI protection to 7 years, adds standard carve-outs (public domain, independent development, lawful third-party disclosure), compelled disclosure notice, and equitable relief. This addresses the GT concern, though perpetual protection for true trade secrets would be stronger."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The GT expects concern about 90-day non-renewal notice being too short for investment partnership wind-down and transition. Pioneer Deep's risk table (12.1) suggests adding termination for convenience but does not address the non-renewal notice period adequacy. The specific GT concern at 10.2 about planning uncertainty and transition requirements is not identified."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Co-Investment",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify sco",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The term Co-Investment is defined broadly without specifying whether sidecars, SPVs, or pro-rata follow-ons qualify. Lack of clarity can create dispute over inclusion/exclusion of opportunities and pr"
+    },
+    {
+      "clause": "1.2",
+      "issue_summary": "Investment Committee definition",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to cross-refer",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The definition references Section 4.2 but omits quorum, alternates, and tie-breaking mechanics. This raises uncertainty around approvals and could be used to stall decisions unfavorable to Growth Dyna"
+    },
+    {
+      "clause": "1.3",
+      "issue_summary": "Partnership Activities definition",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to reference e",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broadly references activities without delineating cost responsibility, record-keeping, and decision boundaries. Ambiguity may shift unintended burdens to Growth Dynamics. Clarity ensures expenses and "
+    },
+    {
+      "clause": "1.4",
+      "issue_summary": "Target Company definition",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify wri",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No criteria on when a Target Company is “presented,” creating timing disputes for exclusivity and ROFR concepts. Growth Dynamics benefits from clear trigger events for protections."
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Scope",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to permit outs",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Revenue/geography constraints are clear, but no flexibility mechanism for exceptional opportunities. Growth Dynamics may miss attractive adjacent deals. Including an approval override protects flexibi"
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Initial Commitment",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include ind",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Deal-by-deal commitments are flexible but lack pre-agreed allocation methodology and minimums, potentially diluting Growth Dynamics’ access to top deals."
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Capital Calls",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add cure pe",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ten business days is workable, but lacks mechanics for partial funding, wiring instructions, and cure rights. This ambiguity heightens default risk for Growth Dynamics if operational delays occur."
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Management/unanimous consent",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define “Maj",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Major decisions” are undefined, risking scope creep and future disputes. Growth Dynamics requires a defined list including capital calls, exits, conflicts, and expense budgets."
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Investment Committee composition/approval",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add quorum,",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires at least one representative approval from each partner but lacks quorum, alternates, deadlock, and meeting mechanics. This can stall Growth Dynamics’ deals."
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Meetings",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add notice ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Monthly cadence is fine, but no notice, agenda, or minutes requirements; missing remote participation and emergency meeting rights. Growth Dynamics benefits from structured governance."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Deal Flow sharing",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define rele",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Relevant” is vague and may allow withholding. Growth Dynamics needs a clear obligation to share qualifying deals and define exceptions (e.g., pre-existing obligations, MNPI)."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Due Diligence collaboration",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify dil",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allocation by expertise is sensible but lacks cost-sharing and access rights. Growth Dynamics should secure equal access to data rooms and advisors."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Distributions within 30 days",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add waterfa",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Timing is clear, but lacks waterfall ordering, reserves, clawback, and tax distributions. Growth Dynamics risks delayed or inequitable cash flows."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Expenses shared equally",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add annual ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Equal sharing without a defined budget, approval thresholds, and audit rights risks over-spend exposure for Growth Dynamics."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Authority",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add no-conf",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Authority reps are standard but lack representation on requisite internal approvals and no-conflict with third-party obligations, which can derail deals."
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Regulatory compliance",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add specifi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "General compliance is insufficient for financial services; should include sanctions, AML, anti-corruption, insider trading policies. Protects Growth Dynamics’ regulatory posture."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Portfolio company non-compete",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define comp",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Directly competes” undefined; consent standard absent; could unduly restrict Growth Dynamics from unrelated strategies."
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Non-solicitation (1 year)",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add standar",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Reasonable duration but lacks carve-outs for general solicitations and employee-initiated contact; include exceptions to avoid undue restraint."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Term (5 years + auto-renew)",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add termina",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Auto-renew with one-year notice is acceptable, but add early termination for convenience with wind-down to protect Growth Dynamics from prolonged misalignment."
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Termination for cause",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to broaden cau",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Material breach cure is standard, but no definition of “material,” and no termination triggers for regulatory events, key person departures, or repeated breaches."
+    },
+    {
+      "clause": "12.3",
+      "issue_summary": "Effect of termination",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add wind-do",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "States continued management but lacks wind-down committee, expense handling, information rights, and transfer mechanics; Growth Dynamics needs structured exit."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Arbitration (AAA NY)",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add confide",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Arbitration is efficient but lacks confidentiality, interim relief, injunctive carve-outs, and fee-shifting for bad faith."
+    },
+    {
+      "clause": "Definition of Co-Investment (1.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause defines joint investments but omits whether SPVs, sidecars, and follow-ons are covered. Clarifying coverage avoids disputes over inclusion and economics. For Growth Dynamics, expli"
+    },
+    {
+      "clause": "Investment Committee definition (1.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original definition references the committee but omits governance mechanics essential for functioning. By pointing to quorum, alternates, and deadlock procedures, Growth Dynamics ensures that appr"
+    },
+    {
+      "clause": "Target Company definition (1.4)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks a clear trigger for when a company becomes a Target Company, which affects exclusivity and conflict restrictions. Specifying formal presentation or entry into a shared tracke"
+    },
+    {
+      "clause": "Scope (2.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original scope is rigid and may exclude compelling opportunities. Allowing unanimous exceptions creates flexibility without undermining focus. For Growth Dynamics, this preserves the ability to pu"
+    },
+    {
+      "clause": "Non-Exclusivity (2.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause permits unilateral pursuit and risks disintermediating shared opportunities. Adding ROFR and a tail protects Growth Dynamics’ access to in-scope deals it helps surface, while prese"
+    },
+    {
+      "clause": "Capital Calls (3.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause sets timing but lacks operational mechanics and a short cure, creating avoidable default risk. Adding notice content and a brief cure protects Growth Dynamics from technical defaul"
+    },
+    {
+      "clause": "Default regime (3.3 reference / 10.3 gap)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 10.1. Section 3.3 references default remedies that do not exist, creating uncertainty and leverage gaps. Adding clear, balanced remedies protects Growth Dynamics from c"
+    },
+    {
+      "clause": "Management / Major Decisions (4.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks a defined list, inviting disputes over what constitutes a major decision. Enumerating key items protects Growth Dynamics’ veto on critical matters, improving governance clari"
+    },
+    {
+      "clause": "Investment Committee (4.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision lacks quorum, alternates, and deadlock handling, which can stall decision-making. Adding these mechanics ensures meetings can proceed and disputes are escalated promptly. For Gr"
+    },
+    {
+      "clause": "Meetings (4.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause sets cadence but lacks process, hindering accountability. Adding notice, agenda, remote participation, and minutes creates structure. For Growth Dynamics, this improves transparenc"
+    },
+    {
+      "clause": "Deal Flow (5.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Relevant” is vague and may excuse non‑sharing. Tying to Section 2.2 and adding standard carve‑outs clarifies expectations and respects legal limits. For Growth Dynamics, this reduces ambiguity that c"
+    },
+    {
+      "clause": "Due Diligence (5.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause omits access and cost controls, risking information asymmetry and overspend. Ensuring equal access and budget approval protects Growth Dynamics’ ability to evaluate risks and contr"
+    },
+    {
+      "clause": "Exclusivity Period (5.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Sixty days is often insufficient for diligence and negotiation. Extending the period with automatic extensions, a tail, and a standstill protects Growth Dynamics from being bypassed during active enga"
+    },
+    {
+      "clause": "Profit and Loss Sharing (6.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A fixed 50/50 split regardless of funding creates severe misalignment and penalizes larger contributors. Pro‑rata allocation aligns economics with capital at risk and market practice, protecting Growt"
+    },
+    {
+      "clause": "Distributions (6.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks reserves, tax distributions, and clawback mechanics, risking inequitable cash flows. Adding a waterfall protects Growth Dynamics from over‑ or under‑distributions and ensures"
+    },
+    {
+      "clause": "Expenses (6.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Equal sharing without controls can lead to overruns. Budgeting, approval thresholds, and audit rights provide transparency and cost discipline. For Growth Dynamics, this reduces exposure to unilateral"
+    },
+    {
+      "clause": "Regulatory Compliance (8.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The existing clause is generic. Explicit compliance with key regimes (sanctions, AML, anti‑corruption) and an ongoing covenant better protect Growth Dynamics from regulatory and reputational risk tied"
+    },
+    {
+      "clause": "Confidentiality (9.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original lacks standard exceptions and compelled disclosure procedures and may under‑protect MNPI. Adding carve‑outs, notice, and equitable relief aligns with norms and strengthens enforceability."
+    },
+    {
+      "clause": "Exit and Buyout (10.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert in Article 10 in place of Reserved. The absence of exit mechanics creates significant friction if the relationship deteriorates. Providing buyout triggers, valuation, ROFR, and bad‑l"
+    },
+    {
+      "clause": "Portfolio Company Non-Compete (11.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Directly competes” is vague and consent could be unreasonably withheld. Defining competition and adding a reasonableness standard prevents overbroad restrictions while still safeguarding portfolio co"
+    },
+    {
+      "clause": "Non-Solicitation (11.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause may over‑restrict normal hiring channels. Carve‑outs for general solicitations and employee‑initiated contact are standard and reduce inadvertent breaches while maintaining protect"
+    },
+    {
+      "clause": "Term (12.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding a termination for convenience right gives Growth Dynamics flexibility to exit a misaligned partnership without waiting years. The notice period allows orderly planning and dovetails with wind‑d"
+    },
+    {
+      "clause": "Termination for Cause (12.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original limits cause to a single uncured breach. Expanding to repeated breaches, key person, regulatory, and insolvency events protects Growth Dynamics from significant risks that undermine the p"
+    },
+    {
+      "clause": "Effect of Termination (12.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provides minimal guidance, risking disputes during wind‑down. Adding a committee, budget control, information rights, and ROFR ensures orderly management and protects Growth Dynamics’ eco"
+    },
+    {
+      "clause": "Arbitration (13.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding confidentiality, interim relief, and fee-shifting discretion improves enforceability and preserves rights during urgent disputes. For Growth Dynamics, this guards sensitive information and dete"
+    },
+    {
+      "clause": "Assignment (14.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause unduly restricts flexibility. Allowing affiliate assignments, collateral assignments, and a reasonable-consent standard protects Growth Dynamics’ financing and organizational needs"
+    },
+    {
+      "clause": "Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as a new section in Article 14 (General Provisions). Without force majeure, unavoidable events could constitute breach. This clause protects Growth Dynamics from liability and defaul"
+    },
+    {
+      "clause": "Records and Audit",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 6.3. Transparency over shared expenses and decisions is essential. Audit rights allow Growth Dynamics to verify charges and resolve discrepancies, promoting trust and f"
+    },
+    {
+      "clause": "Publicity and Use of Name",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Article 9 (Confidentiality). Public communications can affect reputation and regulatory exposure. Consent requirements protect Growth Dynamics from unauthorized or premature di"
+    },
+    {
+      "clause": "No Partnership/Agency",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert in Article 14 (General Provisions). The Agreement’s language could imply a legal partnership with unintended liability or tax consequences. This disclaimer protects Growth Dynamics f"
+    },
+    {
+      "clause": "Data Protection and MNPI",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 9.1. Handling sensitive data and MNPI is critical in investment activities. This clause sets baseline safeguards and compliance expectations, protecting Growth Dynamics"
+    },
+    {
+      "clause": "Tax Matters",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 6.2. Tax handling is absent, creating disputes risk. Basic cooperation and withholding mechanics protect Growth Dynamics from compliance issues and clarify expectations"
+    },
+    {
+      "clause": "Insurance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.2. Use of third‑party advisors introduces professional risk. Requiring appropriate insurance indirectly protects Growth Dynamics from advisor errors and provides reco"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 0,
+      "N": 0,
+      "NMI": 5
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      },
+      "T2": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "total_detection_points": 44.0,
+    "total_quality_points": 71,
+    "weighted_score": 67.67,
+    "max_possible": 70.0,
+    "percentage": 96.67,
+    "total_points": 115.0,
+    "additional_issues_count": 55
+  }
+}

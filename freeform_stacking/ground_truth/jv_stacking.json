@@ -1,0 +1,252 @@
+{
+  "gt_metadata": {
+    "mode": "freeform_stacking",
+    "contract_id": "JV_MOU_InnovateTech",
+    "contract_type": "Joint Venture MOU",
+    "parties": {
+      "party_a": "InnovateTech Solutions Corp.",
+      "party_b": "Quantum Dynamics LLC"
+    },
+    "representing_party": "Party B",
+    "gt_version": "1.0",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "schema_version": "1.0",
+    "note": "Freeform Stacking: Leah reviews entire document including CP redlines. Representing party is SAME as Freeform Baseline."
+  },
+  "input_files": {
+    "clause_analysis": {
+      "pattern": "*_Cl*.doc",
+      "format": "HTML",
+      "used_for": [
+        "part_a",
+        "part_b"
+      ]
+    },
+    "redline_document": {
+      "pattern": "*_Redline_*.docx",
+      "format": "Word with tracked changes",
+      "used_for": [
+        "part_c"
+      ]
+    }
+  },
+  "part_a_cp_redlines": [
+    {
+      "test_id": "JV_01",
+      "clause_ref": "Material Decisions",
+      "section": "4.1",
+      "original_text": "All material decisions regarding the Joint Venture, including but not limited to annual budgets, capital expenditures exceeding $50,000, entry into material contracts, and changes to the business plan, shall require the unanimous written consent of both Parties.",
+      "cp_redline": "All material decisions regarding the Joint Venture, including but not limited to annual budgets, capital expenditures exceeding $50,000, entry into material contracts, and changes to the business plan, shall be made at the sole discretion of Party A.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "All material decisions regarding the Joint Venture, including but not limited to annual budgets, capital expenditures exceeding $50,000, entry into material contracts, and changes to the business plan, shall require the unanimous written consent of both Parties.",
+      "key_elements": [
+        "1) Unanimous consent for material decisions 2) Both parties have veto rights 3) No unilateral decision-making authority for either party"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline unanimous consent (required)",
+        "May add deadlock resolution mechanism",
+        "May tier decisions (fundamental vs operational)",
+        "May add independent chair for operational deadlocks",
+        "May define specific reserved matters requiring unanimity"
+      ],
+      "unacceptable_responses": [
+        "Party A sole discretion on material decisions",
+        "Unilateral control by either party",
+        "Simple majority (ineffective in 50/50 structure)",
+        "No veto protection for Party B"
+      ],
+      "reasoning_must_address": "50/50 JV requires balanced governance; sole discretion eliminates Party B's control over its investment; fundamental decisions require mutual consent; unilateral control inappropriate for equal partnership",
+      "category": "5. Governance & Compliance",
+      "subcategory": "Decision-making authority"
+    },
+    {
+      "test_id": "JV_02",
+      "clause_ref": "Profit Allocation",
+      "section": "5.1",
+      "original_text": "Net profits and losses of the Joint Venture shall be allocated fifty percent (50%) to Party A and fifty percent (50%) to Party B.",
+      "cp_redline": "Net profits shall be allocated sixty percent (60%) to Party A and forty percent (40%) to Party B. Net losses shall be allocated first to Party B until Party B's capital account is exhausted, then to Party A.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Net profits and losses of the Joint Venture shall be allocated fifty percent (50%) to Party A and fifty percent (50%) to Party B.",
+      "key_elements": [
+        "1) Equal 50/50 profit allocation 2) Equal 50/50 loss allocation 3) No preferential profit distribution 4) No asymmetric loss allocation"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline 50/50 (required)",
+        "May accept unequal split if Party B contribution is proportionally less",
+        "May add preferred return if justified by capital contribution timing",
+        "Equal ownership requires equal profit/loss allocation"
+      ],
+      "unacceptable_responses": [
+        "Accepting 60/40 profit split favouring Party A",
+        "Party B absorbing losses first",
+        "Asymmetric profit/loss allocation",
+        "Waterfall favouring one party without justification"
+      ],
+      "reasoning_must_address": "Equal ownership requires equal economics; asymmetric allocation transfers value from Party B to Party A; loss priority creates unfair risk; no justification for preferential treatment",
+      "category": "6. General Risk & Fairness",
+      "subcategory": "Economic risk allocation"
+    },
+    {
+      "test_id": "JV_03",
+      "clause_ref": "Developed IP",
+      "section": "6.2",
+      "original_text": "All Developed IP shall be jointly owned by the Parties in equal shares. Neither Party may license or transfer Developed IP to third parties without the consent of the other Party.",
+      "cp_redline": "All Developed IP shall be owned exclusively by Party A. Party B receives a non-exclusive, royalty-bearing license to use Developed IP for its own business purposes, subject to a royalty of five percent (5%) of Party B's gross revenues from such use.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "All Developed IP shall be jointly owned by the Parties in equal shares. Neither Party may license or transfer Developed IP to third parties without the consent of the other Party.",
+      "key_elements": [
+        "1) Joint ownership of IP developed using JV resources 2) Equal ownership shares 3) Mutual consent for third-party licensing"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline joint ownership (required)",
+        "May add licensing framework with revenue sharing",
+        "May add buyout rights at fair market value",
+        "May clarify post-termination usage rights",
+        "May add field-of-use restrictions on licensing"
+      ],
+      "unacceptable_responses": [
+        "Party A exclusive ownership of jointly developed IP",
+        "License-only for Party B on IP it helped create",
+        "Royalty obligations on jointly funded development",
+        "Asymmetric IP ownership in equal partnership"
+      ],
+      "reasoning_must_address": "Party B contributes equally to development and must own equally; license-only model expropriates Party B's contribution; royalty on jointly funded IP is double payment; joint ownership is fundamental to JV economics",
+      "category": "3. Intellectual Property & Data",
+      "subcategory": "IP ownership"
+    },
+    {
+      "test_id": "JV_04",
+      "clause_ref": "Non-Compete",
+      "section": "9.1",
+      "original_text": "During the Term and for a period of two (2) years thereafter, neither Party shall, directly or indirectly, engage in any business that competes with the Joint Venture's quantum AI business within the Territory without the prior written consent of the other Party.",
+      "cp_redline": "During the Term and for a period of five (5) years thereafter, Party B shall not, directly or indirectly, engage in any business involving quantum computing, artificial intelligence, or related technologies anywhere in the world. Party A shall have no such restriction.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "During the Term and for a period of two (2) years thereafter, neither Party shall, directly or indirectly, engage in any business that competes with the Joint Venture's quantum AI business within the Territory without the prior written consent of the other Party.",
+      "key_elements": [
+        "1) Mutual non-compete (applies to both parties) 2) Reasonable duration (2 years post-term) 3) Narrow scope (specific to JV business) 4) Territorial limitation"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline mutual 2-year (required)",
+        "May narrow scope to specific products/markets",
+        "May shorten duration to 1 year post-term",
+        "May add carve-outs for pre-existing businesses",
+        "May eliminate post-term restriction entirely"
+      ],
+      "unacceptable_responses": [
+        "Asymmetric restriction on Party B only",
+        "5-year post-term restriction",
+        "Global scope without limitation",
+        "Broad technology restriction (all quantum/AI)",
+        "Party A unrestricted while Party B blocked"
+      ],
+      "reasoning_must_address": "Asymmetric non-compete is fundamentally unfair; 5-year global restriction blocks Party B's core business; quantum/AI is too broad; Party B cannot be permanently excluded while Party A competes freely; mutual restrictions required",
+      "category": "1. Obligations & Performance",
+      "subcategory": "Restrictions on business activities"
+    }
+  ],
+  "part_b_whole_document": {
+    "reference": {
+      "source_file": "../../freeform/ground_truth/jv.json",
+      "gt_version": "3.0_v4-enhanced_LOCKED",
+      "total_issues": 18,
+      "tier_breakdown": {
+        "T1": 5,
+        "T2": 10,
+        "T3": 3
+      },
+      "weighted_max": 93
+    },
+    "note": "Part B uses the Freeform Baseline GT. Same contract, same issues. Evaluate whether Leah still detects these risks when CP redlines are present."
+  },
+  "part_c_document_quality": {
+    "scope": "Every redline Leah produces in the output .docx",
+    "per_redline_capture": {
+      "redline_id": "Sequential ID (e.g., RL-01)",
+      "location": "Clause/section reference",
+      "type": "CP_RESPONSE | NEW_REDLINE",
+      "linked_gt_id": "GT ID if NEW_REDLINE addresses Part B issue, else null",
+      "action_stated": "ACCEPT | MODIFY | REJECT | ADD | DELETE",
+      "redline_exists": "Y | N",
+      "action_executed": "ACCEPT | MODIFY | REJECT | ADD | DELETE | NONE",
+      "execution_match": "Y | N | NA (NA if redline_exists=N)",
+      "is_wholesale": "Y | N",
+      "precision_score": "0-2 (aligned pair average)",
+      "insertion_accuracy": "0-2 | NA (aligned pair average, NA for DELETE/simple swaps)",
+      "notes": "Optional observations"
+    },
+    "aggregation_rules": {
+      "binary_fields": "Most confident determination wins",
+      "quality_fields": "Averaged across evaluations; median used for divergent scores",
+      "na_handling": "Exclude from averages"
+    }
+  },
+  "scoring_summary": {
+    "part_a": {
+      "items": 4,
+      "max_per_item": 6,
+      "max_total": 24,
+      "dimensions": {
+        "action": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "revision": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "reasoning": {
+          "max": 2,
+          "weight": "20%"
+        }
+      },
+      "pass_threshold": ">=70% AND 0 critical failures",
+      "critical_failures": [
+        "REJECT-only scored as ACCEPT",
+        "ACCEPT-only scored as REJECT",
+        "Revision contains unacceptable element"
+      ]
+    },
+    "part_b": {
+      "items": 18,
+      "weighted_max": 93,
+      "tier_weights": {
+        "T1": 8,
+        "T2": 5,
+        "T3": 1
+      },
+      "pass_threshold": "T1 Gate PASS AND >=70%",
+      "t1_gate": "Any T1 miss = FAIL"
+    },
+    "part_c": {
+      "per_redline_max": 6,
+      "dimensions": {
+        "precision": "0-2",
+        "insertion_accuracy": "0-2 or NA"
+      },
+      "metrics": [
+        "Wholesale Rate",
+        "Execution Mismatch Count",
+        "Missing Redline Count",
+        "Avg Precision",
+        "Avg Insertion Accuracy"
+      ],
+      "separate_reporting": [
+        "CP_RESPONSE",
+        "NEW_REDLINE"
+      ]
+    }
+  }
+}

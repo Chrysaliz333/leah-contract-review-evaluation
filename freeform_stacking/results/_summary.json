@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "environment": "hotfix",
+    "mode": "freeform_stacking",
+    "generated_at": "2026-01-26T09:59:44.450078",
+    "total_evaluations": 40,
+    "valid_evaluations": 40,
+    "data_issues": 0
+  },
+  "by_model": {
+    "pathfinder": {
+      "evaluations": 10,
+      "avg_part_a_pct": 92.5,
+      "avg_part_b_points": 93.3,
+      "part_a_pass": 10,
+      "part_a_fail": 0
+    },
+    "pioneer_deep": {
+      "evaluations": 10,
+      "avg_part_a_pct": 94.2,
+      "avg_part_b_points": 162.2,
+      "part_a_pass": 10,
+      "part_a_fail": 0
+    },
+    "sonnet45": {
+      "evaluations": 10,
+      "avg_part_a_pct": 86.7,
+      "avg_part_b_points": 154.0,
+      "part_a_pass": 9,
+      "part_a_fail": 1
+    },
+    "starliner": {
+      "evaluations": 10,
+      "avg_part_a_pct": 55.0,
+      "avg_part_b_points": 140.6,
+      "part_a_pass": 5,
+      "part_a_fail": 5
+    }
+  },
+  "by_contract": {
+    "consulting": {
+      "evaluations": 4,
+      "avg_part_a_pct": 88.5,
+      "avg_part_b_points": 114.6
+    },
+    "distribution": {
+      "evaluations": 4,
+      "avg_part_a_pct": 56.2,
+      "avg_part_b_points": 166.9
+    },
+    "dpa": {
+      "evaluations": 4,
+      "avg_part_a_pct": 100.0,
+      "avg_part_b_points": 85.9
+    },
+    "jv": {
+      "evaluations": 4,
+      "avg_part_a_pct": 70.8,
+      "avg_part_b_points": 37.2
+    },
+    "license": {
+      "evaluations": 4,
+      "avg_part_a_pct": 84.4,
+      "avg_part_b_points": 125.6
+    },
+    "partnership": {
+      "evaluations": 4,
+      "avg_part_a_pct": 96.9,
+      "avg_part_b_points": 105.6
+    },
+    "reseller": {
+      "evaluations": 4,
+      "avg_part_a_pct": 71.8,
+      "avg_part_b_points": 162.0
+    },
+    "services": {
+      "evaluations": 4,
+      "avg_part_a_pct": 96.9,
+      "avg_part_b_points": 200.8
+    },
+    "sla": {
+      "evaluations": 4,
+      "avg_part_a_pct": 65.6,
+      "avg_part_b_points": 252.1
+    },
+    "supply": {
+      "evaluations": 4,
+      "avg_part_a_pct": 89.6,
+      "avg_part_b_points": 124.6
+    }
+  },
+  "data_issues": []
+}

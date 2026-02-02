@@ -1,0 +1,943 @@
+{
+  "meta": {
+    "contract": "sla",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T18:50:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "Unlimited Licensee Liability",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Liability for Breach",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party's liability for any breach of this Agreement shall be limited to direct damages and capped as set forth in Section 10.2. Neither Party shall be liable for indirect, incidental, or consequential damages, except in cases of gross negligence, willful misconduct, or breach of confidentiality or data security obligations.",
+        "effective_rationale_excerpt": "Licensee is exposed to unlimited liability for any breach, including indirect damages, which is highly risky and non-market.",
+        "judge_reasoning": "Starliner fully detected the unlimited liability issue and proposed replacing it with mutual, capped liability. The risk_table classifies it favorably (tick) but detailed_reasoning correctly identifies it as 'highly risky and non-market'. The proposed_redline implements mutuality and caps."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "8.3",
+      "tier": "T1",
+      "issue": "Full AS-IS Disclaimer",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Disclaimer of Warranties",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE SOFTWARE IS PROVIDED 'AS IS' AND LICENSOR DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED... EXCEPT TO THE EXTENT THAT SUCH DISCLAIMERS ARE PROHIBITED BY APPLICABLE LAW OR INCONSISTENT WITH THE EXPRESS WARRANTIES PROVIDED HEREIN.",
+        "effective_rationale_excerpt": "Broad 'as is' disclaimer undermines the limited warranty and could negate Licensee's remedies for non-performance.",
+        "judge_reasoning": "Starliner detected the AS-IS disclaimer and proposed carving out express warranties and statutory rights. This directly addresses the GT concern about overriding statutory protections."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Consequential Damages Exclusion - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES... EXCEPT FOR DAMAGES ARISING FROM GROSS NEGLIGENCE, WILLFUL MISCONDUCT, BREACH OF CONFIDENTIALITY, OR DATA SECURITY OBLIGATIONS.",
+        "effective_rationale_excerpt": "Licensor excludes all indirect, incidental, and consequential damages, even for its own breaches, which could leave Licensee uncompensated for significant losses.",
+        "judge_reasoning": "Starliner correctly identified the one-sided exclusion and proposed making it mutual with carve-outs for gross negligence, misconduct, confidentiality, and data security. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Low Liability Cap - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "IN NO EVENT SHALL EITHER PARTY'S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT EXCEED THE AMOUNT OF SUBSCRIPTION FEES PAID BY LICENSEE TO LICENSOR IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM; PROVIDED, HOWEVER, THAT THIS LIMITATION SHALL NOT APPLY TO LIABILITY FOR INDEMNIFICATION, BREACH OF CONFIDENTIALITY, DATA SECURITY OBLIGATIONS, OR INTELLECTUAL PROPERTY INFRINGEMENT, FOR WHICH THE CAP SHALL BE TWO TIMES (2X) SUCH FEES.",
+        "effective_rationale_excerpt": "Licensor's liability is capped at 12 months' fees, which may be inadequate for serious breaches (e.g., data loss, IP infringement).",
+        "judge_reasoning": "Starliner detected the one-sided cap and proposed making it mutual with a 2X supercap for critical categories. This addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "12.4",
+      "tier": "T1",
+      "issue": "Asymmetric Assignment",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Assignment",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Party may assign this Agreement without the prior written consent of the other Party, except that either Party may assign this Agreement without consent to an Affiliate or in connection with a merger, acquisition, or sale of all or substantially all of its assets, provided the assignee agrees in writing to be bound by this Agreement.",
+        "effective_rationale_excerpt": "Licensee cannot assign without consent, but Licensor can assign freely, creating imbalance and risk in M&A or restructuring scenarios.",
+        "judge_reasoning": "Starliner identified the asymmetric assignment and proposed mutual consent with M&A and affiliate exceptions. This directly addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "9.1 / 9.2",
+      "tier": "T1",
+      "issue": "Narrow Indemnification - No Licensee Protection Defined",
+      "detection": "P",
+      "detection_points": 4.0,
+      "match_strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10.0,
+      "matched_redline_id": "Risk table at 9.1",
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Licensor indemnifies Licensee for third-party IP infringement, which is essential protection.",
+        "judge_reasoning": "Starliner's risk_table notes the indemnification clause but classifies it as favorable without flagging the narrow scope or missing defense procedures. No proposed_redline expands the indemnification. Partial detection because the clause is acknowledged but not comprehensively addressed."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Data Security",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall implement and maintain administrative, technical, and physical safeguards designed to protect the security, confidentiality, and integrity of Licensee Data, consistent with industry standards such as SOC 2 or ISO 27001. Licensor shall promptly notify Licensee of any data breach affecting Licensee Data and shall allow Licensee to audit compliance with these standards upon reasonable notice.",
+        "effective_rationale_excerpt": "'Reasonable safeguards' is vague and lacks reference to industry standards (e.g., SOC 2, ISO 27001). No audit or breach notification rights for Licensee.",
+        "judge_reasoning": "Starliner comprehensively addressed the vague security by specifying SOC 2/ISO 27001 standards, adding breach notification, and audit rights. This addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "11.4",
+      "tier": "T1",
+      "issue": "No Data Export on Termination",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Effect of Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall provide Licensee with a complete export of Licensee Data in a commonly used format and, upon request, provide reasonable transition assistance for up to thirty (30) days at Licensee's standard rates.",
+        "effective_rationale_excerpt": "Obligations on return/destruction of Confidential Information are present, but no mention of data export, transition assistance, or post-termination access to Licensee Data.",
+        "judge_reasoning": "Starliner fully addressed the data export gap by proposing 30-day transition assistance, data export in common format. This addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "2.1",
+      "tier": "T2",
+      "issue": "Non-Transferable License",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-License Grant",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor hereby grants to Licensee a non-exclusive, transferable, and sublicensable right to access and use the Software during the Subscription Term for Licensee's and its Affiliates' internal business purposes, including use by third-party contractors and service providers acting on Licensee's behalf, provided such use is in accordance with this Agreement.",
+        "effective_rationale_excerpt": "The scope of the license is limited to non-exclusive, non-transferable, non-sublicensable use for internal business purposes. This restricts Licensee's flexibility (e.g., in corporate restructuring or outsourcing) and lacks clarity on permitted use cases (e.g., affiliates, third-party service providers).",
+        "judge_reasoning": "Starliner detected the restrictive license and proposed making it transferable, sublicensable, with affiliate and contractor rights. This fully addresses the GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.1",
+      "tier": "T3",
+      "issue": "Annual Advance Payment",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The annual advance payment at 3.1 is not present in Starliner's risk_table or proposed_redlines. The clause is not analyzed or addressed."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Late Fees",
+      "evidence": {
+        "proposed_revision_excerpt": "Any amounts not paid when due shall bear interest at the rate of one-half percent (0.5%) per month, or the maximum rate permitted by applicable law, whichever is less. No late fees shall accrue unless payment remains outstanding for more than ten (10) days after written notice of non-payment.",
+        "effective_rationale_excerpt": "The 1.5% monthly interest rate on late payments is high and may be considered punitive. There is no grace period or notice requirement before late fees accrue.",
+        "judge_reasoning": "Starliner detected the high late fee and proposed reducing to 0.5% with 10-day grace period and notice requirement. This addresses both GT key elements excellently."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Weak Uptime SLA",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12.0,
+      "matched_redline_id": "Redline-Service Availability",
+      "evidence": {
+        "proposed_revision_excerpt": "If Licensor fails to meet this service level in any given month, Licensee shall be entitled to service credits or refunds, as specified in an attached Service Level Addendum.",
+        "effective_rationale_excerpt": "The 99.5% uptime commitment is positive, but 'commercially reasonable efforts' is vague and there are no defined remedies for failure to meet SLAs (e.g., service credits).",
+        "judge_reasoning": "Starliner detected the weak SLA and proposed adding service credits/refunds. However, the redline defers to an unattached addendum rather than specifying credits directly, so quality is good but not excellent."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "Limited Support Hours",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12.0,
+      "matched_redline_id": "Redline-Support",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall provide technical support to Licensee during normal business hours... and shall offer extended or 24/7 support options upon request at mutually agreed rates. Licensor shall use commercially reasonable efforts to respond to support requests within four (4) business hours, with escalation procedures and response times based on the severity of the issue, as detailed in the Support Addendum.",
+        "effective_rationale_excerpt": "Support hours are limited to Pacific Time business hours, which may not align with Licensee's needs. No escalation procedures or severity-based response times are defined.",
+        "judge_reasoning": "Starliner addressed support with 24/7 option and severity-based escalation, though defers specifics to an addendum. Good direction but quality could be higher with specifics in the clause."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Feedback Ownership",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Feedback Ownership",
+      "evidence": {
+        "proposed_revision_excerpt": "If Licensee provides any suggestions, ideas, or feedback regarding the Software ('Feedback'), Licensor may use such Feedback solely to improve the Software, provided such Feedback does not contain Licensee's Confidential Information or proprietary technology. Licensee retains all rights in its Confidential Information and proprietary technology.",
+        "effective_rationale_excerpt": "Licensor claims all rights to Licensee's feedback without compensation or restriction, which could include Licensee's proprietary suggestions.",
+        "judge_reasoning": "Starliner detected the overbroad feedback ownership and converted to limited use rights with protection for confidential information and proprietary technology. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "11.1",
+      "tier": "T2",
+      "issue": "Auto-Renewal Terms",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-Term and Renewal",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall provide Licensee with written notice of any changes to renewal pricing at least ninety (90) days prior to renewal, and notice may be provided by email.",
+        "effective_rationale_excerpt": "Automatic renewal with 60-day notice is standard, but may be burdensome for Licensee. No mention of renewal pricing or notice method.",
+        "judge_reasoning": "Starliner addressed auto-renewal by adding 90-day pricing notice and email notice option. Does not add convenience termination or price caps but improves transparency."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "2.3",
+      "tier": "T2",
+      "issue": "Usage Restrictions Overbroad",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Usage Restrictions",
+      "evidence": {
+        "proposed_revision_excerpt": "(b) reverse engineer, disassemble, or decompile the Software, except to the extent permitted by law for purposes of interoperability or security testing; (c) rent, lease, lend, sell, sublicense, or transfer the Software to any third party, except as otherwise permitted in this Agreement; (d) use the Software for the benefit of any third party, except as permitted for Licensee's Affiliates and authorized service providers...",
+        "effective_rationale_excerpt": "The restrictions are broad and absolute, prohibiting any reverse engineering, modification, or third-party benefit. This is standard, but fails to allow for necessary exceptions (e.g., security testing, regulatory compliance).",
+        "judge_reasoning": "Starliner detected the overbroad restrictions and proposed carve-outs for interoperability, security testing, affiliates, and service providers. This fully addresses the GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "DPA Optional / No Timing",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Data Processing",
+      "evidence": {
+        "proposed_revision_excerpt": "the Parties shall execute a separate Data Processing Agreement ('DPA') prior to any such processing, which shall include provisions on cross-border data transfers and require Licensor to disclose all sub-processors and obtain Licensee's consent for any changes.",
+        "effective_rationale_excerpt": "Data Processing Agreement is required but not attached or referenced with specifics. No mention of cross-border data transfers or sub-processors.",
+        "judge_reasoning": "Starliner detected the DPA timing issue and proposed requiring DPA execution prior to processing with sub-processor disclosure and cross-border transfer provisions. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "8.2",
+      "tier": "T2",
+      "issue": "Performance Warranty Weak",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Performance Warranty",
+      "evidence": {
+        "proposed_revision_excerpt": "If Licensor fails to correct any material non-conformity within thirty (30) days of notice, Licensee may receive service credits or terminate this Agreement and receive a pro-rata refund of prepaid fees.",
+        "effective_rationale_excerpt": "Warranty is limited to 'commercially reasonable efforts' to correct issues; no clear timeline, escalation, or refund right if unresolved.",
+        "judge_reasoning": "Starliner addressed the weak warranty by adding 30-day cure period, service credits, and termination with refund for persistent failures. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "12.10",
+      "tier": "T2",
+      "issue": "Survival Incomplete",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Survival",
+      "evidence": {
+        "proposed_revision_excerpt": "The provisions of Articles 5, 6, 7, 8, 9, 10, 11.4, and 12, and any other provisions that by their nature should survive, including those relating to data export, transition assistance, and accrued rights, shall survive any termination or expiration of this Agreement.",
+        "effective_rationale_excerpt": "Only certain provisions survive termination; may omit important sections (e.g., data export, transition assistance, accrued rights).",
+        "judge_reasoning": "Starliner identified the incomplete survival and proposed adding Article 5 (data), 11.4 (termination effects), data export, transition assistance, and accrued rights. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Audit Rights",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Audit Rights",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee shall have the right, upon reasonable notice and during normal business hours, to audit Licensor's compliance with its obligations under this Agreement, including data security, privacy, and service level commitments. Licensor shall cooperate fully with any such audit and promptly address any deficiencies identified.",
+        "effective_rationale_excerpt": "No right for Licensee to audit Licensor's compliance with security, privacy, or performance obligations, limiting oversight and risk management.",
+        "judge_reasoning": "Starliner identified the absence of audit rights and proposed a comprehensive audit clause covering security, privacy, and SLA compliance with cooperation and remediation requirements."
+      }
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Business Continuity",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12.0,
+      "matched_redline_id": "Redline-Business Continuity/Disaster Recovery",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall maintain and regularly test appropriate business continuity and disaster recovery plans designed to ensure the ongoing availability and integrity of the Software and Licensee Data. Upon request, Licensor shall provide Licensee with a summary of such plans and evidence of testing.",
+        "effective_rationale_excerpt": "No provision requires Licensor to maintain business continuity or disaster recovery plans. This exposes Licensee to risk of service interruption or data loss.",
+        "judge_reasoning": "Starliner identified the absence of BC/DR and proposed a new clause requiring plans and testing. However, lacks specific RTO/RPO requirements so quality is good but not excellent."
+      }
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Force Majeure",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Force Majeure",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Party shall be liable for any failure or delay in performance under this Agreement (other than payment obligations) to the extent caused by circumstances beyond its reasonable control, including acts of God, natural disasters, war, terrorism, labor disputes, or governmental actions. The affected Party shall promptly notify the other Party and use reasonable efforts to mitigate the impact.",
+        "effective_rationale_excerpt": "No force majeure clause is present, leaving both parties exposed to liability for events outside their control.",
+        "judge_reasoning": "Starliner identified the absence of force majeure and proposed a comprehensive clause with defined events, payment carve-out, notice, and mitigation requirements."
+      }
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Vendor Insurance Requirements",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No vendor insurance requirements are proposed or identified as missing. This gap is not flagged in Starliner's output."
+      }
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "6.3",
+      "tier": "T3",
+      "issue": "Aggregated Data Use",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Aggregated Data Use",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor may collect and analyse aggregated, anonymised data derived from Licensee's use of the Software for purposes of improving the Software and Licensor's other products and services, provided that such data is subject to strict anonymization standards and cannot be re-identified to Licensee or any individual.",
+        "effective_rationale_excerpt": "Use of aggregated, anonymized data is permitted, but lacks safeguards to ensure true anonymization and prevent re-identification.",
+        "judge_reasoning": "Starliner detected the aggregated data issue and proposed strict anonymization standards and re-identification prohibition. This addresses the GT key element."
+      }
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "12.2",
+      "tier": "T3",
+      "issue": "Arbitration Required",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": "Redline-Dispute Resolution",
+      "evidence": {
+        "proposed_revision_excerpt": "The arbitration shall be conducted in a location mutually agreed by the Parties, or, at Licensee's option, remotely by video conference.",
+        "effective_rationale_excerpt": "Mandates binding arbitration in San Francisco, which may be inconvenient and costly for Licensee, especially if not California-based.",
+        "judge_reasoning": "Starliner addressed the arbitration venue by allowing Licensee to select venue or remote proceedings. Does not add negotiation/mediation step but improves flexibility."
+      }
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "4.3",
+      "tier": "T3",
+      "issue": "Short Maintenance Notice",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The maintenance notice period at 4.3 is not present in Starliner's risk_table or proposed_redlines. The clause is not analyzed or addressed."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.1",
+      "issue_summary": "License Grant",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow use b",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The scope of the license is limited to non-exclusive, non-transferable, non-sublicensable use for internal business purposes. This restricts Licensee’s flexibility (e.g., in corporate restructuring or"
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Service Availability",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify rem",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 99.5% uptime commitment is positive, but “commercially reasonable efforts” is vague and there are no defined remedies for failure to meet SLAs (e.g., service credits)."
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Support",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include esc",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Support hours are limited to Pacific Time business hours, which may not align with Licensee’s needs. No escalation procedures or severity-based response times are defined."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Data Security",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to reference s",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Reasonable safeguards” is vague and lacks reference to industry standards (e.g., SOC 2, ISO 27001). No audit or breach notification rights for Licensee."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Data Processing",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require DPA",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Data Processing Agreement is required but not attached or referenced with specifics. No mention of cross-border data transfers or sub-processors."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Aggregated Data Use",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include str",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Use of aggregated, anonymized data is permitted, but lacks safeguards to ensure true anonymization and prevent re-identification."
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Performance Warranty",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define time",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Warranty is limited to “commercially reasonable efforts” to correct issues; no clear timeline, escalation, or refund right if unresolved."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Term and Renewal",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require adv",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Automatic renewal with 60-day notice is standard, but may be burdensome for Licensee. No mention of renewal pricing or notice method."
+    },
+    {
+      "clause": "11.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require dat",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Obligations on return/destruction of Confidential Information are present, but no mention of data export, transition assistance, or post-termination access to Licensee Data."
+    },
+    {
+      "clause": "12.10",
+      "issue_summary": "Survival",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to ensure all ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Only certain provisions survive termination; may omit important sections (e.g., data export, transition assistance, accrued rights)."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Business Continuity/Disaster Recovery",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause requiring",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No provision requires Licensor to maintain business continuity or disaster recovery plans. This exposes Licensee to risk of service interruption or data loss."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Audit Rights",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause granting ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No right for Licensee to audit Licensor’s compliance with security, privacy, or performance obligations, limiting oversight and risk management."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "🆕",
+      "leah_action": "ADD standard force m",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No force majeure clause is present, leaving both parties exposed to liability for events outside their control."
+    },
+    {
+      "clause": "License Grant",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause restricts Licensee’s flexibility by prohibiting transfers, sublicensing, and use by affiliates or third-party service providers. Expanding the license scope enables Licensee to ada"
+    },
+    {
+      "clause": "Usage Restrictions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original restrictions are overly broad and may prevent Licensee from conducting necessary security or interoperability testing. This amendment introduces exceptions for legally permitted activitie"
+    },
+    {
+      "clause": "Late Fees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original late fee is excessive and lacks a grace period, exposing Licensee to punitive charges for minor delays. Reducing the rate and adding a notice/grace period ensures fairness and prevents di"
+    },
+    {
+      "clause": "Service Availability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks remedies for SLA failure, making the uptime commitment unenforceable. Adding service credits or refunds creates real accountability for Licensor and tangible recourse for Lic"
+    },
+    {
+      "clause": "Support",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original support clause is limited in hours and lacks escalation or severity-based response times, which may not meet Licensee’s operational needs. This amendment introduces flexibility for extend"
+    },
+    {
+      "clause": "Data Security",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause’s “reasonable safeguards” language is vague and lacks enforceable standards or audit/breach notification rights. Referencing recognized standards and adding audit/breach notificati"
+    },
+    {
+      "clause": "Data Processing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause is vague on timing and scope of the DPA and omits important elements like sub-processor disclosure and cross-border transfers. This amendment closes those gaps, ensuring Licensee’s"
+    },
+    {
+      "clause": "Feedback Ownership",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause gives Licensor broad ownership of all feedback, including potentially proprietary content. The amendment limits Licensor’s rights to non-confidential, non-proprietary feedback, pro"
+    },
+    {
+      "clause": "Aggregated Data Use",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks enforceable anonymization standards and does not prohibit re-identification. The amendment introduces stricter requirements, reducing the risk of data misuse or privacy viola"
+    },
+    {
+      "clause": "Liability for Breach",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause exposes Licensee to unlimited liability, including for indirect damages, which is commercially unreasonable and highly risky. The amendment introduces mutuality, caps liability, an"
+    },
+    {
+      "clause": "Performance Warranty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original remedy is limited to “commercially reasonable efforts” with no timeline or refund right, leaving Licensee with little recourse. The amendment defines a cure period and provides for servic"
+    },
+    {
+      "clause": "Disclaimer of Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original disclaimer is overly broad and could negate express warranties or statutory rights. The amendment carves out express and non-waivable statutory warranties, ensuring Licensee retains criti"
+    },
+    {
+      "clause": "Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause unreasonably excludes all consequential damages even for serious breaches. The amendment introduces mutuality and exceptions for egregious conduct, confidentiality, and data breach"
+    },
+    {
+      "clause": "Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original cap is low and one-sided, failing to account for high-impact claims. The amendment raises the cap for critical categories and ensures mutuality, providing Licensee with greater financial "
+    },
+    {
+      "clause": "Term and Renewal",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause could result in unanticipated price increases at renewal and lacks clarity on notice methods. The amendment requires advance notice of pricing and allows for email notice, giving L"
+    },
+    {
+      "clause": "Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause omits data export and transition assistance, risking business continuity for Licensee. The amendment ensures Licensee can retrieve its data and obtain support for migration, reduci"
+    },
+    {
+      "clause": "Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause mandates arbitration in San Francisco, which may be inconvenient and costly for Licensee. Allowing Licensee to select venue or remote proceedings increases fairness and accessibili"
+    },
+    {
+      "clause": "Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause is unbalanced, restricting Licensee but not Licensor. The amendment creates mutuality and allows assignment in standard corporate transactions, supporting Licensee’s business flexi"
+    },
+    {
+      "clause": "Survival",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause omits survival of key obligations such as data export and accrued rights. The amendment ensures all essential provisions remain enforceable post-termination, protecting Licensee’s "
+    },
+    {
+      "clause": "Business Continuity/Disaster Recovery",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.1 (Data Security). The contract lacks any requirement for Licensor to maintain business continuity or disaster recovery plans, exposing Licensee to risk of prolonged "
+    },
+    {
+      "clause": "Audit Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.1 (Data Security). Without audit rights, Licensee cannot verify Licensor’s compliance with critical obligations, increasing risk of undetected breaches or non-complia"
+    },
+    {
+      "clause": "Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 12.9 (Counterparts). The absence of a force majeure clause exposes both parties to liability for events outside their control. This clause provides standard protection,"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 22,
+      "P": 1,
+      "N": 0,
+      "NMI": 3
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 7,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 12,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 3
+      }
+    },
+    "t1_all_detected": true,
+    "t1_count": 8,
+    "total_detection_points": 119.0,
+    "total_quality_points": 192,
+    "total_points": 311.0,
+    "additional_issues_count": 35
+  }
+}

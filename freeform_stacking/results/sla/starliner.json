@@ -1,0 +1,639 @@
+{
+  "meta": {
+    "contract": "sla",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T23:30:00.000Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "1.0",
+    "part_b_gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "SLA_01",
+      "clause_ref": "9.1",
+      "cp_redline_description": "CP changed IP-specific Licensor indemnification to generic mutual indemnification",
+      "expected_action": "REJECT",
+      "leah_action": null,
+      "action_score": 0,
+      "revision_score": 0,
+      "reasoning_score": 0,
+      "total_points": 0,
+      "critical_failure": "REJECT_AS_ACCEPT",
+      "evidence": {
+        "leah_response_excerpt": "Leah's proposed indemnification redline: 'Each party shall indemnify, defend, and hold harmless the other party from and against any third-party claims arising from such party's breach of this Agreement, gross negligence, or willful misconduct. Licensor shall additionally indemnify Licensee for any third-party claims alleging the Software infringes any intellectual property rights.'",
+        "judge_reasoning": "CRITICAL FAILURE: The GT requires rejection of the CP redline that waters down IP-specific Licensor indemnification to generic mutual indemnity. Leah's cp_redline_responses array does not contain a response to section 9.1 (only 11.2 is present). Leah's whole-document analysis at 9.1 proposes 'mutual indemnity for breach, gross negligence' which actually aligns with what the CP redline was trying to achieve, rather than rejecting it. The key protection (IP-specific indemnification FROM Licensor TO Licensee) is preserved in Leah's proposal, but Leah failed to explicitly identify and reject the CP redline. No CP-specific response was generated."
+      }
+    },
+    {
+      "gt_id": "SLA_02",
+      "clause_ref": "10.2",
+      "cp_redline_description": "CP changed liability cap from 12-month fees to fixed $50,000",
+      "expected_action": "REJECT",
+      "leah_action": null,
+      "action_score": 0,
+      "revision_score": 0,
+      "reasoning_score": 0,
+      "total_points": 0,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Leah's risk_table entry at 10.2: 'Licensor's liability is capped at 12 months' fees, which may be insufficient for serious breaches.' Leah's proposed redline: 'IN NO EVENT SHALL EITHER PARTY'S TOTAL LIABILITY... EXCEED THE GREATER OF (A) THE AMOUNT OF SUBSCRIPTION FEES PAID BY LICENSEE TO LICENSOR IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM OR (B) $500,000.'",
+        "judge_reasoning": "Leah did not identify or respond to the CP redline at section 10.2. The cp_redline_responses array only contains an entry for 11.2. Leah's whole-document analysis flags the existing 12-month cap as potentially insufficient but proposes enhancing it (not reverting from a $50K fixed cap). This suggests Leah reviewed the baseline contract text, not the CP-redlined version. No explicit CP redline response was generated for this section. Score 0 for missing CP redline response."
+      }
+    },
+    {
+      "gt_id": "SLA_03",
+      "clause_ref": "11.2",
+      "cp_redline_description": "CP created asymmetric termination: Licensor immediate termination, Licensee 60-day cure",
+      "expected_action": "REJECT",
+      "leah_action": "AMEND",
+      "action_score": 1,
+      "revision_score": 1,
+      "reasoning_score": 1,
+      "total_points": 3,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "cp_redline_responses entry: clause_ref 11.2, classification 'Unfavorable', detailed_reasoning: 'As per existing redline, Licensee's right to terminate is limited and cure period is longer for Licensor. This is one-sided and reduces Licensee's leverage.' recommended_action: 'Amend to provide mutual, equal cure periods and termination rights.'",
+        "judge_reasoning": "Leah identified the CP redline at 11.2 and correctly classified it as Unfavorable due to asymmetry. However, the expected action is REJECT (revert to baseline symmetric 30-day cure) but Leah recommended AMEND. Action score 1/2 (recognised issue but wrong action). Leah's proposed termination clause revision proposes mutual 30-day cure periods which would achieve the same outcome as rejection, so revision score 1/2. Reasoning correctly identifies asymmetry and Licensee disadvantage but doesn't explicitly state reversion is required, score 1/2."
+      }
+    },
+    {
+      "gt_id": "SLA_04",
+      "clause_ref": "12.4",
+      "cp_redline_description": "CP blocks Licensee M&A assignments and makes violation a material breach",
+      "expected_action": "REJECT",
+      "leah_action": null,
+      "action_score": 0,
+      "revision_score": 0,
+      "reasoning_score": 0,
+      "total_points": 0,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Leah's risk_table entry at 12.4: 'Licensee cannot assign without Licensor's consent, but Licensor can assign freely. This is unbalanced and restricts Licensee's business flexibility.' Leah's proposed redline: 'Neither party may assign this Agreement without the prior written consent of the other party, except that either party may assign this Agreement to an Affiliate or in connection with a merger, acquisition, or sale of substantially all of its assets, with written notice to the other party.'",
+        "judge_reasoning": "Leah did not identify or respond to the CP redline at section 12.4. The cp_redline_responses array only contains 11.2. Leah's whole-document analysis correctly identifies assignment asymmetry and proposes a fix that would address the GT concern (M&A carve-out), but this is baseline analysis, not CP redline response. Leah did not detect that the CP specifically blocked M&A assignments with material breach consequences. Score 0 for missing CP redline response."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 3,
+    "max_score": 24,
+    "percentage": 12.5,
+    "critical_failures": 1,
+    "pass_fail": "FAIL",
+    "notes": "Only 1 of 4 CP redlines was explicitly addressed (11.2). Critical failure on SLA_01 where the GT-required REJECT action was not taken. The cp_redlines_count in meta shows only 1 CP redline was identified by Leah."
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "Unlimited Licensee Liability",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "14fb5b64-c4d4-4c3e-a207-5390b7e3d6f1",
+      "evidence": {
+        "proposed_revision_excerpt": "Each party's liability for any breach of this Agreement shall be limited to direct damages and capped as set forth in Section 10.2. Neither party shall be liable for indirect, special, or consequential damages except in cases of gross negligence, willful misconduct, or breach of confidentiality or intellectual property obligations.",
+        "effective_rationale_excerpt": "This amendment ensures mutuality and caps Licensee's liability, aligning with market standards and reducing excessive exposure for Licensee.",
+        "judge_reasoning": "Leah's risk_table at 8.1 classifies this as Unfavorable with reasoning: 'Licensee faces unlimited liability for all direct and indirect damages, while Licensor's liability is capped. This is highly one-sided and exposes Licensee to excessive risk.' The proposed redline directly addresses the GT issue by capping Licensee liability and making it mutual. All key elements addressed: removes unlimited liability, adds mutual cap, excludes indirect damages. Excellent quality."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "8.3",
+      "tier": "T1",
+      "issue": "Full AS-IS Disclaimer",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "762186e8-cb99-4474-ac7f-dd216ed9dfde",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE SOFTWARE IS PROVIDED \"AS IS\" AND LICENSOR DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR UNINTERRUPTED. Notwithstanding the foregoing, Licensor warrants that the Software does not infringe any third party intellectual property rights and complies with all applicable laws.",
+        "effective_rationale_excerpt": "Retaining non-infringement and legal compliance warranties ensures Licensee is protected from third-party claims and regulatory risks, while still allowing Licensor to limit other implied warranties.",
+        "judge_reasoning": "Leah's risk_table at 8.3 classifies as Requires Clarification: 'Licensor disclaims all implied warranties, but Licensee needs minimum assurances beyond performance warranty (e.g., non-infringement, compliance with law).' Proposed revision retains non-infringement warranty which is key. However, GT expects retention of merchantability and fitness warranties too, which Leah still disclaims. Amendment score 2 - addresses core IP/compliance concerns but doesn't fully restore basic warranties. Rationale 2 - identifies need for assurances but doesn't cite statutory protection override risk."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Consequential Damages Exclusion - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 16,
+      "matched_redline_id": "f4681e34-583d-49e4-a949-4bb13e0fb68f",
+      "evidence": {
+        "proposed_revision_excerpt": "IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, EXCEPT FOR DAMAGES ARISING FROM BREACH OF CONFIDENTIALITY, DATA SECURITY OBLIGATIONS, OR INDEMNITY OBLIGATIONS.",
+        "effective_rationale_excerpt": "This revision carves out key areas (confidentiality, data security, indemnity) where indirect damages may be appropriate, ensuring Licensee is not left without recourse for significant harm.",
+        "judge_reasoning": "Leah's risk_table at 10.1 classifies as Unfavorable: 'Excludes all indirect, incidental, special, consequential, and punitive damages, even for data loss or confidentiality breaches, which may not be acceptable to Licensee.' The proposed redline makes it MUTUAL (key GT requirement) and adds appropriate carve-outs. Amendment score 3 - fully addresses the one-sided protection issue. Rationale score 2 - good but doesn't explicitly state the original is one-sided (Licensor only)."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Low Liability Cap - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 16,
+      "matched_redline_id": "8986980f-e261-4137-a716-c8e6b6f98780",
+      "evidence": {
+        "proposed_revision_excerpt": "IN NO EVENT SHALL EITHER PARTY'S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT EXCEED THE GREATER OF (A) THE AMOUNT OF SUBSCRIPTION FEES PAID BY LICENSEE TO LICENSOR IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM OR (B) $500,000. THE FOREGOING CAP SHALL NOT APPLY TO LIABILITY ARISING FROM BREACH OF CONFIDENTIALITY, DATA SECURITY, OR INDEMNITY OBLIGATIONS.",
+        "effective_rationale_excerpt": "Raising the cap and adding carve-outs for confidentiality, data security, and indemnity better protects Licensee from catastrophic losses and aligns with standard risk allocation.",
+        "judge_reasoning": "Leah's risk_table at 10.2 classifies as Unfavorable: 'Licensor's liability is capped at 12 months' fees, which may be insufficient for serious breaches.' The proposed redline makes it mutual (key GT requirement), adds a floor of $500K, and adds carve-outs for IP/data breach. Amendment score 3 - excellent comprehensive fix. Rationale score 2 - identifies insufficiency but doesn't explicitly call out the one-sided nature (no cap on Licensee per 8.1)."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "12.4",
+      "tier": "T1",
+      "issue": "Asymmetric Assignment",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "396f2ec9-9f2b-41f8-a404-5be7daa86605",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither party may assign this Agreement without the prior written consent of the other party, except that either party may assign this Agreement to an Affiliate or in connection with a merger, acquisition, or sale of substantially all of its assets, with written notice to the other party.",
+        "effective_rationale_excerpt": "This amendment ensures balanced assignment rights and allows Licensee to restructure or sell its business without undue restriction, supporting business flexibility.",
+        "judge_reasoning": "Leah's risk_table at 12.4 classifies as Unfavorable: 'Licensee cannot assign without Licensor's consent, but Licensor can assign freely. This is unbalanced and restricts Licensee's business flexibility.' All GT key elements addressed: mutual consent requirement, M&A exception for Licensee, affiliate rights. Perfect identification and remediation."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "9.1 / 9.2",
+      "tier": "T1",
+      "issue": "Narrow Indemnification - No Licensee Protection Defined",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "516c65d3-bd0a-465c-907c-99323bbc6090",
+      "evidence": {
+        "proposed_revision_excerpt": "Each party shall indemnify, defend, and hold harmless the other party from and against any third-party claims arising from such party's breach of this Agreement, gross negligence, or willful misconduct. Licensor shall additionally indemnify Licensee for any third-party claims alleging the Software infringes any intellectual property rights.",
+        "effective_rationale_excerpt": "Adding mutuality and expanding indemnification to cover breach, gross negligence, and willful misconduct provides balanced protection and addresses a key Licensee risk.",
+        "judge_reasoning": "Leah's risk_table at 9.1 classifies as Requires Clarification: 'Indemnity is limited to IP infringement by Licensor. No mutuality, no process for handling claims, and Licensee's indemnity is not addressed.' The proposed redline adds mutual indemnification and preserves IP protection. However, GT notes 9.2 is [Reserved] meaning no Licensee indemnification is defined - Leah proposes adding it (correct direction). Amendment score 2 - good expansion but doesn't address data breach/negligence coverage explicitly mentioned in GT. Rationale score 2 - identifies gaps but doesn't flag that 9.2 is reserved/blank."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "7fa95cda-c84f-462b-87ed-0d64cc00930a",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall implement and maintain administrative, technical, and physical safeguards consistent with industry standards (such as ISO 27001 or SOC 2) to protect the security, confidentiality, and integrity of Licensee Data. Licensor shall provide Licensee with annual certifications and notice of any security incidents affecting Licensee Data.",
+        "effective_rationale_excerpt": "Referencing industry standards and requiring certifications and incident notification increases transparency and ensures robust data protection, aligning with Licensee's compliance obligations.",
+        "judge_reasoning": "Leah's risk_table at 5.1 classifies as Requires Clarification: '\"Reasonable safeguards\" is vague. No reference to industry standards (e.g., ISO 27001, SOC 2) or audit rights.' All GT key elements addressed: specific standards (ISO 27001, SOC 2), audit rights implied via certifications, breach notification requirements. Excellent comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "11.4",
+      "tier": "T1",
+      "issue": "No Data Export on Termination",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "3c95d3af-e0f1-4d64-9f58-fd6c30e20178",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon termination or expiration of this Agreement: (a) all rights and licenses granted to Licensee shall immediately terminate; (b) Licensee shall immediately cease all use of the Software; (c) each Party shall return or destroy all Confidential Information of the other Party in its possession; and (d) Licensor shall, upon Licensee's request, promptly return all Licensee Data in a usable format and certify deletion of all Licensee Data from its systems. Licensor shall provide reasonable transition assistance for up to sixty (60) days.",
+        "effective_rationale_excerpt": "Adding data return, certification of deletion, and transition assistance ensures Licensee can recover its data and maintain business continuity after termination, reducing operational risk.",
+        "judge_reasoning": "Leah's risk_table at 11.4 classifies as Requires Clarification: 'Requires return or destruction of Confidential Information, but lacks details on data return, transition assistance, or certification of deletion.' All GT key elements addressed: data export period (60 days), format specification (usable format), transition assistance. Perfect identification and remediation."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "2.1",
+      "tier": "T2",
+      "issue": "Non-Transferable License",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "16403dc0-2c75-42d3-b440-1fa79037fd77",
+      "evidence": {
+        "proposed_revision_excerpt": "Subject to the terms and conditions of this Agreement and payment of all applicable Subscription Fees, Licensor hereby grants to Licensee, and its Affiliates, a non-exclusive, non-transferable right to access and use the Software during the Subscription Term for Licensee's and its Affiliates' internal business purposes. Licensee may permit its service providers to use the Software solely for Licensee's benefit, subject to the terms of this Agreement.",
+        "effective_rationale_excerpt": "Expanding the license to include Affiliates and service providers increases operational flexibility for Licensee and aligns with common business structures.",
+        "judge_reasoning": "Leah's risk_table at 2.1 classifies as Requires Clarification: 'The license is non-exclusive, non-transferable, non-sublicensable, and limited to internal business purposes. Scope and permitted uses are restrictive.' The proposed redline adds affiliate rights and contractor exception, addressing both GT key elements. Amendment score 3 - comprehensive fix. Rationale score 2 - good but generic."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.1",
+      "tier": "T3",
+      "issue": "Annual Advance Payment",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No risk_table entry at 3.1. No proposed_redline addressing annual payment terms or requesting quarterly payment options. The GT issue about full year payment due upfront with no quarterly/monthly option was not identified by Leah."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "c10a3ebe-ee1e-4126-83f6-ce4cdb53066e",
+      "evidence": {
+        "proposed_revision_excerpt": "Any amounts not paid when due and not disputed in good faith shall bear interest at the lesser of one percent (1%) per month or the maximum rate permitted by applicable law, provided Licensor has given Licensee written notice of non-payment and a ten (10) day cure period.",
+        "effective_rationale_excerpt": "This amendment introduces a cure period and written notice before late fees apply, and lowers the interest rate to a more reasonable level. It also protects Licensee from penalties on disputed amounts, reducing financial exposure.",
+        "judge_reasoning": "Leah's risk_table at 3.3 classifies as Requires Clarification: 'Interest at 1.5% per month is high and could be deemed punitive. No cure period or notice before late fees apply.' All GT key elements addressed: reduces rate to 1%, adds cure period (10 days), adds grace period via notice requirement. Excellent comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Weak Uptime SLA",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "a9ec0761-ee83-41ce-967c-a25bf5170d5b",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall use commercially reasonable efforts to make the Software available 99.5% of the time during each calendar month, excluding scheduled maintenance windows and force majeure events as defined herein. In the event Licensor fails to meet the availability commitment for two (2) consecutive months, Licensee shall be entitled to service credits or the right to terminate for cause.",
+        "effective_rationale_excerpt": "Defining force majeure and adding remedies for repeated SLA failures ensures Licensee has recourse if availability targets are not met, enhancing accountability and service reliability.",
+        "judge_reasoning": "Leah's risk_table at 4.1 classifies as Requires Clarification: '\"Commercially reasonable efforts\" and 99.5% uptime are positive, but exclusions for \"circumstances beyond Licensor's reasonable control\" are vague. No clear remedies for missed SLAs.' Amendment adds service credits (GT requirement) but only for 2 consecutive months failure. GT wants binding SLA and measurement methodology - Leah's fix partially addresses this. Amendment score 2 - addresses credits but doesn't make 99.5% binding."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "Limited Support Hours",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12,
+      "matched_redline_id": "2a16c5b8-8841-494d-9d4c-3fdc321b4b18",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall provide technical support to Licensee 24 hours a day, 7 days a week for critical issues, with an escalation process and defined resolution timeframes. For non-critical issues, support shall be available during normal business hours (9:00 AM to 5:00 PM Pacific Time, Monday through Friday, excluding holidays).",
+        "effective_rationale_excerpt": "Expanding support for critical issues and adding escalation and resolution timeframes ensures Licensee receives timely assistance, reducing operational risk and potential downtime.",
+        "judge_reasoning": "Leah's risk_table at 4.2 classifies as Unfavorable: 'Support limited to business hours Pacific Time, which may not suit a global Licensee. No escalation process or guaranteed resolution times.' All GT key elements addressed: 24/7 emergency support, severity tiers implied, escalation process. Amendment score 3 - comprehensive fix. Rationale and redline quality score 2 - doesn't define specific severity tiers or resolution SLAs."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Feedback Ownership",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": "095231a0-88fc-406a-b382-545b03955986",
+      "evidence": {
+        "proposed_revision_excerpt": "If Licensee provides any suggestions, ideas, or feedback regarding the Software (\"Feedback\"), Licensor may use such Feedback, provided that Licensee retains ownership of its pre-existing intellectual property and any confidential information included in Feedback shall remain subject to the confidentiality obligations of this Agreement.",
+        "effective_rationale_excerpt": "This revision protects Licensee's IP and confidential information, preventing unintended transfer of proprietary rights while allowing Licensor to benefit from general feedback.",
+        "judge_reasoning": "Leah's risk_table at 6.2 classifies as Unfavorable: 'All feedback is owned by Licensor with no obligation to Licensee, even if it contains Licensee's IP or confidential information.' Amendment protects pre-existing IP and confidential information. GT suggests compensation for implemented features - not addressed. Amendment score 2 - good IP protection but doesn't address compensation element."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "11.1",
+      "tier": "T2",
+      "issue": "Auto-Renewal Terms",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No risk_table entry at 11.1. No proposed_redline addressing auto-renewal terms, the 60-day notice requirement, or termination for convenience. The GT issue about automatic 1-year renewals and lack of TfC was not identified by Leah. Leah does address 11.2 (termination for cause) and 11.4 (effect of termination) but misses 11.1 auto-renewal."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "2.3",
+      "tier": "T2",
+      "issue": "Usage Restrictions Overbroad",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "472e822d-531a-4075-bf56-bf2d1e39adb4",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee shall not, and shall not permit any third party to: (a) copy, modify, or create derivative works of the Software, except as expressly permitted herein; (b) reverse engineer, disassemble, or decompile the Software, except to the extent permitted by law; (c) rent, lease, lend, sell, sublicense, or transfer the Software to any third party, except to Affiliates or service providers acting on Licensee's behalf as permitted herein; (d) use the Software for the benefit of any unrelated third party; (e) remove or alter any proprietary notices on the Software; or (f) use the Software in violation of any applicable laws or regulations.",
+        "effective_rationale_excerpt": "The original clause is overly broad and could restrict legitimate business operations. Carving out exceptions for Affiliates and service providers and clarifying 'benefit of any third party' reduces Licensee's risk of accidental breach and supports business flexibility.",
+        "judge_reasoning": "Leah's risk_table at 2.3 classifies as Unfavorable: 'The restrictions are broad, including a prohibition on use \"for the benefit of any third party,\" which could hinder legitimate business activities.' Amendment adds exceptions for affiliates and service providers. GT also mentions backup, DR, security testing carve-outs - partially addressed via 'except to the extent permitted by law' for reverse engineering. Amendment score 2 - good but doesn't explicitly add backup/DR exceptions."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "DPA Optional / No Timing",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "8c125a3c-209b-493d-80c3-14506d114ea9",
+      "evidence": {
+        "proposed_revision_excerpt": "To the extent Licensor processes any personal data on behalf of Licensee, the Parties shall execute a mutually acceptable Data Processing Agreement, consistent with applicable data protection laws, prior to such processing. If the parties are unable to agree on a DPA within 30 days, Licensee may terminate this Agreement without penalty.",
+        "effective_rationale_excerpt": "This amendment ensures that personal data is not processed without proper safeguards and gives Licensee an exit right if a compliant DPA cannot be agreed, protecting regulatory compliance.",
+        "judge_reasoning": "Leah's risk_table at 5.3 classifies as Requires Clarification: 'Requires a separate DPA, but does not specify timing, standards, or what happens if parties can't agree.' All GT key elements addressed: timing requirement (prior to processing), exit right if no agreement, reference to applicable laws. Perfect identification and remediation."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "8.2",
+      "tier": "T2",
+      "issue": "Performance Warranty Weak",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No risk_table entry at 8.2. Leah addresses 8.1 (unlimited liability) and 8.3 (warranty disclaimer) but not 8.2 (performance warranty). The GT issue about exclusive remedy being only 'efforts to correct' with no workaround, refund, or termination right was not identified by Leah."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "12.10",
+      "tier": "T2",
+      "issue": "Survival Incomplete",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No risk_table entry at 12.10. No proposed_redline addressing survival clause. The GT issue about Article 5 (Data Security) not being included in survival list was not identified by Leah. Leah addresses other 12.x clauses (12.1, 12.2, 12.4) but misses 12.10."
+      }
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Audit Rights",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "8dafdbdf-3b74-4d2b-a497-55e8e529a6fb",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee shall have the right, upon reasonable notice and during normal business hours, to audit Licensor's compliance with its obligations under this Agreement, including data security and privacy requirements, no more than once per year.",
+        "effective_rationale_excerpt": "Placement: Insert after Section 5.1. This clause allows Licensee to verify Licensor's compliance with contractual and regulatory obligations, reducing risk of undetected breaches.",
+        "judge_reasoning": "Leah includes 'Audit Rights' in new_clauses_proposed: 'No provision allows Licensee to audit Licensor's compliance with data security or service obligations, creating risk for regulatory and operational compliance.' All GT key elements addressed: annual audit right, security and privacy compliance scope. Perfect identification and remediation."
+      }
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Business Continuity",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No new_clauses_proposed for Business Continuity. No risk_table entry flagging missing RTO/RPO or disaster recovery provisions. The GT issue about no BC/DR commitments was not identified by Leah. Leah does recommend Transition Assistance and Change Management but not BC/DR."
+      }
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Force Majeure",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": 1,
+      "quality_points": 3,
+      "total_points": 5.5,
+      "matched_redline_id": "a9ec0761-ee83-41ce-967c-a25bf5170d5b",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall use commercially reasonable efforts to make the Software available 99.5% of the time during each calendar month, excluding scheduled maintenance windows and force majeure events as defined herein.",
+        "effective_rationale_excerpt": "Defining force majeure and adding remedies for repeated SLA failures ensures Licensee has recourse if availability targets are not met.",
+        "judge_reasoning": "Leah references force majeure in the 4.1 Service Availability redline but does not propose a standalone force majeure clause as GT requires. The mention of 'force majeure events as defined herein' implies a definition should exist but Leah doesn't create one. Partial detection - issue recognized but no comprehensive FM clause proposed. No termination rights for extended FM as GT requires."
+      }
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Vendor Insurance Requirements",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No new_clauses_proposed for Insurance. No risk_table entry flagging missing CGL, Cyber, or E&O insurance requirements. The GT issue about no vendor insurance requirements was not identified by Leah."
+      }
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "6.3",
+      "tier": "T3",
+      "issue": "Aggregated Data Use",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "5af9c93d-2379-4771-accb-e0463ebc39d0",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor may collect and analyse aggregated, anonymised data derived from Licensee's use of the Software for purposes of improving the Software and Licensor's other products and services, provided that such data cannot reasonably be used to identify Licensee, its Affiliates, or any individual, and Licensee may audit compliance upon reasonable notice.",
+        "effective_rationale_excerpt": "This amendment clarifies the definition of anonymized data and introduces an audit right, reducing the risk of re-identification and misuse of Licensee's data.",
+        "judge_reasoning": "Leah's risk_table at 6.3 classifies as Requires Clarification: 'Allows Licensor to use aggregated/anonymized data, but lacks clear definition and auditability.' Amendment adds re-identification prohibition ('cannot reasonably be used to identify') and audit right. Perfect match to GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "12.2",
+      "tier": "T3",
+      "issue": "Arbitration Required",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": "e8d30df6-4ef2-4671-9768-b2117f362a3f",
+      "evidence": {
+        "proposed_revision_excerpt": "Any dispute arising out of or relating to this Agreement shall be resolved first through good faith negotiation, then mediation, and if unresolved, by binding arbitration administered by the American Arbitration Association. The arbitration shall be conducted in a mutually agreed location or, if not agreed, in Licensee's home jurisdiction.",
+        "effective_rationale_excerpt": "Introducing negotiation and mediation steps and allowing flexibility in venue reduces dispute costs and inconvenience for Licensee, while promoting amicable resolution.",
+        "judge_reasoning": "Leah's risk_table at 12.2 classifies as Requires Clarification: 'Mandatory binding arbitration in San Francisco may be costly and inconvenient for Licensee. No escalation or mediation step.' Amendment adds negotiation and mediation steps as GT suggests. Venue flexibility added. Amendment score 2 - good but arbitration still required (GT suggests considering alternatives)."
+      }
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "4.3",
+      "tier": "T3",
+      "issue": "Short Maintenance Notice",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No risk_table entry at 4.3. No proposed_redline addressing maintenance notice period. The GT issue about 48-hour notice being insufficient for major maintenance was not identified by Leah. Leah addresses 4.1 (availability) and 4.2 (support) but misses 4.3."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 18,
+      "P": 1,
+      "N": 0,
+      "NMI": 7
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 8,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 7,
+        "P": 1,
+        "N": 0,
+        "NMI": 4
+      },
+      "T3": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 3
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 8,
+    "t1_detected": 8,
+    "total_detection_points": 112.5,
+    "total_quality_points": 141,
+    "total_points": 253.5,
+    "weighted_max": 130,
+    "percentage": 86.5,
+    "pass_fail": "PASS",
+    "notes": "All 8 T1 issues detected. Strong performance on whole document analysis. 7 NMI items primarily T2 (4) and T3 (3) gaps: GT-10 (3.1 Annual Payment), GT-15 (11.1 Auto-renewal), GT-18 (8.2 Performance Warranty), GT-19 (12.10 Survival), GT-21 (BC/DR), GT-23 (Insurance), GT-26 (4.3 Maintenance Notice)."
+  },
+  "additional_issues": [],
+  "summary": {
+    "part_a": {
+      "total_score": 3,
+      "max_score": 24,
+      "percentage": 12.5,
+      "critical_failures": 1,
+      "pass_fail": "FAIL"
+    },
+    "part_b": {
+      "total_score": 253.5,
+      "weighted_max": 130,
+      "percentage": 86.5,
+      "t1_gate": "PASS",
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": false,
+      "reason": "Part A FAIL (12.5%, 1 critical failure - only 1/4 CP redlines addressed); Part B PASS (86.5%, all T1 detected)"
+    }
+  }
+}

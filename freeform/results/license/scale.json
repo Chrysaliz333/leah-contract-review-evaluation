@@ -1,0 +1,653 @@
+{
+  "meta": {
+    "contract": "license",
+    "model_id": "scale",
+    "evaluation_timestamp": "2026-01-25T18:10:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.2",
+      "tier": "T1",
+      "issue": "Improvements owned by Licensor - loses R&D investment",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-3.2 Improvements",
+      "evidence": {
+        "proposed_revision_excerpt": "Improvements to the Licensed IP developed by Licensee shall be owned by Licensee. Licensor shall receive a non-exclusive, royalty-free license to use such Licensee Improvements solely to the extent necessary to exercise its retained rights in the Licensed IP outside the Field of Use, if any.",
+        "effective_rationale_excerpt": "Assigning TechPro's improvements to Licensor is a severe disincentive and transfers valuable downstream innovations. This is highly one-sided and undermines TechPro's R&D and product roadmaps. Assign ownership to TechPro, with Licensor receiving a license back.",
+        "judge_reasoning": "Scale fully detected the improvements ownership issue and proposed reversing ownership to Licensee with a limited license-back to Licensor. This comprehensively addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Licensor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.2 Cap",
+      "evidence": {
+        "proposed_revision_excerpt": "Except for liability arising from (a) Licensor's willful misconduct or gross negligence, (b) breach of Licensor's confidentiality obligations, (c) Licensor's indemnification obligations for intellectual property infringement, and (d) bodily injury or death caused by a party's actions, neither party's aggregate liability shall exceed the royalties paid by Licensee to Licensor in the twelve (12) months preceding the claim.",
+        "effective_rationale_excerpt": "Highly restrictive cap that limits TechPro's recovery against Licensor for willful misconduct, gross negligence, IP infringement, or breach of representations. This shifts risk to TechPro. Exclude IP indemnities, willful misconduct, bodily injury, and breach of confidentiality from cap.",
+        "judge_reasoning": "Scale detected the inadequate liability cap and proposed comprehensive carve-outs for willful misconduct, confidentiality, IP indemnification, and bodily injury. However, the base cap amount wasn't increased, only partially addressing the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Mandatory minimum royalty regardless of sales",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-4.1 Minimum Annual Royalty (risk_table)",
+      "evidence": {
+        "proposed_revision_excerpt": "The hefty minimum with crediting only running royalties may create cashflow burdens if sales are low; no cap, no pro rata reduction, and no force majeure or change-of-control carveouts. Reduce or tier minimums, add hardship/force majeure relief, allow credit carryforward provisions, or negotiate milestone payments instead.",
+        "effective_rationale_excerpt": "The hefty minimum with crediting only running royalties may create cashflow burdens if sales are low; no cap, no pro rata reduction, and no force majeure or change-of-control carveouts.",
+        "judge_reasoning": "Scale detected the minimum royalty issue in the risk_table but no proposed_redline was provided in the redlines array. The detection is valid but incomplete without a specific amendment, warranting reduced quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.2",
+      "tier": "T1",
+      "issue": "AS-IS disclaimer with limited warranties",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 15.0,
+      "matched_redline_id": "Redline-9.2 Disclaimer (risk_table)",
+      "evidence": {
+        "proposed_revision_excerpt": "Broad disclaimer largely negates Licensor representations and shifts risk to TechPro for core IP quality and validity. This exposes TechPro to substantial legal and commercial risk. Limit disclaimers to exclude implied warranties only to the extent permitted by law; retain express warranties about ownership and non-infringement; carve out remedies for breach.",
+        "effective_rationale_excerpt": "Broad disclaimer largely negates Licensor representations and shifts risk to TechPro for core IP quality and validity.",
+        "judge_reasoning": "Scale detected the AS-IS disclaimer issue in risk_table but no proposed_redline was found in the redlines array. The detection is valid but incomplete without specific amendment language."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High royalty rate",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 4.5,
+      "matched_redline_id": "Redline-5.1 Running Royalty (risk_table)",
+      "evidence": {
+        "proposed_revision_excerpt": "Rate acceptable depending on margins; however, payment timing and audit mechanics may be improved, and Net Sales definition gaps could inflate payable amounts. Tie royalty to clarified Net Sales definition, add quarterly reconciliation and interest cure thresholds, and consider gross margin-based adjustments.",
+        "effective_rationale_excerpt": "Rate acceptable depending on margins; however, payment timing and audit mechanics may be improved.",
+        "judge_reasoning": "Scale noted the rate in risk_table but characterized it as 'acceptable depending on margins' rather than clearly flagging it as high. No specific rate reduction proposed. This is partial detection as the risk was noted but not fully addressed."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Sublicensing requires Licensor consent",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-2.2 Sublicensing",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee may grant sublicenses without Licensor's prior written consent to (a) its Affiliates, (b) contract manufacturers, and (c) distributors and resellers, provided Licensee provides Licensor prompt written notice. For any other sublicense, Licensee shall obtain Licensor's prior written consent, which shall not be unreasonably withheld or delayed and shall be provided or denied within thirty (30) days.",
+        "effective_rationale_excerpt": "The existing clause gives Licensor veto power over sublicenses, which could block necessary commercial relationships. This amendment carves out automatic sublicensing for Affiliates, manufacturers, and distribution channels with notice.",
+        "judge_reasoning": "Scale fully detected the sublicensing consent issue and proposed comprehensive fixes including automatic carve-outs for affiliates/manufacturers/distributors plus reasonableness standard and 30-day deadline for other sublicenses."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.1 Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES; PROVIDED THAT THIS LIMITATION SHALL NOT APPLY TO A PARTY'S BREACH OF CONFIDENTIALITY, INDEMNITY OBLIGATIONS, INFRINGEMENT OF THE OTHER PARTY'S INTELLECTUAL PROPERTY RIGHTS, OR WILLFUL MISCONDUCT.",
+        "effective_rationale_excerpt": "Standard clause but should exclude direct damages including IP infringement and bodily injury; carve-outs for breach of confidentiality and IP indemnities are missing. Carve out breaches of confidentiality, IP indemnities, and willful misconduct from the exclusion.",
+        "judge_reasoning": "Scale detected the consequential damages exclusion and proposed comprehensive carve-outs for confidentiality, indemnity, IP infringement, and willful misconduct. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No termination for convenience - 10-year lock-in",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Scale did not detect the missing termination for convenience right. No redline or risk_table entry addresses the 10-year lock-in with no exit option."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Non-refundable upfront fee",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 4.5,
+      "matched_redline_id": "Redline-5.2 Upfront Fee (risk_table)",
+      "evidence": {
+        "proposed_revision_excerpt": "Upfront fee is significant and non-refundable. No linkage to performance milestones or escrow for representations; increases TechPro's downside if IP has defects. Make a portion refundable on material breach of IP representations or hold in escrow until IP due diligence complete; add milestone-based rebates.",
+        "effective_rationale_excerpt": "Upfront fee is significant and non-refundable. No linkage to performance milestones or escrow for representations.",
+        "judge_reasoning": "Scale noted the non-refundable upfront fee issue in risk_table but no corresponding proposed_redline was found. Partial detection for identifying the risk without specific amendment language."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "7.1",
+      "tier": "T3",
+      "issue": "Audit cost-shifting threshold favors Licensor",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-7.1 Licensor Audit Rights",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor may audit Licensee's books and records relating solely to Net Sales and royalty calculations once per calendar year upon at least thirty (30) days' prior written notice and during normal business hours. Licensor shall bear the cost of the audit unless such audit reveals an underpayment exceeding five percent (5%).",
+        "effective_rationale_excerpt": "Audit rights are Licensor-centric; no reciprocal audit right for Licensee. The 5% threshold is reasonable but audit scope and confidentiality protections need clarity. Limit audit scope and frequency, define 'reasonable notice', include audit confidentiality, and add mutual audit rights.",
+        "judge_reasoning": "Scale detected the audit issue and proposed procedural protections (30-day notice, scope limits, business hours, confidentiality) though kept the 5% threshold rather than raising it to 10% as GT suggests."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit A",
+      "tier": "T2",
+      "issue": "Licensed IP schedule (Exhibit A) not attached - undefined scope",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exhibit A",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall attach as Exhibit A a complete and accurate schedule listing all patents, patent applications, registered trademarks, pending trademark applications, and other registered or unregistered intellectual property being licensed. Licensor shall update Exhibit A promptly upon identification of additional Licensed IP and shall provide supporting ownership documentation.",
+        "effective_rationale_excerpt": "Exhibit A missing; without it, the license scope is undefined, creating significant legal uncertainty for TechPro. Require full Exhibit A listing registered and pending applications and include process for updates.",
+        "judge_reasoning": "Scale detected the missing Exhibit A issue and proposed requiring a complete schedule with update obligations and ownership documentation. This addresses the GT concern about undefined scope."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "Exhibit B",
+      "tier": "T2",
+      "issue": "Territory definition (Exhibit B) not attached - exclusivity meaningless",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "matched_redline_id": "Redline-Exhibit B (risk_table)",
+      "evidence": {
+        "proposed_revision_excerpt": "Territory missing; exclusivity ineffective without defined territory. Require clear Territory definition (global or specified territories) in Exhibit B.",
+        "effective_rationale_excerpt": "Territory missing; exclusivity ineffective without defined territory.",
+        "judge_reasoning": "Scale noted the missing Exhibit B in risk_table but no corresponding proposed_redline with specific language was provided. Partial detection for identifying the issue without amendment."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No IP infringement indemnification from Licensor",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Intellectual Property Indemnity (New)",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall indemnify, defend and hold harmless Licensee from and against any third-party claims alleging that Licensee's authorized use of Licensed Products infringes such third party's valid patents, copyrights, or trademarks, provided Licensee gives prompt written notice, cooperates, and permits Licensor to control the defense and settlement. If infringement claim causes Licensee to cease exploitation, Licensor shall procure the right to continue use, modify the product to avoid infringement, or replace with non-infringing equivalent, or refund license fees.",
+        "effective_rationale_excerpt": "The agreement lacks a robust IP indemnity exposing TechPro to significant litigation and commercial risk. This addition places responsibility for pre-existing IP validity on Licensor, requires control of defense with cooperation, and provides practical remedies.",
+        "judge_reasoning": "Scale detected the missing IP indemnification and proposed comprehensive indemnification including defense, hold harmless, control provisions, and remediation options (procure rights, modify, replace, refund). This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-11.1 Confidentiality Obligations",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall maintain confidentiality of the other's confidential information for five (5) years following disclosure, except that information qualifying as a trade secret under applicable law shall be held in confidence for so long as it remains a trade secret. Confidentiality obligations shall survive termination or expiration and shall include the right to seek injunctive relief.",
+        "effective_rationale_excerpt": "Five years may be insufficient for trade secrets or long-term proprietary information. No carveouts for injunctive relief or survival of IP ownership terms. Extend confidentiality for trade secrets to survive indefinitely while secret; extend other confidential info survival to 7-10 years; add injunctive relief clause.",
+        "judge_reasoning": "Scale detected the inadequate confidentiality survival and proposed extending protection for trade secrets indefinitely plus adding injunctive relief rights. This fully addresses the GT concern about perpetual protection for trade secrets."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "Non-infringement warranty qualified 'to knowledge' - inadequate for IP license",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-9.1 Licensor Warranties (risk_table)",
+      "evidence": {
+        "proposed_revision_excerpt": "'To its knowledge' is a weak warranty and insufficient for TechPro's commercial risk; no express IP indemnity or detailed warranty scope. Require stronger representations (ownership, enforceability, no encumbrances), and add robust IP indemnity and defense obligations by Licensor.",
+        "effective_rationale_excerpt": "'To its knowledge' is a weak warranty and insufficient for TechPro's commercial risk.",
+        "judge_reasoning": "Scale detected the weak 'to knowledge' qualifier in risk_table but no specific proposed_redline with strengthened warranty language was found in the redlines array. Partial detection for identifying the issue."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "\"Field of Use\" definition (consumer electronics and related accessories).",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Clarify and e",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The Field of Use is narrowly defined but vague on scope such as \"related accessories\" and whether software/firmware, IoT services, or embedded applications are included. Ambiguity can restrict TechPro"
+    },
+    {
+      "clause": "1.2",
+      "issue_summary": "\"Licensed IP\" defined by Exhibit A.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Require compl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The Licensed IP reference to Exhibit A lacks current, specific listings and representation of included registered and pending rights; no mechanism for adding future-identified IP. This leaves TechPro "
+    },
+    {
+      "clause": "1.3",
+      "issue_summary": "\"Licensed Products\" definition.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Define inclus",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Licensed Products\" ties to incorporation of Licensed IP but lacks clarity on whether products that interoperate or use Licensed IP in subcomponents qualify. This may limit sales recognition and royal"
+    },
+    {
+      "clause": "1.4",
+      "issue_summary": "\"Net Sales\" definition (gross revenues less trade discounts, returns, shipping, and taxes).",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Expand and st",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The Net Sales deduction list omits common adjustments (e.g., intercompany transfers, rebates, returns provisioning, discounts to distributors, credit memos), creating royalty leakage risk or disputes."
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Reservation of rights to Licensor.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Narrow reserv",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad reservation may include improvements or use cases that TechPro expects to exploit; combined with other clauses it could limit TechPro's freedom."
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Licensor retains all right, title, interest in Licensed IP.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Add express r",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard, but lacks clarity on background rights and representations of ownership scope (including pending applications). TechPro lacks assurance on clear title and encumbrances."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Running royalty 10% of Net Sales payable quarterly within 30 days.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Tie royalty t",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Rate acceptable depending on margins; however, payment timing and audit mechanics may be improved, and Net Sales definition gaps could inflate payable amounts."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Non-refundable upfront license fee $500,000.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Make a portio",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Upfront fee is significant and non-refundable. No linkage to performance milestones or escrow for representations; increases TechPro's downside if IP has defects."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Licensor may audit once per year upon reasonable notice; Licensor bears costs unless underpayment >5",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Limit audit s",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Audit rights are Licensor-centric; no reciprocal audit right for Licensee to verify Licensor actions (e.g., enforcement recoveries). The 5% threshold is reasonable but audit scope and confidentiality "
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Quality control: Licensee must ensure products meet Licensor's standards; Licensor may inspect.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Require objec",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensor inspection and unspecified standards create operational risk; may be used to withhold approvals or interfere with manufacturing."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Licensor represents right to grant license; to its knowledge, IP does not infringe third-party right",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Require stron",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"To its knowledge\" is a weak warranty and insufficient for TechPro's commercial risk; no express IP indemnity or detailed warranty scope."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Confidentiality for five (5) years following disclosure.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Extend confid",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Five years may be insufficient for trade secrets or long-term proprietary information. No carveouts for injunctive relief or survival of IP ownership terms."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Exclusion of indirect, incidental, special, or consequential damages.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Carve out bre",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard clause but should exclude direct damages including IP infringement and bodily injury; carve-outs for breach of confidentiality and IP indemnities are missing."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Term: ten (10) years from Effective Date.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Add renewal o",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Fixed term is clear; no early renewal options or conditions. TechPro may want longer term or renewal rights tied to performance."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Termination for cause: either party may terminate for material breach uncured after 60 days.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Add specific ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "60-day cure period is generous; no materiality thresholds or specific termination events (e.g., insolvency, IP invalidation)."
+    },
+    {
+      "clause": "14.1",
+      "issue_summary": "Governing law: England and Wales.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Move to Delaw",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Governing law choice may disadvantage TechPro (US company in Delaware/Massachusetts); arbitration in London increases travel and enforcement complexity."
+    },
+    {
+      "clause": "14.2",
+      "issue_summary": "Dispute resolution: arbitration in London under LCIA.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Add ability t",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Arbitration is acceptable but location and rules may disadvantage TechPro; no interim relief carveouts or injunctive relief procedures."
+    },
+    {
+      "clause": "14.3",
+      "issue_summary": "Assignment: neither party may assign without prior written consent.",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND: Allow assignm",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Blanket consent requirement may block corporate reorganizations, financing, or sale. No compulsory consent for affiliates or change-of-control."
+    },
+    {
+      "clause": "Exhibit A",
+      "issue_summary": "Licensed IP schedule (to be attached).",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD: Require full Ex",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit A missing; without it, the license scope is undefined, creating significant legal uncertainty for TechPro."
+    },
+    {
+      "clause": "Exhibit B",
+      "issue_summary": "Territory definition (to be attached).",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD: Require clear T",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Territory missing; exclusivity ineffective without defined territory."
+    },
+    {
+      "clause": "3.2 Improvements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 3.2 in place. The original clause purports to transfer ownership of Licensee's improvements to Licensor, which disincentivizes TechPro's development and gives away valuable en"
+    },
+    {
+      "clause": "2.2 Sublicensing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 2.2 in place. The existing clause gives Licensor veto power over sublicenses, which could block necessary commercial relationships. This amendment carves out automatic sublice"
+    },
+    {
+      "clause": "7.1 Licensor Audit Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 7.1 in place. The original audit clause is broad and lacks procedural protections. This revision narrows scope to royalty-related records, requires advance notice, independent"
+    },
+    {
+      "clause": "10.2 Enforcement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 10.2 in place. The original grants Licensor primary control with an undifferentiated cost-first recovery, limiting Licensee's recourse. This change creates a defined timeframe"
+    },
+    {
+      "clause": "11.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 11.1 in place. The original 5-year term is inadequate for trade secrets and lacks explicit survival and injunctive relief rights. This revision preserves a five-year period fo"
+    },
+    {
+      "clause": "12.2 Cap",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 12.2 in place. The current absolute cap exposes Licensee to unacceptable risk if Licensor breaches critical obligations. This amendment carves out willful misconduct, confiden"
+    },
+    {
+      "clause": "13.3 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 13.3 in place. The original 90-day sell-off window is commercially restrictive and risks customer disruption. Extending to twelve months allows orderly wind-down and protects "
+    },
+    {
+      "clause": "14.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 14.1 in place. Choosing England and Wales creates venue and procedural burdens for a Delaware-incorporated Licensee. Switching to Delaware law provides familiarity, predictabi"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 11.1. The contract currently lacks any data protection obligations, exposing both parties to regulatory and compliance risk when personal data is processed in the cours"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 9.2. The agreement lacks a robust IP indemnity exposing TechPro to significant litigation and commercial risk. This addition places responsibility for pre-existing IP v"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as Exhibit A (replace placeholder). The contract currently leaves Exhibit A blank, preventing TechPro from knowing precisely what is licensed. Requiring a complete and updateable sch"
+    },
+    {
+      "clause": "1.4 Net Sales",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 1.4 in place. The original Net Sales definition is incomplete, risking disputes and unintended royalty bases. This revision enumerates common inclusions and explicit exclusion"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 10,
+      "P": 4,
+      "N": 0,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 2,
+        "P": 2,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 1,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 3,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "total_detection_points": 58.5,
+    "total_quality_points": 104,
+    "total_points": 162.5,
+    "additional_issues_count": 32
+  }
+}

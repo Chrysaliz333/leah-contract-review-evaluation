@@ -1,0 +1,441 @@
+{
+  "gt_metadata": {
+    "contract_id": "Supply_ManufacturingCo",
+    "contract_type": "Supply",
+    "parties": {
+      "supplier": "Precision Manufacturing Co.",
+      "buyer": "Apex Automotive Systems Inc."
+    },
+    "representing_party": "Apex Automotive Systems Inc. (Buyer)",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "correction_notes": "v2.3: Added GT-13 (missing insurance requirements) and GT-14 (termination asymmetry) per bonus validation. v2.2: Demoted GT-01 to T2. Added GT-12 (confidentiality 3-year inadequate for trade secrets) per cross-model validation.",
+    "schema_version": "3.0",
+    "v3_migration_date": "2026-01-14",
+    "revision_notes": "v3.0: Tier changes: GT-09: T3 -> T3. Previous: 2.3_corrected_2026-01-14_v3_LOCKED",
+    "v4_enhancement_date": "2026-01-20"
+  },
+  "correction_changelog": [
+    {
+      "action": "REMOVED",
+      "original_clause": "14.3",
+      "reason": "Termination for Convenience marked as ✅ Favorable - favorable terms should not be in GT"
+    },
+    {
+      "action": "REMOVED",
+      "original_clause": "8.2",
+      "reason": "Audit Rights marked as ✅ Favorable - favorable terms should not be in GT"
+    },
+    {
+      "action": "ADDED",
+      "new_clause": "2.2",
+      "reason": "Purchase order rejection risk - Supplier can reject any PO within 5 days with no supply obligation"
+    },
+    {
+      "action": "ADDED",
+      "new_clause": "12.1",
+      "reason": "Indemnification lacks cap carve-out alignment and recall cost coverage"
+    },
+    {
+      "action": "ADDED",
+      "new_clause": "N/A",
+      "reason": "Missing business continuity / supply assurance provisions"
+    },
+    {
+      "action": "RETIERED",
+      "clause": "3.2",
+      "original_tier": "T2",
+      "new_tier": "T3",
+      "reason": "5% annual cap with 90-day notice is reasonable; compounding is minor concern"
+    }
+  ],
+  "ground_truth": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Cap limited to 12 months of product payments",
+        "May be insufficient for major quality failures or recalls",
+        "Increase to 24+ months or fixed amount",
+        "Add carve-outs for IP, willful misconduct, gross negligence",
+        "Consider unlimited for indemnification obligations"
+      ],
+      "contract_text": "SUPPLIER'S TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNTS PAID BY BUYER FOR PRODUCTS IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Supplier's 'sole obligation' limits Buyer recourse",
+        "Supplier chooses repair/replace/refund at its option",
+        "No right for Buyer to repair via third party and back-charge",
+        "No extension of warranty for repaired/replaced products",
+        "No coverage for consequential damages from defects",
+        "No recall cost allocation"
+      ],
+      "contract_text": "Supplier's sole obligation shall be, at Supplier's option, to repair, replace, or refund the purchase price of defective Products.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Disclaims all implied warranties including merchantability and fitness",
+        "Only 1-year express warranty survives",
+        "Should add express fitness for intended purpose",
+        "Should warrant compliance with specifications",
+        "Should warrant free from defects in design (not just materials/workmanship)"
+      ],
+      "contract_text": "EXCEPT AS EXPRESSLY SET FORTH HEREIN, SUPPLIER MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Mutual exclusion of indirect/consequential/punitive damages",
+        "Blocks Buyer recovery for production line shutdowns",
+        "Blocks recovery for customer claims and recalls",
+        "Need carve-outs for product liability claims",
+        "Need carve-outs for IP infringement",
+        "Need carve-outs for willful misconduct / gross negligence"
+      ],
+      "contract_text": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM THIS AGREEMENT.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "FCA Supplier's facility means risk passes at Supplier dock",
+        "Buyer bears all transit risk including damage, loss, delay",
+        "Prefer DDP or DAP (risk passes at Buyer facility)",
+        "At minimum require CIF/CIP with insurance",
+        "Supplier should bear risk until delivery to Buyer",
+        "Title transfer should align with risk transfer"
+      ],
+      "contract_text": "Unless otherwise agreed, all Products shall be delivered FCA Supplier's facility (Incoterms 2020). Title and risk of loss shall pass to Buyer upon delivery to the carrier.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Supplier can accept or reject each PO within 5 business days",
+        "No obligation to accept orders within forecast quantities",
+        "Creates supply uncertainty for Buyer",
+        "Should require acceptance of orders within agreed capacity/forecast",
+        "Add deemed acceptance if no rejection within period",
+        "Include supply assurance for critical components"
+      ],
+      "contract_text": "Buyer shall submit purchase orders to Supplier specifying the Products, quantities, requested delivery dates, and shipping instructions. Supplier shall accept or reject each purchase order within five (5) business days.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Only 10 business days to inspect",
+        "Deemed accepted if no written rejection within period",
+        "May be insufficient for complex components or high volumes",
+        "Extend to 30 days or time of first use",
+        "Latent defects should be discoverable beyond inspection period",
+        "Link to warranty period for hidden defects"
+      ],
+      "contract_text": "Buyer shall inspect all Products within ten (10) business days of receipt and shall notify Supplier in writing of any non-conformities or defects. Products shall be deemed accepted if Buyer fails to provide written notice of rejection within the inspection period.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Indemnifies for defects, negligence, IP infringement",
+        "No explicit recall cost coverage",
+        "Subject to liability cap in 11.2",
+        "Should be uncapped or have higher cap for indemnification",
+        "Should explicitly include recall, rework, and field service costs",
+        "Should include defense costs"
+      ],
+      "contract_text": "Supplier shall indemnify Buyer against third-party claims arising from: (a) defects in Products; (b) Supplier's negligence; or (c) infringement of intellectual property rights.",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "❌"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "1.5% per month = 18% APR",
+        "Above typical commercial rates",
+        "Negotiate to 1% per month or prime + 2%",
+        "Should not apply to disputed amounts",
+        "Consider grace period before interest accrues"
+      ],
+      "contract_text": "Late payments shall bear interest at the rate of one and one-half percent (1.5%) per month.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "5% cap per year is reasonable individually",
+        "Compounds to significant increase over contract term",
+        "90-day notice is adequate",
+        "Consider CPI-linked adjustments instead",
+        "Add Buyer right to terminate if increase unacceptable",
+        "Require cost justification for increases"
+      ],
+      "contract_text": "After the initial twelve-month period, Supplier may adjust prices annually upon ninety (90) days' prior written notice, provided that no single adjustment shall exceed five percent (5%).",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "FAVOURABLE"
+      ]
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "expected_classification": "❌",
+      "key_elements": [
+        "No last-time-buy rights",
+        "No dual sourcing or second source rights",
+        "No capacity reservation requirements",
+        "No disaster recovery or business continuity plan",
+        "Should require advance notice of discontinuation",
+        "Should allow qualification of alternative sources"
+      ],
+      "contract_text": "N/A - Clause does not exist in current contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "3-year survival period for confidentiality",
+        "Automotive supply chain involves proprietary tooling, processes, pricing",
+        "Trade secrets (manufacturing specs, quality processes) have indefinite value",
+        "3 years insufficient for competitive protection in automotive industry",
+        "Should add perpetual protection for trade secrets",
+        "Should differentiate trade secrets from general confidential info"
+      ],
+      "contract_text": "13.1 Confidentiality. Each Party shall maintain the confidentiality of all Confidential Information received from the other Party. This obligation survives termination for three (3) years.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "No insurance clause exists in the contract",
+        "Supplier manufactures critical automotive components",
+        "No product liability insurance requirement",
+        "No general liability insurance requirement",
+        "No coverage verification mechanism",
+        "Should require product liability insurance ($5M+ for automotive)",
+        "Should require additional insured status for Buyer",
+        "Should require insurance certificates and ongoing verification"
+      ],
+      "contract_text": "N/A - No insurance provisions exist in contract. Critical gap for manufacturing supply agreement given product liability exposure.",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "30-day cure period for material breach applies to both parties",
+        "But Supplier breaches (quality failures, supply disruption) need immediate remedy",
+        "Buyer cannot wait 30 days for critical supply issues",
+        "No expedited termination for repeated or serious quality failures",
+        "Should have shorter or no cure for supply/quality breaches",
+        "Should have immediate termination right for safety-critical defects",
+        "Should differentiate between administrative and operational breaches"
+      ],
+      "contract_text": "14.2 Either Party may terminate this Agreement upon written notice if the other Party commits a material breach and fails to cure such breach within thirty (30) days of written notice thereof.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    }
+  ],
+  "tier_summary": {
+    "T1": {
+      "count": 4,
+      "weight": 8,
+      "issues": [
+        "GT-02 (5.2 - Limited warranty remedy - Supp)",
+        "GT-03 (5.3 - Broad warranty disclaimer unde)",
+        "GT-04 (11.1 - Consequential damages exclusio)",
+        "GT-05 (6.1 - FCA terms shift all transit ri)"
+      ]
+    },
+    "T2": {
+      "count": 8,
+      "weight": 5,
+      "issues": [
+        "GT-01 (11.2 - Supplier liability cap too low)",
+        "GT-06 (2.2 - No supply obligation - Supplie)",
+        "GT-07 (7.1 / 7.2 - Short inspection period with d)",
+        "GT-08 (12.1 - Indemnification lacks recall c)",
+        "GT-11 (N/A (Missing) - No business continuity / suppl)",
+        "GT-12 (13.1 - Confidentiality Survival Inade)",
+        "GT-13 (N/A (Missing) - No Insurance Requirements for )",
+        "GT-14 (14.2 - Termination for Cause Asymmetr)"
+      ]
+    },
+    "T3": {
+      "count": 2,
+      "weight": 1,
+      "issues": [
+        "GT-09 (4.2 - High late payment interest rat)",
+        "GT-10 (3.2 - Annual price adjustments compo)"
+      ]
+    },
+    "weighted_max": 74
+  },
+  "evaluator_prompt_snippet": "# CORRECTED LOCKED GT FOR THIS CONTRACT (Supply_ManufacturingCo)\nYou MUST output one gt_evaluations row per GT issue below, in the same order.\n\nGT-01\n- clause: \"11.2\"\n- tier: \"T1\"\n- issue: \"Supplier liability cap too low\"\n- expected_classification: \"UNFAVOURABLE\"\n- acceptable_classification: \"CLARIFY\"\n- key_elements: \"Cap at 12 months payments; increase to 24+ months; add carve-outs for IP/willful/gross negligence; consider unlimited for indemnification.\"\n\nGT-02\n- clause: \"5.2\"\n- tier: \"T1\"\n- issue: \"Limited warranty remedy - Supplier controls remediation\"\n- expected_classification: \"UNFAVOURABLE\"\n- acceptable_classification: \"CLARIFY\"\n- key_elements: \"Supplier's sole obligation at Supplier's option; add Buyer right to third-party repair; extend warranty for repairs; include recall costs.\"\n\nGT-03\n- clause: \"5.3\"\n- tier: \"T1\"\n- issue: \"Broad warranty disclaimer undermines quality assurance\"\n- expected_classification: \"CLARIFY\"\n- acceptable_classification: \"UNFAVOURABLE\"\n- key_elements: \"Disclaims merchantability and fitness; add express fitness warranty; warrant compliance with specs; warrant design quality.\"\n\nGT-04\n- clause: \"11.1\"\n- tier: \"T1\"\n- issue: \"Consequential damages exclusion blocks critical recovery\"\n- expected_classification: \"CLARIFY\"\n- acceptable_classification: \"UNFAVOURABLE\"\n- key_elements: \"Blocks recovery for shutdowns/recalls; add carve-outs for product liability, IP, willful misconduct.\"\n\nGT-05\n- clause: \"6.1\"\n- tier: \"T1\"\n- issue: \"FCA terms shift all transit risk to Buyer\"\n- expected_classification: \"CLARIFY\"\n- acceptable_classification: \"UNFAVOURABLE\"\n- key_elements: \"Risk at Supplier dock; change to DDP/DAP; require insurance; align title with risk.\"\n\nGT-06\n- clause: \"2.2\"\n- tier: \"T2\"\n- issue: \"No supply obligation - Supplier can reject purchase orders\"\n- expected_classification: \"UNFAVOURABLE\"\n- acceptable_classification: \"CLARIFY\"\n- key_elements: \"Can reject any PO; require acceptance within forecast; add deemed acceptance; supply assurance.\"\n\nGT-07\n- clause: \"7.1 / 7.2\"\n- tier: \"T2\"\n- issue: \"Short inspection period with deemed acceptance\"\n- expected_classification: \"CLARIFY\"\n- acceptable_classification: \"UNFAVOURABLE\"\n- key_elements: \"Only 10 business days; extend to 30 days; latent defect exception; link to warranty.\"\n\nGT-08\n- clause: \"12.1\"\n- tier: \"T2\"\n- issue: \"Indemnification lacks recall cost and unlimited coverage\"\n- expected_classification: \"CLARIFY\"\n- acceptable_classification: \"UNFAVOURABLE\"\n- key_elements: \"Subject to cap; add recall costs; make uncapped for indemnification.\"\n\nGT-09\n- clause: \"4.2\"\n- tier: \"T3\"\n- issue: \"High late payment interest rate\"\n- expected_classification: \"CLARIFY\"\n- acceptable_classification: \"UNFAVOURABLE\"\n- key_elements: \"1.5%/month = 18% APR; reduce to 1% or prime+2%; exclude disputed amounts.\"\n\nGT-10\n- clause: \"3.2\"\n- tier: \"T3\"\n- issue: \"Annual price adjustments compound over time\"\n- expected_classification: \"CLARIFY\"\n- acceptable_classification: \"FAVOURABLE\"\n- key_elements: \"5% cap compounds; consider CPI-linked; add termination right; require justification.\"\n\nGT-11\n- clause: \"N/A (Missing)\"\n- tier: \"T2\"\n- issue: \"No business continuity / supply assurance provisions\"\n- expected_classification: \"UNFAVOURABLE\"\n- acceptable_classification: \"CLARIFY\"\n- key_elements: \"No last-time-buy; no dual sourcing; add capacity reservation; disaster recovery; discontinuation notice.\""
+}

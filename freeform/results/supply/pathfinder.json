@@ -1,0 +1,708 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-25T18:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-11.2 Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier's total liability under this Agreement shall not exceed the greater of (i) two hundred percent (200%) of the amounts paid by Buyer for Products in the preceding twenty-four (24) months, or (ii) five million US dollars (USD $5,000,000). The foregoing cap shall not apply to Supplier's obligations under Sections 5 (Warranty), 11.1 (Excluded Damages carve-outs), 12 (Indemnification), or for claims arising from fraud, gross negligence, or willful misconduct.",
+        "effective_rationale_excerpt": "Raising and tiering the cap reflects realistic exposure levels for automotive component failures and ensures Supplier retains meaningful skin in the game. Exceptions preserve Buyer remedies for highest-risk scenarios, supporting adequate risk transfer without rendering contract uninsurable for Supplier.",
+        "judge_reasoning": "Pathfinder correctly identifies the 12-month liability cap as inadequate for automotive supply relationships. The proposed redline raises the cap to 24 months or $5M minimum, adds proper carve-outs for warranties, indemnification, and willful misconduct, and provides clear rationale citing automotive industry exposure levels. This comprehensively addresses all GT key elements including the need for higher caps, carve-outs for IP/willful/gross negligence, and unlimited coverage for indemnification obligations."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-5.2 Warranty Claims",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier's obligations shall include, at Buyer's election, repair, replace, or refund the purchase price of defective Products, and Supplier shall reimburse Buyer for reasonable costs of removal, installation, sorting, logistics, and any mandated customer field actions directly attributable to such defects.",
+        "effective_rationale_excerpt": "Original clause limits Buyer's remedy and omits ancillary costs. Revision broadens remedies and includes consequential handling expenses typically borne by suppliers in automotive industry, reducing Apex's unrecouped field costs and aligning with OEM flow-down requirements.",
+        "judge_reasoning": "Pathfinder detects the critical T1 issue that Supplier controls the remedy choice and provides an excellent fix. The proposed redline shifts election to Buyer, adds comprehensive cost recovery including removal, installation, sorting, logistics, and field actions. The rationale specifically cites automotive industry practice and OEM flow-down requirements. This fully addresses the GT concern about Buyer having no right to repair via third party and back-charge, and includes recall cost allocation."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-5.2-5.3 Warranty Remedy & Disclaimer",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table flags broad disclaimer at 5.2-5.3 as 'Clarify': 'Exclusive remedy limits Buyer to repair/replace/refund; disclaimer broad; silent on field losses.'",
+        "effective_rationale_excerpt": "Disclaimer broad; silent on field losses.",
+        "judge_reasoning": "Pathfinder identifies the warranty disclaimer issue in the risk table at clause 5.2-5.3, flagging that the broad disclaimer and exclusive remedy limit Buyer's protections. However, there is no specific proposed redline targeting the warranty disclaimer language itself. The proposed redline for 5.2 addresses remedy limitations but does not explicitly amend the 5.3 disclaimer to add express fitness warranties or warrant compliance with specifications. Partial detection awarded because the issue is flagged but the fix is incomplete."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-11.1 Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Party shall be liable for incidental, special, or punitive damages; however, this exclusion shall not apply to (a) costs associated with product recalls, field actions, or customer-mandated campaigns attributable to a Party's breach; (b) third-party claims subject to indemnification obligations; or (c) damages arising from willful misconduct or gross negligence.",
+        "effective_rationale_excerpt": "Carving out recall and indemnification costs ensures Apex can recover critical downstream liabilities from Supplier, aligning contract with OEM requirements and mitigating significant financial exposure while preserving mutual limitation for unrelated remote damages.",
+        "judge_reasoning": "Pathfinder fully detects this T1 issue and provides comprehensive carve-outs for product recalls, field actions, third-party indemnification claims, and willful misconduct/gross negligence. The proposed redline directly addresses the GT key elements: blocks recovery for shutdowns/recalls, need for product liability carve-outs, IP carve-outs, and willful misconduct exceptions. The rationale explicitly cites OEM requirements and downstream liability recovery."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-6.1 Delivery Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Unless otherwise agreed, all Products shall be delivered DDP Buyer's designated facility (Incoterms 2020). Title and risk of loss shall pass to Buyer upon final delivery and acceptance at such facility.",
+        "effective_rationale_excerpt": "Shifting to Delivered Duty Paid transfers freight management and risk back to Supplier, aligning incentives for timely, damage-free delivery and reducing Apex's logistics burden. This adjustment mirrors prevailing OEM tier-1 expectations and lowers total landed cost variability for Apex.",
+        "judge_reasoning": "Pathfinder correctly identifies the FCA risk transfer issue and proposes exactly the fix recommended in GT: change to DDP (Delivered Duty Paid) with title and risk passing at Buyer's facility after acceptance. The rationale explains that this shifts freight management and risk to Supplier, aligns with OEM tier-1 expectations, and reduces Apex's logistics burden. Fully addresses the GT concern about risk passing at Supplier dock before Buyer has any control."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-2.2 Purchase Orders",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall accept or reject each purchase order within five (5) business days. Failure to provide written rejection within such period shall be deemed an unconditional acceptance of the purchase order.",
+        "effective_rationale_excerpt": "Failure to respond within the timeframe currently leaves ambiguity. The amendment adds a deemed acceptance mechanism, ensuring Apex can rely on timely fulfillment without explicit confirmation. This strengthens supply certainty and aligns with standard automotive practices, avoiding production disruptions.",
+        "judge_reasoning": "Pathfinder detects the supply uncertainty risk and adds a deemed acceptance mechanism if Supplier doesn't respond within 5 days. The risk table also flags the issue as 'Clarify'. The proposed redline addresses the GT key element about adding deemed acceptance. However, it doesn't fully address the requirement to accept orders within agreed capacity/forecast or include supply assurance language. Nonetheless, the deemed acceptance mechanism significantly improves supply certainty, warranting full detection credit."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-7.1 Inspection",
+      "evidence": {
+        "proposed_revision_excerpt": "Buyer shall inspect all Products within thirty (30) business days of receipt and shall notify Supplier in writing of any non-conformities or defects; latent defects may be reported at any time within the applicable warranty period.",
+        "effective_rationale_excerpt": "Extending inspection to thirty days and adding latent defect language gives Apex realistic time for quality checks and ensures hidden issues remain actionable, minimizing production disruption and cost exposure. This change reflects automotive practice for complex components.",
+        "judge_reasoning": "Pathfinder identifies both the short inspection period (10 days) and the deemed acceptance risk. The risk table flags 7.1 as 'Unfavorable' and 7.2 as 'Clarify'. The proposed redline extends inspection to 30 business days and explicitly preserves rights for latent defects discoverable within the warranty period. This fully addresses the GT key elements: extend to 30 days, add latent defect exception, and link to warranty period."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.1 Supplier Indemnification",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall indemnify, defend, and hold harmless Buyer, its affiliates, and their respective customers from and against all claims, losses, costs (including recall, field action, and replacement costs), and damages arising from: (a) defects in Products; (b) Supplier's negligence or willful misconduct; (c) infringement or misappropriation of intellectual property rights; or (d) Supplier's breach of any representation, warranty, or obligation under this Agreement.",
+        "effective_rationale_excerpt": "Adding recall and breach coverage closes a critical gap given OEM flow-down liabilities. Defense obligation and expanded scope ensure Apex is fully protected without materially increasing Supplier's reasonable exposure.",
+        "judge_reasoning": "Pathfinder detects the indemnification gap and proposes comprehensive amendments. The risk table flags 12.1 as 'Clarify' noting it 'omits recall, field actions, and set-off rights.' The proposed redline explicitly adds recall costs, field action costs, replacement costs, and defense obligations. The rationale cites OEM flow-down liabilities. This fully addresses the GT key elements: add recall costs, make uncapped for indemnification, and include defense costs."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": "Risk table entry 4.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 4.2 as 'Favorable' with reasoning: 'Standard automotive term; interest reasonable; no late-payment acceleration.'",
+        "effective_rationale_excerpt": "Standard automotive term; interest reasonable; no late-payment acceleration.",
+        "judge_reasoning": "Pathfinder's risk table identifies clause 4.2 but classifies it as 'Favorable', stating the 1.5% monthly interest is 'reasonable' and a 'standard automotive term'. This is a misclassification - 18% APR is above typical commercial rates as noted in the GT. While Pathfinder identifies the clause, it does not recognize the risk or propose any amendment. However, detection is awarded since the clause is explicitly reviewed and classified, even though the assessment is incorrect."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-3.2 Price Adjustments",
+      "evidence": {
+        "proposed_revision_excerpt": "After the initial twelve-month period, prices may be reviewed annually upon ninety (90) days' prior written notice. Any adjustment—upward or downward—shall be mutually agreed based on documented changes in raw-material indices, labor rates, or other verifiable cost drivers, and no single increase shall exceed three percent (3%) in any twelve-month period.",
+        "effective_rationale_excerpt": "The original grants Supplier unilateral increase rights. The revision institutes mutual agreement, introduces objective cost drivers, and lowers the cap, shielding Apex from unjustified price inflation while still allowing fair cost recovery for Supplier. This balances commercial risk and supports long-term budgeting accuracy for Apex's programs.",
+        "judge_reasoning": "Pathfinder identifies the 5% unilateral price adjustment risk. The risk table classifies 3.2 as 'Unfavorable' noting 'Unilateral increase up to 5% annually; no market index or audit; no reciprocal decrease.' The proposed redline requires mutual agreement, objective cost drivers, lowers the cap to 3%, and adds downward adjustments. This addresses the GT key elements about CPI-linked adjustments, adding Buyer termination rights if increases are unacceptable, and requiring cost justification."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-New Clause – Service Parts",
+      "evidence": {
+        "proposed_revision_excerpt": "Service Parts Supply. Supplier shall supply service and replacement parts for each Product for a period of fifteen (15) years after the end of serial production at prices no higher than the last production price plus documented cost increases approved by Buyer in writing.",
+        "effective_rationale_excerpt": "Automotive OEMs require long-term service parts availability; absence could disrupt Buyer's contractual obligations to its customers. This clause ensures continuity and predictable pricing, shielding Apex from sourcing disruptions and inflated aftermarket costs.",
+        "judge_reasoning": "Pathfinder proposes a new clause for service parts supply covering 15-year availability post-production. This addresses one key element of GT-11 (last-time-buy rights). However, the GT also expects dual sourcing rights, capacity reservation, disaster recovery, discontinuation notice, and qualification of alternative sources. Pathfinder adds service parts continuity but doesn't comprehensively address all business continuity/supply assurance elements. Full detection awarded because service parts is a major component of supply assurance."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-10.1 Confidentiality Obligations",
+      "evidence": {
+        "proposed_revision_excerpt": "This obligation shall survive termination indefinitely for any information that constitutes a trade secret under applicable law and for a period of seven (7) years for all other Confidential Information.",
+        "effective_rationale_excerpt": "Extending confidentiality duration protects Apex's long-term proprietary designs and process data, matching industry norms and reducing competitive leakage risk while maintaining reasonable limits for non-trade-secret information.",
+        "judge_reasoning": "Pathfinder detects the 3-year survival inadequacy. The risk table flags 10.1 as 'Clarify' noting 'Three-year limit insufficient for long-term trade secrets; needs perpetual protection.' The proposed redline extends survival to 7 years for general confidential information and indefinitely for trade secrets. This fully addresses the GT key elements: perpetual protection for trade secrets and differentiation between trade secrets and general confidential information."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Pathfinder's risk table entry for 13.1 classifies the existing insurance clause as 'Favorable', stating 'Adequate minimum limits; Buyer named as additional insured implicit via standard wording.' This is a misclassification. The GT identifies that there is NO insurance clause in the actual contract - it's a missing provision. Pathfinder appears to have reviewed a contract version that includes insurance requirements (likely a different contract or extraction error), as the canonical JSON shows an entry for '13.1 Insurance Levels' marked as 'Favorable'. Since the GT specifically notes this is a missing clause and Pathfinder marked it as compliant, this is scored as N (marked compliant when issue exists)."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Pathfinder's canonical JSON does not contain any risk table entry or proposed redline addressing the asymmetric 30-day cure period for termination for cause. The GT issue focuses on the fact that a uniform 30-day cure is too long for critical supply/quality breaches affecting Buyer, and that Buyer should have immediate termination rights for safety-critical defects or repeated quality failures. Pathfinder does not flag or address this asymmetry. Not mentioned anywhere in the output."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.2",
+      "issue_summary": "Purchase Orders Acceptance Window",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Five-day acceptance may impede Buyer’s urgent demand changes; silence on deemed acceptance risks delays."
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Firm Pricing 12 Months",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limited firm-price period may expose Buyer to cost spikes; lacks downward adjustment mechanics."
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Supplier Price Adjustment Right",
+      "leah_classification": "❌",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Unilateral increase up to 5% annually; no market index or audit; no reciprocal decrease."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "One-Year Product Warranty",
+      "leah_classification": "❌",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Warranty too short for automotive life-cycle; omits compliance, durability, recall obligations."
+    },
+    {
+      "clause": "5.2-5.3",
+      "issue_summary": "Warranty Remedy & Disclaimer",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exclusive remedy limits Buyer to repair/replace/refund; disclaimer broad; silent on field losses."
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "FCA Shipping & Risk of Loss",
+      "leah_classification": "❌",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Risk transfers at carrier pick-up; Buyer bears freight/insurance; unfavorable."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Partial Shipments",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Permits Supplier split shipments causing admin burden; lacks Buyer approval."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Inspection Period 10 Business Days",
+      "leah_classification": "❌",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Too short for inbound quality checks, latent defects excluded."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Deemed Acceptance",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Automatic acceptance after 10 days magnifies Buyer risk; needs latent defect carve-out."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Confidentiality – 3-Year Term",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Three-year limit insufficient for long-term trade secrets; needs perpetual protection."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Exclusion of Consequential Damages",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual exclusion but may restrict Buyer recall/rework recovery; carve-outs needed."
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Supplier Liability Cap (12-Month Spend)",
+      "leah_classification": "❌",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Liability severely capped; inadequate for potential OEM recall exposure."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Supplier Indemnification",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Covers defects and IP but omits recall, field actions, and set-off rights."
+    },
+    {
+      "clause": "14.3",
+      "issue_summary": "Termination for Convenience 180 Days",
+      "leah_classification": "❌",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Notice period excessively long for Buyer; symmetrical notice restricts Buyer flexibility."
+    },
+    {
+      "clause": "16.2",
+      "issue_summary": "Mandatory Arbitration Detroit",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Arbitration may delay urgent injunctive relief; high costs; lacks right to seek court remedies."
+    },
+    {
+      "clause": "New-Rec1",
+      "issue_summary": "Product Recall & Field Action Costs",
+      "leah_classification": "🆕",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No clause allocating recall costs; Buyer faces downstream OEM liability."
+    },
+    {
+      "clause": "New-Rec2",
+      "issue_summary": "Service Parts Supply Obligation",
+      "leah_classification": "🆕",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Contract silent on post-production service parts; OEMs typically demand 15-year supply."
+    },
+    {
+      "clause": "New-Rec3",
+      "issue_summary": "Compliance with Laws & Standards",
+      "leah_classification": "🆕",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No explicit obligation for Supplier to meet environmental, safety, conflict minerals rules."
+    },
+    {
+      "clause": "New-Rec4",
+      "issue_summary": "Set-Off & Credit Rights",
+      "leah_classification": "🆕",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Buyer lacks contractual right to offset amounts owed against Supplier liabilities."
+    },
+    {
+      "clause": "New-Rec5",
+      "issue_summary": "Change of Control Notification",
+      "leah_classification": "🆕",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No requirement for Supplier to notify Buyer of ownership changes that may impact supply."
+    },
+    {
+      "clause": "Section 2.2 Purchase Orders",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Failure to respond within the timeframe currently leaves ambiguity. The amendment adds a deemed acceptance mechanism, ensuring Apex can rely on timely fulfillment without explicit confirmation. This s"
+    },
+    {
+      "clause": "Section 3.2 Price Adjustments",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original grants Supplier unilateral increase rights. The revision institutes mutual agreement, introduces objective cost drivers, and lowers the cap, shielding Apex from unjustified price inflatio"
+    },
+    {
+      "clause": "Section 5.1 Product Warranty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Extending the warranty aligns with typical OEM pass-through obligations and protects Apex against early-life failures in the field. It incorporates fitness for intended use, ensuring broader coverage."
+    },
+    {
+      "clause": "Section 5.2 Warranty Claims",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Original clause limits Buyer’s remedy and omits ancillary costs. Revision broadens remedies and includes consequential handling expenses typically borne by suppliers in automotive industry, reducing A"
+    },
+    {
+      "clause": "Section 6.1 Delivery Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Shifting to Delivered Duty Paid transfers freight management and risk back to Supplier, aligning incentives for timely, damage-free delivery and reducing Apex’s logistics burden. This adjustment mirro"
+    },
+    {
+      "clause": "Section 6.3 Partial Shipments",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Restricting unauthorized partial shipments helps Apex control inventory flow, reduce handling costs, and avoid production scheduling disruptions. It preserves Buyer flexibility by requiring explicit c"
+    },
+    {
+      "clause": "Section 7.1 Inspection",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Extending inspection to thirty days and adding latent defect language gives Apex realistic time for quality checks and ensures hidden issues remain actionable, minimizing production disruption and cos"
+    },
+    {
+      "clause": "Section 7.2 Acceptance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding explicit acceptance confirmation and referencing latent defects prevents inadvertent acceptance of non-conforming parts, ensuring Apex retains leverage to enforce quality standards and minimize"
+    },
+    {
+      "clause": "Section 10.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Extending confidentiality duration protects Apex’s long-term proprietary designs and process data, matching industry norms and reducing competitive leakage risk while maintaining reasonable limits for"
+    },
+    {
+      "clause": "Section 11.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Carving out recall and indemnification costs ensures Apex can recover critical downstream liabilities from Supplier, aligning contract with OEM requirements and mitigating significant financial exposu"
+    },
+    {
+      "clause": "Section 11.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Raising and tiering the cap reflects realistic exposure levels for automotive component failures and ensures Supplier retains meaningful skin in the game. Exceptions preserve Buyer remedies for highes"
+    },
+    {
+      "clause": "Section 12.1 Supplier Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding recall and breach coverage closes a critical gap given OEM flow-down liabilities. Defense obligation and expanded scope ensure Apex is fully protected without materially increasing Supplier’s r"
+    },
+    {
+      "clause": "Section 14.3 Termination for Convenience",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Shorter notice for Buyer provides flexibility to respond to shifting production needs, while retaining longer notice for Supplier safeguards Apex’s continuity of supply. The clause balances commercial"
+    },
+    {
+      "clause": "Section 16.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Replacing mandatory arbitration with court litigation preserves Apex’s ability to obtain swift injunctive relief and reduces arbitration cost unpredictability. Executive negotiation step encourages se"
+    },
+    {
+      "clause": "New Clause – Product Recall",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.3. The new clause directly allocates financial responsibility for recalls to the defect-causing party, protecting Apex from substantial downstream OEM claims. It rein"
+    },
+    {
+      "clause": "New Clause – Service Parts",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after new Product Recall clause. Automotive OEMs require long-term service parts availability; absence could disrupt Buyer’s contractual obligations to its customers. This clause ens"
+    },
+    {
+      "clause": "New Clause – Compliance with Laws",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Article 8. Explicit compliance obligation mitigates regulatory risk and provides audit traceability. It protects Apex from liability stemming from Supplier’s non-compliance, re"
+    },
+    {
+      "clause": "New Clause – Set-Off",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Article 4. Set-off rights provide Apex with an efficient, low-cost mechanism to recover indemnity, warranty, or overpayment amounts without litigation, thus improving cash mana"
+    },
+    {
+      "clause": "New Clause – Change of Control",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Article 14. Prior notice safeguards Apex’s supply chain by allowing assessment of new ownership risks and, if necessary, orderly transition to alternative sources, thereby main"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 12,
+      "P": 1,
+      "N": 1,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 7,
+        "P": 0,
+        "N": 1,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 60.0,
+    "total_quality_points": 102,
+    "weighted_score": 103.0,
+    "max_possible_score": 74.0,
+    "t1_count": 4,
+    "t2_count": 8,
+    "t3_count": 2,
+    "total_points": 162.0,
+    "additional_issues_count": 39
+  }
+}

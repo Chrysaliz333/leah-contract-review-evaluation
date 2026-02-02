@@ -1,0 +1,487 @@
+{
+  "meta": {
+    "contract": "jv",
+    "model_id": "sonnet45",
+    "model_display_name": "Sonnet 4.5",
+    "environment": "hotfix",
+    "evaluation_timestamp": "2026-01-25T22:15:00Z",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "stacking_gt_version": "1.0"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "JV_01",
+      "clause": "4.1",
+      "cp_redline_description": "CP redline changes unanimous consent to Party A sole discretion over all material decisions",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The existing redline must be rejected as it completely eliminates Quantum Dynamics LLC's governance rights despite equal capital contribution and ownership. Granting Party A sole discretion over all material decisions including budgets, capital expenditures, and business plan changes would allow Party A to unilaterally control Quantum Dynamics LLC's $2.5M+ investment, redirect JV strategy away from quantum computing priorities, and make decisions that benefit Party A's separate business at Quantum Dynamics LLC's expense.",
+        "judge_reasoning": "Leah correctly identifies the CP redline and recommends REJECT. The reasoning comprehensively addresses the GT requirement to explain that 50/50 JV requires balanced governance, sole discretion eliminates Party B's control, and fundamental decisions require mutual consent. All key elements met: (1) maintains unanimous consent requirement, (2) identifies that both parties need veto rights, (3) rejects unilateral decision-making authority. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "JV_02",
+      "clause": "5.1",
+      "cp_redline_description": "CP redline changes 50/50 profit/loss split to 60% profits to Party A, 40% to Party B, with losses first to Party B",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The existing redline must be rejected as it creates fundamentally inequitable asymmetric allocation where Quantum Dynamics LLC bears 50% of losses but receives only 40% of profits. This represents a direct wealth transfer from Quantum Dynamics LLC to Party A with no justification. Both parties are making equal $2.5M capital contributions, contributing equivalent expertise and resources, and holding equal ownership interests.",
+        "judge_reasoning": "Leah correctly identifies and REJECTS the CP redline proposing asymmetric profit allocation. The reasoning addresses all GT required points: equal ownership requires equal economics, asymmetric allocation transfers value unfairly, loss priority creates unfair risk, and no justification exists for preferential treatment. Key elements met: (1) maintains 50/50 profit allocation, (2) maintains 50/50 loss allocation, (3) rejects asymmetric allocation. Full marks."
+      }
+    },
+    {
+      "gt_id": "JV_03",
+      "clause": "6.2",
+      "cp_redline_description": "CP redline gives Party A exclusive ownership of all Developed IP, with Party B receiving only a non-exclusive royalty-bearing license",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The existing redline must be rejected as it constitutes complete appropriation of all jointly developed intellectual property by Party A, leaving Quantum Dynamics LLC with zero ownership rights in innovations created using its quantum computing expertise, engineering team, and capital investment. This is fundamentally inequitable and represents a massive wealth transfer. Quantum Dynamics LLC would contribute its core quantum technology and $2.5M+ in capital, help develop breakthrough quantum AI innovations, but own nothing and lose all rights upon termination.",
+        "judge_reasoning": "Leah correctly identifies and REJECTS the CP redline attempting to give Party A exclusive IP ownership. The reasoning comprehensively addresses GT requirements: Party B contributes equally and must own equally, license-only model expropriates Party B's contribution, royalty on jointly funded IP is double payment. Key elements met: (1) joint ownership of jointly developed IP, (2) equal ownership shares required, (3) mutual consent for third-party licensing maintained. Full marks."
+      }
+    },
+    {
+      "gt_id": "JV_04",
+      "clause": "9.1",
+      "cp_redline_description": "CP redline extends non-compete to 5 years globally, applies only to Party B for all quantum/AI, while Party A has no restriction",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "This represents complete elimination of Quantum Dynamics LLC's ability to operate in its core quantum computing business for 5 years globally, while Party A remains unrestricted. Likely unenforceable as unreasonably broad and fundamentally destroys Quantum Dynamics LLC's business post-JV. Unconscionable overreach... The revision [in risk table]: REJECT existing redline; AMEND original to narrow scope to specific quantum AI applications developed by JV, reduce duration to 1 year, define Territory precisely, and ensure mutual application.",
+        "judge_reasoning": "Leah correctly identifies and REJECTS the one-sided, overly broad non-compete. The reasoning addresses all GT requirements: asymmetric non-compete is unfair, 5-year global restriction blocks Party B's core business, quantum/AI scope is too broad, Party B cannot be excluded while Party A competes freely, mutual restrictions are required. All key elements met: (1) mutual non-compete required, (2) reasonable duration (proposes 1 year, GT allows 2 years), (3) narrow scope to specific products, (4) territorial limitation. Full marks."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "No Deadlock Resolution - Article 8 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "5fdc233f-4869-4129-8268-3a3ef68f33f5",
+      "evidence": {
+        "proposed_revision_excerpt": "Section completely reserved with no deadlock resolution mechanism. Given equal ownership and unanimous consent requirements for material decisions, deadlock is inevitable on key strategic matters. No escalation procedure, mediation requirement, buy-sell mechanism, or dissolution process specified... ADD comprehensive deadlock resolution mechanism including escalation, mediation, buy-sell rights, and dissolution procedures.",
+        "effective_rationale_excerpt": "Creates existential risk for JV as parties cannot resolve fundamental disagreements. Critical gap in governance structure.",
+        "judge_reasoning": "Leah correctly identifies that Section 8.1 is [Reserved] with no deadlock resolution, flags it as Unfavorable, and proposes adding a comprehensive mechanism including escalation, mediation, and buy-sell provisions. This addresses all GT key elements. Full Y detection with quality 3/3/3."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Rights",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Deadlock Resolution proposed_redlines includes: '(h) Buy-Sell Option: If mediation fails to resolve the deadlock within thirty (30) days, either Party may initiate a buy-sell procedure by delivering a written offer to purchase the other Party's entire ownership interest at a stated price.'",
+        "effective_rationale_excerpt": "The risk table discusses 10.4 termination effects lacking exit provisions. The proposed Deadlock Resolution new clause includes buy-sell (shotgun) option embedded in Section 8.",
+        "judge_reasoning": "While Leah does not explicitly flag 'No Exit/Buyout Rights' as a standalone missing clause, the proposed Deadlock Resolution mechanism includes a buy-sell option. The capital call procedure also mentions purchase rights at FMV. However, there is no standalone exit rights clause addressing put/call options or early exit before Year 3 as specified in GT. Partial detection awarded as the buy-sell mechanism partially addresses the concern but is only available in deadlock scenarios, not as general exit rights."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent + No Tiebreaker",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "5677d5f8-bc29-4f02-a9a4-4e23f7f5bc65",
+      "evidence": {
+        "proposed_revision_excerpt": "4.4 Voting amended to add: '(b) Deadlock Resolution: If the Steering Committee is unable to reach unanimous agreement on any matter (other than a Material Decision) within thirty (30) days... the matter shall be escalated to the Chief Executive Officers of both Parties... (c) Continued Deadlock: If the Chief Executive Officers cannot resolve the deadlock within the thirty (30) day period, the matter shall be resolved through the Deadlock Resolution procedures set forth in Section 8.1.'",
+        "effective_rationale_excerpt": "Risk table at 4.1: 'All material decisions require unanimous consent' + 'Combined with [Reserved] deadlock = paralysis risk'. Voting at 4.4: 'creates potential deadlock on non-material decisions with only two parties' and 'Inconsistent with equal ownership structure where deadlock is inherent.'",
+        "judge_reasoning": "Leah correctly identifies that unanimous consent requirements combined with no tiebreaker mechanism creates paralysis risk. The risk table flags 4.1 as requiring clarification, and the voting mechanism amendment adds CEO escalation and deadlock resolution linkage. Addresses GT key elements: deadlock risk identified, tiered decision approach proposed via escalation. Full Y detection."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Broad Post-Term Non-Compete",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "4f801a75-f4e7-4187-9adf-d2d984d12dd0",
+      "evidence": {
+        "proposed_revision_excerpt": "2.3 Exclusivity amended: 'This restriction shall not apply to: (a) business relationships and customer engagements existing as of the Effective Date; (b) quantum computing applications that do not incorporate AI; (c) AI applications that do not incorporate quantum computing; (d) academic research, publications, and non-commercial collaborations.' Also recommends: 'AMEND original to narrow scope to specific quantum AI applications developed by JV, reduce duration to 1 year, define Territory precisely.'",
+        "effective_rationale_excerpt": "Risk table 9.1: '2-year post-term non-compete in quantum AI... Applies even if terminated for cause by other party... Broad geographic scope ('Territory' undefined)... Could block core business for Party B.'",
+        "judge_reasoning": "Leah correctly identifies the broad post-term non-compete issue at 9.1, flagging it as Unfavorable. The analysis notes the undefined Territory, the broad scope (quantum AI), and the risk to Party B's core business. Proposes narrowing scope, adding carve-outs for pre-existing business and non-AI quantum computing. Addresses all GT key elements including scope narrowing and termination scenario exclusions. Full Y detection."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.2",
+      "tier": "T1",
+      "issue": "Developed IP Consent Lock-Up",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "2889467b-eb65-4a42-94d5-ce9ce696e669",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table 6.2 identifies: 'Neither party can license/transfer Developed IP without consent. Creates commercialization veto. Blocks market opportunities if parties disagree. Combined with deadlock [Reserved] = IP stuck. Should add licensing rights with revenue share. Should add buyout right for IP.'",
+        "effective_rationale_excerpt": "Risk table classification: Unfavorable. Notes the mutual consent requirement 'creates commercialization veto' and when 'combined with deadlock [Reserved] = IP stuck'.",
+        "judge_reasoning": "Leah correctly identifies the Developed IP consent lock-up issue at 6.2, flagging it as Unfavorable (beyond the CP redline context). The analysis correctly identifies: (1) consent creates commercialization veto, (2) blocks market opportunities on disagreement, (3) combined with deadlock = IP stuck. Proposes adding licensing framework with revenue share and buyout rights. Full Y detection addressing all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "new_clauses_proposed includes 'Detailed Capital Call Procedure' with keywords ['liability', 'damages', 'cap'], but no standalone Limitation of Liability clause is proposed.",
+        "effective_rationale_excerpt": "The canonical JSON does not contain a standalone recommendation to add a Limitation of Liability clause. The new clause keywords reference liability in capital call context, not inter-party liability cap.",
+        "judge_reasoning": "Leah does not explicitly flag the missing Limitation of Liability clause as a critical gap. While the keywords 'liability' and 'damages' appear in context of capital call procedure, there is no proposed new clause for mutual liability cap, consequential damages exclusion, or related carve-outs as required by GT. Partial detection awarded because the Insurance Requirements new clause addresses some liability exposure protection, but the core issue of no inter-party liability cap is not directly addressed."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Capital Call Dilution Risk",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "d87f0998-491a-4819-aab3-c72ff8bd245b",
+      "evidence": {
+        "proposed_revision_excerpt": "3.4 Additional Capital amended with: '(c) Dilution Formula: If a Party fails to fund... the Non-Contributing Party's ownership interest shall be diluted according to the following formula: New Ownership % = (Old Ownership % x Old Total Capital) / (Old Total Capital + Contributing Party's Additional Contribution). (d) Rights: The Contributing Party shall have the option... to either: (i) accept the dilution and continue the JV; or (ii) purchase the Non-Contributing Party's entire interest at fair market value.'",
+        "effective_rationale_excerpt": "Risk table 3.4: 'Additional capital requires approval but lacks process for determining need, amount, or timing. Dilution mechanism mentioned but formula and procedure undefined. Creates potential deadlock if parties disagree on capital needs or forced dilution risk without clear standards.'",
+        "judge_reasoning": "Leah correctly identifies the capital call dilution risk at 3.4, flagging it as Requires Clarification. The proposed revision addresses all GT key elements: adds notice requirements, approval process, cure period (45 days funding deadline after 30-day approval), precise dilution formula, and exit option via FMV purchase. Full Y detection with comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Improvement Ownership Unclear on Termination",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "2d63d2c4-79e0-45e6-83c8-043dc14aaaac",
+      "evidence": {
+        "proposed_revision_excerpt": "6.3 Improvements amended: '(b) License to JV: The contributing Party hereby grants to the Joint Venture an exclusive, royalty-free, worldwide license to use such improvements solely for the Purpose during the Term and for a period of three (3) years following termination of this MOU.'",
+        "effective_rationale_excerpt": "Risk table 6.3: '\"Perpetual license to JV\" conflicts with Term and termination provisions - unclear if license survives JV termination. No specification of license scope, exclusivity, or royalty terms. Risk that party improves own IP using JV resources then exploits improvements outside JV without compensation.'",
+        "judge_reasoning": "Leah correctly identifies the improvement ownership termination ambiguity at 6.3, flagging it as Requires Clarification. The analysis notes the perpetual license conflict with Term, and proposes a 3-year post-termination license with 15% royalty for external exploitation. Addresses GT key elements: clarifies post-termination license scope. Full Y detection."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "General Manager Authority Unbounded",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "bef443a2-577b-41dc-b301-0213f1edf88b",
+      "evidence": {
+        "proposed_revision_excerpt": "4.3 Day-to-Day Management amended: '(b) Authority: The General Manager shall have authority... provided that the General Manager shall not have authority to: (i) commit the JV to expenditures exceeding $25,000 individually or $100,000 in the aggregate per quarter outside approved budgets; (ii) enter into contracts with terms exceeding twelve (12) months... (c) Reporting: The General Manager shall provide written monthly reports to the Steering Committee... (d) Removal: The General Manager may be removed at any time by unanimous vote.'",
+        "effective_rationale_excerpt": "Risk table 4.3: 'General Manager appointment requires \"joint\" approval but removal process undefined. Authority limited to \"approved budgets and policies\" but boundaries of operational discretion unclear. No specification of reporting requirements, performance metrics, or accountability mechanisms.'",
+        "judge_reasoning": "Leah correctly identifies unbounded GM authority at 4.3, flagging it as Requires Clarification. The proposed revision addresses all GT key elements: adds specific expenditure authority limits, monthly reporting requirements, and removal process. Full Y detection with comprehensive governance controls."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "6.1",
+      "tier": "T2",
+      "issue": "Contributed IP License Gaps",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "34c3825e-e854-48c7-85a8-2ab6cd68fbfc",
+      "evidence": {
+        "proposed_revision_excerpt": "6.1 Contributed IP amended: '(b) License Grant: Each Party hereby grants to the Joint Venture an exclusive (even as to the licensor), royalty-free, worldwide license... (d) Sublicensing: The JV may sublicense Contributed IP to customers, partners, and contractors solely to the extent necessary to commercialize JV products. (e) Term: The licenses granted... shall terminate upon termination... except that: (i) licenses embedded in JV products delivered to customers prior to termination shall survive... and (ii) the JV shall have a six (6) month wind-down period.'",
+        "effective_rationale_excerpt": "Risk table 6.1: '\"Non-exclusive\" allows parties to license same IP to competitors during Term, potentially undermining JV competitive advantage. License scope limited to \"the Purpose\" but Purpose definition may be too narrow. No termination provisions for license upon JV end. No sublicensing rights specified.'",
+        "judge_reasoning": "Leah correctly identifies contributed IP license gaps at 6.1, flagging it as Requires Clarification. The analysis identifies: non-exclusive risk, narrow purpose scope, no post-termination treatment, no sublicensing. The proposed revision addresses all GT key elements: adds transition period (6 months), clarifies exclusivity, and specifies sublicensing rules. Full Y detection."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.4",
+      "tier": "T2",
+      "issue": "Termination IP Allocation Undefined",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "6fc77894-a355-42d3-a6ca-8fe20c7c4fea",
+      "evidence": {
+        "proposed_revision_excerpt": "10.4 Effect of Termination amended with: '(b) Developed IP: If the Parties cannot agree on the division or licensing of Developed IP within ninety (90) days after termination notice, each Party shall receive a non-exclusive, royalty-free, perpetual license to use all Developed IP...'",
+        "effective_rationale_excerpt": "Risk table 10.4: 'Developed IP \"divided or licensed as agreed\" - no default allocation mechanism if parties cannot agree. If parties can't agree, IP stuck. Combined with deadlock [Reserved] = no resolution. Should add default allocation (50/50 license-back). Should add buyout at FMV.'",
+        "judge_reasoning": "Leah correctly identifies the termination IP allocation gap at 10.4, flagging it as Requires Clarification. The analysis notes the 'as agreed' standard with no fallback and the deadlock risk. The proposed revision adds a default 90-day period and fallback to non-exclusive perpetual licenses. Addresses GT key elements: default allocation mechanism and buyout/license-back option. Full Y detection."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Indemnification Regime",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "N/A",
+        "effective_rationale_excerpt": "The canonical JSON does not contain any proposed new clause for Indemnification. The risk_table and new_clauses_proposed arrays were searched and no indemnification provisions were recommended.",
+        "judge_reasoning": "Leah does not flag the missing indemnification regime as an issue. Neither the risk_table nor the new_clauses_proposed contains any mention of mutual indemnity, IP infringement indemnity, or third-party claims coverage. This is a clear NMI - the issue is not mentioned anywhere in Leah's output."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Change of Control Provision",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "N/A",
+        "effective_rationale_excerpt": "The canonical JSON does not contain any reference to change of control provisions. The assignment restrictions at 12.4 are noted as Favorable but do not address change of control specifically.",
+        "judge_reasoning": "Leah does not flag the missing change of control provision. The risk_table at 12.4 discusses assignment restrictions but not change of control consequences. No new clause is proposed for CoC notice, consent, or termination/buyout rights upon acquisition. This is NMI."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vague Reserve Rights",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "f68018af-cd2d-46d8-a65d-145a0fc52fdc",
+      "evidence": {
+        "proposed_revision_excerpt": "5.2 Distributions amended: '(b) Reserve Limitations: The Steering Committee may retain reserves... provided that: (i) total reserves shall not exceed the greater of (A) three (3) months of projected operating expenses based on the approved annual budget, or (B) the amount of specific contractual obligations due within the following six (6) months; (ii) the Steering Committee must approve reserve amounts by unanimous vote with written justification...'",
+        "effective_rationale_excerpt": "Risk table 5.2: 'Quarterly distributions \"subject to retention of reasonable reserves\" but \"reasonable\" is undefined. Steering Committee determines reserves but no standards, limits, or approval thresholds specified. Risk of excessive reserve retention delaying distributions.'",
+        "judge_reasoning": "Leah correctly identifies the vague reserve rights issue at 5.2, flagging it as Requires Clarification. The analysis notes 'reasonable' is undefined, no limits exist, and there's risk of excessive retention. The proposed revision adds a mathematical cap (3 months expenses or 6-month obligations), unanimous approval requirement, and minimum distribution mandate. Addresses GT key element: cap on reserves. Full Y detection."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "11.1-11.3",
+      "tier": "T3",
+      "issue": "Multi-Step Dispute Resolution",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": "4af79e6c-0997-47cb-8553-97cee19e4bf6",
+      "evidence": {
+        "proposed_revision_excerpt": "11.1 Negotiation amended to specify 30-day period, seniority requirements. 11.2 Mediation amended to specify mediator selection and timeframe. 11.3 Arbitration amended to specify AAA Commercial Arbitration Rules, single arbitrator, cost allocation.",
+        "effective_rationale_excerpt": "Risk table entries for 11.1, 11.2, 11.3 each flag gaps: no timeline for negotiation, no mediator selection process, no arbitration rules specified.",
+        "judge_reasoning": "Leah identifies issues across the dispute resolution cascade at 11.1-11.3, flagging each as Requires Clarification. The analysis notes missing timelines, selection processes, and rules. However, the GT specifically mentions concern about delays and suggests emergency arbitration, which Leah does not propose. Partial quality score for not adding emergency provisions, but full Y detection as the multi-step issues are identified."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "1.4",
+      "tier": "T3",
+      "issue": "No Conditions Precedent for JV Entity",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "N/A",
+        "effective_rationale_excerpt": "Risk table entry for 1.1-1.5 Definitions is marked Favorable with no concerns raised. Section 1.4 defining JV Entity as optional ('if the Parties elect') is not flagged.",
+        "judge_reasoning": "Leah marks the definitions section 1.1-1.5 as Favorable and does not flag the JV Entity formation issue at 1.4. The risk that capital and IP could flow before entity formation, the lack of timeline, and missing conditions precedent are not addressed anywhere in the output. This is NMI."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "N/A",
+        "effective_rationale_excerpt": "The canonical JSON does not contain any proposed new clause for Data Protection or Privacy. The Regulatory Compliance new clause addresses export controls but not GDPR/CCPA or data protection obligations.",
+        "judge_reasoning": "Leah does not flag the missing data protection/privacy clause. The Regulatory Compliance new clause focuses on export controls and CFIUS, not personal data processing obligations. Given the JV involves AI technology that may process personal data, this gap should have been identified. This is NMI."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "N/A - Leah marks 7.2 as Favorable with no proposed revision.",
+        "effective_rationale_excerpt": "Risk table 7.2: Classification: Favorable. Detailed reasoning: 'Five-year post-termination survival period for confidentiality obligations provides reasonable protection for sensitive information while not creating indefinite burden. Standard market term for technology ventures.' Recommended action: 'No Action Required.'",
+        "judge_reasoning": "Leah incorrectly marks the 5-year confidentiality survival at 7.2 as Favorable. The GT correctly identifies that quantum technology trade secrets have indefinite commercial value and 5 years is insufficient - perpetual protection should be added for trade secrets. Leah's assessment that this is 'standard market term' fails to recognize the unique nature of quantum computing trade secrets. This is N (marked Favorable when issue exists)."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 12,
+      "P": 2,
+      "N": 1,
+      "NMI": 3
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 2,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 7,
+        "P": 0,
+        "N": 1,
+        "NMI": 2
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 5,
+    "t1_detected": 5,
+    "total_detection_points": 60,
+    "total_quality_points": 102,
+    "total_points": 162,
+    "max_detection_points": 93,
+    "detection_percentage": 64.5,
+    "part_a_score": 24,
+    "part_a_max": 24,
+    "part_a_percentage": 100.0,
+    "part_b_score": 162,
+    "part_b_max_possible": 255,
+    "part_b_percentage": 63.5
+  },
+  "combined_summary": {
+    "part_a": {
+      "percentage": 100.0,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "percentage": 64.5,
+      "t1_gate": "PASS",
+      "pass_fail": "MARGINAL"
+    },
+    "combined": {
+      "pass": true,
+      "notes": "Part A perfect score (100%). Part B T1 Gate passed (5/5 T1 issues detected at Y or P level). Overall Part B percentage is 64.5% which falls in MARGINAL range (50-69%). Key gaps: No Indemnification, No Change of Control, No Data Protection flagged as NMI. Confidentiality survival incorrectly marked Favorable."
+    }
+  }
+}

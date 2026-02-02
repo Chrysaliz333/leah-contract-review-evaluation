@@ -1,0 +1,661 @@
+{
+  "gt_metadata": {
+    "contract_id": "SLA_CloudServices_Alpha",
+    "contract_type": "SaaS License",
+    "parties": {
+      "licensor": "Alpha Cloud Services Inc.",
+      "licensee": "[Unnamed Licensee]"
+    },
+    "representing_party": "Licensee",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "revision_notes": "v3.0: Tier changes: GT-10: T2 -> T3; GT-11: T2 -> T3; GT-14: T2 -> T3. Previous: 2.2_corrected_2026-01-14_v3_LOCKED",
+    "schema_version": "3.0",
+    "v3_migration_date": "2026-01-14",
+    "v4_enhancement_date": "2026-01-20"
+  },
+  "ground_truth": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "Unlimited Licensee Liability",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Licensee acknowledges unlimited liability for breach",
+        "Licensor liability is capped but Licensee's is not",
+        "Grossly one-sided allocation",
+        "Should add mutual liability cap",
+        "At minimum remove unlimited liability acknowledgment"
+      ],
+      "contract_text": "Licensee acknowledges that any breach of this Agreement may result in unlimited liability to Licensor for all direct and indirect damages suffered by Licensor as a result of such breach.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "8.3",
+      "tier": "T1",
+      "issue": "Full AS-IS Disclaimer",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Software provided AS-IS",
+        "Disclaims merchantability, fitness, non-infringement",
+        "May override statutory protections",
+        "Should retain basic warranties"
+      ],
+      "contract_text": "EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE SOFTWARE IS PROVIDED \"AS IS\" AND LICENSOR DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Consequential Damages Exclusion - Licensor Only",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Exclusion applies only to Licensor",
+        "Licensee remains exposed to consequential damages claims",
+        "One-sided protection",
+        "Should be mutual exclusion"
+      ],
+      "contract_text": "IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES...",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Low Liability Cap - Licensor Only",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "12-month cap applies only to Licensor",
+        "No cap on Licensee liability (see 8.1)",
+        "Should be mutual",
+        "Should add carve-outs for IP, data breach"
+      ],
+      "contract_text": "IN NO EVENT SHALL LICENSOR'S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT EXCEED THE AMOUNT OF SUBSCRIPTION FEES PAID BY LICENSEE TO LICENSOR IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "12.4",
+      "tier": "T1",
+      "issue": "Asymmetric Assignment",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Licensee needs consent to assign",
+        "Licensor can assign without restriction",
+        "Could end up with unknown/hostile provider",
+        "Should be mutual consent requirement",
+        "Add M&A exception for Licensee"
+      ],
+      "contract_text": "Licensee may not assign this Agreement without Licensor's prior written consent. Licensor may assign this Agreement without restriction.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "9.1 / 9.2",
+      "tier": "T1",
+      "issue": "Narrow Indemnification - No Licensee Protection Defined",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "9.1 covers only IP infringement by Licensor",
+        "9.2 is [Reserved] - no Licensee indemnification defined",
+        "No data breach, negligence, misconduct coverage",
+        "Should expand Licensor indemnification",
+        "Should add narrow, capped Licensee indemnification"
+      ],
+      "contract_text": "9.1: Licensor shall indemnify, defend, and hold harmless Licensee from and against any third-party claims alleging that the Software... infringes any patent, copyright, or trademark... 9.2: [Reserved]",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "'Reasonable' safeguards is subjective",
+        "No specific standards (SOC 2, ISO 27001)",
+        "No audit rights for Licensee",
+        "No breach notification requirements",
+        "Should specify security standards",
+        "Should add audit rights"
+      ],
+      "contract_text": "Licensor shall implement and maintain reasonable administrative, technical, and physical safeguards designed to protect the security, confidentiality, and integrity of Licensee Data.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "11.4",
+      "tier": "T1",
+      "issue": "No Data Export on Termination",
+      "expected_classification": "❌",
+      "key_elements": [
+        "11.4 only addresses Confidential Information return",
+        "No provision for Licensee Data export/return",
+        "5.2 confirms Licensee owns data but no termination mechanism",
+        "Could lose all data on termination",
+        "Should add data export period (30-60 days)",
+        "Should specify format and assistance"
+      ],
+      "contract_text": "Upon termination... each Party shall return or destroy all Confidential Information of the other Party in its possession. [No provision for Licensee Data export]",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "2.1",
+      "tier": "T2",
+      "issue": "Non-Transferable License",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "License is non-exclusive, non-transferable, non-sublicensable",
+        "Cannot extend to affiliates or contractors without explicit permission",
+        "Should add affiliate rights",
+        "Should add contractor exception"
+      ],
+      "contract_text": "Licensor hereby grants to Licensee a non-exclusive, non-transferable, non-sublicensable right to access and use the Software...",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.1",
+      "tier": "T3",
+      "issue": "Annual Advance Payment",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Full year payment due upfront",
+        "No quarterly/monthly option",
+        "Cash flow impact",
+        "Should negotiate quarterly payment option"
+      ],
+      "contract_text": "Unless otherwise specified in the Order Form, all Subscription Fees are due and payable annually in advance.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "1.5% per month = 18% APR",
+        "No cure period before interest",
+        "Should reduce to 1% or prime + margin",
+        "Add grace period"
+      ],
+      "contract_text": "Any amounts not paid when due shall bear interest at the rate of one and one-half percent (1.5%) per month...",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Weak Uptime SLA",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "99.5% target with 'commercially reasonable efforts' only",
+        "No measurement methodology specified",
+        "No service credits for downtime",
+        "Should add binding SLA with credits"
+      ],
+      "contract_text": "Licensor shall use commercially reasonable efforts to make the Software available 99.5% of the time during each calendar month, excluding scheduled maintenance windows and circumstances beyond Licensor's reasonable control.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "Limited Support Hours",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Business hours only (9-5 PT, M-F)",
+        "No 24/7 emergency support",
+        "No severity tiers or escalation",
+        "Should add emergency support option"
+      ],
+      "contract_text": "Licensor shall provide technical support to Licensee during normal business hours (9:00 AM to 5:00 PM Pacific Time, Monday through Friday, excluding holidays).",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Feedback Ownership",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "All feedback becomes Licensor property",
+        "No restriction, no obligation to Licensee",
+        "Could include valuable ideas",
+        "Should add compensation for implemented features"
+      ],
+      "contract_text": "If Licensee provides any suggestions, ideas, or feedback... Licensor shall own all right, title, and interest in and to such Feedback...",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "11.1",
+      "tier": "T2",
+      "issue": "Auto-Renewal Terms",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "60-day notice for non-renewal",
+        "Auto-renews for successive 1-year periods",
+        "No termination for convenience during term",
+        "Should add TfC with notice"
+      ],
+      "contract_text": "This Agreement shall automatically renew for successive one (1) year periods unless either Party provides written notice of non-renewal at least sixty (60) days prior...",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "2.3",
+      "tier": "T2",
+      "issue": "Usage Restrictions Overbroad",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Cannot reverse engineer, modify, create derivative works",
+        "No carve-outs for backup, DR, security testing",
+        "Should add standard operational exceptions"
+      ],
+      "contract_text": "Licensee shall not... (a) copy, modify, or create derivative works of the Software; (b) reverse engineer, disassemble, or decompile the Software...",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "DPA Optional / No Timing",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "DPA is 'separate' and optional",
+        "No requirement to execute before processing",
+        "Could process personal data without DPA",
+        "Should require DPA before processing begins"
+      ],
+      "contract_text": "To the extent Licensor processes any personal data on behalf of Licensee, the Parties shall execute a separate Data Processing Agreement...",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "8.2",
+      "tier": "T2",
+      "issue": "Performance Warranty Weak",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Only remedy is 'efforts to correct'",
+        "No workaround, refund, or termination right",
+        "Exclusive remedy clause limits options",
+        "Should add meaningful remedies"
+      ],
+      "contract_text": "Licensor's sole obligation and Licensee's exclusive remedy for any breach of this warranty shall be for Licensor to use commercially reasonable efforts to correct any material non-conformity.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "12.10",
+      "tier": "T2",
+      "issue": "Survival Incomplete",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Survival lists Articles 6,7,8,9,10,12",
+        "Article 5 (Data Security) not included",
+        "Payment obligations not explicitly survived",
+        "Should add Article 5 to survival"
+      ],
+      "contract_text": "The provisions of Articles 6, 7, 8, 9, 10, and 12 shall survive any termination or expiration of this Agreement.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Audit Rights",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "No right to audit Licensor's security or compliance",
+        "5.1 makes security promises but no verification",
+        "Should add annual audit right or SOC 2 report requirement"
+      ],
+      "contract_text": "N/A - No audit rights provision exists in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Business Continuity",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "No RTO/RPO requirements",
+        "No disaster recovery provisions",
+        "No redundancy requirements",
+        "Should add BC/DR commitments"
+      ],
+      "contract_text": "N/A - No business continuity provision exists in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Force Majeure",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "No defined force majeure events",
+        "No termination rights for extended FM",
+        "Should add FM clause with termination right"
+      ],
+      "contract_text": "N/A - No force majeure provision exists in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Vendor Insurance Requirements",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "No CGL, Cyber, E&O insurance requirements",
+        "No certificate of insurance requirement",
+        "Should add minimum insurance requirements"
+      ],
+      "contract_text": "N/A - No insurance requirements provision exists in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "6.3",
+      "tier": "T3",
+      "issue": "Aggregated Data Use",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Licensor can use 'aggregated, anonymised data'",
+        "No re-identification prohibition",
+        "Should add re-identification prohibition"
+      ],
+      "contract_text": "Licensor may collect and analyse aggregated, anonymised data derived from Licensee's use of the Software...",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "12.2",
+      "tier": "T3",
+      "issue": "Arbitration Required",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "San Francisco venue",
+        "No mediation step",
+        "AAA Commercial Rules",
+        "Consider adding negotiation/mediation first"
+      ],
+      "contract_text": "Any dispute arising out of or relating to this Agreement shall be resolved by binding arbitration... in San Francisco, California.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "4.3",
+      "tier": "T3",
+      "issue": "Short Maintenance Notice",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "48-hour notice for maintenance",
+        "May be insufficient for business planning",
+        "Consider 5 business days for major maintenance"
+      ],
+      "contract_text": "Licensor shall use commercially reasonable efforts to provide Licensee with at least 48 hours' prior notice of any scheduled maintenance...",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    }
+  ],
+  "tier_summary": {
+    "T1": {
+      "count": 8,
+      "weight": 8,
+      "issues": [
+        "GT-01 (8.1 - Unlimited Licensee Liability)",
+        "GT-02 (8.3 - Full AS-IS Disclaimer)",
+        "GT-03 (10.1 - Consequential Damages Exclusio)",
+        "GT-04 (10.2 - Low Liability Cap - Licensor O)",
+        "GT-05 (12.4 - Asymmetric Assignment)",
+        "GT-06 (9.1 / 9.2 - Narrow Indemnification - No Li)",
+        "GT-07 (5.1 - Vague Security Measures)",
+        "GT-08 (11.4 - No Data Export on Termination)"
+      ]
+    },
+    "T2": {
+      "count": 12,
+      "weight": 5,
+      "issues": [
+        "GT-09 (2.1 - Non-Transferable License)",
+        "GT-12 (4.1 - Weak Uptime SLA)",
+        "GT-13 (4.2 - Limited Support Hours)",
+        "GT-15 (11.1 - Auto-Renewal Terms)",
+        "GT-16 (2.3 - Usage Restrictions Overbroad)",
+        "GT-17 (5.3 - DPA Optional / No Timing)",
+        "GT-18 (8.2 - Performance Warranty Weak)",
+        "GT-19 (12.10 - Survival Incomplete)",
+        "GT-20 (N/A (Missing) - No Audit Rights)",
+        "GT-21 (N/A (Missing) - No Business Continuity)",
+        "GT-22 (N/A (Missing) - No Force Majeure)",
+        "GT-23 (N/A (Missing) - No Vendor Insurance Requiremen)"
+      ]
+    },
+    "T3": {
+      "count": 6,
+      "weight": 1,
+      "issues": [
+        "GT-10 (3.1 - Annual Advance Payment)",
+        "GT-11 (3.3 - High Late Fee)",
+        "GT-14 (6.2 - Feedback Ownership)",
+        "GT-24 (6.3 - Aggregated Data Use)",
+        "GT-25 (12.2 - Arbitration Required)",
+        "GT-26 (4.3 - Short Maintenance Notice)"
+      ]
+    },
+    "weighted_max": 130
+  },
+  "validation_notes": {
+    "phantom_clauses_fixed": [
+      "Original :020 referenced 5.4 - Article 5 has only 5.1, 5.2, 5.3",
+      "Original :021 referenced 4.4 - Article 4 has only 4.1, 4.2, 4.3",
+      "Original :022 referenced 12.11 - Article 12 ends at 12.10",
+      "All changed to 'N/A (Missing)' format"
+    ],
+    "renumbered": "GT IDs renumbered sequentially from GT-01",
+    "contract_verification": [
+      "All clause references verified against actual contract text",
+      "8.1 unlimited liability confirmed - CRITICAL finding",
+      "9.2 [Reserved] confirmed - no Licensee indemnity definition"
+    ]
+  }
+}

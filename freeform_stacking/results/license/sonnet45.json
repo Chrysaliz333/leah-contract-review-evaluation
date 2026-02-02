@@ -1,0 +1,432 @@
+{
+  "meta": {
+    "contract": "license",
+    "model_id": "sonnet45",
+    "model_display_name": "Sonnet 4.5",
+    "environment": "hotfix",
+    "evaluation_timestamp": "2026-01-25T23:00:00Z",
+    "gt_version": "1.0",
+    "gt_file": "license_stacking.json",
+    "part_b_gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "LICENSE_01",
+      "clause": "3.2",
+      "cp_redline_description": "CP added grant-back of Licensee Background Technology to Licensor for improvements",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Risk_table 3.2: 'Unilateral improvement assignment severely disadvantages TechPro's R&D investment. TechPro will invest substantial resources developing improvements, yet receives zero ownership or compensation for innovations it creates. This disincentivizes innovation and transfers all value of TechPro's development work to Licensor without royalty reduction, license extension, or other consideration. Standard practice provides joint ownership, licensee ownership with licensor license-back, or reduced royalties for improvements.' Classification: Unfavourable. Recommended action: AMEND to provide joint ownership or Licensee ownership with license-back.",
+        "judge_reasoning": "Leah correctly identifies the 3.2 improvement ownership issue as Unfavourable and recommends AMEND which would effectively reject the CP redline's additional grant-back of Background Technology. The reasoning addresses all GT key elements: (1) Licensee should own improvements OR get license back - Leah proposes joint ownership or Licensee exclusive license with royalty-free license-back; (2) Licensor getting both ownership AND Licensee tech is overreach - Leah explicitly states this 'creates disincentive to innovate' and 'transfers all value' to Licensor. The detailed reasoning demonstrates understanding that accepting the CP redline would compound the baseline issue. Full marks awarded. Note: While the existing_redlines_check entry for 3.2 appears malformed, the risk_table clearly shows Leah identified this as a critical issue requiring rejection/amendment."
+      }
+    },
+    {
+      "gt_id": "LICENSE_02",
+      "clause": "4.1",
+      "cp_redline_description": "CP doubled minimum royalty to $500K, moved to Year 1, added 15% escalator",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "existing_redlines_check: 'Increases minimum to $500,000 starting Year 1 with 15% annual escalation; eliminates running royalty credit; makes failure material breach. Financial burden escalation dramatically increases TechPro's risk. Original allowed Year 1 ramp-up and credited actual sales against minimum; redline doubles immediate obligation, adds compounding 15% increases (reaching $1M+ by Year 5), and eliminates offset mechanism creating double-payment scenario where running royalties don't reduce minimum. Automatic material breach classification removes cure rights and enables immediate termination. This creates unsustainable financial exposure with no performance flexibility.' Action: REJECT",
+        "judge_reasoning": "Leah correctly identified this CP redline as requiring REJECT with comprehensive reasoning. All GT key elements addressed: (1) Revert to Year 2 start - Leah notes 'Original allowed Year 1 ramp-up' being eliminated; (2) Revert to $250K amount - Leah flags the doubling to $500K; (3) Remove 15% annual escalator - Leah explicitly identifies the 'compounding 15% increases reaching $1M+ by Year 5'; (4) Maintain credit for running royalties - Leah notes the elimination of the offset mechanism creating 'double-payment scenario'. The reasoning addresses GT requirements about the escalator compounding to 200%+ over 10 years and baseline $250K already being a material commitment. Full marks."
+      }
+    },
+    {
+      "gt_id": "LICENSE_03",
+      "clause": "12.2",
+      "cp_redline_description": "CP reduced liability cap to upfront fee only, excluded product recall and commercial loss damages",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "existing_redlines_check: 'Reduces cap to upfront license fee only ($500,000 fixed); adds explicit exclusion for lost profits, revenues, and product recalls. Liability asymmetry creates catastrophic exposure imbalance. Original cap scaled with relationship value (12-month royalties); redline fixes cap at $500,000 regardless of contract duration or damages, while TechPro faces unlimited liability under other provisions. New exclusions for product recalls and lost revenues are particularly harmful given TechPro's role as product manufacturer—a single defective product line could generate millions in recall costs with zero Licensor accountability for IP defects. This violates fundamental risk allocation principles.' Action: REJECT",
+        "judge_reasoning": "Leah correctly identified this as requiring REJECT with excellent reasoning. All GT key elements addressed: (1) Revert cap to 12-month royalties - Leah explicitly contrasts 'Original cap scaled with relationship value (12-month royalties)' vs fixed $500K; (2) Remove exclusion for product recall damages - Leah specifically identifies 'product recalls' exclusion as 'particularly harmful'; (3) Remove exclusion for lost profits from IP defects - Leah notes 'lost revenues' exclusion harm. The reasoning addresses GT requirement about upfront fee potentially being exhausted in Year 1 and the need for ongoing royalty-based liability over the 10-year term. Full marks."
+      }
+    },
+    {
+      "gt_id": "LICENSE_04",
+      "clause": "13.2",
+      "cp_redline_description": "CP made termination asymmetric: immediate for Licensor, 120-day cure for Licensee only",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "existing_redlines_check: 'Grants Licensor immediate termination right for any breach including payment delays; restricts Licensee termination to 120-day cure period for material breaches only. Termination asymmetry eliminates TechPro's contractual security. Original provided mutual 60-day cure rights; redline grants Licensor immediate termination without cure period for any breach (including minor payment timing issues), while forcing TechPro to wait 120 days and prove materiality. This weaponizes termination rights against TechPro, enabling Licensor to terminate strategically (e.g., if market conditions improve) while TechPro remains locked in.' Action: REJECT",
+        "judge_reasoning": "Leah correctly identified this as requiring REJECT with comprehensive analysis. All GT key elements addressed: (1) Symmetric termination rights - Leah explicitly contrasts the asymmetry (immediate vs 120 days); (2) Reasonable cure period for both (60 days) - Leah notes 'Original provided mutual 60-day cure rights'; (3) Material breach standard for both - Leah identifies that Licensor can terminate for 'any breach' while Licensee needs 'material breaches only'; (4) Written notice requirement - implicitly preserved by rejecting the asymmetric redline. The reasoning addresses GT requirement about asymmetric terms creating power imbalance and market standard for mutual terms. Full marks."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.2",
+      "tier": "T1",
+      "issue": "Improvements owned by Licensor - loses R&D investment",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 8,
+      "total_points": 16,
+      "matched_redline_id": "risk_table_3.2",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to provide joint ownership of improvements, or grant TechPro exclusive license to improvements it develops with royalty-free license-back to Licensor, or reduce running royalty by 50% for products incorporating Licensee-developed improvements",
+        "effective_rationale_excerpt": "Unilateral improvement assignment severely disadvantages TechPro's R&D investment. TechPro will invest substantial resources developing improvements, yet receives zero ownership or compensation for innovations it creates. This disincentivizes innovation and transfers all value of TechPro's development work to Licensor without royalty reduction, license extension, or other consideration. Standard practice provides joint ownership, licensee ownership with licensor license-back, or reduced royalties for improvements. Current structure makes TechPro's R&D investment a gift to Licensor.",
+        "judge_reasoning": "Full detection. Leah correctly identifies GT-01 at clause 3.2, classifying it as Unfavourable. The analysis addresses all GT key elements: (1) All improvements become Licensor property - explicitly identified; (2) Licensee loses R&D investment - 'TechPro will invest substantial resources developing improvements, yet receives zero ownership'; (3) Creates disincentive to innovate - explicitly stated; (4) Should negotiate Licensee ownership - proposed as alternative; (5) Alternative joint ownership - proposed; (6) Licensor should pay for improvements - proposed via royalty reduction. The proposed fix is comprehensive and legally sound. High quality scores awarded."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Licensor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_12.2",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to make liability cap mutual, increase cap to greater of $5,000,000 or total royalties paid to date, add carve-outs excluding from cap: (1) IP indemnification obligations, (2) willful misconduct or fraud, (3) confidentiality breaches, and (4) payment obligations; specify cap applies per incident not in aggregate",
+        "effective_rationale_excerpt": "Unilateral cap creates severe liability asymmetry favoring Licensor. Cap applies only to Licensor (TechPro has unlimited liability), and 12-month royalty measure is inadequate for claims arising from IP defects that could destroy TechPro's entire product line and business. If claim arises in Year 1, cap could be as low as $500,000 (upfront fee) despite TechPro's potential losses in millions. Missing reciprocal cap for TechPro and carve-outs for IP indemnification, willful misconduct, and confidentiality breaches.",
+        "judge_reasoning": "Full detection. Leah correctly identifies the liability cap issue at 12.2 and addresses all GT key elements: (1) Licensor liability capped at 12 months royalties only - explicitly identified as inadequate; (2) Royalties may be low in early years - 'If claim arises in Year 1, cap could be as low as $500,000'; (3) No carve-outs for IP title failure - proposed carve-out for 'IP indemnification obligations'; (4) No carve-outs for willful misconduct - proposed carve-out explicitly; (5) Increase to 24+ months or fixed minimum - proposed $5M or total royalties to date; (6) Add carve-outs for IP warranty breach - addressed via IP indemnification carve-out. Comprehensive analysis and fix."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Mandatory minimum royalty regardless of sales",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "risk_table_5.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk_table at 5.1: 'AMEND to extend payment deadline to 45 days after quarter end, add 10-day cure period before interest accrues, permit good-faith withholding of disputed amounts with notice, and add royalty rate reduction to 7% after Year 5 or upon reaching $10M cumulative royalties'",
+        "effective_rationale_excerpt": "Leah's risk_table entry at 5.1 discusses royalty rate and payment timing concerns. The existing_redlines_check for 4.1 comprehensively discusses the minimum royalty issue: 'Original allowed Year 1 ramp-up and credited actual sales against minimum' in context of rejecting the CP redline that worsened these terms.",
+        "judge_reasoning": "Full detection. While Leah's risk_table does not have a direct entry for 4.1 addressing the baseline minimum royalty concern, the existing_redlines_check analysis demonstrates clear understanding of the GT issue. Leah notes the original clause 'allowed Year 1 ramp-up' (i.e., starts Year 2, not Year 1), 'credited actual sales against minimum' (running royalties offset), and describes the $250K commitment. The analysis implicitly treats the baseline as acceptable while rejecting the CP worsening. GT key elements partially addressed: the baseline minimum royalty is understood but Leah does not propose further reducing it or adding force majeure suspension. Quality scores moderate as the analysis accepts the baseline rather than negotiating improvements."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.2",
+      "tier": "T1",
+      "issue": "AS-IS disclaimer with limited warranties",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table_9.2",
+      "evidence": {
+        "proposed_revision_excerpt": "DELETE blanket disclaimer and AMEND to provide limited warranty that Licensed IP is suitable for use in Field of Use, is free from material defects, and complies with applicable laws; preserve only disclaimer of warranties not expressly stated in Agreement",
+        "effective_rationale_excerpt": "Blanket disclaimer contradicts 9.1 warranties and eliminates fitness for purpose protection. For exclusive license where TechPro will invest millions in product development, 'AS IS' disclaimer is commercially unreasonable and creates risk that Licensed IP is not suitable for intended Field of Use. Disclaimer likely overrides limited 9.1 warranties, leaving TechPro with no recourse if IP is defective, unenforceable, or unsuitable. Missing warranty of merchantability and fitness for particular purpose.",
+        "judge_reasoning": "Full detection. Leah correctly identifies GT-04 at 9.2 with Unfavourable classification. All GT key elements addressed: (1) Licensed IP provided AS-IS - explicitly identified; (2) Only warranty is 9.1 - Leah notes 'contradicts 9.1 warranties'; (3) 'To knowledge' qualifier weakens warranty - addressed in 9.1 analysis; (4) No warranty of functionality - 'Licensed IP is not suitable for intended Field of Use'; (5) No warranty of fitness for Field of Use - explicitly stated as missing; (6) Should strengthen to unconditional non-infringement - proposed in 9.1; (7) Add functionality warranty - proposed 'suitable for use in Field of Use'. Excellent analysis with comprehensive proposed fix. High quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High royalty rate",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 5,
+      "total_points": 5.5,
+      "matched_redline_id": "risk_table_5.1",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to extend payment deadline to 45 days after quarter end, add 10-day cure period before interest accrues, permit good-faith withholding of disputed amounts with notice, and add royalty rate reduction to 7% after Year 5 or upon reaching $10M cumulative royalties",
+        "effective_rationale_excerpt": "Royalty rate lacks market context and payment timing creates cash flow pressure. 10% rate may be reasonable but lacks benchmarking; more critically, 30-day payment window is aggressive for quarterly reporting and payment.",
+        "judge_reasoning": "Partial detection. Leah addresses 5.1 but focuses primarily on payment timing rather than the royalty rate itself. The GT issue is that 10% is above typical rates for consumer electronics (usually 2-5%) and may compress margins. Leah acknowledges '10% rate may be reasonable but lacks benchmarking' - this shows awareness of the concern but does not flag it as problematic. The proposed fix includes 'royalty rate reduction to 7% after Year 5' which partially addresses GT key element about negotiating lower rate or tiered structure. However, Leah does not propose volume discounts or industry benchmark comparison. Partial detection awarded as the issue is recognised but not fully developed."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Sublicensing requires Licensor consent",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "risk_table_2.2",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to require consent not be unreasonably withheld/delayed, add deemed approval after 15 business days, specify sublicense survival rights, and permit sublicensing to affiliates and contractors without consent",
+        "effective_rationale_excerpt": "Unilateral consent requirement severely restricts TechPro's commercialization flexibility. No standards for consent (reasonableness, timeliness), no deemed approval mechanism, and no sublicense survival upon termination. This gives Licensor absolute veto power over TechPro's go-to-market strategy and partnership opportunities. For exclusive licensee developing products, inability to freely sublicense to manufacturers, distributors, or partners undermines commercial value of license.",
+        "judge_reasoning": "Full detection. Leah correctly identifies GT-06 at 2.2 with Unfavourable classification. All GT key elements addressed: (1) Prior written consent required - explicitly identified as problematic; (2) Could limit business model flexibility - 'severely restricts commercialization flexibility'; (3) May restrict contract manufacturing - 'sublicense to manufacturers, distributors, or partners'; (4) Should add automatic affiliate sublicensing - proposed 'permit sublicensing to affiliates and contractors without consent'; (5) Consent not unreasonably withheld/delayed - explicitly proposed; (6) Pre-approved sublicensee categories - addressed via deemed approval mechanism. Comprehensive analysis with excellent proposed fix. High quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_12.1",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to add carve-outs permitting consequential damages for: (1) willful misconduct or fraud, (2) IP infringement indemnification, (3) confidentiality breaches, (4) failure to pay royalties, and (5) wrongful termination; clarify that lost profits from Licensed Product sales are direct damages not excluded",
+        "effective_rationale_excerpt": "Mutual exclusion appears balanced but creates asymmetric practical impact. TechPro as product manufacturer faces greater consequential damage exposure (lost profits from product recalls, business interruption, reputational harm) than Licensor who primarily receives royalties. Exclusion should have carve-outs for: willful misconduct, IP indemnification obligations, confidentiality breaches, and fraud.",
+        "judge_reasoning": "Full detection. Leah correctly identifies GT-07 at 12.1 with Requires Clarification classification. All GT key elements addressed: (1) Neither party liable for consequential damages - explicitly identified; (2) Blocks recovery for lost profits if IP fails - 'lost profits from product recalls, business interruption'; (3) Should add carve-outs for IP title failure - proposed 'IP infringement indemnification'; (4) Carve-outs for willful misconduct - explicitly proposed; (5) Carve-outs for breach of exclusivity - addressed via wrongful termination carve-out. The analysis correctly notes the practical asymmetry despite mutual language. Comprehensive proposed fix. High quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No termination for convenience - 10-year lock-in",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_13.1",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to add TechPro option to extend for two additional 5-year terms upon 180 days' notice, add TechPro right to terminate without cause after Year 3 upon 180 days' notice and payment of early termination fee equal to 6 months' minimum royalty, and add renegotiation provision if cumulative royalties exceed $10,000,000",
+        "effective_rationale_excerpt": "Fixed 10-year term without renewal options or performance milestones creates inflexibility and lock-in risk. No provision for early exit by TechPro if Licensed IP becomes obsolete or market conditions change. Missing automatic renewal provisions and renegotiation triggers (e.g., if minimum royalties become commercially unreasonable). For exclusive license requiring substantial investment, TechPro should have option to extend if successful, and option to terminate if unsuccessful after reasonable period.",
+        "judge_reasoning": "Full detection. Leah correctly identifies GT-08 (missing TfC) via the 13.1 term analysis. All GT key elements addressed: (1) 10-year term with no TfC right - explicitly identified as 'lock-in risk'; (2) Only exit is termination for cause - implicitly acknowledged; (3) Locked in even if IP proves commercially unviable - 'if Licensed IP becomes obsolete or market conditions change'; (4) Should add TfC with 12-month notice after Year 3 - proposed '180 days' notice' after Year 3 (slightly shorter but reasonable); (5) Annual opt-out after commitment period - addressed via the Year 3 exit provision; (6) Allow exit if minimum royalties unsustainable - 'if minimum royalties become commercially unreasonable'. Excellent analysis with actionable proposed fix. High quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Non-refundable upfront fee",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "risk_table_5.2",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to make 50% of upfront fee refundable if Licensor terminates without cause in first 24 months, or provide that upfront fee is fully creditable against first $500,000 of running royalties, or place in escrow pending TechPro's verification of IP validity",
+        "effective_rationale_excerpt": "Non-refundable structure creates total loss risk if Licensor breaches early or IP proves defective. $500,000 represents substantial capital commitment with zero protection if Licensed IP is unenforceable, infringes third-party rights, or Licensor terminates wrongfully within first year. Standard practice provides partial refund for early termination by Licensor or credit against future royalties. Missing escrow mechanism or performance milestone linking payment to IP validation.",
+        "judge_reasoning": "Full detection. Leah correctly identifies GT-09 at 5.2 with Requires Clarification classification. All GT key elements addressed: (1) $500K upfront is non-refundable - explicitly identified; (2) Significant sunk cost if IP proves unusable - 'if Licensed IP is unenforceable, infringes third-party rights'; (3) Standard for exclusive IP licenses but still a risk - Leah notes 'Standard practice provides partial refund'; (4) Could negotiate partial refund if IP fails validity challenge - proposed 50% refund for early termination; (5) Consider escrow until first commercial use - explicitly proposed 'escrow pending IP validity verification'. Comprehensive analysis with multiple alternative fixes. High quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "7.1",
+      "tier": "T3",
+      "issue": "Audit cost-shifting threshold favors Licensor",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "risk_table_7.1",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to define reasonable notice as minimum 30 business days, limit audit to 5 consecutive business days at TechPro's facilities during business hours, restrict scope to Licensed Product records only, increase cost-shifting threshold to 10% and require intentional underpayment, limit auditor to Big 4 accounting firm, add auditor confidentiality obligations, and cap audit frequency at once per year regardless of findings",
+        "effective_rationale_excerpt": "Audit scope lacks boundaries and cost-shifting threshold creates dispute risk. 'Reasonable notice' undefined (should be minimum 30 days); no limitation on audit duration, location requirements, or scope restrictions (could extend to unrelated business records). 5% threshold for cost-shifting is low and could trigger on good-faith calculation differences rather than intentional underpayment.",
+        "judge_reasoning": "Full detection. Leah correctly identifies GT-10 at 7.1 with Requires Clarification classification. All GT key elements addressed: (1) Licensor can audit annually - addressed via frequency limitation; (2) Licensee bears audit costs if underpayment exceeds 5% - explicitly identified; (3) 5% threshold is relatively low - 'cost-shifting threshold creates dispute risk... could trigger on good-faith calculation differences'; (4) Should increase threshold to 10% - explicitly proposed; (5) Add cap on audit frequency - proposed 'once per year regardless of findings'; (6) Require reasonable advance notice - proposed '30 business days'. Excellent analysis with comprehensive proposed fix addressing all GT concerns plus additional safeguards. High quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit A",
+      "tier": "T2",
+      "issue": "Licensed IP schedule (Exhibit A) not attached - undefined scope",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not mentioned. Leah's risk_table entry at 2.1 mentions 'Territory (referenced but not defined in main text, deferred to Exhibit B)' but does NOT address the GT-11 issue about Exhibit A (Licensed IP schedule) being blank. The GT requires identification that Exhibit A states '[Patent and trademark schedule to be attached]' and that client cannot know what IP they are licensing without this populated. Leah's canonical JSON contains no reference to Exhibit A being blank or the Licensed IP scope being undefined. This is a material T2 issue that was completely missed."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "Exhibit B",
+      "tier": "T2",
+      "issue": "Territory definition (Exhibit B) not attached - exclusivity meaningless",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 5,
+      "total_points": 7.5,
+      "matched_redline_id": "risk_table_2.1",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to define Territory inline, clarify exclusivity scope, address post-Term product sales, and specify sublicense survival rights",
+        "effective_rationale_excerpt": "Scope ambiguity creates enforcement and exclusivity risks. Clause lacks definition of 'Territory' (referenced but not defined in main text, deferred to Exhibit B), and 'exclusive' is undefined—unclear if Licensor retains rights to use Licensed IP itself or grant licenses outside Field of Use.",
+        "judge_reasoning": "Partial detection. Leah's risk_table entry at 2.1 correctly identifies that Territory is 'deferred to Exhibit B' and flags this as creating scope ambiguity. However, Leah does not explicitly state that Exhibit B is BLANK (stating '[Territory definition to be attached]') as required by the GT. The GT issue is that exclusivity is meaningless without knowing the geographic scope, and the schedule must be populated before execution. Leah identifies the deferral but does not flag the critical gap that the exhibit is actually blank. The proposed fix to 'define Territory inline' addresses the concern but without recognising the severity. Partial detection awarded for identifying the deferral issue but missing the blank exhibit flag."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No IP infringement indemnification from Licensor",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table_9.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk_table 9.1: 'add full indemnification obligation for breach of IP warranties including defense costs and damages'",
+        "effective_rationale_excerpt": "Knowledge qualifier severely weakens non-infringement warranty and creates massive infringement risk for TechPro. 'To its knowledge' permits Licensor to avoid due diligence and shifts entire infringement risk to TechPro despite Licensor being IP owner with superior ability to assess infringement. Missing warranties for: IP validity/enforceability, no pending challenges, no undisclosed encumbrances, compliance with laws, and no material defects. No indemnification for breach of warranties. For exclusive licensee investing in product development, these inadequate warranties create existential business risk.",
+        "judge_reasoning": "Full detection. Leah correctly identifies GT-13 (missing IP infringement indemnification) via the 9.1 analysis. The risk_table explicitly states 'No indemnification for breach of warranties' and proposes adding 'full indemnification obligation for breach of IP warranties including defense costs and damages'. All GT key elements addressed: (1) No indemnification clause exists - explicitly identified; (2) Licensee exposed to third-party infringement claims - 'shifts entire infringement risk to TechPro'; (3) If Licensed IP infringes, Licensee bears defense costs and damages - 'no indemnification for breach'; (4) Standard provision in commercial IP licenses - implicitly recognised as gap; (5) Should add Licensor indemnity for IP claims - explicitly proposed; (6) Include defense obligation, settlement control, hold-harmless - 'defense costs and damages' covered. Excellent analysis recognising the T1 severity."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_11.1",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to extend confidentiality term to 10 years or perpetual for trade secrets, add comprehensive definition of confidential information with standard exceptions, specify permitted disclosures to employees/contractors/sublicensees under confidentiality obligations, require return or destruction upon termination, add injunctive relief provision, and require reasonable security measures",
+        "effective_rationale_excerpt": "5-year term is inadequate for trade secrets and technical information that may remain valuable throughout 10-year contract term and beyond. Missing definition of confidential information, standard exceptions (public domain, independent development, rightful receipt), return/destruction obligations, and injunctive relief provision. No specification of permitted disclosures (e.g., to employees, contractors, sublicensees) or required protective measures. For IP license involving proprietary technology, confidentiality protections are critically important but underdeveloped.",
+        "judge_reasoning": "Full detection. Leah correctly identifies GT-14 at 11.1 (clause reference slightly different but semantic match to 8.1 confidentiality). All GT key elements addressed: (1) 5-year survival period - explicitly identified as 'inadequate'; (2) IP license involves trade secrets - 'trade secrets and technical information'; (3) Trade secrets have indefinite commercial value - 'may remain valuable throughout 10-year contract term and beyond'; (4) 5 years insufficient post-termination - explicitly stated; (5) Should add perpetual protection for trade secrets - proposed 'perpetual for trade secrets'; (6) Differentiate trade secrets from general confidential info - proposed 'comprehensive definition' with different treatment. Comprehensive analysis with excellent proposed fix. High quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "Non-infringement warranty qualified 'to knowledge' - inadequate for IP license",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table_9.1",
+      "evidence": {
+        "proposed_revision_excerpt": "AMEND to remove knowledge qualifier from non-infringement warranty, add absolute warranties that Licensed IP is valid, enforceable, and free of encumbrances, add warranty that no infringement claims are pending or threatened, add warranty that Licensor has conducted freedom-to-operate analysis, extend warranty to cover improvements, and add full indemnification obligation for breach of IP warranties including defense costs and damages",
+        "effective_rationale_excerpt": "Knowledge qualifier severely weakens non-infringement warranty and creates massive infringement risk for TechPro. 'To its knowledge' permits Licensor to avoid due diligence and shifts entire infringement risk to TechPro despite Licensor being IP owner with superior ability to assess infringement... For exclusive licensee investing in product development, these inadequate warranties create existential business risk.",
+        "judge_reasoning": "Full detection. Leah correctly identifies GT-15 at 9.1 with Unfavourable classification. All GT key elements addressed: (1) 9.1 only warrants 'to Licensor's knowledge' - explicitly identified; (2) Knowledge qualifier shifts due diligence burden - 'permits Licensor to avoid due diligence'; (3) Licensor should know their own IP portfolio - 'Licensor being IP owner with superior ability to assess'; (4) If Licensee faces infringement claim, 'knowledge' defense is worthless - 'creates existential business risk'; (5) Should be unconditional non-infringement warranty - proposed 'remove knowledge qualifier'; (6) Or require clearance search - proposed 'warranty that Licensor has conducted freedom-to-operate analysis'. Excellent analysis recognising T1 severity with comprehensive proposed fix. High quality scores."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 12,
+      "P": 2,
+      "N": 0,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 1,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 3,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_detected": 4,
+    "total_detection_points": 62.0,
+    "total_quality_points": 103,
+    "total_points": 165.0,
+    "max_detection_points": 71,
+    "detection_percentage": 87.3,
+    "weighted_max": 71
+  },
+  "additional_issues": [],
+  "summary": {
+    "part_a": {
+      "total_score": 24,
+      "max_score": 24,
+      "percentage": 100.0,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "total_detection_points": 62.0,
+      "max_detection_points": 71,
+      "detection_percentage": 87.3,
+      "total_quality_points": 103,
+      "total_points": 165.0,
+      "t1_gate": "PASS",
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true,
+      "overall_assessment": "Excellent performance across both Part A (CP redlines) and Part B (whole document). Perfect score on Part A with all 4 CP redlines correctly identified as REJECT with comprehensive reasoning addressing all key elements. Part B shows strong detection with 12 full detections, 2 partial detections, and only 1 NMI (GT-11 Exhibit A). All 4 T1 issues were fully detected including the critical improvements ownership (GT-01), AS-IS disclaimer (GT-04), missing IP indemnification (GT-13), and qualified non-infringement warranty (GT-15). The one miss (GT-11) concerns the blank Licensed IP schedule in Exhibit A - Leah flagged Territory issues but did not identify that Exhibit A was also unpopulated. Overall, this demonstrates thorough contract review with strong IP license expertise."
+    }
+  }
+}

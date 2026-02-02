@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "contract": "license",
+    "model_id": "velocity",
+    "evaluation_timestamp": "2026-01-25T18:25:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.2",
+      "tier": "T1",
+      "issue": "Improvements owned by Licensor - loses R&D investment",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "3.2 Improvements",
+      "evidence": {
+        "proposed_revision_excerpt": "Improvements to the Licensed IP developed by Licensee during the Term shall be owned by Licensee, and Licensor shall have a perpetual, irrevocable, royalty-free license to practice, use, and sublicense such Improvements to the extent incorporated into the Licensed IP.",
+        "effective_rationale_excerpt": "This change realigns ownership to Licensee for enhancements created by Licensee, incentivizing R&D investment. Licensor retains necessary rights to practice and sublicense Improvements as they become part of the Licensed IP, preserving commercial value for both parties.",
+        "judge_reasoning": "Velocity fully detected the improvements ownership issue and proposed reversing ownership to Licensee with Licensor receiving a license-back. This addresses all GT key elements including R&D incentives and balanced IP allocation."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Licensor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "12.2 Cap",
+      "evidence": {
+        "proposed_revision_excerpt": "LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF THE ROYALTIES PAID IN THE TWELVE MONTHS PRECEDING THE CLAIM OR US$5,000,000.",
+        "effective_rationale_excerpt": "This increases the liability ceiling to a more commercially reasonable cap for Licensee, preserving a meaningful remedy for breaches by Licensor while maintaining a capped exposure. It aligns risk with potential product failures, IP disputes, or data/privacy incidents.",
+        "judge_reasoning": "Velocity detected the inadequate liability cap and proposed raising it to the greater of 12-month royalties or $5M. This significantly addresses the GT concern about low cap, providing a substantial floor amount."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Mandatory minimum royalty regardless of sales",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "4.1 Minimum Annual Royalty",
+      "evidence": {
+        "proposed_revision_excerpt": "Minimum Annual Royalty shall be the greater of $250,000 or ten percent (10%) of Net Sales for the applicable year, and Royalties paid under Section 5.1 shall be credited against such minimum.",
+        "effective_rationale_excerpt": "This clarifies the financial architecture, aligning the minimum with performance. By tying the minimum to the greater of a fixed amount or a percentage of Net Sales, the Licensee is not locked into a disproportionate floor during periods of modest or strong sales.",
+        "judge_reasoning": "Velocity detected the minimum royalty issue but the proposed fix actually makes it worse by creating a 'greater of' structure rather than reducing the burden. The amount isn't reduced and no force majeure relief is added. Limited quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.2",
+      "tier": "T1",
+      "issue": "AS-IS disclaimer with limited warranties",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity did not detect the AS-IS disclaimer issue. No redline or risk_table entry addresses the broad disclaimer negating the limited warranties in 9.1."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High royalty rate",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity did not detect the high 10% royalty rate issue. No redline or risk_table entry addresses the rate being above industry standards."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Sublicensing requires Licensor consent",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "2.2 Sublicensing",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee may grant sublicenses with Licensor's prior written consent, which shall not be unreasonably withheld or delayed; failure to respond within thirty (30) days shall be deemed consent.",
+        "effective_rationale_excerpt": "This amendment tightens the sublicensing control by ensuring Licensor cannot unreasonably block beneficial sublicensing arrangements. It also provides a predictable deemed-consent mechanism if Licensor does not respond within a reasonable period.",
+        "judge_reasoning": "Velocity detected the sublicensing consent issue and proposed reasonableness standard plus 30-day deemed consent. This addresses the GT concern about business flexibility though could include affiliate carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity did not detect the consequential damages exclusion issue. No redline or risk_table entry addresses the need for carve-outs for IP/confidentiality/willful misconduct."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No termination for convenience - 10-year lock-in",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity did not detect the missing termination for convenience right. No redline addresses the 10-year lock-in with no exit option."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Non-refundable upfront fee",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": "5.2 Upfront Fee",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon execution, Licensee shall pay a non-refundable upfront license fee of $500,000, which shall be credited against the minimum annual royalty due in Year 1.",
+        "effective_rationale_excerpt": "This amendment provides immediate value to TechPro by applying the upfront payment toward the Year 1 minimum royalty, effectively reducing upfront cash burden and accelerating the ramp to profitability.",
+        "judge_reasoning": "Velocity detected the upfront fee issue but proposed crediting it against Year 1 minimum rather than making it refundable for IP invalidity. This partially addresses cash flow concerns but doesn't protect against IP defects as GT suggests."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "7.1",
+      "tier": "T3",
+      "issue": "Audit cost-shifting threshold favors Licensor",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity did not detect the 5% audit cost-shifting threshold issue. No redline addresses raising it to 10% or adding procedural protections."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit A",
+      "tier": "T2",
+      "issue": "Licensed IP schedule (Exhibit A) not attached - undefined scope",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity did not detect the missing Exhibit A issue. No redline addresses the undefined IP scope."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "Exhibit B",
+      "tier": "T2",
+      "issue": "Territory definition (Exhibit B) not attached - exclusivity meaningless",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity did not detect the missing Exhibit B issue. No redline addresses the undefined territory scope."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No IP infringement indemnification from Licensor",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity did not detect the missing IP indemnification. No redline adds indemnification for third-party IP claims."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "11.1 Confidentiality",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall maintain confidentiality of the other's confidential information for five (5) years following disclosure, and for trade secrets for as long as such information remains a trade secret under applicable law.",
+        "effective_rationale_excerpt": "This strengthens protection for both parties, ensuring long-term protection for trade secrets beyond the general confidentiality period, consistent with the sensitive nature of IP and business data.",
+        "judge_reasoning": "Velocity detected the inadequate confidentiality survival and proposed extending protection for trade secrets indefinitely (as long as they remain trade secrets). This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "Non-infringement warranty qualified 'to knowledge' - inadequate for IP license",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "9.1 Licensor Warranties",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor represents that it has the right to grant the license and, to the best of its knowledge, the Licensed IP does not infringe third-party rights and there are no known pending or threatened claims against the Licensed IP.",
+        "effective_rationale_excerpt": "This strengthens protection for Licensee by requiring more robust warranty conditions and visibility into potential infringement issues, reducing litigation risk. It also clarifies that Licensor's knowledge is comprehensive, not merely a snapshot.",
+        "judge_reasoning": "Velocity detected the weak 'to knowledge' qualifier and strengthened it to 'best of its knowledge' plus added no-claims representation. This partially addresses the GT concern but doesn't fully remove the knowledge qualifier as GT suggests."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "New Clause Recommendation 1",
+      "issue_summary": "IP Improvements Ownership",
+      "leah_classification": "⚠️",
+      "leah_action": "(See Add block below",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The framework should address ownership of innovations created under the Licensed IP. Absent a clause, Licensee cannot capture value from improvements it develops, undermining R&amp;D incentives. A new"
+    },
+    {
+      "clause": "New Clause Recommendation 2",
+      "issue_summary": "Data Protection &amp; Privacy",
+      "leah_classification": "⚠️",
+      "leah_action": "(See Add block below",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "As processing of personal data could occur in the course of the license, a data protection framework is essential to comply with laws and protect both parties. Absence could lead to regulatory exposur"
+    },
+    {
+      "clause": "2.2 Sublicensing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 2.2. This amendment tightens the sublicensing control by ensuring Licensor cannot unreasonably block beneficial sublicensing arrangements. It also provides a predictable deeme"
+    },
+    {
+      "clause": "3.2 Improvements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 3.2. This change realigns ownership to Licensee for enhancements created by Licensee, incentivizing R&D investment. Licensor retains necessary rights to practice and sublicens"
+    },
+    {
+      "clause": "4.1 Minimum Annual Royalty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 4.1. This clarifies the financial architecture, aligning the minimum with performance. By tying the minimum to the greater of a fixed amount or a percentage of Net Sales, the "
+    },
+    {
+      "clause": "5.2 Upfront Fee",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 5.2. This amendment provides immediate value to TechPro by applying the upfront payment toward the Year 1 minimum royalty, effectively reducing upfront cash burden and acceler"
+    },
+    {
+      "clause": "9.1 Licensor Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 9.1. This strengthens protection for Licensee by requiring more robust warranty conditions and visibility into potential infringement issues, reducing litigation risk. It also"
+    },
+    {
+      "clause": "12.2 Cap",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 12.2. This increases the liability ceiling to a more commercially reasonable cap for Licensee, preserving a meaningful remedy for breaches by Licensor while maintaining a capp"
+    },
+    {
+      "clause": "14.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 14.2. This provides a practical path for Licensee to obtain injunctive or other relief in the United States, addressing enforceability concerns and reducing cross-border frict"
+    },
+    {
+      "clause": "14.3 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 14.3. This adds reasonable flexibility for corporate restructurings while preserving protections against undesired third-party assignments. It ensures continuity of rights and"
+    },
+    {
+      "clause": "2.2 Sublicensing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 2.2. This addition protects Licensee’s channel expansion and manufacturing partnerships while preserving Licensor oversight. The deemed-consent provision prevents undue delays"
+    },
+    {
+      "clause": "11.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 11.1. This strengthens protection for both parties, ensuring long-term protection for trade secrets beyond the general confidentiality period, consistent with the sensitive na"
+    },
+    {
+      "clause": "10.2 Enforcement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 10.2. This change provides Licensee with meaningful participation in enforcement outcomes, improving incentive alignment and potential returns from successful enforcement. It "
+    },
+    {
+      "clause": "IP Improvements Ownership",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 3.2. This new clause ensures Licensee can capture value from its own R&D work during the term, while Licensor retains broad rights to utilize improvements that become part of "
+    },
+    {
+      "clause": "Data Protection & Privacy",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: after Section 14.4. This new clause addresses data protection obligations arising from processing personal data in connection with Licensed IP activities, ensuring regulatory compliance and"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 0,
+      "N": 0,
+      "NMI": 8
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      },
+      "T2": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 4
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "total_detection_points": 33.0,
+    "total_quality_points": 57,
+    "total_points": 90.0,
+    "additional_issues_count": 15
+  }
+}

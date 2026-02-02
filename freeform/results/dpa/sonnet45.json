@@ -1,0 +1,754 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "sonnet45",
+    "evaluation_timestamp": "2026-01-25T18:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-4.1 - General Authorisation",
+      "evidence": {
+        "proposed_revision_excerpt": "Processor shall obtain Controller's prior written approval before engaging any Sub-processor... Processor shall have sixty (60) days to approve or reasonably object... If Processor cannot perform the services without the objected-to Sub-processor, Controller may terminate this DPA and the Principal Agreement without penalty",
+        "effective_rationale_excerpt": "The original clause provides blanket general authorization for Sub-processors, which is highly unfavorable to Controller. You assume liability for Sub-processor actions but have limited practical ability to prevent problematic engagements... This revision replaces general authorization with prior written approval",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the sub-processor authorization issue at clause 4.1, classifying it as ❌ Unfavorable and noting 'Controller provides blanket general authorization for Sub-processors with only 30-day notice and objection rights... doesn't address what happens if Controller objects.' The proposed redline comprehensively addresses all GT key elements by replacing general authorization with prior written approval, extending review period to 60 days, requiring detailed Sub-processor information, and granting Controller termination rights if objection persists. The rationale is thorough and business-focused. The redline is well-drafted and immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The risk table does not classify clause 5.1 as unfavorable or requiring amendment. While Exhibit B (security measures) is flagged as blank and ❌, there is no specific redline addressing the vagueness of the security measures in clause 5.1 itself. The GT issue is that clause 5.1 uses subjective terms like 'appropriate' and examples are not mandatory. Sonnet45 does not identify this vagueness or propose adding specific mandatory controls to 5.1."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "8.1",
+      "tier": "T3",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-8.1 - Notification",
+      "evidence": {
+        "proposed_revision_excerpt": "Processor shall notify Controller of any Personal Data Breach... immediately upon discovery, and in any event within twenty-four (24) hours of Processor becoming aware of such event",
+        "effective_rationale_excerpt": "The 72-hour notification timeframe is inadequate for Controller's regulatory obligations. Under UK GDPR, Controller must notify the supervisory authority within 72 hours of becoming aware of the breach. If Processor takes the full 72 hours to notify Controller, Controller has zero time to investigate",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies that the 72-hour timeframe is inadequate, classifying clause 8.1 as ❌ Unfavorable and noting 'If Processor takes the full 72 hours to notify Controller, Controller has zero time to investigate, assess, and report to authorities, creating regulatory non-compliance risk.' The proposed redline changes notification to 24 hours with preliminary and comprehensive written reports, directly addressing the GT concern that 72 hours is the GDPR maximum and may be too slow. The rationale explains the regulatory timing clearly. The redline is well-drafted and comprehensive."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1 / 9.2",
+      "tier": "T2",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-9.1 - Allocation of Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "total liability under this DPA shall not be subject to any cap or limitation set forth in the Principal Agreement",
+        "effective_rationale_excerpt": "The original clause provides no specificity regarding liability caps, allocation mechanisms, or recovery procedures... This revision protects Controller by establishing a default allocation formula... clarifying that liability under the DPA is not subject to Principal Agreement caps",
+        "judge_reasoning": "Sonnet 4.5 identifies the liability allocation ambiguity at clause 9.1, classifying it as ⚠️ and noting the lack of caps and allocation mechanisms. The proposed redline explicitly addresses the GT concern about hidden caps by stating 'total liability under this DPA shall not be subject to any cap or limitation set forth in the Principal Agreement.' This directly prevents indemnification from being subject to Principal Agreement caps. The rationale explains the risk clearly and the redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability in DPA",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-9.1 - Allocation of Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "where both Parties are found liable for the same damage, liability shall be allocated between the Parties in proportion to their respective responsibility... with Processor bearing no less than seventy-five percent (75%) of liability",
+        "effective_rationale_excerpt": "This revision protects Controller by establishing a default allocation formula that recognizes Processor's primary responsibility for Processing security (75% minimum)... clarifying that liability under the DPA is not subject to Principal Agreement caps",
+        "judge_reasoning": "Sonnet 4.5's amendment to clause 9.1 addresses the missing limitation of liability by establishing allocation mechanisms and explicitly stating that DPA liability is not subject to Principal Agreement caps. While not a separate new clause, the comprehensive redline to 9.1 addresses the GT concern about the DPA lacking clarity on liability treatment. The amendment establishes allocation rules and prevents hidden caps from the Principal Agreement, which directly addresses the GT issue."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Deletion Timeline Unspecified",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-3.4 - Deletion",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon Controller's written request at any time, or automatically upon termination of the Principal Agreement, Processor shall, at Controller's option, either delete or return all Personal Data to Controller within thirty (30) days",
+        "effective_rationale_excerpt": "The original clause creates a critical gap by only requiring deletion upon termination of the Principal Agreement... This revision protects Controller by granting deletion rights at any time, requiring written certification of deletion",
+        "judge_reasoning": "Sonnet 4.5 identifies the deletion timeline gap at clause 3.4, classifying it as ❌ Unfavorable and noting 'deletion occurs \"at Controller's option\" but only \"upon termination of the Principal Agreement\"... creates a critical gap.' The proposed redline adds a 30-day deletion timeline with written certification and addresses backup deletion, directly addressing the GT concern. The rationale explains the data minimization compliance need. The redline is comprehensive and well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.2",
+      "tier": "T3",
+      "issue": "All Audit Costs on Controller",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-7.2 - Audit Procedures",
+      "evidence": {
+        "proposed_revision_excerpt": "Audits under subsection (a) shall be at Controller's expense. Audits under subsections (b), (c), (d), or (e) shall be at Processor's expense if the audit reveals material non-compliance",
+        "effective_rationale_excerpt": "The original clause severely restricts Controller's audit rights... The one-sided cost allocation means Controller pays to verify Processor's compliance with Processor's own obligations. This revision protects Controller by allowing audits at any time for cause... allocating costs to Processor when audits reveal material non-compliance",
+        "judge_reasoning": "Sonnet 4.5 identifies the audit cost issue at clause 7.2, classifying it as ❌ Unfavorable and noting 'only once per year, at Controller's expense... These limitations are unacceptable.' The proposed redline addresses the GT concern by allowing additional for-cause audits and shifting costs to Processor when non-compliance is found. The rationale correctly explains how Controller-only costs discourage oversight. The redline is comprehensive and addresses the GT concern effectively."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "10.1",
+      "tier": "T3",
+      "issue": "Indefinite Duration",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-10.1 - Term",
+      "evidence": {
+        "proposed_revision_excerpt": "This DPA shall remain in effect for the duration of the Principal Agreement and for a maximum of ninety (90) days thereafter to allow for return or deletion of Personal Data",
+        "effective_rationale_excerpt": "The original clause creates indefinite duration risk by allowing the DPA to continue 'for as long as Processor processes Personal Data'... This revision protects Controller by establishing a maximum 90-day post-termination period for data retention",
+        "judge_reasoning": "Sonnet 4.5 identifies the indefinite duration issue at clause 10.1, classifying it as ⚠️ and noting 'The DPA remains in effect... for as long as Processor processes Personal Data... creates indefinite duration risk.' The proposed redline adds a maximum 90-day post-termination retention period with documented legal basis requirements for longer retention, directly addressing the GT concern. The rationale explains the indefinite binding risk clearly. The redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "Exhibit A / 2.2",
+      "tier": "T2",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exhibit A - Processing Details",
+      "evidence": {
+        "proposed_revision_excerpt": "Exhibit A is entirely blank with only placeholder text. This is a critical deficiency... provides a comprehensive template requiring specific details of all Processing activities",
+        "effective_rationale_excerpt": "Without specified subject matter, duration, nature, purpose, data types, and Data Subject categories, the DPA lacks essential definitional scope. Processor could claim authority to process any data for any purpose.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the blank Exhibit A as a critical compliance gap, classifying it as ❌ Unfavorable and noting 'Exhibit A is entirely blank with only placeholder text. This is a critical deficiency.' The proposed comprehensive template for Exhibit A with specific processing details, prohibited data categories, and processing limitations directly addresses the GT concern about GDPR Art 28 non-compliance. The rationale explains the scope control issue clearly. The redline is extremely comprehensive."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "Exhibit B / 5.1",
+      "tier": "T2",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exhibit B - Technical and Organisational Measures",
+      "evidence": {
+        "proposed_revision_excerpt": "Exhibit B is not attached and contains only placeholder text. This is a fundamental gap... provides comprehensive, specific, and verifiable security measures covering all critical domains",
+        "effective_rationale_excerpt": "UK GDPR requires Controllers to ensure Processors implement appropriate technical and organizational measures. Without specified measures, Controller cannot verify compliance",
+        "judge_reasoning": "Sonnet 4.5 identifies the blank Exhibit B as a fundamental gap, classifying it as ❌ Unfavorable and noting 'Exhibit B is not attached and contains only placeholder text.' The proposed comprehensive Exhibit B template with detailed security measures across access controls, encryption, network security, physical security, incident response, and monitoring directly addresses the GT concern about GDPR Art 32 verification. The rationale explains the compliance verification gap clearly. The redline is extremely comprehensive."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit C / 4.1",
+      "tier": "T2",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exhibit C - Approved Sub-processors",
+      "evidence": {
+        "proposed_revision_excerpt": "Exhibit C is not attached and contains only placeholder text... establishes a comprehensive template requiring detailed information about each Sub-processor",
+        "effective_rationale_excerpt": "Combined with the general authorization in Article 4.1, this means Controller has no visibility into current Sub-processors... As Controller, you cannot conduct due diligence, assess risk, or fulfill regulatory obligations",
+        "judge_reasoning": "Sonnet 4.5 identifies the blank Exhibit C issue, classifying it as ❌ Unfavorable and noting 'Exhibit C is not attached and contains only placeholder text. Combined with the general authorization in Article 4.1, this means Controller has no visibility.' The proposed comprehensive template requiring Sub-processor details, security certifications, and representations about due diligence directly addresses the GT concern that without a baseline list, objection rights are meaningless. The rationale explains the due diligence gap clearly. The redline is comprehensive."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Cyber Insurance Requirement",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-New Article 9.3 - Insurance",
+      "evidence": {
+        "proposed_revision_excerpt": "9.3 Insurance. Processor shall obtain and maintain... Cyber Liability Insurance with minimum coverage of Five Million Pounds Sterling (£5,000,000) per occurrence",
+        "effective_rationale_excerpt": "The contract lacks any requirement for Processor to maintain cyber liability or errors and omissions insurance... if Processor lacks adequate insurance and causes a major breach, you may be unable to collect on indemnification obligations",
+        "judge_reasoning": "Sonnet 4.5 identifies the missing cyber insurance requirement as a new clause recommendation, noting 'The contract lacks any requirement for Processor to maintain cyber liability... This is unacceptable risk allocation.' The proposed new Article 9.3 requires specific minimum insurance coverage (£5M per occurrence, £10M aggregate), naming Controller as additional insured, and annual proof of coverage. The rationale explains the financial recovery benefit clearly. This fully addresses the GT issue."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Data Protection Laws",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify exa",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The definition references UK GDPR and Data Protection Act 2018 but uses the vague phrase \"any other applicable data protection legislation.\" This creates ambiguity regarding which specific laws apply,"
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Controller Instructions for Processing",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require Pro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Processor processes data \"only on documented instructions from Controller, unless required by law.\" This exception is dangerously broad and one-sided. Processor could process Personal Data in ways con"
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Assistance Obligations",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify res",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Processor \"shall assist Controller\" in responding to Data Subject requests and compliance obligations, but the clause lacks specificity regarding timeframes, scope, and cost allocation. As Controller "
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Data Deletion Upon Termination",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to allow Contr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Deletion occurs \"at Controller's option\" but only \"upon termination of the Principal Agreement.\" This creates a critical gap: Controller cannot compel deletion during the contract term even if Process"
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "General Authorization for Sub-processors",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require pri",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Controller provides blanket general authorization for Sub-processors with only 30-day notice and objection rights. This is highly unfavorable as Controller. You assume liability for Sub-processor acti"
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Processor Liability for Sub-processors",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to explicitly ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Processor \"shall remain fully liable\" for Sub-processor performance, which appears favorable but lacks enforcement mechanisms. The clause doesn't address how Controller can verify Sub-processor compli"
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Security Standards Requirement",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define what",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Processor must maintain ISO 27001 certification or equivalent security standards. The phrase \"or equivalent\" introduces ambiguity—who determines equivalence? As Controller, you need assurance that sec"
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "International Transfer Restrictions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require pri",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Processor \"shall not transfer Personal Data\" outside UK/EEA without appropriate safeguards, but the clause lacks specificity about what constitutes appropriate safeguards and who determines adequacy. "
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Audit Procedures and Limitations",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to allow audit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Audit rights are severely restricted: only once per year, at Controller's expense, with reasonable notice required. As Controller bearing ultimate regulatory liability, these limitations are unaccepta"
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Breach Notification Timeframe",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require not",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Processor must notify Controller within 72 hours of becoming aware of a Personal Data Breach. This timeframe is inadequate for Controller's needs. Under UK GDPR, Controller must notify the supervisory"
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Breach Notification Contents",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require com",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The required notification contents are incomplete. The clause requires description of breach nature, affected Data Subjects, consequences, and remedial measures, but omits critical information Control"
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Allocation of Liability",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify lia",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Liability allocation references \"applicable law\" without specifying caps, exclusions, or allocation mechanisms between the parties. Under UK GDPR, both Controller and Processor can be held jointly and"
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Processor Indemnification",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require Pro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Processor indemnifies Controller for \"claims, damages, or regulatory fines arising from Processor's breach,\" but the clause lacks critical procedural protections: no requirement for Processor to assum"
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Term Duration",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify max",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The DPA remains in effect \"for the duration of the Principal Agreement and for as long as Processor processes Personal Data.\" The second part creates indefinite duration risk. If Processor retains dat"
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify gov",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The DPA is governed by England and Wales law, but Controller's location and principal place of business are not specified in the template. If Controller is located outside England and Wales, this choi"
+    },
+    {
+      "clause": "Exhibit A",
+      "issue_summary": "Processing Details Specification",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to complete Ex",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit A is entirely blank with only placeholder text. This is a critical deficiency. Without specified subject matter, duration, nature, purpose, data types, and Data Subject categories, the DPA lac"
+    },
+    {
+      "clause": "Exhibit B",
+      "issue_summary": "Technical and Organizational Measures",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to attach comp",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit B is not attached and contains only placeholder text. This is a fundamental gap. UK GDPR requires Controllers to ensure Processors implement appropriate technical and organizational measures. "
+    },
+    {
+      "clause": "Exhibit C",
+      "issue_summary": "Approved Sub-processors List",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to attach comp",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit C is not attached and contains only placeholder text. Combined with the general authorization in Article 4.1, this means Controller has no visibility into current Sub-processors. Processor cou"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Termination Rights for Material Breach",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause grant",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract lacks immediate termination rights for material breach by Processor. As Controller, if Processor commits serious violations (e.g., unauthorized data disclosure, loss of security certifica"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Data Processing Records and Reporting",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract contains no obligation for Processor to maintain or provide records of Processing activities as required by UK GDPR Article 30. As Controller, you may need these records to demonstrate re"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Data Subject Rights Facilitation",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause estab",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While Article 3.3 mentions assistance with Data Subject requests, there are no specific procedures, timeframes, or cost allocations. As Controller, you must respond to Data Subject rights requests (ac"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Insurance Requirements",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract lacks any requirement for Processor to maintain cyber liability or errors and omissions insurance. Given the significant liability exposure from data breaches and Processing failures, Pro"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Regulatory Cooperation and Authority Access",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract does not address Processor's obligations when supervisory authorities conduct investigations or request information. As Controller, regulatory inquiries may require immediate Processor co"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "🆕 Change Management and Impact Assessment",
+      "leah_classification": "🆝",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract contains no provisions for how Processor must handle changes to Processing activities, systems, or security measures that could impact Personal Data protection. As Controller, you need ad"
+    },
+    {
+      "clause": "Article 1.1 - Definition of Data Protection Laws",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original definition uses the vague phrase \"any other applicable data protection legislation\" which creates ambiguity regarding compliance scope and potential liability. As Controller, you need cer"
+    },
+    {
+      "clause": "Article 2.3 - Controller Instructions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause contains a dangerously broad exception allowing Processor to process data contrary to Controller's instructions whenever \"required by law\" without any notice or approval requiremen"
+    },
+    {
+      "clause": "Article 3.3 - Assistance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause creates operational risk for Controller by providing vague assistance obligations without specifying timeframes, scope, or cost allocation. As Controller facing strict regulatory d"
+    },
+    {
+      "clause": "Article 3.4 - Deletion",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause creates a critical gap by only requiring deletion upon termination of the Principal Agreement, preventing Controller from compelling deletion during the contract term even when Pro"
+    },
+    {
+      "clause": "Article 4.1 - General Authorisation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause provides blanket general authorization for Sub-processors, which is highly unfavorable to Controller. You assume liability for Sub-processor actions but have limited practical abil"
+    },
+    {
+      "clause": "Article 4.3 - Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While the original clause states Processor remains \"fully liable,\" it lacks enforcement mechanisms and verification rights. As Controller, you face regulatory liability but may lack visibility into th"
+    },
+    {
+      "clause": "Article 5.2 - Security Standards",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause's phrase \"or equivalent\" introduces dangerous ambiguity regarding acceptable security standards. As Controller, you need assurance that security measures are adequate, verifiable, "
+    },
+    {
+      "clause": "Article 6.1 - Transfer Restrictions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks specificity about what constitutes appropriate safeguards and who determines adequacy. As Controller, you face regulatory liability for unlawful transfers but have no approva"
+    },
+    {
+      "clause": "Article 7.2 - Audit Procedures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause severely restricts Controller's audit rights with a once-per-year limitation and full cost allocation to Controller. As Controller bearing ultimate regulatory liability, these rest"
+    },
+    {
+      "clause": "Article 8.1 - Notification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 72-hour notification timeframe is inadequate for Controller's regulatory obligations. Under UK GDPR, Controller must notify the supervisory authority within 72 hours of becoming aware of a breach."
+    },
+    {
+      "clause": "Article 8.2 - Notification Contents",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause requires incomplete information that hampers Controller's ability to fulfill regulatory obligations and assess liability exposure. As Controller, you need comprehensive breach deta"
+    },
+    {
+      "clause": "Article 9.1 - Allocation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause provides no specificity regarding liability caps, allocation mechanisms, or recovery procedures. Under UK GDPR, both Controller and Processor can be held jointly and severally liab"
+    },
+    {
+      "clause": "Article 9.2 - Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks critical procedural protections and scope clarity. As Controller, you need robust indemnification with clear procedures to ensure financial protection from Processor's failur"
+    },
+    {
+      "clause": "Article 10.1 - Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause creates indefinite duration risk by allowing the DPA to continue \"for as long as Processor processes Personal Data.\" If Processor retains data beyond Principal Agreement terminatio"
+    },
+    {
+      "clause": "Article 11.1 - Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause specifies England and Wales law without considering Controller's location. If Controller is located outside England and Wales, this choice of law may be unfavorable, creating addit"
+    },
+    {
+      "clause": "Exhibit A - Processing Details",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit A is entirely blank with only placeholder text, creating a critical deficiency. Without specified subject matter, duration, nature, purpose, data types, and Data Subject categories, the DPA la"
+    },
+    {
+      "clause": "Exhibit B - Technical and Organisational Measures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit B is not attached and contains only placeholder text, creating a fundamental gap. UK GDPR requires Controllers to ensure Processors implement appropriate technical and organizational measures."
+    },
+    {
+      "clause": "Exhibit C - Approved Sub-processors",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit C is not attached and contains only placeholder text. Combined with the general authorization in Article 4.1, this means Controller has no visibility into current Sub-processors. Processor cou"
+    },
+    {
+      "clause": "New Article 10.3 - Termination for Material Breach",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 10.3 after existing Article 10.2. The contract lacks immediate termination rights for material breach by Processor. As Controller, if Processor commits serious violati"
+    },
+    {
+      "clause": "New Article 3.5 - Processing Records and Reporting",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 3.5 after existing Article 3.4. The contract contains no obligation for Processor to maintain or provide records of Processing activities as required by UK GDPR Articl"
+    },
+    {
+      "clause": "New Article 3.6 - Data Subject Rights Procedures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 3.6 after new Article 3.5. While Article 3.3 mentions assistance with Data Subject requests, there are no specific procedures, timeframes, or cost allocations. As Cont"
+    },
+    {
+      "clause": "New Article 9.3 - Insurance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 9.3 after existing Article 9.2. The contract lacks any requirement for Processor to maintain cyber liability or errors and omissions insurance. Given the significant l"
+    },
+    {
+      "clause": "New Article 7.3 - Regulatory Cooperation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 7.3 after existing Article 7.2. The contract does not address Processor's obligations when supervisory authorities conduct investigations or request information. As Co"
+    },
+    {
+      "clause": "New Article 5.3 - Change Management",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 5.3 after existing Article 5.2. The contract contains no provisions for how Processor must handle changes to Processing activities, systems, or security measures that "
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 0,
+      "N": 0,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "total_detection_points": 49.0,
+    "total_quality_points": 99,
+    "total_points": 148.0,
+    "additional_issues_count": 48
+  }
+}

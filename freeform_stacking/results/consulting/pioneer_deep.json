@@ -1,0 +1,351 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "pioneer_deep",
+    "environment": "hotfix",
+    "evaluation_timestamp": "2026-01-25T22:30:00Z",
+    "gt_version": "1.0",
+    "part_b_gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "CONSULTING_01",
+      "clause": "3.4",
+      "cp_redline_description": "Client shall pay all invoices within fifteen (15) days of receipt. Late payments shall bear interest at the rate of two percent (2%) per month. Client waives any right to dispute invoices not raised within five (5) days of receipt.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause Ref: Existing RL 3.4\nClassification: Unfavorable\nDetailed Reasoning: Proposed 15-day payment, 2% monthly interest, and 5-day dispute window are punitive and impractical for Client A/P cycles. They also attempt to waive dispute rights. Client should reject and retain 30 days, cap interest, and include fair dispute process.\nRecommended Action: Reject proposed redline; amend original clause to include fair dispute process and no interest on disputed amounts.",
+        "judge_reasoning": "Leah correctly identifies the CP redline as Unfavorable and recommends REJECT. The reasoning addresses all required points: halving payment period strains cash flow, removes dispute rights, references Client A/P cycles (industry standard). Leah proposes retaining 30-day payment terms and adding fair dispute process, which matches the GT key elements. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_02",
+      "clause": "5.1",
+      "cp_redline_description": "Consultant retains all intellectual property rights in deliverables, methodologies, and work product. Client receives a non-exclusive, non-transferable license to use deliverables for its internal business purposes only.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause: Reject Consultant ownership change\nProposed Change Type: Reject\nOriginal Clause: 5.1 Ownership of Deliverables. All deliverables created by Consultant specifically for Client pursuant to this Agreement shall be considered work-for-hire...\nExisting Redline: 5.1 Ownership of Deliverables. All deliverables created by Consultant shall be owned by Consultant. Upon full payment, Client shall receive a non-exclusive, non-transferable license...\nRationale: This attempts to strip Client of ownership and reduce value to a limited license, undermining the core business objective. Rejection preserves Client's ownership position. Strengthening 5.1 separately will further protect Client's IP interests.",
+        "judge_reasoning": "Leah correctly identifies this CP redline as requiring REJECT. The reasoning correctly addresses that Client pays for custom work and must own it, that license-only model creates dependency risk, and that work-for-hire is appropriate for bespoke consulting deliverables. The revision maintains work-for-hire designation. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_03",
+      "clause": "5.2",
+      "cp_redline_description": "To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client a non-exclusive, royalty-free license to use such Background IP solely as part of the Deliverables for a period of three (3) years from delivery, subject to termination if Client competes with Consultant in North America.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 1,
+      "reasoning_score": 1,
+      "total_points": 3,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause: Modify Consultant Background IP expansion (improvements)\nProposed Revision: Consultant shall retain ownership of its Background IP that existed prior to the Effective Date or is developed independently of this Agreement without use of Client Confidential Information, but excludes any intellectual property conceived, developed, or reduced to practice in performing the Services.\nExisting Redline: Consultant shall retain all right, title, and interest in all Background IP, all improvements thereto, and all general knowledge, skills, and experience gained during the engagement.",
+        "judge_reasoning": "Leah addresses the Background IP expansion but responds with MODIFY rather than the required REJECT. The GT requires full reversion to baseline perpetual license. Leah's revision focuses on excluding engagement-developed IP from Background IP definition but does not explicitly restore the perpetual, non-territorial, royalty-free license terms. The 3-year time limit and competitive restriction are not directly addressed with reversion language. Partial credit awarded as Leah recognizes the issue but does not fully reject the punitive CP terms."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_04",
+      "clause": "7.1",
+      "cp_redline_description": "Consultant may terminate this Agreement for convenience upon fifteen (15) days' prior written notice. Client may terminate for convenience upon ninety (90) days' prior written notice and payment of a termination fee equal to three (3) months of fees under all active Statements of Work.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause: Reject asymmetric termination and fee\nProposed Change Type: Reject\nOriginal Clause: 7.1 Termination for Convenience. Either party may terminate this Agreement for convenience upon thirty (30) days' prior written notice to the other party.\nExisting Redline: 7.1 Termination for Convenience. Consultant may terminate this Agreement for convenience upon fifteen (15) days' prior written notice. Client may terminate only upon ninety (90) days' prior written notice and payment of a termination fee equal to three (3) months of projected fees.\nRationale: The proposed asymmetry and termination fee are unacceptable, unduly restricting Client flexibility and imposing a penalty. Rejection maintains mutual 30-day termination and avoids unjustified windfalls to Consultant on exit.",
+        "judge_reasoning": "Leah correctly identifies this CP redline as requiring REJECT. The reasoning addresses all GT key elements: asymmetric terms trap Client, termination fee is penalty without justification, 90-day notice with fee eliminates Client flexibility, and symmetric terms are market standard. The revision calls for maintaining mutual 30-day termination with no termination fee. Full marks awarded."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 21,
+    "max_score": 24,
+    "percentage": 87.5,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "5.1-ownership",
+      "evidence": {
+        "proposed_revision_excerpt": "5.1 Ownership of Deliverables. All Deliverables are works made for hire to the extent permitted by law. To the extent not so deemed, Consultant hereby irrevocably assigns to Client all right, title, and interest in and to the Deliverables and associated intellectual property. Consultant waives any moral rights therein and will deliver editable formats and source materials upon payment.",
+        "effective_rationale_excerpt": "This strengthens Client's ownership by adding an assignment fallback and moral rights waiver, and ensures delivery of editable/source materials necessary for effective use and maintenance of Deliverables after payment.",
+        "judge_reasoning": "Leah fully detects the T1 work-for-hire issue and proposes an excellent fix. The proposed revision adds express assignment language as a fallback if work-for-hire fails, includes moral rights waiver, and requires delivery of source materials. This addresses all GT key elements: work-for-hire designation preserved, explicit assignment added, and payment condition retained. High quality amendment that is legally sound and immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "9.2-liability-cap",
+      "evidence": {
+        "proposed_revision_excerpt": "9.2 Cap on Liability. Except for (a) breaches of confidentiality; (b) data security/privacy obligations; (c) IP infringement or misappropriation; (d) indemnification obligations; and (e) gross negligence or willful misconduct, each Party's aggregate liability shall not exceed the greater of two (2) times the fees paid under the applicable SOW or the fees paid in the twelve (12) months preceding the claim.",
+        "effective_rationale_excerpt": "Raising the cap and adding critical carve-outs better aligns Consultant's exposure with potential Client harm, particularly for data and IP risks that can exceed a single SOW's fees.",
+        "judge_reasoning": "Leah correctly identifies the liability cap issue and proposes comprehensive carve-outs for IP infringement, data breach, and gross negligence/willful misconduct - all three GT required carve-outs. The revision also increases the cap quantum and adds 12-month alternative, addressing the GT commercial judgment note. Comprehensive fix with all key elements."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "9.1-damages",
+      "evidence": {
+        "proposed_revision_excerpt": "9.1 Exclusion of Damages. The foregoing exclusion shall not apply to (a) breach of confidentiality; (b) violation of data security or privacy obligations; (c) infringement or misappropriation of intellectual property; (d) indemnification obligations; or (e) a Party's gross negligence or willful misconduct.",
+        "effective_rationale_excerpt": "Blanket exclusion of indirect and special damages can bar recovery for data breach-related consequential losses and third-party claims. Carve-outs ensure Client can recover consequential third-party damages and internal losses where most impactful (data, IP, indemnity, egregious conduct), aligning liability with risk allocation.",
+        "judge_reasoning": "Leah identifies the consequential damages issue at clause 9.1 and proposes carve-outs for confidentiality breach, IP infringement, data loss - exactly what GT requires. The rationale explains that blanket exclusion bars recovery for data breach losses. Carve-outs align with indemnification obligations as GT suggests."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "7.1-tfc",
+      "evidence": {
+        "proposed_revision_excerpt": "7.1 Termination for Convenience. Either Party may terminate for convenience upon thirty (30) days' prior written notice. Consultant will provide reasonable transition assistance at Client's request at the rates in the applicable SOW. Client shall receive a refund of any prepaid but unearned amounts.",
+        "effective_rationale_excerpt": "This preserves mutual 30-day termination, adds needed transition support, and ensures refunds for prepaid services, protecting Client continuity and funds. It directly counters any attempt to impose termination fees.",
+        "judge_reasoning": "Leah detects the TfC issue and proposes adding transition assistance obligations. The revision addresses most GT key elements: maintains 30-day notice, adds transition assistance. However, SOW-level TfC right is addressed separately in 7.3 rather than here. Rationale is adequate but doesn't specifically address Client's need for shorter notice periods. Good amendment overall."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "5.2-bgip",
+      "evidence": {
+        "proposed_revision_excerpt": "5.2 Background IP. Consultant retains ownership of Background IP. To the extent Background IP is incorporated into Deliverables, Consultant grants Client a worldwide, perpetual, irrevocable, transferable, royalty-free license, with the right to sublicense to Client's affiliates and service providers, to use, copy, modify, and create derivative works of such Background IP solely as embedded in or necessary to use the Deliverables.",
+        "effective_rationale_excerpt": "The current license is too narrow for Client's operational needs. This revision enables affiliate use, modifications, and necessary sublicensing while limiting use to the Deliverables context, balancing Client flexibility with Consultant ownership of Background IP.",
+        "judge_reasoning": "Leah fully identifies the Background IP license scope issue. The proposed revision addresses all GT key elements: adds modification rights, internal use through derivative works, sublicensing for affiliates/successors, makes license irrevocable and transferable. Comprehensive fix that addresses Client's ability to maintain, enhance, and integrate deliverables."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "6.4-13.10-survival",
+      "evidence": {
+        "proposed_revision_excerpt": "1.2 'Confidential Information' includes trade secrets and information that reasonably should be understood as confidential. If disclosure is required by law, the receiving Party will provide prompt written notice (unless legally prohibited) and reasonably cooperate to seek protective treatment... 6.4 Return of Materials. Upon termination or request, the receiving Party shall promptly return or securely destroy Confidential Information and, upon request, certify destruction in writing. Any retained archival copies required by law shall not be accessed or used for any purpose other than legal compliance.",
+        "effective_rationale_excerpt": "Adding explicit trade secret protection and compelled disclosure procedures strengthens protection for Client's sensitive data. Certification and secure deletion reduce residual risk and provide assurance of compliance with return/destruction obligations in favor of Client.",
+        "judge_reasoning": "Leah detects the confidentiality issues but only partially addresses GT concerns. Trade secrets are mentioned in definition enhancements and compelled disclosure process is added. Destruction certification requirement added at 6.4. However, the explicit survival period with trade secret indefinite carve-out is not directly specified - the enhancement of 13.10 only adds audit, termination effects, and data security. Adequate fix but missing explicit duration specification."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "3.4-payment",
+      "evidence": {
+        "proposed_revision_excerpt": "3.4 Payment Terms. Client shall pay undisputed amounts within thirty (30) days of receipt. Client may withhold disputed amounts upon written notice within thirty (30) days, and no interest shall accrue on amounts disputed in good faith. Consultant shall continue performance provided undisputed amounts are paid.",
+        "effective_rationale_excerpt": "This clarifies a fair dispute process, suspends interest on good-faith disputes, and prevents service suspension when Client pays undisputed amounts. It maintains a 30-day term appropriate for Client A/P cycles and avoids coercive payment practices.",
+        "judge_reasoning": "Leah detects the payment dispute mechanism gap and proposes a comprehensive fix. The revision adds explicit dispute window (30 days), no interest on disputed amounts, continuation of performance when undisputed paid, and withholding rights. This addresses all GT key elements. High quality fix."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "13.1-13.2-venue",
+      "evidence": {
+        "proposed_revision_excerpt": "13.1 Governing Law. This Agreement shall be governed by and construed in accordance with the laws of the State of Nevada, without regard to its conflicts of law principles. 13.2 Dispute Resolution. Disputes not resolved by good faith negotiation within thirty (30) days shall be brought exclusively in state or federal courts located in Clark County, Nevada. Prior to suit, the Parties shall participate in non-binding mediation. Either Party may seek injunctive relief at any time.",
+        "effective_rationale_excerpt": "Nevada law aligns with Client's domicile, reduces litigation friction and costs, and is commercially reasonable. It eliminates an unfavorable jurisdictional tilt toward Consultant. Moving venue to Nevada lowers Client burden. Adding mediation encourages resolution while preserving access to court and equitable relief for urgent matters.",
+        "judge_reasoning": "Leah correctly identifies the governing law and forum issue. The proposed revisions change from Texas to Nevada (Client's jurisdiction), add mediation step, and preserve injunctive relief. This addresses all GT key elements: increases litigation cost concern, negotiating neutral venue, adding arbitration alternative. Excellent fix."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "new-data-security",
+      "evidence": {
+        "proposed_revision_excerpt": "14. Data Security and Privacy. Consultant shall implement industry-standard safeguards, comply with applicable data protection laws, notify Client of security incidents within 48 hours, cooperate in remediation, and process personal data solely under Client's instructions. Consultant shall not engage subprocessors without Client's written consent and flow down equivalent protections.",
+        "effective_rationale_excerpt": "Explicit security, privacy compliance, and rapid incident notification are critical to mitigate operational and regulatory exposure for Client when Consultant accesses systems/data.",
+        "judge_reasoning": "Leah detects the missing data protection clause and proposes a comprehensive new Article 14. The proposed clause addresses all GT key elements: security measures, breach notification (48 hours), GDPR/CCPA compliance reference, controller/processor roles (processing under Client instructions), subprocessors (consent required), and flow-down obligations. Excellent comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "10.1-indemnity",
+      "evidence": {
+        "proposed_revision_excerpt": "10.1 Consultant Indemnification. Consultant shall indemnify, defend, and hold harmless Client and its affiliates from third-party claims, losses, and expenses arising out of: (a) Consultant's breach of this Agreement; (b) actual or alleged infringement or misappropriation by the Services, Deliverables, or Consultant-provided materials; (c) bodily injury, death, or property damage caused by Consultant; (d) data security or privacy incidents attributable to Consultant; and (e) employment claims by Consultant personnel. Consultant will control the defense with counsel reasonably acceptable to Client.",
+        "effective_rationale_excerpt": "Consultant Indemnification limits to gross negligence/willful misconduct and IP infringement. Client needs broader coverage: breach of contract, data breach/security incidents, bodily injury/property damage, and employment claims arising from Consultant personnel actions. This expansion aligns indemnity with key risk vectors faced by Client.",
+        "judge_reasoning": "Leah correctly identifies the indemnification scope limitation. The proposed revision expands coverage from gross negligence/willful misconduct only to include: breach of Agreement (ordinary negligence), warranty breaches implicitly covered, confidentiality breaches via data security incidents, and adds employment claims, bodily injury/property damage. All GT key elements addressed. Excellent comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "11.1-insurance",
+      "evidence": {
+        "proposed_revision_excerpt": "11.1 Required Coverage. Consultant shall maintain the above coverages plus network security and privacy (cyber) liability insurance with limits not less than $2,000,000 per claim. Coverage shall be primary and non-contributory with a waiver of subrogation in favor of Client. Consultant shall provide certificates and 30 days' prior notice of cancellation or material change.",
+        "effective_rationale_excerpt": "Missing cyber liability and network security/privacy coverage; limits may be low. Client needs COIs and notice of cancellation. Adding cyber coverage aligns with modern risk. Primary/non-contributory status and waiver of subrogation protect Client's insurance program. Advance notice ensures continuous coverage.",
+        "judge_reasoning": "Leah detects the missing cyber insurance requirement and proposes a comprehensive fix. The revision adds cyber liability insurance with $2M limit, names Client as beneficiary via waiver of subrogation, adds primary/non-contributory status, COI delivery, and 30-day cancellation notice. All GT key elements addressed including additional insured-like protection."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 0,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 1,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 8,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 1,
+    "t1_detected": 1,
+    "total_detection_points": 50,
+    "total_quality_points": 95,
+    "total_points": 145,
+    "max_detection_points": 50,
+    "percentage": 100.0,
+    "pass_fail": "PASS",
+    "weighted_max": 50
+  },
+  "additional_issues": [],
+  "summary": {
+    "part_a": {
+      "total_score": 21,
+      "max_score": 24,
+      "percentage": 87.5,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "percentage": 100.0,
+      "t1_gate": "PASS",
+      "baseline_delta": null,
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true
+    }
+  }
+}

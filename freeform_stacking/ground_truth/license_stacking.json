@@ -1,0 +1,247 @@
+{
+  "gt_metadata": {
+    "mode": "freeform_stacking",
+    "contract_id": "License_IPHoldings",
+    "contract_type": "IP License",
+    "parties": {
+      "licensor": "Innovate IP Holdings LLC",
+      "licensee": "TechPro Industries Inc."
+    },
+    "representing_party": "Licensee",
+    "gt_version": "1.0",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-23",
+    "schema_version": "1.0",
+    "note": "Freeform Stacking: Leah reviews entire document including CP redlines. Representing party is SAME as Freeform Baseline."
+  },
+  "input_files": {
+    "clause_analysis": {
+      "pattern": "*_Cl*.doc",
+      "format": "HTML",
+      "used_for": [
+        "part_a",
+        "part_b"
+      ]
+    },
+    "redline_document": {
+      "pattern": "*_Redline_*.docx",
+      "format": "Word with tracked changes",
+      "used_for": [
+        "part_c"
+      ]
+    }
+  },
+  "part_a_cp_redlines": [
+    {
+      "test_id": "LICENSE_01",
+      "clause_ref": "Improvements",
+      "section": "3.2",
+      "original_text": "Improvements to the Licensed IP developed by Licensee shall be owned by Licensor.",
+      "cp_redline": "Improvements to the Licensed IP developed by Licensee shall be owned by Licensor. Licensee hereby grants Licensor an irrevocable, perpetual, royalty-free license to use, modify, and sublicense any Licensee Background Technology incorporated into such Improvements.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Improvements to the Licensed IP developed by Licensee shall be owned by Licensor.",
+      "key_elements": [
+        "1) Reject grant-back of Licensee Background Technology 2) Licensee should own improvements OR get license back 3) Licensor getting both ownership AND Licensee tech is overreach"
+      ],
+      "acceptable_variations": [
+        "Reject redline entirely (required)",
+        "Alternative: Change improvement ownership to Licensee or joint",
+        "Alternative: Licensee owns improvements, grants license-back to Licensor",
+        "No grant of Licensee Background Technology"
+      ],
+      "unacceptable_responses": [
+        "Accepting grant-back of Licensee Background Technology",
+        "Allowing Licensor access to Licensee's proprietary tech",
+        "Modifications that still give Licensor rights to Licensee Background Tech"
+      ],
+      "reasoning_must_address": "Licensee already loses improvement ownership (baseline issue); adding grant-back of Licensee Background Technology compounds the problem; Licensor gaining rights to Licensee's proprietary technology is excessive",
+      "category": "3. Intellectual Property & Data",
+      "subcategory": "IP ownership"
+    },
+    {
+      "test_id": "LICENSE_02",
+      "clause_ref": "Minimum Royalty",
+      "section": "4.1",
+      "original_text": "Beginning in Year 2, Licensee shall pay minimum annual royalty of $250,000, regardless of actual Net Sales. Running royalties shall be credited against this minimum.",
+      "cp_redline": "Beginning in Year 1, Licensee shall pay minimum annual royalty of $500,000, regardless of actual Net Sales, escalating by fifteen percent (15%) annually thereafter. Running royalties shall be credited against this minimum.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Beginning in Year 2, Licensee shall pay minimum annual royalty of $250,000, regardless of actual Net Sales. Running royalties shall be credited against this minimum.",
+      "key_elements": [
+        "1) Revert to Year 2 start (not Year 1) 2) Revert to $250K amount (not $500K) 3) Remove 15% annual escalator 4) Maintain credit for running royalties"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline required",
+        "May add: suspension for force majeure",
+        "May add: adjustment for market conditions",
+        "May reduce minimum amount further if negotiating"
+      ],
+      "unacceptable_responses": [
+        "Accepting Year 1 start",
+        "Accepting $500K minimum",
+        "Accepting 15% annual escalator",
+        "Any increase above baseline $250K"
+      ],
+      "reasoning_must_address": "Year 1 start eliminates ramp-up period; doubling minimum to $500K creates unsustainable fixed cost; 15% escalator compounds to 200%+ over 10 years; baseline $250K Year 2 already material commitment",
+      "category": "6. General Risk & Fairness",
+      "subcategory": "Economic risk allocation"
+    },
+    {
+      "test_id": "LICENSE_03",
+      "clause_ref": "Liability Cap",
+      "section": "12.2",
+      "original_text": "LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE ROYALTIES PAID IN THE TWELVE MONTHS PRECEDING THE CLAIM.",
+      "cp_redline": "LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE UPFRONT LICENSE FEE PAID UNDER SECTION 5.2. LIABILITY SHALL EXCLUDE DAMAGES FOR PRODUCT RECALLS, LOST PROFITS, OR COMMERCIAL LOSS ARISING FROM LICENSED PRODUCT DEFECTS.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE ROYALTIES PAID IN THE TWELVE MONTHS PRECEDING THE CLAIM.",
+      "key_elements": [
+        "1) Revert cap to 12-month royalties (not upfront fee only) 2) Remove exclusion for product recall damages 3) Remove exclusion for lost profits from Licensed Product defects"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (minimum acceptable)",
+        "Better: increase cap to 24 months royalties",
+        "Better: add minimum floor amount",
+        "Better: add carve-outs for IP warranty breach"
+      ],
+      "unacceptable_responses": [
+        "Cap limited to upfront fee only",
+        "Exclusion of product recall damages",
+        "Exclusion of commercial losses from IP defects",
+        "Any narrowing of Licensor liability below baseline"
+      ],
+      "reasoning_must_address": "Upfront fee ($500K) may be exhausted in Year 1; 10-year term needs liability tied to ongoing royalties; product recall and commercial loss exclusions eliminate remedies for IP defects; baseline already limits liability (Licensee concern is cap is too LOW, not too high)",
+      "category": "2. Liability & Redress",
+      "subcategory": "Limitation of liability"
+    },
+    {
+      "test_id": "LICENSE_04",
+      "clause_ref": "Termination for Cause",
+      "section": "13.2",
+      "original_text": "Either party may terminate this Agreement upon written notice if the other party materially breaches this Agreement and fails to cure such breach within sixty (60) days after written notice specifying the breach.",
+      "cp_redline": "Licensor may terminate this Agreement immediately upon written notice if Licensee materially breaches this Agreement. Licensee may terminate only if Licensor materially breaches and fails to cure within one hundred twenty (120) days after written notice.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Either party may terminate this Agreement upon written notice if the other party materially breaches this Agreement and fails to cure such breach within sixty (60) days after written notice specifying the breach.",
+      "key_elements": [
+        "1) Symmetric termination rights (both parties equal) 2) Reasonable cure period for both (60 days) 3) Material breach standard for both 4) Written notice requirement for both"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline required",
+        "May add: definition of material breach",
+        "May add: immediate termination for specific severe breaches (both parties)",
+        "May reduce cure period to 30 days if mutual"
+      ],
+      "unacceptable_responses": [
+        "Immediate termination right for Licensor only",
+        "Asymmetric cure periods (120 days for Licensee vs none for Licensor)",
+        "Any advantage to Licensor on termination rights",
+        "Different breach standards for parties"
+      ],
+      "reasoning_must_address": "Asymmetric termination creates power imbalance; Licensee has major investment (upfront fee, minimum royalties, development); 120-day cure vs immediate is grossly unfair; mutual 60-day cure is market standard",
+      "category": "4. Term, Termination & Exit",
+      "subcategory": "Termination rights"
+    }
+  ],
+  "part_b_whole_document": {
+    "reference": {
+      "source_file": "../../freeform/ground_truth/license.json",
+      "gt_version": "3.0_v4-enhanced_LOCKED",
+      "total_issues": 15,
+      "tier_breakdown": {
+        "T1": 4,
+        "T2": 7,
+        "T3": 4
+      },
+      "weighted_max": 71
+    },
+    "note": "Part B uses the Freeform Baseline GT. Same contract, same issues. Evaluate whether Leah still detects these risks when CP redlines are present."
+  },
+  "part_c_document_quality": {
+    "scope": "Every redline Leah produces in the output .docx",
+    "per_redline_capture": {
+      "redline_id": "Sequential ID (e.g., RL-01)",
+      "location": "Clause/section reference",
+      "type": "CP_RESPONSE | NEW_REDLINE",
+      "linked_gt_id": "GT ID if NEW_REDLINE addresses Part B issue, else null",
+      "action_stated": "ACCEPT | MODIFY | REJECT | ADD | DELETE",
+      "redline_exists": "Y | N",
+      "action_executed": "ACCEPT | MODIFY | REJECT | ADD | DELETE | NONE",
+      "execution_match": "Y | N | NA (NA if redline_exists=N)",
+      "is_wholesale": "Y | N",
+      "precision_score": "0-2 (aligned pair average)",
+      "insertion_accuracy": "0-2 | NA (aligned pair average, NA for DELETE/simple swaps)",
+      "notes": "Optional observations"
+    },
+    "aggregation_rules": {
+      "binary_fields": "Most confident determination wins",
+      "quality_fields": "Averaged across evaluations; median used for divergent scores",
+      "na_handling": "Exclude from averages"
+    }
+  },
+  "scoring_summary": {
+    "part_a": {
+      "items": 4,
+      "max_per_item": 6,
+      "max_total": 24,
+      "dimensions": {
+        "action": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "revision": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "reasoning": {
+          "max": 2,
+          "weight": "20%"
+        }
+      },
+      "pass_threshold": ">=70% AND 0 critical failures",
+      "critical_failures": [
+        "REJECT-only scored as ACCEPT",
+        "ACCEPT-only scored as REJECT",
+        "Revision contains unacceptable element"
+      ]
+    },
+    "part_b": {
+      "items": 15,
+      "weighted_max": 71,
+      "tier_weights": {
+        "T1": 8,
+        "T2": 5,
+        "T3": 1
+      },
+      "pass_threshold": "T1 Gate PASS AND >=70%",
+      "t1_gate": "Any T1 miss = FAIL"
+    },
+    "part_c": {
+      "per_redline_max": 6,
+      "dimensions": {
+        "precision": "0-2",
+        "insertion_accuracy": "0-2 or NA"
+      },
+      "metrics": [
+        "Wholesale Rate",
+        "Execution Mismatch Count",
+        "Missing Redline Count",
+        "Avg Precision",
+        "Avg Insertion Accuracy"
+      ],
+      "separate_reporting": [
+        "CP_RESPONSE",
+        "NEW_REDLINE"
+      ]
+    }
+  }
+}

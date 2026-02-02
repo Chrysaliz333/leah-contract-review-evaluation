@@ -1,0 +1,414 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "starliner",
+    "environment": "hotfix",
+    "evaluation_timestamp": "2026-01-25T22:00:00Z",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "stacking_gt_version": "1.0"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "SUPPLY_01",
+      "clause": "4.2",
+      "cp_redline_description": "Payment reduced to Net 15, interest increased to 2%, Supplier can suspend deliveries",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Modify to retain Net 30, lower interest, and remove delivery suspension right. The existing redline is highly unfavorable to Apex, reducing payment flexibility and increasing penalty risk. The revision restores Net 30, lowers interest, and adds a cure period before suspension, protecting Apex's cash flow and operational continuity.",
+        "judge_reasoning": "Leah correctly identifies the CP redline as unfavorable and proposes MODIFY rather than REJECT. While GT expects REJECT (full reversion), Leah's MODIFY achieves the same outcome: Net 30 restored, interest lowered to 1%, and suspension rights curtailed with 15-day notice and cure opportunity. The revision addresses all key elements (minimum 30-day payment, suspension requires notice/cure). The reasoning addresses AP cycles and due process concerns. Action score 1 (not exact REJECT but substantively equivalent), revision 2 (covers all key elements), reasoning 2 (addresses required points)."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_02",
+      "clause": "5.1",
+      "cp_redline_description": "Warranty reduced to 60 days with extensive exclusions",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Modify to restore minimum 1-year warranty and clarify exclusions. The existing redline drastically shortens warranty coverage and introduces broad exclusions, exposing Apex to quality and financial risk. The revision restores a commercially reasonable warranty and clarifies exclusions, aligning with industry standards and Apex's operational needs.",
+        "judge_reasoning": "Leah identifies the 60-day warranty as insufficient and proposes MODIFY to restore 1-year coverage. GT expects REJECT (full reversion to 12-month baseline). Leah's revision achieves the key elements: minimum 12-month warranty from delivery date with reasonable exclusions clarified. The reasoning addresses why 60 days is inadequate and references industry standards. Action score 1 (MODIFY achieves REJECT outcome), revision 2 (restores required warranty period), reasoning 2 (addresses automotive industry context)."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_03",
+      "clause": "11.2",
+      "cp_redline_description": "Liability cap reduced to lesser of product price or $50,000",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Modify to increase cap to a commercially reasonable level and allow exceptions. SUPPLIER'S TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNTS PAID BY BUYER FOR PRODUCTS IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR (B) ONE MILLION DOLLARS ($1,000,000). THE FOREGOING LIMITATION SHALL NOT APPLY TO SUPPLIER'S LIABILITY FOR INDEMNIFICATION, BREACH OF CONFIDENTIALITY, OR DAMAGES ARISING FROM GROSS NEGLIGENCE OR WILLFUL MISCONDUCT. The existing redline dramatically limits Supplier's liability, exposing Apex to unrecoverable losses.",
+        "judge_reasoning": "Leah correctly rejects the $50K cap as inadequate and proposes a robust alternative: 12-month payments OR $1M minimum, plus carve-outs for key risks. This exceeds GT's minimum requirement of reverting to 12-month cap. The revision adds valuable protections (indemnification uncapped, gross negligence/willful misconduct carve-outs) that GT lists as acceptable variations. Reasoning addresses scaling with purchase volume. Action score 1 (MODIFY achieves REJECT), revision 2 (exceeds key elements), reasoning 2 (addresses adequacy)."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_04",
+      "clause": "14.3",
+      "cp_redline_description": "Supplier can terminate on 30 days notice, Buyer cannot terminate for convenience, Buyer must buy pipeline inventory",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Modify to restore Apex's right to terminate for convenience and remove pipeline purchase obligation. Either Party may terminate this Agreement for convenience upon one hundred eighty (180) days' prior written notice. Buyer shall have no obligation to purchase Products in the production pipeline except for those specifically ordered and scheduled for delivery within the notice period. The existing redline removes Apex's flexibility and imposes a burdensome purchase obligation.",
+        "judge_reasoning": "Leah correctly identifies the asymmetric termination as highly unfavorable and proposes MODIFY to restore mutual rights. The revision reinstates symmetric 180-day notice for both parties and removes the onerous pipeline purchase obligation. This achieves all GT key elements: symmetric termination rights, reasonable notice period (180 days), both parties can terminate for convenience. Reasoning addresses vendor lock-in concern. Action score 1 (MODIFY achieves REJECT), revision 2 (all key elements), reasoning 2 (addresses flexibility needs)."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 20,
+    "max_score": 24,
+    "percentage": 83.3,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_11.2",
+      "evidence": {
+        "proposed_revision_excerpt": "SUPPLIER'S TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNTS PAID BY BUYER FOR PRODUCTS IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR (B) ONE MILLION DOLLARS ($1,000,000). THE FOREGOING LIMITATION SHALL NOT APPLY TO SUPPLIER'S LIABILITY FOR INDEMNIFICATION, BREACH OF CONFIDENTIALITY, OR DAMAGES ARISING FROM GROSS NEGLIGENCE OR WILLFUL MISCONDUCT.",
+        "effective_rationale_excerpt": "Existing redline limits Supplier's liability to $50,000 or price of defective products. This is insufficient for potential losses Apex may face. The existing redline dramatically limits Supplier's liability, exposing Apex to unrecoverable losses. The revision restores a commercially reasonable cap and carve-outs for key risks.",
+        "judge_reasoning": "Leah fully detects this issue at clause 11.2 with classification Unfavorable. The risk table explicitly states the liability cap is insufficient. The proposed revision addresses all GT key elements: maintains 12-month payments basis, adds $1M minimum floor, includes carve-outs for IP (via indemnification), willful misconduct, and gross negligence. The rationale provides specific reasoning about commercial adequacy. Full detection with comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_5.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon confirmation of a warranty claim, Buyer may elect, at its reasonable discretion, to require repair, replacement, or refund of the purchase price of defective Products.",
+        "effective_rationale_excerpt": "Supplier's sole remedy (repair, replace, or refund) is at Supplier's option, not Buyer's. This limits Apex's control over remedy and could delay resolution.",
+        "judge_reasoning": "Leah detects this issue at clause 5.2 with Requires Clarification classification. The risk table identifies that Supplier controls the remedy. The proposed revision gives Buyer the election right, addressing the core concern. However, it misses some GT key elements: no third-party repair right, no warranty extension for repairs, no recall cost coverage. Partial quality scores as the fix is adequate but not comprehensive."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": 1,
+      "quality_points": 3,
+      "total_points": 7,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah does not have a specific entry for clause 5.3 warranty disclaimer in the risk table. However, the 5.1 and 5.2 entries address warranty concerns generally. The canonical JSON shows Leah proposes restoring the 1-year warranty which implicitly addresses the express warranty concern, but does not explicitly address the merchantability/fitness disclaimer at 5.3 or propose adding express fitness for purpose warranty. Partial detection as warranty issues are addressed but not the specific disclaimer concern."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table_11.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Except for damages arising from gross negligence, willful misconduct, or Supplier's breach of its indemnification or confidentiality obligations, neither Party shall be liable for indirect, incidental, special, consequential, or punitive damages arising from this Agreement. Notwithstanding the foregoing, Supplier shall be liable for all costs and damages arising from product recalls attributable to Supplier's acts or omissions.",
+        "effective_rationale_excerpt": "Broad exclusion of indirect/consequential damages may limit Apex's recourse for significant losses (e.g., recall costs). Carving out exceptions for gross negligence, willful misconduct, and recall costs ensures Apex can recover significant losses in critical scenarios, balancing risk allocation more fairly.",
+        "judge_reasoning": "Leah fully detects this T1 issue at clause 11.1 with Unfavorable classification. The risk table explicitly identifies the consequential damages exclusion risk. The proposed revision addresses all GT key elements: carve-outs for gross negligence, willful misconduct, and critically includes explicit recall cost coverage. The rationale specifically mentions recall costs and production shutdowns. Comprehensive detection and fix."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_6.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Unless otherwise agreed, all Products shall be delivered FCA Supplier's facility (Incoterms 2020). Title and risk of loss shall pass to Buyer upon delivery to the carrier. Supplier shall promptly notify Buyer of any anticipated delays and shall be liable for any direct costs or damages incurred by Buyer as a result of late delivery, unless such delay is excused under Section 15.1.",
+        "effective_rationale_excerpt": "FCA Supplier's facility shifts risk to Apex at shipment. No provision for Supplier delay or penalties for late delivery. Adding notification and late delivery liability provisions incentivizes timely delivery and protects Apex from unplanned production interruptions and associated costs.",
+        "judge_reasoning": "Leah detects this T1 issue at clause 6.1 with Requires Clarification classification. The risk table identifies the FCA risk transfer concern. However, the proposed revision does not change from FCA to DDP/DAP as GT prefers - it keeps FCA but adds late delivery liability. This partially addresses the issue but doesn't shift the core transit risk. The amendment adds delay penalties but doesn't require CIF/CIP with insurance or align title with risk transfer at Buyer facility. Adequate but not comprehensive."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_2.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier may only reject a purchase order within five (5) business days if: (a) the order materially deviates from agreed forecasts, (b) the requested delivery date is unachievable due to documented capacity constraints, or (c) the order otherwise violates the terms of this Agreement. Supplier must provide written reasons for any rejection.",
+        "effective_rationale_excerpt": "Supplier's right to accept/reject orders within 5 days could create supply uncertainty for Apex. Lack of criteria for rejection introduces ambiguity and risk of unplanned disruptions. This change clarifies and limits Supplier's ability to reject purchase orders, protecting Apex from arbitrary supply disruptions and ensuring supply chain reliability.",
+        "judge_reasoning": "Leah fully detects this issue at clause 2.2 with Requires Clarification classification. The proposed revision comprehensively addresses all GT key elements: requires acceptance for orders within forecast, adds objective criteria for rejection, essentially creates deemed acceptance by limiting rejection grounds, and includes supply assurance through documented constraints requirement. Excellent quality fix."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_7.1_7.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Buyer shall inspect all Products within thirty (30) business days of receipt and shall notify Supplier in writing of any non-conformities or defects. Buyer's right to reject Products for latent defects discovered after the inspection period shall survive acceptance. Products shall be deemed accepted if Buyer fails to provide written notice of rejection within the inspection period, except that acceptance shall not apply to latent defects or non-conformities discovered after such period.",
+        "effective_rationale_excerpt": "10-day inspection window may be too short for complex parts or latent defects. Apex may miss defects discovered later. Extending the inspection period and allowing for latent defect claims protects Apex from hidden quality issues and reduces the risk of being forced to accept defective goods.",
+        "judge_reasoning": "Leah fully detects this issue at clauses 7.1 and 7.2 with Requires Clarification and Unfavorable classifications respectively. The risk table identifies the short inspection period and deemed acceptance risks. The proposed revision addresses all GT key elements: extends to 30 days (GT requested 30 days), adds explicit latent defect exception that survives acceptance, effectively links to warranty period. Comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": "risk_table_12.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall bear all costs and expenses associated with any recall to the extent the recall results from Supplier's acts or omissions. (From new Recall Cooperation clause)",
+        "effective_rationale_excerpt": "Supplier indemnifies Apex for product defects, negligence, and IP infringement. This is clear and protective. (Risk table marked as Favorable)",
+        "judge_reasoning": "Leah marks 12.1 as Favorable in the risk table, missing the GT concern about cap applicability and recall costs. However, Leah separately proposes a new Recall Cooperation clause that addresses recall cost coverage, and the liability cap revision includes indemnification carve-out from the cap. Partial detection because the indemnification clause itself is marked favorable but the underlying concerns are addressed elsewhere in the output through the recall clause and liability carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "risk_table_4.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Late payments shall bear interest at the lower of one percent (1%) per month or the maximum rate permitted by law.",
+        "effective_rationale_excerpt": "Existing redline shortens payment to Net 15 and increases late payment interest to 2%. This is highly unfavorable for Apex, reducing cash flow flexibility and increasing penalty risk. The revision restores Net 30, lowers interest, and adds a cure period before suspension.",
+        "judge_reasoning": "Leah detects this issue at clause 4.2 with Unfavorable classification. Note: The risk table addresses the CP redline's 2% rate, but the proposed revision reduces interest to 1% per month which directly addresses the GT concern about the baseline 1.5% rate being too high. The revision also adds the legal maximum rate cap. Full detection and comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "risk_table_3.2",
+      "evidence": {
+        "proposed_revision_excerpt": "After the initial twelve-month period, Supplier may propose price adjustments annually upon ninety (90) days' prior written notice. Any adjustment shall not exceed five percent (5%) and must be supported by objective cost indices (e.g., raw material price indices) and subject to Buyer's written approval, not to be unreasonably withheld.",
+        "effective_rationale_excerpt": "Annual price increase cap (5%) is stated, but lacks linkage to objective cost indices. Supplier can raise prices unilaterally, which could be unfavorable if market prices fall. Tying price adjustments to objective indices and requiring Buyer approval prevents unilateral increases and aligns costs with market conditions.",
+        "judge_reasoning": "Leah detects this issue at clause 3.2 with Requires Clarification classification. The proposed revision addresses GT key elements: ties adjustments to CPI-equivalent indices (raw material prices), adds Buyer approval right (effectively termination right for unacceptable increases), and requires cost justification. Comprehensive fix exceeds GT expectations."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "new_clause_business_continuity",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall maintain and regularly test business continuity and disaster recovery plans designed to ensure the continued supply of Products in the event of a disruption. Upon request, Supplier shall provide Buyer with a summary of such plans and evidence of recent testing.",
+        "effective_rationale_excerpt": "No clause addresses Supplier's obligation to maintain business continuity or disaster recovery plans, exposing Apex to supply chain risk in case of disruptions. This clause ensures Supplier is prepared for unforeseen disruptions, reducing supply chain risk and supporting Apex's operational continuity.",
+        "judge_reasoning": "Leah fully detects this missing clause issue and proposes a new Business Continuity/Disaster Recovery clause. The risk table has a New clause entry identifying this gap. The proposed revision addresses GT key elements: requires disaster recovery plan, requires testing, provides verification mechanism. While it doesn't explicitly add last-time-buy or dual sourcing, the business continuity framework addresses the core supply assurance concern. Comprehensive detection of missing clause."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_10.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall maintain the confidentiality of the other Party's confidential information, as defined in writing or by its nature, and shall not disclose it to third parties without prior written consent. With respect to technical or trade secret information, confidentiality obligations shall survive termination for so long as such information remains confidential.",
+        "effective_rationale_excerpt": "3-year survival of confidentiality may be too short for sensitive technical information. Scope of 'confidential information' is not defined. Defining confidential information and extending protection for technical/trade secrets ensures long-term protection of Apex's sensitive data, reducing competitive and IP risks.",
+        "judge_reasoning": "Leah detects this issue at clause 10.1 (Confidentiality Obligations) which corresponds to the GT's 13.1 reference. The risk table identifies the 3-year survival as potentially inadequate. The proposed revision directly addresses all GT key elements: adds perpetual protection for trade secrets ('for so long as such information remains confidential'), differentiates trade secrets from general confidential info, and defines confidential information. Excellent comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_13.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall maintain: (a) commercial general liability insurance of $2,000,000 per occurrence; (b) products liability insurance of $5,000,000 per occurrence; and (c) workers' compensation as required by law. Buyer shall be named as an additional insured on all liability policies, and Supplier shall provide certificates of insurance upon request.",
+        "effective_rationale_excerpt": "Supplier insurance limits may be insufficient for catastrophic losses. No requirement for Apex to be named as additional insured. Requiring Apex to be named as additional insured and providing proof of coverage increases protection and ensures insurance is available to cover Apex's potential losses.",
+        "judge_reasoning": "Note: The canonical JSON shows clause 13.1 as Insurance in the risk table with Requires Clarification classification, which indicates insurance requirements exist in this contract version. Leah's revision addresses the GT concerns: requires product liability insurance ($5M meets GT's $5M+ for automotive), adds additional insured status for Buyer, and requires insurance certificates for verification. The revision adds the missing elements GT identifies. Full detection."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah marks clause 14.2 (Termination for Cause) as Favorable in the risk table, stating 'Termination for uncured material breach is standard and fair.' This misses the GT concern that the 30-day cure period is supplier-favorable because Buyer cannot wait 30 days for critical supply/quality breaches. GT expects amendment to add shorter/no cure for supply/quality breaches and immediate termination for safety-critical defects. Leah marked this favorable when GT identifies it as requiring amendment."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 2,
+      "N": 1,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 1,
+        "N": 0,
+        "NMI": 0,
+        "count": 4
+      },
+      "T2": {
+        "Y": 6,
+        "P": 1,
+        "N": 1,
+        "NMI": 0,
+        "count": 8
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0,
+        "count": 2
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_detected": 4,
+    "total_detection_points": 57.5,
+    "total_quality_points": 100,
+    "total_points": 157.5,
+    "max_detection_points": 74,
+    "detection_percentage": 77.7,
+    "weighted_max": 74
+  },
+  "summary": {
+    "part_a": {
+      "total_score": 20,
+      "max_score": 24,
+      "percentage": 83.3,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "detection_percentage": 77.7,
+      "t1_gate": "PASS",
+      "t1_issues": 4,
+      "t1_detected": 4,
+      "weighted_score": 57.5,
+      "weighted_max": 74,
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true,
+      "notes": "Strong performance on both Part A (83.3%) and Part B (77.7%). All T1 issues detected. Only GT-14 (termination cure period asymmetry) missed - marked favorable when it requires amendment. All 4 CP redlines correctly identified as unfavorable with substantive MODIFY responses that achieve REJECT outcomes."
+    }
+  }
+}

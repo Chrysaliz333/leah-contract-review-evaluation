@@ -1,0 +1,964 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "pioneer_deep",
+    "evaluation_timestamp": "2026-01-25T18:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-4.1 Pricing and Modifications",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor may modify prices, discounts, or product offerings upon sixty (60) days' prior written notice; provided that such changes shall not apply to (a) valid quotes issued by Reseller to End Users within one hundred eighty (180) days prior to the effective date, or (b) registered opportunities acknowledged by Vendor within one hundred eighty (180) days prior to the effective date.",
+        "effective_rationale_excerpt": "The original gives Vendor broad unilateral change rights jeopardizing margins and quotes. The revision increases notice and adds quote and deal-registration protection windows, preserving Pacific Tech's pricing integrity on active opportunities.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the unilateral pricing modification risk at clause 4.1 and classifies it as Unfavorable. The proposed redline extends notice to 60 days, protects quotes issued within 180 days, and protects registered opportunities. This comprehensively addresses all GT key elements including extended notice, quote protection, and deal registration protection. The rationale clearly explains margin erosion risk and the protective mechanisms. High quality across all dimensions."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "No termination for convenience during Term",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-9.1 Term",
+      "evidence": {
+        "proposed_revision_excerpt": "Either Party may terminate this Agreement for convenience upon sixty (60) days' prior written notice.",
+        "effective_rationale_excerpt": "Prohibits termination for convenience, locking Reseller into unfavorable changes (e.g., pricing) and limiting exit if strategy shifts.",
+        "judge_reasoning": "Pioneer Deep identifies the no-convenience-termination restriction at 9.1 and classifies it as Unfavorable. The proposed amendment adds a convenience termination right with 60 days' notice (no waiting period specified). This addresses the GT concern by providing exit flexibility. The rationale explains the lock-in risk and flexibility benefit. Quality is high, though the amendment could specify when the right becomes available (after initial term)."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Vendor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.2 Cap",
+      "evidence": {
+        "proposed_revision_excerpt": "EACH PARTY'S TOTAL AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE AMOUNTS PAID OR PAYABLE BY RESELLER TO VENDOR UNDER THIS AGREEMENT IN THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM; PROVIDED THAT THIS CAP SHALL NOT APPLY TO A PARTY'S INDEMNIFICATION OBLIGATIONS, BREACH OF CONFIDENTIALITY, OR WILLFUL MISCONDUCT OR GROSS NEGLIGENCE.",
+        "effective_rationale_excerpt": "Asymmetric: caps Vendor only, leaves Reseller uncapped. No carve-outs for IP infringement, confidentiality, data breach, or gross negligence. Unacceptable.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the insufficient liability cap at 12.2 and classifies it as Unfavorable. The proposed amendment makes the cap mutual, adds carve-outs for indemnification, confidentiality, and misconduct. This addresses the GT concern about inadequate protection, though it doesn't increase the 12-month cap amount or add a minimum floor. The rationale clearly explains the asymmetry and gap issues. Strong quality overall."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.2",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-11.2 Disclaimer",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS EXPRESSLY SET FORTH HEREIN AND SUBJECT TO VENDOR'S INDEMNIFICATION OBLIGATIONS AND ANY NON-WAIVABLE STATUTORY RIGHTS, VENDOR MAKES NO OTHER WARRANTIES OF ANY KIND.",
+        "effective_rationale_excerpt": "The disclaimer should not undermine added warranties and indemnities. This revision subordinates the disclaimer appropriately, ensuring Pacific Tech can rely on core protections while maintaining Vendor's general disclaimer posture.",
+        "judge_reasoning": "Pioneer Deep identifies the broad warranty disclaimer at 11.2 and classifies it as Requires Clarification. The proposed amendment subordinates the disclaimer to express warranties and indemnification obligations, and preserves non-waivable statutory rights. This addresses the GT concern by preventing the disclaimer from nullifying essential protections. The rationale explains the legal risk and protective mechanism. High quality across all dimensions."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "2.1 / 2.2",
+      "tier": "T2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-2.2 No Exclusivity",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor reserves the right to sell Products directly and to appoint other resellers within the Territory; provided, however, that Vendor shall not solicit or accept orders directly from End Users for opportunities registered by Reseller and acknowledged in writing by Vendor for a period of one hundred eighty (180) days from registration, and shall pay a referral fee if Vendor closes such opportunity directly during that period.",
+        "effective_rationale_excerpt": "The current clause allows Vendor to bypass Reseller's opportunities. The revision adds deal registration protection and a referral fee to deter circumvention and compensate Pacific Tech for sourced demand.",
+        "judge_reasoning": "Pioneer Deep identifies the non-exclusivity issue at clause 2.2 and classifies it as Unfavorable. The proposed amendment adds deal registration protection with a 180-day window and referral fees for direct closes. This addresses the GT concern about protecting Reseller investments while maintaining non-exclusivity. The rationale explains the bypass risk and compensation mechanism. High quality across all dimensions."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 7,
+      "total_points": 8.0,
+      "matched_redline_id": "Redline-5.1 Payment Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Reseller shall pay undisputed amounts within thirty (30) days of invoice date. Reseller may withhold payment of amounts disputed in good faith with written notice, and no interest shall accrue on disputed sums. Finance charges apply only to undisputed overdue amounts.",
+        "effective_rationale_excerpt": "The original lacks a dispute mechanism and can penalize good-faith disputes. The revision adds a dispute right, limits interest to undisputed sums.",
+        "judge_reasoning": "Pioneer Deep identifies payment terms at 5.1 and classifies it as Requires Clarification. The amendment adds dispute rights and prevents interest on disputed amounts, which are valuable protections. However, it doesn't address the GT's core concern about the high 18% APR interest rate. The amendment improves the clause but doesn't cap the rate as the GT expects. Amendment score 2 for partial fix, rationale 2 for not addressing the rate directly, redline quality 3 for clean drafting."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vendor can require prepayment on credit issues",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-5.2 Credit",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor may establish and modify credit limits for Reseller upon five (5) business days' prior written notice. Vendor may require prepayment if Reseller exceeds credit limits or has past-due balances, provided Vendor uses commercially reasonable, non-discriminatory criteria and provides notice of the basis for such requirement.",
+        "effective_rationale_excerpt": "Abrupt prepayment demands can disrupt closings. The revision introduces notice and objective criteria, giving Pacific Tech time to adjust and ensuring fair treatment.",
+        "judge_reasoning": "Pioneer Deep identifies the credit control issue at 5.2 and classifies it as Requires Clarification. The proposed amendment adds 5-day notice, objective criteria, and notice of basis for prepayment requirements. This addresses the GT concern by preventing arbitrary prepayment demands and providing predictability. The rationale explains the disruption risk and fairness benefit. High quality across all dimensions."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Sales reports require End User information",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-8.1 Sales Reports",
+      "evidence": {
+        "proposed_revision_excerpt": "Reseller shall provide quarterly reports detailing Products sold and End User information reasonably necessary for fulfillment and support. Pipeline information shall be limited to registered opportunities acknowledged by Vendor. Vendor shall use such information solely to support Reseller-led opportunities and shall not solicit or accept direct orders for registered opportunities during the protection period.",
+        "effective_rationale_excerpt": "The original requires broad pipeline disclosure without protections, facilitating poaching. The revision narrows required data, restricts use, and ties to registered opportunities.",
+        "judge_reasoning": "Pioneer Deep identifies the reporting requirement at 8.1 and classifies it as Unfavorable. The proposed amendment limits End User data to fulfillment/support needs, restricts pipeline disclosure to registered opportunities, and adds use restrictions to prevent poaching. This comprehensively addresses the GT concerns about privacy and competitive intelligence. The rationale clearly explains the poaching risk and protective mechanisms. High quality across all dimensions."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.1 Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, EXCEPT WITH RESPECT TO A PARTY'S BREACH OF CONFIDENTIALITY, INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS, OR OBLIGATIONS TO INDEMNIFY.",
+        "effective_rationale_excerpt": "Without carve-outs, critical harms could be unrecoverable. This revision preserves standard exclusions while allowing recovery for key categories where limitation is inappropriate.",
+        "judge_reasoning": "Pioneer Deep identifies the consequential damages exclusion at 12.1 and classifies it as Requires Clarification. The proposed amendment adds carve-outs for confidentiality breaches, IP infringement, and indemnification obligations. This addresses the GT concern by ensuring meaningful remedies for serious breaches while maintaining the general exclusion. The rationale explains the recovery gap and the carve-out mechanism. High quality across all dimensions."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "9.3",
+      "tier": "T2",
+      "issue": "Termination effects - no sell-off period",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-9.3 Effect of Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "(a) Reseller shall cease marketing and selling Products, subject to a ninety (90) day sell-off period for existing inventory and committed quotes; (b) Reseller shall pay all undisputed outstanding amounts; (c) trademark licenses shall terminate, except as needed to fulfill the sell-off; and (d) Vendor shall continue to support End Users with active subscriptions/licenses sold prior to termination.",
+        "effective_rationale_excerpt": "The original provides no sell-off rights or continued support, creating customer harm and revenue loss. The revision allows orderly wind-down, protects End Users with active licenses, and prevents disputes over payments.",
+        "judge_reasoning": "Pioneer Deep identifies the missing sell-off period at 9.3 and classifies it as Unfavorable. The proposed amendment adds a 90-day sell-off period, protects undisputed payments, preserves trademark use during sell-off, and requires Vendor to support existing End Users. This comprehensively addresses the GT concern about abrupt termination and revenue loss. The rationale explains the customer harm and wind-down benefit. High quality across all dimensions."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-14 - Indemnification",
+      "evidence": {
+        "proposed_revision_excerpt": "14. Indemnification. (a) Vendor shall defend, indemnify, and hold harmless Reseller from and against any third-party claim alleging (i) the Products infringe or misappropriate intellectual property rights, (ii) a data security incident caused by the Products, or (iii) bodily injury, death, or tangible property damage caused by the Products; and shall pay resulting damages, costs, and reasonable attorneys' fees.",
+        "effective_rationale_excerpt": "The agreement lacks any indemnity protections. Adding balanced indemnities aligns risk to the party controlling the product and branding, ensuring Pacific Tech is protected from IP and security claims while limiting Reseller's exposure to its own misconduct.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the missing indemnification clause through the risk_table entry 'Gap Indemnities' and proposes a comprehensive new Article 14. The amendment provides Vendor indemnification for IP infringement, data security incidents, and bodily injury - fully addressing the GT's concern about IP indemnity specifically and going beyond to include data and product liability. The rationale explains the critical gap and risk allocation. High quality across all dimensions."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-16 - Data Protection",
+      "evidence": {
+        "proposed_revision_excerpt": "16. Data Protection. To the extent either Party processes personal data provided by the other, each shall comply with applicable data protection laws and implement appropriate technical and organizational measures. Vendor shall notify Reseller without undue delay of any security incident affecting End User data related to the Products and cooperate in remediation and notifications as required by law.",
+        "effective_rationale_excerpt": "The agreement involves End User information and support interactions yet has no privacy/security obligations. This clause allocates baseline compliance and breach notice duties to protect End Users and Pacific Tech's reputation.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the missing data protection clause through the risk_table entry 'Gap Data Protection' and proposes a new Article 16. The amendment addresses compliance, security measures, breach notification, and cooperation - fully covering the GT's key elements. The rationale explains the regulatory gap and reputation protection. High quality across all dimensions."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-7.2 End User Support",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor shall provide second-level technical support to Reseller, with initial response within four (4) business hours for Severity 1 issues and one (1) business day for all other issues, and commercially reasonable efforts to resolve Severity 1 issues within one (1) business day.",
+        "effective_rationale_excerpt": "The current clause lacks SLAs, risking slow vendor responses that reflect poorly on Pacific Tech. Adding response and resolution targets establishes accountability and improves customer outcomes while remaining commercially reasonable for Vendor to meet.",
+        "judge_reasoning": "Pioneer Deep identifies the missing SLAs at 7.2 and classifies it as Requires Clarification. The proposed amendment adds response times for Severity 1 (4 hours) and other issues (1 business day), plus resolution efforts for Severity 1. This addresses the GT concern by providing concrete service level commitments with tiered severity levels. The rationale explains the customer satisfaction risk and accountability benefit. High quality across all dimensions."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "Preamble",
+      "issue_summary": "Parties and effective date blanks",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to insert the ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The Effective Date is blank, which can create ambiguity about when obligations start, pricing locks, and warranty periods. This affects enforceability and performance timelines tied to notice periods,"
+    },
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Discount",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to reference E",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The Discount is defined but not tied to a schedule or minimums. Without a committed discount structure or floors, Vendor’s unilateral changes can erode margin and undermine quotes. For a reseller, pre"
+    },
+    {
+      "clause": "1.3",
+      "issue_summary": "Definition of Products",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require agr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Products are “listed in Exhibit A,” which is blank. Without a populated exhibit or incorporation by reference to a live catalog, there’s ambiguity on what can be sold, trained, and supported, impeding"
+    },
+    {
+      "clause": "1.4",
+      "issue_summary": "Territory (US and Canada)",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add deal re",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Territory is clear but non-exclusive later limits protection. Without deal registration or non-circumvention, Vendor can undercut opportunities. This threatens demand creation investments by Reseller."
+    },
+    {
+      "clause": "2.1",
+      "issue_summary": "Appointment non-exclusive reseller",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include reg",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Non-exclusive status is standard; however, without deal protection, Vendor can go direct after Reseller develops pipeline. This undermines ROI on marketing and sales."
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Vendor may sell direct and appoint others",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to add non-cir",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad no-exclusivity without counterbalancing protections increases risk of being bypassed. No commitment to respect Reseller opportunities or compensation for sourced deals."
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Ordering process and Vendor confirmation in 3 days",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include dee",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Acceptance timing is set, but no binding acceptance standard or deemed acceptance if Vendor is silent. No SLA for license delivery after acceptance. Delays risk Reseller’s delivery commitments."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "End User EULA acceptance",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to state Resel",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires EULA acceptance but does not confirm that Vendor’s EULA governs all warranties/liability to End Users and that Reseller bears no EULA liabilities. Risk of passthrough ambiguity and support ex"
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Pricing; Vendor can modify on 30 days’ notice",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to grandfather",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Unilateral price/discount changes with only 30 days’ notice jeopardize margins, quotes, and pipeline. No grandfathering for existing quotes or registered deals; no protection from discontinuations. Th"
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Taxes borne by Reseller",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add tax exe",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard, but lacks exemption process and allocation for withholding/VAT in cross-border scenarios. Could create unexpected cost."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Net 30; 1.5% monthly interest",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add bona fi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No explicit right to dispute invoices, no suspension for End User non-payment, and high finance charges may apply to good faith disputes. Creates cash flow and penalty risk."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Credit limits; prepayment rights",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require adv",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard, but lacks notice period and objective criteria; abrupt prepayment demands can disrupt deals."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Vendor marketing materials; no modification without approval",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add deemed ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Reasonable, but lacks a timely approval mechanism. Delays in approvals can block campaigns."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Trademark license limited, brand guidelines",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add Vendor ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Reasonable, but missing defense/indemnity for authorized use and process for guideline changes."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Vendor training; Reseller maintains trained staff",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to set minimum",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No training SLAs, refresh cadence, or cost allocation. Risk of inadequate enablement."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Support tiers: Reseller L1; Vendor L2",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add support",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No response/resolve SLAs or escalation, risking customer satisfaction. No clear scope boundaries."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Quarterly sales reports incl. End User details and pipeline",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to narrow data",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Overbroad reporting and pipeline disclosure without non-circumvention, confidentiality reinforcement, or use restrictions. Enables poaching."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "2-year initial term; auto-renew; no termination for convenience",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to add conveni",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prohibits termination for convenience, locking Reseller into unfavorable changes (e.g., pricing) and limiting exit if strategy shifts."
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Termination for uncured material breach (30 days)",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add additio",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard, but lacks immediate termination triggers for insolvency, legal noncompliance, data breach, or repeated breaches."
+    },
+    {
+      "clause": "9.3",
+      "issue_summary": "Effects of termination: cease selling, pay due, trademarks end",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to add sell-of",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No sell-off, no ongoing support for existing End Users, no continuing EULA rights, no transition assistance. This harms customers and revenue continuity."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Confidentiality for 3 years",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to trade secre",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Duration too short for trade secrets; lacks compelled disclosure process and residual knowledge carve-out. Also needs express protection for Reseller-provided End User data."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Vendor product performance warranty",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add non-inf",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Substantially as described” only; lacks non-infringement, compliance with laws, and no-malware assurances. Insufficient for reseller risk."
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Broad warranty disclaimer",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to subordinate",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Acceptable if coupled with robust Vendor warranties and indemnities. Currently overbroad given thin warranties and no indemnities."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Exclusion of indirect damages (mutual)",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add carve-o",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard, but should carve out confidentiality breaches, IP infringement, and indemnities; otherwise, recovery for key harms may be barred."
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Vendor liability cap limited to amounts paid by Reseller",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to mutual cap;",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Asymmetric: caps Vendor only, leaves Reseller uncapped. No carve-outs for IP infringement, confidentiality, data breach, or gross negligence. Unacceptable."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Governing law: Washington",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to California ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Pacific Tech is California-based; WA law/venue increases cost and friction."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Arbitration in Seattle, WA",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to SF Bay Area",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Venue distant and expensive; no small-claims carve-out or injunctive relief exception."
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Assignment requires consent",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to permit assi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No affiliate or change-of-control assignment right. Risk in corporate transactions."
+    },
+    {
+      "clause": "Exhibit A",
+      "issue_summary": "Products TBD",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require exe",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absent attachment creates scope ambiguity; risk of dispute over eligible Products and support entitlements."
+    },
+    {
+      "clause": "Exhibit B",
+      "issue_summary": "Pricing/Discounts TBD",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to attach with",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Missing pricing undermines commercial certainty; combined with 4.1, exposes margins."
+    },
+    {
+      "clause": "Gap Indemnities",
+      "issue_summary": "🆕",
+      "leah_classification": "❌",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "ADD comprehensive Vendor indemnity and limited Reseller indemnity."
+    },
+    {
+      "clause": "Gap Force Majeure",
+      "issue_summary": "🆕",
+      "leah_classification": "No force majeure clause, leaving both parties exposed to uncontrollable events and unclear performance relief.",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "ADD force majeure with notice and mitigation obligations."
+    },
+    {
+      "clause": "Gap Data Protection",
+      "issue_summary": "🆕",
+      "leah_classification": "No data protection/privacy terms despite End User data and support flows. Need role allocation, security commitments, and breach response.",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "ADD data protection clause with security, breach notice, and compliance alignment."
+    },
+    {
+      "clause": "Gap Deal Registration",
+      "issue_summary": "🆕",
+      "leah_classification": "No deal registration or opportunity protection, risking vendor poaching and loss of reseller investment.",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "ADD deal registration mechanics and protection periods."
+    },
+    {
+      "clause": "Gap Inventory/Discontinuation",
+      "issue_summary": "🆕",
+      "leah_classification": "No product discontinuation or stock protection (where applicable for license SKUs), risking stranded inventory or quoted SKUs.",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "ADD discontinuation notice and replacement/credit mechanisms."
+    },
+    {
+      "clause": "Gap Insurance",
+      "issue_summary": "🆕",
+      "leah_classification": "No insurance requirements to ensure vendor can support indemnities and liabilities.",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "ADD vendor insurance minimums and proof upon request."
+    },
+    {
+      "clause": "Preamble (Effective Date)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause defines the Effective Date but leaves it blank, which creates uncertainty for notices, renewals, and performance obligations. Clarifying the Effective Date ensures clear commencement of rig"
+    },
+    {
+      "clause": "1.3 \"Products\"",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The clause defines Products by reference to Exhibit A, which is currently blank and subject to unilateral change. The proposed revision adds notice and protection windows to avoid disr"
+    },
+    {
+      "clause": "2.2 No Exclusivity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The current clause allows Vendor to bypass Reseller’s opportunities. The revision adds deal registration protection and a referral fee to deter circumvention and compensate Pacific Tec"
+    },
+    {
+      "clause": "3.1 Ordering Process",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original provides a response time but no consequence for silence and no delivery SLA. Adding deemed acceptance and a delivery SLA reduces delay risk and supports Pacific Tech’s com"
+    },
+    {
+      "clause": "3.3 End User Agreements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The clause requires EULA acceptance but is silent on risk allocation. The revision clarifies that Vendor owns responsibility for EULA and product performance, protecting Pacific Tech f"
+    },
+    {
+      "clause": "4.1 Pricing and Modifications",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original gives Vendor broad unilateral change rights jeopardizing margins and quotes. The revision increases notice and adds quote and deal-registration protection windows, preserv"
+    },
+    {
+      "clause": "4.3 Taxes",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The current language may shift unexpected tax burdens to Pacific Tech. The revision clarifies exemption usage and prevents net payment erosion by withholding or other taxes, ensuring a"
+    },
+    {
+      "clause": "5.1 Payment Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original lacks a dispute mechanism and can penalize good-faith disputes. The revision adds a dispute right, limits interest to undisputed sums, and aligns renewal cash flow with En"
+    },
+    {
+      "clause": "5.2 Credit",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. Abrupt prepayment demands can disrupt closings. The revision introduces notice and objective criteria, giving Pacific Tech time to adjust and ensuring fair treatment. This still preser"
+    },
+    {
+      "clause": "6.2 Marketing Materials",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The clause lacks an approval SLA, causing campaign delays. Adding a deemed-approval mechanism and reasonableness standard ensures timely marketing execution while preserving Vendor bra"
+    },
+    {
+      "clause": "6.3 Trademark License",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The existing clause omits protection for authorized mark use. Adding notice of guideline changes and indemnity ensures Pacific Tech is not exposed to IP claims resulting from compliant"
+    },
+    {
+      "clause": "7.1 Training",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original lacks scope and cadence, risking inadequate enablement. The revision sets no-charge training and quarterly refreshers, ensuring Pacific Tech’s teams stay current on produc"
+    },
+    {
+      "clause": "7.2 End User Support",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The current clause lacks SLAs, risking slow vendor responses that reflect poorly on Pacific Tech. Adding response and resolution targets establishes accountability and improves custome"
+    },
+    {
+      "clause": "8.1 Sales Reports",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original requires broad pipeline disclosure without protections, facilitating poaching. The revision narrows required data, restricts use, and ties to registered opportunities. Thi"
+    },
+    {
+      "clause": "9.1 Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original prohibits convenience termination, locking Pacific Tech into unfavorable conditions. Adding a reasonable notice-based termination right restores flexibility to exit if pri"
+    },
+    {
+      "clause": "9.2 Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original cause provision is narrow. Adding additional triggers and a shorter cure for payment failures gives Pacific Tech faster relief from severe or repeated defaults and protect"
+    },
+    {
+      "clause": "9.3 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original provides no sell-off rights or continued support, creating customer harm and revenue loss. The revision allows orderly wind-down, protects End Users with active licenses, "
+    },
+    {
+      "clause": "10.1 Confidentiality",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original period is too short for trade secrets and lacks compelled disclosure mechanics, residuals, and clear protection for Reseller-provided End User data. The revision addresses"
+    },
+    {
+      "clause": "11.1 Vendor Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The current warranty is minimal. Adding non-infringement, compliance, and no-malware warranties better aligns risk with the party controlling the product. This protects Pacific Tech fr"
+    },
+    {
+      "clause": "11.2 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The disclaimer should not undermine added warranties and indemnities. This revision subordinates the disclaimer appropriately, ensuring Pacific Tech can rely on core protections while "
+    },
+    {
+      "clause": "12.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. Without carve-outs, critical harms could be unrecoverable. This revision preserves standard exclusions while allowing recovery for key categories where limitation is inappropriate. It "
+    },
+    {
+      "clause": "12.2 Cap",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original is asymmetric and leaves Pacific Tech uncapped. Making the cap mutual and carving out core categories aligns risk fairly and ensures Vendor remains accountable for serious"
+    },
+    {
+      "clause": "13.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. Pacific Tech is California-based. California law reduces travel and counsel costs and aligns with Pacific Tech’s administrative locus. Shifting governing law increases predictability a"
+    },
+    {
+      "clause": "13.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. Seattle venue imposes cost and burden on Pacific Tech. Moving arbitration to San Francisco with JAMS and adding injunctive and small-claims carve-outs lowers costs, speeds relief, and "
+    },
+    {
+      "clause": "13.3 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: N/A. The original blocks typical corporate transactions. Allowing affiliate and change-of-control assignments with notice preserves Pacific Tech’s strategic flexibility and enterprise value"
+    },
+    {
+      "clause": "Article 14 - Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 14 immediately after Article 12 - LIMITATION OF LIABILITY and before Article 13 - GENERAL PROVISIONS. The agreement lacks any indemnity protections. Adding balanced in"
+    },
+    {
+      "clause": "Article 15 - Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 15 immediately after Article 14 - Indemnification. The contract lacks a force majeure clause, creating risk for events outside either Party’s control. Adding this prov"
+    },
+    {
+      "clause": "Article 16 - Data Protection",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 16 immediately after Article 15 - Force Majeure. The agreement involves End User information and support interactions yet has no privacy/security obligations. This cla"
+    },
+    {
+      "clause": "8.2 Deal Registration",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 8.2 immediately after Section 8.1. Without deal registration, Vendor can disintermediate Pacific Tech after it invests in opportunity development. This clause formaliz"
+    },
+    {
+      "clause": "Product Discontinuation and Replacement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 4.1 within Article 4 - PRICING as a new section 4.X. Discontinuations can strand deals and harm customer trust. This clause ensures continuity or equivalent alternative"
+    },
+    {
+      "clause": "Insurance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert within Article 12 or as a new section in Article 13 after Section 13.5. Insurance backing ensures Vendor can satisfy indemnity and liability obligations. This requirement protects Pa"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 13,
+      "P": 0,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 7,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "total_detection_points": 69.0,
+    "total_quality_points": 115,
+    "total_points": 184.0,
+    "additional_issues_count": 67,
+    "additional_issues_points": 6
+  }
+}

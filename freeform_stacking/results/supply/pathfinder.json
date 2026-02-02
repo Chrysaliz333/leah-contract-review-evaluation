@@ -1,0 +1,411 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-26T18:45:00.000000Z",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "stacking_gt_version": "1.0",
+    "environment": "hotfix",
+    "evaluator": "human",
+    "mode": "freeform_stacking",
+    "notes": "Re-evaluated using canonical JSON from canonical_json/supply/pathfinder.json which shows correct Buyer perspective"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "SUPPLY_01",
+      "clause": "4.2",
+      "section": "Payment Terms",
+      "cp_redline_description": "CP changed payment from Net 30 to Net 15 with 2% interest and unilateral suspension rights",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The redline compresses payment terms, raises interest, and allows unilateral delivery suspension, harming Buyer cash flow and production stability. Retaining the original Net 30 and lower interest preserves industry-standard credit terms and prevents supply disruption leverage. No further modification required.",
+        "judge_reasoning": "Leah correctly identified REJECT action. Reasoning addresses all GT requirements: 15 days insufficient for AP cycles (mentions 'harming Buyer cash flow'), suspension needs due process (mentions 'unilateral delivery suspension'), industry standard is Net 30 (mentions 'industry-standard credit terms'). Full reversion to baseline recommended. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_02",
+      "clause": "5.1",
+      "section": "Product Warranty",
+      "cp_redline_description": "CP reduced warranty from 1 year to 60 days with extensive exclusions",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Redline slashes warranty duration and inserts vague voiding language, undermining Buyer protection and OEM pass-through requirements. The original one-year warranty aligns with vehicle launch cycles and quality standards. No further modification required.",
+        "judge_reasoning": "Leah correctly identified REJECT action. Reasoning addresses GT requirements: 60 days grossly inadequate (mentions 'slashes warranty duration'), automotive industry standard (mentions 'vehicle launch cycles and quality standards'), OEM requirements addressed. Full reversion to baseline recommended. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_03",
+      "clause": "11.2",
+      "section": "Liability Cap",
+      "cp_redline_description": "CP changed liability cap from 12-month payments to lesser of product price or $50K",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The redline dramatically constrains recovery, disregards potential multimillion-dollar recall costs. Maintaining the higher cap preserves Buyer's ability to offset downstream OEM charges and incentivises proper quality controls. No further modification required.",
+        "judge_reasoning": "Leah correctly identified REJECT action. Reasoning addresses GT requirement that $50K is inadequate for automotive supply relationship (mentions 'dramatically constrains recovery' and 'multimillion-dollar recall costs'). Cap should scale with purchase volume acknowledged by retaining 12-month payments basis. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_04",
+      "clause": "14.3",
+      "section": "Termination",
+      "cp_redline_description": "CP created asymmetric termination: Supplier 30 days, Buyer cannot terminate for convenience",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Proposed edit removes Buyer exit right and imposes pipeline purchase obligation, skewing leverage. Rejecting preserves mutual 180-day notice and avoids forced excess inventory acquisition. No further modification required.",
+        "judge_reasoning": "Leah correctly identified REJECT action. Reasoning addresses GT requirements: Buyer needs termination flexibility (mentions 'removes Buyer exit right'), asymmetric provision creates vendor lock-in (mentions 'skewing leverage'), forced inventory acquisition issue identified. Full marks awarded."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "proposed_redlines[6]",
+      "evidence": {
+        "proposed_revision_excerpt": "SUPPLIER'S TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNTS PAID BY BUYER FOR PRODUCTS IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM; however, this cap shall not apply to costs arising from (a) product recall or field action, (b) infringement indemnification, or (c) willful misconduct or gross negligence.",
+        "effective_rationale_excerpt": "Carves out high-impact scenarios where Buyer faces substantial downstream liability, ensuring Supplier bears appropriate responsibility for risks under its control.",
+        "judge_reasoning": "Leah correctly identified the liability cap issue at 11.2, classified as Unfavorable in risk_table, and proposed comprehensive carve-outs for recall, IP, and misconduct - addressing all GT key elements for increased protection. Full detection and quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah's risk_table shows 5.1 Product Warranty as Favorable ('Meets OEM flow-down; duration supports field testing cycles'). No entry for 5.2 addressing the 'sole obligation' remedy issue where Supplier controls whether to repair, replace, or refund. No proposed redline addresses Buyer's lack of third-party repair rights or warranty extension for replaced products. Issue not mentioned anywhere in output."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No entry for clause 5.3 in risk_table or proposed_redlines. The disclaimer of implied warranties (merchantability, fitness for purpose) is not addressed anywhere. Leah did not flag this critical warranty gap that leaves only the 1-year express warranty."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No entry for clause 11.1 in risk_table or proposed_redlines. The mutual exclusion of consequential/indirect damages that blocks Buyer recovery for production shutdowns and recalls is not directly addressed. While Leah addressed 11.2 (liability cap with carve-outs including recall), the 11.1 blanket consequential exclusion itself was not flagged as a separate issue."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "proposed_redlines[2]",
+      "evidence": {
+        "proposed_revision_excerpt": "Unless otherwise agreed, all Products shall be delivered DAP Buyer's designated facility (Incoterms 2020). Title and risk of loss shall pass to Buyer upon arrival at such facility following Buyer's unloading.",
+        "effective_rationale_excerpt": "Shifts risk of loss and freight management to Supplier, incentivising proper packaging and carrier selection, while aligning with common automotive tier-1 sourcing leverage and reducing Buyer logistics exposure.",
+        "judge_reasoning": "Leah correctly identified FCA as Unfavorable ('Risk of loss transfers early, Buyer bears freight'), proposed DAP (matching GT preference for DDP/DAP), aligned title with risk transfer at Buyer's facility. Comprehensive fix addressing all GT key elements. Full marks."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "proposed_redlines[0]",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall accept all purchase orders that are consistent with this Agreement and the Forecasts and shall not unreasonably refuse or delay acceptance. Any rejection shall be accompanied by a written explanation detailing commercially reasonable grounds.",
+        "effective_rationale_excerpt": "Strengthens supply assurance by obligating Supplier to accept conforming orders and document any refusal, reducing discretionary rejection risk and improving planning visibility for Buyer production schedules.",
+        "judge_reasoning": "Leah correctly identified the supply obligation gap at 2.2 (Requires Clarification: 'Silent on reasonableness; Supplier could refuse strategic orders'), and proposed requiring acceptance of conforming orders with documentation for rejections. Addresses GT key elements for supply assurance including deemed acceptance concept. Full marks."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "proposed_redlines[4]",
+      "evidence": {
+        "proposed_revision_excerpt": "Buyer shall have thirty (30) calendar days from receipt, or for latent defects, thirty (30) days after discovery, to inspect and notify Supplier of any non-conformity.",
+        "effective_rationale_excerpt": "Extends window to accommodate complex dimensional and functional testing while carving out latent defects to ensure hidden issues remain actionable, aligning with automotive PPAP and warranty practices.",
+        "judge_reasoning": "Leah correctly identified the 10-day inspection period as insufficient at 7.1 (Requires Clarification: 'Too short for complex dimensional checks; latent defects risk shifting to Buyer'), proposed extension to 30 days with latent defect carve-out. Addresses all GT key elements including linking to warranty practices. Full marks."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "new_clauses_proposed[0]",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall indemnify and reimburse Buyer for all costs, expenses, and damages (including OEM charges, field labor, replacement parts, logistics, and reasonable attorney fees) arising from any voluntary or mandatory product recall, service campaign, or field action attributable to the Products' non-conformity, defect, or failure to comply with Specifications or applicable law.",
+        "effective_rationale_excerpt": "Automotive recalls impose multimillion-dollar liabilities; explicit reimbursement language aligns Supplier incentives with stringent quality controls and secures recovery pathway for Buyer.",
+        "judge_reasoning": "While risk_table shows 12.1 as Favorable, the new Product Recall clause comprehensively addresses the GT issue by explicitly covering all recall costs (OEM charges, field labor, parts, logistics, attorney fees) with detailed scope. This semantically addresses the GT requirement for recall cost coverage. Full detection via new clause recommendation."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah's risk_table shows 4.2 Payment Terms as Favorable ('Standard automotive terms acceptable; original clause retained after rejecting redline'). While Leah correctly rejected the CP redline (which would have made it worse at 2%), the baseline 1.5% per month (18% APR) interest rate issue was not flagged as a concern. No proposed amendment to reduce the interest rate or add disputed amount carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "proposed_redlines[1]",
+      "evidence": {
+        "proposed_revision_excerpt": "After the initial twelve-month period, any price adjustment shall (a) be tied to an agreed public cost index applicable to raw materials, (b) be subject to a ceiling of five percent (5%) upward or downward, and (c) be supported by verifiable cost data open to Buyer audit upon request.",
+        "effective_rationale_excerpt": "Introduces objective index linkage, mutualizes downward adjustments, and grants audit rights, ensuring transparency and preventing unilateral price inflation detrimental to Buyer margins.",
+        "judge_reasoning": "Leah identified price adjustment concerns at 3.2 (Requires Clarification: 'No audit or index tie-in; Supplier could stack increases; lacks downward adjustments'), proposed CPI-linked adjustments with audit rights and bidirectional adjustment. Addresses GT key elements including cost justification requirement and adding downward adjustments. Full marks for comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "new_clauses_proposed[1]",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall maintain and annually update a written business continuity and disaster recovery plan that includes dual tooling, minimum four weeks' finished-goods safety stock, and alternate sourcing for critical sub-components. Upon Buyer request, Supplier shall provide the current plan and conduct a joint review within fifteen (15) days.",
+        "effective_rationale_excerpt": "Ensures uninterrupted supply during natural disasters or capacity disruptions, protecting Buyer's production lines and downstream contractual commitments to OEM customers.",
+        "judge_reasoning": "Leah identified the missing business continuity provisions and proposed a comprehensive new clause with dual tooling, safety stock requirements, alternate sourcing, and disaster recovery planning. Addresses all GT key elements including capacity reservation and discontinuation notice (via annual plan review). Full marks."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "proposed_redlines[5]",
+      "evidence": {
+        "proposed_revision_excerpt": "Obligations regarding trade secrets and technical data shall survive indefinitely until such information enters the public domain through no fault of the receiving party.",
+        "effective_rationale_excerpt": "Protects Buyer engineering data beyond three years, reflecting long vehicle lifecycles and ensuring proprietary designs remain safeguarded throughout aftermarket support period.",
+        "judge_reasoning": "Leah identified confidentiality survival issue at 10.1 (semantically equivalent to GT's 13.1 - confidentiality section, Requires Clarification: 'Term should be perpetual for proprietary vehicle data') and proposed indefinite protection for trade secrets. GT key elements addressed including differentiation between trade secrets and general info. Rationale score 2 as explanation focuses on vehicle lifecycle but doesn't explicitly cite automotive industry competitive protection needs."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah's risk_table shows 13.1 Insurance as Favorable ('Aligns with recall exposure, meets OEM requirement'). The GT states no insurance clause exists, but Leah's assessment indicates insurance provisions do exist in the contract and are adequate. Leah did not propose any additional insurance requirements or enhancements such as additional insured status or certificate requirements. Marked N as Leah assessed existing clause as Favorable without identifying any gaps the GT expects."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No entry for clause 14.2 (termination for cause) in risk_table or proposed_redlines. Leah addressed 14.3 (termination for convenience with asymmetric notice periods), but the 30-day cure period for material breach at 14.2 that favours Supplier for supply/quality issues was not flagged. No expedited termination right for quality failures proposed."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 0,
+      "N": 1,
+      "NMI": 4
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 1,
+        "P": 0,
+        "N": 0,
+        "NMI": 3
+      },
+      "T2": {
+        "Y": 7,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      }
+    },
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "t1_detected": 1,
+    "total_detection_points": 39,
+    "total_quality_points": 80,
+    "total_points": 119,
+    "max_detection_points": 74,
+    "max_quality_points": 126,
+    "detection_percentage": 52.7,
+    "totals": {
+      "part_a_score": 24,
+      "part_a_max": 24,
+      "part_a_percentage": 100.0,
+      "part_b_detection_score": 39,
+      "part_b_quality_score": 80,
+      "part_b_total": 119,
+      "part_b_max": 200,
+      "part_b_percentage": 59.5,
+      "combined_pass": false,
+      "failure_reasons": [
+        "T1 Gate FAIL: Only 1 of 4 T1 issues detected (GT-05 FCA terms)",
+        "T1 NMI: GT-02 (5.2 warranty remedy), GT-03 (5.3 warranty disclaimer), GT-04 (11.1 consequential damages)"
+      ]
+    }
+  }
+}

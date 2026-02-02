@@ -1,0 +1,390 @@
+{
+  "meta": {
+    "contract": "distribution",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T23:30:00.000Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "1.0",
+    "environment": "hotfix"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "DISTRIBUTION_01",
+      "clause_ref": "5.1",
+      "cp_redline_description": "Reduces price change notice from 60 to 15 days and adds retroactive application to unfulfilled orders",
+      "expected_action": "REJECT",
+      "leah_action": null,
+      "action_score": 0,
+      "revision_score": 0,
+      "reasoning_score": 0,
+      "total_points": 0,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": null,
+        "judge_reasoning": "The canonical JSON shows cp_redlines_count: 0 and empty cp_redline_responses array. Leah did not produce an explicit response to the CP redline at Section 5.1. The risk_table entry for 5.1 addresses the baseline clause (60-day notice) as Unfavorable and proposes amendments to cap price increases, but does not address the CP's proposed 15-day notice with retroactive application. Since there is no CP redline response, Leah cannot be credited for action, revision, or reasoning on this item."
+      }
+    },
+    {
+      "gt_id": "DISTRIBUTION_02",
+      "clause_ref": "6.1",
+      "cp_redline_description": "Increases minimum from $100K to $250K/quarter with 10% annual escalator and single quarter breach trigger",
+      "expected_action": "REJECT",
+      "leah_action": null,
+      "action_score": 0,
+      "revision_score": 0,
+      "reasoning_score": 0,
+      "total_points": 0,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": null,
+        "judge_reasoning": "No CP redline response exists in the canonical JSON. The risk_table entry for 6.1 flags the baseline minimum purchase clause as Unfavorable and recommends adding flexibility for market downturns and a cure period, but this addresses the original $100K/quarter terms - not the CP's proposed $250K with escalator. Without an explicit response to the CP redline, no credit can be awarded."
+      }
+    },
+    {
+      "gt_id": "DISTRIBUTION_03",
+      "clause_ref": "3.1",
+      "cp_redline_description": "Adds non-compete clause prohibiting distribution of competing products during term and for 2 years post-term",
+      "expected_action": "REJECT",
+      "leah_action": null,
+      "action_score": 0,
+      "revision_score": 0,
+      "reasoning_score": 0,
+      "total_points": 0,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": null,
+        "judge_reasoning": "The canonical JSON contains no CP redline responses. Leah's risk_table entry for 3.1 addresses the baseline non-exclusive appointment as Unfavorable and proposes adding a right of first refusal. This does not address the CP's proposed non-compete restriction with 2-year post-term tail. The GT requires REJECT to revert to baseline (no non-compete). Without a CP response, no credit can be awarded."
+      }
+    },
+    {
+      "gt_id": "DISTRIBUTION_04",
+      "clause_ref": "11.1",
+      "cp_redline_description": "Reduces initial term from 3 years to 1 year and adds unilateral Supplier termination for convenience",
+      "expected_action": "REJECT",
+      "leah_action": null,
+      "action_score": 0,
+      "revision_score": 0,
+      "reasoning_score": 0,
+      "total_points": 0,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": null,
+        "judge_reasoning": "No CP redline response exists in the canonical JSON. The risk_table entry for 11.1 marks Term and Renewal as Requires Clarification with reasoning about adding Distributor termination for convenience, but does not address the CP's proposed reduction to 1-year initial term or Supplier TfC right. The GT requires REJECT to restore 3-year term and eliminate Supplier TfC. Without an explicit CP response, no credit can be awarded."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 0,
+    "max_score": 24,
+    "percentage": 0,
+    "critical_failures": 0,
+    "pass_fail": "FAIL"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.1 / 3.2",
+      "tier": "T1",
+      "issue": "Non-exclusive appointment with Supplier competition rights",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "d660f35f-4949-4624-abe3-f7146a4574ca",
+      "evidence": {
+        "proposed_revision_excerpt": "3.1 Non-Exclusive Appointment. Supplier hereby appoints Distributor as a non-exclusive distributor of the Products within the Territory. Supplier shall not appoint additional distributors or sell directly within the Territory without first offering Distributor a right of first refusal on such sales or appointments.",
+        "effective_rationale_excerpt": "Non-exclusivity allows Supplier to appoint other distributors and sell directly, which significantly limits Distributor's market opportunity and leverage. This amendment introduces a right of first refusal, which provides Distributor with a meaningful opportunity to maintain or expand its market share.",
+        "judge_reasoning": "Leah correctly classifies 3.1 as Unfavorable and identifies the core risk of non-exclusivity with Supplier's reserved rights. The proposed redline adds a right of first refusal - which is an acceptable variation per GT. The rationale addresses the key GT concern about Supplier competition undermining Distributor's position. Leah also addresses 3.2 separately with compensation for lost sales. Amendment score 2 because the fix is adequate but doesn't seek full exclusivity or product line exclusivity as primary options."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Unilateral price changes with no cap",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "879b72b3-82fd-4093-b1b6-adf456c221b5",
+      "evidence": {
+        "proposed_revision_excerpt": "5.1 Prices. Distributor shall purchase Products at the prices set forth in Supplier's then-current price list. Supplier may modify prices no more than once per calendar year, with any increase capped at five percent (5%) above the previous year's price, and only upon sixty (60) days' prior written notice with justification based on documented cost increases.",
+        "effective_rationale_excerpt": "Prices can be changed by Supplier with 60 days' notice, but no cap or formula is provided, risking arbitrary increases. This revision limits frequency and amount of price increases, requiring justification and notice, which protects Distributor from arbitrary or excessive pricing changes.",
+        "judge_reasoning": "Leah correctly classifies 5.1 as Unfavorable and identifies all GT key elements: no cap on increases and Distributor locked into unknown future prices. The proposed revision adds all GT-required protections: price cap (5% annual max), limits frequency (once per year), maintains 60-day notice, and requires justification. Comprehensive fix matching all GT key elements. Excellent quality amendment."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Mandatory minimum purchase with automatic breach trigger",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "df1f685c-e5ea-4426-84cc-8335f9829235",
+      "evidence": {
+        "proposed_revision_excerpt": "6.1 Minimum Purchase Commitment. Distributor agrees to purchase a minimum of One Hundred Thousand Dollars ($100,000) of Products per calendar quarter during the Term of this Agreement, provided that such minimums shall be subject to adjustment in the event of market downturns, force majeure, or other circumstances beyond Distributor's reasonable control. Failure to meet minimum purchase requirements for two (2) consecutive quarters shall only constitute a material breach if Distributor fails to cure within sixty (60) days of notice.",
+        "effective_rationale_excerpt": "High quarterly minimums with material breach after two missed quarters; no flexibility for market changes or force majeure. This revision adds flexibility for external events and introduces a cure period, reducing the risk of automatic breach and termination for circumstances outside Distributor's control.",
+        "judge_reasoning": "Leah correctly classifies 6.1 as Unfavorable and identifies all GT key elements: automatic breach trigger without cure period, no adjustment for market conditions or force majeure. The proposed revision adds all GT-required protections: cure period (60 days), market condition adjustment, force majeure exception. Comprehensive fix addressing all GT concerns with well-drafted language."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "13.3",
+      "tier": "T1",
+      "issue": "Asymmetric assignment rights",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "9c6b1ca4-55d9-4a36-896f-1e53bae89991",
+      "evidence": {
+        "proposed_revision_excerpt": "13.3 Assignment. Distributor may assign this Agreement to any affiliate or in connection with a merger, acquisition, or sale of substantially all of its assets, upon written notice to Supplier.",
+        "effective_rationale_excerpt": "Distributor cannot assign without Supplier's consent, restricting business flexibility (e.g., sale, restructuring). This revision provides Distributor with needed flexibility for corporate transactions, reducing business risk and supporting growth or restructuring.",
+        "judge_reasoning": "Leah correctly classifies 13.3 as Unfavorable and identifies all GT key elements: Distributor blocked from M&A/business sale without Supplier consent. The proposed revision adds M&A/affiliate exception directly matching GT acceptable remediation. The rationale correctly addresses the business flexibility concern. Well-drafted amendment addressing the core asymmetry issue."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Low liability cap for both parties",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "41d5fc99-c3a6-4faa-a561-d64efd766934",
+      "evidence": {
+        "proposed_revision_excerpt": "10.2 Cap on Liability. NEITHER PARTY'S TOTAL LIABILITY SHALL EXCEED THE AMOUNT PAID BY DISTRIBUTOR TO SUPPLIER IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, EXCEPT THAT THIS LIMITATION SHALL NOT APPLY TO LIABILITY ARISING FROM GROSS NEGLIGENCE, WILLFUL MISCONDUCT, BREACH OF CONFIDENTIALITY, OR INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS.",
+        "effective_rationale_excerpt": "Liability is capped at 12 months' payments, which may not cover actual losses or third-party claims. This revision ensures the liability cap does not shield Supplier from responsibility for serious misconduct or IP infringement, better protecting Distributor.",
+        "judge_reasoning": "Leah correctly classifies 10.2 as Unfavorable and identifies key GT concerns: cap may be insufficient for product liability/recalls, no carve-outs for IP/willful misconduct/gross negligence. The proposed revision adds all GT-required carve-outs: gross negligence, willful misconduct, confidentiality breach, IP infringement. Comprehensive fix matching GT key elements exactly."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause - Distributor exposed to product claims",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "f6306ba0-69f1-409d-8b24-d6acb34d27af",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall indemnify, defend, and hold harmless the other Party from and against any and all claims, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or relating to (a) any breach of this Agreement, (b) any third-party claim of intellectual property infringement, and (c) product liability claims resulting from defects in the Products.",
+        "effective_rationale_excerpt": "No indemnification clause exists. Distributor could be exposed to third-party claims without recourse against Supplier. This clause is necessary to protect Distributor from third-party claims and product liability, providing a critical risk mitigation mechanism that is standard in distribution agreements.",
+        "judge_reasoning": "Leah correctly identifies the missing indemnification clause with NEW classification and recommends ADD action. The proposed new clause covers all GT-required elements: product defects, IP infringement protection, defense costs. The rationale correctly identifies Distributor's exposure to third-party claims without this protection. Comprehensive remediation matching GT expectations for a T1 missing clause."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "FOB shipping terms shift all transit risk to Distributor",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "90b139d8-93e2-46b6-8828-d49a9f440b2f",
+      "evidence": {
+        "proposed_revision_excerpt": "4.2 Delivery Terms. Unless otherwise agreed in writing, all Products shall be delivered FOB Supplier's facility. Title and risk of loss shall pass to Distributor only upon receipt of the Products at Distributor's designated facility.",
+        "effective_rationale_excerpt": "Risk of loss passes to Distributor at Supplier's facility, which exposes Distributor to shipping risks and costs. This revision shifts risk of loss to Distributor only upon actual receipt, protecting against loss or damage in transit.",
+        "judge_reasoning": "Leah correctly classifies 4.2 as Unfavorable and identifies the GT key element: risk passes at Supplier facility exposing Distributor to transit risk. The proposed revision shifts risk to pass at Distributor's facility - directly matching GT acceptable remediation. The rationale correctly addresses the transit risk concern. Well-drafted amendment."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "fecb3516-a1ac-4099-a030-4a0ef78bc8e4",
+      "evidence": {
+        "proposed_revision_excerpt": "5.3 Late Payments. Any amounts not paid when due shall bear interest at the rate of one percent (1%) per month, provided that no interest shall accrue unless payment remains outstanding for more than ten (10) days after written notice of non-payment.",
+        "effective_rationale_excerpt": "1.5% per month interest is high; no cure period or notice before interest applies. This amendment introduces a cure period and reduces the interest rate, preventing excessive penalties and giving Distributor a fair opportunity to cure payment delays.",
+        "judge_reasoning": "Leah correctly classifies 5.3 as Requires Clarification and identifies all GT key elements: 1.5%/month (18% APR) is above typical rates, no exclusion for disputed amounts. The proposed revision reduces rate to 1% and adds a cure period with notice requirement - addressing all GT concerns. Additionally addresses the disputed amounts concern by requiring notice before interest accrues. Comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Marketing approval required for all materials",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "9ea30df3-fa7e-497f-86d4-403039e45e73",
+      "evidence": {
+        "proposed_revision_excerpt": "7.2 Advertising. All advertising and promotional materials prepared by Distributor shall be submitted to Supplier for approval prior to use. Approval shall be deemed granted if Supplier does not object in writing within ten (10) business days of submission, and approval shall not be unreasonably withheld.",
+        "effective_rationale_excerpt": "All advertising requires Supplier approval, which could be unreasonably withheld or delayed, stifling Distributor's marketing. This amendment prevents Supplier from unreasonably delaying or withholding approval, enabling Distributor to market efficiently.",
+        "judge_reasoning": "Leah correctly classifies 7.2 as Unfavorable and identifies all GT key elements: all materials require approval, no timeline, no deemed approval mechanism. The proposed revision adds deemed approval (10 business days) and 'not unreasonably withheld' - directly matching GT acceptable remediation. Comprehensive fix addressing all GT concerns."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.3",
+      "tier": "T2",
+      "issue": "Termination effects lack buyback and transition",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "d6347c2a-a685-4aa5-b4e0-2e321be34ae0",
+      "evidence": {
+        "proposed_revision_excerpt": "11.3 Effect of Termination. Upon termination: (a) all rights granted to Distributor shall terminate; (b) Distributor shall cease use of the Trademarks; (c) Distributor may sell remaining inventory for ninety (90) days; (d) Distributor may return unsold inventory to Supplier for a full refund; (e) Supplier shall provide reasonable transition assistance for up to ninety (90) days post-termination.",
+        "effective_rationale_excerpt": "Allows sale of remaining inventory for 90 days, but does not address return rights, ongoing obligations, or transition support. This amendment provides for inventory return and transition assistance, reducing financial risk and ensuring a smoother exit process.",
+        "judge_reasoning": "Leah correctly classifies 11.3 as Requires Clarification and identifies all GT key elements: no inventory buyback right, no transition assistance. The proposed revision adds both: inventory return for full refund and 90-day transition assistance - directly matching all GT acceptable remediation. Comprehensive fix addressing all GT concerns."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Supplier can reject purchase orders - no supply obligation",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "55c0c89b-932e-425d-93bd-a365ab40207f",
+      "evidence": {
+        "proposed_revision_excerpt": "4.1 Purchase Orders. Distributor shall submit purchase orders to Supplier in writing. Supplier shall accept all purchase orders unless unable to fulfill due to documented supply shortages or force majeure, and shall notify Distributor of any rejection within five (5) business days, stating the specific reason.",
+        "effective_rationale_excerpt": "Supplier has unilateral discretion to accept/reject orders, with no obligation to accept or minimum supply commitment, which could disrupt Distributor's business. This amendment limits Supplier's discretion to reject orders, ensuring more reliable supply.",
+        "judge_reasoning": "Leah correctly classifies 4.1 as Requires Clarification and identifies all GT key elements: Supplier can accept/reject orders, no obligation to accept even within forecast. The proposed revision requires acceptance unless documented supply shortage/force majeure - directly matching GT acceptable remediation for supply assurance. The rationale correctly addresses the supply uncertainty concern. Excellent remediation."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Territory restriction on outside sales",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Restricts Distributor from soliciting sales outside the Territory, which is standard and reasonable to prevent channel conflict.",
+        "judge_reasoning": "Leah marks 3.3 as Favorable in the risk_table, finding the territory restriction 'standard and reasonable to prevent channel conflict.' However, the GT identifies this as T3 issue because: passive sales outside Territory should be permitted, and the restriction may limit growth opportunities. Leah defends the restriction as standard rather than identifying the need for passive sales exception. Detection N because Leah marked Favorable when issue exists."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consequential Damages Exclusion Missing Critical Carve-Outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "ecc09c3b-62f9-4b07-9bbc-ae4564551d91",
+      "evidence": {
+        "proposed_revision_excerpt": "10.1 Exclusion of Damages. IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF THIS AGREEMENT, EXCEPT TO THE EXTENT SUCH DAMAGES ARE AWARDED TO A THIRD PARTY IN CONNECTION WITH A CLAIM SUBJECT TO INDEMNIFICATION UNDER THIS AGREEMENT.",
+        "effective_rationale_excerpt": "Excludes indirect, incidental, and consequential damages, which may leave Distributor exposed to third-party claims without recourse. This amendment carves out third-party claims from the exclusion.",
+        "judge_reasoning": "Leah correctly classifies 10.1 as Unfavorable and identifies the key concern about blocking recovery for third-party claims. The proposed revision adds carve-out for third-party indemnification claims. However, the GT requires additional carve-outs: confidentiality breach, willful misconduct, gross negligence, IP infringement. Leah's revision only addresses indemnification carve-out but misses the other required carve-outs. Detection Y but quality scores reduced for incomplete fix."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 12,
+      "P": 0,
+      "N": 1,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 6,
+    "t1_detected": 6,
+    "total_detection_points": 74,
+    "total_quality_points": 102,
+    "total_points": 176,
+    "weighted_max": 75
+  },
+  "additional_issues": [],
+  "summary": {
+    "part_a": {
+      "total_score": 0,
+      "max_score": 24,
+      "percentage": 0,
+      "critical_failures": 0,
+      "pass_fail": "FAIL"
+    },
+    "part_b": {
+      "weighted_score": 74,
+      "max_weighted_score": 0,
+      "percentage": 0,
+      "t1_gate": "PASS",
+      "t1_detected": 6,
+      "t1_total": 6,
+      "quality_score": 102,
+      "pass_fail": "FAIL"
+    },
+    "combined": {
+      "pass": false
+    }
+  }
+}

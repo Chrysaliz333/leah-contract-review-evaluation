@@ -1,0 +1,497 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "velocity",
+    "evaluation_timestamp": "2026-01-25T18:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Ownership of Deliverables",
+      "evidence": {
+        "proposed_revision_excerpt": "All deliverables... shall be deemed 'work made for hire' under applicable copyright law. To the extent any Deliverable does not qualify as a work made for hire, Consultant hereby irrevocably assigns to Client all right, title, and interest in and to such Deliverable... Client's ownership rights shall vest immediately upon creation of the Deliverable and shall not be contingent upon payment of fees.",
+        "effective_rationale_excerpt": "The 'upon full payment' condition creates a risk that Client may not have clear ownership rights if there are payment disputes. Making ownership immediate upon creation and adding an assignment fallback ensures Client obtains full IP rights regardless of work-for-hire status, while payment remains a separate contractual obligation.",
+        "judge_reasoning": "Risk table flags ownership as Requires Clarification, noting work-for-hire may not apply to independent contractors and payment contingency creates leverage. Proposed redline addresses work-for-hire limitations by adding explicit assignment language as fallback and making ownership immediate upon creation, removing payment contingency. GT calls for addressing work-for-hire ineffectiveness with express assignment fallback. Redline comprehensively addresses GT structural concern by providing dual mechanism (work-for-hire + assignment) and immediate vesting. Excellent amendment with strong rationale explaining work-for-hire limitations."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT FOR BREACHES OF CONFIDENTIALITY OBLIGATIONS, INDEMNIFICATION OBLIGATIONS, GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR CLAIMS ARISING FROM INTELLECTUAL PROPERTY INFRINGEMENT, NEITHER PARTY'S TOTAL LIABILITY... SHALL EXCEED THE GREATER OF (I) $500,000, OR (II) THE TOTAL FEES PAID BY CLIENT TO CONSULTANT UNDER ALL STATEMENTS OF WORK IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.",
+        "effective_rationale_excerpt": "The original cap tied solely to the applicable SOW could result in minimal liability limits for small projects despite significant potential damages. Adding a $500,000 floor and a 12-month lookback period ensures more meaningful liability exposure. Excluding gross negligence, willful misconduct, and IP infringement from the cap aligns with industry standards and Client's risk profile.",
+        "judge_reasoning": "Risk table flags liability cap as Requires Clarification, noting cap tied to single SOW may be inadequate and should have minimum floor. Proposed redline adds $500K minimum floor, uses 12-month lookback instead of single SOW, and adds comprehensive carve-outs including confidentiality, indemnification, gross negligence, willful misconduct, and IP infringement. GT calls for carve-outs for IP infringement, data breach, and gross negligence. Redline addresses all GT requirements comprehensively (IP infringement and gross negligence covered; data breach could be considered covered under confidentiality). Excellent amendment with strong minimum cap and rationale."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "IN NO EVENT SHALL EITHER PARTY BE LIABLE... FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES... EXCEPT FOR DAMAGES ARISING FROM: (I) BREACH OF CONFIDENTIALITY OBLIGATIONS; (II) INTELLECTUAL PROPERTY INFRINGEMENT CLAIMS; (III) GROSS NEGLIGENCE OR WILLFUL MISCONDUCT; OR (IV) DATA BREACHES OR PRIVACY VIOLATIONS.",
+        "effective_rationale_excerpt": "A blanket exclusion of consequential damages could leave Client without adequate remedies for serious breaches like confidentiality violations or data breaches. Carving out these high-impact scenarios ensures Client can recover for harms that are foreseeable and directly tied to Consultant's critical obligations.",
+        "judge_reasoning": "Risk table flags consequential damages exclusion as Requires Clarification, noting mutual waiver may not adequately protect Client for serious harms. Proposed redline adds comprehensive carve-outs for confidentiality breach, IP infringement, gross negligence/willful misconduct, and data breaches/privacy violations. GT calls for carve-outs for confidentiality breach, IP infringement, and data loss. Redline comprehensively addresses all GT requirements. Excellent amendment with strong rationale."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Termination for Convenience",
+      "evidence": {
+        "proposed_revision_excerpt": "Client may terminate this Agreement or any individual Statement of Work for convenience upon fifteen (15) days' prior written notice. Consultant may terminate this Agreement (but not individual SOWs) for convenience upon sixty (60) days' prior written notice... Upon any termination for convenience by Client, Consultant shall provide up to thirty (30) days of transition assistance at no additional charge.",
+        "effective_rationale_excerpt": "Symmetric 30-day notice periods do not reflect the realities of the parties' positions. Client may need to exit quickly if services are unsatisfactory, while longer notice from Consultant protects Client's business continuity. Adding SOW-level termination rights and mandatory transition assistance ensures Client can manage project lifecycles effectively.",
+        "judge_reasoning": "Risk table flags termination as Requires Clarification, noting symmetric notice doesn't reflect Client's need for flexibility. Proposed redline creates asymmetric notice periods (15 days for Client, 60 for Consultant), adds SOW-level termination for Client, and requires 30-day transition assistance at no charge. GT calls for shorter Client notice, SOW-level TfC, and transition assistance. Redline comprehensively addresses all GT requirements. Excellent amendment with strong rationale."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Background IP",
+      "evidence": {
+        "proposed_revision_excerpt": "Consultant hereby grants Client a non-exclusive, perpetual, irrevocable, worldwide, royalty-free, sublicensable (to affiliates and contractors), transferable license to use, reproduce, modify, create derivative works from, distribute, and display such Background IP, both as incorporated in the Deliverables and independently therefrom.",
+        "effective_rationale_excerpt": "The 'solely as part of the Deliverables' restriction is overly narrow and could prevent Client from maintaining or enhancing solutions over time. Allowing independent use, modification, and sublicensing to affiliates and contractors provides Client with the operational flexibility needed for long-term business use.",
+        "judge_reasoning": "Risk table flags Background IP as Unfavorable, noting 'solely as part of the Deliverables' severely restricts Client's operational flexibility. Proposed redline expands license to include modification, derivative works, independent use (removing 'solely as part of' restriction), sublicensable to affiliates/contractors, and transferable. GT calls for expanded license including modification, internal use, derivative works, and sublicensing for affiliates/successors. Redline comprehensively addresses all GT requirements. Excellent amendment with strong rationale."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Survival",
+      "evidence": {
+        "proposed_revision_excerpt": "The following provisions shall survive termination or expiration: ... Article 6 (Confidentiality) for five (5) years following termination, except that obligations relating to trade secrets shall survive for as long as such information remains a trade secret under applicable law...",
+        "effective_rationale_excerpt": "The original clause provides indefinite survival without specifying durations for different obligations. A five-year confidentiality period is reasonable for most business information, while trade secrets warrant longer protection as long as they retain trade secret status under law.",
+        "judge_reasoning": "Risk table flags survival as Requires Clarification, noting indefinite survival creates uncertainty and should specify reasonable durations. Proposed redline adds explicit 5-year survival period for confidentiality with indefinite trade secret protection. GT calls for explicit survival period with trade secret carve-out. Redline fully addresses GT requirements. Excellent amendment with strong rationale."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Payment Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Client may dispute any invoice or line item by providing written notice to Consultant within fifteen (15) days of receipt, specifying the disputed amount and basis for the dispute. The parties shall work in good faith to resolve the dispute within thirty (30) days. Interest shall accrue only on undisputed amounts and only after the payment due date.",
+        "effective_rationale_excerpt": "Without a dispute mechanism, Client risks accruing interest on amounts it legitimately questions. Adding a 15-day dispute window and good faith resolution process protects Client's ability to challenge billing errors while ensuring Consultant receives timely payment for undisputed amounts.",
+        "judge_reasoning": "Risk table flags payment terms as Requires Clarification, noting no dispute mechanism could force Client to pay questionable charges to avoid interest. Proposed redline adds 15-day dispute window, 30-day good faith resolution period, and interest only on undisputed amounts after due date. GT calls for dispute window and good faith resolution process. Redline comprehensively addresses GT requirements with clear timeframes. Excellent amendment."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Governing Law",
+      "evidence": {
+        "proposed_revision_excerpt": "This Agreement shall be governed by... the laws of the State of Nevada... disputes shall first be subject to non-binding mediation in Las Vegas, Nevada. If mediation does not resolve the dispute within sixty (60) days, either party may pursue resolution through the state or federal courts located in Clark County, Nevada.",
+        "effective_rationale_excerpt": "Texas law and venue favor the Consultant and impose travel and legal costs on Client. Shifting to Nevada law and adding a mediation step in Las Vegas provides a more balanced approach and could reduce litigation expenses for both parties.",
+        "judge_reasoning": "Risk table flags both governing law and dispute resolution as Requires Clarification, noting Texas law/venue unfavorable for Nevada Client. Proposed redlines change governing law to Nevada, add non-binding mediation in Las Vegas, and change venue to Clark County, Nevada. GT calls for neutral venue consideration or arbitration. Redlines comprehensively address GT concerns with mediation step and Client-favorable jurisdiction. Excellent amendments."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Data Security and Privacy",
+      "evidence": {
+        "proposed_revision_excerpt": "Consultant shall implement and maintain appropriate technical and organizational security measures... including encryption, access controls, and security monitoring... comply with all applicable data protection laws, including GDPR and CCPA... notify Client within 48 hours of any data breach or security incident... process personal data only on Client's documented instructions and assist Client with data subject requests and regulatory compliance.",
+        "effective_rationale_excerpt": "The Agreement lacks data security and privacy provisions despite the likelihood that Consultant will access Client's confidential data and systems. Adding explicit security requirements, breach notification obligations, and data protection compliance provisions is essential to protect Client from regulatory and reputational risks.",
+        "judge_reasoning": "Risk table identifies missing data security clause with new clause recommendation. Proposed redline adds comprehensive data security and privacy clause covering technical/organizational measures (encryption, access controls, monitoring), GDPR/CCPA compliance, 48-hour breach notification, processing per instructions, data subject assistance, and subprocessor controls. GT calls for GDPR/CCPA compliance, security measures, breach notification, controller/processor roles, and audit rights. Redline addresses most GT requirements comprehensively (missing explicit audit rights). Excellent amendment with strong rationale."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Consultant Indemnification",
+      "evidence": {
+        "proposed_revision_excerpt": "Consultant shall indemnify, defend, and hold harmless Client... from and against any third-party claims... arising from: (a) Consultant's negligence, gross negligence, or willful misconduct in performing Services; (b) any claim that the Deliverables infringe third-party intellectual property rights; (c) Consultant's breach of confidentiality obligations; or (d) Consultant's breach of warranties under Section 8.2.",
+        "effective_rationale_excerpt": "The original indemnification is limited to gross negligence or willful misconduct, setting too high a bar. Most professional liability claims arise from ordinary negligence. Expanding to include negligence, confidentiality breaches, and warranty breaches provides Client with more comprehensive third-party protection and aligns with industry standards for professional services.",
+        "judge_reasoning": "Risk table flags indemnification as Unfavorable, noting limitation to gross negligence too restrictive and excludes most claims. Proposed redline expands to include ordinary negligence, adds confidentiality breach and warranty breach coverage, and maintains IP infringement coverage. GT calls for expansion to ordinary negligence and addition of warranty/confidentiality breach coverage. Redline comprehensively addresses all GT requirements. Excellent amendment with strong rationale."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Insurance Requirements",
+      "evidence": {
+        "proposed_revision_excerpt": "(c) cyber liability and data breach insurance with limits of not less than $3,000,000 per occurrence, covering claims arising from data breaches, privacy violations, and network security failures; and (d) workers' compensation insurance as required by law. All policies except workers' compensation shall name Client as an additional insured. Consultant shall provide certificates of insurance upon request and thirty (30) days' advance notice of cancellation.",
+        "effective_rationale_excerpt": "Given Consultant's likely access to Client data and systems, cyber liability insurance is essential. The $3 million limit aligns with industry norms for technology services. Naming Client as additional insured provides direct coverage benefits and notice of cancellation ensures continuity.",
+        "judge_reasoning": "Risk table flags insurance as Requires Clarification, noting no cyber liability insurance despite data/system access. Proposed redline adds cyber liability insurance at $3M with comprehensive coverage for data breaches, privacy violations, and network security failures, names Client as additional insured, and requires certificates and cancellation notice. GT calls for cyber insurance requirement and Client named as additional insured. Redline fully addresses GT requirements. Excellent amendment with strong rationale."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.4",
+      "issue_summary": "Client Cooperation",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify response/acc",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ties performance to Client cooperation and “timely access.” While standard, the term “timely” is vague and could lead to disputes or delays that are outside Meridian’s control."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Background IP",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider expanding l",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Consultant retains Background IP; Client gets a license to Background IP used in Deliverables. The scope is narrow (“solely as part of the Deliverables”), which can impede Meridian’s long-term use, mo"
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Third-Party Materials",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a representation",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Consultant must identify third-party materials and license appropriately. This is prudent but leaves potential risk if licenses are inadequate or not transferred to Meridian."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Exclusions from Confidentiality",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider tightening ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard exclusions (public domain, prior knowledge, third-party rights, independent development). These are typical but can be exploited to detach information from protection."
+    },
+    {
+      "clause": "7.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a wind-down/tran",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires payment for Services through termination and delivery of in-progress Deliverables paid-for; however, wind-down responsibilities and transition assistance are not specified."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Mutual Representations",
+      "leah_classification": "⚠️",
+      "leah_action": "Add explicit complia",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad representations (authority, compliance, lawful performance). Helpful but lacks explicit regulatory/compliance assurances (e.g., data protection, anti-corruption)."
+    },
+    {
+      "clause": "8.3",
+      "issue_summary": "Disclaimer",
+      "leah_classification": "⚠️",
+      "leah_action": "If Meridian desires ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard disclaimer of warranties; limits Meridian’s recourse to implied warranties. Acceptable but could be too broad given tech deliverables."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Exclusion of Damages",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider carving out",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual exclusion of indirect damages protects both sides but, coupled with 9.2, may restrict recovery for data breaches or IP-related losses."
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Cap on Liability",
+      "leah_classification": "❌",
+      "leah_action": "Strongly consider in",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Liability cap ties to fees under the applicable SOW; this can be insufficient for high-severity events (data breach, IP infringement) and may leave Meridian under-compensated. Although confidentiality"
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Client Indemnification",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify that indemni",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Client indemnifies Consultant for Client’s gross negligence or misuse; standard but warrants clarity on scope."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Insurance",
+      "leah_classification": "⚠️",
+      "leah_action": "Add cyber liability ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires CGL, E&O, and workers’ comp; lacks cyber/privacy coverage and perhaps technology E&O with adequacy tailored to data processing."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Non-Solicitation of Employees",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider adding reas",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual non-solicitation for 12 months; protects both sides against poaching; may restrict Meridian if it needs to hire Consultant personnel."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "⚠️",
+      "leah_action": "Evaluate whether Del",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Texas law governs; may be neutral but could impose unfamiliar enforcement for a Nevada Client; consider enforceability, especially for international or cross-border concerns."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider adding medi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Negotiation first, then court litigation in Travis County, TX; provides a path but lacks prescriptive ADR; may be prolitigation friendly."
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Notices",
+      "leah_classification": "⚠️",
+      "leah_action": "Confirm method, timi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard; acceptable, but ensure emailing is securely authenticated; timeline not specified."
+    },
+    {
+      "clause": "13.5",
+      "issue_summary": "Entire Agreement",
+      "leah_classification": "⚠️",
+      "leah_action": "If there are side le",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard integration clause; risk of omitting side letters or ancillary documents;"
+    },
+    {
+      "clause": "DP-Not-Present",
+      "issue_summary": "Data Protection & Privacy Obligations (New Clause)",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD a Data Processin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Data protection obligations are not addressed in the base contract; creates regulatory risk given handling of possibly personal data."
+    },
+    {
+      "clause": "DP-DPA",
+      "issue_summary": "Data Processing Addendum (DPA) (New Clause)",
+      "leah_classification": "🆕",
+      "leah_action": "ADD: DPA with requir",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of DPA creates potential non-compliance exposure for Meridian if personal data is processed; the DPA would formalize data handling, security, and breach processes."
+    },
+    {
+      "clause": "9.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Section 9.2 The original clause caps liability at fees and excludes breaches of confidentiality and indemnification from the cap but does not adequately address high-severity events like da"
+    },
+    {
+      "clause": "5.2 Background IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Section 5.2 This expansion clarifies Meridian’s practical rights to use Background IP embedded in Deliverables beyond mere consumption, enabling internal enhancements, maintenance, and deri"
+    },
+    {
+      "clause": "11.1 Required Coverage",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After existing 11.1 Meridian faces risk from cyber incidents and data handling. Adding cyber liability coverage ensures financial protection for data breaches and privacy incidents arising "
+    },
+    {
+      "clause": "2.4 Client Cooperation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Section 2.4 The term “timely” is vague and leaves room for interpretive disputes that can derail project timelines. Defining a concrete response timeline minimizes delays, provides measurab"
+    },
+    {
+      "clause": "Data Protection & Privacy Obligations (New Clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Article 11 (or as a stand-alone section near data-related clauses) Meridian requires explicit data protection commitments given the likelihood of handling personal data. The new claus"
+    },
+    {
+      "clause": "Data Processing Addendum (DPA) (New Clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Immediately after the Data Protection & Privacy Obligations clause A stand-alone DPA provides comprehensive, enforceable data protection specifics, clarifying responsibilities and remedies "
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 0,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 1,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 8,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 50.0,
+    "total_quality_points": 99,
+    "total_points": 149.0,
+    "weighted_max": 50,
+    "additional_issues_count": 24
+  }
+}

@@ -1,0 +1,888 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "sonnet45",
+    "evaluation_timestamp": "2026-01-25T18:45:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-11.2 Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "SUPPLIER'S TOTAL LIABILITY FOR CLAIMS ARISING FROM BREACH OF CONTRACT OR NEGLIGENCE SHALL NOT EXCEED THE AMOUNTS PAID BY BUYER FOR PRODUCTS IN THE TWENTY-FOUR (24) MONTHS PRECEDING THE CLAIM. THIS LIMITATION SHALL NOT APPLY TO: (A) SUPPLIER'S INDEMNIFICATION OBLIGATIONS UNDER ARTICLE 12; (B) CLAIMS ARISING FROM SUPPLIER'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR FRAUD; (C) SUPPLIER'S BREACH OF CONFIDENTIALITY OBLIGATIONS; OR (D) PRODUCT LIABILITY CLAIMS FOR BODILY INJURY OR PROPERTY DAMAGE CAUSED BY DEFECTIVE PRODUCTS.",
+        "effective_rationale_excerpt": "The original twelve-month liability cap severely undercompensates Buyer for damages from Supplier's breaches or defective Products, particularly if defects cause production shutdowns, customer recalls, or safety issues where actual damages vastly exceed recent purchase amounts. This asymmetric risk allocation leaves Buyer substantially exposed. This amendment doubles the cap to twenty-four months of purchases, providing more adequate recovery potential. The revision carves out critical categories where caps are inappropriate: indemnification obligations, intentional misconduct, confidentiality breaches, and product liability for physical harm.",
+        "judge_reasoning": "Sonnet45 comprehensively addresses this T2 issue. The risk table classifies 'Liability Cap' as 'Unfavorable' stating the cap is 'severe limitation on Buyer's recovery' and damages 'could vastly exceed 12 months of purchase amounts.' The proposed redline doubles the cap to 24 months and adds comprehensive carve-outs for indemnification, gross negligence/willful misconduct/fraud, confidentiality breaches, and product liability. Fully addresses all GT key elements including higher caps and carve-outs for IP, willful misconduct, and unlimited for indemnification."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-5.1 Product Warranty",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier warrants that all Products delivered hereunder shall be free from defects in materials and workmanship and shall conform to the Specifications for a period of twenty-four (24) months from the date of delivery to Buyer. For latent defects that could not reasonably have been discovered within the initial inspection period, the warranty period shall be twenty-four (24) months from the date of discovery. Supplier's warranty obligations include, at Buyer's election: (a) repair or replacement of defective Products; (b) refund of the purchase price; or (c) reimbursement of Buyer's reasonable costs to remedy defects, including labor and materials.",
+        "effective_rationale_excerpt": "The original one-year warranty is insufficient for precision automotive components that may have longer service lives or latent defects not discoverable within twelve months. This amendment extends coverage to twenty-four months and adds protection for latent defects discovered after initial inspection. The revision also clarifies Buyer's remedy options beyond the vague repair/replace/refund language, explicitly including reimbursement of Buyer's remediation costs.",
+        "judge_reasoning": "Sonnet45 detects this critical T1 issue. The risk table flags 'Warranty Period' as 'Clarify' noting 'lacks clarity on Buyer's remedies beyond repair/replace/refund' and 'No provision for consequential damages from defective products.' The proposed redline extends warranty to 24 months, adds latent defect coverage, and critically shifts remedy election to Buyer (at Buyer's election) including reimbursement of Buyer's reasonable costs. Addresses GT key elements about removing Supplier's sole control, adding third-party repair rights (via cost reimbursement), and warranty extension. Full detection."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-5.3 Disclaimer",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS EXPRESSLY SET FORTH HEREIN, SUPPLIER MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTY OF MERCHANTABILITY. HOWEVER, SUPPLIER DOES NOT DISCLAIM THE IMPLIED WARRANTY OF FITNESS FOR A PARTICULAR PURPOSE WHERE BUYER HAS RELIED ON SUPPLIER'S SKILL OR JUDGMENT TO SELECT OR FURNISH SUITABLE PRODUCTS FOR BUYER'S SPECIFIED AUTOMOTIVE MANUFACTURING APPLICATIONS.",
+        "effective_rationale_excerpt": "The original blanket disclaimer eliminates all implied warranties including fitness for particular purpose, leaving Buyer without recourse if Products fail to meet automotive application requirements even when Supplier knew the intended use. Under UCC Section 2-315, fitness for particular purpose arises when the seller knows the buyer's purpose and the buyer relies on the seller's expertise. This amendment preserves that critical protection where Buyer relies on Supplier's specialized knowledge to provide suitable precision automotive components.",
+        "judge_reasoning": "Sonnet45 fully detects this T1 issue. The risk table classifies 'Warranty Disclaimer' as 'Unfavorable' stating 'Broad disclaimer eliminates statutory protections' and 'Buyer loses recourse for products unsuitable for intended automotive applications.' The proposed redline explicitly preserves the implied warranty of fitness for particular purpose for automotive manufacturing applications where Buyer relied on Supplier's expertise. This directly addresses the GT key element about adding express fitness for intended purpose. Excellent, comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-11.1 Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM THIS AGREEMENT, EXCEPT THAT THIS LIMITATION SHALL NOT APPLY TO: (A) DAMAGES ARISING FROM A PARTY'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR FRAUD; (B) A PARTY'S BREACH OF CONFIDENTIALITY OBLIGATIONS UNDER ARTICLE 10; (C) A PARTY'S INFRINGEMENT OF THE OTHER PARTY'S INTELLECTUAL PROPERTY RIGHTS; OR (D) SUPPLIER'S PRODUCT LIABILITY FOR BODILY INJURY OR PROPERTY DAMAGE.",
+        "effective_rationale_excerpt": "The original mutual consequential damages waiver disproportionately harms Buyer as the party more likely to suffer such damages from defective automotive components causing production delays, customer claims, and recall costs. While facially mutual, the practical effect is asymmetric against Buyer. This amendment preserves the general waiver while carving out exceptions for the most serious breaches where consequential damages should be recoverable: intentional misconduct, confidentiality breaches, IP infringement, and product liability causing physical harm.",
+        "judge_reasoning": "Sonnet45 fully detects this T1 issue. The risk table classifies 'Consequential Damages Waiver' as 'Unfavorable' noting it 'disproportionately harms Buyer' and recommending carve-outs for 'gross negligence, willful misconduct, or IP infringement.' The proposed redline adds exactly those carve-outs: gross negligence/willful misconduct/fraud, confidentiality breaches, IP infringement, and product liability for bodily injury/property damage. Fully addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-6.1 Delivery Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Unless otherwise agreed, all Products shall be delivered DAP Buyer's facility located at 1800 Motor Drive, Dearborn, Michigan 48124 (Incoterms 2020). Title and risk of loss shall pass to Buyer upon delivery to Buyer's facility and Buyer's acceptance after inspection. Supplier shall be responsible for all shipping, freight, insurance, and transportation costs, and shall package Products to prevent damage during transit.",
+        "effective_rationale_excerpt": "The original FCA terms transfer risk to Buyer before Buyer has any control over the goods, leaving Buyer liable for transit damage despite having no ability to supervise loading or carrier performance. This creates unfavorable risk allocation for high-value precision automotive components requiring careful handling. This amendment shifts to DAP (Delivered at Place) terms, keeping risk with Supplier until Products reach Buyer's facility and pass inspection.",
+        "judge_reasoning": "Sonnet45 correctly identifies the FCA risk issue. The risk table flags 'Delivery Terms' as 'Clarify' and 'Title and Risk Transfer' as 'Unfavorable' noting risk passes before Buyer control. The proposed redline changes to DAP with specific Buyer facility address, makes title/risk pass upon delivery AND acceptance after inspection, and requires Supplier to bear all shipping/freight/insurance costs with proper packaging. Fully addresses all GT key elements including DDP/DAP preference, insurance, and title-risk alignment."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-2.2 Purchase Orders",
+      "evidence": {
+        "proposed_revision_excerpt": "Buyer shall submit purchase orders to Supplier specifying the Products, quantities, requested delivery dates, and shipping instructions. Supplier shall accept or reject each purchase order within five (5) business days of receipt. If Supplier fails to respond within five (5) business days, the purchase order shall be deemed accepted on the terms specified by Buyer. For urgent orders requiring expedited response, Buyer may designate the order as 'EXPEDITED' and Supplier shall respond within two (2) business days.",
+        "effective_rationale_excerpt": "The original provision requires Supplier response within five business days but fails to specify the consequence if Supplier remains silent, creating ambiguity about order status and preventing Buyer from reliably planning production. This amendment establishes a deemed acceptance rule if Supplier fails to respond within five days, providing Buyer with order certainty and incentivizing prompt Supplier communication.",
+        "judge_reasoning": "Sonnet45 detects the supply uncertainty risk. The risk table flags 'Purchase Order Acceptance' as 'Clarify' noting 'Silence after five days creates ambiguity about order status' and 'Clause should specify whether silence constitutes acceptance.' The proposed redline adds deemed acceptance if no response within 5 days and adds expedited response option for urgent orders. Fully addresses GT key elements about deemed acceptance and supply assurance."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-7.1 Inspection",
+      "evidence": {
+        "proposed_revision_excerpt": "Buyer shall inspect all Products within thirty (30) calendar days of receipt and shall notify Supplier in writing of any non-conformities or defects discovered during inspection. For defects or non-conformities that could not reasonably have been discovered through initial inspection and testing, Buyer may provide notice within thirty (30) days of discovery. Buyer's failure to provide notice within these timeframes shall not constitute acceptance if the defect or non-conformity was not reasonably discoverable.",
+        "effective_rationale_excerpt": "The original ten business day inspection period is insufficient for complex precision automotive components requiring operational testing under manufacturing conditions to reveal performance defects. Many non-conformities in precision parts only manifest during actual production use, not visual inspection. This amendment extends the inspection period to thirty calendar days, providing adequate time for comprehensive testing.",
+        "judge_reasoning": "Sonnet45 correctly identifies both issues. The risk table flags 'Inspection Period' as 'Clarify' noting '10 business days may be insufficient' and 'Latent defects or performance issues may not manifest within 10 days.' The proposed redline extends inspection to 30 calendar days, preserves latent defect notice rights within 30 days of discovery, and explicitly states failure to notify doesn't constitute acceptance for non-discoverable defects. Fully addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-New Clause 12.3 Product Liability and Recalls",
+      "evidence": {
+        "proposed_revision_excerpt": "If any Products are subject to recall, field service action, or similar corrective measure by Buyer or Buyer's customers due to defects or non-conformities, Supplier shall: (a) cooperate fully in investigating the root cause; (b) provide technical support and expertise for remediation; (c) reimburse Buyer for all reasonable costs incurred in connection with the recall, including notification, inspection, repair, replacement, transportation, and administrative expenses, to the extent such recall results from Supplier's defective Products or failure to meet Specifications; and (d) implement corrective actions to prevent recurrence.",
+        "effective_rationale_excerpt": "The original contract lacks specific provisions allocating product liability risk and recall responsibilities beyond general indemnification language, leaving gaps in risk allocation if Products cause injury or property damage in end-use applications. Automotive components carry significant liability exposure and recall potential requiring comprehensive treatment. This new provision establishes detailed obligations for Supplier in recall scenarios.",
+        "judge_reasoning": "Sonnet45 addresses the indemnification gap comprehensively. The risk table flags 'Supplier Indemnity' as 'Favorable' but also proposes a detailed new clause 12.3 specifically for Product Liability and Recalls. This new clause explicitly covers recall costs including notification, inspection, repair, replacement, transportation, and administrative expenses. Combined with the 11.2 redline that carves out indemnification from liability cap (making it effectively uncapped), all GT key elements are addressed: recall costs and unlimited coverage for indemnification."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-4.2 Payment Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Late payments shall bear interest at the rate of one percent (1%) per month (twelve percent (12%) per annum) or the maximum rate permitted by applicable law, whichever is less.",
+        "effective_rationale_excerpt": "The original eighteen percent annual interest rate is punitive and may exceed Michigan usury limits or commercial reasonableness standards, creating enforceability risk. While Buyer intends to pay timely, the excessive rate creates disproportionate liability for administrative delays or good-faith payment disputes. This amendment reduces the rate to twelve percent annually, which is more consistent with commercial lending rates and statutory interest provisions.",
+        "judge_reasoning": "Sonnet45 correctly identifies the high interest rate issue. The risk table flags 'Payment Terms' as 'Clarify' noting '18% annually may exceed commercial reasonableness' and recommends reducing to '1% monthly or prime plus 2%.' The proposed redline reduces interest from 1.5% to 1% monthly (12% annually) and adds a cap at maximum lawful rate. Fully addresses GT key elements about reducing to 1% per month."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-3.2 Price Adjustments",
+      "evidence": {
+        "proposed_revision_excerpt": "After the initial twelve-month period, Supplier may propose price adjustments annually upon ninety (90) days' prior written notice. Any proposed adjustment must be supported by documented changes in Supplier's raw material costs, labor costs, or other direct manufacturing expenses, and shall be tied to the Producer Price Index for Industrial Commodities (PPI) or other mutually agreed objective index. No single adjustment shall exceed the lesser of (a) three percent (3%) or (b) the percentage increase in the applicable index. Price adjustments require Buyer's written approval, which shall not be unreasonably withheld if supported by documentation. If market prices for comparable products decrease, Buyer may request corresponding price reductions.",
+        "effective_rationale_excerpt": "The original clause grants Supplier unilateral authority to impose annual price increases up to five percent without justification or Buyer consent, creating cumulative cost escalation risk of fifteen percent or more over the three-year term. This amendment requires objective justification tied to actual cost increases and documented index changes, reduces the maximum adjustment to three percent, and requires Buyer approval.",
+        "judge_reasoning": "Sonnet45 identifies the compounding price adjustment risk. The risk table flags 'Price Adjustment' as 'Unfavorable' noting 'unilateral pricing control creates budget uncertainty' and 'cumulative increases could result in 15%+ cost escalation.' The proposed redline requires documented cost justification, ties adjustments to PPI index, reduces cap to 3%, requires Buyer approval, and adds reciprocal price reduction rights. Comprehensively addresses all GT key elements including CPI/PPI-linked adjustments, cost justification, and termination right equivalent (Buyer approval requirement)."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-New Clause 2.5 Capacity Allocation",
+      "evidence": {
+        "proposed_revision_excerpt": "If Supplier experiences capacity constraints preventing fulfillment of all customer orders, Supplier shall allocate available capacity among its customers on a pro-rata basis according to each customer's percentage of Supplier's total revenue in the preceding twelve (12) months. Supplier shall provide Buyer with written notice of any capacity constraints within five (5) business days of becoming aware of such constraints, including the expected duration and Supplier's mitigation plans. During capacity constraint periods, Buyer shall have the right to audit Supplier's allocation methodology to verify pro-rata treatment. Supplier shall use commercially reasonable efforts to expand capacity or source alternative production to meet Buyer's requirements.",
+        "effective_rationale_excerpt": "The original contract contains no provision addressing how Supplier will allocate capacity during shortages, leaving Buyer vulnerable to supply disruptions if Supplier must choose among customers. Without contractual allocation rights, Buyer could face severe production interruptions while Supplier fulfills other customers' orders. This new provision establishes pro-rata allocation based on revenue share, ensuring fair treatment during shortages.",
+        "judge_reasoning": "Sonnet45 identifies the missing business continuity provisions comprehensively. The risk table flags 'Capacity Allocation' as a new clause needed and 'Lead Time Standards' as missing. The proposed redlines include: 2.4 Lead Times with standard lead times and expedite procedures; 2.5 Capacity Allocation with pro-rata allocation, notice requirements, audit rights, and expansion efforts; 2.6 Change Orders for specification changes. These address GT key elements including capacity reservation, dual sourcing (via alternative production sourcing), and notification of disruptions."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-10.1 Confidentiality Obligations",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall maintain the confidentiality of the other Party's confidential information and shall not disclose it to third parties without prior written consent. This obligation shall survive termination for five (5) years. Notwithstanding the foregoing, confidentiality obligations for information constituting trade secrets under applicable law shall continue indefinitely for so long as such information retains trade secret status.",
+        "effective_rationale_excerpt": "The original three-year post-termination confidentiality period is insufficient for protecting Buyer's proprietary automotive designs, specifications, and manufacturing processes that retain competitive value beyond three years. Automotive product development cycles often span five to seven years, meaning Buyer's confidential technical information could still be commercially sensitive when the confidentiality obligation expires. This amendment extends the general confidentiality period to five years, aligning with industry practice for automotive supply relationships. The revision adds indefinite protection for information qualifying as trade secrets.",
+        "judge_reasoning": "Sonnet45 correctly identifies the 3-year survival inadequacy. The risk table flags 'Confidentiality Duration' as 'Clarify' noting 'Three-year post-termination period may be insufficient' and 'Industry practice often requires five years or indefinite protection for true trade secrets.' The proposed redline extends survival to 5 years for general information and indefinitely for trade secrets. Fully addresses all GT key elements: perpetual protection for trade secrets and differentiation between trade secrets and general confidential information."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The GT indicates that insurance requirements are MISSING from the contract. However, Sonnet45's risk table classifies 'Insurance Requirements' as 'Favorable' stating 'Adequate insurance minimums for automotive supply relationship' and 'Coverage levels align with industry standards.' Sonnet45 believes the existing insurance clause is adequate and proposes no amendments. If the GT premise is correct that insurance is missing, this is a misclassification - Sonnet45 marked it compliant when the clause doesn't exist. If the contract does have an insurance clause (as Scale's analysis suggests at 13.1), Sonnet45's assessment that it's adequate without additional insured status, certificates, etc. would still be inadequate. Scored as N because Sonnet45 failed to identify the insurance gap or deficiencies."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-14.2 Termination for Cause",
+      "evidence": {
+        "proposed_revision_excerpt": "Either Party may terminate upon material breach that remains uncured for thirty (30) days after written notice. Notwithstanding the foregoing, Buyer may terminate immediately upon written notice without any cure period if: (a) Supplier delivers Products with defects creating safety hazards or causing production shutdowns; (b) Supplier experiences three (3) or more quality failures within any six-month period; (c) Supplier fails to maintain required insurance coverage; (d) Supplier becomes insolvent or files for bankruptcy protection; or (e) Supplier breaches confidentiality obligations under Article 10.",
+        "effective_rationale_excerpt": "The original thirty-day cure period is too long for critical breaches threatening Buyer's production schedules, customer commitments, or safety obligations. Certain Supplier failures require immediate termination rights to protect Buyer's operations and reputation. This amendment preserves the general thirty-day cure period for ordinary breaches while adding immediate termination rights for five critical scenarios: safety defects, repeated quality failures, insurance lapses, insolvency, and confidentiality breaches.",
+        "judge_reasoning": "Sonnet45 fully detects this issue. The risk table flags 'Termination for Cause' as 'Clarify' noting '30-day cure period may be too long if Supplier delivers critically defective products' and recommending 'expedited termination rights for critical failures.' The proposed redline maintains the 30-day cure for ordinary breaches but adds immediate termination rights for: safety defects/production shutdowns, repeated quality failures (3 in 6 months), insurance lapses, insolvency, and confidentiality breaches. Comprehensively addresses all GT key elements about shorter cure for supply/quality breaches and immediate termination for safety-critical defects."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "Price Adjustment",
+      "issue_summary": "Supplier may increase prices annually by up to 5% after first year with 90 days notice",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require mut",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Unilateral pricing control creates budget uncertainty for Buyer. Supplier can impose cumulative increases without Buyer consent or market justification. Over a three-year term, this could result in 15"
+    },
+    {
+      "clause": "Payment Terms",
+      "issue_summary": "Buyer must pay within 30 days; late payments incur 1.5% monthly interest",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to reduce inte",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Interest rate of 18% annually may exceed commercial reasonableness and statutory limits in some jurisdictions. While payment discipline is expected, the rate appears punitive rather than compensatory."
+    },
+    {
+      "clause": "Warranty Period",
+      "issue_summary": "One-year warranty from delivery on defects and conformance to specifications",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend to 1",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard warranty duration but lacks clarity on Buyer's remedies beyond repair/replace/refund. No provision for consequential damages from defective products causing production delays or customer clai"
+    },
+    {
+      "clause": "Warranty Disclaimer",
+      "issue_summary": "All implied warranties including merchantability and fitness for purpose are disclaimed",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to limit discl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad disclaimer eliminates statutory protections that would otherwise apply under UCC Article 2. Buyer loses recourse for products unsuitable for intended automotive applications even if Supplier kne"
+    },
+    {
+      "clause": "Delivery Terms",
+      "issue_summary": "FCA Supplier's facility; title and risk pass to Buyer upon carrier delivery",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to DAP Buyer's",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Risk transfer occurs before Buyer control of goods. Buyer bears loss/damage during transit despite having no ability to supervise loading or initial transport. While FCA is common, Buyer should consid"
+    },
+    {
+      "clause": "Partial Shipments",
+      "issue_summary": "Supplier may make partial shipments unless Buyer specifies otherwise in purchase order",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require Buy",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Default favors Supplier flexibility but creates potential production disruption for Buyer if partial shipments don't meet minimum viable quantities. Buyer must affirmatively object in each purchase or"
+    },
+    {
+      "clause": "Inspection Period",
+      "issue_summary": "Buyer has 10 business days to inspect and reject; otherwise deemed accepted",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend insp",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Short inspection window may be insufficient for complex precision automotive components requiring testing under operational conditions. Latent defects or performance issues may not manifest within 10 "
+    },
+    {
+      "clause": "Confidentiality Duration",
+      "issue_summary": "Confidentiality obligations survive termination for three years",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend to f",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Three-year post-termination period may be insufficient for highly sensitive automotive designs or trade secrets with longer commercial lifecycles. Industry practice often requires five years or indefi"
+    },
+    {
+      "clause": "Liability Cap",
+      "issue_summary": "Supplier's total liability capped at amounts paid by Buyer in preceding 12 months",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to increase ca",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Severe limitation on Buyer's recovery for Supplier's breaches or defective products. If defects cause production shutdowns, customer recalls, or safety issues, Buyer's actual damages could vastly exce"
+    },
+    {
+      "clause": "Consequential Damages Waiver",
+      "issue_summary": "Neither party liable for indirect, incidental, special, consequential, or punitive damages",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to exclude gro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual waiver disproportionately harms Buyer as the party more likely to suffer consequential damages from defective automotive components (production delays, customer claims, recall costs). While mut"
+    },
+    {
+      "clause": "Buyer Indemnity",
+      "issue_summary": "Buyer indemnifies Supplier for claims from Buyer's specifications causing infringement or misuse",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define misu",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Buyer's indemnity for specification-driven infringement is reasonable in principle but lacks limitation on scope. If Buyer's specifications inadvertently infringe third-party patents, Buyer's exposure"
+    },
+    {
+      "clause": "Termination for Cause",
+      "issue_summary": "Either party may terminate for material breach uncured after 30 days written notice",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow immed",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day cure period may be too long if Supplier delivers critically defective products threatening Buyer's production schedules or customer commitments. Buyer needs ability to terminate immediately for"
+    },
+    {
+      "clause": "Termination for Convenience",
+      "issue_summary": "Either party may terminate with 180 days prior written notice",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require 12 ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual convenience termination appears balanced but disadvantages Buyer given automotive supply chain realities. Finding and qualifying alternative precision component suppliers typically requires 12-"
+    },
+    {
+      "clause": "Force Majeure",
+      "issue_summary": "Neither party liable for delays due to causes beyond reasonable control",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add notice,",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad force majeure clause lacks specificity on notice requirements, mitigation obligations, and termination rights if event persists. No requirement for Supplier to source alternative materials or ca"
+    },
+    {
+      "clause": "Dispute Resolution",
+      "issue_summary": "Disputes resolved by arbitration in Detroit, Michigan",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify arb",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mandatory arbitration eliminates Buyer's access to courts and jury trials. While arbitration can be efficient, it limits discovery, appeal rights, and precedent development. No specification of arbitr"
+    },
+    {
+      "clause": "Forecast Obligations",
+      "issue_summary": "Buyer provides non-binding 12-month rolling forecasts monthly for Supplier capacity planning",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to explicitly ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Non-binding forecasts provide Supplier planning visibility but create no commitment for Buyer. However, clause lacks consequences if Buyer's actual orders significantly deviate from forecasts, potenti"
+    },
+    {
+      "clause": "Purchase Order Acceptance",
+      "issue_summary": "Supplier must accept or reject purchase orders within 5 business days",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify def",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Five-day response window may be insufficient during high-volume periods or for complex custom orders requiring engineering review. Silence after five days creates ambiguity about order status. Buyer n"
+    },
+    {
+      "clause": "Title and Risk Transfer",
+      "issue_summary": "Title and risk pass to Buyer upon delivery to carrier at Supplier's facility",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to transfer ri",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Early risk transfer leaves Buyer bearing loss for goods in transit despite having no control over carrier selection, loading, or initial handling. If Products are damaged or lost during shipping, Buye"
+    },
+    {
+      "clause": "🆕 Minimum Order Quantities",
+      "issue_summary": "No provision establishing minimum order quantities or volume commitments",
+      "leah_classification": "🆕",
+      "leah_action": "ADD minimum order qu",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of minimum purchase obligations leaves Buyer with maximum flexibility but no guaranteed pricing or capacity allocation. Buyer should consider whether volume commitments would secure better pri"
+    },
+    {
+      "clause": "🆕 Lead Time Standards",
+      "issue_summary": "No contractual lead times specified for order fulfillment",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause specifyin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Missing lead time commitments create uncertainty for Buyer's production planning. Without defined timeframes from order to delivery, Buyer cannot reliably schedule manufacturing or commit delivery dat"
+    },
+    {
+      "clause": "🆕 Capacity Allocation",
+      "issue_summary": "No provision addressing Supplier's capacity allocation during shortages",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause establish",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of allocation priority leaves Buyer vulnerable if Supplier faces capacity constraints and must choose among customers. Without contractual priority or pro-rata allocation rights, Buyer could f"
+    },
+    {
+      "clause": "🆕 Change Order Process",
+      "issue_summary": "No formal process for specification or design changes",
+      "leah_classification": "🆕",
+      "leah_action": "ADD change order pro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Missing change management procedure creates risk of miscommunication when Buyer needs to modify specifications or Supplier proposes design improvements. Without defined process for submitting, reviewi"
+    },
+    {
+      "clause": "🆕 Tooling Ownership",
+      "issue_summary": "No provision addressing ownership of tools, dies, and molds",
+      "leah_classification": "🆗",
+      "leah_action": "ADD clause specifyin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Tooling ownership ambiguity could create disputes if relationship terminates and Buyer needs tools to transition to alternative supplier. If Buyer pays for custom tooling, ownership should be explicit"
+    },
+    {
+      "clause": "🆕 Product Liability",
+      "issue_summary": "No specific allocation of product liability risk beyond general indemnity",
+      "leah_classification": "🆕",
+      "leah_action": "ADD product liabilit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of detailed product liability provisions leaves gaps in risk allocation if Products cause injury or property damage in end-use applications. Beyond general indemnity, parties should address re"
+    },
+    {
+      "clause": "🆕 Continuous Improvement",
+      "issue_summary": "No obligation for Supplier to pursue cost reduction or quality improvement",
+      "leah_classification": "🆕",
+      "leah_action": "ADD continuous impro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Missing continuous improvement commitment means Supplier has no incentive to reduce costs, improve quality, or enhance efficiency over the relationship term. Automotive industry best practices include"
+    },
+    {
+      "clause": "🆗 Compliance with Laws",
+      "issue_summary": "No explicit requirement for Supplier to comply with applicable laws and regulations",
+      "leah_classification": "🆕",
+      "leah_action": "ADD compliance with ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of compliance covenant creates risk that Supplier's violations (environmental, labor, safety, export control) could expose Buyer to liability or supply disruption. Automotive supply chains req"
+    },
+    {
+      "clause": "🆕 Conflict Minerals",
+      "issue_summary": "No provision addressing conflict minerals reporting under Dodd-Frank Act",
+      "leah_classification": "🆕",
+      "leah_action": "ADD conflict mineral",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Missing conflict minerals obligations could leave Buyer unable to meet its own SEC reporting requirements if Products contain tin, tantalum, tungsten, or gold. Automotive manufacturers must trace conf"
+    },
+    {
+      "clause": "🆕 Cybersecurity",
+      "issue_summary": "No requirements for Supplier to maintain cybersecurity controls",
+      "leah_classification": "🆕",
+      "leah_action": "ADD cybersecurity re",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of cybersecurity provisions creates risk if Supplier's systems are compromised, potentially exposing Buyer's confidential information or disrupting supply through ransomware. Modern supply agr"
+    },
+    {
+      "clause": "🆕 Sustainability",
+      "issue_summary": "No environmental or sustainability commitments from Supplier",
+      "leah_classification": "🆕",
+      "leah_action": "ADD sustainability c",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Missing sustainability provisions may conflict with Buyer's corporate environmental goals and customer expectations. Automotive industry increasingly requires suppliers to meet carbon reduction target"
+    },
+    {
+      "clause": "3.2 Price Adjustments",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause grants Supplier unilateral authority to impose annual price increases up to five percent without justification or Buyer consent, creating cumulative cost escalation risk of fifteen"
+    },
+    {
+      "clause": "4.2 Payment Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original eighteen percent annual interest rate is punitive and may exceed Michigan usury limits or commercial reasonableness standards, creating enforceability risk. While Buyer intends to pay tim"
+    },
+    {
+      "clause": "5.1 Product Warranty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original one-year warranty is insufficient for precision automotive components that may have longer service lives or latent defects not discoverable within twelve months. Automotive industry stand"
+    },
+    {
+      "clause": "5.3 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original blanket disclaimer eliminates all implied warranties including fitness for particular purpose, leaving Buyer without recourse if Products fail to meet automotive application requirements "
+    },
+    {
+      "clause": "6.1 Delivery Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original FCA terms transfer risk to Buyer before Buyer has any control over the goods, leaving Buyer liable for transit damage despite having no ability to supervise loading or carrier performance"
+    },
+    {
+      "clause": "6.3 Partial Shipments",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original default allowing partial shipments without consent creates production disruption risk if Supplier delivers insufficient quantities for Buyer's just-in-time manufacturing operations. Requi"
+    },
+    {
+      "clause": "7.1 Inspection",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original ten business day inspection period is insufficient for complex precision automotive components requiring operational testing under manufacturing conditions to reveal performance defects. "
+    },
+    {
+      "clause": "10.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original three-year post-termination confidentiality period is insufficient for protecting Buyer's proprietary automotive designs, specifications, and manufacturing processes that retain competiti"
+    },
+    {
+      "clause": "11.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original twelve-month liability cap severely undercompensates Buyer for damages from Supplier's breaches or defective Products, particularly if defects cause production shutdowns, customer recalls"
+    },
+    {
+      "clause": "11.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original mutual consequential damages waiver disproportionately harms Buyer as the party more likely to suffer such damages from defective automotive components causing production delays, customer"
+    },
+    {
+      "clause": "12.2 Buyer Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original indemnity for specification-driven infringement lacks a knowledge qualifier, potentially making Buyer liable for inadvertent infringement it could not have known about when providing spec"
+    },
+    {
+      "clause": "14.2 Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original thirty-day cure period is too long for critical breaches threatening Buyer's production schedules, customer commitments, or safety obligations. Certain Supplier failures require immediate"
+    },
+    {
+      "clause": "14.3 Termination for Convenience",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original mutual one hundred eighty day notice period appears balanced but creates asymmetric impact given automotive supply chain realities. Finding and qualifying alternative precision component "
+    },
+    {
+      "clause": "15.1 Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original force majeure clause lacks specificity on notice requirements, mitigation obligations, and termination rights if the event persists, leaving Buyer vulnerable to extended supply disruption"
+    },
+    {
+      "clause": "16.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original arbitration provision lacks critical procedural details including arbitration rules, arbitrator qualifications, and cost allocation, creating uncertainty about the dispute resolution proc"
+    },
+    {
+      "clause": "2.3 Forecasts",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original forecast provision states forecasts are non-binding but lacks explicit disclaimer of liability for variances, creating potential risk that Supplier could claim damages or justify price in"
+    },
+    {
+      "clause": "2.2 Purchase Orders",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision requires Supplier response within five business days but fails to specify the consequence if Supplier remains silent, creating ambiguity about order status and preventing Buyer "
+    },
+    {
+      "clause": "6.1 Delivery Terms - Title and Risk",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision transfers risk to Buyer when Products are handed to the carrier at Supplier's facility, before Buyer has any opportunity to inspect or verify conformity. This leaves Buyer beari"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 2.4 after Section 2.3 (Forecasts). The original contract lacks any contractual lead time commitments, creating uncertainty for Buyer's production planning and preventi"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 2.5 after new Section 2.4 (Lead Times). The original contract contains no provision addressing how Supplier will allocate capacity during shortages, leaving Buyer vuln"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 2.6 after new Section 2.5 (Capacity Allocation). The original contract lacks a formal change management process, creating risk of miscommunication when Buyer needs to "
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 9.3 in Article 9 (Intellectual Property) after Section 9.2. The original contract contains no provision addressing ownership of tools, dies, and molds used to manufact"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 12.3 in Article 12 (Indemnification) after Section 12.2. The original contract lacks specific provisions allocating product liability risk and recall responsibilities "
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 3.4 in Article 3 (Pricing) after Section 3.3. The original contract contains no obligation for Supplier to pursue cost reduction or quality improvement over the relati"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 16.6 in Article 16 (General Provisions) after Section 16.5. The original contract lacks an explicit requirement for Supplier to comply with applicable laws and regulat"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 16.7 in Article 16 (General Provisions) after new Section 16.6. The original contract lacks conflict minerals provisions, potentially leaving Buyer unable to meet its "
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 16.8 in Article 16 (General Provisions) after new Section 16.7. The original contract contains no cybersecurity requirements, creating risk if Supplier's systems are c"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 16.9 in Article 16 (General Provisions) after new Section 16.8. The original contract lacks environmental or sustainability commitments from Supplier, which may confli"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 13,
+      "P": 0,
+      "N": 1,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 7,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 69.0,
+    "total_quality_points": 117,
+    "weighted_score": 111.0,
+    "max_possible_score": 74.0,
+    "t1_count": 4,
+    "t2_count": 8,
+    "t3_count": 2,
+    "total_points": 186.0,
+    "additional_issues_count": 57
+  }
+}

@@ -1,0 +1,690 @@
+{
+  "meta": {
+    "contract": "jv",
+    "model_id": "velocity",
+    "evaluation_timestamp": "2026-01-25T19:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "No Deadlock Resolution - Article 8 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Material Decisions Deadlock",
+      "evidence": {
+        "proposed_revision_excerpt": "Add dedicated Deadlock Resolution mechanism: (a) Stepwise Escalation: if SC or Parties deadlock on Material Decisions for 30 days, escalate to CEOs; (b) Independent Expert Determination: if CEOs fail to resolve within 15 days, a mutually agreed independent expert shall issue binding recommendation; (c) Rotating Casting Vote for non-IP operational matters.",
+        "effective_rationale_excerpt": "8.1 is Reserved but JV governance already creates deadlock risk due to 50/50 split and Material Decision unanimity. Without structured escalation, disputes could stall the JV for months.",
+        "judge_reasoning": "Good detection. Risk table at 8.1 identifies Reserved section and deadlock risk due to 50/50 governance. The proposed redline provides stepwise escalation (30-day SC, 15-day CEOs, expert determination) and rotating casting vote. Addresses GT key elements for escalation and resolution, though less comprehensive than buy-sell option some models propose."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Rights",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not flag missing exit/buyout provisions as a separate issue. The 8.1 deadlock mechanism does not include buy-sell provisions. No put/call options or change of control exit triggers are proposed. This T1 issue is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent + No Tiebreaker",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 15.0,
+      "matched_redline_id": "Redline-Material Decisions Deadlock",
+      "evidence": {
+        "proposed_revision_excerpt": "After 30 days deadlock on Material Decisions, escalate to CEOs; if unresolved within 15 days, mutually agreed independent expert whose determination is binding.",
+        "effective_rationale_excerpt": "2+2 Steering Committee creates high risk of deadlock for budgets and strategic shifts. Stalls execution and erodes JV value.",
+        "judge_reasoning": "Excellent detection. Risk table at 4.1 correctly identifies 2+2 SC deadlock risk, stalled execution, and value erosion. The deadlock mechanism in 8.1 provides escalation path though lacks tiered decision rights as GT suggests. Strong rationale with clear business impact articulation."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Broad Post-Term Non-Compete",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12.0,
+      "matched_redline_id": "Redline-Non-Compete",
+      "evidence": {
+        "proposed_revision_excerpt": "Define Territory (US/Canada); narrow scope to quantum AI solutions that directly compete with JV products; include exceptions for existing customers and internal R&D; California interpretation clause; reduce post-term to 6-12 months.",
+        "effective_rationale_excerpt": "Non-compete covers Term + 2 years but Territory undefined. May implicate California where challengeable. Scope may overreach into unrelated Quantum Dynamics LLC business.",
+        "judge_reasoning": "Good detection. Risk table at 9.1 identifies undefined Territory, California concerns, and overbroad scope. The proposed redline defines geography (US/Canada), narrows scope, adds carve-outs for existing customers and R&D. However, fix is recommendation rather than fully drafted redline. Adequate detection with partial fix."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.2",
+      "tier": "T1",
+      "issue": "Developed IP Consent Lock-Up",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Developed IP",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall have non-exclusive, royalty-free, worldwide license to exploit Developed IP; negotiate license-back or buy-out on termination.",
+        "effective_rationale_excerpt": "Joint ownership without post-termination licensing framework creates veto risk. Neither party can exploit without other's consent.",
+        "judge_reasoning": "Good detection. Risk table at 6.2 identifies consent veto and post-termination risk. The proposed redline adds license-back mechanism. However, GT prefers JV Entity ownership to eliminate joint ownership entirely. The fix addresses commercialization lock-up but less comprehensively than entity-based solutions."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not flag the missing limitation of liability clause. No entry in risk table for liability cap, consequential damages exclusion, or related protections. This T1 issue is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Capital Call Dilution Risk",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not flag 3.4 Additional Capital or dilution concerns. No entry in risk table for capital call caps, cure periods, or dilution protections. This issue is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Improvement Ownership Unclear on Termination",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-Improvements",
+      "evidence": {
+        "proposed_revision_excerpt": "Clarify ownership vs. license rights for improvements, confirm JV perpetual license scope and wind-down terms.",
+        "effective_rationale_excerpt": "Ownership to contributing Party creates misalignment if improvements central to JV products. JV may lose ability to exploit on termination.",
+        "judge_reasoning": "Good detection. Risk table at 6.3 identifies ownership misalignment and JV exploitation risk. The proposed redline suggests clarifying scope and wind-down terms. However, fix is recommendation rather than fully drafted language. Addresses the concern but less prescriptive than GT-expected comprehensive license rights."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "General Manager Authority Unbounded",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not flag 4.3 General Manager authority issues. The unbounded authority, missing reporting requirements, and removal process are not addressed. This issue is not mentioned."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "6.1",
+      "tier": "T2",
+      "issue": "Contributed IP License Gaps",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Contributed IP",
+      "evidence": {
+        "proposed_revision_excerpt": "Non-exclusive, royalty-free... and with respect to Contributed IP necessary for ongoing operation of Developed IP, a perpetual license to JV. Add restrictions on sublicensing and reverse engineering.",
+        "effective_rationale_excerpt": "Non-exclusive, royalty-free limited to Term. Post-termination risk; no survival license for Contributed IP needed for Developed IP operation.",
+        "judge_reasoning": "Excellent detection. Risk table at 6.1 identifies post-termination risk and missing survival license. The proposed redline adds perpetual license for IP critical to Developed IP operation, sublicensing restrictions, and reverse engineering prohibitions. Strong detection with comprehensive proposed fix addressing wind-down concerns."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.4",
+      "tier": "T2",
+      "issue": "Termination IP Allocation Undefined",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Effect of Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "Provide concrete wind-down mechanism with defined plan for ongoing products, transition support duties, cost allocation, and default IP allocation formula based on contributions.",
+        "effective_rationale_excerpt": "Post-termination handling of Developed IP vague: 'divided or licensed as agreed' lacks mechanism. Could result in deadlock preventing either party from commercializing.",
+        "judge_reasoning": "Excellent detection. Risk table at 10.4 correctly identifies 'as agreed' deadlock and commercialization risk. The proposed redline provides concrete wind-down mechanics with transition support and contribution-based allocation. Strong detection with comprehensive proposed fix addressing 'as agreed' deadlock."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Indemnification Regime",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not flag the missing indemnification regime. No entry in risk table for mutual indemnification, IP infringement protection, or third-party claims coverage. This issue is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Change of Control Provision",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not flag the absence of change of control provisions. No entry in risk table for CoC notice, consent, termination rights, or buyout options. This issue is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vague Reserve Rights",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not flag 5.2 Distributions or vague reserves. No entry in risk table for distribution delays or reserve limits. This minor issue is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "11.1-11.3",
+      "tier": "T3",
+      "issue": "Multi-Step Dispute Resolution",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": "Redline-Arbitration",
+      "evidence": {
+        "proposed_revision_excerpt": "Consider expedited arbitration timelines; add interim relief carve-out for IP protection; specify technical arbitrator expertise requirements.",
+        "effective_rationale_excerpt": "Multi-step process adds delay. Arbitration in SF is convenient but lacks technical arbitrator specification and interim relief provisions.",
+        "judge_reasoning": "Good detection. Risk table at 11.3 identifies delay concerns, missing technical arbitrator, and interim relief gaps. The proposed recommendations address these issues but as suggestions rather than fully drafted redline. Partial fix addressing GT concerns about timeline and urgent resolution."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "1.4",
+      "tier": "T3",
+      "issue": "No Conditions Precedent for JV Entity",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not flag 1.4 JV Entity or optional formation language. No entry in risk table for conditions precedent or formation timeline. This minor issue is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not flag missing data protection or privacy provisions. No entry in risk table for CCPA/GDPR compliance, breach notification, or security measures. This issue is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not flag 7.2 confidentiality survival period. No entry in risk table for trade secret protection or survival period inadequacy. This issue is not addressed."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.3",
+      "issue_summary": "Exclusivity during the Term",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to (i) define ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause imposes mutual exclusivity on “competing quantum AI ventures” without defining scope, territory, or permitted exceptions. This could unduly restrict Quantum Dynamics from pursuing parallel "
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "1st Row – Clause Description: Exclusivity during the Term",
+      "leah_classification": "",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": ""
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Material Decisions – Unanimous Consent",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a deadlock resol",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While requiring unanimous consent for material decisions protects both sides, the 2+2 Steering Committee structure creates a high risk of deadlock for budgets and strategic shifts. There is no defined"
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "1st Row – Clause Description: Material Decisions – Unanimous Consent",
+      "leah_classification": "",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": ""
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Contributed IP License to JV",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to include a p",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The license is non-exclusive, royalty-free, and limited to the Term. This raises post-termination risk: the JV’s ability to continue exploiting contributed IP or any Developed IP that relies on contri"
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Developed IP Ownership",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to specify lic",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Developed IP is stated to be jointly owned, but no post-termination licensing framework or field-of-use rights are specified. Joint ownership can create veto risk and licensing disputes, potentially h"
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Improvements to Contributed IP",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to clarify own",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause assigns ownership of improvements to the contributing Party, while granting the JV a perpetual license. This creates potential misalignment if improvements are central to JV products, and i"
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Confidential Information Scope",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define Conf",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The confidentiality scope is not clearly defined (what constitutes “confidential” vs. public domain, and handling of jointly developed information). Survival period is reasonable, but exceptions for i"
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Deadlock Reserved",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a dedicated Dead",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The section is reserved, but the JV’s governance structure (4.1) already creates a deadlock risk. Without an agreed mechanism, disputes may stall strategy and operations."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Non-Compete",
+      "leah_classification": "⚠️",
+      "leah_action": "Define Territory cle",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The non-compete covers Term + 2 years post-termination within a Territory, but Territory is not defined. The restriction appears broad and could implicate California and other markets where the Partie"
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Term",
+      "leah_classification": "⚠️",
+      "leah_action": "Add renewal option w",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The five-year term is stated, but there is no automatic renewal or renewal process. If the JV proves valuable, lack of renewal mechanics could disrupt continuity or require renegotiation under pressur"
+    },
+    {
+      "clause": "10.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to provide a c",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Post-termination handling of Developed IP is vague: “divided or licensed as agreed” lacks a defined mechanism, valuation, and allocation of remaining assets. This could lead to disputes and unequal wi"
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Mediation",
+      "leah_classification": "⚠️",
+      "leah_action": "Add specific timelin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mediation step is present but lacks timing, selection of mediator, and cost allocation."
+    },
+    {
+      "clause": "11.3",
+      "issue_summary": "Arbitration",
+      "leah_classification": "⚠️",
+      "leah_action": "Align governing law ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Arbitration location (San Francisco) and governing law (Delaware) create a potential mismatch for a California-based party; venue vs. governing law could complicate enforcement and cost."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider harmonizing",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Delaware law governs, but disputes are resolved by arbitration in San Francisco. This mismatch can create interpretive friction and adds cost."
+    },
+    {
+      "clause": "12.4",
+      "issue_summary": "Assignment",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a permitted affi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prohibition on assignment restricts corporate restructures, financing, or affiliate transfers. This can constrain exits, refinancing, or internal reorganization, potentially impeding business flexibil"
+    },
+    {
+      "clause": "2.1",
+      "issue_summary": "Purpose (Recitals)",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider cross-refer",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Recitals define scope but do not bind or create enforceable obligations beyond the defined Purpose. If you want to ensure focus, you may need explicit reference to the Purpose in operative sections."
+    },
+    {
+      "clause": "11.1-11.3",
+      "issue_summary": "Negotiation/Mediation/Arbitration",
+      "leah_classification": "⚠️",
+      "leah_action": "Align with 12.1 and ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ambiguity across sub-parts about sequencing, costs, and interim relief; arbitration seat and governing rules should be harmonized."
+    },
+    {
+      "clause": "Exclusivity during the Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 2.3; (1) Preserve autonomy to pursue non-conflicting R&D and pre-existing relationships; (2) Protect JV focus on quantum AI for enterprise customers while avoiding overbreadth"
+    },
+    {
+      "clause": "Material Decisions – Unanimous Consent",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 4.1; (1) Introduce a structured deadlock mechanism to prevent impasse; (2) Shorten escalation timeline to minimize disruption; (3) Preserve parity between Parties while provid"
+    },
+    {
+      "clause": "Contributed IP License to JV",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 6.1; (1) Ensure JV can operate and monetize Developed IP beyond termination; (2) Avoid post-termination disruption; (3) Clarify field of use and survival rights; (4) Protect b"
+    },
+    {
+      "clause": "Developed IP Ownership",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 6.2; (1) Provides clarity on post-termination exploitation; (2) Reduces risk of stalemate in licensing Developed IP; (3) Improves ability to monetize jointly developed assets "
+    },
+    {
+      "clause": "Improvements to Contributed IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 6.3; (1) Clarifies exploitation rights for improvements during and after the JV; (2) Mitigates potential post-termination disruption for JV products; (3) Provides a clear fram"
+    },
+    {
+      "clause": "Confidential Information Scope",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 7.1; (1) Tightens scope and clarifies carve-outs; (2) Reduces overbreadth risk while preserving protection; (3) Aligns with typical data protection expectations; (4) Supports "
+    },
+    {
+      "clause": "Non-Compete – Territory",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 9.1; (1) Defines Territory to prevent ambiguity and enforcement risk; (2) Narrows scope to protect legitimate business activities; (3) Provides carve-out for general R&D; (4) "
+    },
+    {
+      "clause": "Term – Renewal",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 10.1; (1) Provides continuity if the JV performs well; (2) Reduces transaction costs and renegotiation risk; (3) Gives both Parties predictable planning horizon; (4) Minimizes"
+    },
+    {
+      "clause": "Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 10.4; (1) Eliminates ambiguity around Developed IP division; (2) Provides orderly wind-down and transition to preserve customer relationships; (3) Sets expectations for post-t"
+    },
+    {
+      "clause": "Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 12.1; (1) Aligns governing law with the Parties’ principal operations (California); (2) Reduces friction for enforcement and interim relief; (3) Keeps arbitration in SF to min"
+    },
+    {
+      "clause": "Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 12.4; (1) Preserves corporate flexibility for financing, restructuring, or M&A; (2) Enables continuity of obligations via affiliate assignments; (3) Minimizes operational disr"
+    },
+    {
+      "clause": "Arbitration Rules & Interim Relief (Implied)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 11.3; (1) Specifies the arbitration rules to ensure process consistency; (2) Adds explicit power for interim relief, which is critical for urgent IP or business continuity; (3"
+    },
+    {
+      "clause": "Confidentiality – Lawful Disclosures (New)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 7.1; (1) Addresses compliance with laws/regulations that may require disclosures; (2) Provides a structured approach for lawful disclosures; (3) Balances regulatory obligation"
+    },
+    {
+      "clause": "Non-Compete – Carve-Outs (New)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 9.1; (1) Introduces practical carve-outs to avoid overly broad restrictions; (2) Protects existing business relationships and general R&D; (3) Improves enforceability across j"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 8,
+      "P": 0,
+      "N": 0,
+      "NMI": 10
+    },
+    "t1_gate_pass": false,
+    "t1_count": 5,
+    "t1_all_detected": false,
+    "total_detection_points": 45.0,
+    "total_quality_points": 56,
+    "total_points": 101.0,
+    "additional_issues_count": 32
+  }
+}

@@ -1,0 +1,1253 @@
+{
+  "meta": {
+    "contract": "sla",
+    "model_id": "pioneer_deep",
+    "evaluation_timestamp": "2026-01-25T18:30:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "Unlimited Licensee Liability",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-8.1 Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "DELETE this clause entirely and rely on balanced limitation of liability.",
+        "effective_rationale_excerpt": "Extremely one-sided 'unlimited liability' for Licensee for any breach, including indirect damages, contradicts later caps and exclusions. This is unacceptable for Licensee.",
+        "judge_reasoning": "Pioneer Deep fully detected the unlimited liability issue at clause 8.1 and recommended deletion of the entire clause. The risk_table classifies it favorably (tick) but correctly identifies the issue in detailed_reasoning as 'Extremely one-sided' and recommends DELETE. The proposed_redline implements deletion which effectively addresses all GT key elements by eliminating the unlimited liability acknowledgment entirely."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "8.3",
+      "tier": "T1",
+      "issue": "Full AS-IS Disclaimer",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-8.3 Disclaimer",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT FOR THE EXPRESS WARRANTIES, SERVICE LEVEL COMMITMENTS, AND SECURITY OBLIGATIONS SET FORTH IN THIS AGREEMENT, THE SOFTWARE IS PROVIDED 'AS IS' AND LICENSOR DISCLAIMS ALL OTHER WARRANTIES...",
+        "effective_rationale_excerpt": "Broad 'AS IS' disclaimer could swallow the performance warranty. Needs carve-outs for express warranties, uptime, security, and statutory non-waivable rights.",
+        "judge_reasoning": "Pioneer Deep detected the AS-IS disclaimer issue and proposed an amendment that carves out express warranties, SLAs, and security obligations from the disclaimer. This directly addresses the GT concern about the disclaimer overriding statutory protections by preserving key warranties."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Consequential Damages Exclusion - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-10.1 Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT FOR A PARTY'S BREACH OF CONFIDENTIALITY, DATA SECURITY OBLIGATIONS, INFRINGEMENT OR MISAPPROPRIATION OF THE OTHER PARTY'S INTELLECTUAL PROPERTY RIGHTS, OR A PARTY'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT, NEITHER PARTY SHALL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES...",
+        "effective_rationale_excerpt": "One-sided exclusion shields Licensor only. No carve-outs for confidentiality/data breach, IP infringement, or willful misconduct. Unacceptable asymmetry and risk allocation for Licensee.",
+        "judge_reasoning": "Pioneer Deep correctly identified the one-sided nature of the consequential damages exclusion and proposed making it mutual with appropriate carve-outs for confidentiality, data breach, IP, and gross negligence. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Low Liability Cap - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-10.2 Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT FOR AMOUNTS SUBJECT TO THE EXCEPTIONS IN SECTION 10.1, EACH PARTY'S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT SHALL NOT EXCEED THE GREATER OF (A) THE SUBSCRIPTION FEES PAID OR PAYABLE BY LICENSEE TO LICENSOR IN THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM OR (B) $500,000. FOR CLAIMS FALLING WITHIN THE EXCEPTIONS IN SECTION 10.1, THE CAP SHALL BE TWO (2) TIMES THE FOREGOING AMOUNT.",
+        "effective_rationale_excerpt": "One-sided cap for Licensor only; amount may be insufficient for data/security incidents. Needs mutual cap, higher or supercap for specific harms.",
+        "judge_reasoning": "Pioneer Deep detected the one-sided low cap and proposed making it mutual with a floor of $500,000 and a supercap (2x) for carved-out claims. This addresses all GT key elements including asymmetry and lack of carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "12.4",
+      "tier": "T1",
+      "issue": "Asymmetric Assignment",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-12.4 Assignment",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Party may assign this Agreement without the other Party's prior written consent, except that either Party may assign, without consent, to an Affiliate or in connection with a merger, reorganization, or sale of all or substantially all of its assets or equity (not involving a competitor of the non-assigning Party). Any permitted assignee shall be bound by this Agreement.",
+        "effective_rationale_excerpt": "Licensee cannot assign without consent; Licensor can assign freely. Blocks M&A or Affiliate reorgs for Licensee and increases counterparty risk.",
+        "judge_reasoning": "Pioneer Deep identified the asymmetric assignment and proposed a mutual consent requirement with appropriate M&A and affiliate carve-outs. This directly addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "9.1 / 9.2",
+      "tier": "T1",
+      "issue": "Narrow Indemnification - No Licensee Protection Defined",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-9.1 Indemnification by Licensor",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall indemnify, defend, and hold harmless Licensee from and against any third-party claims alleging that the Software, as provided by Licensor, infringes any patent, copyright, or trademark, or misappropriates any trade secret, and shall pay all damages, costs, and reasonable attorneys' fees...",
+        "effective_rationale_excerpt": "9.1 provides IP indemnity but lacks scope and remedies. 9.2 [Reserved] - Missing Licensee indemnity definition can create ambiguity.",
+        "judge_reasoning": "Pioneer Deep detected the narrow scope at 9.1 and the [Reserved] 9.2. The proposed amendment expands indemnification to include trade secrets and adds comprehensive defense/settlement procedures. A new 9.2 is also proposed for a narrow, capped Licensee indemnity."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-5.1 Security Measures",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall implement and maintain industry-standard administrative, technical, and physical safeguards (including SOC 2 Type II or ISO 27001-aligned controls), encryption of data in transit and at rest, vulnerability management and patching, least-privilege access, and annual third-party security assessments. Licensor shall notify Licensee without undue delay and in any event within 48 hours after confirming a Security Incident affecting Licensee Data.",
+        "effective_rationale_excerpt": "'Reasonable' safeguards are vague; no encryption, SOC 2, breach notice timing, or security audit rights. This creates material data risk for Licensee.",
+        "judge_reasoning": "Pioneer Deep comprehensively addressed the vague security measures by specifying SOC 2/ISO 27001 standards, encryption requirements, and 48-hour breach notification. This addresses all GT key elements including specific standards and breach notification requirements."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "11.4",
+      "tier": "T1",
+      "issue": "No Data Export on Termination",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-NC3 Data Return, Deletion & Transition",
+      "evidence": {
+        "proposed_revision_excerpt": "Data Return, Deletion, and Transition. Upon termination or expiration, Licensor will make Licensee Data available for export by Licensee for at least thirty (30) days in industry-standard formats (including documented schema). Upon Licensee's request, Licensor will provide reasonable transition assistance at Licensor's then-current professional services rates. Following export or the export window, Licensor shall promptly delete Licensee Data and provide deletion certification, except as required by law.",
+        "effective_rationale_excerpt": "11.4 lacks data return/deletion timelines, export assistance, or prepaid fee refunds for Licensor breach. Risks data lock-in and financial loss.",
+        "judge_reasoning": "Pioneer Deep proposed a new clause NC3 that addresses data export within 30 days in standard formats with deletion certification. The 11.4 amendment also adds export/deletion requirements. This fully addresses the GT concern about no data export mechanism."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "2.1",
+      "tier": "T2",
+      "issue": "Non-Transferable License",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-2.1 Grant of License",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor hereby grants to Licensee and its Affiliates a non-exclusive, non-transferable, non-sublicensable right to access and use the Software during the Subscription Term solely for their internal business purposes. Licensee may permit third-party service providers to access and use the Software solely to support Licensee's and its Affiliates' internal business purposes, subject to Licensee's responsibility for their compliance.",
+        "effective_rationale_excerpt": "Non-exclusive, non-transferable, non-sublicensable and internal business purposes only. Absent Affiliate rights or outsourcing carve-outs, Licensee's intended enterprise use can be impeded.",
+        "judge_reasoning": "Pioneer Deep detected the restrictive license and proposed extending it to Affiliates and third-party service providers. This directly addresses the GT key elements about adding affiliate rights and contractor exception."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.1",
+      "tier": "T3",
+      "issue": "Annual Advance Payment",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-3.1 Subscription Fees",
+      "evidence": {
+        "proposed_revision_excerpt": "Unless otherwise specified in the Order Form, all Subscription Fees are due and payable quarterly in advance. Any renewal pricing increases shall not exceed the greater of three percent (3%) or CPI-U for the prior twelve (12) months, and shall be disclosed to Licensee at least sixty (60) days prior to renewal.",
+        "effective_rationale_excerpt": "Annual prepayment strains Licensee cash flow and reduces leverage if service underperforms. No price increase cap or proration language.",
+        "judge_reasoning": "Pioneer Deep detected the annual advance payment issue and proposed changing to quarterly billing with price increase caps. This addresses the GT key element about negotiating quarterly payment option."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-3.3 Late Fees",
+      "evidence": {
+        "proposed_revision_excerpt": "Any undisputed amounts not paid when due shall bear interest at the lesser of one percent (1.0%) per month or the maximum rate permitted by applicable law. Amounts disputed in good faith shall not accrue interest while the dispute is pending.",
+        "effective_rationale_excerpt": "1.5% monthly (18% APR) is high; no dispute or good-faith withholding protection, risking fees during billing errors.",
+        "judge_reasoning": "Pioneer Deep identified the high late fee and proposed reducing to 1% with dispute protection. This addresses both GT key elements: reducing the rate and adding a grace/dispute period."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Weak Uptime SLA",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-4.1 Availability",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall make the Software available at least 99.9% of the time during each calendar month, excluding scheduled maintenance windows (as defined) and events meeting the defined force majeure standard. Exclusions shall not include failures of Licensor's subcontractors or third-party hosting under Licensor's control. Licensor will provide monthly availability reports upon request.",
+        "effective_rationale_excerpt": "Uptime is modest and excludes broad 'beyond control' without objective definitions or service credits. No reporting or remedies beyond efforts.",
+        "judge_reasoning": "Pioneer Deep detected all key elements of the weak SLA and proposed raising uptime to 99.9%, narrowing exclusions, and requiring reporting. Service credits are addressed in NC1."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "Limited Support Hours",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-4.2 Support",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall provide 24x7 support for Priority 1 incidents with a one (1) hour response time and continuous work until service restoration; for Priority 2, response within four (4) hours during business hours; for other issues, next business day response. Severity definitions will be set forth in the Documentation and applied reasonably.",
+        "effective_rationale_excerpt": "Only 'commercially reasonable efforts' on response, no severity tiers, no resolution targets, and limited hours may not meet Licensee needs for critical incidents.",
+        "judge_reasoning": "Pioneer Deep comprehensively addressed the limited support by proposing 24x7 support for P1 incidents with severity tiers and specific response times. This fully addresses the GT concern about emergency support and severity tiers."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Feedback Ownership",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-6.2 Feedback",
+      "evidence": {
+        "proposed_revision_excerpt": "If Licensee provides any suggestions, ideas, or feedback regarding the Software ('Feedback'), Licensor is granted a perpetual, irrevocable, royalty-free license to use such Feedback, excluding any Licensee Confidential Information or Licensee intellectual property. Nothing in this Section assigns ownership of Licensee intellectual property to Licensor.",
+        "effective_rationale_excerpt": "Assigns all rights in Feedback to Licensor without limitation or license back. Risk of Licensee IP leakage via suggestions.",
+        "judge_reasoning": "Pioneer Deep detected the overbroad feedback ownership and converted it to a license that excludes Licensee confidential information and IP. This addresses the GT concern about protecting Licensee's valuable ideas."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "11.1",
+      "tier": "T2",
+      "issue": "Auto-Renewal Terms",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-11.1 Term and Renewal",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall provide Licensee at least sixty (60) days' prior written notice of any renewal pricing changes, which shall be subject to the price increase cap set forth herein.",
+        "effective_rationale_excerpt": "Auto-renew with 60-day notice is fine, but no price increase cap or renewal notice reminder. Could trigger unplanned cost escalation for Licensee.",
+        "judge_reasoning": "Pioneer Deep addressed the auto-renewal by adding notice requirements for pricing changes linked to the price cap. While it doesn't add TfC during term, it improves transparency which partially addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "2.3",
+      "tier": "T2",
+      "issue": "Usage Restrictions Overbroad",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-2.3 Usage Restrictions",
+      "evidence": {
+        "proposed_revision_excerpt": "Nothing in this Section 2.3 prohibits reasonable security testing, internal benchmarking (without public disclosure), or uses expressly permitted by this Agreement.",
+        "effective_rationale_excerpt": "Blanket prohibition on using the Software 'for the benefit of any third party' can block legitimate shared services, advisors, and affiliates. No carve-out for benchmarking, security testing, or compliance.",
+        "judge_reasoning": "Pioneer Deep identified the overbroad restrictions and proposed carve-outs for Affiliates, service providers, security testing, and non-public benchmarking. This directly addresses the GT key elements about adding operational exceptions."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "DPA Optional / No Timing",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-5.3 Data Processing",
+      "evidence": {
+        "proposed_revision_excerpt": "the Parties shall execute a separate Data Processing Agreement setting forth the terms and conditions of such processing prior to such processing. Until execution, Licensor shall process such data in accordance with industry-standard privacy and security practices consistent with applicable law.",
+        "effective_rationale_excerpt": "DPA is deferred and not attached; processing may occur without terms, exposing compliance risk (GDPR/CCPA).",
+        "judge_reasoning": "Pioneer Deep detected the DPA timing issue and proposed requiring DPA execution before processing with interim compliance provisions. This fully addresses the GT concern about requiring DPA before processing begins."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "8.2",
+      "tier": "T2",
+      "issue": "Performance Warranty Weak",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-8.2 Performance Warranty",
+      "evidence": {
+        "proposed_revision_excerpt": "For any breach, Licensor will promptly correct the non-conformity and, if not remedied within thirty (30) days, issue appropriate service credits or, at Licensee's option, a pro rata refund for the affected period. Persistent failures (as defined in the SLA) shall permit Licensee to terminate for cause with a pro rata refund of prepaid fees.",
+        "effective_rationale_excerpt": "'Substantially in accordance' with Documentation is standard but sole remedy limited to efforts to correct; no SLA linkage, no refund or termination for chronic non-conformance.",
+        "judge_reasoning": "Pioneer Deep addressed the weak warranty by adding 30-day cure period, service credits, refunds, and termination rights for persistent failures. This comprehensively addresses the GT concern about no meaningful remedies."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "12.10",
+      "tier": "T2",
+      "issue": "Survival Incomplete",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-12.10 Survival",
+      "evidence": {
+        "proposed_revision_excerpt": "The provisions of Articles 6, 7, 8, 9, 10, and 12, together with accrued payment obligations, data return/deletion and transition assistance, and any provisions which by their nature should survive, shall survive any termination or expiration of this Agreement.",
+        "effective_rationale_excerpt": "Survives key articles, but omits data return/deletion, payment obligations, and transition assistance.",
+        "judge_reasoning": "Pioneer Deep identified the incomplete survival clause and proposed adding data obligations, accrued payment, and transition support. This addresses the GT key element about adding Article 5-related obligations to survival."
+      }
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Audit Rights",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-NC7 Audit/Compliance Reports",
+      "evidence": {
+        "proposed_revision_excerpt": "Compliance Reports. Upon reasonable request, Licensor will provide current SOC 2 Type II report (or ISO 27001 certification and SOC 2 Type I), summaries of penetration test results, and will remediate material control deficiencies within commercially reasonable timeframes agreed with Licensee.",
+        "effective_rationale_excerpt": "Licensee needs visibility into controls via SOC 2/ISO reports and remediation commitments to manage vendor risk.",
+        "judge_reasoning": "Pioneer Deep identified the absence of audit rights and proposed NC7 for compliance reports with SOC 2 reports and pen test summaries. This addresses the GT requirement for annual audit/SOC 2 report requirement."
+      }
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Business Continuity",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No business continuity or disaster recovery provisions are proposed or identified as missing. The absence of RTO/RPO requirements is not flagged in either the risk_table or proposed_redlines."
+      }
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Force Majeure",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-NC8 Force Majeure",
+      "evidence": {
+        "proposed_revision_excerpt": "Force Majeure. Neither Party shall be liable for delays or failures in performance (other than payment obligations) due to events beyond its reasonable control, including acts of God, war, terrorism, labor disputes, government actions, or widespread internet outages, provided the affected Party provides prompt notice and uses reasonable efforts to mitigate. Data protection and confidentiality obligations shall continue to apply.",
+        "effective_rationale_excerpt": "No force majeure clause leaves parties exposed to unforeseeable events; define scope and obligations, with data protection and continuity commitments.",
+        "judge_reasoning": "Pioneer Deep identified the absence of force majeure and proposed NC8 with defined events, notice, mitigation, and data protection carve-in. This fully addresses the GT requirement."
+      }
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Vendor Insurance Requirements",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-NC6 Insurance",
+      "evidence": {
+        "proposed_revision_excerpt": "Insurance. Licensor shall maintain during the Term: (a) Commercial General Liability with limits of at least $1,000,000 per occurrence; (b) Technology Errors & Omissions including Cyber/Privacy liability with limits of at least $5,000,000 aggregate; and (c) Workers' Compensation as required by law. Certificates of insurance shall be provided to Licensee upon request.",
+        "effective_rationale_excerpt": "Absence of insurance requirements leaves Licensee exposed if Licensor lacks resources post-incident. Minimum insurance (CGL, Tech E&O/Cyber) protects Licensee.",
+        "judge_reasoning": "Pioneer Deep identified the absence of insurance requirements and proposed comprehensive coverage including CGL ($1M), Cyber/E&O ($5M), and workers comp with certificate requirements. This fully addresses the GT requirement."
+      }
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "6.3",
+      "tier": "T3",
+      "issue": "Aggregated Data Use",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-6.3 Aggregated Data",
+      "evidence": {
+        "proposed_revision_excerpt": "provided that such data does not identify Licensee or any individual and Licensor does not attempt to re-identify such data. Such data shall be handled with safeguards no less protective than those applied to Licensee Data.",
+        "effective_rationale_excerpt": "Allows aggregated data analysis without identifying Licensee, but lacks 'no re-identification,' security, or opt-out for sensitive sectors.",
+        "judge_reasoning": "Pioneer Deep detected the aggregated data issue and proposed adding a no re-identification covenant and equivalent safeguards. This addresses the GT key element about adding re-identification prohibition."
+      }
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "12.2",
+      "tier": "T3",
+      "issue": "Arbitration Required",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": "Redline-12.2 Dispute Resolution",
+      "evidence": {
+        "proposed_revision_excerpt": "Any dispute arising out of or relating to this Agreement shall be resolved by binding arbitration administered by JAMS (or AAA) in accordance with its Commercial Arbitration Rules. The arbitration shall be conducted virtually or in the county of Licensee's principal place of business. Either Party may seek temporary injunctive relief in any court of competent jurisdiction to protect its Confidential Information or intellectual property.",
+        "effective_rationale_excerpt": "Mandates AAA arbitration in Licensor's forum, increasing Licensee cost/inconvenience; lacks carve-out for injunctive relief.",
+        "judge_reasoning": "Pioneer Deep addressed the arbitration venue by relocating to Licensee's jurisdiction or virtual, and adding injunctive relief carve-out. This addresses the GT concern though does not add mediation step."
+      }
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "4.3",
+      "tier": "T3",
+      "issue": "Short Maintenance Notice",
+      "detection": "P",
+      "detection_points": 0.5,
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": 1,
+      "quality_points": 3,
+      "total_points": 3.5,
+      "matched_redline_id": "Redline-4.3 Maintenance",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall use commercially reasonable efforts to provide Licensee with at least 48 hours' prior notice of any scheduled maintenance that may affect availability. Scheduled maintenance will occur during published maintenance windows and will be excluded from uptime calculations only if within those windows and noticed as required.",
+        "effective_rationale_excerpt": "Reasonable notice of scheduled maintenance. However, ensure maintenance windows minimize business impact and are excluded from uptime calculations only if within defined windows.",
+        "judge_reasoning": "Pioneer Deep's risk_table notes the 48-hour notice is reasonable and the proposed_redline focuses on defining windows and exclusions rather than extending notice. The GT concern about 5 business days for major maintenance is only partially addressed."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Authorised Users",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to expressly i",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The definition is broad but lacks clarity on inclusion of Licensee’s Affiliates and third-party service providers supporting Licensee’s business. Absence of explicit Affiliate coverage can restrict pr"
+    },
+    {
+      "clause": "1.6",
+      "issue_summary": "Definition of Software",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to reference O",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Defines the platform and Updates made available at no charge, but lacks specificity around modules, environments, or excluded add-ons, which can limit expectations and create disputes about scope and "
+    },
+    {
+      "clause": "1.9",
+      "issue_summary": "Definition of Updates",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include no ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Updates are “generally available,” but no commitment on backward compatibility, no regression avoidance, and no notice obligations—risking breaking changes for Licensee."
+    },
+    {
+      "clause": "2.1",
+      "issue_summary": "Grant of License",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow use b",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Non-exclusive, non-transferable, non-sublicensable and internal business purposes only. Absent Affiliate rights or outsourcing carve-outs, Licensee’s intended enterprise use can be impeded."
+    },
+    {
+      "clause": "2.4",
+      "issue_summary": "Reservation of Rights",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify it ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard, but combined with restrictive 2.3 could be used to deny reasonable use cases. Clarify that permitted uses and agreed configurations are not restricted."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Late Fees (1.5%/month)",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to lower rate ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "1.5% monthly (18% APR) is high; no dispute or good-faith withholding protection, risking fees during billing errors."
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Taxes",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require ite",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensee bears taxes excluding Licensor’s net income taxes. No mention of valid exemption certificates or itemized invoicing. Could lead to tax overcharges."
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Support (business hours; 4-hour response)",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add severit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Only “commercially reasonable efforts” on response, no severity tiers, no resolution targets, and limited hours may not meet Licensee needs for critical incidents."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Data Processing Agreement",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require exe",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "DPA is deferred and not attached; processing may occur without terms, exposing compliance risk (GDPR/CCPA)."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Aggregated/anonymised data use",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include de-",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allows aggregated data analysis without identifying Licensee, but lacks “no re-identification,” security, or opt-out for sensitive sectors."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Confidentiality obligations",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include ind",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Obligations exist but lack explicit standard of care and duration; compelled disclosure process also not specified. Could weaken protections for Licensee’s sensitive data."
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Performance warranty",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include ser",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Substantially in accordance” with Documentation is standard but sole remedy limited to efforts to correct; no SLA linkage, no refund or termination for chronic non-conformance."
+    },
+    {
+      "clause": "8.3",
+      "issue_summary": "Warranty disclaimer",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to preserve ex",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad “AS IS” disclaimer could swallow the performance warranty. Needs carve-outs for express warranties, uptime, security, and statutory non-waivable rights."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Licensor IP indemnity",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include def",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides IP indemnity but omits defense control procedures, exclusions scope, and required remedies (replace/modify/procure). Needs comprehensive remedy and clarity favorable to Licensee."
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Reserved",
+      "leah_classification": "🆕",
+      "leah_action": "ADD a narrow, capped",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Missing Licensee indemnity definition can create ambiguity; propose narrow Licensee indemnity for third-party claims solely from misuse or data legality, capped and subject to liability limits."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Term and auto-renewal",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to cap renewal",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Auto-renew with 60-day notice is fine, but no price increase cap or renewal notice reminder. Could trigger unplanned cost escalation for Licensee."
+    },
+    {
+      "clause": "11.3",
+      "issue_summary": "Termination for insolvency",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include dat",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Immediate termination right exists but lacks assurance for data retrieval and transition. Risk to Licensee continuity."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Governing law (Delaware)",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow Licen",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Delaware law is common; acceptable generally. Consider neutrality on venue/law depending on Licensee location; coordinate with dispute clause to avoid inconvenient forum."
+    },
+    {
+      "clause": "12.10",
+      "issue_summary": "Survival",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include dat",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Survives key articles, but omits data return/deletion, payment obligations, and transition assistance."
+    },
+    {
+      "clause": "NC1",
+      "issue_summary": "New Clause Recommendation: Service Credits &amp; Reporting",
+      "leah_classification": "🆕",
+      "leah_action": "ADD service credit s",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absent service credits and incident reporting, uptime promises lack teeth and verification. Service credits and chronic failure termination shift meaningful accountability to Licensor, aligning incent"
+    },
+    {
+      "clause": "NC2",
+      "issue_summary": "New Clause Recommendation: Security &amp; Breach Notice Standards",
+      "leah_classification": "🆕",
+      "leah_action": "ADD detailed securit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensee needs explicit security controls (encryption, SOC 2), breach notice timelines, and third-party audit reporting to mitigate regulatory and business risk beyond a vague “reasonable” standard."
+    },
+    {
+      "clause": "NC3",
+      "issue_summary": "New Clause Recommendation: Data Return, Deletion &amp; Transition",
+      "leah_classification": "🆕",
+      "leah_action": "ADD post-termination",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Lack of explicit data return/export assistance risks lock-in and compliance failures at exit. Defined timelines, formats, and support mitigate operational risk."
+    },
+    {
+      "clause": "NC4",
+      "issue_summary": "New Clause Recommendation: Price Increase Cap",
+      "leah_classification": "🆕",
+      "leah_action": "ADD cap on annual re",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Without a cap, renewals can spike costs unpredictably. A cap ensures budget predictability for Licensee and prevents opportunistic increases."
+    },
+    {
+      "clause": "NC5",
+      "issue_summary": "New Clause Recommendation: Publicity Restrictions",
+      "leah_classification": "🆕",
+      "leah_action": "ADD no use of Licens",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No publicity clause risks unilateral use of Licensee’s name/logo. Restricting publicity protects brand and compliance constraints."
+    },
+    {
+      "clause": "NC6",
+      "issue_summary": "New Clause Recommendation: Insurance",
+      "leah_classification": "🆕",
+      "leah_action": "ADD insurance covera",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of insurance requirements leaves Licensee exposed if Licensor lacks resources post-incident. Minimum insurance (CGL, Tech E&amp;O/Cyber) protects Licensee."
+    },
+    {
+      "clause": "NC7",
+      "issue_summary": "New Clause Recommendation: Audit/Compliance Reports",
+      "leah_classification": "🆕",
+      "leah_action": "ADD rights to receiv",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensee needs visibility into controls via SOC 2/ISO reports and remediation commitments to manage vendor risk."
+    },
+    {
+      "clause": "NC8",
+      "issue_summary": "New Clause Recommendation: Force Majeure",
+      "leah_classification": "🆕",
+      "leah_action": "ADD force majeure cl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No force majeure clause leaves parties exposed to unforeseeable events; define scope and obligations, with data protection and continuity commitments."
+    },
+    {
+      "clause": "1.1 Authorised Users",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause defines who may access the Software. Expanding Authorized Users to include Affiliates and directed service providers prevents operational friction for enterprise deployments and outsourced "
+    },
+    {
+      "clause": "1.6 Software",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause defines scope of the Software. Referencing modules and environments tied to the Order Form clarifies entitlement and avoids disputes about included functionality and uptime coverage. This p"
+    },
+    {
+      "clause": "1.9 Updates",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause defines Updates. Adding non-degradation and notice obligations protects Licensee against breaking changes that could disrupt integrations or workflows. This revision aligns expectations wit"
+    },
+    {
+      "clause": "2.1 Grant of License",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause grants access rights. Including Affiliates and support providers ensures Licensee can deploy at enterprise scale and leverage outsourcing without breaching restrictions. Keeping the interna"
+    },
+    {
+      "clause": "2.3 Usage Restrictions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause restricts use. Adding carve-outs for Affiliates, service providers, security testing, and non-public benchmarking preserves legitimate enterprise uses and compliance activities while mainta"
+    },
+    {
+      "clause": "2.4 Reservation of Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause preserves Licensor rights. Clarifying that express permissions and agreed configurations are unaffected prevents overbroad interpretations that could later restrict negotiated use cases. Th"
+    },
+    {
+      "clause": "3.1 Subscription Fees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause sets billing cadence. Moving from annual to quarterly reduces cash flow burden and improves leverage if service underperforms. Adding a renewal increase cap and notice protects Licensee fro"
+    },
+    {
+      "clause": "3.3 Late Fees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause sets late fees. Lowering the rate and excluding good-faith disputes prevents punitive charges during billing errors and aligns with fair commercial practice. This protects Licensee from exc"
+    },
+    {
+      "clause": "3.4 Taxes",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause addresses taxes. Adding itemization and recognition of exemption certificates prevents overcollection and facilitates compliance. Cooperation language ensures Licensee can apply proper tax "
+    },
+    {
+      "clause": "4.1 Availability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause sets uptime. Raising availability, narrowing exclusions, and requiring reporting creates enforceable reliability. This reduces downtime risk and provides transparency for Licensee service m"
+    },
+    {
+      "clause": "NC1 Service Credits & Reporting",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 4.1. The clause provides tangible remedies for uptime shortfalls and a termination right for chronic issues. This aligns incentives and ensures Licensee receives compen"
+    },
+    {
+      "clause": "4.2 Support",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause governs support responsiveness. Adding severity tiers and guaranteed response for critical incidents ensures Licensee can manage outages effectively. This reduces downtime impact and provid"
+    },
+    {
+      "clause": "4.3 Maintenance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause addresses maintenance. Defining maintenance windows and limiting exclusions to properly noticed windows prevents broad uptime exclusions and protects Licensee’s availability expectations."
+    },
+    {
+      "clause": "5.1 Security Measures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause sets security obligations. Replacing “reasonable” with concrete standards and breach notice timing materially reduces data risk for Licensee and supports regulatory compliance. It also crea"
+    },
+    {
+      "clause": "5.3 Data Processing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause defers DPA execution. Requiring a DPA before processing and interim compliance protects Licensee from regulatory exposure if processing begins early. This ensures baseline safeguards are in"
+    },
+    {
+      "clause": "NC2 Security & Breach Notice Standards",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.1. This clause adds transparency and continuity of controls, enabling Licensee to assess vendor risk and ensure remediation. It complements 5.1 by making security ver"
+    },
+    {
+      "clause": "6.2 Feedback",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause assigns Feedback ownership. Converting to a license avoids inadvertent transfer of Licensee IP embedded in suggestions and protects confidential information. This balances Licensor’s abilit"
+    },
+    {
+      "clause": "6.3 Aggregated Data",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause permits aggregate data use. Adding a no re-identification covenant and safeguard requirement prevents misuse and privacy risks while allowing product analytics. This protects Licensee’s con"
+    },
+    {
+      "clause": "7.1 Confidentiality",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause sets confidentiality obligations. Adding standard of care, duration, and compelled disclosure procedures strengthens protections for Licensee’s sensitive information and aligns with common "
+    },
+    {
+      "clause": "8.1 Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause imposes unlimited liability on Licensee for any breach, including indirect damages, and contradicts the later limitation of liability framework. Deleting this language removes a severe asym"
+    },
+    {
+      "clause": "8.2 Performance Warranty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause limits remedies to efforts only. Adding credits, refunds, and termination for chronic issues makes the warranty meaningful and provides Licensee with practical recourse for persistent defec"
+    },
+    {
+      "clause": "8.3 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause broadly disclaims all warranties. Carving out express warranties, SLAs, and security obligations preserves key protections for Licensee while keeping standard disclaimers intact. This avoid"
+    },
+    {
+      "clause": "8.4 Beta Features",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause covers betas. Clarifying optional participation and non-production use without consent prevents inadvertent reliance on unstable features and protects Licensee’s operational stability."
+    },
+    {
+      "clause": "9.1 Indemnification by Licensor",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause provides IP indemnity but lacks scope and remedies. Adding trade secrets, defense costs, and the classic remedy triad ensures complete protection and clear outcomes for Licensee, with reaso"
+    },
+    {
+      "clause": "NC3 Data Return, Deletion & Transition",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 11.4. This clause ensures Licensee can retrieve its data, avoid lock-in, and maintain compliance. It also provides a defined path for deletion and optional transition s"
+    },
+    {
+      "clause": "10.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause is one-sided and absolute. Making exclusions mutual and carving out key harms preserves Licensee’s remedies for serious misconduct or data/confidentiality breaches while maintaining standar"
+    },
+    {
+      "clause": "10.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause caps only Licensor’s liability. Making the cap mutual and adding a floor addresses material exposure for Licensee, particularly for data and confidentiality risks, while remaining commercia"
+    },
+    {
+      "clause": "11.1 Term and Renewal",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause auto-renews but lacks pricing transparency. Adding notice of pricing changes and linking to a cap protects Licensee from surprise increases and supports budgeting."
+    },
+    {
+      "clause": "11.2 Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause provides a standard cure period. Adding immediate termination for material security incidents and chronic SLA failures protects Licensee from ongoing risk and operational harm where a cure "
+    },
+    {
+      "clause": "NC4 Price Increase Cap",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 3.1. The clause provides budget predictability and prevents opportunistic increases, aligning with common enterprise procurement protections for Licensee."
+    },
+    {
+      "clause": "11.4 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause lacks data return and refund obligations. Adding explicit export/deletion requirements and refunds ensures Licensee can exit cleanly and recover prepaid amounts if Licensor is at fault, red"
+    },
+    {
+      "clause": "12.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause sets law. Coordinating with venue ensures the governing law pairing does not force Licensee into Licensor’s forum. This reduces litigation/arbitration burden on Licensee."
+    },
+    {
+      "clause": "12.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause mandates Licensor’s forum. Moving venue to Licensee’s location or virtual and adding injunctive relief carve-out reduces cost and delay for Licensee while preserving arbitration efficiency."
+    },
+    {
+      "clause": "12.4 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause is asymmetric. Allowing Licensee to assign to Affiliates or in change of control without consent preserves corporate flexibility and avoids operational disruption, while protecting both Par"
+    },
+    {
+      "clause": "12.10 Survival",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause omits key post-termination obligations. Adding survival for payment, data handling, and transition ensures enforceability of critical exit duties, directly protecting Licensee."
+    },
+    {
+      "clause": "NC5 Publicity Restrictions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 12.5. This prevents unauthorized brand use and protects Licensee’s regulatory and communications controls. It is a standard enterprise protection that imposes minimal b"
+    },
+    {
+      "clause": "NC6 Insurance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 12.6. Insurance requirements ensure Licensor can respond to operational and data incidents, protecting Licensee from counterparty risk. These limits are typical for ent"
+    },
+    {
+      "clause": "NC7 Audit/Compliance Reports",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.3. This clause gives Licensee ongoing visibility into Licensor’s control environment and remediation, supporting vendor risk management and compliance obligations wit"
+    },
+    {
+      "clause": "NC8 Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 12.10. A force majeure clause allocates risk for uncontrollable events while preserving critical data and confidentiality duties, protecting Licensee during disruptions"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 24,
+      "P": 1,
+      "N": 0,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 8,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 11,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 5,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_count": 8,
+    "total_detection_points": 124.5,
+    "total_quality_points": 210,
+    "total_points": 334.5,
+    "additional_issues_count": 66
+  }
+}

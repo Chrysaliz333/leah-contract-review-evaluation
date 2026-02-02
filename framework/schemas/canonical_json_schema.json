@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Leah Canonical JSON Schema",
+  "description": "Authoritative schema for Leah contract review outputs",
+  "version": "1.0",
+  "type": "object",
+  "required": ["meta", "risk_table", "proposed_redlines"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["contract", "model_id"],
+      "properties": {
+        "contract": {
+          "type": "string",
+          "description": "Contract identifier (e.g., consulting, dpa, sla)"
+        },
+        "model_id": {
+          "type": "string",
+          "description": "Model identifier (e.g., pathfinder, starliner, sonnet45)"
+        },
+        "environment": {
+          "type": "string",
+          "description": "Source environment (e.g., hotfix, test_prod2)"
+        },
+        "source_file": {
+          "type": "string",
+          "description": "Original filename from Leah export"
+        },
+        "extraction_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When canonical JSON was extracted"
+        },
+        "schema_version": {
+          "type": "string",
+          "description": "Schema version used"
+        },
+        "manual_redlines_added": {
+          "type": "boolean",
+          "description": "True if redlines required extra step to generate"
+        },
+        "extra_step_penalty": {
+          "type": "number",
+          "description": "Penalty multiplier (e.g., 0.10 for 10% penalty)"
+        }
+      }
+    },
+    "risk_table": {
+      "type": "array",
+      "description": "Clause-by-clause risk assessments",
+      "items": {
+        "type": "object",
+        "required": ["clause_ref", "classification"],
+        "properties": {
+          "clause_ref": {
+            "type": "string",
+            "description": "Clause reference as displayed (e.g., 'Section 5.1', '5.1')"
+          },
+          "clause_ref_normalised": {
+            "type": "string",
+            "description": "Normalised clause number for matching (e.g., '5.1')"
+          },
+          "clause_summary": {
+            "type": "string",
+            "description": "Brief description of clause content"
+          },
+          "classification": {
+            "type": "string",
+            "enum": ["❌", "⚠️", "✅", "🆕", "Unfavorable", "Requires Clarification", "Favourable", "Standard"],
+            "description": "Risk classification"
+          },
+          "detailed_reasoning": {
+            "type": "string",
+            "description": "Explanation of why clause received this classification"
+          },
+          "recommended_action": {
+            "type": "string",
+            "enum": ["AMEND", "DELETE", "ADD", "FLAG", "No Action Required"],
+            "description": "Recommended action"
+          }
+        }
+      }
+    },
+    "proposed_redlines": {
+      "type": "array",
+      "description": "Specific contract amendments proposed",
+      "items": {
+        "type": "object",
+        "required": ["clause_ref", "change_type"],
+        "properties": {
+          "recommendation_id": {
+            "type": "string",
+            "description": "Unique identifier for this redline"
+          },
+          "clause_ref": {
+            "type": "string",
+            "description": "Clause reference as displayed"
+          },
+          "clause_ref_normalised": {
+            "type": "string",
+            "description": "Normalised clause number for matching"
+          },
+          "change_type": {
+            "type": "string",
+            "enum": ["Amend", "Delete", "Add"],
+            "description": "Type of change proposed"
+          },
+          "original_clause": {
+            "type": "string",
+            "description": "Original contract text"
+          },
+          "proposed_revision": {
+            "type": "string",
+            "description": "Proposed amended text"
+          },
+          "rationale": {
+            "type": "string",
+            "description": "Why this change is recommended"
+          }
+        }
+      }
+    },
+    "new_clauses_proposed": {
+      "type": "array",
+      "description": "Entirely new clauses recommended for addition",
+      "items": {
+        "type": "object",
+        "required": ["clause_type", "proposed_text"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier"
+          },
+          "clause_type": {
+            "type": "string",
+            "description": "Type of clause (e.g., 'Data Protection', 'Cyber Insurance')"
+          },
+          "proposed_text": {
+            "type": "string",
+            "description": "Full text of proposed new clause"
+          },
+          "rationale": {
+            "type": "string",
+            "description": "Why this clause should be added"
+          },
+          "suggested_location": {
+            "type": "string",
+            "description": "Where in the contract to insert"
+          }
+        }
+      }
+    }
+  }
+}

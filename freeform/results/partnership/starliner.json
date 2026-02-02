@@ -1,0 +1,578 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T18:20:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Reserved",
+      "evidence": {
+        "proposed_revision_excerpt": "10.1 Exit and Buyout. In the event that either Partner wishes to exit the Partnership or in the event of a deadlock that cannot be resolved as set forth in Section 4.1, either Partner may initiate a buyout process. The initiating Partner shall provide written notice to the other Partner, and the Partners shall engage in good faith negotiations to determine fair market value. If no agreement is reached within sixty (60) days, the value shall be determined by an independent third-party appraiser mutually selected by the Partners. The non-exiting Partner shall have the right of first refusal to purchase the exiting Partner's interest on such terms.",
+        "effective_rationale_excerpt": "The absence of exit/buyout provisions exposes Growth Dynamics Partners LP to entrapment if the relationship deteriorates. This clause provides a clear, fair exit mechanism, reducing business risk and enhancing flexibility...",
+        "judge_reasoning": "Starliner correctly identifies that Section 10.1 is Reserved with no exit/buyout provisions. The proposed clause provides buyout triggers (voluntary exit or deadlock), good-faith valuation negotiation, independent appraiser fallback, and ROFR for non-exiting partner. While comprehensive, it's less detailed than some other models (no drag/tag-along, bad-leaver provisions, or payment structure). Still addresses all core GT elements."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Management",
+      "evidence": {
+        "proposed_revision_excerpt": "4.1 Management. The Partners shall jointly manage the Partnership Activities. Major decisions require unanimous consent of both Partners. In the event of a deadlock on a major decision, the matter shall be escalated to the senior principals of each Partner for good faith negotiation. If no resolution is reached within thirty (30) days, the Partners may agree to submit the matter to binding arbitration or, if not agreed, either Partner may initiate a buyout process as set forth in Section 10.",
+        "effective_rationale_excerpt": "The original clause could lead to deadlock, paralyzing operations. This amendment introduces a clear escalation and resolution process, reducing operational risk for Growth Dynamics Partners LP.",
+        "judge_reasoning": "Starliner correctly identifies the deadlock risk from unanimous consent. The redline adds escalation to senior principals (30-day negotiation), then either arbitration (if agreed) or buyout process. This provides a clear path to resolution without removing the unanimous consent requirement entirely. Addresses the core GT concern about preventing paralysis."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Default",
+      "evidence": {
+        "proposed_revision_excerpt": "3.3 Default. A Partner that fails to fund a capital call shall be subject to the default provisions set forth in Section 10.3 or, if such provisions are not specified, shall be required to forfeit its participation in the relevant Co-Investment and reimburse the non-defaulting Partner for any costs or losses incurred as a result of such default.",
+        "effective_rationale_excerpt": "The original clause references a missing section, leaving default consequences undefined and exposing Growth Dynamics Partners LP to risk. This amendment provides a fallback remedy, ensuring enforceability and compensation.",
+        "judge_reasoning": "Starliner identifies the broken cross-reference to non-existent Section 10.3. The redline provides a fallback remedy (forfeiture of participation + cost reimbursement) if Section 10.3 remains unspecified. This addresses the enforceability gap, though it's less comprehensive than models that propose a full new Section 10.3 with dilution, interest, and priority return rights."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Profit and Loss Sharing",
+      "evidence": {
+        "proposed_revision_excerpt": "6.1 Sharing Ratio. All profits and losses from Co-Investments shall be allocated to the Partners pro rata in accordance with their respective capital contributions to each Co-Investment, unless otherwise agreed in writing by both Partners.",
+        "effective_rationale_excerpt": "The original fixed 50/50 split is unfair if Growth Dynamics Partners LP contributes more capital. This amendment ensures proportional sharing, aligning financial outcomes with investment risk.",
+        "judge_reasoning": "Starliner identifies the economic inequity from fixed 50/50 sharing regardless of capital. The redline shifts to pro-rata allocation based on actual contributions with flexibility for written deviations. This directly addresses the GT concern and aligns economics with capital at risk."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Limitation of Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "14.5 Limitation of Liability. Except in cases of gross negligence, willful misconduct, or fraud, neither Partner shall be liable to the other for any indirect, consequential, special, or punitive damages arising out of or relating to this Agreement. The aggregate liability of each Partner under this Agreement shall not exceed the total capital contributed by such Partner to all Co-Investments.",
+        "effective_rationale_excerpt": "Without a limitation of liability clause, Growth Dynamics Partners LP faces unlimited risk for indirect damages. This clause caps exposure and excludes consequential damages, aligning with standard practice and protecting Growth Dynamics Partners LP's financial interests.",
+        "judge_reasoning": "Starliner recognizes the absence of any limitation of liability clause. The proposed new Section 14.5 caps aggregate liability at total capital contributed, excludes consequential/special/punitive damages, and includes carve-outs for gross negligence, willful misconduct, and fraud. This comprehensively addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract has no indemnification provisions. Starliner does not propose adding mutual indemnification for breaches, gross negligence, or third-party claims. This is a complete miss of a critical T1 structural gap."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9.0,
+      "matched_redline_id": "Redline-Exclusivity Period",
+      "evidence": {
+        "proposed_revision_excerpt": "Once a Target Company is presented to the Investment Committee, neither Partner may pursue an independent investment in such company for sixty (60) days. After the expiration of this period, either Partner may pursue the opportunity independently, provided that written notice is given to the other Partner and any proprietary information obtained during joint due diligence is not used or disclosed without consent.",
+        "effective_rationale_excerpt": "The original clause is unclear about post-exclusivity rights, risking disputes. This amendment clarifies the process and protects confidential information, reducing legal risk for Growth Dynamics Partners LP.",
+        "judge_reasoning": "Starliner identifies ambiguity in the exclusivity provision but does not recognize that 60 days may be too short for complex growth-equity due diligence. The redline clarifies post-period rights and information protection, which is valuable, but doesn't extend the period as GT expects. Amendment score reduced to 2 for not addressing the duration concern."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13.0,
+      "matched_redline_id": "Redline-Effect of Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon termination, the Partners shall continue to jointly manage existing Co-Investments until liquidation or transfer, with decision-making to be conducted by the Investment Committee as set forth in Section 4.2, unless otherwise agreed in writing. Profits and losses shall be shared per Section 6.1.",
+        "effective_rationale_excerpt": "The original clause lacks detail on governance during wind-down. This amendment clarifies that the Investment Committee continues to operate, ensuring orderly management and protecting Growth Dynamics Partners LP's interests.",
+        "judge_reasoning": "Starliner identifies the lack of governance detail during post-termination continuation. The redline clarifies that the Investment Committee continues to operate and allows for written variation. However, it does not address the GT's core concern about indefinite continuation without time limits or buyout options. Amendment score reduced to 2 for partial fix."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract lacks formal information rights and reporting requirements. Starliner does not propose adding quarterly reports, material event notices, or inspection rights. This T2 structural gap is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Reasonable restriction protects both parties' teams post-termination.",
+        "judge_reasoning": "Starliner's risk table (11.2) marks the 1-year non-solicitation as Favorable without questioning whether the restriction is necessary or should be reconsidered (as GT suggests). Partial credit for acknowledging the provision exists but not addressing the GT concern about evaluating its need."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Confidentiality Obligations",
+      "evidence": {
+        "proposed_revision_excerpt": "This obligation survives termination for seven (7) years, except for trade secrets and personal data, which shall be protected indefinitely or as required by law. Confidentiality obligations shall not apply to information that is or becomes public through no fault of the receiving party, is required to be disclosed by law, or is independently developed.",
+        "effective_rationale_excerpt": "The original clause's five-year term may not be sufficient for sensitive information. This amendment extends the duration and adds standard carve-outs, aligning with best practices and protecting Growth Dynamics Partners LP's interests.",
+        "judge_reasoning": "Starliner identifies that 5-year survival may be inadequate and proposes extending to 7 years for general confidential info and indefinite protection for trade secrets and personal data. Adds standard carve-outs (public domain, legal requirement, independent development). This comprehensively addresses the GT concern about inadequate protection for investment strategies and proprietary methodologies."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13.0,
+      "matched_redline_id": "Redline-Term and Renewal",
+      "evidence": {
+        "proposed_revision_excerpt": "This Agreement shall continue for five (5) years from the Effective Date, with automatic renewal for successive two-year periods unless either Partner provides ninety (90) days' written notice of non-renewal prior to the end of the then-current term.",
+        "effective_rationale_excerpt": "The original one-year notice period is excessively long and may lock Growth Dynamics Partners LP into an unwanted renewal. This amendment shortens the notice period, increasing flexibility and control.",
+        "judge_reasoning": "Starliner identifies that one-year notice is excessively long (at 12.1, semantically related to 10.2). The redline reduces to 90 days, which is more flexible but may still be too short for complex partnership wind-down. GT expects 180 days minimum with transition planning; 90 days falls short of this expectation. Amendment score reduced to 2."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.3",
+      "issue_summary": "Non-Exclusivity",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify all",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ambiguous exceptions—the phrase “Except as otherwise provided herein” is vague and could allow for hidden exclusivity. This may restrict Growth Dynamics Partners LP’s independent opportunities if not "
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Initial Commitment",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify pro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Lacks specificity on commitment process and allocation, which could lead to disputes over deal participation and capital allocation."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Default",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include or ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "References Section 10.3, which is missing, leaving default consequences undefined. This exposes Growth Dynamics Partners LP to uncertainty in the event of a counterparty default."
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Management",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include dea",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Unanimous consent for major decisions could lead to deadlock. This may paralyze operations and disadvantage Growth Dynamics Partners LP if Partner A is uncooperative."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Exclusivity Period",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify pos",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exclusivity period is short (60 days) and does not address what happens after the period. Could lead to disputes over deal pursuit."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Distributions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify ret",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Distribution timing is clear, but lacks detail on priority (e.g., return of capital before profits). This may disadvantage Growth Dynamics Partners LP if losses occur."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Expense Sharing",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require pre",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Default equal sharing may be unfair if one party incurs more expenses. No process for agreeing to exceptions."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Confidentiality",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend dura",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Obligation survives only 5 years; some information may require longer protection. Also, lacks carve-outs for required disclosures."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Portfolio Company Non-Compete",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define “dir",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ambiguous scope of “directly competes” may lead to disputes. Needs clearer definition and exceptions."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Term and Renewal",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to reduce noti",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Automatic renewal with long notice period (1 year) may lock Growth Dynamics Partners LP in longer than desired."
+    },
+    {
+      "clause": "12.3",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify gov",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Obligation to manage existing investments post-termination is clear, but lacks detail on governance during this period."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Limitation of Liability",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause limiting ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No limitation of liability clause exposes Growth Dynamics Partners LP to unlimited risk for indirect or consequential damages. A cap is standard in similar partnerships."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "🆕",
+      "leah_action": "ADD standard force m",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No force majeure clause means Growth Dynamics Partners LP could be liable for failures beyond its control (e.g., natural disasters, government action)."
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Data Protection",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause requiring",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No data protection clause creates compliance and reputational risk if personal or sensitive data is processed."
+    },
+    {
+      "clause": "Non-Exclusivity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause’s reference to unspecified exceptions is ambiguous and could be interpreted to restrict Growth Dynamics Partners LP’s independent dealmaking. This amendment specifies all exception"
+    },
+    {
+      "clause": "Initial Commitment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks a clear process for determining commitments, which could cause disputes. This amendment introduces a written, documented process, ensuring Growth Dynamics Partners LP’s inter"
+    },
+    {
+      "clause": "Default",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause references a missing section, leaving default consequences undefined and exposing Growth Dynamics Partners LP to risk. This amendment provides a fallback remedy, ensuring enforceab"
+    },
+    {
+      "clause": "Management",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause could lead to deadlock, paralyzing operations. This amendment introduces a clear escalation and resolution process, reducing operational risk for Growth Dynamics Partners LP. Place"
+    },
+    {
+      "clause": "Exclusivity Period",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause is unclear about post-exclusivity rights, risking disputes. This amendment clarifies the process and protects confidential information, reducing legal risk for Growth Dynamics Part"
+    },
+    {
+      "clause": "Profit and Loss Sharing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original fixed 50/50 split is unfair if Growth Dynamics Partners LP contributes more capital. This amendment ensures proportional sharing, aligning financial outcomes with investment risk. Placeme"
+    },
+    {
+      "clause": "Distributions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks priority for return of capital, risking loss of principal. This amendment ensures Growth Dynamics Partners LP’s capital is returned before profits are split, reducing downsid"
+    },
+    {
+      "clause": "Expenses",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Equal sharing may be unfair if expenses are not matched to participation. This amendment ensures proportional allocation and requires pre-approval for unusual expenses, protecting Growth Dynamics Part"
+    },
+    {
+      "clause": "Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause’s five-year term may not be sufficient for sensitive information. This amendment extends the duration and adds standard carve-outs, aligning with best practices and protecting Grow"
+    },
+    {
+      "clause": "Reserved",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 10.1. The absence of exit/buyout provisions exposes Growth Dynamics Partners LP to entrapment if the relationship deteriorates. This clause provides a clear, fair exit"
+    },
+    {
+      "clause": "Portfolio Company Non-Compete",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause’s lack of definition for “directly competes” could lead to disputes. This amendment clarifies scope and adds reasonable exceptions, reducing legal risk for Growth Dynamics Partners"
+    },
+    {
+      "clause": "Term and Renewal",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original one-year notice period is excessively long and may lock Growth Dynamics Partners LP into an unwanted renewal. This amendment shortens the notice period, increasing flexibility and control"
+    },
+    {
+      "clause": "Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks detail on governance during wind-down. This amendment clarifies that the Investment Committee continues to operate, ensuring orderly management and protecting Growth Dynamics"
+    },
+    {
+      "clause": "Limitation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 14.5. Without a limitation of liability clause, Growth Dynamics Partners LP faces unlimited risk for indirect damages. This clause caps exposure and excludes consequen"
+    },
+    {
+      "clause": "Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 14.6. The absence of a force majeure clause exposes Growth Dynamics Partners LP to liability for uncontrollable events. This clause provides relief from such risks, en"
+    },
+    {
+      "clause": "Data Protection",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 14.7. The contract lacks data protection obligations, exposing Growth Dynamics Partners LP to legal and reputational risk. This clause ensures compliance with relevant"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 1,
+      "N": 0,
+      "NMI": 2
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 5,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      },
+      "T2": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "total_detection_points": 56.5,
+    "total_quality_points": 78,
+    "weighted_score": 81.51,
+    "max_possible": 70.0,
+    "percentage": 116.44,
+    "total_points": 134.5,
+    "additional_issues_count": 30
+  }
+}

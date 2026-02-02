@@ -1,0 +1,373 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "sonnet45",
+    "model_display_name": "Sonnet 4.5",
+    "environment": "hotfix",
+    "evaluation_timestamp": "2026-01-25T22:00:00Z",
+    "gt_version": "1.0",
+    "part_b_gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "RESELLER_01",
+      "clause": "4.1",
+      "section": "Pricing",
+      "cp_redline_description": "Vendor reduces notice period from 30 days to 7 days and makes price changes retroactive to unfulfilled orders",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Proposed Change Type: Reject - Rationale: The proposed seven-day notice period is rejected as it provides insufficient time for Pacific Tech Distributors LLC to assess financial impact, adjust resale pricing strategies, communicate changes to End Users, or evaluate alternative suppliers. The original thirty-day notice period is commercially reasonable and aligns with industry standards for channel partner agreements, enabling proper business planning and protecting against sudden cost increases that could render existing customer commitments unprofitable.",
+        "judge_reasoning": "Leah correctly identifies REJECT as the action. The reasoning addresses the key element of inadequate planning time (7 days vs 30 days), aligns with the GT requirement that 7 days is inadequate for planning/budgeting. Leah also separately addresses the retroactive application issue in the risk table. Full points awarded for correct action, adequate revision recommendation, and sound reasoning addressing the core GT concerns."
+      }
+    },
+    {
+      "gt_id": "RESELLER_02",
+      "clause": "5.1",
+      "section": "Payment Terms",
+      "cp_redline_description": "CP changes payment from 30 to 15 days, interest from 1.5% to 2% monthly, and adds delivery suspension for any past-due",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing Redline: Reseller shall pay all invoices within fifteen (15) days of invoice date. Late payments bear interest at two percent (2%) per month. Vendor may suspend Reseller's account and withhold license keys for any overdue amounts. Proposed Change Type: Reject - Rationale: The proposed changes are rejected as they create compounded financial and operational pressure on Pacific Tech Distributors LLC. Halving the payment period from thirty to fifteen days strai[ns cash flow]...",
+        "judge_reasoning": "Leah correctly recommends REJECT for all three CP modifications: shorter payment terms (15 vs 30 days), higher interest (2% vs 1.5%), and draconian suspension provision. The reasoning addresses cash flow stress and excessive financial pressure, which aligns with GT requirements about 15-day terms stressing cash flow and 2% = 24% APR being excessive. Full points awarded."
+      }
+    },
+    {
+      "gt_id": "RESELLER_03",
+      "clause": "9.1",
+      "section": "Term",
+      "cp_redline_description": "CP reduces initial term from 2 years to 1 year and adds Vendor-only termination for convenience with 30 days notice",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing Redline: This Agreement shall commence on the Effective Date and continue for an initial term of one (1) year... Vendor may terminate this Agreement for convenience upon thirty (30) days' notice at any time. Reseller may not terminate for convenience. Proposed Change Type: Reject - Rationale: The proposed changes are rejected as they create fundamental relationship instability and asymmetric risk. Granting Vendor unilateral termination for convenience while prohibiting Pacific Tech [Distributors from same]...",
+        "judge_reasoning": "Leah correctly identifies REJECT. The reasoning addresses both key GT concerns: (1) reduced term from 2 to 1 year insufficient for Reseller investment recovery, and (2) asymmetric termination rights (Vendor-only TfC). The rationale about 'relationship instability and asymmetric risk' directly addresses the GT requirement about Vendor-only convenience termination creating power imbalance. Full points."
+      }
+    },
+    {
+      "gt_id": "RESELLER_04",
+      "clause": "12.2",
+      "section": "Liability Cap",
+      "cp_redline_description": "CP reduces liability cap to lesser of product price or $25,000 instead of 12 months amounts paid",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 1,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing Redline: VENDOR'S TOTAL LIABILITY SHALL NOT EXCEED THE LESSER OF (A) AMOUNTS PAID BY RESELLER FOR THE SPECIFIC PRODUCT GIVING RISE TO THE CLAIM, OR (B) TWENTY-FIVE THOUSAND DOLLARS ($25,000). Proposed Change Type: Amend - Rationale: The proposed liability cap reduction is rejected as grossly inadequate to address potential damages from Vendor breaches. A $25,000 floor is insufficient given that product defects, license...",
+        "judge_reasoning": "Leah correctly identifies the need to reject the CP redline and flags the $25K cap as inadequate. However, the 'Proposed Change Type' shows 'Amend' not 'Reject', which creates ambiguity - though the substance of the rationale is to reject the CP position. The reasoning correctly identifies that $25K is grossly inadequate. Revision score reduced by 1 because the action label shows 'Amend' instead of clean 'Reject', though the substance is correct."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 23,
+    "max_score": 24,
+    "percentage": 95.8,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 15,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table entry at 4.1 addresses CP redline. New clause recommendations suggest account registration and protection provisions but no direct amendment to 4.1 baseline terms proposed.",
+        "effective_rationale_excerpt": "The seven-day notice period is rejected as it provides insufficient time for Pacific Tech Distributors LLC to assess financial impact, adjust resale pricing strategies, communicate changes to End Users, or evaluate alternative suppliers.",
+        "judge_reasoning": "Leah detects the pricing notification issue through the CP redline analysis. The risk table analysis and CP redline rejection demonstrate understanding of the 30-day vs 7-day notice concern. However, no standalone proposed redline exists to add price cap or termination right as GT suggests. Detection is Y because the core issue (short notice, no protection against increases) is identified; quality is moderate because the fix focuses only on rejecting CP changes rather than improving baseline terms."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "No termination for convenience during Term",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 8,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Leah's analysis of 9.1 focuses on rejecting the CP redline that adds Vendor-only TfC. No affirmative proposal to add mutual TfC to baseline contract.",
+        "effective_rationale_excerpt": "The proposed changes are rejected as they create fundamental relationship instability and asymmetric risk. Granting Vendor unilateral termination for convenience while prohibiting Pacific Tech [from same creates imbalance]...",
+        "judge_reasoning": "Partial detection. Leah correctly identifies the problem with asymmetric TfC rights in the CP redline, but the GT issue is that the BASELINE contract lacks mutual TfC during the 2-year term. Leah focuses on rejecting the CP's Vendor-only TfC rather than proposing to add mutual TfC as the GT expects. The semantic concern (locked in during term) is partially addressed through rejecting the CP, but no affirmative amendment to add TfC is proposed."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Vendor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Leah rejects the CP redline that further reduces the cap. Also proposes new clause 11.3 for Vendor Indemnification not subject to liability limits.",
+        "effective_rationale_excerpt": "The proposed liability cap reduction is rejected as grossly inadequate to address potential damages from Vendor breaches. A $25,000 floor is insufficient given that product defects, license failures could cause substantial damages.",
+        "judge_reasoning": "Leah detects the liability cap issue and correctly rejects the CP's attempt to reduce it further. The analysis recognises the baseline 12-month cap as the minimum acceptable position. Leah also proposes a new indemnification clause (11.3) that would carve out certain claims from the liability cap. This addresses GT key elements about adding carve-outs for IP infringement. Full detection awarded with good quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.2",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS EXPRESSLY SET FORTH HEREIN, VENDOR MAKES NO WARRANTIES OF ANY KIND; PROVIDED, HOWEVER, THAT VENDOR DOES NOT DISCLAIM THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE WITH RESPECT TO THE PRODUCTS. VENDOR REPRESENTS AND WARRANTS THAT THE PRODUCTS WILL BE FREE FROM MATERIAL DEFECTS AND WILL PERFORM SUBSTANTIALLY IN ACCORDANCE WITH VENDOR'S PUBLISHED DOCUMENTATION AND SPECIFICATIONS.",
+        "effective_rationale_excerpt": "The original broad disclaimer eliminates fundamental implied warranties, shifting all product quality risk to Pacific Tech Distributors LLC despite Pacific Tech Distributors LLC having no ability to test or control product quality.",
+        "judge_reasoning": "Excellent detection and amendment. Leah's risk table flags 11.2 as Unfavorable with detailed reasoning about warranty risk shift. The proposed revision directly preserves implied warranties (merchantability, fitness) and adds express warranties about material defects and documentation compliance. This addresses all GT key elements. The redline is well-drafted and immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "2.1 / 2.2",
+      "tier": "T2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table 2.2: AMEND to include account registration rights and direct sales compensation. New clauses proposed: 2.3 Account Registration and Protection with 90-day exclusive rights, commission on Vendor direct sales; 2.4 Reseller Appointment Restrictions to protect registered accounts.",
+        "effective_rationale_excerpt": "Unlimited competitive interference. Non-exclusivity without restrictions allows Vendor to directly compete with Pacific Tech Distributors LLC and appoint unlimited resellers, including in Pacific Tech Distributors LLC's developed accounts. No protection for customer relationships, territory development investments, or account registration.",
+        "judge_reasoning": "Excellent detection and comprehensive amendment. Leah flags 2.2 as Unfavorable and proposes two new clauses (2.3, 2.4) that directly address GT key elements: account registration rights, protection for Reseller-sourced leads, and compensation for direct Vendor sales. The proposed revisions are detailed, well-structured, and would meaningfully protect Reseller investment."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Leah's CP redline analysis rejects the increase to 2% monthly and affirms the baseline 1.5% should be retained.",
+        "effective_rationale_excerpt": "The proposed changes are rejected as they create compounded financial and operational pressure... Halving the payment period from thirty to fifteen days strains cash flow; 2% monthly interest = 24% APR is excessive.",
+        "judge_reasoning": "Leah detects the interest rate concern through the CP redline analysis, correctly noting that 2% monthly = 24% APR is excessive. While the analysis focuses on rejecting the CP increase rather than proposing to reduce the baseline 1.5% rate (18% APR), Leah does identify the core issue. Detection awarded as Y because the interest rate concern is clearly flagged and understood. No standalone amendment to reduce baseline rate proposed."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vendor can require prepayment on credit issues",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No mention of section 5.2 prepayment provisions in Leah's risk table or proposed redlines. The GT issue concerns Vendor's ability to require prepayment if credit limits exceeded or past-due balances exist. This was not flagged by Leah anywhere in the output."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Sales reports require End User information",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Reseller shall provide quarterly reports... Vendor acknowledges that such reports contain Reseller's confidential business information and customer relationships. Vendor shall (a) maintain such information in strict confidence pursuant to Article 10, (b) use such information solely for purposes of administering this Agreement and improving product offerings, and (c) not use such information to directly solicit Reseller's End Users, share such information with other resellers or third parties, or otherwise compete with Reseller. These obligations shall survive termination of this Agreement indefinitely.",
+        "effective_rationale_excerpt": "Confidential information disclosure without protection. Requirement to disclose End User details and sales pipeline exposes Pacific Tech Distributors LLC... Could enable Vendor to go direct.",
+        "judge_reasoning": "Excellent detection and amendment. Leah flags 8.1 as Requires Clarification with clear reasoning about confidential information exposure and risk of Vendor going direct. The proposed revision adds comprehensive confidentiality protections, non-solicitation, and indefinite survival. This directly addresses GT key elements about limiting to aggregate data and adding confidentiality for End User data."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, EXCEPT THAT THIS EXCLUSION SHALL NOT APPLY TO (A) DAMAGES ARISING FROM A PARTY'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT, (B) A PARTY'S BREACH OF ITS CONFIDENTIALITY OBLIGATIONS UNDER ARTICLE 10, (C) A PARTY'S BREACH OF ITS INTELLECTUAL PROPERTY INDEMNIFICATION OBLIGATIONS, OR (D) RESELLER'S LIABILITY FOR UNAUTHORIZED USE OF VENDOR'S INTELLECTUAL PROPERTY.",
+        "effective_rationale_excerpt": "Asymmetric damage exposure. While mutual, exclusion disproportionately harms Pacific Tech Distributors LLC because Vendor's breaches (product defects, license failures) typically cause consequential damages...",
+        "judge_reasoning": "Excellent detection and amendment. Leah correctly identifies that the mutual exclusion is asymmetric in practical effect and proposes carve-outs for gross negligence, willful misconduct, confidentiality breaches, and IP indemnification - directly addressing all GT key elements. The analysis shows sophisticated understanding of the asymmetric impact on Reseller."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "9.3",
+      "tier": "T2",
+      "issue": "Termination effects - no sell-off period",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "9.4 Post-Termination Transition and Trailing Rights. (a) Upon termination or expiration of this Agreement, all End User licenses sold by Reseller prior to termination shall remain valid and enforceable for their full term. (b) Reseller shall continue to receive support from Vendor for such End Users pursuant to Article 7 for the duration of their license terms. (c) Reseller shall be entitled to commissions on any renewals or expansions of Products by End Users acquired by Reseller during the Term, for a period of twenty-four (24) months following termination... (d) Vendor shall provide reasonable transition assistance to Reseller for a period of sixty (60) days following termination...",
+        "effective_rationale_excerpt": "Termination provisions fail to address the fate of existing End User licenses, ongoing support obligations, renewal economics, or customer transition. New clause proposes post-termination transition and trailing rights.",
+        "judge_reasoning": "Excellent detection and comprehensive amendment. Leah identifies the gap in termination effects and proposes new Section 9.4 with post-termination transition provisions including license continuation, ongoing support, 24-month trailing commissions, and 60-day transition assistance. This exceeds GT key elements which only asked for 90-day sell-off and transition support."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "11.3 Vendor Indemnification. Vendor shall defend, indemnify, and hold harmless Reseller, its affiliates, and their respective officers, directors, employees, and agents from and against any and all third-party claims, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from or related to (a) any actual or alleged defect in the Products, including product liability claims, (b) any breach of Vendor's warranties under Section 11.1, (c) any claim that the Products infringe or misappropriate any third-party intellectual property rights, or (d) Vendor's gross negligence or willful misconduct. Reseller shall provide Vendor with prompt written notice of any such claim and reasonable cooperation in the defense thereof. Vendor's indemnification obligations under this Section shall not be subject to the liability limitations in Article 12.",
+        "effective_rationale_excerpt": "Gap in Vendor's indemnification obligations exposes Pacific Tech Distributors LLC to End User claims arising from product defects, IP infringement, or license issues without any Vendor support or defense obligation.",
+        "judge_reasoning": "Excellent detection and comprehensive new clause. Leah identifies the missing indemnification provision and proposes detailed Section 11.3 covering product defects, warranty breaches, IP infringement, and gross negligence - all GT key elements. The clause includes proper structure (defense + indemnification + hold harmless), notice requirements, and importantly carves out the liability cap for indemnification claims."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "New clause 10.2: Restrictions on Use of Reseller Information - addresses confidential treatment of End User information but does not specifically create GDPR/CCPA compliance framework.",
+        "effective_rationale_excerpt": "Section 8.1 requires Pacific Tech Distributors LLC to disclose sensitive customer and pipeline information without reciprocal non-use obligations or privacy protections.",
+        "judge_reasoning": "Partial detection. Leah's proposed Section 10.2 addresses data protection concerns for End User information disclosed under 8.1, with non-use, non-disclosure, and non-solicitation provisions. However, the GT issue specifically calls for GDPR/CCPA compliance requirements and data security obligations from Vendor, which are not addressed. The 10.2 proposal focuses on Vendor misuse of Reseller data rather than a comprehensive data protection framework."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor shall respond to escalated support requests within four (4) business hours and provide resolution or workaround within two (2) business days for severity-1 issues and five (5) business days for other issues.",
+        "effective_rationale_excerpt": "Support tier boundaries undefined. Division between 'first-level' and 'second-level' support lacks definition of scope, escalation criteria, response time commitments...",
+        "judge_reasoning": "Excellent detection and amendment. Leah flags 7.2 as Requires Clarification and proposes detailed amendments including: defined support tier boundaries (first-level: basic troubleshooting; second-level: advanced technical issues), escalation criteria, and specific SLA metrics (4-hour response, 2-day resolution for severity-1). This directly addresses all GT key elements about tiered SLAs and response times."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "part_a": {
+      "total_score": 23,
+      "max_score": 24,
+      "percentage": 95.8,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "detection_counts": {
+        "Y": 10,
+        "P": 2,
+        "N": 0,
+        "NMI": 1
+      },
+      "detection_by_tier": {
+        "T1": {"Y": 3, "P": 1, "N": 0, "NMI": 0},
+        "T2": {"Y": 6, "P": 1, "N": 0, "NMI": 0},
+        "T3": {"Y": 1, "P": 0, "N": 0, "NMI": 1}
+      },
+      "t1_gate_pass": true,
+      "t1_count": 4,
+      "t1_detected": 4,
+      "total_detection_points": 61.5,
+      "max_detection_points": 69,
+      "detection_percentage": 89.1,
+      "total_quality_points": 93,
+      "total_points": 154.5,
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true,
+      "notes": "Strong performance on both Part A (CP redline responses) and Part B (whole document). All T1 issues detected. Only GT-07 (5.2 prepayment) completely missed, which is a T3 item."
+    }
+  }
+}

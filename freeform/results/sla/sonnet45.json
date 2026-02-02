@@ -1,0 +1,1393 @@
+{
+  "meta": {
+    "contract": "sla",
+    "model_id": "sonnet45",
+    "evaluation_timestamp": "2026-01-25T18:40:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "Unlimited Licensee Liability",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-8.1 Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "DELETE entirely - this clause is unconscionable and creates unlimited exposure for Licensee while Licensor enjoys caps",
+        "effective_rationale_excerpt": "This clause is extraordinarily unfavorable and potentially unenforceable. It purports to impose 'unlimited liability' on Licensee for any breach, directly contradicting Section 10.2's liability cap for Licensor. This creates catastrophic asymmetric risk where Licensee has uncapped exposure while Licensor's liability is capped at 12 months of fees. Likely unconscionable.",
+        "judge_reasoning": "Sonnet45 fully identified the unlimited liability issue and recommended deletion of the entire clause. The detailed reasoning explicitly calls out the unconscionable asymmetry and contradiction with Licensor caps. This is a comprehensive detection."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "8.3",
+      "tier": "T1",
+      "issue": "Full AS-IS Disclaimer",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-8.3 Disclaimer",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, INCLUDING THE WARRANTIES IN SECTIONS 8.2, 9.1, AND OTHER EXPRESS WARRANTIES HEREIN, LICENSOR DISCLAIMS OTHER IMPLIED WARRANTIES TO THE EXTENT PERMITTED BY APPLICABLE LAW. HOWEVER, LICENSOR WARRANTS THAT: (A) IT HAS THE RIGHT TO GRANT THE LICENSE HEREIN; (B) THE SOFTWARE WILL NOT CONTAIN MALICIOUS CODE OR VIRUSES; AND (C) LICENSOR WILL PERFORM ITS OBLIGATIONS IN A PROFESSIONAL AND WORKMANLIKE MANNER CONSISTENT WITH INDUSTRY STANDARDS.",
+        "effective_rationale_excerpt": "Sweeping disclaimer of all implied warranties including merchantability and fitness for purpose. The 'AS IS' provision combined with no warranty of error-free or uninterrupted service leaves Licensee with virtually no protection. This contradicts the performance warranty in 8.2 and creates uncertainty about what protections actually exist.",
+        "judge_reasoning": "Sonnet45 detected the AS-IS disclaimer and proposed preserving express warranties while adding essential warranties for license rights, no malware, and professional performance. This directly addresses the GT concern about overriding statutory protections."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Consequential Damages Exclusion - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-10.1 Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS PROVIDED IN SECTIONS 10.2(b) AND 10.3, NEITHER PARTY SHALL BE LIABLE TO THE OTHER FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES... NOTWITHSTANDING THE FOREGOING, THIS LIMITATION SHALL NOT APPLY TO: (A) EITHER PARTY'S BREACH OF CONFIDENTIALITY OBLIGATIONS; (B) EITHER PARTY'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT; (C) LICENSOR'S INDEMNIFICATION OBLIGATIONS; (D) LICENSEE'S PAYMENT OBLIGATIONS; OR (E) LOSS OF LICENSEE DATA CAUSED BY LICENSOR'S FAILURE TO MAINTAIN ADEQUATE BACKUPS OR SECURITY MEASURES.",
+        "effective_rationale_excerpt": "Licensor excludes all indirect, consequential, and punitive damages including loss of profits and data. This is one-sided - no corresponding protection for Licensee. Combined with low liability cap, this means Licensee cannot recover for business interruption, data loss, or other consequential damages even if caused by Licensor's gross negligence.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed the one-sided exclusion by making it mutual with extensive carve-outs for confidentiality, gross negligence, indemnification, and data loss. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Low Liability Cap - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-10.2 Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "EACH PARTY'S TOTAL AGGREGATE LIABILITY... SHALL NOT EXCEED THE GREATER OF: (i) THE TOTAL SUBSCRIPTION FEES PAID BY LICENSEE TO LICENSOR IN THE TWENTY-FOUR (24) MONTHS PRECEDING THE CLAIM; OR (ii) FIVE HUNDRED THOUSAND DOLLARS ($500,000). (b) THE LIMITATIONS IN SUBSECTION (a) SHALL NOT APPLY TO: (i) EITHER PARTY'S INDEMNIFICATION OBLIGATIONS; (ii) EITHER PARTY'S BREACH OF CONFIDENTIALITY OBLIGATIONS; (iii) EITHER PARTY'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT...",
+        "effective_rationale_excerpt": "Licensor's total liability capped at 12 months of fees is grossly inadequate for potential damages from data breaches, service failures, or IP infringement. This cap applies regardless of cause (even gross negligence). For a low-cost subscription, this could be de minimis. No carve-outs for indemnification, confidentiality breaches, or data security failures.",
+        "judge_reasoning": "Sonnet45 fully addressed the low cap by proposing mutual 24-month cap with $500K floor plus extensive carve-outs. This comprehensively addresses all GT key elements including asymmetry, adequacy, and carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "12.4",
+      "tier": "T1",
+      "issue": "Asymmetric Assignment",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-12.4 Assignment",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Party may assign this Agreement without the other Party's prior written consent, which consent shall not be unreasonably withheld, conditioned, or delayed; provided, however, that either Party may assign this Agreement without consent: (a) to an affiliate or subsidiary; (b) to a successor in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of its assets or business... Licensor shall not assign this Agreement to a direct competitor of Licensee without Licensee's prior written consent.",
+        "effective_rationale_excerpt": "Asymmetric assignment rights: Licensee cannot assign without consent (even to affiliates or in merger/acquisition), but Licensor can assign 'without restriction'. This allows Licensor to sell to competitor or entity with lower service standards while Licensee remains bound. Licensee's business flexibility is severely constrained.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed the asymmetric assignment with mutual consent, M&A carve-outs, affiliate provisions, and competitor restriction. This fully addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "9.1 / 9.2",
+      "tier": "T1",
+      "issue": "Narrow Indemnification - No Licensee Protection Defined",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-9.1 Indemnification by Licensor",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall indemnify, defend, and hold harmless Licensee, its affiliates, and their respective officers, directors, employees, and agents from and against any third-party claims... alleging that the Software, Documentation, or any deliverables provided by Licensor under this Agreement, or Licensee's authorized use thereof, infringes or misappropriates any patent, copyright, trademark, or trade secret of such third party. Licensor's indemnification obligations include: (a) assuming full control of the defense and settlement of any such claim...",
+        "effective_rationale_excerpt": "Licensor indemnifies only for patent, copyright, and trademark infringement, excluding trade secret claims. No specification of defense obligations, settlement approval rights, or damages coverage. The phrase 'as provided by Licensor' could allow Licensor to avoid indemnity if Licensee modifies or combines Software.",
+        "judge_reasoning": "Sonnet45 comprehensively expanded indemnification to include trade secrets, defense obligations, settlement controls, and the classic remedy triad. A new 9.2 for limited Licensee indemnity is also proposed."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-5.1 Security Measures",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall implement and maintain administrative, technical, and physical safeguards that comply with industry-standard security frameworks, including at minimum SOC 2 Type II certification or equivalent. Such safeguards shall include: (a) encryption of Licensee Data in transit using TLS 1.2 or higher and at rest using AES-256 or equivalent; (b) multi-factor authentication for all administrative access; (c) regular security testing including annual penetration testing and quarterly vulnerability assessments...",
+        "effective_rationale_excerpt": "'Reasonable safeguards' is dangerously vague and provides no enforceable security standard. No reference to industry frameworks (SOC 2, ISO 27001), no audit rights, no breach notification obligations, and no specific technical controls required. This creates significant data security risk with no accountability mechanism for Licensee to verify compliance.",
+        "judge_reasoning": "Sonnet45 provided the most comprehensive security clause with SOC 2 requirement, specific encryption standards, MFA, pen testing, and 24-hour breach notification. This addresses all GT key elements and more."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "11.4",
+      "tier": "T1",
+      "issue": "No Data Export on Termination",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-11.4 Effect of Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee shall have a transition period of thirty (30) days during which Licensee may continue to access the Software on a read-only basis solely for purposes of retrieving Licensee Data and transitioning to alternative solutions; (b) within ten (10) business days of termination, Licensor shall provide Licensee with a complete export of all Licensee Data in standard, machine-readable formats (including CSV, JSON, or XML) at no additional charge; (c) Licensor shall retain Licensee Data for ninety (90) days following termination to allow Licensee to retrieve any data not included in the initial export...",
+        "effective_rationale_excerpt": "Upon termination, Licensee immediately loses all access to Software with no transition period or data retrieval window. No obligation for Licensor to provide data export assistance or maintain data for reasonable period. The requirement to 'return or destroy' Confidential Information is impractical for cloud-based data. No refund of prepaid fees for unused subscription period.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed data export with 30-day transition period, 10-day export obligation, 90-day retention, standard formats, and refund provisions. This is the most thorough treatment of this issue."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "2.1",
+      "tier": "T2",
+      "issue": "Non-Transferable License",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-2.1 Grant of License",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor hereby grants to Licensee a non-exclusive, non-transferable right to access and use the Software during the Subscription Term for Licensee's business purposes, including without limitation using the Software to provide services to Licensee's customers and clients, and to permit Licensee's affiliates and subsidiaries to access and use the Software under the same terms.",
+        "effective_rationale_excerpt": "License is non-exclusive, non-transferable, and non-sublicensable which severely restricts Licensee's flexibility. The limitation to 'internal business purposes' is undefined and could prevent legitimate uses such as providing services to clients or affiliates. No provision for Licensee to continue using the Software during dispute resolution or upon Licensor's breach.",
+        "judge_reasoning": "Sonnet45 detected the restrictive license and proposed extending to affiliates/subsidiaries and permitting customer-facing use. The definition of 'internal business purposes' is clarified. This fully addresses GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.1",
+      "tier": "T3",
+      "issue": "Annual Advance Payment",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 8.0,
+      "matched_redline_id": "Redline-3.1 Subscription Fees",
+      "evidence": {
+        "proposed_revision_excerpt": "all Subscription Fees are due and payable annually in advance within thirty (30) days of invoice date. Subscription Fees for the Initial Term are fixed and shall not increase. For each Renewal Term, Licensor may increase Subscription Fees... provided that any increase shall not exceed five percent (5%) annually or the percentage increase in the Consumer Price Index... If Licensor fails to meet the availability commitment in Section 4.1 for two consecutive months, Licensee may withhold payment...",
+        "effective_rationale_excerpt": "Fees are referenced as being in an 'applicable Order Form' but no Order Form is attached or incorporated. This creates enforceability uncertainty. No protection against mid-term price increases or fee changes. The annual advance payment structure creates significant cash flow exposure for Licensee without corresponding performance guarantees.",
+        "judge_reasoning": "Sonnet45 addressed the payment structure with price caps, withholding rights, and fixed initial term pricing, though doesn't change from annual to quarterly. Partial quality as it doesn't directly negotiate quarterly option."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-3.3 Late Fees",
+      "evidence": {
+        "proposed_revision_excerpt": "Any undisputed amounts not paid when due shall bear interest at the rate of the lesser of (i) the prime rate as published in the Wall Street Journal plus two percent (2%) per annum, or (ii) the maximum rate permitted by applicable law. If Licensor fails to provide service credits, refunds, or other payments due to Licensee within thirty (30) days of the due date, Licensee may offset such amounts against future Subscription Fees... No interest shall accrue during any good faith dispute regarding the amount owed.",
+        "effective_rationale_excerpt": "1.5% per month (18% annually) is excessive and punitive, particularly given the 30-day payment terms. No corresponding penalty for Licensor's failure to perform or provide credits. This creates asymmetric financial consequences where Licensee bears interest risk but Licensor has no comparable exposure for service failures.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed the late fee by reducing to prime+2%, adding reciprocal penalties, offset rights, and dispute protection. This addresses both GT key elements excellently."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Weak Uptime SLA",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-4.1 Availability",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall make the Software available 99.9% of the time during each calendar month (the 'Availability Commitment'), measured as the percentage of minutes in the month that the Software is available and accessible to Licensee. Scheduled maintenance windows (not to exceed four hours per month with at least seven days' prior notice) and Force Majeure Events as defined in Section 12.11 are excluded from availability calculations. If Licensor fails to meet the Availability Commitment in any month, Licensee shall receive a service credit equal to 10% of the monthly Subscription Fees for each 0.5% below the Availability Commitment.",
+        "effective_rationale_excerpt": "99.5% availability translates to approximately 3.6 hours of downtime per month, which is below industry standard for enterprise SaaS (typically 99.9% or higher). The exclusion for 'circumstances beyond Licensor's reasonable control' is undefined and could be abused. No service credits or remedies for failing to meet this already-low threshold.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed the weak SLA by raising to 99.9%, adding specific measurement methodology, tiered service credits, and termination rights for persistent failures. This is excellent."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "Limited Support Hours",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-4.2 Support",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall provide technical support to Licensee as follows: (a) For Critical Issues (complete Software outage or security breach affecting Licensee Data): 24/7 support with initial response within one (1) hour and resolution efforts to commence immediately; (b) For High Priority Issues (major functionality impaired affecting multiple users): support during extended hours (6:00 AM to 8:00 PM in Licensee's time zone, Monday through Friday) with initial response within four (4) hours and resolution target of twenty-four (24) hours; (c) For Standard Issues...",
+        "effective_rationale_excerpt": "Support limited to 'normal business hours' in Pacific Time excludes Licensee if operating in different time zones or requiring 24/7 support. 'Commercially reasonable efforts' is vague and unenforceable. Four-hour response time is for response only, not resolution, providing no guarantee of actual problem-solving. No escalation procedures or priority support for critical issues.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed support with 24/7 for critical issues, severity tiers with specific response and resolution times, and escalation paths. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Feedback Ownership",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-6.2 Feedback",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee grants Licensor a non-exclusive, worldwide, royalty-free license to use and incorporate such Feedback solely for the purpose of improving the Software and related services provided to Licensee and other licensees. Licensor shall not use Feedback to develop competing products or services, or disclose Feedback to Licensee's competitors. Licensee retains all ownership rights in any Feedback that constitutes Licensee's confidential information, proprietary methodologies, or trade secrets.",
+        "effective_rationale_excerpt": "Licensor obtains unlimited, perpetual rights to all Feedback without compensation or attribution. This is a unilateral transfer of Licensee's intellectual property that could include valuable business insights, feature requests, or proprietary methodologies. No restriction on Licensor using Feedback to benefit competitors. Licensee receives nothing in exchange.",
+        "judge_reasoning": "Sonnet45 detected the overbroad feedback ownership and converted to a limited license with competitor restrictions and IP protection. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "11.1",
+      "tier": "T2",
+      "issue": "Auto-Renewal Terms",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-11.1 Term",
+      "evidence": {
+        "proposed_revision_excerpt": "unless either Party provides written notice of non-renewal at least thirty (30) days prior to the end of the then-current term. Licensor shall provide Licensee with written notice at least ninety (90) days prior to each renewal date, which notice shall include any changes to Subscription Fees or material terms for the upcoming Renewal Term. If Licensor increases Subscription Fees by more than the amount permitted under Section 3.1, materially reduces Software functionality, or materially changes the terms of this Agreement, Licensee may terminate this Agreement upon written notice provided within thirty (30) days of receiving Licensor's renewal notice...",
+        "effective_rationale_excerpt": "Automatic renewal with 60-day notice requirement creates lock-in risk. Licensee must remember to provide notice 60 days before anniversary or face another year of commitment. No provision for termination if Licensor materially changes terms, increases prices, or degrades service. This favors Licensor's revenue continuity over Licensee's flexibility.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed auto-renewal by reducing notice to 30 days, requiring 90-day advance notice from Licensor of changes, and adding termination rights for material changes. Excellent."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "2.3",
+      "tier": "T2",
+      "issue": "Usage Restrictions Overbroad",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-2.3 Usage Restrictions",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee shall not, and shall not permit any third party to: (a) copy, modify, or create derivative works of the Software, except as necessary for backup and disaster recovery purposes; (b) reverse engineer, disassemble, or decompile the Software, except to the extent such restriction is prohibited by applicable law or as necessary for security testing and interoperability purposes; (c) directly resell, redistribute, or transfer the Software as a standalone product to unrelated third parties... For clarity, Licensee may use the Software to provide services to its customers and clients, and such use shall not be deemed use 'for the benefit of any third party'",
+        "effective_rationale_excerpt": "Restrictions are excessively broad and one-sided. Prohibition on using Software 'for the benefit of any third party' conflicts with normal business operations where Licensee may use tools to serve customers. The reverse engineering prohibition prevents Licensee from security auditing or interoperability testing. No corresponding restrictions on Licensor's ability to compete using insights gained from Licensee's use.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed usage restrictions with carve-outs for backup, security testing, interoperability, and customer-facing use. This fully addresses the GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "DPA Optional / No Timing",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-5.3 Data Processing",
+      "evidence": {
+        "proposed_revision_excerpt": "the Data Processing Agreement attached hereto as Exhibit B shall govern such processing. If Exhibit B is not attached as of the Effective Date, the Parties shall execute a Data Processing Agreement within thirty (30) days of the Effective Date that includes at minimum: (a) compliance with GDPR, CCPA, and other applicable data protection laws; (b) processing only on Licensee's documented instructions; (c) confidentiality obligations for personnel; (d) appropriate technical and organizational security measures; (e) use of sub-processors only with prior written consent...",
+        "effective_rationale_excerpt": "Defers critical GDPR/privacy compliance to a separate agreement that may not exist. No timeline for executing the DPA, no indication of terms, and no fallback if parties cannot agree. This creates regulatory compliance risk for Licensee, particularly if processing EU personal data. The clause should be self-executing or the DPA should be attached.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed the DPA issue by requiring attachment as exhibit or 30-day execution with detailed minimum terms including GDPR/CCPA compliance and interim provisions. Excellent."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "8.2",
+      "tier": "T2",
+      "issue": "Performance Warranty Weak",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-8.2 Performance Warranty",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor warrants that the Software will perform in material compliance with the Documentation and will be free from material defects during the Subscription Term. 'Material compliance' means the Software performs the core functions described in the Documentation without errors that significantly impair Licensee's ability to use the Software for its intended purposes. If the Software fails to meet this warranty, Licensor shall, at no additional charge to Licensee: (a) use diligent efforts to correct the non-conformity within thirty (30) days of receiving written notice from Licensee; or (b) if Licensor is unable to correct the non-conformity within such thirty-day period, provide Licensee with a workaround... If Licensor fails to correct the non-conformity or provide an acceptable workaround within sixty (60) days, Licensee may terminate this Agreement and receive a pro-rata refund...",
+        "effective_rationale_excerpt": "Warranty only requires Software perform 'substantially in accordance' with Documentation, which is vague and provides minimal protection. Exclusive remedy is Licensor's 'commercially reasonable efforts to correct' with no timeline, success guarantee, or refund right. This leaves Licensee with no meaningful recourse for non-performing Software.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed the weak warranty by defining material compliance, adding 30-day cure period, workaround obligation, and termination with refund for persistent failures. Excellent."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "12.10",
+      "tier": "T2",
+      "issue": "Survival Incomplete",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.10 Survival",
+      "evidence": {
+        "proposed_revision_excerpt": "The following provisions shall survive any termination or expiration of this Agreement: (a) Article 5.2 (Data Ownership); (b) Article 6.1 (Licensor IP), but not Article 6.2 (Feedback) or 6.3 (Aggregated Data); (c) Article 7 (Confidentiality), for a period of five (5) years following termination; (d) Article 8 (Warranties and Disclaimers), only to the extent relating to breaches occurring during the Subscription Term; (e) Article 9 (Indemnification); (f) Article 10 (Limitation of Liability); (g) Section 11.4 (Effect of Termination)... Additionally, Licensee's rights to retrieve Licensee Data under Section 11.4 and Licensor's obligations to return or delete Licensee Data shall survive for the periods specified in Section 11.4.",
+        "effective_rationale_excerpt": "Survival clause preserves Articles 6 (IP - including unfavorable Feedback clause), 7 (Confidentiality), 8 (Warranties - including disclaimers), 9 (Indemnification), 10 (Limitation of Liability), and 12 (General). This means unfavorable liability limitations and warranty disclaimers survive indefinitely while Licensee's obligations continue. No corresponding survival of Licensee's rights or Licensor's performance obligations.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed survival by adding Data Ownership (5.2), limiting Feedback/Aggregated Data survival, adding time limits, and including termination effect provisions. Excellent."
+      }
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Audit Rights",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-5.6 Audit Rights",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee or its designated third-party auditor may, upon at least thirty (30) days' prior written notice and during normal business hours, audit Licensor's security controls, data handling practices, and compliance with this Agreement, including the security measures required under Section 5.1, data processing obligations under Section 5.3, and confidentiality obligations under Article 7. Such audits may be conducted up to once per year, or more frequently if: (a) required by applicable law or regulation; (b) reasonably necessary following a security breach or suspected breach... In lieu of Licensee-conducted audits, Licensor may provide Licensee with a current SOC 2 Type II report...",
+        "effective_rationale_excerpt": "No right for Licensee to audit Licensor's security, compliance, or data handling practices. This prevents Licensee from verifying Licensor's compliance with security obligations (5.1), data processing requirements (5.3), and confidentiality obligations (7.1). Creates verification gap and regulatory risk.",
+        "judge_reasoning": "Sonnet45 proposed a comprehensive standalone audit rights clause with annual audits, breach-triggered audits, SOC 2 alternative, and cost allocation for non-compliance. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Business Continuity",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-4.5 Business Continuity and Disaster Recovery",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall maintain and test a comprehensive business continuity and disaster recovery plan designed to ensure continuity of the Software and protection of Licensee Data in the event of a disaster, system failure, or other disruption. Such plan shall include: (a) Recovery Time Objective (RTO) of no more than four (4) hours, meaning the Software shall be restored to operation within four hours of any unplanned outage; (b) Recovery Point Objective (RPO) of no more than one (1) hour, meaning no more than one hour of Licensee Data shall be lost in any disaster scenario; (c) redundant systems and data centers in geographically diverse locations...",
+        "effective_rationale_excerpt": "No disaster recovery or business continuity obligations. If Licensor experiences catastrophic failure, Licensee has no assurance of recovery timeframes or data preservation. This creates existential risk for Licensee if dependent on Software for critical operations.",
+        "judge_reasoning": "Sonnet45 proposed a comprehensive business continuity clause with specific RTO (4 hours), RPO (1 hour), geographic redundancy, backup requirements, and quarterly testing. This is the most thorough treatment."
+      }
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Force Majeure",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.11 Force Majeure",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Party shall be liable for any failure or delay in performing its obligations under this Agreement (except payment obligations) to the extent such failure or delay is caused by a Force Majeure Event. 'Force Majeure Event' means an event beyond a Party's reasonable control, including acts of God, natural disasters, war, terrorism, civil unrest, labor disputes, epidemics, pandemics, government actions, or failures of third-party telecommunications or utility services, provided that such event could not have been prevented by reasonable precautions and cannot be circumvented through the use of alternate sources, workarounds, or other reasonable means... If a Force Majeure Event continues for more than thirty (30) consecutive days, the unaffected Party may terminate...",
+        "effective_rationale_excerpt": "No force majeure clause defining what events excuse performance and what obligations continue. Section 4.1 references 'circumstances beyond Licensor's reasonable control' but provides no framework. This creates uncertainty about rights and obligations during pandemics, natural disasters, cyberattacks, or other extraordinary events.",
+        "judge_reasoning": "Sonnet45 proposed a comprehensive force majeure clause with defined events, exclusions, notice requirements, mitigation obligations, and 30-day termination right. Excellent coverage."
+      }
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Vendor Insurance Requirements",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.12 Insurance",
+      "evidence": {
+        "proposed_revision_excerpt": "Throughout the Subscription Term and for a period of two (2) years thereafter, Licensor shall maintain, at its own expense, the following insurance coverage with insurers having an A.M. Best rating of at least A-:VII: (a) Commercial General Liability insurance with limits of not less than $2,000,000 per occurrence and $4,000,000 aggregate; (b) Cyber Liability and Data Breach insurance with limits of not less than $5,000,000 per occurrence and aggregate, covering liability for data breaches, unauthorized access, and failure of security; (c) Technology Errors and Omissions (E&O) insurance with limits of not less than $2,000,000 per occurrence and aggregate...",
+        "effective_rationale_excerpt": "No requirement for Licensor to maintain cyber liability, errors & omissions, or general liability insurance. This creates collectability risk if Licensor causes damages but lacks resources to pay. Standard in enterprise SaaS agreements to ensure Licensor can satisfy indemnification and liability obligations.",
+        "judge_reasoning": "Sonnet45 proposed comprehensive insurance requirements with CGL ($2M/$4M), Cyber ($5M), E&O ($2M), additional insured status, and certificate requirements. This is the most thorough insurance clause."
+      }
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "6.3",
+      "tier": "T3",
+      "issue": "Aggregated Data Use",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-6.3 Aggregated Data",
+      "evidence": {
+        "proposed_revision_excerpt": "provided that: (a) such data is aggregated with data from at least twenty-five (25) other licensees; (b) anonymization is performed using industry-standard techniques that prevent re-identification, including k-anonymity with k>=25; (c) such data does not identify Licensee, any individual, or any information specific to Licensee's business operations, customers, or competitive position; (d) Licensor shall not attempt to re-identify anonymised data or combine it with other data sources to identify Licensee; (e) Licensor shall not use aggregated data to develop products or services that compete with Licensee's business; and (f) Licensor shall not sell, license, or disclose aggregated data to Licensee's competitors or to third parties for marketing purposes. Licensee may audit Licensor's anonymization processes annually...",
+        "effective_rationale_excerpt": "Licensor can collect and use 'aggregated, anonymised data' without defining aggregation/anonymization standards. Modern re-identification techniques can defeat anonymization, creating privacy and competitive intelligence risks. No audit rights to verify anonymization. Licensor could use this data to compete against Licensee or sell to Licensee's competitors.",
+        "judge_reasoning": "Sonnet45 proposed the most comprehensive aggregated data protections with k-anonymity requirements, re-identification prohibition, competitor restrictions, and audit rights. Excellent."
+      }
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "12.2",
+      "tier": "T3",
+      "issue": "Arbitration Required",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-12.2 Dispute Resolution",
+      "evidence": {
+        "proposed_revision_excerpt": "(a) Negotiation. The Parties shall attempt in good faith to resolve any dispute arising out of or relating to this Agreement through negotiation between senior executives of each Party. Either Party may initiate negotiations by providing written notice to the other Party, and the Parties shall meet within fifteen (15) days thereafter. (b) Arbitration. If the Parties are unable to resolve the dispute through negotiation within thirty (30) days, either Party may elect to submit the dispute to binding arbitration... or to pursue litigation in accordance with subsection (c)... (d) Exceptions. Notwithstanding the foregoing, either Party may seek injunctive or other equitable relief in any court of competent jurisdiction to protect its intellectual property rights or Confidential Information...",
+        "effective_rationale_excerpt": "Binding arbitration in San Francisco eliminates Licensee's right to jury trial and appeal. San Francisco venue is geographically unfavorable if Licensee is located elsewhere, creating travel costs and inconvenience. AAA Commercial Rules can be expensive. No provision for small claims court, emergency relief, or IP disputes. Arbitration confidentiality could prevent Licensee from establishing precedent.",
+        "judge_reasoning": "Sonnet45 comprehensively addressed arbitration with negotiation step, optional arbitration vs litigation, flexible venue, injunctive relief carve-out, and small claims option. Excellent."
+      }
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "4.3",
+      "tier": "T3",
+      "issue": "Short Maintenance Notice",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-4.3 Maintenance",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor may perform scheduled maintenance on the Software during mutually agreed maintenance windows, which shall be scheduled during Licensee's off-peak hours to the extent reasonably practicable. Licensor shall provide Licensee with at least seven (7) calendar days' prior written notice of any scheduled maintenance that may affect availability, including the expected duration and scope of impact. Scheduled maintenance shall not exceed four (4) hours per month in aggregate. Emergency maintenance required to address security vulnerabilities or critical system failures may be performed with shorter notice...",
+        "effective_rationale_excerpt": "48 hours' notice for scheduled maintenance may be insufficient for Licensee to prepare, particularly for maintenance affecting critical business operations. No limits on frequency or duration of maintenance windows. No requirement that maintenance occur during Licensee's off-peak hours.",
+        "judge_reasoning": "Sonnet45 addressed maintenance notice by extending to 7 calendar days, adding off-peak scheduling, limiting monthly duration to 4 hours, and defining emergency exceptions. This fully addresses the GT concern."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Authorised Users",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to explicitly ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Definition includes employees, contractors, and agents but lacks clarity on whether Licensee can determine authorization scope unilaterally. The phrase \"authorised by Licensee\" provides some control, "
+    },
+    {
+      "clause": "1.2",
+      "issue_summary": "Definition of Confidential Information",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to narrow scop",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad definition using \"reasonably should be understood\" standard creates subjective interpretation risk. No explicit carve-outs for information Licensee generates independently or information that be"
+    },
+    {
+      "clause": "1.9",
+      "issue_summary": "Definition of Updates",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require all",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Definition limits Updates to those made available \"at no additional charge\" which means Licensor can withhold critical updates, upgrades, or security patches by simply charging for them. This creates "
+    },
+    {
+      "clause": "2.1",
+      "issue_summary": "Grant of License",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to define \"int",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "License is non-exclusive, non-transferable, and non-sublicensable which severely restricts Licensee's flexibility. The limitation to \"internal business purposes\" is undefined and could prevent legitim"
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Usage Restrictions",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to narrow rest",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Restrictions are excessively broad and one-sided. Prohibition on using Software \"for the benefit of any third party\" conflicts with normal business operations where Licensee may use tools to serve cus"
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Subscription Fees",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to incorporate",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Fees are referenced as being in an \"applicable Order Form\" but no Order Form is attached or incorporated. This creates enforceability uncertainty. No protection against mid-term price increases or fee"
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Late Payment Interest",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to reduce inte",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "1.5% per month (18% annually) is excessive and punitive, particularly given the 30-day payment terms. No corresponding penalty for Licensor's failure to perform or provide credits. This creates asymme"
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Tax Responsibility",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to limit Licen",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensee bears all tax responsibility except those on Licensor's net income. This is overly broad and could include taxes that should be Licensor's responsibility such as sales taxes in jurisdictions "
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Availability Commitment",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to increase av",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "99.5% availability translates to approximately 3.6 hours of downtime per month, which is below industry standard for enterprise SaaS (typically 99.9% or higher). The exclusion for \"circumstances beyon"
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Support Obligations",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to provide 24/",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Support limited to \"normal business hours\" in Pacific Time excludes Licensee if operating in different time zones or requiring 24/7 support. \"Commercially reasonable efforts\" is vague and unenforceabl"
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Maintenance Windows",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require 7 d",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "48 hours' notice for scheduled maintenance may be insufficient for Licensee to prepare, particularly for maintenance affecting critical business operations. No limits on frequency or duration of maint"
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Security Measures",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require spe",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Reasonable safeguards\" is dangerously vague and provides no enforceable security standard. No reference to industry frameworks (SOC 2, ISO 27001), no audit rights, no breach notification obligations,"
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Data Processing Agreement",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to attach DPA ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Defers critical GDPR/privacy compliance to a separate agreement that may not exist. No timeline for executing the DPA, no indication of terms, and no fallback if parties cannot agree. This creates reg"
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Feedback Ownership",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to limit Feedb",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensor obtains unlimited, perpetual rights to all Feedback without compensation or attribution. This is a unilateral transfer of Licensee's intellectual property that could include valuable business"
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Aggregated Data Rights",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to define anon",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensor can collect and use \"aggregated, anonymised data\" without defining aggregation/anonymization standards. Modern re-identification techniques can defeat anonymization, creating privacy and comp"
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Confidentiality Obligations",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify 3-5",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual confidentiality obligations appear balanced but lack temporal scope (how long obligations last post-termination) and remedies for breach. \"Strict confidence\" is undefined. No specification of s"
+    },
+    {
+      "clause": "7.3",
+      "issue_summary": "Confidentiality Exclusions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify bur",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard exclusions but (d) independently developed requires proving negative (that Confidential Information was not used), which is practically impossible. This shifts burden to receiving party and c"
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Unlimited Liability Clause",
+      "leah_classification": "❌",
+      "leah_action": "DELETE entirely - th",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clause is extraordinarily unfavorable and potentially unenforceable. It purports to impose \"unlimited liability\" on Licensee for any breach, directly contradicting Section 10.2's liability cap fo"
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Performance Warranty",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to define \"sub",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Warranty only requires Software perform \"substantially in accordance\" with Documentation, which is vague and provides minimal protection. Exclusive remedy is Licensor's \"commercially reasonable effort"
+    },
+    {
+      "clause": "8.3",
+      "issue_summary": "Warranty Disclaimer",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to preserve im",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Sweeping disclaimer of all implied warranties including merchantability and fitness for purpose. The \"AS IS\" provision combined with no warranty of error-free or uninterrupted service leaves Licensee "
+    },
+    {
+      "clause": "8.4",
+      "issue_summary": "Beta Features Disclaimer",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require opt",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Beta features provided \"as is\" without any warranty gives Licensor ability to push untested, potentially harmful features to production environment with zero accountability. No opt-out mechanism, no d"
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "IP Indemnification by Licensor",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include tra",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensor indemnifies only for patent, copyright, and trademark infringement, excluding trade secret claims. No specification of defense obligations, settlement approval rights, or damages coverage. Th"
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Missing Licensee Indemnification",
+      "leah_classification": "🆕",
+      "leah_action": "ADD limited indemnif",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No reciprocal indemnification obligation from Licensee to Licensor is specified. While this appears favorable, the absence creates uncertainty and could lead to implied obligations or future disputes."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Exclusion of Consequential Damages",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to make exclus",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensor excludes all indirect, consequential, and punitive damages including loss of profits and data. This is one-sided - no corresponding protection for Licensee. Combined with low liability cap, t"
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Liability Cap",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to increase ca",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensor's total liability capped at 12 months of fees is grossly inadequate for potential damages from data breaches, service failures, or IP infringement. This cap applies regardless of cause (even "
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Auto-Renewal Terms",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to reduce noti",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Automatic renewal with 60-day notice requirement creates lock-in risk. Licensee must remember to provide notice 60 days before anniversary or face another year of commitment. No provision for terminat"
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Termination for Cause",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add immedia",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day cure period may be too long if Licensor commits material breach affecting Licensee's business operations. No provision for immediate termination for certain breaches (e.g., security breach, una"
+    },
+    {
+      "clause": "11.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to provide 30-",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Upon termination, Licensee immediately loses all access to Software with no transition period or data retrieval window. No obligation for Licensor to provide data export assistance or maintain data fo"
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to use License",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Delaware law may be unfavorable depending on Licensee's location. Delaware is generally pro-business but may not provide strongest consumer/licensee protections. No consideration of Licensee's jurisdi"
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Mandatory Arbitration",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to make arbitr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Binding arbitration in San Francisco eliminates Licensee's right to jury trial and appeal. San Francisco venue is geographically unfavorable if Licensee is located elsewhere, creating travel costs and"
+    },
+    {
+      "clause": "12.4",
+      "issue_summary": "Assignment Restrictions",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to allow Licen",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Asymmetric assignment rights: Licensee cannot assign without consent (even to affiliates or in merger/acquisition), but Licensor can assign \"without restriction\". This allows Licensor to sell to compe"
+    },
+    {
+      "clause": "12.5",
+      "issue_summary": "Entire Agreement",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to attach all ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard integration clause but references \"Order Forms and exhibits\" that are not attached or defined. This creates uncertainty about what constitutes the complete agreement. No specification of prec"
+    },
+    {
+      "clause": "12.10",
+      "issue_summary": "Survival Provisions",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to add surviva",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Survival clause preserves Articles 6 (IP - including unfavorable Feedback clause), 7 (Confidentiality), 8 (Warranties - including disclaimers), 9 (Indemnification), 10 (Limitation of Liability), and 1"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Missing Data Breach Notification",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause requiring",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No obligation for Licensor to notify Licensee of security breaches affecting Licensee Data. This creates regulatory compliance risk for Licensee under GDPR, CCPA, and other data protection laws that r"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Missing Service Level Credits",
+      "leah_classification": "🆕",
+      "leah_action": "ADD service level cr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No service level credits or remedies for Licensor's failure to meet availability, support, or performance commitments. Section 4.1's 99.5% availability has no teeth. This means Licensee pays full pric"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Missing Data Portability",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause requiring",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No obligation for Licensor to provide data export or portability in standard formats. This creates lock-in risk and could make migration to alternative solutions prohibitively expensive. Critical for "
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Missing Audit Rights",
+      "leah_classification": "🆕",
+      "leah_action": "ADD annual audit rig",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No right for Licensee to audit Licensor's security, compliance, or data handling practices. This prevents Licensee from verifying Licensor's compliance with security obligations (5.1), data processing"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Missing Force Majeure",
+      "leah_classification": "🆕",
+      "leah_action": "ADD force majeure cl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No force majeure clause defining what events excuse performance and what obligations continue. Section 4.1 references \"circumstances beyond Licensor's reasonable control\" but provides no framework. Th"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Missing Change Control",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause requiring",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No process for material changes to Software functionality, features, or terms. Licensor could unilaterally remove features, change interface, or degrade service without notice or recourse. This create"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Missing Insurance Requirements",
+      "leah_classification": "🆕",
+      "leah_action": "ADD requirement for ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No requirement for Licensor to maintain cyber liability, errors & omissions, or general liability insurance. This creates collectability risk if Licensor causes damages but lacks resources to pay. Sta"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Missing Business Continuity",
+      "leah_classification": "🆕",
+      "leah_action": "ADD clause requiring",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No disaster recovery or business continuity obligations. If Licensor experiences catastrophic failure, Licensee has no assurance of recovery timeframes or data preservation. This creates existential r"
+    },
+    {
+      "clause": "1.1 Authorised Users",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original definition lacks clarity regarding Licensee's unilateral control over authorization decisions and provides no framework for managing user counts. Adding \"in its sole discretion\" explicitl"
+    },
+    {
+      "clause": "1.2 Confidential Information",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original subjective standard \"reasonably should be understood to be confidential\" creates significant interpretation risk and could capture ordinary business information never intended as confiden"
+    },
+    {
+      "clause": "1.9 Updates",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original definition allows Licensor to withhold critical security patches and bug fixes by simply charging for them, creating unacceptable security and operational risks for Licensee. Security vul"
+    },
+    {
+      "clause": "2.1 Grant of License",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original restriction to \"internal business purposes\" is dangerously vague and could prohibit Licensee from using the Software to serve its customers, which is likely the primary business purpose. "
+    },
+    {
+      "clause": "2.3 Usage Restrictions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original restrictions are excessively broad and prevent legitimate business uses. Prohibiting all copying prevents necessary backup and disaster recovery activities essential for business continui"
+    },
+    {
+      "clause": "3.1 Subscription Fees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause references an Order Form that does not exist, creating enforceability uncertainty and preventing parties from understanding their financial obligations. Incorporating the Order For"
+    },
+    {
+      "clause": "3.3 Late Fees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original 1.5% monthly rate (18% annually) is excessive and punitive compared to commercial lending rates, creating disproportionate financial consequences for Licensee. The asymmetry where only Li"
+    },
+    {
+      "clause": "3.4 Taxes",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original broad language makes Licensee responsible for \"all taxes\" which could include taxes that are legally Licensor's responsibility, such as sales taxes in jurisdictions where Licensor has nex"
+    },
+    {
+      "clause": "4.1 Availability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original 99.5% availability (3.6 hours monthly downtime) falls below enterprise SaaS industry standards of 99.9% and provides no consequences for failures. \"Commercially reasonable efforts\" is une"
+    },
+    {
+      "clause": "4.2 Support",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original support limited to Pacific Time business hours is inadequate for Licensee operating in different time zones or requiring urgent assistance. Four-hour response time applies only to respons"
+    },
+    {
+      "clause": "4.3 Maintenance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original 48-hour notice may be insufficient for Licensee to prepare for maintenance affecting critical operations, and unlimited maintenance frequency and duration could cause excessive disruption"
+    },
+    {
+      "clause": "5.1 Security Measures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The vague \"reasonable safeguards\" standard provides no enforceable security requirements and prevents Licensee from verifying compliance. Given the sensitivity of Licensee Data and regulatory requirem"
+    },
+    {
+      "clause": "5.3 Data Processing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Deferring critical data protection obligations to a future agreement that may never be executed creates significant regulatory compliance risk for Licensee. If Licensor processes EU personal data with"
+    },
+    {
+      "clause": "6.2 Feedback",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause effects an unlimited, uncompensated transfer of Licensee's intellectual property to Licensor, including potentially valuable business insights, proprietary methodologies, and compe"
+    },
+    {
+      "clause": "6.3 Aggregated Data",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original vague \"aggregated, anonymised\" standard provides no technical requirements and modern re-identification techniques can defeat weak anonymization, creating privacy and competitive intellig"
+    },
+    {
+      "clause": "8.1 Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clause is unconscionable and likely unenforceable as it imposes unlimited liability on Licensee for any breach while Section 10.2 caps Licensor's liability at 12 months of fees. This creates cata"
+    },
+    {
+      "clause": "8.2 Performance Warranty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original \"substantially in accordance\" standard is vague and unenforceable, providing minimal protection. The exclusive remedy of \"commercially reasonable efforts\" with no timeline or success guar"
+    },
+    {
+      "clause": "8.3 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The sweeping \"AS IS\" disclaimer combined with elimination of all implied warranties leaves Licensee with virtually no protection beyond the weak express warranty in Section 8.2. Disclaiming merchantab"
+    },
+    {
+      "clause": "8.4 Beta Features",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause allows Licensor to push untested, potentially harmful features into production with zero accountability. No opt-in requirement means Licensee could be subjected to beta features wi"
+    },
+    {
+      "clause": "9.1 Indemnification by Licensor",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original indemnification is incomplete and leaves critical gaps. It excludes trade secret claims, which are increasingly common in software disputes. No specification of defense obligations, settl"
+    },
+    {
+      "clause": "10.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original one-sided exclusion protects only Licensor while leaving Licensee fully exposed to consequential damages claims. This asymmetry is unfair and creates imbalanced risk allocation. The exclu"
+    },
+    {
+      "clause": "10.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original 12-month cap is grossly inadequate for potential damages from data breaches, service failures, or IP infringement, particularly for low-cost subscriptions where 12 months of fees could be"
+    },
+    {
+      "clause": "11.1 Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 60-day non-renewal notice requirement creates lock-in risk and favors Licensor's revenue continuity over Licensee's flexibility. Licensee must remember to provide notice well in advance or face an"
+    },
+    {
+      "clause": "11.2 Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The uniform 30-day cure period is too long for critical breaches like security incidents or confidential information disclosure, which require immediate action. The undefined \"material breach\" standar"
+    },
+    {
+      "clause": "11.4 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The immediate termination of access upon expiration or termination leaves Licensee with no ability to retrieve its data or transition to alternative solutions, creating business continuity risk and po"
+    },
+    {
+      "clause": "12.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Delaware law may be unfavorable or inconvenient depending on Licensee's location. Applying Delaware law when Licensee is located elsewhere creates additional costs and complexity for Licensee to obtai"
+    },
+    {
+      "clause": "12.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mandatory arbitration in San Francisco eliminates Licensee's right to jury trial and appeal, and creates geographic disadvantage if Licensee is located elsewhere. AAA Commercial Rules can be expensive"
+    },
+    {
+      "clause": "12.4 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The asymmetric assignment rights where Licensee cannot assign without consent but Licensor can assign without restriction is grossly unfair. This allows Licensor to sell to a competitor or entity with"
+    },
+    {
+      "clause": "12.5 Entire Agreement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause references Order Forms and exhibits that are not attached, creating uncertainty about what constitutes the complete agreement. No order of precedence is specified if documents conf"
+    },
+    {
+      "clause": "12.10 Survival",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The blanket survival of entire articles is overbroad and perpetuates unfavorable terms indefinitely. Specifically, surviving Article 6 includes the unfavorable Feedback clause (6.2) and Aggregated Dat"
+    },
+    {
+      "clause": "9.2 Indemnification by Licensee",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 9.1 as new Section 9.2 (renumber existing sections accordingly). The absence of reciprocal indemnification from Licensee creates an imbalance and potential uncertainty."
+    },
+    {
+      "clause": "5.4 Security Breach Notification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 5.4 after Section 5.3. The absence of breach notification obligations creates critical regulatory compliance risk for Licensee. Under GDPR, CCPA, and numerous other da"
+    },
+    {
+      "clause": "4.4 Service Level Credits",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 4.4 after Section 4.3. The absence of service level credits means Section 4.1's availability commitment has no enforcement mechanism or financial consequences. License"
+    },
+    {
+      "clause": "5.5 Data Portability and Export",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 5.5 after the new Section 5.4. The absence of data portability obligations creates significant lock-in risk and prevents Licensee from migrating to alternative solutio"
+    },
+    {
+      "clause": "5.6 Audit Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 5.6 after the new Section 5.5. The absence of audit rights prevents Licensee from verifying Licensor's compliance with critical security, data processing, and confiden"
+    },
+    {
+      "clause": "12.11 Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 12.11 after Section 12.10. The absence of a force majeure clause creates uncertainty about rights and obligations during extraordinary events like pandemics, natural d"
+    },
+    {
+      "clause": "2.4 Changes to Software",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 2.4 after Section 2.3. The absence of change control provisions allows Licensor to unilaterally remove features, change functionality, or degrade service without notic"
+    },
+    {
+      "clause": "12.12 Insurance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 12.12 after the new Section 12.11. The absence of insurance requirements creates collectability risk if Licensor causes damages but lacks resources to pay. Insurance r"
+    },
+    {
+      "clause": "4.5 Business Continuity and Disaster Recovery",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 4.5 after the new Section 4.4. The absence of business continuity and disaster recovery obligations creates existential risk for Licensee if Licensor experiences catas"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 26,
+      "P": 0,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 8,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 12,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_count": 8,
+    "total_detection_points": 130.0,
+    "total_quality_points": 232,
+    "total_points": 362.0,
+    "additional_issues_count": 80
+  }
+}

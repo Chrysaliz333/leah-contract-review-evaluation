@@ -1,0 +1,508 @@
+{
+  "gt_metadata": {
+    "contract_id": "JV_MOU_InnovateTech",
+    "contract_type": "JV",
+    "parties": {
+      "party_a": "InnovateTech Solutions Corp.",
+      "party_b": "Quantum Dynamics LLC"
+    },
+    "representing_party": "Quantum Dynamics LLC (Party B)",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "revision_notes": "v3.0: Tier changes: GT-04: T1 -> T2 Removed: GT-07. Previous: 2.3_corrected_2026-01-14_v3_LOCKED",
+    "schema_version": "3.0",
+    "v3_migration_date": "2026-01-14",
+    "v4_enhancement_date": "2026-01-20"
+  },
+  "ground_truth": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "No Deadlock Resolution - Article 8 [Reserved]",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Article 8 Deadlock is entirely [Reserved]",
+        "No mechanism to break 50/50 deadlock on Steering Committee",
+        "Combined with 4.1 unanimous consent creates trap",
+        "Parties can be indefinitely stuck",
+        "Should add escalation: mediation → swing vote → buyout",
+        "Consider buy-sell (shotgun) provision"
+      ],
+      "contract_text": "8.1 [Reserved]",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Rights",
+      "expected_classification": "❌",
+      "key_elements": [
+        "No put/call options",
+        "No buyout mechanism at fair market value",
+        "No exit path defined",
+        "5-year term with no early exit",
+        "Should add put right after Year 3",
+        "Should add call right on change of control"
+      ],
+      "contract_text": "N/A - No exit or buyout provisions exist in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": [],
+      "required_concepts": [
+        "deadlock",
+        "buyout",
+        "exit mechanism"
+      ]
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent + No Tiebreaker",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "All material decisions require unanimous consent",
+        "50/50 structure makes deadlock inevitable",
+        "Includes budgets, contracts, business plan changes",
+        "Combined with [Reserved] deadlock = paralysis risk",
+        "Should add tiered decision rights",
+        "Consider supermajority for some decisions"
+      ],
+      "contract_text": "All material decisions regarding the Joint Venture, including but not limited to annual budgets, capital expenditures exceeding $50,000, entry into material contracts, and changes to the business plan, shall require the unanimous written consent of both Parties.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Broad Post-Term Non-Compete",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "2-year post-term non-compete in quantum AI",
+        "Applies even if terminated for cause by other party",
+        "Broad geographic scope ('Territory' undefined in contract)",
+        "Could block core business for Party B (quantum computing)",
+        "Should narrow scope to specific products/markets",
+        "Should exclude wrongful termination scenarios"
+      ],
+      "contract_text": "During the Term and for a period of two (2) years thereafter, neither Party shall, directly or indirectly, engage in any business that competes with the Joint Venture's quantum AI business within the Territory without the prior written consent of the other Party.",
+      "expected_action": "DELETE",
+      "acceptable_actions": [
+        "DELETE"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.2",
+      "tier": "T1",
+      "issue": "Developed IP Consent Lock-Up",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Neither party can license/transfer Developed IP without consent",
+        "Creates commercialization veto",
+        "Blocks market opportunities if parties disagree",
+        "Combined with deadlock [Reserved] = IP stuck",
+        "Should add licensing rights with revenue share",
+        "Should add buyout right for IP"
+      ],
+      "contract_text": "All Developed IP shall be jointly owned by the Parties in equal shares. Neither Party may license or transfer Developed IP to third parties without the consent of the other Party.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "expected_classification": "❌",
+      "key_elements": [
+        "No cap on damages between parties",
+        "Exposes parties to unlimited liability",
+        "Fundamental risk allocation missing",
+        "Should add mutual liability cap",
+        "Should add consequential damages exclusion",
+        "Should add carve-outs for IP, fraud"
+      ],
+      "contract_text": "N/A - No limitation of liability clause exists in contract Articles 1-12",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Capital Call Dilution Risk",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Failure to fund capital call = proportionate dilution",
+        "No dispute mechanism before dilution",
+        "No cure period",
+        "Could be used strategically to dilute partner",
+        "Should add cure period (30-60 days)",
+        "Should add arbitration before dilution"
+      ],
+      "contract_text": "Additional capital contributions may be required upon approval of both Parties. Any Party failing to make a required capital contribution shall have its ownership interest diluted proportionately.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Improvement Ownership Unclear on Termination",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Improvements to Contributed IP owned by contributor",
+        "JV gets perpetual license during Term",
+        "What happens to license on termination unclear",
+        "10.4 silent on improvement licenses",
+        "Should clarify post-termination license scope"
+      ],
+      "contract_text": "Any improvements to a Party's Contributed IP that are developed using Joint Venture resources shall be owned by the contributing Party, subject to a perpetual license to the Joint Venture.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "General Manager Authority Unbounded",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "GM has operational authority within approved budgets",
+        "No reporting requirements specified",
+        "No removal process defined",
+        "No oversight mechanism",
+        "Should add quarterly reporting",
+        "Should add removal process"
+      ],
+      "contract_text": "The Parties shall jointly appoint a General Manager to oversee the day-to-day operations of the Joint Venture. The General Manager shall have authority to make operational decisions within approved budgets and policies.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "6.1",
+      "tier": "T2",
+      "issue": "Contributed IP License Gaps",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Non-exclusive, royalty-free license for the Purpose during the Term",
+        "License scope limited to 'the Purpose'",
+        "No wind-down period post-termination",
+        "No sublicensing restrictions to third parties",
+        "Should add transition period",
+        "Should clarify sublicensing rules"
+      ],
+      "contract_text": "Each Party hereby grants to the Joint Venture a non-exclusive, royalty-free license to use its Contributed IP for the Purpose during the Term.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.4",
+      "tier": "T2",
+      "issue": "Termination IP Allocation Undefined",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Developed IP divided 'as agreed' - no fallback",
+        "If parties can't agree, IP stuck",
+        "Combined with deadlock [Reserved] = no resolution",
+        "Should add default allocation (50/50 license-back)",
+        "Should add buyout at FMV"
+      ],
+      "contract_text": "Upon termination: ... (b) Developed IP shall be divided or licensed as agreed...",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Indemnification Regime",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "No mutual indemnity for breach",
+        "No IP infringement indemnity",
+        "No third-party claims coverage",
+        "Should add mutual indemnification",
+        "Should add IP warranties and indemnity"
+      ],
+      "contract_text": "N/A - No indemnification provisions exist in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Change of Control Provision",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Party A could be acquired by competitor",
+        "No notice requirement on change of control",
+        "No termination rights",
+        "No buyout option at FMV",
+        "Should add CoC notice and consent",
+        "Should add termination/buyout rights"
+      ],
+      "contract_text": "N/A - No change of control provision exists in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vague Reserve Rights",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "'Reasonable reserves' determined by Steering Committee",
+        "Could delay distributions indefinitely",
+        "Subject to deadlock risk",
+        "Should add cap on reserves (% of profits)"
+      ],
+      "contract_text": "Distributions shall be made quarterly, subject to the retention of reasonable reserves for working capital and anticipated expenses as determined by the Steering Committee.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "11.1-11.3",
+      "tier": "T3",
+      "issue": "Multi-Step Dispute Resolution",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Negotiation (no timeline) → Mediation (30 days) → Arbitration",
+        "Could delay urgent resolution",
+        "San Francisco venue",
+        "Consider adding emergency arbitration option"
+      ],
+      "contract_text": "11.1: The Parties shall attempt to resolve any dispute through good faith negotiations... 11.2: If negotiation fails within thirty (30) days, the Parties shall submit the dispute to mediation. 11.3: If mediation fails, disputes shall be resolved by binding arbitration in San Francisco, California.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "1.4",
+      "tier": "T3",
+      "issue": "No Conditions Precedent for JV Entity",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "JV Entity formation is optional ('if the Parties elect')",
+        "No timeline for entity formation decision",
+        "Capital and IP could flow before entity formed",
+        "Should add formation timeline",
+        "Should add conditions precedent"
+      ],
+      "contract_text": "\"JV Entity\" means the legal entity to be formed by the Parties to conduct the business of the Joint Venture, if the Parties elect to form such entity.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "JV involves quantum AI technology development",
+        "May process personal data (employee, researcher, customer data)",
+        "No GDPR/CCPA compliance requirements stated",
+        "No data security obligations between parties",
+        "Should add data protection clause if personal data processed",
+        "Should clarify controller/processor roles"
+      ],
+      "contract_text": "N/A - No data protection or privacy provisions exist in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "5-year survival period for confidentiality",
+        "Quantum technology trade secrets have indefinite commercial value",
+        "5 years insufficient to protect core IP",
+        "Should add perpetual protection for trade secrets",
+        "Should differentiate trade secrets from general confidential info"
+      ],
+      "contract_text": "7.2 Survival. The confidentiality obligations shall survive termination of this MOU for a period of five (5) years.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    }
+  ],
+  "tier_summary": {
+    "T1": {
+      "count": 5,
+      "weight": 8,
+      "issues": [
+        "GT-01 (8.1 - No Deadlock Resolution - Artic)",
+        "GT-02 (N/A (Missing) - No Exit/Buyout Rights)",
+        "GT-03 (4.1 - Unanimous Consent + No Tiebrea)",
+        "GT-05 (6.2 - Developed IP Consent Lock-Up)",
+        "GT-06 (N/A (Missing) - No Limitation of Liability)"
+      ]
+    },
+    "T2": {
+      "count": 10,
+      "weight": 5,
+      "issues": [
+        "GT-04 (9.1 - Broad Post-Term Non-Compete)",
+        "GT-08 (3.4 - Capital Call Dilution Risk)",
+        "GT-09 (6.3 - Improvement Ownership Unclear )",
+        "GT-10 (4.3 - General Manager Authority Unbo)",
+        "GT-11 (6.1 - Contributed IP License Gaps)",
+        "GT-12 (10.4 - Termination IP Allocation Unde)",
+        "GT-13 (N/A (Missing) - No Indemnification Regime)",
+        "GT-14 (N/A (Missing) - No Change of Control Provision)",
+        "GT-18 (N/A (Missing) - No Data Protection / Privacy C)",
+        "GT-19 (7.2 - Confidentiality Survival Inade)"
+      ]
+    },
+    "T3": {
+      "count": 3,
+      "weight": 1,
+      "issues": [
+        "GT-15 (5.2 - Vague Reserve Rights)",
+        "GT-16 (11.1-11.3 - Multi-Step Dispute Resolution)",
+        "GT-17 (1.4 - No Conditions Precedent for JV)"
+      ]
+    },
+    "weighted_max": 93
+  },
+  "validation_notes": {
+    "duplicate_removed": [
+      "Original :001 and :002 were both 8.1 No Deadlock Resolution - consolidated into GT-01"
+    ],
+    "renumbered": "All GT IDs renumbered sequentially from GT-01 to GT-17",
+    "contract_text_added": "Added verbatim contract quotes for all items",
+    "contract_verification": [
+      "8.1 [Reserved] confirmed",
+      "No limitation of liability article exists (Articles 1-12)",
+      "No indemnification article exists",
+      "No change of control provision exists"
+    ]
+  }
+}

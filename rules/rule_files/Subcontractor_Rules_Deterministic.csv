@@ -1,0 +1,113 @@
+Rule Name,Rule
+Indemnity - Broad-form to Proportionate Fault Amendment,"IDENTIFY
+Identify all clauses that require Subcontractor to indemnify, defend, hold harmless, or reimburse Contractor. Look for language such as ""shall indemnify,"" ""agrees to defend,"" ""hold harmless from,"" ""reimburse for,"" or similar expressions.
+
+ANALYSE
+Analyse each indemnification clause to determine whether broad-form triggers are present requiring Subcontractor to indemnify for Contractor's own negligence. Look for: (a) ""whether caused in whole or in part by the negligence of the Contractor""; (b) ""whether caused in whole or in part by the negligence of the Indemnified Party""; (c) ""whether or not caused by the negligence of the Indemnified Parties""; (d) ""including the negligence of any Indemnified Party""; (e) ""regardless of fault""; (f) ""arising out of or relating to the Work, regardless of fault.""
+
+ACTION
+Based on your analysis, apply the following rules: (a) If indemnification is already limited to Subcontractor's proportionate fault, make no changes. (b) If any broad-form trigger phrase is present, amend by replacing the broad-form trigger with: ""to the extent caused by the negligent acts or omissions of Subcontractor, its employees, agents, or anyone for whose acts Subcontractor may be liable."" Insert this phrase immediately after ""arising out of or relating to"" and before the description of covered claims. Do not delete the entire indemnification clause."
+Insurance - Non-standard Coverage Deletion,"IDENTIFY
+Identify all insurance requirements within the agreement. Look for sections titled ""Insurance,"" ""Insurance Requirements,"" or clauses containing terms such as ""shall procure and maintain,"" ""coverage,"" ""policy,"" or ""insurance limits.""
+
+ANALYSE
+Analyse each insurance requirement to determine whether non-standard coverage types are specified, including: (a) Pollution Liability or Environmental Liability; (b) Cyber Liability or Cyber Insurance; (c) Railroad Protective Liability; (d) Aircraft Liability; (e) Marine Liability. Note: Commercial General Liability, Automobile Liability, Workers' Compensation, Employer's Liability, Umbrella/Excess Liability, and Professional Liability are standard and should not be deleted.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If only standard coverage types are required, make no changes. (b) If Pollution Liability is required, delete that line item. (c) If Cyber Liability is required, delete that line item. (d) If Railroad Protective Liability is required, delete that line item. (e) If Aircraft Liability is required, delete that line item. (f) If Marine Liability is required, delete that line item. Delete only the non-standard coverage line items; do not delete standard coverage requirements."
+Additional Insured Endorsements - Form Amendment,"IDENTIFY
+Identify all clauses addressing Additional Insured endorsements on Commercial General Liability, Automobile Liability, or Umbrella policies. Look for language requiring Contractor or Owner to be named as ""additional insureds"" and for references to specific CG form numbers such as ""CG 2010"" or ""CG 2037.""
+
+ANALYSE
+Analyse each Additional Insured requirement to determine which CG form edition dates are specified: (a) Unacceptable forms: CG 2010 11/85, CG 2010 10/01, CG 2037 10/01; (b) Acceptable forms: CG 2010 04/13, CG 2037 04/13, CG 2010 07/04, CG 2037 07/04.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If acceptable forms are already specified, make no changes. (b) If CG 2010 11/85 is specified, amend to replace with ""CG 2010 04/13."" (c) If CG 2010 10/01 is specified, amend to replace with ""CG 2010 04/13."" (d) If CG 2037 10/01 is specified, amend to replace with ""CG 2037 04/13."" Amend only the form edition numbers; do not delete the Additional Insured requirement."
+Insurance Documentation - Amendment,"IDENTIFY
+Identify all clauses specifying what insurance documentation Subcontractor must provide. Look for language addressing ""certificates of insurance,"" ""certified copies,"" ""full policies,"" ""policy copies,"" or ""insurance documentation.""
+
+ANALYSE
+Analyse each documentation requirement to determine whether: (a) only Certificates of Insurance and copies of endorsements are required; (b) certified copies of full insurance policies are required; (c) full and complete policy copies are required.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If only Certificates of Insurance and copies of endorsements are required, make no changes. (b) If ""certified copies of full insurance policies"" is required, amend to replace that phrase with ""Certificates of Insurance and copies of endorsements evidencing the required coverages."" (c) If ""full and complete policy copies"" is required, amend to replace that phrase with ""Certificates of Insurance and copies of endorsements evidencing the required coverages."" Amend only the documentation description; do not delete the documentation requirement."
+Professional Liability Insurance Limits - Amendment,"IDENTIFY
+Identify Professional Liability insurance requirements, also called Errors and Omissions or E&O insurance. Look for clauses specifying Professional Liability limits in the insurance requirements section.
+
+ANALYSE
+Analyse each Professional Liability requirement to determine: (a) the per-claim limit specified; (b) the aggregate limit specified; (c) whether limits exceed three million dollars per claim or three million dollars aggregate.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If Professional Liability limits are two million dollars per claim and three million dollars aggregate or less, make no changes. (b) If per-claim limits exceed three million dollars, amend to replace the per-claim amount with ""two million dollars ($2,000,000) per claim."" (c) If aggregate limits exceed three million dollars, amend to replace the aggregate amount with ""three million dollars ($3,000,000) aggregate."" Amend only the dollar amounts; do not delete the Professional Liability requirement."
+Umbrella Excess Liability Limits - Amendment,"IDENTIFY
+Identify Umbrella Liability or Excess Liability insurance requirements. Look for clauses specifying Umbrella or Excess Liability limits in the insurance requirements section.
+
+ANALYSE
+Analyse each Umbrella/Excess Liability requirement to determine: (a) the per-occurrence limit specified; (b) the aggregate limit specified; (c) whether limits exceed ten million dollars.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If Umbrella/Excess Liability limits are five million dollars or less, make no changes. (b) If limits exceed ten million dollars, amend to replace the amounts with ""five million dollars ($5,000,000) per occurrence and aggregate."" Amend only the dollar amounts; do not delete the Umbrella/Excess Liability requirement."
+Alternate Employer Endorsement - Deletion,"IDENTIFY
+Identify any requirements for Alternate Employer Endorsement on Workers' Compensation or Employer's Liability policies. Look for language such as ""Alternate Employer Endorsement,"" ""AEE,"" ""WC 00 03 01,"" or clauses naming Contractor as an ""alternate employer.""
+
+ANALYSE
+Analyse whether an Alternate Employer Endorsement is required on Workers' Compensation policies or whether Contractor must be named as an alternate employer.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no Alternate Employer Endorsement is required, make no changes. (b) If an Alternate Employer Endorsement is required, delete the requirement entirely. (c) If Contractor must be named as an alternate employer, delete that requirement. Delete only Alternate Employer Endorsement requirements; do not delete standard Workers' Compensation requirements."
+Liquidated Damages - Direct to Pass-through Amendment,"IDENTIFY
+Identify all clauses addressing liquidated damages for delay, late completion, or failure to meet milestones. Look for language such as ""liquidated damages,"" ""delay damages,"" ""per day,"" ""per calendar day,"" or specific dollar amounts tied to schedule performance.
+
+ANALYSE
+Analyse each liquidated damages provision to determine whether liquidated damages are direct (Contractor imposes a specific dollar amount directly on Subcontractor) or pass-through (flow from Owner to Contractor to Subcontractor proportionate to fault).
+
+ACTION
+Based on your analysis, apply the following rules: (a) If liquidated damages are already pass-through only, limited to Subcontractor's proportionate share attributable to its fault, make no changes. (b) If liquidated damages are direct, with a specific dollar amount per day imposed by Contractor on Subcontractor, amend by replacing the direct liquidated damages provision with: ""Subcontractor shall only be liable for liquidated damages to the extent Contractor is assessed such damages by Owner under the Prime Contract and then only to the extent of Subcontractor's proportionate share attributable to its fault."""
+Consequential Damages - Exposure to Mutual Waiver Amendment,"IDENTIFY
+Identify all clauses addressing liability for consequential, indirect, incidental, special, or punitive damages. Look for language such as ""consequential damages,"" ""indirect damages,"" ""lost profits,"" ""loss of use,"" ""loss of business opportunity,"" ""special damages,"" or ""punitive damages.""
+
+ANALYSE
+Analyse each damages clause to determine whether Subcontractor is exposed to consequential, indirect, incidental, special, or punitive damages without a mutual waiver protecting both parties.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If a mutual waiver of consequential damages already exists protecting both parties equally, make no changes. (b) If Subcontractor is exposed to consequential damages liability without mutual protection, amend by replacing the one-sided exposure language with: ""Neither party shall be liable to the other for any consequential, indirect, incidental, special, or punitive damages arising out of or relating to this Agreement."""
+Personal Guarantee - Deletion,"IDENTIFY
+Identify any clauses requiring personal guarantees from individuals, including owners, principals, officers, shareholders, or members of Subcontractor. Look for language such as ""personal guarantee,"" ""individual guarantee,"" ""guarantor,"" ""unconditionally guarantee,"" ""irrevocably guarantee,"" or ""Principal hereby guarantees.""
+
+ANALYSE
+Analyse whether individuals are required to personally guarantee Subcontractor's obligations.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no personal guarantee is required, make no changes. (b) If a personal guarantee is required from any individual, delete the entire personal guarantee provision. (c) If a guarantor signature block is present, delete it. Delete personal guarantee provisions entirely."
+Union and PLA Obligations - Deletion,"IDENTIFY
+Identify any clauses requiring compliance with union agreements, Project Labor Agreements, Letters of Assent, or Collective Bargaining Agreements. Look for language such as ""Project Labor Agreement,"" ""PLA,"" ""Letter of Assent,"" ""LOA,"" ""Collective Bargaining Agreement,"" ""CBA,"" ""union signatory,"" or ""prevailing wage.""
+
+ANALYSE
+Analyse whether Subcontractor is required to: (a) become a union signatory; (b) execute a Project Labor Agreement; (c) execute a Letter of Assent; (d) comply with union requirements incompatible with non-union status.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no union or PLA requirements exist, make no changes. (b) If a Project Labor Agreement execution is required, delete that requirement. (c) If a Letter of Assent execution is required, delete that requirement. (d) If union signatory status is required, delete that requirement. Delete only the union/PLA requirements; do not delete general labour compliance provisions."
+Restrictive Covenants - Non-compete Deletion,"IDENTIFY
+Identify any non-compete or non-competition provisions. Look for language such as ""non-compete,"" ""non-competition,"" ""shall not compete,"" ""competitive activities,"" or clauses restricting Subcontractor from working with competitors or in certain geographic areas.
+
+ANALYSE
+Analyse whether a non-compete clause exists restricting Subcontractor from competing or working with certain parties.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no non-compete clause exists, make no changes. (b) If a non-compete clause exists, delete the non-compete provision entirely regardless of duration or geographic scope. Delete only non-compete provisions; do not delete non-solicitation provisions."
+Restrictive Covenants - MFN Deletion,"IDENTIFY
+Identify any Most Favored Nations or pricing parity provisions. Look for language such as ""Most Favored Nations,"" ""MFN,"" ""pricing parity,"" ""lowest price,"" or clauses requiring Subcontractor to offer its lowest prices.
+
+ANALYSE
+Analyse whether a Most Favored Nations or pricing parity clause exists.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no MFN or pricing parity clause exists, make no changes. (b) If a Most Favored Nations or pricing parity clause exists, delete the MFN provision entirely. Delete only MFN provisions; do not delete other pricing terms."
+Vaccination Requirements - Deletion,"IDENTIFY
+Identify any clauses requiring mandatory vaccination for personnel, including COVID-19 vaccination, influenza vaccination, or any other vaccination requirements. Look for language such as ""vaccination,"" ""vaccinated,"" ""proof of vaccination,"" ""immunization,"" or ""unvaccinated workers.""
+
+ANALYSE
+Analyse whether mandatory vaccination is required for Subcontractor's personnel, including: (a) COVID-19 vaccination; (b) influenza vaccination; (c) any other mandatory vaccination; (d) verification of vaccination status; (e) prohibition of unvaccinated workers.
+
+ACTION
+Based on your analysis, apply the following rules: (a) If no mandatory vaccination is required, make no changes. (b) If COVID-19 vaccination is required, delete the vaccination requirement. (c) If influenza vaccination is required, delete the vaccination requirement. (d) If verification of vaccination status is required, delete that requirement. (e) If unvaccinated workers are prohibited, delete that prohibition. Delete only mandatory vaccination provisions; do not delete optional health and safety provisions."

@@ -1,0 +1,248 @@
+{
+  "gt_metadata": {
+    "mode": "freeform_stacking",
+    "contract_id": "Partnership_VentureAlliance",
+    "contract_type": "Partnership Agreement",
+    "parties": {
+      "partner_a": "Venture Alliance Capital Partners LP",
+      "partner_b": "Growth Dynamics LLC"
+    },
+    "representing_party": "Partner B",
+    "gt_version": "1.0",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-23",
+    "schema_version": "1.0",
+    "note": "Freeform Stacking: Leah reviews entire document including CP redlines. Representing party is SAME as Freeform Baseline."
+  },
+  "input_files": {
+    "clause_analysis": {
+      "pattern": "*_Cl*.doc",
+      "format": "HTML",
+      "used_for": [
+        "part_a",
+        "part_b"
+      ]
+    },
+    "redline_document": {
+      "pattern": "*_Redline_*.docx",
+      "format": "Word with tracked changes",
+      "used_for": [
+        "part_c"
+      ]
+    }
+  },
+  "part_a_cp_redlines": [
+    {
+      "test_id": "PARTNERSHIP_01",
+      "clause_ref": "Management",
+      "section": "4.1",
+      "original_text": "The Partners shall jointly manage the Partnership Activities. Major decisions require unanimous consent of both Partners.",
+      "cp_redline": "Partner A shall have sole decision-making authority for all Partnership Activities. Partner B shall be consulted but Partner A retains final authority on all major decisions.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "The Partners shall jointly manage the Partnership Activities. Major decisions require unanimous consent of both Partners.",
+      "key_elements": [
+        "1) Revert to joint management (not Partner A sole control) 2) Maintain unanimous consent requirement 3) Equal decision-making power for both partners"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline required",
+        "May add: escalation mechanism for deadlock",
+        "May add: specific categories requiring unanimous consent",
+        "May add: swing vote or mediation process"
+      ],
+      "unacceptable_responses": [
+        "Partner A sole decision-making authority",
+        "Consultative role only for Partner B",
+        "Any asymmetric control favouring Partner A",
+        "Removal of unanimous consent requirement"
+      ],
+      "reasoning_must_address": "Equal partnership means equal control; sole authority for Partner A destroys partnership balance; Partner B has equal capital at risk; 'consulted but not deciding' is unacceptable in 50/50 partnership",
+      "category": "5. Governance & Compliance",
+      "subcategory": "Decision-making authority"
+    },
+    {
+      "test_id": "PARTNERSHIP_02",
+      "clause_ref": "Profit Sharing",
+      "section": "6.1",
+      "original_text": "All profits and losses from Co-Investments shall be allocated fifty percent (50%) to Partner A and fifty percent (50%) to Partner B, regardless of the relative capital contributions made by each Partner to any particular Co-Investment.",
+      "cp_redline": "All profits shall be allocated sixty percent (60%) to Partner A and forty percent (40%) to Partner B. All losses shall be allocated first to Partner B until Partner B's capital account is exhausted, then to Partner A.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "All profits and losses from Co-Investments shall be allocated fifty percent (50%) to Partner A and fifty percent (50%) to Partner B, regardless of the relative capital contributions made by each Partner to any particular Co-Investment.",
+      "key_elements": [
+        "1) Revert to 50/50 profit allocation 2) Revert to equal loss allocation 3) No preferential profit distribution to Partner A 4) No waterfall with Partner B absorbing losses first"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline required",
+        "May add: preferred returns for larger contributor",
+        "May add: carried interest for performance",
+        "Pro rata allocation based on capital if contributions differ"
+      ],
+      "unacceptable_responses": [
+        "60/40 profit split favouring Partner A",
+        "Losses allocated to Partner B first",
+        "Any asymmetric economic allocation",
+        "Waterfall structures favouring Partner A"
+      ],
+      "reasoning_must_address": "60/40 profit split gives Partner A 50% more profit than Partner B with no justification; 'losses to B first' structure is predatory; equal partnership requires equal economics unless contributions differ; baseline already has mismatch issue (50/50 regardless of capital)",
+      "category": "6. General Risk & Fairness",
+      "subcategory": "Economic risk allocation"
+    },
+    {
+      "test_id": "PARTNERSHIP_03",
+      "clause_ref": "Confidentiality",
+      "section": "9.1",
+      "original_text": "Each Partner shall maintain in strict confidence all Confidential Information of the Partnership, including without limitation deal flow, investment terms, portfolio company information, financial projections, and the terms of this Agreement. Neither Partner shall disclose any Confidential Information to any third party without the prior written consent of the other Partner.",
+      "cp_redline": "Partner B shall maintain in strict confidence all Confidential Information of the Partnership, including without limitation deal flow, investment terms, portfolio company information, financial projections, and the terms of this Agreement. Partner A may disclose Confidential Information to third parties as Partner A deems appropriate for Partnership business.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Each Partner shall maintain in strict confidence all Confidential Information of the Partnership. Neither Partner shall disclose any Confidential Information to any third party without the prior written consent of the other Partner.",
+      "key_elements": [
+        "1) Mutual confidentiality obligations (both partners bound) 2) No unilateral disclosure by Partner A 3) Consent requirement for both partners 4) Symmetric obligations"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline required",
+        "May add: carve-outs for permitted recipients (investors, advisors) if mutual",
+        "May add: standard legal/regulatory exceptions if mutual",
+        "May permit disclosure with notice (not consent) if mutual"
+      ],
+      "unacceptable_responses": [
+        "One-sided confidentiality (only Partner B bound)",
+        "Partner A can disclose freely",
+        "Unilateral determination of 'appropriate' disclosure",
+        "Any asymmetric confidentiality obligations"
+      ],
+      "reasoning_must_address": "One-sided confidentiality destroys trust; Partner A could share deal flow with competitors; Partner B's proprietary information exposed; 'appropriate for Partnership business' is unlimited discretion; mutual obligations are fundamental to partnership",
+      "category": "3. Intellectual Property & Data",
+      "subcategory": "Confidentiality scope"
+    },
+    {
+      "test_id": "PARTNERSHIP_04",
+      "clause_ref": "Termination",
+      "section": "12.2",
+      "original_text": "Either party may terminate this Agreement upon written notice if the other party materially breaches this Agreement and fails to cure such breach within sixty (60) days after written notice specifying the breach.",
+      "cp_redline": "Partner A may terminate this Agreement immediately upon written notice if Partner B materially breaches this Agreement. Partner B may terminate only if Partner A materially breaches and fails to cure within ninety (90) days after written notice.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Either party may terminate this Agreement upon written notice if the other party materially breaches this Agreement and fails to cure such breach within sixty (60) days after written notice specifying the breach.",
+      "key_elements": [
+        "1) Symmetric termination rights (both partners equal) 2) Equal cure period (60 days for both) 3) Material breach standard for both 4) No immediate termination without cure opportunity"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline required",
+        "May add: immediate termination for fraud or criminal conduct (both partners)",
+        "May add: definition of material breach",
+        "May reduce cure period if mutual (e.g., 30 days for both)"
+      ],
+      "unacceptable_responses": [
+        "Immediate termination for Partner A, no cure period",
+        "Asymmetric cure periods (90 days for Partner B vs none for Partner A)",
+        "Different termination standards for partners",
+        "Any advantage to Partner A on termination"
+      ],
+      "reasoning_must_address": "Asymmetric termination creates power imbalance; immediate termination without cure opportunity is harsh; 90-day cure for Partner B vs immediate for Partner A is grossly unfair; equal partnership requires equal termination rights; both partners have investments and obligations at risk",
+      "category": "4. Term, Termination & Exit",
+      "subcategory": "Termination rights"
+    }
+  ],
+  "part_b_whole_document": {
+    "reference": {
+      "source_file": "../../freeform/ground_truth/partnership.json",
+      "gt_version": "3.0_v4-enhanced_LOCKED",
+      "total_issues": 12,
+      "tier_breakdown": {
+        "T1": 6,
+        "T2": 4,
+        "T3": 2
+      },
+      "weighted_max": 70
+    },
+    "note": "Part B uses the Freeform Baseline GT. Same contract, same issues. Evaluate whether Leah still detects these risks when CP redlines are present."
+  },
+  "part_c_document_quality": {
+    "scope": "Every redline Leah produces in the output .docx",
+    "per_redline_capture": {
+      "redline_id": "Sequential ID (e.g., RL-01)",
+      "location": "Clause/section reference",
+      "type": "CP_RESPONSE | NEW_REDLINE",
+      "linked_gt_id": "GT ID if NEW_REDLINE addresses Part B issue, else null",
+      "action_stated": "ACCEPT | MODIFY | REJECT | ADD | DELETE",
+      "redline_exists": "Y | N",
+      "action_executed": "ACCEPT | MODIFY | REJECT | ADD | DELETE | NONE",
+      "execution_match": "Y | N | NA (NA if redline_exists=N)",
+      "is_wholesale": "Y | N",
+      "precision_score": "0-2 (aligned pair average)",
+      "insertion_accuracy": "0-2 | NA (aligned pair average, NA for DELETE/simple swaps)",
+      "notes": "Optional observations"
+    },
+    "aggregation_rules": {
+      "binary_fields": "Most confident determination wins",
+      "quality_fields": "Averaged across evaluations; median used for divergent scores",
+      "na_handling": "Exclude from averages"
+    }
+  },
+  "scoring_summary": {
+    "part_a": {
+      "items": 4,
+      "max_per_item": 6,
+      "max_total": 24,
+      "dimensions": {
+        "action": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "revision": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "reasoning": {
+          "max": 2,
+          "weight": "20%"
+        }
+      },
+      "pass_threshold": ">=70% AND 0 critical failures",
+      "critical_failures": [
+        "REJECT-only scored as ACCEPT",
+        "ACCEPT-only scored as REJECT",
+        "Revision contains unacceptable element"
+      ]
+    },
+    "part_b": {
+      "items": 12,
+      "weighted_max": 70,
+      "tier_weights": {
+        "T1": 8,
+        "T2": 5,
+        "T3": 1
+      },
+      "pass_threshold": "T1 Gate PASS AND >=70%",
+      "t1_gate": "Any T1 miss = FAIL"
+    },
+    "part_c": {
+      "per_redline_max": 6,
+      "dimensions": {
+        "precision": "0-2",
+        "insertion_accuracy": "0-2 or NA"
+      },
+      "metrics": [
+        "Wholesale Rate",
+        "Execution Mismatch Count",
+        "Missing Redline Count",
+        "Avg Precision",
+        "Avg Insertion Accuracy"
+      ],
+      "separate_reporting": [
+        "CP_RESPONSE",
+        "NEW_REDLINE"
+      ]
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "gt_metadata": {
+    "mode": "freeform_stacking",
+    "contract_id": "Reseller_TechDistributors",
+    "contract_type": "Reseller Agreement",
+    "parties": {
+      "vendor": "CloudTech Solutions Inc.",
+      "reseller": "Pacific Tech Distributors LLC"
+    },
+    "representing_party": "Reseller",
+    "gt_version": "1.0",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-23",
+    "schema_version": "1.0",
+    "note": "Freeform Stacking: Leah reviews entire document including CP redlines. Representing party is SAME as Freeform Baseline."
+  },
+  "input_files": {
+    "clause_analysis": {
+      "pattern": "*_Cl*.doc",
+      "format": "HTML",
+      "used_for": [
+        "part_a",
+        "part_b"
+      ]
+    },
+    "redline_document": {
+      "pattern": "*_Redline_*.docx",
+      "format": "Word with tracked changes",
+      "used_for": [
+        "part_c"
+      ]
+    }
+  },
+  "part_a_cp_redlines": [
+    {
+      "test_id": "RESELLER_01",
+      "clause_ref": "Pricing",
+      "section": "4.1",
+      "original_text": "Reseller shall purchase Products at the prices set forth in Exhibit B, which reflect a discount from Vendor's list prices. Vendor may modify Product prices from time to time upon thirty (30) days' prior written notice. Price changes shall apply to all orders placed after the effective date of such changes.",
+      "cp_redline": "Reseller shall purchase Products at the prices set forth in Exhibit B, which reflect a discount from Vendor's list prices. Vendor may modify Product prices from time to time upon seven (7) days' prior written notice. Price changes shall apply retroactively to all orders not yet fulfilled.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Vendor may modify Product prices from time to time upon thirty (30) days' prior written notice. Price changes shall apply to all orders placed after the effective date of such changes.",
+      "key_elements": [
+        "1) Revert to 30-day notice period (not 7 days) 2) Remove retroactive application 3) Price changes apply only to orders placed after effective date 4) Adequate planning time for Reseller"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline required",
+        "May negotiate: 60-90 day notice period",
+        "May add: price cap (CPI or fixed %)",
+        "May add: termination right on unacceptable increase"
+      ],
+      "unacceptable_responses": [
+        "7-day notice period",
+        "Retroactive price changes",
+        "Application to unfulfilled orders",
+        "Notice period under 30 days"
+      ],
+      "reasoning_must_address": "7 days inadequate for planning/budgeting; retroactive application to unfulfilled orders eliminates pricing certainty; Reseller may have customer quotes based on existing prices; 30-day notice is market standard minimum",
+      "category": "6. General Risk & Fairness",
+      "subcategory": "Economic risk allocation"
+    },
+    {
+      "test_id": "RESELLER_02",
+      "clause_ref": "Payment Terms",
+      "section": "5.1",
+      "original_text": "Reseller shall pay all invoices within thirty (30) days of invoice date. Late payments bear interest at 1.5% per month.",
+      "cp_redline": "Reseller shall pay all invoices within fifteen (15) days of invoice date. Late payments bear interest at 2% per month. Vendor may suspend deliveries for any past-due balance.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Reseller shall pay all invoices within thirty (30) days of invoice date. Late payments bear interest at 1.5% per month.",
+      "key_elements": [
+        "1) Revert to 30-day payment terms (not 15 days) 2) Revert to 1.5% monthly interest (not 2%) 3) Remove delivery suspension for any past-due balance 4) Maintain reasonable working capital terms"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline required",
+        "May reduce interest to 1% per month",
+        "May add: suspension only for material past-due (e.g., 60+ days)",
+        "May add: dispute resolution for disputed invoices"
+      ],
+      "unacceptable_responses": [
+        "15-day payment terms",
+        "2% monthly interest (24% APR)",
+        "Immediate suspension for any late payment",
+        "Payment terms under 30 days"
+      ],
+      "reasoning_must_address": "15-day terms stress Reseller cash flow; 2% monthly = 24% APR is excessive; suspension for any past-due balance (even 1 day late) is draconian; 30-day terms are commercial standard; baseline 1.5% (18% APR) already high",
+      "category": "6. General Risk & Fairness",
+      "subcategory": "Economic risk allocation"
+    },
+    {
+      "test_id": "RESELLER_03",
+      "clause_ref": "Term",
+      "section": "9.1",
+      "original_text": "This Agreement shall commence on the Effective Date and continue for an initial term of two (2) years. Thereafter, this Agreement shall automatically renew for successive one (1) year periods unless either Party provides written notice of non-renewal at least ninety (90) days prior to the end of the then-current term. Neither Party may terminate this Agreement for convenience during the Term.",
+      "cp_redline": "This Agreement shall commence on the Effective Date and continue for an initial term of one (1) year. Thereafter, this Agreement shall automatically renew for successive one (1) year periods unless either Party provides written notice of non-renewal at least ninety (90) days prior to the end of the then-current term. Vendor may terminate this Agreement for convenience upon thirty (30) days' prior written notice to Reseller.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "This Agreement shall commence on the Effective Date and continue for an initial term of two (2) years. Neither Party may terminate this Agreement for convenience during the Term.",
+      "key_elements": [
+        "1) Revert to 2-year initial term (not 1 year) 2) Remove Vendor unilateral termination for convenience 3) Maintain no termination for convenience during Term 4) Adequate commitment period for Reseller investment"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline required",
+        "May negotiate: mutual termination for convenience with 90+ day notice and transition provisions",
+        "May add: 12-month protected period before any convenience termination",
+        "If allowing convenience termination, must be mutual and with adequate notice"
+      ],
+      "unacceptable_responses": [
+        "1-year initial term",
+        "Vendor-only termination for convenience",
+        "30-day notice for termination",
+        "Asymmetric termination rights"
+      ],
+      "reasoning_must_address": "1-year term insufficient to recover Reseller investments (training, marketing, inventory); Vendor-only convenience termination creates power imbalance; 30-day notice inadequate for channel transition; 2-year term provides minimum stability; if convenience termination exists, must be mutual",
+      "category": "4. Term, Termination & Exit",
+      "subcategory": "Termination rights"
+    },
+    {
+      "test_id": "RESELLER_04",
+      "clause_ref": "Liability Cap",
+      "section": "12.2",
+      "original_text": "VENDOR'S TOTAL LIABILITY SHALL NOT EXCEED AMOUNTS PAID BY RESELLER IN THE TWELVE MONTHS PRECEDING THE CLAIM.",
+      "cp_redline": "VENDOR'S TOTAL LIABILITY SHALL NOT EXCEED THE LESSER OF (A) THE PRICE OF THE SPECIFIC PRODUCT GIVING RISE TO THE CLAIM OR (B) TWENTY-FIVE THOUSAND DOLLARS ($25,000).",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "VENDOR'S TOTAL LIABILITY SHALL NOT EXCEED AMOUNTS PAID BY RESELLER IN THE TWELVE MONTHS PRECEDING THE CLAIM.",
+      "key_elements": [
+        "1) Revert to 12-month amounts paid (not product price or $25K) 2) Remove 'lesser of' limitation 3) Maintain meaningful liability cap tied to relationship value 4) No artificial $25K ceiling"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (minimum acceptable)",
+        "Better: increase to 24 months of amounts paid",
+        "Better: add minimum floor (e.g., $100K minimum)",
+        "Better: add carve-outs for IP infringement"
+      ],
+      "unacceptable_responses": [
+        "Cap limited to product price",
+        "$25K fixed cap",
+        "'Lesser of' limitation",
+        "Any cap below baseline 12-month amount"
+      ],
+      "reasoning_must_address": "Product price cap is meaningless (could be $100 software license); $25K cap inadequate for software reseller relationship; 12-month purchases reflects relationship scale; baseline already limits Vendor liability (Reseller concern is cap is too LOW, not too high)",
+      "category": "2. Liability & Redress",
+      "subcategory": "Limitation of liability"
+    }
+  ],
+  "part_b_whole_document": {
+    "reference": {
+      "source_file": "../../freeform/ground_truth/reseller.json",
+      "gt_version": "3.0_v4-enhanced_LOCKED",
+      "total_issues": 13,
+      "tier_breakdown": {
+        "T1": 4,
+        "T2": 7,
+        "T3": 2
+      },
+      "weighted_max": 69
+    },
+    "note": "Part B uses the Freeform Baseline GT. Same contract, same issues. Evaluate whether Leah still detects these risks when CP redlines are present."
+  },
+  "part_c_document_quality": {
+    "scope": "Every redline Leah produces in the output .docx",
+    "per_redline_capture": {
+      "redline_id": "Sequential ID (e.g., RL-01)",
+      "location": "Clause/section reference",
+      "type": "CP_RESPONSE | NEW_REDLINE",
+      "linked_gt_id": "GT ID if NEW_REDLINE addresses Part B issue, else null",
+      "action_stated": "ACCEPT | MODIFY | REJECT | ADD | DELETE",
+      "redline_exists": "Y | N",
+      "action_executed": "ACCEPT | MODIFY | REJECT | ADD | DELETE | NONE",
+      "execution_match": "Y | N | NA (NA if redline_exists=N)",
+      "is_wholesale": "Y | N",
+      "precision_score": "0-2 (aligned pair average)",
+      "insertion_accuracy": "0-2 | NA (aligned pair average, NA for DELETE/simple swaps)",
+      "notes": "Optional observations"
+    },
+    "aggregation_rules": {
+      "binary_fields": "Most confident determination wins",
+      "quality_fields": "Averaged across evaluations; median used for divergent scores",
+      "na_handling": "Exclude from averages"
+    }
+  },
+  "scoring_summary": {
+    "part_a": {
+      "items": 4,
+      "max_per_item": 6,
+      "max_total": 24,
+      "dimensions": {
+        "action": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "revision": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "reasoning": {
+          "max": 2,
+          "weight": "20%"
+        }
+      },
+      "pass_threshold": ">=70% AND 0 critical failures",
+      "critical_failures": [
+        "REJECT-only scored as ACCEPT",
+        "ACCEPT-only scored as REJECT",
+        "Revision contains unacceptable element"
+      ]
+    },
+    "part_b": {
+      "items": 13,
+      "weighted_max": 69,
+      "tier_weights": {
+        "T1": 8,
+        "T2": 5,
+        "T3": 1
+      },
+      "pass_threshold": "T1 Gate PASS AND >=70%",
+      "t1_gate": "Any T1 miss = FAIL"
+    },
+    "part_c": {
+      "per_redline_max": 6,
+      "dimensions": {
+        "precision": "0-2",
+        "insertion_accuracy": "0-2 or NA"
+      },
+      "metrics": [
+        "Wholesale Rate",
+        "Execution Mismatch Count",
+        "Missing Redline Count",
+        "Avg Precision",
+        "Avg Insertion Accuracy"
+      ],
+      "separate_reporting": [
+        "CP_RESPONSE",
+        "NEW_REDLINE"
+      ]
+    }
+  }
+}

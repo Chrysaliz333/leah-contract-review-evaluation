@@ -1,0 +1,438 @@
+{
+  "gt_metadata": {
+    "contract_id": "License_IPHoldings",
+    "contract_type": "IP License",
+    "parties": {
+      "licensor": "Innovate IP Holdings Ltd.",
+      "licensee": "TechPro Industries Corp."
+    },
+    "representing_party": "TechPro Industries Corp. (Licensee)",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "revision_notes": "v3.0: Tier changes: GT-03: T1 -> T2; GT-05: T2 -> T3; GT-06: T2 -> T3. Previous: 2.6_corrected_2026-01-14_v3_LOCKED",
+    "schema_version": "3.0",
+    "v3_migration_date": "2026-01-14",
+    "v4_enhancement_date": "2026-01-20"
+  },
+  "ground_truth": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.2",
+      "tier": "T1",
+      "issue": "Improvements owned by Licensor - loses R&D investment",
+      "expected_classification": "❌",
+      "key_elements": [
+        "All improvements to Licensed IP developed by Licensee become Licensor property",
+        "Licensee loses R&D investment entirely",
+        "Creates disincentive to innovate",
+        "Should negotiate Licensee ownership of improvements",
+        "Alternative: Joint ownership with license-back",
+        "Licensor should pay for Licensee-developed improvements"
+      ],
+      "contract_text": "Improvements to the Licensed IP developed by Licensee shall be owned by Licensor.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Licensor liability cap too low",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Licensor liability capped at 12 months royalties only",
+        "Royalties may be low in early years (Year 1 = $0 running royalty possible)",
+        "No carve-outs for IP title failure",
+        "No carve-outs for willful misconduct",
+        "Increase to 24+ months or fixed minimum floor",
+        "Add carve-outs for IP warranty breach"
+      ],
+      "contract_text": "LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE ROYALTIES PAID IN THE TWELVE MONTHS PRECEDING THE CLAIM.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Mandatory minimum royalty regardless of sales",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "$250K minimum royalty from Year 2",
+        "Payable regardless of actual Net Sales",
+        "Running royalties credited against minimum",
+        "Creates significant fixed cost even if IP proves uncommercial",
+        "Should reduce minimum amount or phase in gradually",
+        "Add adjustment for market conditions or force majeure",
+        "Allow credit for marketing/development expenses"
+      ],
+      "contract_text": "Beginning in Year 2, Licensee shall pay minimum annual royalty of $250,000, regardless of actual Net Sales. Running royalties shall be credited against this minimum.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️",
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.2",
+      "tier": "T1",
+      "issue": "AS-IS disclaimer with limited warranties",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Licensed IP provided AS-IS",
+        "Only warranty is 9.1 (right to grant + non-infringement 'to knowledge')",
+        "'To knowledge' qualifier weakens non-infringement warranty",
+        "No express warranty of functionality or commercial viability",
+        "No warranty of fitness for Field of Use",
+        "Should strengthen to unconditional non-infringement",
+        "Add functionality warranty for patent claims"
+      ],
+      "contract_text": "Licensor represents it has the right to grant the license and, to its knowledge, the Licensed IP does not infringe third-party rights. EXCEPT AS EXPRESSLY SET FORTH HEREIN, THE LICENSED IP IS PROVIDED \"AS IS\" WITHOUT WARRANTIES OF ANY KIND.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High royalty rate",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "10% of Net Sales is above typical rates for consumer electronics (usually 2-5%)",
+        "May compress Licensee margins significantly",
+        "Should negotiate lower rate or tiered structure",
+        "Consider volume discounts at higher sales levels",
+        "Review industry benchmarks for comparable IP"
+      ],
+      "contract_text": "Licensee shall pay Licensor a royalty equal to ten percent (10%) of Net Sales of Licensed Products, payable quarterly within thirty (30) days following the end of each calendar quarter.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Sublicensing requires Licensor consent",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Prior written consent required for any sublicenses",
+        "Could limit business model flexibility",
+        "May restrict contract manufacturing arrangements",
+        "Should add automatic affiliate sublicensing right",
+        "Consent not to be unreasonably withheld or delayed",
+        "Pre-approved sublicensee categories for manufacturing"
+      ],
+      "contract_text": "Licensee may grant sublicenses with Licensor's prior written consent.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Neither party liable for indirect/consequential damages",
+        "Blocks recovery for lost profits if IP fails or is invalid",
+        "Should add carve-outs for IP title failure",
+        "Carve-outs for willful misconduct",
+        "Carve-outs for breach of exclusivity"
+      ],
+      "contract_text": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No termination for convenience - 10-year lock-in",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "10-year term with no TfC right",
+        "Only exit is termination for cause (60-day cure)",
+        "Locked in even if IP proves commercially unviable",
+        "Should add TfC with 12-month notice after Year 3",
+        "Consider annual opt-out after initial commitment period",
+        "Allow exit if minimum royalties become unsustainable"
+      ],
+      "contract_text": "This Agreement shall continue for ten (10) years from the Effective Date, unless earlier terminated. [No termination for convenience provision exists]",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Non-refundable upfront fee",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "$500K upfront license fee is non-refundable",
+        "Significant sunk cost if IP proves unusable",
+        "Standard for exclusive IP licenses but still a risk",
+        "Could negotiate partial refund if IP fails validity challenge",
+        "Consider escrow until first commercial use"
+      ],
+      "contract_text": "Upon execution, Licensee shall pay a non-refundable upfront license fee of $500,000.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "7.1",
+      "tier": "T3",
+      "issue": "Audit cost-shifting threshold favors Licensor",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Licensor can audit annually",
+        "Licensee bears audit costs if underpayment exceeds 5%",
+        "5% threshold is relatively low",
+        "Should increase threshold to 10%",
+        "Add cap on audit frequency",
+        "Require reasonable advance notice"
+      ],
+      "contract_text": "Licensor may audit Licensee's books and records once per year upon reasonable notice. Licensor bears audit costs unless underpayment exceeds 5%, in which case Licensee bears costs.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit A",
+      "tier": "T2",
+      "issue": "Licensed IP schedule (Exhibit A) not attached - undefined scope",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Exhibit A is blank - states '[Patent and trademark schedule to be attached]'",
+        "Licensed IP definition (1.2) references Exhibit A for scope",
+        "Client cannot know what IP they are licensing",
+        "Value of exclusivity cannot be assessed",
+        "Creates fundamental uncertainty about contract scope",
+        "Must require populated schedule before execution"
+      ],
+      "contract_text": "1.2 'Licensed IP' means the patents, trademarks, trade secrets, and proprietary technology described in Exhibit A. [...] EXHIBIT A - LICENSED INTELLECTUAL PROPERTY [Patent and trademark schedule to be attached]",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "Exhibit B",
+      "tier": "T2",
+      "issue": "Territory definition (Exhibit B) not attached - exclusivity meaningless",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Exhibit B is blank - states '[Territory definition to be attached]'",
+        "License grant (2.1) is exclusive within 'Territory'",
+        "Exclusivity has no meaning without defined geographic scope",
+        "Cannot assess market value or competitive protection",
+        "Must require populated schedule before execution"
+      ],
+      "contract_text": "2.1 Grant. Licensor grants Licensee an exclusive license to use the Licensed IP within the Field of Use and Territory during the Term. [...] EXHIBIT B - TERRITORY [Territory definition to be attached]",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌"
+      ]
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No IP infringement indemnification from Licensor",
+      "expected_classification": "❌",
+      "key_elements": [
+        "No indemnification clause exists in the agreement",
+        "Licensee exposed to third-party infringement claims",
+        "If Licensed IP infringes, Licensee bears defense costs and damages",
+        "Standard provision in commercial IP licenses",
+        "Should add Licensor indemnity for IP infringement claims",
+        "Include defense obligation, settlement control, and hold-harmless"
+      ],
+      "contract_text": "N/A - No indemnification provision exists. Contract contains only 9.1 warranty ('to its knowledge, the Licensed IP does not infringe') but no indemnification for breach.",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "5-year survival period for confidentiality",
+        "IP license involves trade secrets, manufacturing know-how, proprietary technology",
+        "Trade secrets have indefinite commercial value",
+        "5 years insufficient for competitive protection post-termination",
+        "Should add perpetual protection for trade secrets",
+        "Should differentiate trade secrets from general confidential info"
+      ],
+      "contract_text": "8.1 Confidentiality. Each Party shall maintain the confidentiality of all Confidential Information. This obligation survives termination for five (5) years.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "Non-infringement warranty qualified 'to knowledge' - inadequate for IP license",
+      "expected_classification": "❌",
+      "key_elements": [
+        "9.1 only warrants non-infringement 'to Licensor's knowledge'",
+        "Knowledge qualifier shifts due diligence burden to Licensee",
+        "Licensor should know their own IP portfolio and freedom to operate",
+        "If Licensee faces infringement claim, 'knowledge' defense is worthless",
+        "Should be unconditional non-infringement warranty",
+        "Or require Licensor to have conducted clearance search",
+        "Critical for commercial IP license - T1 issue"
+      ],
+      "contract_text": "9.1 Licensor represents it has the right to grant the license and, to its knowledge, the Licensed IP does not infringe third-party rights.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ]
+    }
+  ],
+  "tier_summary": {
+    "T1": {
+      "count": 4,
+      "weight": 8,
+      "issues": [
+        "GT-01 (3.2 - Improvements owned by Licensor)",
+        "GT-04 (9.2 - AS-IS disclaimer with limited )",
+        "GT-13 (N/A (Missing) - No IP infringement indemnifica)",
+        "GT-15 (9.1 - Non-infringement warranty qual)"
+      ]
+    },
+    "T2": {
+      "count": 7,
+      "weight": 5,
+      "issues": [
+        "GT-02 (12.2 - Licensor liability cap too low)",
+        "GT-03 (4.1 - Mandatory minimum royalty rega)",
+        "GT-07 (12.1 - Consequential damages exclusio)",
+        "GT-08 (N/A (Missing) - No termination for convenience)",
+        "GT-11 (Exhibit A - Licensed IP schedule (Exhibit )",
+        "GT-12 (Exhibit B - Territory definition (Exhibit )",
+        "GT-14 (8.1 - Confidentiality Survival Inade)"
+      ]
+    },
+    "T3": {
+      "count": 4,
+      "weight": 1,
+      "issues": [
+        "GT-05 (5.1 - High royalty rate)",
+        "GT-06 (2.2 - Sublicensing requires Licensor)",
+        "GT-09 (5.2 - Non-refundable upfront fee)",
+        "GT-10 (7.1 - Audit cost-shifting threshold )"
+      ]
+    },
+    "weighted_max": 71
+  },
+  "validation_notes": {
+    "v2.1_changes": [
+      "REMOVED old GT-09 (10.2 Enforcement split) - 50/50 after costs is market standard for exclusive licenses",
+      "Demoted No TfC from T2 to T2 (kept) - still material but 10-year terms are common in IP",
+      "Demoted upfront fee to T3 - $500K non-refundable is standard for exclusive IP licenses",
+      "Added GT-10 (7.1 Audit threshold) as T3 - 5% threshold is aggressive but minor"
+    ],
+    "contract_verification": [
+      "7.1 verified: 'Licensor bears audit costs unless underpayment exceeds 5%'",
+      "10.2 verified: 'remainder shared equally' - removed as market standard",
+      "5.2 verified: 'non-refundable upfront license fee of $500,000'",
+      "13.1 verified: '10 years' with only 13.2 cause-based termination"
+    ],
+    "items_removed": [
+      "Original GT-09 (10.2 Enforcement recovery) - 50/50 split after costs is standard; Licensee bears market harm but also benefits from enforcement"
+    ]
+  }
+}

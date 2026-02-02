@@ -1,0 +1,678 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-25T18:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-10.1",
+      "evidence": {
+        "proposed_revision_excerpt": "10.1 Exit & Buyout. (a) Either Partner may initiate a buy-sell process with respect to its interest in any Co-Investment by delivering written notice specifying a valuation and terms... (d) Tag-along and drag-along rights customary for private equity transactions shall apply mutatis mutandis.",
+        "effective_rationale_excerpt": "Provides clear liquidity path and prevents deadlock, protecting Partner B's ability to monetize holdings or consolidate control.",
+        "judge_reasoning": "Leah correctly identifies that Section 10.1 is Reserved and provides no exit mechanism. The proposed redline comprehensively addresses all key elements: buy-sell process, valuation methodology, tag-along/drag-along rights, and ROFR. This is a complete fix for a critical structural gap."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 4.0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Provides Partner B with veto rights on major decisions.",
+        "judge_reasoning": "Leah's risk table (4.1) notes unanimous consent gives Partner B veto power and marks it Favorable, completely missing the deadlock risk. No redline proposed to add escalation or tie-breaker mechanisms. Partial credit awarded because the governance structure is mentioned, but the critical deadlock concern is not identified."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-3.3",
+      "evidence": {
+        "proposed_revision_excerpt": "Amend 3.3 to reference a newly drafted Section 10.3 containing detailed default consequences.",
+        "effective_rationale_excerpt": "References Section 10.3, which does not exist; default remedies are therefore undefined.",
+        "judge_reasoning": "Leah correctly identifies the cross-reference error at 3.3 and notes that Section 10.3 does not exist. The proposed fix references a comprehensive new Section 10.3 (detailed in Redline-10.3) with dilution, penalty interest, and purchase rights. This addresses both the broken reference and provides substantive default remedies."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-6.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Unless otherwise agreed in the applicable Subscription Agreement, profits and losses from each Co-Investment shall be allocated between the Partners in proportion to the capital actually contributed by each Partner to such Co-Investment.",
+        "effective_rationale_excerpt": "Aligns economic return with actual cash at risk, preventing potential inequity if Partner B invests more capital while retaining flexibility to deviate by agreement.",
+        "judge_reasoning": "Leah identifies the economic misalignment where fixed 50/50 split penalizes the larger contributor. The redline shifts to pro-rata allocation based on actual contributions, addressing all key elements: proportional economics, flexibility for deal-specific agreements, and alignment with capital at risk."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-14.5",
+      "evidence": {
+        "proposed_revision_excerpt": "14.5 Limitation of Liability. Except for liabilities arising out of fraud, willful misconduct, or breaches of confidentiality or indemnification obligations, the aggregate liability of each Partner to the other under this Agreement shall be limited to direct damages in an amount not to exceed the total capital contributed by such Partner under this Agreement. In no event shall either Partner be liable for indirect, consequential, special, or punitive damages.",
+        "effective_rationale_excerpt": "Caps Partner B's exposure to a commercially acceptable level and excludes consequential damages, aligning risk with invested capital.",
+        "judge_reasoning": "Leah identifies the absence of any limitation of liability clause in the contract. The proposed new Section 14.5 provides a comprehensive cap (aggregate capital contributed), excludes consequential damages, and includes carve-outs for fraud and willful misconduct. This addresses all key GT elements."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-14.6",
+      "evidence": {
+        "proposed_revision_excerpt": "14.6 Mutual Indemnification. Each Partner ('Indemnifying Party') shall indemnify, defend, and hold harmless the other Partner, its Affiliates, and their respective partners, directors, officers, employees, and agents ('Indemnified Parties') from and against any third-party claims, losses, liabilities, damages, and expenses (including reasonable attorneys' fees) arising out of or related to (a) the Indemnifying Party's breach of this Agreement, or (b) the gross negligence, bad faith, or willful misconduct of the Indemnifying Party or its representatives.",
+        "effective_rationale_excerpt": "Provides reciprocal protection against third-party claims caused by the other party's misconduct, a standard private-equity market term that safeguards Partner B.",
+        "judge_reasoning": "Leah recognizes the complete absence of indemnification provisions. The proposed new Section 14.6 establishes mutual indemnification for breaches and misconduct, covering third-party claims with standard triggers. This comprehensively addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-5.3",
+      "evidence": {
+        "proposed_revision_excerpt": "Once a Target Company is presented to the Investment Committee, neither Partner may pursue an independent investment in such company for ninety (90) days, which period may be extended by mutual written agreement if additional diligence time is reasonably required.",
+        "effective_rationale_excerpt": "Extends the window to 90 days to reflect typical growth-equity diligence cycles and allows further extension, ensuring Partner B has adequate time to complete analysis without competitive pressure.",
+        "judge_reasoning": "Leah identifies that 60 days may be too short for growth-equity diligence. The redline extends to 90 days with provision for mutual extension, addressing the key concerns about diligence timeframe adequacy."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 2.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Continues sharing economics on existing deals; acceptable.",
+        "judge_reasoning": "Leah's risk table (12.3) marks the effect of termination as Favorable and does not identify the indefinite continuation concern or propose time-bounded wind-down mechanisms. Partial credit for acknowledging the clause exists, but the material risk is not detected."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract contains no formal information rights or reporting provisions. Leah does not propose adding quarterly reporting, material event notices, or inspection rights. This is a complete miss of a T2 issue."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Reasonable 1-year post-term protection.",
+        "judge_reasoning": "Leah's risk table (11.2) marks the non-solicitation provision as Favorable without questioning whether the 1-year restriction is necessary or should be narrowed. The GT suggests considering whether the provision is needed at all. Partial credit for acknowledging it, but no critical assessment."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-9.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Confidentiality obligations shall survive termination (a) indefinitely with respect to trade secrets and personally identifiable information and (b) for five (5) years with respect to all other Confidential Information.",
+        "effective_rationale_excerpt": "Extends protection for sensitive information beyond five years and provides mandatory legal disclosure carve-outs, safeguarding Partner B's proprietary data while ensuring compliance.",
+        "judge_reasoning": "Leah identifies that 5-year survival is insufficient for trade secrets and investment strategies. The redline creates perpetual protection for trade secrets and PII, adds disclosure carve-outs for legal requirements, and maintains 5-year protection for other confidential info. This comprehensively addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13.0,
+      "matched_redline_id": "Redline-12.1",
+      "evidence": {
+        "proposed_revision_excerpt": "This Agreement shall continue for five (5) years from the Effective Date, with automatic renewal for successive two-year periods unless either Partner provides ninety (90) days' written notice of non-renewal prior to the end of the then-current term.",
+        "effective_rationale_excerpt": "Reduces the notice period to a commercially reasonable timeframe, granting Partner B greater flexibility to exit or renegotiate terms in a timely manner.",
+        "judge_reasoning": "Leah identifies that one-year notice is excessive (at 12.1, not 10.2 as GT references, but semantically the same issue). The redline reduces it to 90 days, addressing the core concern. However, GT expects 180 days minimum and transition planning requirements; 90 days may still be inadequate for complex wind-down. Amendment score reduced to 2 for not fully meeting GT expectations."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.3",
+      "issue_summary": "Non-Exclusivity",
+      "leah_classification": "⚠️",
+      "leah_action": "Insert carve-out all",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allows either party to invest independently, but no carve-out for Partner B's core portfolio companies."
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Initial Commitment",
+      "leah_classification": "⚠️",
+      "leah_action": "Specify that each Pa",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"As agreed on a deal-by-deal basis\" is vague; could be construed as equal funding obligation."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Default",
+      "leah_classification": "❌",
+      "leah_action": "Amend 3.3 to referen",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "References Section 10.3, which does not exist; default remedies are therefore undefined."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Exclusivity Period (60 days)",
+      "leah_classification": "⚠️",
+      "leah_action": "Extend exclusivity t",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "60 days may be insufficient for diligence on growth-equity deals; short window favors Partner A."
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Profit/Loss Sharing 50/50",
+      "leah_classification": "⚠️",
+      "leah_action": "Provide optional \"tr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Fixed split regardless of capital outlay could be unfavorable if Partner B invests more than 50 %."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Expense Sharing (equal)",
+      "leah_classification": "⚠️",
+      "leah_action": "Allocate expenses pr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Equal split may over-burden Partner B if Partner A generates more deal flow."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "No Management Fees",
+      "leah_classification": "⚠️",
+      "leah_action": "Permit success-based",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Partner B receives no compensation for ongoing operational support; could be a lost revenue stream."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "No Carried Interest",
+      "leah_classification": "⚠️",
+      "leah_action": "Introduce 10 %–20 % ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Eliminates incentive alignment and may reduce upside for Partner B relative to expertise contributed."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Confidentiality (5-year survival)",
+      "leah_classification": "⚠️",
+      "leah_action": "Extend survival to p",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Five years may be too short for trade secrets & portfolio data; no carve-out for court order disclosures."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Reserved – Exit & Buyout",
+      "leah_classification": "❌",
+      "leah_action": "Draft comprehensive ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No mechanism for Partner B to exit investments or force sale; major commercial gap."
+    },
+    {
+      "clause": "10.3",
+      "issue_summary": "Default Remedies",
+      "leah_classification": "❌",
+      "leah_action": "Insert new Section 1",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Clause missing entirely, leaving enforcement void."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Term (5 yrs + auto 2-yr renewals; 1-yr non-renewal notice)",
+      "leah_classification": "❌",
+      "leah_action": "Shorten notice to 90",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "One-year notice is excessive; auto-renewal restricts flexibility."
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Termination for Cause (60-day cure)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add unilateral conve",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No termination for convenience; Partner B trapped if strategies diverge."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Arbitration in New York (AAA)",
+      "leah_classification": "⚠️",
+      "leah_action": "Allow virtual hearin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "New York venue may increase costs for Boston-based Partner B."
+    },
+    {
+      "clause": "14.2",
+      "issue_summary": "Assignment – Prohibited Without Consent",
+      "leah_classification": "⚠️",
+      "leah_action": "Include carve-out fo",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Could block internal restructuring by Partner B's fund entities."
+    },
+    {
+      "clause": "New",
+      "issue_summary": "Limitation of Liability",
+      "leah_classification": "❌",
+      "leah_action": "Add mutual cap at di",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Contract is silent, exposing Partner B to unlimited damages."
+    },
+    {
+      "clause": "New",
+      "issue_summary": "Mutual Indemnification",
+      "leah_classification": "❌",
+      "leah_action": "Add cross-indemnitie",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No indemnities for third-party claims; significant risk."
+    },
+    {
+      "clause": "New",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "❌",
+      "leah_action": "Insert standard forc",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence means no relief for events beyond control."
+    },
+    {
+      "clause": "New",
+      "issue_summary": "Data Protection",
+      "leah_classification": "⚠️",
+      "leah_action": "Add compliance with ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No obligations covering investor or portfolio company personal data."
+    },
+    {
+      "clause": "New",
+      "issue_summary": "Intellectual Property Ownership",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify ownership of",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Joint research/operational IP not addressed."
+    },
+    {
+      "clause": "Section 2.3 Non-Exclusivity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This carve-out ensures Growth Dynamics Partners LP (Partner B) can continue supporting its existing pipeline and portfolio without seeking Partner A's consent, thereby protecting pre-existing strategi"
+    },
+    {
+      "clause": "Section 3.1 Initial Commitment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Clarifies that Partner B is not automatically bound to equal funding and limits maximum exposure, thereby aligning capital commitments with strategic discretion and fund allocation limits."
+    },
+    {
+      "clause": "Section 3.3 Default",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Updates the internal reference to the newly inserted Section 10.3 so that default consequences are properly cross-referenced and enforceable."
+    },
+    {
+      "clause": "Section 5.3 Exclusivity Period",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Extends the window to 90 days to reflect typical growth-equity diligence cycles and allows further extension, ensuring Partner B has adequate time to complete analysis without competitive pressure."
+    },
+    {
+      "clause": "Section 6.1 Sharing Ratio",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Aligns economic return with actual cash at risk, preventing potential inequity if Partner B invests more capital while retaining flexibility to deviate by agreement."
+    },
+    {
+      "clause": "Section 6.3 Expenses",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prevents Partner B from subsidizing a disproportionate share of expenses when Partner A originates higher deal volume, ensuring cost allocation scales with benefit."
+    },
+    {
+      "clause": "Section 7.1 Management Fees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Compensates Partner B for its core value-add services while preserving the low-fee structure."
+    },
+    {
+      "clause": "Section 7.2 Carried Interest",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Introduces performance-based incentive aligning interests and rewarding Partner B's operational oversight, while still allocating majority economics to capital providers."
+    },
+    {
+      "clause": "Section 9.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Extends protection for sensitive information beyond five years and provides mandatory legal disclosure carve-outs, safeguarding Partner B's proprietary data while ensuring compliance."
+    },
+    {
+      "clause": "Section 10.1 Exit & Buyout",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides clear liquidity path and prevents deadlock, protecting Partner B's ability to monetize holdings or consolidate control."
+    },
+    {
+      "clause": "Section 10.3 Default Remedies",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Establishes robust economic and structural consequences that deter funding defaults and compensate Partner B if it steps in to preserve the investment. Placement: immediately after Section 10.2 (to be"
+    },
+    {
+      "clause": "Section 12.1 Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Reduces the notice period to a commercially reasonable timeframe, granting Partner B greater flexibility to exit or renegotiate terms in a timely manner."
+    },
+    {
+      "clause": "Section 12.2 Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds a no-fault exit right to avoid being locked into an adverse strategic relationship while ensuring existing investments remain properly managed."
+    },
+    {
+      "clause": "Section 13.2 Arbitration",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides flexibility for Partner B to avoid unnecessary travel and cost by allowing virtual or Boston hearings."
+    },
+    {
+      "clause": "Section 14.2 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Facilitates internal restructurings and successor funds for Partner B while preserving protection against unwanted third-party transfers."
+    },
+    {
+      "clause": "Section 14.5 Limitation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Caps Partner B's exposure to a commercially acceptable level and excludes consequential damages, aligning risk with invested capital. Placement: insert as new Section 14.5."
+    },
+    {
+      "clause": "Section 14.6 Mutual Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides reciprocal protection against third-party claims caused by the other party's misconduct, a standard private-equity market term that safeguards Partner B. Placement: immediately after new Sect"
+    },
+    {
+      "clause": "Section 14.7 Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Protects Partner B from liability for delays due to uncontrollable events and provides clear notice obligations. Placement: immediately after new Section 14.6."
+    },
+    {
+      "clause": "Section 14.8 Data Protection",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Establishes baseline compliance and security expectations, mitigating regulatory and reputational risk for Partner B. Placement: immediately after new Section 14.7."
+    },
+    {
+      "clause": "Section 14.9 Intellectual Property Ownership",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Clarifies ownership and usage rights for value-add IP, ensuring Partner B retains rights to its proprietary frameworks while avoiding future disputes. Placement: immediately after new Section 14.8."
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 3,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 5,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 2,
+        "P": 1,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 58.0,
+    "total_quality_points": 71,
+    "weighted_score": 83.67,
+    "max_possible": 70.0,
+    "percentage": 119.53,
+    "total_points": 129.0,
+    "additional_issues_count": 40
+  }
+}

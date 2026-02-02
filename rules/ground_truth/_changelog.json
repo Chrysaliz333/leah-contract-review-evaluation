@@ -1,0 +1,27 @@
+{
+  "current_version": "1.0_LOCKED",
+  "mode": "rules",
+  "jurisdiction": "US Commercial",
+  "history": [
+    {
+      "version": "1.0_LOCKED",
+      "date": "2026-01-17",
+      "total_rules": 78,
+      "by_contract_type": {
+        "nda": {"rules": 38, "max_pts": 342},
+        "subcontract": {"rules": 40, "max_pts": 360}
+      },
+      "max_points": 702,
+      "changes": "Initial GT locked for formal evaluation under GT_PRINCIPLES v2.0",
+      "source": "Baseline establishment"
+    }
+  ],
+  "scoring": {
+    "per_rule_max": 9,
+    "detection": 2,
+    "compliance": 1,
+    "action": 2,
+    "language": 2,
+    "rationale": 2
+  }
+}

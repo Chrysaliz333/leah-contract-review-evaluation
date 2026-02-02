@@ -1,0 +1,804 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "sonnet45",
+    "evaluation_timestamp": "2026-01-25T19:00:00Z",
+    "evaluator_model": "opus",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-4.1 - Pricing and Modifications",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor may modify prices, discounts, or product offerings upon ninety (90) days' prior written notice to Reseller. Price increases shall not exceed five percent (5%) annually on a cumulative basis. Price changes shall apply to orders placed after the effective date of such changes, except that Reseller may continue to purchase Products at pre-change pricing for any opportunities that Reseller has registered...",
+        "effective_rationale_excerpt": "The original clause grants Vendor unilateral pricing modification authority with minimal notice, creating severe business planning uncertainty for Pacific Tech and exposing Pacific Tech to margin compression without recourse.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the unilateral price change risk at clause 4.1 and classifies it as Unfavorable. The proposed redline extends notice from 30 to 90 days, adds a 5% annual cap on increases, provides pipeline protection for registered opportunities, and includes termination right for material changes. Comprehensive fix exceeding GT expectations. High quality rationale explaining business impact."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "No termination for convenience during Term",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-9.1 - Term",
+      "evidence": {
+        "proposed_revision_excerpt": "After the initial one-year term, either Party may terminate this Agreement for convenience upon ninety (90) days' prior written notice. Additionally, Reseller may terminate this Agreement immediately upon written notice if (a) Vendor implements price increases exceeding ten percent (10%) annually, (b) Vendor discontinues or materially reduces support for Products representing more than thirty percent (30%) of Reseller's sales...",
+        "effective_rationale_excerpt": "The original clause creates a two-year lock-in with no termination for convenience, which disproportionately constrains Pacific Tech given Vendor's unilateral pricing modification rights and direct sales competition.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the no-TfC restriction at clause 9.1 and classifies it as Unfavorable. The proposed amendment reduces initial term to one year, adds convenience termination after initial term with 90 days' notice, and includes material adverse change termination rights. Comprehensive fix exceeding GT requirements."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Vendor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.2 - Cap",
+      "evidence": {
+        "proposed_revision_excerpt": "EACH PARTY'S TOTAL LIABILITY FOR ANY CLAIMS ARISING UNDER THIS AGREEMENT SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNTS PAID BY RESELLER TO VENDOR IN THE TWENTY-FOUR (24) MONTHS PRECEDING THE CLAIM, OR (B) FIVE HUNDRED THOUSAND DOLLARS ($500,000). THE CAP IN THIS SECTION SHALL NOT APPLY TO: (I) EITHER PARTY'S BREACH OF CONFIDENTIALITY OBLIGATIONS; (II) EITHER PARTY'S INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS; (III) VENDOR'S INDEMNIFICATION OBLIGATIONS FOR THIRD-PARTY IP CLAIMS; (IV) EITHER PARTY'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR FRAUD...",
+        "effective_rationale_excerpt": "The original clause caps only Vendor's liability at 12-month payments without reciprocal cap on Pacific Tech's liability, creating asymmetric exposure where Pacific Tech faces unlimited liability while Vendor's exposure is severely limited.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the insufficient liability cap at clause 12.2 and classifies it as Unfavorable. The proposed redline increases cap to 24 months or $500K (whichever greater), makes it mutual, and adds comprehensive carve-outs for IP, confidentiality, and misconduct. Also adds separate $2M cap for carved-out claims. Exceeds GT expectations."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.2",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-11.2 - Disclaimer",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS EXPRESSLY SET FORTH IN SECTION 11.1, VENDOR MAKES NO OTHER EXPRESS OR IMPLIED WARRANTIES. HOWEVER, VENDOR DOES NOT DISCLAIM THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE WITH RESPECT TO PRODUCTS SOLD TO RESELLER. VENDOR REPRESENTS AND WARRANTS THAT IT HAS THE RIGHT TO GRANT THE LICENSES AND RIGHTS GRANTED HEREIN AND THAT THE PRODUCTS DO NOT INFRINGE ANY THIRD-PARTY INTELLECTUAL PROPERTY RIGHTS.",
+        "effective_rationale_excerpt": "The original clause contains an extremely broad warranty disclaimer that eliminates all implied warranties, leaving Pacific Tech with inadequate protection for Product quality and IP issues.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the broad warranty disclaimer at clause 11.2 and classifies it as Unfavorable. The proposed amendment preserves merchantability and fitness warranties, adds IP non-infringement representation, and excludes misconduct from disclaimer. Comprehensive fix addressing all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "2.1 / 2.2",
+      "tier": "T2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-2.1 - Appointment / Redline-2.2 - No Exclusivity",
+      "evidence": {
+        "proposed_revision_excerpt": "Notwithstanding the non-exclusive nature of this appointment, Vendor agrees that for any direct sales by Vendor to End Users within the Territory, Vendor shall pay Reseller a commission equal to fifteen percent (15%) of the net sales price for such direct sale. Additionally, if Reseller achieves annual sales targets as defined in Exhibit C, Vendor shall grant Reseller exclusive rights for specified customer segments...",
+        "effective_rationale_excerpt": "Non-exclusivity creates significant competitive disadvantage for Pacific Tech Distributors. Vendor retains unlimited rights to sell directly and appoint unlimited competing resellers within the same Territory, directly undermining Pacific Tech's market position and investment.",
+        "judge_reasoning": "Sonnet 4.5 identifies the non-exclusivity issue across both 2.1 and 2.2, classifying both as Unfavorable. The proposed redlines add commission mechanism for Vendor direct sales (15%), performance-based exclusivity pathway, 180-day referral protection, and quarterly reporting on competing resellers. Comprehensive protection exceeding GT requirements."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 5,
+      "total_points": 5.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "30-day payment terms are standard but create cash flow pressure when Pacific Tech extends longer terms to End Users. 1.5% monthly interest (18% APR) on late payments is commercially reasonable...",
+        "judge_reasoning": "Sonnet 4.5 identifies the payment terms at 5.1 as Requires Clarification and notes the 18% APR rate. However, the risk_table characterizes it as 'commercially reasonable' rather than flagging it as problematic. No proposed redline directly addresses reducing the interest rate - only extends payment terms to 45-60 days. Partial detection for acknowledging the rate but not treating it as a concern requiring remedy."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vendor can require prepayment on credit issues",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-5.2 - Credit",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor may establish and modify credit limits for Reseller based on objective financial criteria including Reseller's creditworthiness, payment history, and financial statements. Vendor shall provide Reseller with written notice of initial credit limits within fifteen (15) days of the Effective Date and at least thirty (30) days' advance written notice of any credit limit reductions...",
+        "effective_rationale_excerpt": "Vendor has unilateral discretion to establish and modify credit limits without defined criteria or appeal process. Prepayment requirements can be imposed at Vendor's sole discretion, creating operational disruption and cash flow constraints for Pacific Tech.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the credit control issue at 5.2 and classifies it as Unfavorable. The proposed amendment adds objective criteria, 30-day advance notice for reductions, dispute rights, 10-day notice before prepayment, and protection for confirmed orders. Comprehensively addresses all GT concerns."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Sales reports require End User information",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-8.1 - Sales Reports",
+      "evidence": {
+        "proposed_revision_excerpt": "Reseller shall provide quarterly reports detailing Products sold and sales pipeline. Reports are due within thirty (30) days after each quarter end. End User information shall be limited to company name, industry vertical, and general geographic location; Reseller shall not be required to disclose End User contact information, pricing details, or other competitively sensitive information.",
+        "effective_rationale_excerpt": "Pacific Tech must provide detailed quarterly reports including End User information and sales pipeline within 15 days after quarter end. This creates administrative burden and raises confidentiality concerns regarding Pacific Tech's customer relationships and competitive intelligence.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the reporting issue at 8.1 as Requires Clarification. The proposed redline extends deadline to 30 days, limits End User data to non-contact info, adds confidentiality protections, and includes reciprocal Vendor reporting. Addresses all GT concerns about privacy and competitive intelligence."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.1 - Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS PROVIDED BELOW, NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA. THE EXCLUSION IN THIS SECTION SHALL NOT APPLY TO: (A) EITHER PARTY'S BREACH OF CONFIDENTIALITY OBLIGATIONS UNDER SECTION 10; (B) EITHER PARTY'S INFRINGEMENT OF THE OTHER PARTY'S INTELLECTUAL PROPERTY RIGHTS; (C) VENDOR'S INDEMNIFICATION OBLIGATIONS FOR THIRD-PARTY IP CLAIMS; (D) EITHER PARTY'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR FRAUD...",
+        "effective_rationale_excerpt": "Mutual exclusion of indirect, incidental, special, and consequential damages appears balanced but disproportionately harms Pacific Tech. As reseller, Pacific Tech's primary damages from Vendor breach (lost profits, business interruption, customer claims) are typically consequential damages that would be excluded.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the consequential damages exclusion at 12.1 and classifies it as Unfavorable. The proposed redline adds all the carve-outs the GT expects: confidentiality, IP, indemnification, and misconduct. The rationale astutely notes the asymmetric impact. Comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "9.3",
+      "tier": "T2",
+      "issue": "Termination effects - no sell-off period",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-9.3 - Effect of Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "Reseller shall cease marketing and selling Products to new End Users, but shall have a wind-down period of ninety (90) days to fulfill existing End User commitments and complete transactions in progress... Vendor shall pay Reseller all earned but unpaid commissions and discounts within thirty (30) days of termination... Vendor shall provide reasonable transition assistance to Reseller's End Users for sixty (60) days post-termination at no additional cost.",
+        "effective_rationale_excerpt": "Upon termination, Pacific Tech must immediately cease marketing/selling Products and pay all outstanding amounts, but no provision addresses existing End User commitments or pipeline opportunities. Pacific Tech could lose substantial revenue from deals in progress with no wind-down period or commission protection.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the missing sell-off period at 9.3 and classifies it as Unfavorable. The proposed amendment adds 90-day wind-down period, commission protection, transition assistance, and survival of key sections. Comprehensively addresses all GT concerns."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-New Clause - Vendor Indemnification for IP Infringement",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor shall defend, indemnify, and hold harmless Reseller, its affiliates, and their respective officers, directors, employees, and agents from and against any and all third-party claims, demands, suits, proceedings, losses, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from or relating to any allegation that the Products, or Reseller's authorized use, marketing, or resale of the Products, infringes or misappropriates any patent, copyright, trademark, trade secret, or other intellectual property right of any third party.",
+        "effective_rationale_excerpt": "No indemnification provision exists requiring Vendor to defend Pacific Tech against third-party claims that Products infringe intellectual property rights. As reseller, Pacific Tech faces direct exposure to End User IP infringement claims but has no control over Product development or IP clearance.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the missing IP indemnification through both risk_table (marked as New Clause) and comprehensive proposed redline. The new clause covers all IP types (patent, copyright, trademark, trade secret), includes defense and settlement obligations, and provides remediation options. Directly addresses the T1 GT issue."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 2.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Pacific Tech must provide detailed quarterly reports including End User information... This creates administrative burden and raises confidentiality concerns regarding Pacific Tech's customer relationships...",
+        "judge_reasoning": "Sonnet 4.5 acknowledges privacy concerns in the 8.1 risk_table entry and adds confidentiality protections for End User data in that redline. However, there is no dedicated data protection clause recommendation addressing GDPR/CCPA compliance, data security obligations, or breach notification as the GT expects. The 10.1 confidentiality amendment mentions data protection but focuses on confidentiality period extension. Partial detection - privacy concern identified but no comprehensive data protection clause added."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-7.2 - End User Support",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor shall respond to Reseller's second-level support requests within four (4) business hours for critical issues and two (2) business days for non-critical issues. If a support issue's classification is disputed, the Parties shall resolve the dispute through good faith discussion, and Vendor shall provide support during the dispute resolution process. Vendor shall reimburse Reseller for support costs incurred by Reseller on issues that are ultimately determined to be Vendor's second-level responsibility...",
+        "effective_rationale_excerpt": "Pacific Tech provides first-level support while Vendor provides second-level, but no clear definition exists for what constitutes first versus second level. This ambiguity creates cost allocation disputes and potential service gaps where neither party accepts responsibility.",
+        "judge_reasoning": "Sonnet 4.5 correctly identifies the missing SLAs at 7.2 as Requires Clarification. The proposed amendment adds specific response times (4 hours critical, 2 days non-critical), clear tier definitions, dispute resolution, and cost reimbursement mechanism. Comprehensively addresses GT concerns including implicit remedies through cost reimbursement."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.1",
+      "issue_summary": "Non-exclusive appointment as authorized reseller",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to include ter",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Non-exclusivity creates significant competitive disadvantage for Pacific Tech Distributors. Vendor retains unlimited rights to sell directly and appoint unlimited competing resellers within the same T"
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Vendor's reservation of direct sales rights",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require Ven",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Direct sales reservation allows Vendor to compete directly with Pacific Tech for the same End Users, creating channel conflict and undermining Pacific Tech's reseller value proposition. No compensatio"
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Reseller responsibility for End User EULA acceptance",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify Pac",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Pacific Tech bears enforcement responsibility for ensuring End Users accept Vendor's EULA, but lacks practical mechanisms to verify compliance or enforce acceptance. Ambiguity exists regarding Pacific"
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Unilateral pricing modification rights",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require 90-",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Vendor retains unilateral authority to modify prices, discounts, and product offerings with only 30 days' notice, creating significant business planning uncertainty for Pacific Tech. No price protecti"
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "30-day payment terms with late fees",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend paym",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day payment terms are standard but create cash flow pressure when Pacific Tech extends longer terms to End Users (common in enterprise sales). 1.5% monthly interest (18% APR) on late payments is co"
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Unilateral credit limit modification and prepayment requirements",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require rea",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Vendor has unilateral discretion to establish and modify credit limits without defined criteria or appeal process. Prepayment requirements can be imposed at Vendor's sole discretion, creating operatio"
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Prohibition on modifying marketing materials",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify app",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Pacific Tech cannot modify marketing materials without approval, but no timeframe is specified for Vendor approval decisions and no process exists for customization requests. This creates operational "
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Two-tier support structure with unclear boundaries",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clearly def",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Pacific Tech provides first-level support while Vendor provides second-level, but no clear definition exists for what constitutes first versus second level. This ambiguity creates cost allocation disp"
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Quarterly sales reporting requirements",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend repo",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Pacific Tech must provide detailed quarterly reports including End User information and sales pipeline within 15 days after quarter end. This creates administrative burden and raises confidentiality c"
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Two-year initial term with automatic renewal and 90-day non-renewal notice",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to add termina",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Automatic renewal with 90-day advance notice requirement creates lock-in risk for Pacific Tech. Neither party can terminate for convenience during the Term, but this disproportionately constrains Paci"
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "30-day cure period for material breach",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define \"mat",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day cure period is reasonable but \"material breach\" is undefined, creating ambiguity about what triggers termination rights. No specification exists for notice requirements or cure verification pro"
+    },
+    {
+      "clause": "9.3",
+      "issue_summary": "Post-termination obligations",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to add 60-90 d",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Upon termination, Pacific Tech must immediately cease marketing/selling Products and pay all outstanding amounts, but no provision addresses existing End User commitments or pipeline opportunities. Pa"
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Three-year confidentiality obligation",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend conf",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Three-year confidentiality period following disclosure may be insufficient for trade secrets or long-term strategic information. No clear definition exists for what constitutes \"confidential informati"
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Limited product warranty with EULA reference",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify war",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Vendor's warranty that Products will \"perform substantially as described\" is vague and provides minimal protection. Warranty obligations to End Users are delegated to EULA, which Pacific Tech has no c"
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Broad warranty disclaimer",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to preserve im",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"EXCEPT AS EXPRESSLY SET FORTH HEREIN, VENDOR MAKES NO WARRANTIES OF ANY KIND\" is an extremely broad disclaimer that eliminates implied warranties of merchantability, fitness for purpose, and non-infr"
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Exclusion of consequential damages",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to carve out c",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual exclusion of indirect, incidental, special, and consequential damages appears balanced but disproportionately harms Pacific Tech. As reseller, Pacific Tech's primary damages from Vendor breach "
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Liability cap at 12-month payments",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to increase ca",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Vendor's total liability capped at amounts paid by Pacific Tech in preceding 12 months creates severe exposure imbalance. If Vendor's Product defects cause Pacific Tech to face End User claims or repu"
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Washington State governing law",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to specify Cal",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Washington State law governs despite Pacific Tech being California-based LLC. This creates jurisdictional inconvenience and increased legal costs for Pacific Tech to enforce rights or defend claims. W"
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Mandatory arbitration in Seattle",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to specify neu",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mandatory arbitration in Seattle, Washington compounds jurisdictional disadvantage from governing law clause (13.1). Pacific Tech must travel to Vendor's home city for dispute resolution, increasing c"
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Assignment restrictions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add excepti",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Neither party may assign without consent, which is standard but creates liquidity constraints for Pacific Tech. If Pacific Tech seeks to sell business or undergo corporate restructuring, Vendor consen"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Vendor Indemnification for IP Infringement",
+      "leah_classification": "🆕",
+      "leah_action": "ADD comprehensive IP",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No indemnification provision exists requiring Vendor to defend Pacific Tech against third-party claims that Products infringe intellectual property rights. As reseller, Pacific Tech faces direct expos"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Lead Registration and Deal Protection",
+      "leah_classification": "🆕",
+      "leah_action": "ADD lead registratio",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No lead registration system exists to protect Pacific Tech's investment in customer development. Without deal registration, Vendor or competing resellers can intercept opportunities that Pacific Tech "
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Minimum Performance Standards and Termination Rights",
+      "leah_classification": "🆕",
+      "leah_action": "ADD Vendor minimum p",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No minimum performance obligations exist for Vendor regarding Product availability, support response times, or service levels. Vendor could discontinue Products, provide inadequate support, or fail to"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Price Protection for Pending Opportunities",
+      "leah_classification": "🆕",
+      "leah_action": "ADD price protection",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No price protection mechanism exists for Pacific Tech's sales pipeline when Vendor exercises unilateral pricing modification rights (4.1). Pacific Tech could lose deals or suffer margin erosion on opp"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Mutual Non-Solicitation of Customers",
+      "leah_classification": "🆕",
+      "leah_action": "ADD mutual non-solic",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No restriction prevents Vendor from directly soliciting Pacific Tech's End User customers or using customer information provided in sales reports (8.1) to bypass Pacific Tech. Vendor could use Pacific"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Marketing Development Funds (MDF)",
+      "leah_classification": "🆕",
+      "leah_action": "ADD Marketing Develo",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No marketing support or co-op funding provisions exist despite Pacific Tech's obligation to use \"commercially reasonable efforts to market and promote\" Products (6.1). Pacific Tech bears full cost of "
+    },
+    {
+      "clause": "Article 2.1 - Appointment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment addresses the significant competitive disadvantage created by non-exclusivity. The original clause allows Vendor unlimited direct competition with Pacific Tech Distributors without comp"
+    },
+    {
+      "clause": "Article 2.2 - No Exclusivity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause grants Vendor unrestricted direct sales and reseller appointment rights without transparency or compensation mechanisms, creating severe channel conflict. Pacific Tech could invest"
+    },
+    {
+      "clause": "Article 3.3 - End User Agreements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause imposes absolute responsibility on Pacific Tech to \"ensure\" End User EULA acceptance without defining acceptable verification methods or addressing liability exposure. This creates"
+    },
+    {
+      "clause": "Article 4.1 - Pricing and Modifications",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause grants Vendor unilateral pricing modification authority with minimal notice, creating severe business planning uncertainty for Pacific Tech and exposing Pacific Tech to margin comp"
+    },
+    {
+      "clause": "Article 5.2 - Credit",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause grants Vendor unlimited discretion to modify credit limits and impose prepayment requirements without notice, objective criteria, or appeal rights, creating severe operational and "
+    },
+    {
+      "clause": "Article 6.2 - Marketing Materials",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause prohibits Pacific Tech from modifying marketing materials without approval but provides no timeframe for approval decisions and no process for customization requests, creating oper"
+    },
+    {
+      "clause": "Article 7.2 - End User Support",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause creates ambiguous support boundaries without defining first-level versus second-level support, leading to cost allocation disputes and potential service gaps where neither party ac"
+    },
+    {
+      "clause": "Article 8.1 - Sales Reports",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause requires Pacific Tech to provide detailed End User information and sales pipeline data without confidentiality protections or reciprocal disclosure, creating competitive intelligen"
+    },
+    {
+      "clause": "Article 9.1 - Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause creates a two-year lock-in with no termination for convenience, which disproportionately constrains Pacific Tech given Vendor's unilateral pricing modification rights and direct sa"
+    },
+    {
+      "clause": "Article 9.2 - Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause uses undefined \"material breach\" terminology without specifying notice requirements, cure verification, or dispute procedures, creating ambiguity and enforcement uncertainty. The p"
+    },
+    {
+      "clause": "Article 9.3 - Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause requires immediate cessation of all sales activities without addressing existing commitments, pipeline opportunities, or financial settlements, creating severe business disruption "
+    },
+    {
+      "clause": "Article 10.1 - Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause provides only a three-year confidentiality period without defining confidential information, standard exceptions, or survival provisions, creating inadequate protection for Pacific"
+    },
+    {
+      "clause": "Article 11.1 - Vendor Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause provides vague warranty language without a warranty period, objective performance standards, or pass-through rights, leaving Pacific Tech with minimal recourse for Product defects."
+    },
+    {
+      "clause": "Article 11.2 - Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause contains an extremely broad warranty disclaimer that eliminates all implied warranties, leaving Pacific Tech with inadequate protection for Product quality and IP issues. The propo"
+    },
+    {
+      "clause": "Article 12.1 - Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause's mutual exclusion of consequential damages appears balanced but disproportionately harms Pacific Tech because Pacific Tech's primary damages from Vendor breach (lost profits from "
+    },
+    {
+      "clause": "Article 12.2 - Cap",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause caps only Vendor's liability at 12-month payments without reciprocal cap on Pacific Tech's liability, creating asymmetric exposure where Pacific Tech faces unlimited liability whil"
+    },
+    {
+      "clause": "Article 13.1 - Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause specifies Washington State law despite Pacific Tech being a California-based LLC, creating jurisdictional inconvenience and increased legal costs for Pacific Tech to enforce rights"
+    },
+    {
+      "clause": "Article 13.2 - Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause mandates arbitration in Seattle (Vendor's home city) without preliminary dispute resolution steps or procedural details, compounding Pacific Tech's jurisdictional disadvantage and "
+    },
+    {
+      "clause": "Article 13.3 - Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause prohibits assignment without consent but provides no standards for consent decisions, exceptions for common business transactions, or deemed-approval mechanism, creating liquidity "
+    },
+    {
+      "clause": "New Clause - Vendor Indemnification for IP Infringement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 12.3 after Section 12.2 (Cap). No IP indemnification provision exists in the original Agreement, creating critical gap where Pacific Tech faces direct exposure to End "
+    },
+    {
+      "clause": "New Clause - Lead Registration and Deal Protection",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 2.3 after Section 2.2 (No Exclusivity). No lead registration system exists in the original Agreement, creating critical gap where Pacific Tech has no protection for it"
+    },
+    {
+      "clause": "New Clause - Minimum Performance Standards and Termination Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 7.3 after Section 7.2 (End User Support). No minimum performance obligations exist for Vendor regarding Product availability, support quality, or service levels, creat"
+    },
+    {
+      "clause": "New Clause - Price Protection for Pending Opportunities",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 4.3 after Section 4.1 (Pricing and Modifications). No price protection mechanism exists for Pacific Tech's sales pipeline when Vendor exercises unilateral pricing modi"
+    },
+    {
+      "clause": "New Clause - Mutual Non-Solicitation of Customers",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 6.4 after Section 6.3 (Trademark License). No restriction prevents Vendor from directly soliciting Pacific Tech's End User customers or using customer information prov"
+    },
+    {
+      "clause": "New Clause - Marketing Development Funds",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 6.5 after the newly added Section 6.4 (Non-Solicitation). No marketing support or cooperative funding provisions exist despite Pacific Tech's obligation to use \"commer"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 2,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 6,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "total_detection_points": 66.0,
+    "total_quality_points": 104,
+    "total_points": 170.0,
+    "additional_issues_count": 51,
+    "additional_issues_points": 12.5
+  }
+}

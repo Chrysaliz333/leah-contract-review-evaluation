@@ -1,0 +1,32 @@
+{
+  "current_version": "1.0_LOCKED",
+  "mode": "freeform_stacking",
+  "jurisdiction": "US Commercial",
+  "history": [
+    {
+      "version": "1.0_LOCKED",
+      "date": "2026-01-17",
+      "total_issues": 160,
+      "by_tier": {
+        "T1": 45,
+        "T2": 78,
+        "T3": 37
+      },
+      "max_points": 787,
+      "changes": "Initial GT locked for formal evaluation under GT_PRINCIPLES v2.0. Part B reuses Freeform GT; Part A evaluates CP redline responses.",
+      "source": "Baseline establishment (Part B shared with Freeform)"
+    }
+  ],
+  "contracts": {
+    "consulting": {"issues": 11, "T1": 1, "T2": 8, "T3": 2, "max_pts": 50},
+    "dpa": {"issues": 12, "T1": 3, "T2": 6, "T3": 3, "max_pts": 57},
+    "distribution": {"issues": 13, "T1": 6, "T2": 5, "T3": 2, "max_pts": 75},
+    "jv": {"issues": 18, "T1": 5, "T2": 10, "T3": 3, "max_pts": 93},
+    "license": {"issues": 15, "T1": 4, "T2": 7, "T3": 4, "max_pts": 71},
+    "partnership": {"issues": 12, "T1": 6, "T2": 4, "T3": 2, "max_pts": 70},
+    "reseller": {"issues": 13, "T1": 4, "T2": 7, "T3": 2, "max_pts": 69},
+    "services": {"issues": 26, "T1": 4, "T2": 11, "T3": 11, "max_pts": 98},
+    "sla": {"issues": 26, "T1": 8, "T2": 12, "T3": 6, "max_pts": 130},
+    "supply": {"issues": 14, "T1": 4, "T2": 8, "T3": 2, "max_pts": 74}
+  }
+}

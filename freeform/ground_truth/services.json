@@ -1,0 +1,662 @@
+{
+  "gt_metadata": {
+    "contract_id": "Services_DigitalAgency",
+    "contract_type": "Services",
+    "parties": {
+      "agency": "Creative Digital Agency Inc.",
+      "client": "[Unnamed Client]"
+    },
+    "representing_party": "Client",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "revision_notes": "v3.0: Tier changes: GT-05: T2 -> T3. Previous: 2.3_corrected_2026-01-14_v3_LOCKED",
+    "schema_version": "3.0",
+    "v3_migration_date": "2026-01-14",
+    "v4_enhancement_date": "2026-01-20"
+  },
+  "ground_truth": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Exclusion of Damages - No Carve-outs",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Neither party liable for consequential damages",
+        "No carve-outs for willful misconduct, gross negligence",
+        "No carve-outs for confidentiality breach",
+        "Should add standard carve-outs"
+      ],
+      "contract_text": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM THIS AGREEMENT.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Liability Cap SOW-Based - Creates Variable Exposure Per Engagement",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Cap is per-SOW, not aggregate across relationship",
+        "Structural issue: liability exposure varies by engagement size",
+        "Small SOW with major deliverable creates disproportionate risk",
+        "No carve-outs for IP infringement or confidentiality breach",
+        "Should use aggregate fees or minimum floor (e.g., $500K)",
+        "Should add carve-outs for critical categories"
+      ],
+      "contract_text": "AGENCY'S TOTAL LIABILITY SHALL NOT EXCEED THE FEES PAID BY CLIENT UNDER THE APPLICABLE STATEMENT OF WORK GIVING RISE TO THE CLAIM.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Agency IP License Restrictive",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "License to Agency IP is non-exclusive, perpetual, royalty-free",
+        "BUT 'solely as part of the Deliverables'",
+        "Cannot modify, sublicense, or use independently",
+        "If Agency IP is core component, Client is locked in",
+        "Should add modification rights",
+        "Should add sublicense rights to affiliates"
+      ],
+      "contract_text": "To the extent Agency IP is incorporated into any Deliverables, Agency hereby grants Client a non-exclusive, perpetual, royalty-free license to use such Agency IP solely as part of the Deliverables.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Silence = Rejection (UNUSUAL)",
+      "expected_classification": "❌",
+      "key_elements": [
+        "If Client fails to respond in 15 days, deemed REJECTED",
+        "Industry norm is silence = acceptance",
+        "Creates perpetual revision loop if Client is slow",
+        "Agency can keep reworking indefinitely",
+        "Should change to silence = acceptance",
+        "Or add deemed acceptance after cure period"
+      ],
+      "contract_text": "Client shall review each Deliverable and provide written acceptance or detailed written rejection specifying deficiencies within fifteen (15) business days of delivery. If Client fails to provide written notice within such period, the Deliverable shall be deemed rejected and Agency shall have an opportunity to cure.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "1.5% per month = 18% APR",
+        "No cure period before interest accrues",
+        "Should reduce to 1% or prime + margin",
+        "Should add grace period"
+      ],
+      "contract_text": "Late payments shall bear interest at one and one-half percent (1.5%) per month.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "Delays - Open-ended Fees",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Client delays extend timelines AND 'additional fees may apply'",
+        "No cap on additional fees",
+        "No proportionality requirement",
+        "No advance notice of fee amount",
+        "Should cap additional fees",
+        "Should require notice before charging"
+      ],
+      "contract_text": "If Client delays in providing materials, approvals, or feedback, project timelines shall be extended accordingly, and additional fees may apply.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T2",
+      "issue": "Ownership Excludes Non-Final Materials",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Client owns only 'final approved Deliverables'",
+        "Excludes drafts, concepts, underlying work",
+        "Agency retains all non-final work (5.3)",
+        "Client may need underlying assets",
+        "Should include work product used in final"
+      ],
+      "contract_text": "Upon full payment of all fees due, Client shall own all right, title, and interest in the final approved Deliverables created specifically for Client under this Agreement.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "Preliminary Work Retained by Agency",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "All concepts, sketches, drafts remain Agency property",
+        "Even if Client paid for development",
+        "Agency could reuse or sell to competitors",
+        "Should limit Agency's use of preliminary work",
+        "Or transfer to Client with final"
+      ],
+      "contract_text": "All concepts, sketches, drafts, and preliminary work product that are not incorporated into final approved Deliverables shall remain Agency's property.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Use in Commerce = Final Acceptance",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Using deliverable in public = acceptance",
+        "Even if defective or incomplete",
+        "Client may need to use urgently",
+        "Waives right to reject known defects",
+        "Should allow use without waiving defect claims"
+      ],
+      "contract_text": "Client's use of any Deliverable in commerce or public distribution shall constitute final acceptance of such Deliverable.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Warranties - No Duration or Specific Remedy",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Agency warrants professional manner and conformance",
+        "No specified warranty period",
+        "No remedies for breach stated",
+        "Should add 90-180 day warranty period",
+        "Should add re-performance remedy"
+      ],
+      "contract_text": "Agency represents and warrants that: (a) it has the right to enter into this Agreement; (b) the Services will be performed in a professional manner; (c) the Deliverables will conform to the specifications in the applicable SOW; and (d) the Deliverables will not infringe third-party intellectual property rights.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "8.3",
+      "tier": "T2",
+      "issue": "Broad Disclaimer",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Disclaims merchantability and fitness",
+        "May undermine express warranties in 8.1",
+        "Should clarify which warranties survive"
+      ],
+      "contract_text": "EXCEPT AS EXPRESSLY SET FORTH HEREIN, AGENCY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality - 3 Years Only",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "3-year survival insufficient for trade secrets",
+        "Creative work may have longer commercial value",
+        "Should extend to 5 years or indefinite for trade secrets"
+      ],
+      "contract_text": "This obligation shall survive termination for three (3) years.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "12.4",
+      "tier": "T2",
+      "issue": "Termination - No Data Return",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Only addresses delivery of completed work Client paid for",
+        "No provision for return of Client Materials",
+        "No transition assistance",
+        "Should add data/materials return requirement"
+      ],
+      "contract_text": "Upon termination: (a) Client shall pay for all Services performed and expenses incurred through termination; (b) Agency shall deliver all completed work product for which Client has paid.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "13.2",
+      "tier": "T2",
+      "issue": "Mandatory Arbitration in NY",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "New York arbitration required",
+        "No negotiation/mediation step",
+        "May be inconvenient for non-NY clients",
+        "Should add mediation first",
+        "Consider neutral venue option"
+      ],
+      "contract_text": "Disputes shall be resolved by arbitration in New York, New York.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection Clause",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Agency may receive/process Client personal data",
+        "No data protection or privacy obligations stated",
+        "No GDPR/CCPA compliance requirements",
+        "Should add data protection clause"
+      ],
+      "contract_text": "N/A - No data protection provision exists in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "No E&O, CGL, or Cyber liability requirements",
+        "Agency could be judgment-proof",
+        "Should add minimum insurance requirements"
+      ],
+      "contract_text": "N/A - No insurance requirements provision exists in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.4",
+      "tier": "T3",
+      "issue": "Portfolio Rights - Subject to Confidentiality",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Agency can display Deliverables in portfolio",
+        "BUT 'subject to any confidentiality restrictions'",
+        "Actually provides some protection",
+        "Consider explicit opt-out right for sensitive work"
+      ],
+      "contract_text": "Agency shall have the right to display Deliverables in Agency's portfolio, website, and marketing materials, subject to any confidentiality restrictions.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "1.1",
+      "tier": "T3",
+      "issue": "Agency IP Definition Broad",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Includes 'methodologies, frameworks, templates, software tools'",
+        "May capture project-specific developments",
+        "Should clarify what becomes Agency IP vs Client IP"
+      ],
+      "contract_text": "\"Agency IP\" means all intellectual property owned by or licensed to Agency prior to the Effective Date, including methodologies, frameworks, templates, software tools, and pre-existing creative works.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Change Orders - No Response Timeline",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Changes require signed change order",
+        "No deadline for Agency to respond to request",
+        "No dispute process if parties disagree on scope",
+        "Should add response timeline"
+      ],
+      "contract_text": "Any changes to the scope, timeline, or fees must be documented in a written change order signed by both Parties.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Expenses - Documentation Unclear",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Pre-approved expenses reimbursable",
+        "$500+ requires written approval",
+        "No documentation requirements for receipts",
+        "Should add receipt requirement"
+      ],
+      "contract_text": "Client shall reimburse Agency for pre-approved out-of-pocket expenses... Expenses exceeding $500 require Client's prior written approval.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Deposit Triggers Unclear",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Up to 50% deposit 'may' be required",
+        "When deposit is required not specified",
+        "Should clarify deposit conditions"
+      ],
+      "contract_text": "For project work, Agency may require a deposit of up to fifty percent (50%) prior to commencing work.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Revisions - No Definition",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "2 rounds of revisions included",
+        "What constitutes a 'revision' undefined",
+        "Could be one minor change or complete redo",
+        "Should define scope of revision"
+      ],
+      "contract_text": "Agency shall provide up to two (2) rounds of revisions to each Deliverable at no additional charge. Additional revisions shall be billed at Agency's then-current hourly rates.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "13.1",
+      "tier": "T3",
+      "issue": "Governing Law - No Flexibility",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "New York law governs",
+        "No option for Client's jurisdiction",
+        "May be unfamiliar to non-NY clients"
+      ],
+      "contract_text": "This Agreement shall be governed by the laws of the State of New York.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "N/A (Missing)",
+      "tier": "T3",
+      "issue": "No Force Majeure",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "No excuse for uncontrollable events",
+        "Could be liable for delay due to pandemic, disaster",
+        "Should add FM clause"
+      ],
+      "contract_text": "N/A - No force majeure provision exists in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "N/A (Missing)",
+      "tier": "T3",
+      "issue": "No Service Level Commitments",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "No response time commitments",
+        "No quality metrics",
+        "No escalation path",
+        "Should add SLA for retainer work"
+      ],
+      "contract_text": "N/A - No service level commitments exist in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "13.3",
+      "tier": "T3",
+      "issue": "Assignment - No M&A Exception (Mutual)",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Neither party can assign without consent",
+        "Mutual restriction (not asymmetric)",
+        "No M&A or affiliate exception for either party",
+        "Should add standard exceptions for both parties"
+      ],
+      "contract_text": "Neither Party may assign without prior written consent.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    }
+  ],
+  "tier_summary": {
+    "T1": {
+      "count": 4,
+      "weight": 8,
+      "issues": [
+        "GT-01 (10.1 - Exclusion of Damages - No Carv)",
+        "GT-02 (10.2 - Liability Cap SOW-Based - Crea)",
+        "GT-03 (5.2 - Agency IP License Restrictive)",
+        "GT-04 (6.1 - Silence = Rejection (UNUSUAL))"
+      ]
+    },
+    "T2": {
+      "count": 11,
+      "weight": 5,
+      "issues": [
+        "GT-06 (4.3 - Delays - Open-ended Fees)",
+        "GT-07 (5.1 - Ownership Excludes Non-Final M)",
+        "GT-08 (5.3 - Preliminary Work Retained by A)",
+        "GT-09 (6.3 - Use in Commerce = Final Accept)",
+        "GT-10 (8.1 - Warranties - No Duration or Sp)",
+        "GT-11 (8.3 - Broad Disclaimer)",
+        "GT-12 (9.1 - Confidentiality - 3 Years Only)",
+        "GT-13 (12.4 - Termination - No Data Return)",
+        "GT-14 (13.2 - Mandatory Arbitration in NY)",
+        "GT-15 (N/A (Missing) - No Data Protection Clause)",
+        "GT-16 (N/A (Missing) - No Insurance Requirements)"
+      ]
+    },
+    "T3": {
+      "count": 11,
+      "weight": 1,
+      "issues": [
+        "GT-05 (3.4 - High Late Fee)",
+        "GT-17 (5.4 - Portfolio Rights - Subject to )",
+        "GT-18 (1.1 - Agency IP Definition Broad)",
+        "GT-19 (2.2 - Change Orders - No Response Ti)",
+        "GT-20 (3.2 - Expenses - Documentation Uncle)",
+        "GT-21 (3.3 - Deposit Triggers Unclear)",
+        "GT-22 (6.2 - Revisions - No Definition)",
+        "GT-23 (13.1 - Governing Law - No Flexibility)",
+        "GT-24 (N/A (Missing) - No Force Majeure)",
+        "GT-25 (N/A (Missing) - No Service Level Commitments)",
+        "GT-26 (13.3 - Assignment - No M&A Exception )"
+      ]
+    },
+    "weighted_max": 98
+  },
+  "validation_notes": {
+    "tier_adjustments": [
+      "GT-17 (5.4 Portfolio Rights) demoted from T2 to T3 - has 'subject to confidentiality restrictions' carve-out",
+      "GT-26 (13.3 Assignment) demoted from T2 to T3 - mutual restriction, not asymmetric"
+    ],
+    "contract_verification": [
+      "6.1 silence=rejection confirmed - UNUSUAL provision, kept at T1",
+      "5.4 portfolio rights has confidentiality carve-out - demoted",
+      "13.3 assignment is mutual 'Neither Party' - corrected description"
+    ],
+    "renumbered": "All GT IDs renumbered sequentially GT-01 to GT-26"
+  }
+}

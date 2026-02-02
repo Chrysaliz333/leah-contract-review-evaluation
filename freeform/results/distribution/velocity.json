@@ -1,0 +1,589 @@
+{
+  "meta": {
+    "contract": "distribution",
+    "model_id": "velocity",
+    "evaluation_timestamp": "2026-01-25T18:55:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.1 / 3.2",
+      "tier": "T1",
+      "issue": "Non-exclusive appointment with Supplier competition rights",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.1, 3.2",
+        "excerpt": "Non-exclusive rights leave Distributor exposed to direct Supplier sales and competition from other distributors... Supplier retains ability to sell directly and appoint others within Territory",
+        "reasoning": "Velocity identified both 3.1 and 3.2 with checkmark classifications in the risk table. The proposed redline for 3.1 converts to 'the exclusive distributor of the Products within the Territory during the Term, conditioned on Distributor's compliance with the Minimum Purchase Commitment', with explicit carve-outs for specific government/strategic accounts (Exhibit E) and non-territory/non-core product lines (Exhibit F). The redline for 3.2 restricts Supplier's reserved rights to cases 'where Distributor fails to meet minimum performance standards or as required for regulatory/commercial exceptions'. This comprehensively addresses all GT key elements: exclusive territory grant (performance-linked), limits on direct Supplier competition, and protection of Distributor investments with clear carve-outs."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 8.0,
+      "quality_points": 9,
+      "total_points": 17.0
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Unilateral price changes with no cap",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.1",
+        "excerpt": "Supplier can unilaterally change prices with 60 days' notice, creating unpredictability and margin risk for Distributor",
+        "reasoning": "Velocity flagged 5.1 pricing as a checkmark concern. The proposed redline caps price increases at '[X]% per twelve-month rolling period', requires price changes to 'apply uniformly to all Distributor partners', extends notice to 60 days (already in place), and prevents retroactive application to 'orders already accepted by Supplier'. This addresses GT key elements: price cap (cap specified though placeholder [X]%), longer notice period (60 days maintained), and protection for accepted orders. The amendment provides predictability and equal treatment, though the placeholder [X]% should be negotiated (GT suggests CPI or 5%)."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 8.0,
+      "quality_points": 9,
+      "total_points": 17.0
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Mandatory minimum purchase with automatic breach trigger",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.1",
+        "excerpt": "Strict quarterly minimum with automatic material breach exposure is harsh and can be punitive in market fluctuations or supply issues",
+        "reasoning": "Velocity identified 6.1 with a checkmark. The proposed redline maintains the $100K minimum but adds 'subject to reasonable adjustment for Territory market conditions', requires 'Supplier has first offered a cure period of one (1) additional quarter or an alternative product mix adjustment to help meet targets' before breach declaration, and provides flexibility for 'force majeure-like disruptions'. This addresses all GT key elements: adjustment for market conditions, cure period (one additional quarter), negotiation rights (alternative product mix), and protection from events beyond control. The amendment balances commercial discipline with fairness."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 8.0,
+      "quality_points": 9,
+      "total_points": 17.0
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "13.3",
+      "tier": "T1",
+      "issue": "Asymmetric assignment rights",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.3",
+        "excerpt": "Restrictive assignment can hinder business transfers, financing, or reorganizations",
+        "reasoning": "Velocity flagged 13.3 assignment with a concern flag. The proposed redline makes restrictions mutual ('Neither Party may assign this Agreement without the prior written consent of the other Party'), allows 'either Party may assign to an Affiliate or in connection with a merger, acquisition, or sale of substantially all assets, upon written notice to the other Party', and adds 'Consent shall not be unreasonably withheld, conditioned, or delayed'. This addresses all GT key elements: mutual assignment provisions, M&A/affiliate exception, and consent reasonableness standard. The amendment provides excellent corporate flexibility while maintaining protections."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 8.0,
+      "quality_points": 9,
+      "total_points": 17.0
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Low liability cap for both parties",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.2",
+        "excerpt": "Liability cap limited to amounts paid in prior 12 months creates a weak remedy for Distributor in cases of Supplier breach",
+        "reasoning": "Velocity identified 10.2 as a checkmark concern. The proposed redline maintains the 12-month cap but carves out: '(i) claims arising from IP infringement, (ii) breaches of confidentiality, (iii) data protection/privacy violations, or (iv) product recalls or safety-related liabilities'. This addresses GT key elements: carve-outs for critical claims (IP, willful misconduct via product recalls/safety, confidentiality), and carve-outs for indemnification obligations (implicit in product recalls/IP). While the amendment doesn't increase the cap to 24+ months, the comprehensive carve-outs significantly improve Distributor protection for high-risk scenarios."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 5.0,
+      "quality_points": 9,
+      "total_points": 14.0
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause - Distributor exposed to product claims",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New Clause - IP Indemnity",
+        "excerpt": "No IP indemnity clause exists, exposing Distributor to third-party infringement claims",
+        "reasoning": "Velocity identified the missing indemnification and proposed a new IP Indemnity clause (Article 14). The proposed revision requires Supplier to 'defend, at its own expense, Distributor against any third-party claim that the Products or its use infringes a valid third-party patent, copyright, trademark, or other intellectual property right', indemnify for 'damages finally awarded', and if infringement occurs, 'replace or modify the product to avoid infringement or procure a license at Supplier's expense'. Placement is after Article 13 as new Article 14. This addresses GT IP infringement protection and defense costs. However, it focuses on IP and doesn't explicitly cover product liability (design/manufacturing defects), which is also a GT concern. Strong IP indemnity but partial coverage of full GT scope."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 8.0,
+      "quality_points": 9,
+      "total_points": 17.0
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "FOB shipping terms shift all transit risk to Distributor",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "4.2",
+        "excerpt": "FOB allocation shifts risk and shipping costs to Distributor, potentially increasing exposure and cost",
+        "reasoning": "Velocity identified 4.2 delivery terms with a concern flag. The proposed redline shifts to 'DAP Distributor's designated facility under Incoterms 2020', with 'Supplier shall bear transportation costs to the named destination, and Distributor shall bear outbound freight from origin to the delivery point agreed in writing'. This addresses GT key elements: DDP or CIF terms (DAP is close to DDP but Distributor bears import duties), Supplier-arranged transportation, and modernizes with Incoterms 2020. The amendment significantly reduces Distributor's transit risk, though full DDP would be even stronger."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 5.0,
+      "quality_points": 9,
+      "total_points": 14.0
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "P",
+      "match_strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "5.3",
+        "excerpt": "1.5% monthly interest is relatively punitive and can compound quickly",
+        "reasoning": "Velocity identifies 5.3 late payment interest with a concern flag. The risk table recommends 'AMEND to reduce interest to 1.0%–1.25% per month or implement a tiered/flat late-fee schedule; clarify grace periods for disputes', which aligns with GT expectations. However, there is no proposed redline in the proposed_redlines array for 5.3. The issue is identified with appropriate reasoning but the amendment is missing. Partial credit for detection with no quality points."
+      },
+      "rationale_score": 2,
+      "amendment_score": 0,
+      "redline_quality_score": 0,
+      "detection_points": 0.5,
+      "quality_points": 2,
+      "total_points": 2.5
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Marketing approval required for all materials",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "7.2",
+        "excerpt": "Requiring Supplier approval for all Distributor advertising can slow time-to-market and frustrate marketing efforts",
+        "reasoning": "Velocity flagged 7.2 advertising approvals with a checkmark. The proposed redline adds 'such approval not to be unreasonably withheld, conditioned, or delayed' and requires Supplier to 'respond within ten (10) business days of submission' with documented submission process. This addresses GT key elements: deemed approval mechanism (via 10-day response requirement), reasonableness standard, and operational timeline. While it doesn't explicitly state deemed approval if no response, the 10-day requirement with documentation implies approval workflow. Strong amendment preventing delays."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 5.0,
+      "quality_points": 9,
+      "total_points": 14.0
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.3",
+      "tier": "T2",
+      "issue": "Termination effects lack buyback and transition",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": null,
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Velocity's risk table and proposed_redlines array do not contain any entries for clause 11.3 termination effects. The issue of lacking buyback provisions and transition assistance is not identified or addressed. No credit awarded."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Supplier can reject purchase orders - no supply obligation",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": null,
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Velocity's risk table does not identify clause 4.1 PO rejection as a concern. The risk table does not contain an entry for 4.1, and there is no proposed redline addressing Supplier's ability to reject orders without obligation. The core GT issue of supply uncertainty is not recognized. No credit awarded."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Territory restriction on outside sales",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.3",
+        "excerpt": "Prohibition on 'actively solicit' and 'branch/warehouse' terms are vague. Digital sales, affiliate orders, or incidental cross-border transactions could be misinterpreted",
+        "reasoning": "Velocity identified 3.3 with a concern flag. The proposed redline adds clarity: 'which consent shall not be unreasonably withheld, conditioned, or delayed, and may be deemed granted if the Distributor receives no response within thirty (30) days of the written request'. This addresses the GT concern about passive sales clarification and provides a mechanism for cross-border activity with reasonable consent process. The amendment modernizes the restriction for digital commerce and reduces inadvertent breach risk."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 1.0,
+      "quality_points": 9,
+      "total_points": 10.0
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consequential Damages Exclusion Missing Critical Carve-Outs",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": null,
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Velocity's risk table and proposed_redlines array do not contain entries for clause 10.1 consequential damages exclusion. The issue of missing carve-outs for confidentiality breach, IP infringement, and willful misconduct is not identified. No credit awarded."
+      },
+      "rationale_score": null,
+      "amendment_score": null,
+      "redline_quality_score": null,
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "3.3",
+      "issue_summary": "Sales Outside Territory prohibition",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define “act",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause prohibits outside Territory activity, but “actively solicit” and “branch/warehouse” terms are vague. Digital sales, affiliate orders, or incidental cross-border transactions could be misint"
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Delivery Terms FOB Supplier's facility; title/risk pass to Distributor on carrier delivery",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend or add an alte",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "FOB allocation shifts risk and shipping costs to Distributor, potentially increasing exposure and cost. Incoterms are not harmonized with modern supply chains, and risk transfer points should be expli"
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Distributor bears all shipping costs",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to include cos",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Full pass-through of shipping costs to Distributor can erode margins, particularly if Supplier controls pricing or shipping arrangements. Without shared risk or defined terms, cost volatility harms Di"
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Late Payments – 1.5% per month interest",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to reduce inte",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "1.5% monthly interest is relatively punitive and can compound quickly, increasing cash expenditure risk for Distributor. Moderate penalties with caps are more predictable and industry-standard."
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Termination for Cause; 30-day cure",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define mate",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cure period and material breach standards are not fully defined; ambiguity could lead to disputes about what constitutes a material breach and whether cure is feasible."
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Assignment; Distributor may not assign without Supplier consent",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to permit assi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Restrictive assignment can hinder business transfers, financing, or reorganizations. It can limit Distributor’s flexibility in growth or in a sale of business."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution – binding arbitration in Chicago",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require ini",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Location and exclusive arbitration could impose burdens for Distributor not located near Illinois. Consider alternative dispute pathways or step-up processes."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Governing Law – Illinois",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider adding foru",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Governing law may be neutral, but enforcement/interpretation may be less favorable for non-Illinois parties or if Distributor operates elsewhere."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Term – 3-year initial term; auto-renewal with 90 days’ notice",
+      "leah_classification": "⚠️",
+      "leah_action": "Add an option for a ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Auto-renew reduces agility to exit; Distributor may be locked in long-term; while common, it could be misaligned with changing market conditions."
+    },
+    {
+      "clause": "Exhibits A–D",
+      "issue_summary": "Exhibits",
+      "leah_classification": "(Not itemized here)",
+      "leah_action": "Ensure Exhibits are ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "General baseline; specifics necessary for risk; gaps in product specs, territory boundaries, or trademarks can create disputes."
+    },
+    {
+      "clause": "3.1 Non-Exclusive Appointment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Distributor seeks exclusivity to justify investments in marketing and inventory. This revision aligns rights with performance metrics and provides explicit carve-outs for critical direct sales and non"
+    },
+    {
+      "clause": "3.2 Reservation of Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Clarifies limits on direct sales and cross-border sales that could undermine Distributor's market position; introduces performance-based and carve-out logic to protect Distributor's investment while p"
+    },
+    {
+      "clause": "3.3 Sales Outside Territory",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Creates a fair, timely process for cross-border sales opportunities and reduces operational paralysis due to silenced consent requests."
+    },
+    {
+      "clause": "4.2 Delivery Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Modernizes risk/shipping allocation, reduces ambiguity, and aligns with common international practice. Provides clearer responsibility for carrier selection and insurance."
+    },
+    {
+      "clause": "5.1 Prices",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides predictability of pricing and prevents abrupt margin erosion. Introduces a fair, objective cap and equal treatment among distributors."
+    },
+    {
+      "clause": "6.1 Minimum Purchase Commitment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Realigns targets to market realities, provides a cure mechanism, and avoids abrupt termination for force majeure-like disruptions."
+    },
+    {
+      "clause": "7.1 Marketing Efforts",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Removes ambiguity around \"commercially reasonable\" and aligns marketing obligations with measurable targets, ensuring both parties contribute to growth."
+    },
+    {
+      "clause": "7.2 Advertising",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Balances Supplier brand control with Distributor's need for timely go-to-market campaigns."
+    },
+    {
+      "clause": "8.1 Trademark License",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ties trademark usage to brand guidelines and quality control to protect brand value and reduce risk of misuse."
+    },
+    {
+      "clause": "9.1 Warranty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Clarifies remedies and cost allocation for warranty claims, improving Distributor's confidence in post-delivery support."
+    },
+    {
+      "clause": "10.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Narrows protection gap for critical risk areas (IP, data/privacy, recall) while maintaining overall cap discipline."
+    },
+    {
+      "clause": "11.1 Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds a reasonable exit right after the initial term and aligns renewal with performance, giving Distributor flexibility if performance is lacking."
+    },
+    {
+      "clause": "13.3 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Improves transactional flexibility while preserving reasonable protections against undesirable changes in control."
+    },
+    {
+      "clause": "New Clause - IP Indemnity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides robust protection against IP infringement claims, a critical risk for distributors relying on supplier-supplied products and brand assets. Placement: After Article 13 (as new Article 14) and "
+    },
+    {
+      "clause": "New Clause - Data Protection & Privacy",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Addresses privacy and cross-border data transfer risks inherent in distributor arrangements, especially in cross-border supply chains. Placement: After IP Indemnity (as new Article 15) and cross-refer"
+    },
+    {
+      "clause": "New Clause - Product Recall Procedures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Establishes a clear, collaborative framework for recalls and shared costs, reducing risk of non-compliance and reputational damage. Placement: After Data Protection (as new Article 16) and cross-refer"
+    },
+    {
+      "clause": "New Clause - Audit Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allows Distributor to verify compliance and enforce performance commitments, providing practical controls over Supplier obligations. Placement: After Product Recall (as new Article 17) and cross-refer"
+    },
+    {
+      "clause": "13.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Clarifies arbitration venue and enforcement, aligning with Distributor's operational location and preferred dispute handling."
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 1,
+      "N": 0,
+      "NMI": 3
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      },
+      "T2": {
+        "Y": 3,
+        "P": 1,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": false,
+    "t1_count": 6,
+    "t1_detected": 4,
+    "total_detection_points": 56.5,
+    "total_quality_points": 83,
+    "total_points": 139.5,
+    "weighted_max": 75,
+    "additional_issues_count": 28
+  }
+}

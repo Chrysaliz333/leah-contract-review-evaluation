@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "leah-contract-review-evaluation"
+version = "1.0.0"
+description = "Evaluation framework for Leah AI contract review system"
+requires-python = ">=3.11"
+dependencies = [
+    "openpyxl>=3.1.0",
+    "jupyter>=1.0.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-25T22:15:00Z",
+    "gt_version": "1.0",
+    "freeform_gt_version": "3.0_v4-enhanced_LOCKED",
+    "environment": "hotfix"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "PARTNERSHIP_01",
+      "clause": "4.1",
+      "cp_redline_description": "Partner A shall have sole decision-making authority for all Partnership Activities. Partner B shall be consulted but Partner A retains final authority on all major decisions.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "The Partners shall jointly manage the Partnership Activities, and neither Partner shall exercise unilateral authority over any matter unless expressly delegated in a written resolution approved by both Partners.",
+        "judge_reasoning": "Leah correctly identifies the CP redline as Unfavorable and proposes MODIFY to restore joint management. While GT expects REJECT, the revision effectively achieves the same outcome by restoring equal governance. The reasoning addresses the key concern about control asymmetry. Action scored 1 (MODIFY not REJECT but achieves same goal), revision scored 2 (restores joint management with additional written consent requirement), reasoning scored 2 (addresses governance imbalance thoroughly)."
+      }
+    },
+    {
+      "gt_id": "PARTNERSHIP_02",
+      "clause": "6.1",
+      "cp_redline_description": "All profits shall be allocated sixty percent (60%) to Partner A and forty percent (40%) to Partner B. All losses shall be allocated first to Partner B until Partner B's capital account is exhausted, then to Partner A.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 1,
+      "reasoning_score": 2,
+      "total_points": 4,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "6.1 Sharing Ratio. All profits and losses from Co-Investments shall be allocated in proportion to each Partner's actual capital contributed to the specific Co-Investment, unless otherwise unanimously agreed in writing by the Partners.",
+        "judge_reasoning": "Leah identifies the CP redline as Unfavorable and proposes MODIFY. However, the revision does not revert to the baseline 50/50 split as required by GT. Instead, it proposes proportional allocation based on capital contributions. While this eliminates the punitive 60/40 and loss waterfall, it deviates from the original 50/50 structure. Action scored 1 (MODIFY not REJECT), revision scored 1 (does not restore baseline 50/50 as required), reasoning scored 2 (correctly identifies economic disadvantage to Partner B)."
+      }
+    },
+    {
+      "gt_id": "PARTNERSHIP_03",
+      "clause": "9.1",
+      "cp_redline_description": "Partner B shall maintain in strict confidence all Confidential Information of the Partnership. Partner A may disclose Confidential Information to third parties as Partner A deems appropriate for Partnership business.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "9.1 Confidentiality Obligations. Each Partner shall maintain strict confidentiality regarding all Partnership Information and shall not disclose such information to any third party without the prior written consent of the other Partner, except to its Affiliates, legal or financial advisors, or as required by law, provided such recipients are bound by confidentiality obligations no less protective than those herein. Confidentiality obligations shall survive termination indefinitely with respect to trade secrets and for seven (7) years for all other Partnership Information.",
+        "judge_reasoning": "Leah correctly identifies the one-sided confidentiality CP redline and proposes a revision that restores mutual obligations with 'Each Partner' language. The revision goes beyond baseline by adding reasonable carve-outs (affiliates, advisors, legal requirements) and extended protection periods. Action scored 2 (MODIFY achieves REJECT outcome by fully reversing asymmetry), revision scored 2 (restores mutuality with enhancements), reasoning scored 2 (addresses key concern about one-sided burden)."
+      }
+    },
+    {
+      "gt_id": "PARTNERSHIP_04",
+      "clause": "12.2",
+      "cp_redline_description": "Partner A may terminate this Agreement immediately upon written notice if Partner B materially breaches this Agreement. Partner B may terminate only if Partner A materially breaches and fails to cure within ninety (90) days after written notice.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "12.2 Termination for Cause. Either Partner may terminate this Agreement upon the other Partner's material breach that remains uncured for thirty (30) days after written notice. If the breach is incapable of cure, termination shall be effective immediately upon notice.",
+        "judge_reasoning": "Leah correctly identifies the asymmetric termination CP redline and proposes a revision that restores 'Either Partner' symmetric rights. The revision establishes equal 30-day cure periods for both partners (reduced from 60 days in baseline but equal for both). Action scored 2 (MODIFY achieves REJECT outcome by restoring symmetry), revision scored 2 (restores mutual termination rights with equal cure period), reasoning scored 2 (addresses asymmetry and power imbalance)."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 21,
+    "max_score": 24,
+    "percentage": 87.5,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 15,
+      "matched_redline_id": "290738b7-6d86-478e-8b52-1d7cb904049d",
+      "evidence": {
+        "proposed_revision_excerpt": "10.1 Exit and Buy-Out. Either Partner may propose a sale of its interest in any Co-Investment after a three-year hold period. The non-selling Partner shall have a right of first offer to purchase such interest at fair market value determined by an independent valuation firm jointly appointed by the Partners.",
+        "effective_rationale_excerpt": "Placement: Replace [Reserved] Section 10.1. Provides structured liquidity path, mitigating deadlock and ensuring Partner B can monetize stakes even if Partner A is reluctant to exit.",
+        "judge_reasoning": "Leah's risk_table at 10.1 flags 'Exit & buy-out reserved' with classification Requires Clarification and recommended action ADD. The proposed_redlines includes a complete exit/buyout mechanism with ROFO at FMV. This fully addresses the GT concern about missing exit rights. Amendment score 3 (comprehensive mechanism with hold period, ROFO, and FMV valuation), rationale score 2 (addresses liquidity and deadlock risk), redline quality score 2 (well-drafted, clear placement instruction)."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "a3db82d7-877d-45e4-b1d1-8b4baa823c5f",
+      "evidence": {
+        "proposed_revision_excerpt": "Major decisions require the unanimous written consent of both Partners, which consent shall not be unreasonably withheld, conditioned, or delayed by either Partner.",
+        "effective_rationale_excerpt": "The redline strips Partner B's veto rights. The revision retains unanimous consent but adds a reasonableness qualifier to prevent deadlock accusations, ensuring Partner B's strategic protection while maintaining deal execution efficiency acceptable to both sides.",
+        "judge_reasoning": "While Leah's primary focus in the proposed_redlines is responding to the CP redline at 4.1, the revision also addresses the baseline deadlock concern by adding a 'not unreasonably withheld' qualifier. This provides an implicit escalation path through reasonableness standards. The risk_table does not separately flag this as a baseline concern (focuses on the CP redline response), but the remediation addresses GT concern. Amendment score 2 (reasonableness qualifier helps but no explicit escalation mechanism), rationale score 2 (addresses deadlock implicitly), redline quality score 2 (clear language)."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 15,
+      "matched_redline_id": "d3b01a8a-8630-4b0e-aaab-9181509eb32a",
+      "evidence": {
+        "proposed_revision_excerpt": "10.3 Default Remedies. If a Partner fails to fund any capital call within the period specified in Section 3.2, the non-defaulting Partner may, at its option: (a) fund the shortfall and receive a priority return at LIBOR+600 bps until repayment; (b) dilute the defaulting Partner's interest in the relevant Co-Investment on a straight-line basis; and/or (c) require the defaulting Partner to forfeit governance rights with respect to that Co-Investment until cure.",
+        "effective_rationale_excerpt": "References Section 10.3, which is missing; remedy void leaves funding default unaddressed.",
+        "judge_reasoning": "Leah's risk_table at 3.3 correctly identifies 'References Section 10.3, which is missing; remedy void leaves funding default unaddressed' and recommends ADD. The new_clauses_proposed includes a complete default remedies clause (10.3) that fills the gap. This directly addresses the GT concern about the cross-reference error. Amendment score 3 (comprehensive default remedies with multiple options), rationale score 2 (identifies the gap clearly), redline quality score 2 (well-structured clause with clear placement)."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "0dd6be51-4344-4386-87ec-6c92b9adfdc5",
+      "evidence": {
+        "proposed_revision_excerpt": "6.1 Sharing Ratio. All profits and losses from Co-Investments shall be allocated in proportion to each Partner's actual capital contributed to the specific Co-Investment, unless otherwise unanimously agreed in writing by the Partners.",
+        "effective_rationale_excerpt": "The proposed proportional structure aligns economics with contributed capital, creates fair symmetry, and eliminates punitive loss subordination for Partner B.",
+        "judge_reasoning": "Leah's risk_table at '6.1 (original)' notes 'Original terms equitable; prefer retaining over redline' which recognises the baseline 50/50. The proposed_redlines proposes proportional allocation which actually ADDRESSES the GT concern by aligning returns with capital contributions. This is exactly what GT recommends as an acceptable action. Amendment score 2 (addresses core issue of misalignment, though original also acceptable), rationale score 2 (explains economic fairness), redline quality score 2 (clear language)."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "0b82f9ca-ece2-4f42-9733-077e52097a01",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Partner shall be liable to the other for any indirect, consequential, punitive, or exemplary damages arising out of this Agreement, and each Partner's aggregate liability under this Agreement shall not exceed the total capital actually contributed by such Partner, except in cases of fraud, willful misconduct, or gross negligence.",
+        "effective_rationale_excerpt": "Contract lacks any liability cap; Partner B exposed to unlimited damages for investment decisions or confidentiality breaches.",
+        "judge_reasoning": "Leah's risk_table at 'New-Lim-Liab' correctly identifies 'Contract lacks any liability cap' and recommends ADD. The proposed_redlines includes a comprehensive limitation of liability clause with consequential damages exclusion, cap at contributed capital, and appropriate carve-outs for fraud/wilful misconduct. This fully addresses the GT concern. Amendment score 3 (comprehensive LoL with all key elements), rationale score 3 (identifies risk and impact clearly), redline quality score 3 (well-drafted, standard market language)."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 16,
+      "matched_redline_id": "d67b20f1-8a30-413e-9fb5-ed067ef535c9",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Partner (the 'Indemnifying Party') shall indemnify, defend, and hold harmless the other Partner and its affiliates from and against any third-party claims, losses, or liabilities arising out of (i) breach of this Agreement, (ii) violation of applicable law, or (iii) fraud, gross negligence, or willful misconduct of the Indemnifying Party.",
+        "effective_rationale_excerpt": "No indemnification for third-party claims (IP, fraud); creates uncapped exposure for Partner B's advisory work.",
+        "judge_reasoning": "Leah's risk_table at 'New-Indemnity' correctly identifies missing indemnification provisions and recommends ADD. The proposed clause covers breach, law violation, and misconduct with proper indemnify/defend/hold harmless structure. This addresses the GT concern about third-party claims protection. Amendment score 3 (comprehensive mutual indemnification), rationale score 2 (identifies exposure but less specific than ideal), redline quality score 3 (well-drafted standard language)."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 8,
+      "matched_redline_id": "745b3fe9-0dbe-4a75-bdb2-8fbd79dac1de",
+      "evidence": {
+        "proposed_revision_excerpt": "Once a Target Company is presented to the Investment Committee, neither Partner may pursue an independent investment in such company for ninety (90) days, which period shall be tolled during any time the Target Company is actively responding to diligence requests.",
+        "effective_rationale_excerpt": "Period may be too short for diligence; Partner B risks losing unique leads; needs extension or tolling if info delayed.",
+        "judge_reasoning": "Leah's risk_table at 5.3 correctly identifies '60-day exclusivity' as Requires Clarification with reasoning about diligence timing. The proposed_redlines extends to 90 days and adds tolling for diligence delays. This fully addresses the GT concern. Amendment score 3 (extends period and adds tolling mechanism), rationale score 2 (addresses timing concern), redline quality score 2 (clear implementation)."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah's risk_table at 12.3 marks 'Post-termination management' as Favorable with reasoning 'Ensures continuity of Co-Investments; protects value' and No Action Required. This misses the GT concern that indefinite continuation could trap Partner B in a forced relationship for years. No proposed redline addresses maximum wind-down period or buyout rights for portfolio interests. Detection N (marked Favorable when issue exists)."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12,
+      "matched_redline_id": "d713b97d-89af-4d23-8af5-56acdfe1e957",
+      "evidence": {
+        "proposed_revision_excerpt": "Partner A shall deliver to Partner B (i) quarterly unaudited and annual audited financial statements of each Co-Investment, (ii) monthly KPI dashboards, and (iii) reasonable access to management for operational review, in each case within standard reporting timelines.",
+        "effective_rationale_excerpt": "No express right for Partner B to receive audited financials and operational KPIs from Partner A-led deals.",
+        "judge_reasoning": "Leah's risk_table at 'New-InfoRights' correctly identifies missing information rights and recommends ADD. The proposed clause includes quarterly/annual financials, monthly KPIs, and management access. This addresses the GT concern about lack of formal reporting. Amendment score 3 (comprehensive information rights), rationale score 2 (identifies gap), redline quality score 2 (clear requirements)."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah's risk_table at 11.2 marks 'Non-solicitation' as Favorable with reasoning 'Reasonable one-year duration; balanced obligations' and No Action Required. The GT issue questions whether non-solicitation is even needed. Leah accepts the clause without suggesting reconsideration. Detection N (marked Favorable, no amendment proposed)."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12,
+      "matched_redline_id": "c3f9aaad-45c9-419f-8fdf-c8093b599c5d",
+      "evidence": {
+        "proposed_revision_excerpt": "This obligation survives termination for seven (7) years, and, with respect to trade secrets, for so long as such information remains a trade secret under applicable law.",
+        "effective_rationale_excerpt": "Five-year term may be short for trade secrets; consider perpetual protection for sensitive know-how.",
+        "judge_reasoning": "Leah's risk_table at '9.1 (original)' flags 'Five-year term may be short for trade secrets; consider perpetual protection for sensitive know-how' and recommends AMEND. The proposed_redlines extends to 7 years and adds perpetual protection for trade secrets. This fully addresses the GT concern. Amendment score 3 (extends duration and adds trade secret perpetual protection), rationale score 2 (identifies the gap), redline quality score 2 (clear implementation)."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 5,
+      "total_points": 10,
+      "matched_redline_id": "052d4920-e535-4460-9f31-0c9a291d6c69",
+      "evidence": {
+        "proposed_revision_excerpt": "This Agreement shall continue for five (5) years from the Effective Date, with automatic renewal for successive two-year periods unless either Partner provides ninety (90) days' written notice of non-renewal prior to the end of the then-current term.",
+        "effective_rationale_excerpt": "One-year non-renewal notice overly long; hampers exit flexibility for Partner B.",
+        "judge_reasoning": "Leah's risk_table at 12.1 flags the notice period as Requires Clarification. However, Leah's proposed revision actually maintains the 90-day notice period rather than extending it to 180 days as GT recommends. The GT issue is that 90 days is too SHORT for complex wind-down; Leah's rationale suggests it's too LONG for exit flexibility. The direction conflicts with GT. Amendment score 1 (maintains 90 days, opposite direction from GT recommendation), rationale score 2 (identifies a concern, though in wrong direction), redline quality score 2 (clear language)."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 10,
+      "P": 0,
+      "N": 2,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 3,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 6,
+    "t1_detected": 6,
+    "total_detection_points": 56,
+    "total_quality_points": 69,
+    "total_points": 125,
+    "weighted_max": 70,
+    "percentage": 80.0
+  },
+  "summary": {
+    "part_a": {
+      "total_score": 21,
+      "max_score": 24,
+      "percentage": 87.5,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "detection_percentage": 80.0,
+      "t1_gate": "PASS",
+      "weighted_score": 56,
+      "weighted_max": 70,
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true
+    }
+  }
+}

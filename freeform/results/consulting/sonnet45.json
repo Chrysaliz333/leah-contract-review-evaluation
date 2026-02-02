@@ -1,0 +1,957 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "sonnet45",
+    "evaluation_timestamp": "2026-01-25T18:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-5.1 Ownership of Deliverables",
+      "evidence": {
+        "proposed_revision_excerpt": "All deliverables... shall be deemed 'work-for-hire under U.S. copyright law' and shall be owned exclusively by Client immediately upon creation. To the extent any deliverable does not qualify as work-for-hire, Consultant hereby irrevocably assigns to Client all right, title, and interest...",
+        "effective_rationale_excerpt": "The original provision's 'upon full payment' condition creates conditional ownership risk... The amendment establishes immediate ownership upon creation eliminating payment contingency and providing Client with uninterrupted business use. Adding assignment language covers deliverables that may not qualify as work-for-hire under copyright law.",
+        "judge_reasoning": "Risk table flags ownership as Requires Clarification, noting work-for-hire with payment contingency creates ownership ambiguity. Proposed redline addresses work-for-hire limitations by providing immediate ownership upon creation and adding fallback assignment language for deliverables that don't qualify. GT calls for addressing work-for-hire ineffectiveness with express assignment fallback. Redline comprehensively addresses GT structural concern by providing dual mechanism (work-for-hire with immediate vesting + assignment fallback) and separating ownership from payment. Excellent amendment with thorough legal analysis."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-9.2 Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "Except for breaches of confidentiality obligations, indemnification obligations, intellectual property infringement claims, or either Party's gross negligence or willful misconduct, neither Party's total aggregate liability... shall not exceed the greater of: (i) five hundred thousand dollars ($500,000); or (ii) the total fees paid by Client to Consultant under all Statements of Work during the twelve (12) month period preceding the event giving rise to the claim.",
+        "effective_rationale_excerpt": "The original cap at fees under applicable SOW creates severe undercompensation risk... This amendment establishes $500,000 minimum cap ensuring meaningful recovery potential even for smaller engagements. Using 12-month fee lookback rather than single SOW recognizes that damages may result from cumulative advice.",
+        "judge_reasoning": "Risk table flags liability cap as Unfavorable, noting cap tied to single SOW fees creates severe undercompensation and could be de minimis for small SOWs. Proposed redline adds $500K minimum floor, uses 12-month lookback, and adds comprehensive carve-outs including confidentiality, indemnification, IP infringement, and gross negligence/willful misconduct. GT calls for carve-outs for IP infringement, data breach, and gross negligence. Redline addresses all GT requirements comprehensively with strong minimum cap. Excellent amendment with thorough rationale."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-9.1 Limitation of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "Except for breaches of confidentiality obligations under Article 6, intellectual property obligations under Article 5, indemnification obligations under Article 10, or either Party's gross negligence or willful misconduct, neither Party shall be liable... Notwithstanding the foregoing, each Party may recover consequential damages... resulting from the other Party's: (i) material breach...; (ii) breach of confidentiality...; (iii) infringement of intellectual property rights; or (iv) gross negligence or willful misconduct.",
+        "effective_rationale_excerpt": "The original blanket waiver of consequential damages including loss of profits and business opportunity asymmetrically harms Client who faces greater business disruption risk... This amendment carves out consequential damages for material breaches, confidentiality violations, IP infringement, and gross negligence/willful misconduct.",
+        "judge_reasoning": "Risk table flags consequential damages exclusion as Unfavorable, noting mutual waiver asymmetrically impacts Client and overly broad. Proposed redline adds comprehensive carve-outs for material breach, confidentiality, IP infringement, and gross negligence/willful misconduct, allowing consequential damages recovery for these categories. GT calls for carve-outs for confidentiality breach, IP infringement, and data loss. Redline comprehensively addresses all GT requirements. Excellent amendment with strong rationale explaining asymmetric impact."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-7.1 Termination for Convenience",
+      "evidence": {
+        "proposed_revision_excerpt": "Client may terminate this Agreement or any individual Statement of Work for convenience upon fifteen (15) days' prior written notice to Consultant, or immediately upon payment... Consultant may terminate this Agreement for convenience upon sixty (60) days' prior written notice... Upon Client's termination for convenience, Consultant shall... provide reasonable transition assistance to Client or Client's replacement consultant for up to thirty (30) days following termination at Consultant's standard hourly rates.",
+        "effective_rationale_excerpt": "This amendment provides Client with 15-day notice period or immediate termination option with payment, giving Client flexibility to exit quickly if services are unsatisfactory... Extending Consultant's notice to 60 days provides Client adequate time to find replacement services... Adding transition assistance obligation for 30 days ensures knowledge transfer.",
+        "judge_reasoning": "Risk table flags termination as Unfavorable, noting 30-day notice too long and symmetric rights ignore Client's greater switching costs. Proposed redline creates asymmetric notice periods (15 days for Client, 60 for Consultant), adds immediate termination option for Client with payment, includes SOW-level termination, and requires 30-day transition assistance. GT calls for shorter Client notice, SOW-level TfC, and transition assistance. Redline comprehensively addresses all GT requirements with strong asymmetric protections. Excellent amendment."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-5.2 Background IP",
+      "evidence": {
+        "proposed_revision_excerpt": "To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client an exclusive license within the technology consulting and advisory services industry vertical, perpetual, irrevocable, worldwide, royalty-free, fully paid-up license to use, reproduce, modify, create derivative works from, distribute, display, and perform such Background IP, including the right to sublicense these rights to Client's affiliates, contractors, and customers.",
+        "effective_rationale_excerpt": "The original non-exclusive license allows Consultant to license identical Background IP to Client's competitors... The 'solely as part of Deliverables' restriction severely limits Client's ability to modify, enhance, or integrate... This amendment grants exclusive license within Client's industry vertical preventing Consultant from empowering competitors.",
+        "judge_reasoning": "Risk table flags Background IP as Unfavorable, noting non-exclusive license means competitors could get same IP and 'solely as part of' severely limits modification/integration. Proposed redline grants exclusive license within industry vertical, adds comprehensive rights including modification and derivative works, allows independent use, and includes sublicense to affiliates/contractors/customers. GT calls for expanded license including modification, internal use, derivative works, and sublicensing for affiliates/successors. Redline comprehensively addresses all GT requirements and adds exclusive rights protection. Excellent amendment with strong competitive rationale."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-13.10 Survival",
+      "evidence": {
+        "proposed_revision_excerpt": "(b) Article 6 (Confidentiality) - for five (5) years following termination, except that trade secret protections shall survive indefinitely... (f) Article 10 (Indemnification) - for three (3) years following termination, except that indemnification obligations for intellectual property infringement claims shall survive for six (6) years following termination...",
+        "effective_rationale_excerpt": "The original indefinite survival for all listed articles creates unlimited long-tail liability exposure... This amendment establishes specific survival periods tailored to each provision's purpose... 5-year confidentiality survival is reasonable for business information while indefinite trade secret protection preserves most sensitive information.",
+        "judge_reasoning": "Risk table flags survival as Requires Clarification, noting survival of key articles appropriate but no time limit creates indefinite exposure. Proposed redline adds explicit survival durations including 5 years for confidentiality with indefinite trade secret protection, 3 years for indemnification with 6 years for IP claims. GT calls for explicit survival period with trade secret carve-out. Redline comprehensively addresses GT requirement with detailed survival framework. Excellent amendment with thorough rationale."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-3.4 Payment Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Client may dispute any invoice or portion thereof by providing written notice to Consultant within fifteen (15) days of receipt, specifying the disputed items and basis for dispute. Consultant shall respond to disputes within ten (10) business days with supporting documentation. Late payments of undisputed amounts shall bear interest... No interest shall accrue on disputed amounts during the dispute resolution period.",
+        "effective_rationale_excerpt": "The original 30-day payment terms are unfavorable compared to standard 45-60 day commercial terms... No dispute resolution period before interest accrues forces Client to pay questionable charges to avoid penalties. The amendment extends payment terms to 45 days... Adding 15-day dispute period with 10-day Consultant response requirement creates fair dispute process.",
+        "judge_reasoning": "Risk table flags payment terms as Unfavorable, noting 30-day terms unfavorable, excessive interest, no dispute period. Proposed redline adds 15-day dispute window, 10-day Consultant response requirement, no interest on disputed amounts during resolution, and reciprocal refund obligation. GT calls for dispute window and good faith resolution process. Redline comprehensively addresses GT requirements with clear timeframes and procedures. Excellent amendment."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-13.1 Governing Law",
+      "evidence": {
+        "proposed_revision_excerpt": "13.1 This Agreement shall be governed by... the laws of the State of Nevada... 13.2 ...the Parties shall submit the dispute to non-binding mediation in Las Vegas, Nevada... If the dispute is not resolved through mediation... either Party may pursue resolution through the state or federal courts located in Clark County, Nevada, and each Party hereby irrevocably consents to the exclusive jurisdiction and venue of such courts.",
+        "effective_rationale_excerpt": "Texas law is unfavorable for Nevada-based Client... This amendment changes governing law to Nevada, eliminating Consultant's home-state advantage... This amendment adds senior executive escalation... Non-binding mediation requirement provides cost-effective dispute resolution... Changing venue to Clark County, Nevada eliminates Client's travel burden.",
+        "judge_reasoning": "Risk table flags both as Unfavorable, noting Texas law/forum unfavorable for Nevada Client and increases costs. Proposed redlines change governing law to Nevada, add structured escalation with senior executives, add non-binding mediation in Las Vegas, and change venue to Clark County, Nevada with exclusive jurisdiction. GT calls for neutral venue consideration or arbitration. Redlines comprehensively address GT concerns with strong Client-favorable changes including mediation step. Excellent amendments."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-New Article - Data Security and Breach Notification",
+      "evidence": {
+        "proposed_revision_excerpt": "ARTICLE 15 - DATA SECURITY AND BREACH NOTIFICATION... Consultant shall implement and maintain comprehensive administrative, physical, and technical safeguards... including: (a) encryption of data in transit and at rest using industry-standard encryption protocols (minimum AES-256); (b) multi-factor authentication... (c) regular security assessments... 15.3 Security Breach Notification. Consultant shall notify Client in writing within twenty-four (24) hours...",
+        "effective_rationale_excerpt": "The contract completely lacks data security obligations despite Consultant's likely access to Client's confidential business data... This creates significant regulatory compliance risk... This new article establishes specific technical security requirements including encryption, authentication, and access controls... 24-hour breach notification enables Client to meet regulatory notification deadlines.",
+        "judge_reasoning": "Risk table identifies missing data security clause with new clause recommendation. Proposed redline adds comprehensive ARTICLE 15 covering administrative/physical/technical safeguards with specific requirements (AES-256 encryption, MFA, penetration testing, background checks, access controls), GDPR/CCPA compliance, 24-hour breach notification with detailed requirements, breach response obligations, and audit rights. GT calls for GDPR/CCPA compliance, security measures, breach notification, controller/processor roles, and audit rights. Redline comprehensively addresses all GT requirements with exceptional detail and technical specifications. Outstanding amendment."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-10.1 Consultant Indemnification",
+      "evidence": {
+        "proposed_revision_excerpt": "Consultant shall indemnify, defend, and hold harmless Client, its affiliates, and their respective officers, directors, employees, and agents from and against any and all third-party claims... arising from or related to: (a) Consultant's negligence, gross negligence, or willful misconduct in performing the Services; (b) any claim that the Deliverables or any component thereof infringes, misappropriates, or violates any third-party intellectual property rights... (c) Consultant's breach of its representations, warranties, or obligations...",
+        "effective_rationale_excerpt": "The original indemnification limited to gross negligence or willful misconduct excludes ordinary negligence, which is the most common basis for professional liability claims. This high threshold leaves Client exposed to most claims arising from Consultant's errors. This amendment expands to include ordinary negligence... Adding comprehensive claim coverage including losses, damages, costs, and attorneys' fees ensures full indemnification.",
+        "judge_reasoning": "Risk table flags indemnification as Unfavorable, noting limited to gross negligence excludes ordinary negligence and high bar to prove. Proposed redline expands to include ordinary negligence, adds comprehensive claim coverage (losses, damages, costs, attorneys' fees), broadens IP coverage to misappropriation/violation, adds breach of obligations and employee/contractor acts, and includes law violations. GT calls for expansion to ordinary negligence and addition of warranty/confidentiality breach coverage. Redline comprehensively addresses all GT requirements with extensive coverage. Excellent amendment."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-11.1 Required Coverage",
+      "evidence": {
+        "proposed_revision_excerpt": "(c) cyber liability insurance with limits of not less than $3,000,000 per claim covering data breaches, network security failures, and privacy violations... All policies except workers' compensation shall name Client as an additional insured. All policies shall include a waiver of subrogation in favor of Client... shall provide thirty (30) days' advance written notice of any cancellation, non-renewal, or material change in coverage. All insurance shall be placed with insurers rated A- or better by A.M. Best.",
+        "effective_rationale_excerpt": "The original $1M general liability and $2M professional liability limits may be insufficient... No cyber liability insurance despite Consultant's likely access to Client's systems and data creates significant exposure gap... This amendment increases coverage limits... Adding cyber liability coverage is essential given data breach risks... Additional insured status gives Client direct claim rights... 3-year post-term coverage protects Client from claims discovered after relationship ends.",
+        "judge_reasoning": "Risk table flags insurance as Requires Clarification, noting no cyber liability despite data access and no Client as additional insured. Proposed redline adds cyber liability at $3M, increases other coverages, names Client as additional insured with waiver of subrogation, requires 3-year post-term coverage, adds 30-day cancellation notice, requires A.M. Best A- rating, and adds umbrella coverage. GT calls for cyber insurance requirement and Client named as additional insured. Redline comprehensively addresses all GT requirements with exceptional additional protections. Outstanding amendment."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.1",
+      "issue_summary": "Engagement of Services via SOW",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include min",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Master agreement structure creates dependency on future SOWs without baseline protections. Client commits to framework without minimum service levels or guaranteed deliverables in this master document"
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Standard of Performance",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define spec",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Industry standards\" is vague and unverifiable without specific benchmarks. No measurable criteria for \"professional and workmanlike manner\" creates enforcement friction. Qualified personnel lacks def"
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Change Orders",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require goo",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Unilateral protection for Consultant with no reciprocal obligation to accommodate reasonable Client requests. \"Consultant shall not be obligated\" creates asymmetric flexibility favoring Consultant. No"
+    },
+    {
+      "clause": "2.4",
+      "issue_summary": "Client Cooperation",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to define spec",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "One-sided dependency clause shifts performance risk entirely to Client without defining \"timely\" or \"reasonable.\" No reciprocal obligation for Consultant to provide clear requirements or reasonable no"
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Fee Structure",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to cap rate in",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Then-current hourly rates\" allows unilateral rate increases without Client approval or caps. Time and materials default creates unlimited cost exposure without budget controls. No rate escalation lim"
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Expense Reimbursement",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to lower pre-a",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "$500 threshold for pre-approval is too high and creates significant uncontrolled expense exposure. \"Reasonable\" is undefined and subjective. No itemization requirements or expense policy reference. No"
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Invoicing Detail",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify man",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Reasonable level of detail\" is vague and unenforceable. No specification of required time entries, task descriptions, or expense breakdowns. Client cannot effectively audit or verify charges. Insuffi"
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Payment Terms and Late Fees",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to extend paym",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day payment terms are unfavorable compared to standard 45-60 day commercial terms. 1% monthly interest (12% annually) is excessive and punitive. No dispute resolution period before interest accrues"
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Ownership of Deliverables",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to provide Cli",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Work-for-hire provision is favorable but \"upon full payment\" creates conditional ownership risk. Client may lack rights to use partially completed work if payment disputes arise. No interim ownership "
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Background IP License",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to grant exclu",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Non-exclusive license means Consultant can license same Background IP to Client's competitors. No field-of-use restrictions on Consultant's other licensing. Perpetual and royalty-free are favorable bu"
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Third-Party Materials",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require per",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Appropriate licenses\" is vague and creates indemnification gap. No requirement for Consultant to obtain perpetual, transferable licenses. No warranty that licenses will survive termination. Client's "
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Mutual Confidentiality",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require spe",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Symmetric obligations ignore that Client will disclose more sensitive business information than Consultant. No differentiated protection levels for trade secrets versus general confidential informatio"
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Permitted Disclosures",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require wri",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Need to know\" is subjective and unverifiable. No written approval requirement for disclosure to contractors. \"At least as protective\" creates enforcement burden on disclosing party. No list of author"
+    },
+    {
+      "clause": "6.4",
+      "issue_summary": "Return of Materials",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require aut",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Upon request\" allows receiving party to retain materials indefinitely until asked. No automatic return upon termination. \"Legal or regulatory compliance\" exception is overbroad and undefined. No cert"
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Termination for Convenience",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to reduce Clie",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day notice is too long and creates cost exposure for unwanted services. Symmetric termination rights ignore that Client bears greater switching costs and business disruption. No immediate terminati"
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Termination for Cause",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define mate",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "15-day cure period may be too long for material breaches causing ongoing harm. \"Material breach\" is undefined and subjective. No immediate termination right for breaches causing irreparable harm. No s"
+    },
+    {
+      "clause": "7.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to require del",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Completed and in-progress Deliverables\" is ambiguous regarding ownership of partial work. Client must pay for work performed but may receive incomplete or unusable deliverables. No prorated refund if"
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Consultant Warranties",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add 90-day ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Conform to specifications\" only applies to SOW specs, not fitness for intended purpose. No warranty duration specified - could be interpreted as only at delivery. Non-infringement warranty lacks inde"
+    },
+    {
+      "clause": "8.3",
+      "issue_summary": "Warranty Disclaimer",
+      "leah_classification": "❌",
+      "leah_action": "DELETE or AMEND to n",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad disclaimer of implied warranties including merchantability and fitness severely limits Client's remedies. All-caps format suggests aggressive negotiating position. Disclaimer may conflict with 8"
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Exclusion of Consequential Damages",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to carve out c",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual waiver appears balanced but asymmetrically impacts Client who faces greater business disruption risk from service failures. Loss of profits and business opportunity are Client's primary damages"
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Liability Cap",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to set minimum",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cap at fees paid under applicable SOW creates severe undercompensation risk for Client. Single SOW fees may be minimal compared to damages from defective advice. Excludes indemnification but indemnifi"
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Consultant Indemnification",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to include ord",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limited to gross negligence or willful misconduct excludes ordinary negligence - the most common claim type. IP indemnification is favorable but no process for indemnification claims specified. No def"
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Client Indemnification",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to cap Client'",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Symmetric indemnification ignores that Consultant's services create greater risk to Client than Client's use creates to Consultant. \"Use of Deliverables in manner not authorized\" is vague - what uses "
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Insurance Requirements",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to increase li",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "$1M general liability and $2M professional liability may be insufficient for high-value consulting engagements. No cyber liability insurance required despite data access. No certificate of insurance d"
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Non-Solicitation",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to broaden to ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "12-month restriction is reasonable but \"directly solicit\" is narrow and allows indirect recruiting. \"Involved in performance\" is vague - what level of involvement triggers protection? No liquidated da"
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to change gove",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Texas law is unfavorable for Nevada-based Client. Forum selection creates travel burden and expense for Client to litigate in Texas. No choice for Client's home jurisdiction. Consultant's home state a"
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add mandato",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day negotiation is reasonable but no senior executive escalation requirement. Direct to litigation without mediation or arbitration is expensive and time-consuming. Travis County, Texas forum is un"
+    },
+    {
+      "clause": "13.4",
+      "issue_summary": "Assignment Restrictions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define affi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual consent requirement is reasonable but affiliate and M&A exceptions are too broad. No definition of affiliate - could include competitors. Sale of substantially all assets exception allows assig"
+    },
+    {
+      "clause": "13.10",
+      "issue_summary": "Survival Provisions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify sur",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Survival of key articles is appropriate but no time limit on survival creates indefinite exposure. Article 5 (IP) survival is perpetual which is reasonable. Article 6 (Confidentiality) should specify "
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Service Level Agreements",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Article defi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No SLA provisions create unenforceable performance expectations. Client lacks measurable metrics for service quality, response times, or deliverable quality standards. No remedies for substandard perf"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Data Security and Breach Notification",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Article requ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No data security obligations despite Consultant's likely access to Client's confidential business data and systems. No breach notification requirements create compliance risk under data protection law"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Key Personnel and Substitution",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Article requ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No key personnel designation allows Consultant to assign any personnel regardless of qualifications. No substitution approval rights for Client. No continuity protection if key consultants leave mid-e"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Audit Rights",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Article gran",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No audit rights prevent Client from verifying billing accuracy, compliance with contract terms, or proper handling of confidential information. No access to records supporting invoices or expense clai"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Conflicts of Interest",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Article requ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No conflicts provision allows Consultant to simultaneously serve Client's competitors with access to Client's confidential strategies. No disclosure obligation for existing or potential conflicts. No "
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Acceptance Testing",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new Article esta",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No acceptance process for deliverables creates ambiguity about when work is complete and payment is due. No testing period or rejection rights for non-conforming deliverables. No correction obligation"
+    },
+    {
+      "clause": "2.1 Engagement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision creates unilateral control for Consultant over SOW acceptance without timeline obligations. Client commits to the master framework but receives no assurance of service availabil"
+    },
+    {
+      "clause": "2.2 Standard of Performance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause uses vague and unenforceable terms like \"professional and workmanlike\" and \"industry standards\" without objective criteria. This creates verification impossibility and shifts burde"
+    },
+    {
+      "clause": "2.3 Change Orders",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision provides unilateral protection to Consultant without reciprocal obligations to accommodate Client's legitimate business needs. The phrase \"shall not be obligated\" creates asymme"
+    },
+    {
+      "clause": "2.4 Client Cooperation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause creates one-sided dependency that shifts all performance risk to Client without defining \"timely\" or \"reasonable\" standards. The unilateral acknowledgment by Client establishes Con"
+    },
+    {
+      "clause": "3.1 Fees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision allows unilateral rate increases through \"then-current hourly rates\" language, creating unlimited cost exposure for Client without caps or notice requirements. This gives Consul"
+    },
+    {
+      "clause": "3.2 Expenses",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause creates significant uncontrolled expense exposure with vague \"reasonable\" standard and $500 pre-approval threshold that is too high. No itemization or receipt requirements prevent "
+    },
+    {
+      "clause": "3.3 Invoicing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's \"reasonable level of detail\" is vague and unenforceable, preventing Client from effectively auditing or verifying charges. Without specific requirements, Consultant could prov"
+    },
+    {
+      "clause": "3.4 Payment Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original 30-day payment terms are unfavorable compared to standard 45-60 day commercial terms and create cash flow pressure on Client. The 1% monthly interest rate (12% annually) is excessive and "
+    },
+    {
+      "clause": "5.1 Ownership of Deliverables",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's \"upon full payment\" condition creates conditional ownership risk where Client lacks rights to use partially completed or disputed work. This gives Consultant leverage in payme"
+    },
+    {
+      "clause": "5.2 Background IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original non-exclusive license allows Consultant to license identical Background IP to Client's competitors, potentially providing competitive advantages to rivals. The \"solely as part of Delivera"
+    },
+    {
+      "clause": "5.3 Third-Party Materials",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's \"appropriate licenses\" is vague and creates indemnification gap leaving Client exposed to third-party claims. No requirement for perpetual or transferable licenses means Clien"
+    },
+    {
+      "clause": "6.1 Mutual Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original symmetric obligations ignore that Client will disclose more sensitive business information including strategic plans, financial data, and proprietary systems to Consultant. \"Strict confid"
+    },
+    {
+      "clause": "6.2 Permitted Disclosures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's \"need to know\" is subjective and unverifiable, allowing excessive disclosure without accountability. No written approval requirement for contractor disclosures creates unlimit"
+    },
+    {
+      "clause": "6.4 Return of Materials",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's \"upon request\" allows receiving party to retain Confidential Information indefinitely until asked, creating ongoing exposure risk. \"Promptly\" is vague and unenforceable withou"
+    },
+    {
+      "clause": "7.1 Termination for Convenience",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original symmetric 30-day notice ignores that Client bears greater switching costs and business disruption from Consultant termination mid-project. Equal treatment fails to recognize power imbalan"
+    },
+    {
+      "clause": "7.2 Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's \"material breach\" is undefined and subjective, creating disputes about what triggers termination rights. 15-day cure period may be too long for breaches causing ongoing harm s"
+    },
+    {
+      "clause": "7.4 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision's \"completed and in-progress Deliverables for which Client has paid\" is ambiguous and could exclude partially completed work Client needs for business continuity. Conditioning d"
+    },
+    {
+      "clause": "8.2 Consultant Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original warranties lack warranty duration and could be interpreted as only applying at moment of delivery, leaving Client without recourse for latent defects. \"Conform to specifications\" doesn't "
+    },
+    {
+      "clause": "8.3 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This broad disclaimer of implied warranties including merchantability and fitness for particular purpose directly contradicts the express warranties in Section 8.2 and severely limits Client's remedie"
+    },
+    {
+      "clause": "9.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original blanket waiver of consequential damages including loss of profits and business opportunity asymmetrically harms Client who faces greater business disruption risk from defective consulting"
+    },
+    {
+      "clause": "9.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original cap at fees under applicable SOW creates severe undercompensation risk where single SOW fees may be minimal compared to damages from defective strategic advice. A small consulting engagem"
+    },
+    {
+      "clause": "10.1 Consultant Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original indemnification limited to gross negligence or willful misconduct excludes ordinary negligence, which is the most common basis for professional liability claims. This high threshold leave"
+    },
+    {
+      "clause": "10.2 Client Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original symmetric indemnification ignores that Consultant's services create greater third-party claim risk than Client's use of deliverables. \"Use in manner not authorized\" is vague because the A"
+    },
+    {
+      "clause": "11.1 Required Coverage",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original $1M general liability and $2M professional liability limits may be insufficient for high-value technology consulting engagements where errors could cause substantial business losses. No c"
+    },
+    {
+      "clause": "12.1 Non-Solicitation of Employees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original 12-month restriction is reasonable but \"directly solicit\" is too narrow and allows indirect recruiting through recruiters or LinkedIn. \"Involved in performance\" is vague without defining "
+    },
+    {
+      "clause": "13.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Texas law is unfavorable for Nevada-based Client and creates home-court advantage for Texas-based Consultant. Applying Consultant's home state law in disputes gives Consultant familiarity advantage wi"
+    },
+    {
+      "clause": "13.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original 30-day negotiation lacks structure and senior executive escalation requirement, allowing disputes to languish at operational levels. Direct to litigation without mediation is expensive an"
+    },
+    {
+      "clause": "13.4 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original symmetric assignment rights ignore that Client has greater interest in controlling who provides services, while Consultant assignment to Client's competitors could create conflicts and co"
+    },
+    {
+      "clause": "13.10 Survival",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original indefinite survival for all listed articles creates unlimited long-tail liability exposure for both parties without reasonable time limits. No time limits on confidentiality creates perpe"
+    },
+    {
+      "clause": "New Article - Service Level Agreements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 14 after Article 13 (General Provisions). The contract currently lacks measurable performance standards creating unenforceable quality expectations and leaving Client "
+    },
+    {
+      "clause": "New Article - Data Security and Breach Notification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 15 after Article 14 (Service Level Agreements). The contract completely lacks data security obligations despite Consultant's likely access to Client's confidential bus"
+    },
+    {
+      "clause": "New Article - Key Personnel and Substitution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 16 after Article 15 (Data Security and Breach Notification). The contract lacks key personnel provisions allowing Consultant to assign any personnel regardless of qual"
+    },
+    {
+      "clause": "New Article - Audit Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 17 after Article 16 (Key Personnel and Substitution). The contract completely lacks audit rights preventing Client from verifying billing accuracy, compliance with con"
+    },
+    {
+      "clause": "New Article - Conflicts of Interest",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 18 after Article 17 (Audit Rights). The contract lacks conflicts of interest provisions allowing Consultant to simultaneously serve Client's competitors with full acce"
+    },
+    {
+      "clause": "New Article - Acceptance Testing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 19 after Article 18 (Conflicts of Interest). The contract lacks acceptance testing procedures creating ambiguity about when deliverables are complete, when payment is "
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 0,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 1,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 8,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 50.0,
+    "total_quality_points": 99,
+    "total_points": 149.0,
+    "weighted_max": 50,
+    "additional_issues_count": 70
+  }
+}

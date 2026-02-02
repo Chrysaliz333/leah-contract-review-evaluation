@@ -1,0 +1,554 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "velocity",
+    "evaluation_timestamp": "2026-01-25T19:00:00Z",
+    "evaluator_model": "opus",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 16.0,
+      "matched_redline_id": "Redline-4.1 Pricing and Modifications",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor may modify prices, discounts, or product offerings at any time upon sixty (60) days' prior written notice to Reseller. Price changes shall apply to orders placed after the effective date of such changes and shall not apply to any order accepted by Vendor prior to the effective date.",
+        "effective_rationale_excerpt": "The existing 30-day notice creates significant price volatility risk for the Reseller, particularly for forecasted deals and committed purchases. Extending to 60 days provides a buffer for budgeting and contract negotiations with End Users.",
+        "judge_reasoning": "Velocity correctly identifies the unilateral price change risk at clause 4.1 as Requires Clarification. The risk_table notes '30 days' notice' and 'exposes Reseller to price volatility and forecasting risk'. The proposed redline extends notice from 30 to 60 days (not 90 as GT suggests) and protects accepted orders. Doesn't add price cap or termination right on unacceptable increase. Amendment score 2 for partial fix."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "No termination for convenience during Term",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-9.1 Term",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Party may terminate this Agreement for convenience during the Term; after the initial term, either Party may terminate this Agreement for convenience upon ninety (90) days' prior written notice.",
+        "effective_rationale_excerpt": "The addition of a post-term convenience termination right provides necessary operational flexibility for Reseller if market conditions change, without enabling a unilateral early exit during the initial term.",
+        "judge_reasoning": "Velocity correctly identifies the no-TfC restriction at clause 9.1 as Requires Clarification. The risk_table notes 'Initial 2-year term with auto-renewal and no convenience termination during Term. This can trap the Reseller in long-term commitments.' The proposed amendment adds convenience termination after initial term with 90 days' notice. Directly addresses GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Vendor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.2 Cap",
+      "evidence": {
+        "proposed_revision_excerpt": "VENDOR'S TOTAL LIABILITY SHALL NOT EXCEED AMOUNTS PAID BY RESELLER IN THE TWELVE MONTHS PRECEDING THE CLAIM; PROVIDED, HOWEVER, THAT VENDOR'S LIABILITY FOR IP INFRINGEMENT, BREACH OF CONFIDENTIALITY AND DATA PROTECTION OBLIGATIONS SHALL NOT BE LIMITED BY THIS CAP.",
+        "effective_rationale_excerpt": "Creates practical protections for IP, confidentiality, and data-related breaches by carving out certain critical liability. Balances risk by preserving a reasonable cap while ensuring accountability for core protections.",
+        "judge_reasoning": "Velocity correctly identifies the insufficient liability cap at clause 12.2 as Requires Clarification. The risk_table notes 'this can leave large breaches inadequately compensated' and recommends carve-outs for IP, data/privacy. The proposed redline adds carve-outs for IP infringement, confidentiality, and data protection. Addresses key GT elements though doesn't increase the base cap amount."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.2",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 4.0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Broad disclaimer of warranties beyond stated terms; standard in many software agreements, but for Reseller it reduces recourse. Narrow the disclaimer where possible or add a limited warranty for essential functionality.",
+        "judge_reasoning": "Velocity identifies the warranty disclaimer at 11.2 as Requires Clarification and notes 'for Reseller it reduces recourse'. However, there is no proposed redline to address this T1 issue - only risk_table flagging. The recommendation to 'narrow the disclaimer' is not implemented in any redline. Partial detection - issue flagged but not remedied."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "2.1 / 2.2",
+      "tier": "T2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity's risk_table marks clause 2.1 as Favorable and does not flag any concern about non-exclusivity or Vendor direct sales undermining Reseller investment. The 2.2 clause is not separately evaluated. There is no redline addressing the non-exclusivity concern. The GT issue about protecting Reseller's investment from Vendor competition is not identified."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity's risk_table marks clause 5.1 as Favorable and characterizes the 1.5% per month rate as 'standard' without flagging it as a concern. The GT issue is that 18% APR is above typical commercial rates and should be reduced. Velocity does not identify this as an issue or propose any amendment to reduce the rate or exclude disputed amounts."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vendor can require prepayment on credit issues",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Vendor may set and modify credit limits and require prepayment for overages or past-due balances. This can create financial risk or abrupt liquidity strains for Reseller if limits are tight or not transparently managed.",
+        "judge_reasoning": "Velocity identifies the credit control issue at 5.2 as Requires Clarification and notes the risk of 'abrupt liquidity strains'. The risk_table recommends adding notice, criteria, and cure rights. However, there is no proposed redline implementing these recommendations. Partial detection - issue flagged but not remedied."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Sales reports require End User information",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 2.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Quarterly reports detailing sales and pipeline are required, but content, data fields, and privacy treatment are not specified. Without detail, reporting may be inconsistent or fail to support forecasting/compliance.",
+        "judge_reasoning": "Velocity identifies the reporting issue at 8.1 as Requires Clarification and notes 'privacy treatment are not specified'. However, there is no proposed redline addressing this - the risk_table recommendation to 'specify required data fields... and data privacy handling' is not implemented. Partial detection - issue flagged but not remedied."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 2.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Indirect/consequential damages excluded; common. The carve-outs for direct damages are tied to the liability cap, which may unduly limit remedies for significant vendor failings. Retain general exclusion but consider explicit carve-outs for breaches of confidentiality and data protection.",
+        "judge_reasoning": "Velocity identifies the consequential damages exclusion at 12.1 as Requires Clarification and recommends carve-outs for confidentiality and data protection. However, there is no proposed redline for 12.1 - only the 12.2 cap amendment includes carve-outs. The 12.1 exclusion itself is not amended. Partial detection - issue flagged but not directly remedied (though 12.2 carve-outs may help)."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "9.3",
+      "tier": "T2",
+      "issue": "Termination effects - no sell-off period",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 2.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Termination requires cessation of marketing/sales, payment of all amounts, and trademark termination. No transition assistance, data handoff, or wind-down support is described.",
+        "judge_reasoning": "Velocity identifies the termination effects issue at 9.3 as Requires Clarification and notes 'No transition assistance, data handoff, or wind-down support'. The risk_table recommends adding transition obligations and wind-down period. However, there is no proposed redline implementing these recommendations. Partial detection - issue flagged but not remedied."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-11.3 IP Indemnity",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor shall indemnify, defend, and hold harmless Reseller and End Users from any third-party claims alleging that the Vendor-provided Products infringe any third-party intellectual property rights, provided Vendor has control of the defense and settlement. If any such claim is sustained or likely to be sustained, Vendor shall, at its option and expense, (a) procure for Reseller and End Users the right to continue using the Product, (b) modify or replace the Product to avoid infringement, or (c) offer a reasonably equivalent non-infringing alternative.",
+        "effective_rationale_excerpt": "Provides critical protection for Reseller against third-party IP claims related to Vendor-provided software, aligning with common reseller protections and reducing risk of disruption to End Users.",
+        "judge_reasoning": "Velocity correctly identifies the missing IP indemnification and proposes a new clause (11.3 IP Indemnity). The proposed redline includes comprehensive defense and indemnification obligations with remediation options. Directly addresses the T1 GT issue. High quality."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-10.2 Data Protection and Security",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall comply with applicable data protection laws in relation to any Personal Data processed under this Agreement. Vendor shall implement and maintain reasonable security measures appropriate to the nature of the data and shall process Personal Data only on documented instructions from Reseller. In the event of a personal data breach, Vendor shall notify Reseller without undue delay, and in any event within 72 hours after becoming aware of the breach...",
+        "effective_rationale_excerpt": "Addresses data protection, security, breach notification, and data processing responsibilities to reduce regulatory risk and align with best practices for handling End User data.",
+        "judge_reasoning": "Velocity correctly identifies the missing data protection clause and proposes a new clause (10.2). The proposed redline includes data protection law compliance, security measures, processing instructions, 72-hour breach notification, and DPA requirement. Comprehensive fix addressing all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-7.3 Service Levels & Support SLAs",
+      "evidence": {
+        "proposed_revision_excerpt": "Vendor shall provide standard service levels for the Products, including availability, response times, and issue resolution, as set forth in Exhibit C. Vendor shall provide second-level technical support to Reseller and shall notify Reseller of any material changes to service levels at least thirty (30) days in advance.",
+        "effective_rationale_excerpt": "Establish clear, binding performance expectations for support, ensuring timely responses and predictable escalation paths for End Users. This protects the Reseller's customers and improves satisfaction and retention.",
+        "judge_reasoning": "Velocity correctly identifies the missing SLAs at 7.2 as Requires Clarification and proposes a new clause (7.3 Service Levels & Support SLAs). The proposed redline establishes SLAs in an Exhibit covering availability, response times, and resolution, with 30-day change notice. Addresses GT concern though specific metrics are in the exhibit rather than the clause itself."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "3.1",
+      "issue_summary": "Ordering Process – Vendor has 3 business days to confirm or reject orders",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require con",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A 3-day confirmation window can bottleneck order flow and forecasting for Reseller. No explicit remedies if Vendor misses the window, and no automatic acceptance mechanism is provided. This creates un"
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "License Delivery & End User Licensing",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to clarify del",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Software licenses delivered electronically and Reseller is responsible for providing licenses to End Users. It’s unclear who bears risk during delivery, what constitutes delivery, and how End Users re"
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "End User Agreements",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to allow a sta",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Reseller must ensure End Users accept Vendor’s standard EULA prior to delivery. This can transfer excessive burden to Reseller and may raise enforceability concerns if End Users cannot reasonably acce"
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Pricing and Modifications",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require lon",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Vendor may modify prices with 30 days’ notice and apply changes to orders placed after that date. This exposes Reseller to price volatility and forecasting risk, potentially undermining committed deal"
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Credit",
+      "leah_classification": "⚠️",
+      "leah_action": "Add objective credit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Vendor may set and modify credit limits and require prepayment for overages or past-due balances. This can create financial risk or abrupt liquidity strains for Reseller if limits are tight or not tra"
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Marketing Materials",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to permit reas",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prohibits modification of Vendor-provided marketing materials. This restricts Reseller from tailoring to local markets and needs, potentially weakening market penetration."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "End User Support",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to include bin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Reseller provides first-level support; Vendor provides second-level support. Absence of defined SLAs or response times creates uncertainty about support quality and timing for End Users."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Sales Reports",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to specify req",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Quarterly reports detailing sales and pipeline are required, but content, data fields, and privacy treatment are not specified. Without detail, reporting may be inconsistent or fail to support forecas"
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Term",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to permit term",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Initial 2-year term with auto-renewal and no convenience termination during Term. This can trap the Reseller in long-term commitments."
+    },
+    {
+      "clause": "9.3",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "Add transition oblig",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Termination requires cessation of marketing/sales, payment of all amounts, and trademark termination. No transition assistance, data handoff, or wind-down support is described."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Confidentiality",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider extending t",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Confidentiality lasts three years. For business data and competitive information, this is reasonable, but some categories (e.g., trade secrets) may warrant longer protection."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Vendor Warranties",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify warranty sco",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Warranties reference that Products perform as described in documentation; vendor EULA governs End User warranties. This may leave critical performance expectations uncertain from Reseller’s perspectiv"
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Disclaimer",
+      "leah_classification": "⚠️",
+      "leah_action": "Narrow the disclaime",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad disclaimer of warranties beyond stated terms; standard in many software agreements, but for Reseller it reduces recourse."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Exclusion of Damages",
+      "leah_classification": "⚠️",
+      "leah_action": "Retain general exclu",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Indirect/consequential damages excluded; common. The carve-outs for direct damages are tied to the liability cap, which may unduly limit remedies for significant vendor failings."
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Cap",
+      "leah_classification": "⚠️",
+      "leah_action": "Introduce carve-outs",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Liability capped at amounts paid in the prior 12 months; this can leave large breaches inadequately compensated."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "⚠️",
+      "leah_action": "If possible, adopt a",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Washington law governs; for a California-based Reseller, consider law compatibility and forum convenience."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify seat, rules,",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Arbitration in Seattle; this may be favorable to the vendor if the Reseller has broader enforcement concerns in California."
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Assignment",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to permit assi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prohibits assignment without consent, which restricts corporate restructurings and affiliate transfers common in channel partnerships."
+    },
+    {
+      "clause": "4.1 Pricing and Modifications",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 4.1. The existing 30-day notice creates significant price volatility risk for the Reseller, particularly for forecasted deals and committed purchases. Extending to 60 d"
+    },
+    {
+      "clause": "9.1 Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 9.1. The addition of a post-term convenience termination right provides necessary operational flexibility for Reseller if market conditions change, without enabling a u"
+    },
+    {
+      "clause": "13.3 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 13.3. This adjustment enables critical corporate activities (affiliates, M&A) to proceed without unnecessary disruption, while preserving the need for notice and consen"
+    },
+    {
+      "clause": "6.2 Marketing Materials",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 6.2. Allows the Reseller to tailor materials to local markets while maintaining brand integrity. This improves local relevance, accelerates market penetration, and redu"
+    },
+    {
+      "clause": "7.3 Service Levels & Support SLAs",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 7.2 End User Support. Establish clear, binding performance expectations for support, ensuring timely responses and predictable escalation paths for End Users. This protects th"
+    },
+    {
+      "clause": "10.2 Data Protection and Security",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 10.1 Confidentiality Obligations. Addresses data protection, security, breach notification, and data processing responsibilities to reduce regulatory risk and align with best "
+    },
+    {
+      "clause": "11.3 IP Indemnity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 11.2. Provides critical protection for Reseller against third-party IP claims related to Vendor-provided software, aligning with common reseller protections and reducing risk "
+    },
+    {
+      "clause": "12.2 Cap",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 12.2. Creates practical protections for IP, confidentiality, and data-related breaches by carving out certain critical liability. Balances risk by preserving a reasonable cap "
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 5,
+      "N": 0,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 3,
+        "P": 3,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 0,
+        "P": 1,
+        "N": 0,
+        "NMI": 1
+      }
+    },
+    "t1_all_detected": true,
+    "total_detection_points": 51.0,
+    "total_quality_points": 53,
+    "total_points": 104.0,
+    "additional_issues_count": 26,
+    "additional_issues_points": 7
+  }
+}

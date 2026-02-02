@@ -1,0 +1,648 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "scale",
+    "evaluation_timestamp": "2026-01-25T18:30:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-11.2 Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "SUPPLIER'S TOTAL LIABILITY FOR DIRECT DAMAGES ARISING FROM OR RELATING TO THIS AGREEMENT SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNTS PAID BY BUYER FOR PRODUCTS IN THE TWENTY-FOUR (24) MONTHS PRECEDING THE CLAIM; OR (B) THE APPLICABLE LIMITS OF SUPPLIER'S INSURANCE REQUIRED UNDER SECTION 13. NOTWITHSTANDING THE FOREGOING, THIS CAP SHALL NOT APPLY TO (I) LIABILITY ARISING FROM CLAIMS FOR BODILY INJURY OR DEATH; (II) BUYER'S INDEMNIFICATION CLAIMS UNDER SECTION 12; (III) LIABILITY RESULTING FROM SUPPLIER'S WILLFUL MISCONDUCT; OR (IV) LIABILITY ARISING FROM PRODUCT RECALLS OR DEFECTS THAT CAUSE SUBSTANTIAL BUSINESS INTERRUPTION.",
+        "effective_rationale_excerpt": "The original 12-month cap is likely insufficient given recall or production stoppage costs. Increasing to 24 months or supplier insurance limits raises available recovery and tying to insurance ensures realistic coverage. Excluding bodily injury, indemnities, willful misconduct, and recall-related losses preserves full recovery for severe harms. This better protects Apex from catastrophic supplier-caused damages.",
+        "judge_reasoning": "Scale correctly identifies the 12-month liability cap as inadequate for automotive supply. The risk table classifies 11.2 as 'Favorable' but provides detailed reasoning noting the cap is 'likely insufficient to cover damages from defective components, recalls, or business interruption' and recommends increasing cap and adding carve-outs. The proposed redline raises the cap to 24 months or insurance limits, and adds comprehensive carve-outs for bodily injury, indemnification, willful misconduct, and recalls. Fully addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-5.2 Warranty Claims",
+      "evidence": {
+        "proposed_revision_excerpt": "In addition to repair, replacement, or refund of the purchase price, Supplier shall be responsible for all reasonable costs incurred by Buyer to remove, replace, rework, or repair defective Products (including labor and shipping), and for reasonable third-party costs directly resulting from defective Products, including recall, remediation and production downtime costs caused by Supplier defects. Such remedies are cumulative and not the exclusive remedies where injunctive or other equitable relief is appropriate. Supplier shall commence corrective action within ten (10) business days of notice and complete remediation within a commercially reasonable period.",
+        "effective_rationale_excerpt": "The original clause limited Supplier remedies to repair/replace/refund as sole obligation. This amendment adds reimbursement for removal, rework, recall and production downtime to ensure Supplier bears the full economic burden of defects. It requires prompt remediation timelines and clarifies remedies are cumulative, protecting Apex's manufacturing continuity and financial exposures from defective components.",
+        "judge_reasoning": "Scale detects this critical T1 issue. The risk table classifies 5.2 as 'Favorable' but states 'Clause limits Supplier remedy to repair/replace/refund as sole obligation; this excludes Buyer recovery for consequential business interruption, inspection costs, and recall-related expenses' and recommends expanding remedies. The proposed redline adds comprehensive cost recovery including removal, rework, recall costs, production downtime, labor and shipping. Makes remedies cumulative. Fully addresses all GT key elements including third-party repair, recall cost allocation, and removes Supplier's sole control."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14.0,
+      "matched_redline_id": "Risk table entry 5.3",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 5.3 as 'Clarify': 'Broad disclaimer excludes implied warranties, which could reduce Buyer's protections; may be standard, but Buyer should preserve implied warranties or require express fitness for Buyer's known purpose.' Recommended action: 'Amend to preserve implied warranties or add representations that Products are fit for Buyer's specific manufacturing purpose.'",
+        "effective_rationale_excerpt": "Broad disclaimer excludes implied warranties, which could reduce Buyer's protections; Buyer should preserve implied warranties or require express fitness for Buyer's known purpose.",
+        "judge_reasoning": "Scale identifies the warranty disclaimer issue at 5.3, classifying it as 'Clarify' and flagging that the broad disclaimer excludes implied warranties. The risk table recommends preserving implied warranties or adding express fitness for purpose. However, there is no specific proposed redline targeting the 5.3 disclaimer itself. The 5.2 redline addresses warranty remedies but doesn't amend the disclaimer language. Detection awarded as Y because the issue is clearly identified with the correct analysis and recommendation; quality scores reduced as the fix is incomplete - no actual redline exists for 5.3."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-11.1 Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES ARISING FROM THIS AGREEMENT, EXCEPT THAT THIS EXCLUSION SHALL NOT APPLY TO (A) CLAIMS FOR BODILY INJURY OR DEATH; (B) BUYER'S LOSS OF PRODUCTION, LOSS OF USE, LOSS OF GOODWILL, OR PECUNIARY LOSS ARISING DIRECTLY FROM DEFECTIVE PRODUCTS, RECALLS, OR SUPPLIER'S WILLFUL MISCONDUCT; (C) AMOUNTS PAYABLE UNDER SECTION 12 (INDEMNIFICATION); OR (D) ANY LIABILITY ARISING FROM SUPPLIER'S FAILURE TO MAINTAIN INSURANCE REQUIRED UNDER SECTION 13.",
+        "effective_rationale_excerpt": "The original blanket exclusion eliminates recovery for consequential losses critical to Apex (production loss, recalls). This amendment preserves a limitation on speculative damages while carving out essential exceptions for personal injury, recall and direct business losses, indemnities, willful misconduct, and insurance failures. It balances commercial predictability with protection for material, foreseeable harms to Buyer's operations.",
+        "judge_reasoning": "Scale fully detects this T1 issue. The risk table classifies 11.1 as 'Favorable' but provides detailed analysis noting it 'Broadly bars consequential damages for both parties, which could preclude recovery for lost production, recall costs, or supply chain disruption' with no carve-outs. The proposed redline adds comprehensive carve-outs for bodily injury, production/use losses from defects, recalls, willful misconduct, indemnification amounts, and insurance failures. Fully addresses all GT key elements including product liability, IP, and willful misconduct carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-6.1 Delivery Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Unless otherwise agreed in writing, all Products shall be delivered DAP (Delivered at Place) Buyer's named facility (Incoterms 2020), with Supplier responsible for carriage, export and import formalities where applicable, and for maintaining cargo insurance covering loss or damage in transit. Title and risk of loss shall pass to Buyer upon Buyer's acceptance at Buyer's facility following receipt and satisfactory inspection under Section 7.",
+        "effective_rationale_excerpt": "Placement: Amend Section 6.1. The original intent is to define delivery terms, but FCA shifts transit risk to Buyer. This revision shifts freight responsibility and transit risk to Supplier until Buyer acceptance, reducing Buyer's exposure to in-transit loss or damage and aligning responsibility for delivery performance with Supplier. It protects Apex from unexpected transport losses and aligns with manufacturing continuity needs.",
+        "judge_reasoning": "Scale correctly identifies the FCA risk transfer issue. The risk table classifies 6.1 as 'Favorable' but states 'Under FCA title/risk passes upon delivery to carrier at Supplier's facility, imposing transport risk on Buyer' and recommends shifting to DAP/DDP. The proposed redline changes to DAP with Supplier responsible for carriage and insurance, and title/risk passing only upon Buyer's acceptance after inspection. Fully addresses all GT key elements including preference for DDP/DAP, insurance requirement, and alignment of title with risk transfer."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": "Risk table entry 2.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 2.2 as 'Clarify': 'The 5 business day acceptance window may be insufficient for complex orders and does not address deemed acceptance consequences. This may create operational uncertainty for Buyer if Supplier delays or fails to respond.' Recommended action: 'Amend to shorter deemed-acceptance rule for timely PO confirmations and require Supplier to acknowledge or propose changes within the stated timeframe; include remedies for failure.'",
+        "effective_rationale_excerpt": "The 5 business day acceptance window may be insufficient for complex orders and does not address deemed acceptance consequences, creating operational uncertainty for Buyer.",
+        "judge_reasoning": "Scale identifies the PO acceptance risk at 2.2, flagging operational uncertainty from lack of deemed acceptance. The risk table recommends adding a deemed acceptance rule. However, there is no specific proposed redline for clause 2.2 - Scale doesn't include a Purchase Orders amendment in the proposed_redlines. Partial detection awarded because the issue is flagged with correct analysis but no actual redline fix is provided."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-7.1 Inspection",
+      "evidence": {
+        "proposed_revision_excerpt": "Buyer shall inspect all Products within thirty (30) days of receipt and shall notify Supplier in writing of any non-conformities or defects. For latent defects not reasonably discoverable within thirty (30) days, Buyer shall notify Supplier promptly upon discovery and in any event within the applicable Warranty period. Receipt for shipments shall not constitute acceptance of Products for purposes of latent defects or warranty claims.",
+        "effective_rationale_excerpt": "Extends the inspection window to 30 days and preserves Buyer's rights for latent defects, addressing complexity of automotive component testing. This change reduces the risk that a short inspection period results in deemed acceptance and loss of remedies, ensuring Apex can detect functional or lifecycle defects and make warranty claims consistent with industry testing cycles.",
+        "judge_reasoning": "Scale correctly identifies both the short inspection period (10 days) and deemed acceptance risk. The risk table flags 7.1 as 'Favorable' but notes '10 business days is short for thorough inspection' and 7.2 as 'Favorable' noting 'Deemed acceptance after short period eliminates Buyer's leverage.' The proposed redline extends inspection to 30 days, explicitly preserves latent defect rights within warranty period, and clarifies receipt doesn't constitute acceptance for latent defects. Fully addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": "Risk table entry 12.1 + New Clause Recall",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 12.1 as 'Favorable': 'Broad Supplier indemnity covering defects, negligence, and IP infringement is favorable; however clause lacks defense control and settlement consent mechanics.' New Clause proposed: 'Recall and Product Liability Cooperation: If any Product is subject to a recall or market withdrawal, Supplier shall, at its expense, cooperate fully with Buyer in any recall or correction campaign, including providing timely information, reimbursing reasonable costs associated with notification, removal, replacement, public statements, and remediation.'",
+        "effective_rationale_excerpt": "The agreement lacks explicit recall coordination and cost allocation, leaving Buyer exposed to recall expenses. This clause ensures Supplier responsibility and cooperation for recalls tied to Supplier defects, protects Apex's reputation, and ensures costs and communications are handled cooperatively and expeditiously.",
+        "judge_reasoning": "Scale identifies the indemnification gap at 12.1, noting it lacks defense control mechanics. Additionally, Scale proposes a new 'Recall and Product Liability Cooperation' clause that explicitly covers recall costs, notification, removal, replacement, and remediation expenses. The recall clause addresses part of GT-08's concerns about recall costs. However, Scale does not directly amend 12.1 to make indemnification uncapped or explicitly add recall costs to the indemnification clause itself. Partial detection because recall costs are addressed via separate new clause rather than comprehensively amending 12.1 to include all GT elements including uncapped coverage."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": "Risk table entry 4.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 4.2 as 'Clarify': 'Net 30 is customary; interest at 1.5% monthly equals 18% annual which is high; no right for Buyer to set-off undisputed claims, and no early payment discounts or prompt payment terms for large volumes.' Recommended action: 'Amend to permit Buyer-set off, cap interest to lawful rate, and consider payment security (e.g., letters of credit) for long lead items.'",
+        "effective_rationale_excerpt": "Interest at 1.5% monthly equals 18% annual which is high; Buyer should have set-off rights and interest should be capped at lawful rate.",
+        "judge_reasoning": "Scale correctly identifies the high 18% interest rate issue. The risk table flags 4.2 as 'Clarify' noting the 1.5% monthly rate equals 18% annually which is high, and recommends capping interest to lawful rate and adding set-off rights. However, there is no specific proposed redline for 4.2 in the canonical JSON. Detection awarded as Y because the issue is identified with correct analysis; reduced quality scores due to lack of actual redline amendment."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-3.2 Price Adjustments",
+      "evidence": {
+        "proposed_revision_excerpt": "After the initial twelve-month period, Supplier may propose price adjustments annually upon ninety (90) days' prior written notice. Any proposed adjustment must be accompanied by reasonable supporting documentation of cost changes (including raw materials, labor, and transportation) and shall be subject to Buyer's right to audit Supplier's supporting documentation. No single adjustment shall exceed five percent (5%), and in no event shall cumulative adjustments in any rolling twelve (12) month period exceed five percent (5%) unless mutually agreed in writing. If Buyer disputes the proposed adjustment, the Parties shall meet within thirty (30) days to resolve; absent agreement, price shall remain unchanged until resolution.",
+        "effective_rationale_excerpt": "This amendment clarifies the process and documentation for price increases, requiring Supplier transparency and Buyer's audit right, preserving price stability for Apex. It prevents back-to-back increases within a short period by capping cumulative adjustments and establishes a dispute process so Buyer is not forced to accept unsupported increases.",
+        "judge_reasoning": "Scale identifies the compounding price adjustment risk. The risk table flags 3.2 as 'Clarify' noting 'Supplier unilateral right to adjust prices annually (capped at 5%) lacks documentation requirements and no mechanism for Buyer to audit or dispute.' The proposed redline requires cost documentation, Buyer audit rights, caps cumulative adjustments, and adds a dispute resolution process. Addresses GT key elements about cost justification and effectively addresses compounding through cumulative cap. Comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": "Risk table entries 1.2, 2.3 + New Clause Change Control",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table entry 1.2 (Forecasts): 'non-binding estimates... leaves no enforceable commitment for Supplier to reserve capacity; this creates supply risk.' Risk table entry 2.3 (Forecasts): 'Forecasts are non-binding and only for capacity planning; there is no commitment for allocation, nor minimum purchase, nor penalty for failure to meet forecasted capacity.' Recommended action: 'Add firm order lead-time, capacity reservation, and priority allocation language.' New Clause proposed: 'Change Control' for specification changes.",
+        "effective_rationale_excerpt": "Non-binding forecasts and lack of capacity reservation create supply risk. The contract lacks a formal change control process to manage specification or process changes by Supplier that could affect quality or interchangeability.",
+        "judge_reasoning": "Scale identifies supply assurance concerns in the risk table entries for 1.2 and 2.3, noting lack of capacity reservation and allocation priority language. The risk table recommends adding capacity reservation and priority allocation. However, Scale's proposed new clauses focus on Change Control for specifications rather than comprehensive business continuity provisions like last-time-buy rights, dual sourcing, or disaster recovery. Partial detection because supply assurance is flagged but the remediation doesn't fully address all GT key elements for business continuity."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Risk table entry 10.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 10.1 as 'Clarify': 'Three-year survival may be insufficient for trade secrets or long-term proprietary tooling and specs; scope of confidential information is undefined.' Recommended action: 'Amend to extend survival to five (5) years for most information and indefinite for trade secrets; define categories of Confidential Information.'",
+        "effective_rationale_excerpt": "Three-year survival may be insufficient for trade secrets or long-term proprietary tooling and specs in automotive manufacturing context.",
+        "judge_reasoning": "Scale identifies the 3-year confidentiality survival issue. The risk table flags clause 10.1 (note: GT lists as 13.1 but this contract has confidentiality at 10.1) as 'Clarify', noting 3 years may be insufficient for trade secrets and recommends extending to 5 years with indefinite protection for trade secrets. The analysis and recommendation align with GT key elements. However, there is no specific proposed redline for confidentiality in the canonical JSON. Detection as Y because issue is correctly identified; reduced quality scores due to lack of actual redline."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-13.1 Required Coverage",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall maintain: (a) commercial general liability insurance of $2,000,000 per occurrence; (b) products liability insurance of $5,000,000 per occurrence; and (c) workers' compensation as required by law. Supplier shall name Buyer as an additional insured on its commercial general liability and products liability policies with respect to liabilities arising out of Supplier's performance under this Agreement, provide Buyer with certificates of insurance evidencing such coverage prior to commencement of supply and at each renewal, and provide thirty (30) days' prior written notice to Buyer of any material change or cancellation. Supplier shall maintain completed operations coverage for at least three (3) years after final delivery.",
+        "effective_rationale_excerpt": "The original clause sets minimum amounts but omits naming Buyer as additional insured, certificates, notice and completed operations coverage. This revision requires Supplier to add Buyer as additional insured, provide proof of insurance and notices, and maintain completed operations coverage to protect Apex from claims arising after delivery. These are standard buyer protections in supply agreements.",
+        "judge_reasoning": "Note: The GT indicates insurance is MISSING from the contract, but Scale's canonical JSON shows an existing 13.1 clause with insurance minimums. Scale correctly identifies deficiencies in the existing insurance clause - lack of additional insured status, certificates, cancellation notice, and completed operations coverage. The proposed redline adds all these protections: names Buyer as additional insured, requires certificates, 30-day cancellation notice, and completed operations coverage for 3 years. While the GT premise differs (missing vs. inadequate), Scale's analysis and fix provide the protections the GT seeks. Full detection awarded."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Risk table entry 14.2 + Redline-14.3",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 14.2 as 'Clarify': 'A 30-day cure period may be too long for material breaches affecting production; no immediate termination for insolvency or safety-critical defects.' Recommended action: 'Amend to allow immediate termination for insolvency, repeated breaches, safety issues, or sustained quality failures, and shorten cure period for severe breaches.'",
+        "effective_rationale_excerpt": "A 30-day cure period may be too long for material breaches affecting production; no immediate termination for insolvency or safety-critical defects.",
+        "judge_reasoning": "Scale identifies the asymmetric termination cure period issue at 14.2. The risk table flags it as 'Clarify' and correctly notes the 30-day cure may be too long for production-affecting breaches and recommends immediate termination rights for insolvency, repeated breaches, safety issues, and quality failures. While there isn't a dedicated 14.2 redline, the analysis captures all GT key elements about shorter cure for supply/quality breaches and immediate termination for safety-critical defects. Detection as Y for correct identification; quality scores reduced slightly as the fix is only in risk table recommendations, not a formal redline."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.2",
+      "issue_summary": "Definition of Forecasts",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require min",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The term \"non-binding estimates\" is clear but leaves no enforceable commitment for Supplier to reserve capacity; this creates supply risk for Buyer when forecasts are used for capacity planning."
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Purchase Orders - Supplier acceptance within five (5) business days",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to shorter dee",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 5 business day acceptance window may be insufficient for complex orders and does not address deemed acceptance consequences. This may create operational uncertainty for Buyer if Supplier delays or"
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Forecasts (rolling 12-months, non-binding, monthly)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add firm order lead-",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Forecasts are non-binding and only for capacity planning; there is no commitment for allocation, nor minimum purchase, nor penalty for failure to meet forecasted capacity. This leaves Buyer exposed to"
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Price Adjustments annual with 90 days' notice; cap 5%",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require sup",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Supplier unilateral right to adjust prices annually (capped at 5%) lacks documentation requirements (supporting cost changes) and no mechanism for Buyer to audit or dispute adjustments; cap may still "
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Payment Terms Net 30; late interest 1.5% monthly",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to permit Buye",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Net 30 is customary; interest at 1.5% monthly equals 18% annual which is high; no right for Buyer to set-off undisputed claims, and no early payment discounts or prompt payment terms for large volumes"
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Disputed Invoices - notify within 15 days; undisputed amounts due",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to extend disp",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "15 days to dispute may be tight for complex or multi-line invoices; no escalation process or tolling for claims tied to defective Product returns."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Product Warranty 1 year from delivery",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to extend warr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "One-year warranty may be insufficient for automotive components that have longer lifecycle expectations; scope limited to materials/workmanship and conformance to Specs."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Supplier warranty disclaimer of other warranties",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to preserve im",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad disclaimer excludes implied warranties, which could reduce Buyer's protections; may be standard, but Buyer should preserve implied warranties or require express fitness for Buyer's known purpose"
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Shipping costs borne by Buyer; Supplier to use Buyer's carrier when specified",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require Sup",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Buyer paying freight is acceptable if Supplier meets packaging and shipping standards; clause lacks shipping performance standards and remedies for late/damaged shipments."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Partial shipments allowed unless Buyer specifies otherwise",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to restrict pa",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Partial shipments may cause inventory management and acceptance complications; no restrictions on frequency or minimum quantities."
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Audit Rights upon reasonable notice",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to permit audi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Audit right exists but lacks frequency limits, scope, confidentiality, and remediation timelines; \"reasonable notice\" is vague and may hinder timely audits after quality events."
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Supplier retains pre-existing IP and processes",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to grant Buyer",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Supplier IP retained may include tooling or process improvements; contract lacks license scope or Buyer rights to improvements made using Buyer specs."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Confidentiality obligations survive three (3) years",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to extend surv",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Three-year survival may be insufficient for trade secrets or long-term proprietary tooling and specs; scope of confidential information is undefined."
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Buyer indemnifies Supplier for Buyer's specs causing infringement or misuse",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require Sup",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Buyer indemnity is narrow but lacks mutual defense mechanics and does not address third-party claims based on joint actions or modifications by Supplier."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Insurance minimums: CGL $2M; Products $5M; workers' comp as law",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require Buy",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Insurance minimums are stated but lack Buyer as additional insured, requirement to provide certificates, and tail coverage for completed operations; amounts may be low given automotive risks."
+    },
+    {
+      "clause": "14.1",
+      "issue_summary": "Term: 3 years with automatic one-year renewals",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to permit Buye",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Automatic renewal may lock Buyer into unfavorable terms if pricing or performance issues arise; no renegotiation window is provided."
+    },
+    {
+      "clause": "14.2",
+      "issue_summary": "Termination for Cause: 30-day cure period after written notice",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to allow immed",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A 30-day cure period may be too long for material breaches affecting production; no immediate termination for insolvency or safety-critical defects."
+    },
+    {
+      "clause": "14.3",
+      "issue_summary": "Termination for Convenience: Either party 180 days' notice",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to permit Buye",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Symmetric 180-day notice is workable, but Buyer should have more flexibility to terminate for convenience with shorter notice to protect operational agility."
+    },
+    {
+      "clause": "15.1",
+      "issue_summary": "Force Majeure - broad list excuses performance",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require pro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Force Majeure is broadly stated but lacks notice obligations, mitigation duties, duration thresholds before termination, or supply replacement rights for Buyer."
+    },
+    {
+      "clause": "16.2",
+      "issue_summary": "Dispute Resolution: Arbitration in Detroit",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to allow court",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Arbitration in Detroit may be efficient but lacks carve-out for injunctive relief or disputes requiring immediate court intervention; arbitration costs and appeal limitations not addressed."
+    },
+    {
+      "clause": "Exhibit A",
+      "issue_summary": "Products and Specifications (to be attached)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add specification ex",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit A is blank in the contract; lack of attached specifications is a fundamental gap that prevents verifying conformity, testing, and acceptance criteria."
+    },
+    {
+      "clause": "Exhibit B",
+      "issue_summary": "Delivery Schedule (to be attached)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add Exhibit B with f",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Delivery schedule absent; without it, timing, quantities, and lead times are undefined, increasing operational risk."
+    },
+    {
+      "clause": "Exhibit C",
+      "issue_summary": "Pricing Schedule (to be attached)",
+      "leah_classification": "⚠️",
+      "leah_action": "Attach Exhibit C wit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Pricing exhibit absent; without it price, volume discounts, and escalation mechanics are undefined."
+    },
+    {
+      "clause": "3.2 Price Adjustments",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment clarifies the process and documentation for price increases, requiring Supplier transparency and Buyer's audit right, preserving price stability for Apex. It prevents back-to-back incre"
+    },
+    {
+      "clause": "6.1 Delivery Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 6.1. The original intent is to define delivery terms, but FCA shifts transit risk to Buyer. This revision shifts freight responsibility and transit risk to Supplier until Buye"
+    },
+    {
+      "clause": "7.1 Inspection",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Extends the inspection window to 30 days and preserves Buyer's rights for latent defects, addressing complexity of automotive component testing. This change reduces the risk that a short inspection pe"
+    },
+    {
+      "clause": "5.2 Warranty Claims",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause limited Supplier remedies to repair/replace/refund as sole obligation. This amendment adds reimbursement for removal, rework, recall and production downtime to ensure Supplier bear"
+    },
+    {
+      "clause": "11.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original blanket exclusion eliminates recovery for consequential losses critical to Apex (production loss, recalls). This amendment preserves a limitation on speculative damages while carving out "
+    },
+    {
+      "clause": "11.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original 12-month cap is likely insufficient given recall or production stoppage costs. Increasing to 24 months or supplier insurance limits raises available recovery and tying to insurance ensure"
+    },
+    {
+      "clause": "14.3 Termination for Convenience",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Original clause gives symmetric 180-day notice. Apex requires greater operational flexibility to adjust sourcing. This amendment grants Buyer a shorter 90-day convenience termination while keeping Sup"
+    },
+    {
+      "clause": "13.1 Required Coverage",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause sets minimum amounts but omits naming Buyer as additional insured, certificates, notice and completed operations coverage. This revision requires Supplier to add Buyer as additiona"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 2.3. The contract lacks a formal change control process to manage specification or process changes by Supplier that could affect quality or interchangeability. Adding a"
+    },
+    {
+      "clause": "None - Clause to be added",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.2. The agreement lacks explicit recall coordination and cost allocation, leaving Buyer exposed to recall expenses. This clause ensures Supplier responsibility and coo"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 3,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 3,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 66.5,
+    "total_quality_points": 105,
+    "weighted_score": 96.5,
+    "max_possible_score": 74.0,
+    "t1_count": 4,
+    "t2_count": 8,
+    "t3_count": 2,
+    "total_points": 171.5,
+    "additional_issues_count": 33
+  }
+}

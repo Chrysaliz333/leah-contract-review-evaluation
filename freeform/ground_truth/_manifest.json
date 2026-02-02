@@ -1,0 +1,95 @@
+{
+  "version": "1.0_LOCKED",
+  "mode": "freeform",
+  "generated": "2026-01-16T15:10:57.573549Z",
+  "status": "LOCKED",
+  "files": {
+    "consulting.json": {
+      "sha256": "b6dd1bb33035e7ef",
+      "issues": 11,
+      "T1": 1,
+      "T2": 8,
+      "T3": 2,
+      "gt_version": "unknown"
+    },
+    "distribution.json": {
+      "sha256": "74a8e3124e2a3a86",
+      "issues": 13,
+      "T1": 6,
+      "T2": 6,
+      "T3": 1,
+      "gt_version": "unknown"
+    },
+    "dpa.json": {
+      "sha256": "f44c616de4806027",
+      "issues": 12,
+      "T1": 3,
+      "T2": 7,
+      "T3": 2,
+      "gt_version": "unknown"
+    },
+    "jv.json": {
+      "sha256": "514015643b508270",
+      "issues": 19,
+      "T1": 6,
+      "T2": 10,
+      "T3": 3,
+      "gt_version": "unknown"
+    },
+    "license.json": {
+      "sha256": "0f407f1fa5fd25b0",
+      "issues": 15,
+      "T1": 5,
+      "T2": 8,
+      "T3": 2,
+      "gt_version": "unknown"
+    },
+    "partnership.json": {
+      "sha256": "73b8128e4ba29ec9",
+      "issues": 12,
+      "T1": 6,
+      "T2": 5,
+      "T3": 1,
+      "gt_version": "unknown"
+    },
+    "reseller.json": {
+      "sha256": "12634c393e6b9c5d",
+      "issues": 13,
+      "T1": 4,
+      "T2": 8,
+      "T3": 1,
+      "gt_version": "unknown"
+    },
+    "services.json": {
+      "sha256": "bb5500c212b65277",
+      "issues": 26,
+      "T1": 4,
+      "T2": 12,
+      "T3": 10,
+      "gt_version": "unknown"
+    },
+    "sla.json": {
+      "sha256": "e841078415abda9f",
+      "issues": 26,
+      "T1": 8,
+      "T2": 15,
+      "T3": 3,
+      "gt_version": "unknown"
+    },
+    "supply.json": {
+      "sha256": "f7e12286a27bf61b",
+      "issues": 14,
+      "T1": 4,
+      "T2": 8,
+      "T3": 2,
+      "gt_version": "unknown"
+    }
+  },
+  "totals": {
+    "files": 10,
+    "issues": 161,
+    "T1": 47,
+    "T2": 87,
+    "T3": 27
+  }
+}

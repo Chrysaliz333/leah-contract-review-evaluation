@@ -1,0 +1,628 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "velocity",
+    "evaluation_timestamp": "2026-01-25T19:15:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-11.2 Liability Cap",
+      "evidence": {
+        "proposed_revision_excerpt": "SUPPLIER'S TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF THE AMOUNTS PAID BY BUYER FOR PRODUCTS IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM OR TWO MILLION DOLLARS ($2,000,000).",
+        "effective_rationale_excerpt": "Placement: Insert revised cap language to provide a minimum floor for potential high-risk exposure, including product recalls, IP infringement, and data breaches. The current cap potentially leaves Apex exposed to substantial damages beyond what it paid in the prior year, especially for long-tail risks associated with automotive components. The higher cap or floor better aligns liability with real-world risk and supports Apex's continued operations in the face of serious defects or compliance failures.",
+        "judge_reasoning": "Velocity identifies the liability cap issue. The risk table classifies 11.2 as 'Favorable' but notes 'may leave Apex under-compensated for serious defects, recalls, or IP/data breach damages' and recommends raising cap or adding carve-outs. The proposed redline adds a $2M floor but notably does NOT extend to 24 months or add carve-outs for willful misconduct, indemnification, or IP. Quality scores reduced because the GT expects a more comprehensive fix including carve-outs for key categories, not just a dollar floor. Detection as Y because issue is identified and partially addressed."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 8.0,
+      "matched_redline_id": "Risk table entry 5.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 5.2 as 'Favorable': 'Standard warranty remedy; allows options based on defect severity.' No proposed redline exists for 5.2 in Velocity's output.",
+        "effective_rationale_excerpt": "Standard warranty remedy; allows options based on defect severity.",
+        "judge_reasoning": "Velocity's risk table classifies 5.2 as 'Favorable' which is a misclassification - the GT identifies this as a T1 issue because Supplier controls the remedy choice with no Buyer recourse. Velocity does NOT have a proposed redline for clause 5.2 addressing warranty remedies, recall costs, or Buyer's right to repair via third party. Partial detection because the clause is reviewed but misclassified, and there is no fix. The GT concerns about Supplier's sole control, lack of third-party repair rights, and no recall cost coverage are not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 5,
+      "total_points": 9.0,
+      "matched_redline_id": "Risk table entry 5.3",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 5.3 as 'Clarify': 'Broad disclaimer may limit recourse beyond the express warranty; for Apex, consider preserving implied warranties or limiting disclaimer for latent defects.' No proposed redline exists for 5.3.",
+        "effective_rationale_excerpt": "Broad disclaimer may limit recourse beyond the express warranty; consider preserving implied warranties or limiting disclaimer for latent defects.",
+        "judge_reasoning": "Velocity identifies the warranty disclaimer issue at 5.3, correctly classifying it as 'Clarify' and recommending preserving implied warranties or limiting the disclaimer. However, there is no proposed redline targeting clause 5.3. The GT expects addition of express fitness for intended purpose and compliance with specifications warranties. Partial detection because the issue is flagged with correct recommendation but no actual fix is provided."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 5,
+      "total_points": 9.0,
+      "matched_redline_id": "Risk table entry 11.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 11.1 as 'Clarify': 'Standard waiver of consequential damages; could be too broad and limit recovery for certain breaches (e.g., data breach, IP infringement).' Recommended action: 'Narrow the exclusion to exclude only certain categories and preserve recoveries for core breaches (e.g., IP, data breach, confidentiality).' No proposed redline exists for 11.1.",
+        "effective_rationale_excerpt": "Standard waiver of consequential damages; could be too broad and limit recovery for certain breaches (e.g., data breach, IP infringement).",
+        "judge_reasoning": "Velocity identifies the consequential damages issue at 11.1, classifying it as 'Clarify' and correctly recommending narrowing the exclusion to preserve recovery for IP and confidentiality breaches. However, there is NO proposed redline for clause 11.1 in the canonical JSON. The GT expects carve-outs for product liability, IP infringement, and willful misconduct. Partial detection because issue is flagged with correct direction but no actual fix is provided."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 5,
+      "total_points": 9.0,
+      "matched_redline_id": "Risk table entry 6.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 6.1 as 'Clarify': 'FCA with risk transfer at carrier is standard, but ensure alignment with transport insurance and carrier selection rights.' Recommended action: 'Clarify whether insurance is Buyer's responsibility and specify who must obtain cargo insurance for transit.' No proposed redline for 6.1.",
+        "effective_rationale_excerpt": "FCA with risk transfer at carrier is standard, but ensure alignment with transport insurance and carrier selection rights.",
+        "judge_reasoning": "Velocity identifies the FCA delivery terms issue at 6.1, classifying it as 'Clarify' and noting the need for insurance alignment. However, the recommendation focuses on insurance clarification rather than changing to DAP/DDP as the GT expects. There is NO proposed redline for clause 6.1 in the canonical JSON. The GT expects the delivery terms to be changed to DDP or DAP with risk passing at Buyer's facility. Partial detection because the transit risk is identified but the recommended fix (clarify insurance) doesn't address the core issue of shifting risk transfer point."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-2.2 Purchase Orders: Acceptance Timeframe",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier shall accept or reject each purchase order within five (5) business days, and if Supplier fails to respond within such period, the purchase order shall be deemed accepted.",
+        "effective_rationale_excerpt": "Placement: Insert amendment to convert silence into deemed acceptance after the standard 5-business-day response window. This aligns operational realities with Buyer procurement needs and reduces risk of chronic PO delays. The current text favors Supplier by allowing delays without consequence while failing to provide a clear path to enforce timely acceptance.",
+        "judge_reasoning": "Velocity detects the supply uncertainty issue. The risk table classifies 2.2 as 'Favorable' but notes 'No deemed-acceptance language is present' and recommends adding deemed acceptance. The proposed redline adds deemed acceptance if no response within 5 business days. This directly addresses the GT key element about adding deemed acceptance. Excellent fix for this specific issue."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": "Redline-7.2 Acceptance: Deemed Acceptance",
+      "evidence": {
+        "proposed_revision_excerpt": "Products shall be deemed accepted only upon Buyer's written acceptance following the inspection period.",
+        "effective_rationale_excerpt": "Placement: Insert modification to require explicit written acceptance rather than silent acceptance. This prevents inadvertent acceptance of defective or non-conforming goods and protects Apex from latent defects passing as accepted products.",
+        "judge_reasoning": "Velocity identifies the inspection/acceptance issues. Risk table flags 7.1 as 'Clarify' noting '10 business days may be short for complex components' and 7.2 as 'Clarify' noting 'Silent acceptance may force acceptance even if latent defects exist.' The proposed redline for 7.2 requires explicit written acceptance. However, Velocity does NOT extend the inspection period from 10 to 30 days (there's no redline for 7.1). Partial detection because the deemed acceptance issue is addressed but the short inspection period is only flagged, not fixed."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "matched_redline_id": "Risk table entry 12.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 12.1 as 'Favorable': 'Strong protection for Apex against third-party claims.' No proposed redline for 12.1.",
+        "effective_rationale_excerpt": "Strong protection for Apex against third-party claims.",
+        "judge_reasoning": "Velocity's risk table classifies 12.1 as 'Favorable' which partially misses the GT concern about lacking recall costs and unlimited coverage. There is no proposed redline for 12.1 to add recall costs or make indemnification uncapped. The GT expects explicit recall cost coverage and indemnification uncapped or exempt from the liability cap. Partial detection because the indemnification clause is reviewed but the specific gaps (recall costs, cap exemption) are not identified or addressed."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 4.5,
+      "matched_redline_id": "Risk table entry 4.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 4.2 as 'Favorable': 'Net 30 is favorable to Apex; helps cash flow management.' No proposed redline for 4.2.",
+        "effective_rationale_excerpt": "Net 30 is favorable to Apex; helps cash flow management.",
+        "judge_reasoning": "Velocity's risk table classifies 4.2 as 'Favorable' focusing only on the Net 30 payment terms but completely missing the 1.5% monthly (18% APR) late payment interest rate issue identified in the GT. There is no proposed redline to reduce the interest rate or exclude disputed amounts. Partial detection because the clause is reviewed but the high interest rate issue is not identified. The risk table entry doesn't even mention the interest rate component."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 4.5,
+      "matched_redline_id": "Risk table entry 3.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 3.2 as 'Favorable': 'A 5% cap per adjustment is protective for Apex; 90-day notice provides planning time. However, cumulative annual increases could be material.' Recommended action: 'Consider clarifying cumulative annual cap or adding a cap on total annual increase; consider indexing to a market index for transparency.' No proposed redline for 3.2.",
+        "effective_rationale_excerpt": "A 5% cap per adjustment is protective for Apex; 90-day notice provides planning time. However, cumulative annual increases could be material.",
+        "judge_reasoning": "Velocity identifies the compounding concern at 3.2, classifying it as 'Favorable' but noting 'cumulative annual increases could be material' and recommending a cumulative cap or market index linkage. However, there is NO proposed redline for clause 3.2. The GT expects CPI-linked adjustments, cost justification requirements, and termination rights if increases are unacceptable. Partial detection because the compounding issue is recognized but no fix is provided."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity's canonical JSON does not identify the missing business continuity/supply assurance provisions. There is no risk table entry flagging the absence of last-time-buy rights, dual sourcing, capacity reservation, disaster recovery, or discontinuation notice requirements. There is no proposed new clause for business continuity. Not mentioned in the output."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "matched_redline_id": "Risk table entry 10.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 10.1 as 'Favorable': 'Reasonable duration; protects sensitive information.' No proposed redline for confidentiality.",
+        "effective_rationale_excerpt": "Reasonable duration; protects sensitive information.",
+        "judge_reasoning": "Velocity's risk table classifies 10.1 (Confidentiality) as 'Favorable' stating '3 years is reasonable' which contradicts the GT's position that 3 years is inadequate for trade secrets in automotive manufacturing. There is no proposed redline to extend the survival period or add perpetual protection for trade secrets. Partial detection because the clause is reviewed but the 3-year inadequacy issue is not identified - Velocity actually approves of the 3-year period."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "matched_redline_id": "Risk table entry 13.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 13.1 as 'Favorable': 'Adequate insurance protects Apex from some risk exposures; aligns with industry norms.' No proposed redline for insurance.",
+        "effective_rationale_excerpt": "Adequate insurance protects Apex from some risk exposures; aligns with industry norms.",
+        "judge_reasoning": "Note: The GT indicates insurance requirements may be MISSING or inadequate. Velocity's risk table classifies 13.1 as 'Favorable' stating insurance is 'adequate' with no proposed amendments. Velocity doesn't identify the need for additional insured status, certificates of insurance, cancellation notice, or other GT-expected protections. Partial detection because the clause is reviewed but deficiencies (or missing status) are not identified."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "matched_redline_id": "Risk table entry 14.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table classifies 14.2 as 'Favorable': 'Reasonable cure period; protects both sides.' No proposed redline for 14.2.",
+        "effective_rationale_excerpt": "Reasonable cure period; protects both sides.",
+        "judge_reasoning": "Velocity's risk table classifies 14.2 as 'Favorable' stating the 30-day cure period is 'reasonable' which contradicts the GT's position that the uniform cure period is asymmetrically harmful to Buyer for supply/quality breaches. There is no proposed redline for immediate termination rights for safety-critical defects or repeated quality failures. Partial detection because the clause is reviewed but Velocity approves of the structure rather than identifying the asymmetry concern."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Delivery Schedule means the schedule for delivery of Products as set forth in Exhibit B or as otherw",
+      "leah_classification": "⚠️",
+      "leah_action": "Attach Exhibit B wit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause relies on Exhibit B for actual delivery timing, but Exhibit B is not attached in the text. This creates ambiguity and planning risk for Buyer if schedules are unavailable or disputed. Witho"
+    },
+    {
+      "clause": "1.2",
+      "issue_summary": "Forecasts means Buyer's non-binding estimates of anticipated Product requirements provided pursuant ",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify that forecas",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Forecasts are non-binding, yet are used for capacity planning. This creates risk that Supplier may allocate capacity inconsistently or claim non-fulfillment due to non-binding forecasts. For Apex as B"
+    },
+    {
+      "clause": "1.3",
+      "issue_summary": "Products means the automotive components and parts described in Exhibit A.",
+      "leah_classification": "⚠️",
+      "leah_action": "Attach Exhibit A wit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit A is referenced but not attached in the contract text. Without Exhibit A, there is no enumerated list of Products, creating ambiguity around scope, quality expectations, and conforming deliver"
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Forecasts. Buyer shall provide Supplier with rolling twelve-month forecasts of anticipated Product r",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a clarification ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Non-binding forecasts used for capacity planning help, but without a robust tie between forecasts and binding obligations, Apex bears risk of supply shortfalls or misallocation."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Taxes. Prices are exclusive of applicable taxes. Buyer shall be responsible for all sales, use, and ",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a clause requiri",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Tax allocations can impact total landed cost; typical to assign taxes but ensure exemption handling (e.g., resale or exemption certificates) is clear."
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Disputed Invoices. Buyer shall notify Supplier of any disputed amounts within fifteen (15) days of i",
+      "leah_classification": "⚠️",
+      "leah_action": "Extend dispute notic",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Clear process for disputes is good, but 15 days may be tight for complex disputes; consider longer window or phased verification."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Disclaimer. EXCEPT AS EXPRESSLY SET FORTH HEREIN, SUPPLIER MAKES NO WARRANTIES, EXPRESS OR IMPLIED, ",
+      "leah_classification": "⚠️",
+      "leah_action": "Narrow the disclaime",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad disclaimer may limit recourse beyond the express warranty; for Apex, consider preserving implied warranties or limiting disclaimer for latent defects."
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Delivery Terms. FCA Supplier's facility (Incoterms 2020). Title and risk pass to Buyer upon delivery",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify whether insu",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "FCA with risk transfer at carrier is standard, but ensure alignment with transport insurance and carrier selection rights."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Shipping. Buyer bears shipping, freight, and insurance costs. Supplier shall use Buyer's designated ",
+      "leah_classification": "⚠️",
+      "leah_action": "Add explicit limits ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allocation of shipping costs is common; ensure alignment with Incoterms and that “designated carrier” rights are not unreasonably constrained."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Partial Shipments. Supplier may make partial shipments unless Buyer specifies otherwise in the PO.",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require Buy",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Partial shipments can disrupt manufacturing schedules and inventory planning for Apex; this favors Supplier."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Inspection. Buyer shall inspect all Products within ten (10) business days of receipt.",
+      "leah_classification": "⚠️",
+      "leah_action": "Extend inspection wi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "10 business days may be short for complex components; risk of late rejection or acceptance."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Acceptance. Products deemed accepted if Buyer fails to reject within the inspection period.",
+      "leah_classification": "⚠️",
+      "leah_action": "Change to require ex",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Silent acceptance may force acceptance even if latent defects exist; not favorable to Apex."
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Supplier IP. Supplier retains rights to pre-existing IP and processes.",
+      "leah_classification": "⚠️",
+      "leah_action": "Add clarification th",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Could constrain Buyer’s ability to leverage improvements or alternative suppliers; need clarity on use of improvements and improvements to Buyer IP."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Exclusion of Damages. Neither party liable for indirect, incidental, special, consequential, or puni",
+      "leah_classification": "⚠️",
+      "leah_action": "Narrow the exclusion",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard waiver of consequential damages; could be too broad and limit recovery for certain breaches (e.g., data breach, IP infringement)."
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Buyer Indemnification. Buyer indemnifies Supplier for claims arising from Buyer's specifications or ",
+      "leah_classification": "⚠️",
+      "leah_action": "Add qualifiers on mi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Reasonable; ensure boundaries are clear to avoid overbroad obligations."
+    },
+    {
+      "clause": "14.1",
+      "issue_summary": "Term. 3-year term with automatic one-year renewals unless terminated.",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a mutual right t",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Automatic renewals may lock in undesirable terms; termination rights exist but need balance."
+    },
+    {
+      "clause": "14.3",
+      "issue_summary": "Termination for Convenience. Either party may terminate on 180 days’ prior notice.",
+      "leah_classification": "⚠️",
+      "leah_action": "Narrow or remove con",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Convenience termination can disrupt supply chains; 180 days may be lengthy for a Purchaser."
+    },
+    {
+      "clause": "16.1",
+      "issue_summary": "Governing Law. Michigan law governs.",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider aligning go",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Buyer (Delaware) may prefer different governing law; potential misalignment with corporate location and enforcement."
+    },
+    {
+      "clause": "16.2",
+      "issue_summary": "Dispute Resolution. Arbitration in Detroit, Michigan.",
+      "leah_classification": "⚠️",
+      "leah_action": "Move to Delaware ven",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Forum and process may impose travel and cost burdens on Buyer; ensure enforceability and neutrality."
+    },
+    {
+      "clause": "16.3",
+      "issue_summary": "Assignment. Neither party may assign without consent, except to affiliate or successor.",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a standard conse",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Restrictive assignment can hamper corporate transactions; may be too rigid."
+    },
+    {
+      "clause": "Exhibit A",
+      "issue_summary": "PRODUCTS AND SPECIFICATIONS placeholder; attached separately.",
+      "leah_classification": "⚠️",
+      "leah_action": "Ensure Exhibit A is ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Without Exhibit A, Scope of Products is undefined."
+    },
+    {
+      "clause": "Exhibit B",
+      "issue_summary": "DELIVERY SCHEDULE placeholder.",
+      "leah_classification": "⚠️",
+      "leah_action": "Attach Exhibit B wit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Missing delivery timetable inhibits enforceable delivery expectations."
+    },
+    {
+      "clause": "Exhibit C",
+      "issue_summary": "PRICING placeholder.",
+      "leah_classification": "⚠️",
+      "leah_action": "Attach Exhibit C wit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Missing pricing schedule; prevents enforceable pricing."
+    },
+    {
+      "clause": "2.2 Purchase Orders: Acceptance Timeframe",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert amendment to convert silence into deemed acceptance after the standard 5-business-day response window. This aligns operational realities with Buyer procurement needs and reduces risk"
+    },
+    {
+      "clause": "7.2 Acceptance: Deemed Acceptance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert modification to require explicit written acceptance rather than silent acceptance. This prevents inadvertent acceptance of defective or non-conforming goods and protects Apex from la"
+    },
+    {
+      "clause": "11.2 Liability Cap",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert revised cap language to provide a minimum floor for potential high-risk exposure, including product recalls, IP infringement, and data breaches. The current cap potentially leaves Ap"
+    },
+    {
+      "clause": "Exhibits Attachments (New Clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as a new Section immediately before the Exhibits list or after Article 16; clearly establishing Exhibits A–C as integral by reference. This ensures enforceable scope of Products (Exh"
+    },
+    {
+      "clause": "6.3 Partial Shipments (Amend)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert amendment to require explicit Buyer's consent for partial shipments. This change improves Apex’s manufacturing schedule stability and reduces supply-chain fragmentation caused by unc"
+    },
+    {
+      "clause": "16.1 Governing Law (Amend)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace Michigan law with Delaware law to align with Apex’s corporate domicile and preferred risk posture. Delaware law tends to offer predictable corporate dispute frameworks and is often "
+    },
+    {
+      "clause": "16.2 Arbitration (Amend)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Change venue to Delaware to align with governing law and corporate domicile; selecting a neutral, cost-efficient arbitration venue and providing a standard set of rules reduces unpredictabi"
+    },
+    {
+      "clause": "16.3 Assignment (Amend)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert amendment to broaden the assignment framework while protecting Apex from being forced into unfavorable assignments. Ensures business continuity in M&A or structural changes while mai"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 3,
+      "P": 10,
+      "N": 0,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 4,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 2,
+        "P": 5,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 39.5,
+    "total_quality_points": 64,
+    "weighted_score": 60.65,
+    "max_possible_score": 74.0,
+    "t1_count": 4,
+    "t2_count": 8,
+    "t3_count": 2,
+    "total_points": 103.5,
+    "additional_issues_count": 31
+  }
+}

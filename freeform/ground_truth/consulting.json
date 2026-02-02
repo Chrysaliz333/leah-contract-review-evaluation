@@ -1,0 +1,332 @@
+{
+  "gt_metadata": {
+    "contract_id": "Consulting_TechAdvisors_Beta",
+    "contract_type": "Consulting",
+    "parties": {
+      "consultant": "Beta Tech Advisors LLC",
+      "client": "Meridian Enterprises Inc."
+    },
+    "representing_party": "Meridian Enterprises Inc. (Client)",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "revision_notes": "v3.0: Redrafted GT-01 to foreground work-for-hire structural defect. Demoted GT-07 (payment dispute) and GT-08 (governing law/forum) to T3 - commercial/convenience issues, not structural defects.",
+    "schema_version": "3.0",
+    "v4_enhancement_date": "2026-01-20"
+  },
+  "ground_truth": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "expected_classification": "Unfavourable",
+      "key_elements": [
+        "Clause relies on work-for-hire doctrine which has LIMITED APPLICATION to independent contractors",
+        "Under 17 U.S.C. Section 101, work-for-hire only applies to: (1) employees, or (2) specially commissioned works in 9 enumerated categories WITH a signed writing",
+        "Software, reports, and most consulting deliverables do NOT fall within the 9 categories",
+        "Without valid work-for-hire, copyright vests in Consultant by default - Client may not own what it paid for",
+        "No express assignment as fallback if work-for-hire fails",
+        "Should add explicit IP assignment: 'Consultant hereby assigns all right, title, and interest...'",
+        "Should add present-tense assignment language operative upon creation",
+        "Payment condition is secondary concern - standard protective mechanism"
+      ],
+      "contract_text": "All deliverables created by Consultant specifically for Client pursuant to this Agreement shall be considered work-for-hire and shall be owned exclusively by Client upon full payment of all fees due hereunder.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Unfavourable"
+      ],
+      "required_concepts": [
+        "work for hire",
+        "17 U.S.C.",
+        "independent contractor",
+        "assignment"
+      ]
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "expected_classification": "Requires Clarification",
+      "key_elements": [
+        "Cap structure is standard (fees under applicable SOW)",
+        "Carve-outs exist for confidentiality and indemnification - good",
+        "MISSING carve-out for IP infringement claims",
+        "MISSING carve-out for data breach / security incidents",
+        "MISSING carve-out for gross negligence / willful misconduct",
+        "Should add explicit carve-outs for: IP infringement, data breach, gross negligence",
+        "Cap quantum is commercial judgment - negotiate based on deal economics"
+      ],
+      "contract_text": "EXCEPT FOR BREACHES OF CONFIDENTIALITY OBLIGATIONS OR INDEMNIFICATION OBLIGATIONS, NEITHER PARTY'S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT SHALL EXCEED THE TOTAL FEES PAID OR PAYABLE BY CLIENT TO CONSULTANT UNDER THE APPLICABLE STATEMENT OF WORK GIVING RISE TO THE CLAIM.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Requires Clarification"
+      ]
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "expected_classification": "Requires Clarification",
+      "key_elements": [
+        "Mutual exclusion of indirect/consequential/punitive damages - standard structure",
+        "Includes loss of profits, data, business opportunity",
+        "May prevent Client recovering significant losses from Consultant failures",
+        "Should add carve-outs for confidentiality breach, IP infringement, data loss",
+        "Carve-outs should align with indemnification obligations"
+      ],
+      "contract_text": "IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION LOSS OF PROFITS, LOSS OF DATA, OR LOSS OF BUSINESS OPPORTUNITY, ARISING OUT OF OR RELATED TO THIS AGREEMENT.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Requires Clarification",
+        "Unfavourable"
+      ]
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "expected_classification": "Requires Clarification",
+      "key_elements": [
+        "TfC exists but requires 30 days notice",
+        "Client may need shorter notice period for agility",
+        "No explicit right to terminate individual SOWs for convenience",
+        "No clear wind-down or transition assistance provisions",
+        "Effect of termination (7.4) only requires delivery of paid-for work",
+        "Should add SOW-level TfC right",
+        "Should add transition assistance obligation"
+      ],
+      "contract_text": "Either party may terminate this Agreement for convenience upon thirty (30) days' prior written notice to the other party.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Requires Clarification",
+        "Unfavourable"
+      ]
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "expected_classification": "Requires Clarification",
+      "key_elements": [
+        "License limited to use 'solely as part of the Deliverables'",
+        "No right to modify, adapt, or use Background IP independently",
+        "May restrict Client's ability to maintain, enhance, or integrate deliverables",
+        "Should expand to include modification, internal use, derivative works",
+        "Consider sublicensing rights for affiliates/successors"
+      ],
+      "contract_text": "To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client a non-exclusive, perpetual, royalty-free license to use such Background IP solely as part of the Deliverables.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Requires Clarification",
+        "Unfavourable"
+      ]
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "expected_classification": "Requires Clarification",
+      "key_elements": [
+        "Article 6 survives per 13.10, but no explicit duration specified",
+        "Trade secrets should survive indefinitely",
+        "Standard confidential information typically survives 3-5 years",
+        "No compelled disclosure process defined",
+        "Return/destruction provision exists (6.4) but lacks certification requirement",
+        "Should add explicit survival period with trade secret carve-out"
+      ],
+      "contract_text_6_4": "Upon termination of this Agreement or upon request by the disclosing Party, the receiving Party shall promptly return or destroy all Confidential Information of the disclosing Party in its possession, except as required for legal or regulatory compliance.",
+      "contract_text_13_10": "The provisions of Articles 5, 6, 9, 10, 12, and 13 shall survive any termination or expiration of this Agreement.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Requires Clarification",
+        "Unfavourable"
+      ]
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "expected_classification": "Requires Clarification",
+      "key_elements": [
+        "Late payment interest IS specified (1% per month) - reasonable rate",
+        "'Undisputed invoices' language implies dispute right exists",
+        "No formal mechanism for Client to dispute invoices",
+        "No explicit right to withhold payment for non-conforming services",
+        "Consider adding dispute window and good faith resolution process"
+      ],
+      "contract_text": "Client shall pay all undisputed invoices within thirty (30) days of receipt. Late payments shall bear interest at the rate of one percent (1%) per month or the maximum rate permitted by law, whichever is less.",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Requires Clarification"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "expected_classification": "Requires Clarification",
+      "key_elements": [
+        "Texas law governs - Consultant is Texas-based, so predictable choice",
+        "Travis County, Texas forum - Consultant's home jurisdiction",
+        "Increases litigation cost for Nevada-based Client",
+        "Standard for drafter to choose home jurisdiction",
+        "Consider negotiating neutral venue or arbitration if material concern"
+      ],
+      "contract_text_13_1": "This Agreement shall be governed by and construed in accordance with the laws of the State of Texas, without regard to its conflicts of law principles.",
+      "contract_text_13_2": "Any dispute arising out of or relating to this Agreement shall first be subject to good faith negotiations between the Parties. If the dispute cannot be resolved through negotiation within thirty (30) days, either Party may pursue resolution through the courts of competent jurisdiction in Travis County, Texas.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Requires Clarification"
+      ]
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "expected_classification": "Unfavourable",
+      "key_elements": [
+        "No data protection clause exists in contract",
+        "If Consultant handles personal/sensitive data, Client faces compliance risk",
+        "Should add GDPR/CCPA compliance requirements",
+        "Define security measures and breach notification",
+        "Clarify controller/processor roles",
+        "Address subprocessors and audit rights"
+      ],
+      "contract_text": "N/A - Clause does not exist in current contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Unfavourable",
+        "Requires Clarification"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "expected_classification": "Requires Clarification",
+      "key_elements": [
+        "Indemnification only covers gross negligence or willful misconduct",
+        "Does NOT cover ordinary negligence - high bar to prove",
+        "IP infringement coverage exists but narrow",
+        "No coverage for warranty breaches",
+        "No coverage for confidentiality breaches",
+        "Should expand to include ordinary negligence",
+        "Should add indemnification for warranty and confidentiality breaches"
+      ],
+      "contract_text": "Consultant shall indemnify, defend, and hold harmless Client from and against any third-party claims arising from: (a) Consultant's gross negligence or wilful misconduct; or (b) any claim that the Deliverables infringe any third-party intellectual property rights.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Requires Clarification",
+        "Unfavourable"
+      ]
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "expected_classification": "Requires Clarification",
+      "key_elements": [
+        "Article 11 requires CGL and E&O insurance - good",
+        "No cyber liability insurance requirement",
+        "Consultant may handle sensitive Client data/systems",
+        "Should require cyber insurance if handling data",
+        "Should require Client named as additional insured"
+      ],
+      "contract_text": "N/A - Cyber insurance not specified. Article 11.1 requires CGL ($1M) and E&O ($2M) but no cyber coverage.",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "Requires Clarification"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    }
+  ],
+  "tier_summary": {
+    "T1": {
+      "count": 1,
+      "weight": 8,
+      "issues": [
+        "GT-01 (5.1 - Work-for-Hire Ineffective)"
+      ]
+    },
+    "T2": {
+      "count": 8,
+      "weight": 5,
+      "issues": [
+        "GT-02 (9.2 - Liability Cap Carve-outs)",
+        "GT-03 (9.1 - Damages Exclusion Carve-outs)",
+        "GT-04 (7.1 - TfC Terms)",
+        "GT-05 (5.2 - Background IP License)",
+        "GT-06 (6.4/13.10 - Confidentiality Survival)",
+        "GT-09 (Missing - Data Protection)",
+        "GT-10 (10.1 - Indemnification Scope)",
+        "GT-11 (Missing - Cyber Insurance)"
+      ]
+    },
+    "T3": {
+      "count": 2,
+      "weight": 1,
+      "issues": [
+        "GT-07 (3.4 - Payment Dispute Mechanism)",
+        "GT-08 (13.1/13.2 - Governing Law/Forum)"
+      ]
+    },
+    "weighted_max": 50
+  }
+}

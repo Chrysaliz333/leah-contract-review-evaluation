@@ -1,0 +1,26 @@
+{
+  "current_version": "1.0_LOCKED",
+  "mode": "rules_stacking",
+  "jurisdiction": "US Commercial",
+  "history": [
+    {
+      "version": "1.0_LOCKED",
+      "date": "2026-01-17",
+      "total_redlines": 31,
+      "by_contract_type": {
+        "nda": {"redlines": 15, "max_pts": 90},
+        "subcontract": {"redlines": 16, "max_pts": 96}
+      },
+      "max_points": 186,
+      "changes": "Initial GT locked for formal evaluation under GT_PRINCIPLES v2.0",
+      "source": "Baseline establishment"
+    }
+  ],
+  "scoring": {
+    "per_redline_max": 6,
+    "action": 2,
+    "revision": 2,
+    "reasoning": 2
+  },
+  "note": "Rules Stacking evaluates redlined clauses ONLY - scope violations are critical failures"
+}

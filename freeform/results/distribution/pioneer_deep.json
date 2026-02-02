@@ -1,0 +1,839 @@
+{
+  "meta": {
+    "contract": "distribution",
+    "model_id": "pioneer_deep",
+    "evaluation_timestamp": "2026-01-25T18:35:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.1 / 3.2",
+      "tier": "T1",
+      "issue": "Non-exclusive appointment with Supplier competition rights",
+      "detection": "P",
+      "match_strength": "MODERATE",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.1, 3.2",
+        "excerpt": "Non-exclusivity without compensating protections exposes Distributor to channel conflict... Supplier reserves expansive rights to sell directly and via others",
+        "reasoning": "Pioneer Deep identifies both 3.1 and 3.2 in the risk table with checkmarks (favorable classification). The proposed redline for 3.2 restricts Supplier's reserved rights to mutually agreed strategic accounts and prohibits overlapping distributors without consent. However, the redline for 3.1 focuses on approval criteria for Approved Resellers rather than converting to exclusive distribution. The amendments partially address the GT issue by restricting direct sales and limiting competitor appointments, but don't fully achieve exclusive territory OR exclusive product lines as the GT specifies. Partial credit awarded."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 4.0,
+      "quality_points": 6,
+      "total_points": 10.0
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Unilateral price changes with no cap",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.1",
+        "excerpt": "Supplier may unilaterally change prices on 60 days' notice with no cap, no price protection, and no MFN",
+        "reasoning": "Pioneer Deep flagged 5.1 pricing with a checkmark classification. The proposed redline caps price increases at once per calendar quarter with a maximum 5% per change, extends notice to 60 days (original was already 60, so no change), and requires honoring accepted POs and quoted prices. This addresses all GT key elements: price cap (5% vs CPI or 5% annual max), accepted orders honored, and limits frequency. Amendment quality is excellent with specific caps and protections."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 8.0,
+      "quality_points": 9,
+      "total_points": 17.0
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Mandatory minimum purchase with automatic breach trigger",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.1",
+        "excerpt": "Fixed quarterly minimums with material breach after two quarters are rigid and ignore market conditions, supply constraints, and EOL",
+        "reasoning": "Pioneer Deep identifies 6.1 with a checkmark classification. The proposed redline ties quarterly purchase targets to mutually agreed rolling forecasts and market conditions, replaces automatic breach with remediation plan requirement, and excludes failures due to demand fluctuations, supply constraints, or force majeure. This comprehensively addresses all GT concerns: reduced minimum or adjustable based on performance, cure period (60 days to make up shortfall via remediation plan), negotiation rights before breach, and market condition adjustment."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 8.0,
+      "quality_points": 9,
+      "total_points": 17.0
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "13.3",
+      "tier": "T1",
+      "issue": "Asymmetric assignment rights",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.3",
+        "excerpt": "Absolute restriction prevents Distributor from financing, selling business, or assigning for security; no carve-outs for affiliate assignments or assignments in connection with sale of business",
+        "reasoning": "Pioneer Deep flags 13.3 assignment with a checkmark. The proposed redline allows Distributor to assign without consent to affiliates or upon change of control with notice, and adds 'consent not to be unreasonably withheld, conditioned, or delayed' for other assignments. This addresses all GT key elements: mutual assignment provisions, M&A/affiliate exception, and reasonableness standard. The amendment provides necessary corporate flexibility."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 8.0,
+      "quality_points": 9,
+      "total_points": 17.0
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Low liability cap for both parties",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.2",
+        "excerpt": "Cap at amounts paid in prior 12 months is low and may not cover inventory losses, recalls, or IP claims. No carve-outs for indemnities",
+        "reasoning": "Pioneer Deep identifies 10.2 with a checkmark. The proposed redline increases the cap to 200% (2×) of annual spend and adds carve-outs for indemnification obligations, gross negligence, fraud, or willful misconduct, and breach of Article 12 (confidentiality). This addresses GT key elements: increased to 24+ months (200% = 2× 12 months), carve-outs for critical claims and indemnification, though the GT suggests considering higher cap for Supplier. Amendment is comprehensive and commercially reasonable."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 5.0,
+      "quality_points": 9,
+      "total_points": 14.0
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause - Distributor exposed to product claims",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New Clause – Supplier Indemnification (N1)",
+        "excerpt": "The Agreement lacks indemnities, leaving the Distributor exposed to third-party risks inherent in distribution",
+        "reasoning": "Pioneer Deep identified the missing indemnification and proposed a new clause (N1). The proposed revision requires Supplier to defend, indemnify, and hold harmless Distributor for third-party claims from bodily injury/property damage caused by Products, IP infringement by Products, and Supplier's law violations. This comprehensively addresses all GT concerns: product liability indemnification, IP infringement protection, defense costs coverage including reasonable attorneys' fees, and control of defense. Placement as new Article 14 is appropriate."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 8.0,
+      "quality_points": 9,
+      "total_points": 17.0
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "FOB shipping terms shift all transit risk to Distributor",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "4.2",
+        "excerpt": "FOB Supplier's facility shifts risk of loss at shipment and burdens Distributor with transit risk. No inspection/acceptance rights are stated",
+        "reasoning": "Pioneer Deep flags 4.2 delivery terms with a checkmark. The proposed redline changes from FOB origin to FOB Destination (DDP/FCA variant), with risk and title transferring upon receipt and acceptance at Distributor's dock. This addresses all GT key elements: DDP or CIF terms negotiated, Supplier-arranged transit insurance (implicit in DDP), and risk passes at Distributor facility. The amendment uses appropriate Incoterms and provides clear risk allocation."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 5.0,
+      "quality_points": 9,
+      "total_points": 14.0
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.3",
+        "excerpt": "1.5% per month (18% APR) is high. No cure period or exceptions for billing errors. Potentially punitive",
+        "reasoning": "Pioneer Deep identifies 5.3 with a concern flag. The proposed redline reduces the interest to 'the lesser of one percent (1.0%) per month or the maximum rate permitted by law', adds a five (5) day grace period, and applies only to undisputed amounts. This addresses all GT key elements: rate reduction to 1% or prime + margin, exclusion of disputed amounts, and grace period before interest accrues. The amendment is well-drafted with legal rate cap included."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 1.0,
+      "quality_points": 9,
+      "total_points": 10.0
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Marketing approval required for all materials",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "7.2",
+        "excerpt": "Prior approval for all materials without standards or timelines enables delay and micro-control. No deemed approval or cost recovery for rework",
+        "reasoning": "Pioneer Deep flags 7.2 advertising approvals with a checkmark. The proposed redline narrows approval to materials 'materially referencing the Trademarks', adds a reasonableness standard ('not to be unreasonably withheld, conditioned, or delayed'), and includes a 10-business-day deemed approval mechanism. This addresses all GT key elements: deemed approval if no response within 10 business days, limitation to major campaigns (materials materially referencing Trademarks), and operational timeline. The amendment effectively prevents arbitrary denials and marketing delays."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 5.0,
+      "quality_points": 9,
+      "total_points": 14.0
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.3",
+      "tier": "T2",
+      "issue": "Termination effects lack buyback and transition",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "11.3",
+        "excerpt": "Only 90-day sell-off and immediate trademark cessation. No buyback of inventory, parts, or marketing materials",
+        "reasoning": "Pioneer Deep flags 11.3 termination effects with a checkmark. The proposed redline extends the sell-off period to 180 days, adds Supplier buyback of salable inventory, and requires continued support for existing customers. This addresses all GT key elements: Supplier buyback at cost for remaining inventory, transition period for customer handover (continued support), though the GT also mentions refund of prepaid but undelivered orders which is not explicitly covered. Strong amendment overall."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 5.0,
+      "quality_points": 9,
+      "total_points": 14.0
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Supplier can reject purchase orders - no supply obligation",
+      "detection": "P",
+      "match_strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "4.1",
+        "excerpt": "Supplier has 5 business days to accept/reject POs, but there is no deemed acceptance, and no mechanism for partial acceptance, confirmed ship dates, or order priority",
+        "reasoning": "Pioneer Deep flags 4.1 PO process with a concern flag in the risk table. The proposed redline adds 'deemed acceptance if no response', confirmed lead times, and partial acceptance rules. However, it does not add 'shall not unreasonably reject' language or explicit supply assurance for forecasted quantities as the GT requires. The amendment addresses the deemed acceptance mechanism and some supply assurance (confirmed lead times), but misses the 'no obligation to accept orders even within forecast' concern and the need for supply commitment. Partial credit awarded."
+      },
+      "rationale_score": 2,
+      "amendment_score": 2,
+      "redline_quality_score": 2,
+      "detection_points": 4.0,
+      "quality_points": 6,
+      "total_points": 10.0
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Territory restriction on outside sales",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.3",
+        "excerpt": "Restricts active solicitations outside Territory, but lacks clarity on passive sales, online listings, and fulfillment when customers relocate",
+        "reasoning": "Pioneer Deep identifies 3.3 with a concern flag. The proposed redline adds explicit language allowing 'passive sales and non-targeted online marketing' and permits Distributor to fulfill unsolicited orders originating outside the Territory. This directly addresses the GT concern about permitting passive sales outside Territory and clarifies online/e-commerce treatment. The amendment is clear and well-drafted."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 1.0,
+      "quality_points": 9,
+      "total_points": 10.0
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consequential Damages Exclusion Missing Critical Carve-Outs",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.1",
+        "excerpt": "Total exclusion of consequential and special damages without carve-outs removes leverage for third-party claims, IP infringement, data breaches, and recalls",
+        "reasoning": "Pioneer Deep flags 10.1 damages exclusion with a checkmark. The proposed redline adds explicit exceptions for: indemnification obligations (Party's indemnification obligations), breach of confidentiality (Party's breach of confidentiality), infringement of intellectual property rights, and gross negligence or willful misconduct. This comprehensively addresses all GT key elements: carve-outs for confidentiality breach, IP infringement, willful misconduct, and indemnification obligations. The amendment restores accountability for high-impact events while maintaining general exclusion."
+      },
+      "rationale_score": 3,
+      "amendment_score": 3,
+      "redline_quality_score": 3,
+      "detection_points": 5.0,
+      "quality_points": 9,
+      "total_points": 14.0
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.2",
+      "issue_summary": "Bold: Definition of Net Sales",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify com",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Net Sales is defined for Distributor revenues, but the Agreement does not clearly use Net Sales elsewhere (e.g., for royalties or rebates). Leaving unused definitions creates ambiguity for future exhi"
+    },
+    {
+      "clause": "1.3",
+      "issue_summary": "Bold: Definition of Products",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add EOL not",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Products are defined by Exhibit A as amendable by mutual written agreement , which is acceptable, but the lack of notice periods for end-of-life (EOL) or substitutions creates supply risk and stranded"
+    },
+    {
+      "clause": "1.4",
+      "issue_summary": "Bold: Definition of Territory",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to clarify onl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Territory is left to Exhibit C without clarifying online sales and cross-border drop-shipping rules. Lack of clarity can expose Distributor to claims of out-of-territory sales."
+    },
+    {
+      "clause": "1.5",
+      "issue_summary": "Bold: Definition of Trademarks",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require rea",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Trademarks are tied to Exhibit D, but no clarity on brand guidelines availability or change control. Sudden changes can force costly rework of materials already produced."
+    },
+    {
+      "clause": "2.1",
+      "issue_summary": "Bold: Grant of Distribution Rights",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include rig",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Grant is generic and time-bound but lacks clarity on scope of channels , ability to appoint sub-distributors, and whether Distributor may sell to Approved Resellers without repeated approvals. This ca"
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Bold: Sales Outside Territory",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow passi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Restricts active solicitations outside Territory, but lacks clarity on passive sales , online listings, and fulfillment when customers relocate. Ambiguity can invite disputes ."
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Bold: Purchase Order Process",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add deemed ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Supplier has 5 business days to accept/reject POs, but there is no deemed acceptance , and no mechanism for partial acceptance, confirmed ship dates, or order priority. This creates supply risk ."
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Bold: Shipping Costs",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to allow Distr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Distributor bears all shipping costs with no cap, routing control, or consolidated freight opportunities. Increases landed cost unpredictably."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Bold: Payment Terms",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to Net 45 from",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Net 30 from invoice date without dispute mechanics or setoff rights can cause cash pressure. Lack of e-invoicing receipt date definition may shorten actual term."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Bold: Late Payment Interest",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to lower rate ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "1.5% per month (18% APR) is high. No cure period or exceptions for billing errors . Potentially punitive."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Bold: Forecasts",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to require Sup",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Non-binding rolling forecast helps planning but lacks Supplier obligations (e.g., to build capacity) or Distributor’s allocation priority during shortages."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Bold: Trademark License",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to permit subl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "License scope is narrow and non-transferable; unclear if sub-resellers may use marks under Distributor control. Lacks materials approval timing and termination sell-through period."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Bold: Product Warranty",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to specify rem",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Conformity and 12-month defect warranty is standard, but lacks remedy clarity (RMA/repair/replace/refund), turnaround times, and who pays freight. No warranties on compliance with laws or absence of l"
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Bold: Warranty Disclaimer",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add carve-o",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad disclaimers may negate implied warranties helpful to Distributor if Supplier’s warranties are thin. Needs carve-outs for the express warranties and statutory non-waivable rights."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Bold: Term and Renewal",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to add Distrib",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "3-year term with auto-renewal is acceptable; however, Distributor lacks termination for convenience or price renegotiation rights at renewal."
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Bold: Termination for Cause",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define non-",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cure period is 30 days without exceptions for non-curable breaches or extended cure for commercially reasonable remediation. No Supplier-specific grounds (e.g., repeated supply failures)."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Bold: Confidentiality",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include sta",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Generic duty, but no standard carve-outs (public domain, independently developed, legally compelled disclosure). Duration is 3 years which may be short for Supplier and long for Distributor depending "
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Bold: Governing Law",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to Distributor",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Illinois law may be acceptable but could disadvantage a Distributor based elsewhere. No conflict-of-law exclusion; consider neutrality or Distributor’s home forum for balance."
+    },
+    {
+      "clause": "Definition of Approved Resellers (1.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original definition gives Supplier unfettered approval control, slowing channel growth and creating leverage against Distributor. Adding objective, non-discriminatory criteria and a short approval"
+    },
+    {
+      "clause": "Definition of Net Sales (1.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The current definition omits common exclusions and could inflate the metric if later used for rebates or tiers. Clarifying that taxes, VAT, shipping, and pass-through fees are excluded prevents disput"
+    },
+    {
+      "clause": "Definition of Products (1.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absent EOL notice, Distributor risks stranded inventory and unmet customer obligations. Adding 180-day notice and last-time-buy is standard in distribution and enables planning and contract fulfillmen"
+    },
+    {
+      "clause": "Definition of Territory (1.4)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The base definition does not address passive sales or online commerce, creating risk that ordinary web listings are deemed out-of-territory. Clarifying passive sales and unsolicited orders reduces fri"
+    },
+    {
+      "clause": "Grant of Distribution Rights (2.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original grant is silent on sub-resellers, potentially restricting a vital channel strategy. Explicitly including Approved Resellers and sub-distributors clarifies scope and avoids later disputes "
+    },
+    {
+      "clause": "Reservation of Rights (3.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The current clause allows Supplier to bypass Distributor and flood the Territory with overlapping channels, undermining investments. Limiting direct sales to mutually agreed strategic accounts and res"
+    },
+    {
+      "clause": "Sales Outside Territory (3.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original wording may be read to prohibit ordinary online presence and passive sales. Clarifying that passive sales and fulfillment of unsolicited orders are allowed avoids unnecessary constraints "
+    },
+    {
+      "clause": "Delivery Terms; Title and Risk (4.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "FOB origin pushes transit risk to Distributor, who cannot control carrier performance chosen by Supplier. Moving to FOB Destination shifts risk to Supplier until delivery and acceptance, ensuring nonc"
+    },
+    {
+      "clause": "Shipping (4.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The current clause imposes all costs without controls. Allowing Distributor to choose carrier/routing and requiring Supplier to consolidate where feasible helps manage landed costs. This improves pred"
+    },
+    {
+      "clause": "Prices (5.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Uncapped unilateral price changes jeopardize margins and customer commitments. Adding frequency and percentage caps with an obligation to honor accepted POs and valid quotes preserves pricing stabilit"
+    },
+    {
+      "clause": "Payment Terms (5.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Net 30 from invoice date can be shortened by delayed delivery/receipt and does not account for billing errors. Moving to Net 45 from receipt, adding dispute mechanics, and setoff rights aligns cash fl"
+    },
+    {
+      "clause": "Late Payments (5.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original 18% APR is steep and applies even to disputed sums. Limiting interest to undisputed balances, adding a brief grace period, and reducing the rate moderates punitive effects and aligns with"
+    },
+    {
+      "clause": "Minimum Purchase Commitment (6.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Rigid quarterly minimums risk default for factors outside Distributor’s control. Tying targets to mutual forecasts and market realities, with remediation instead of automatic breach, maintains commerc"
+    },
+    {
+      "clause": "Forecasts (6.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Forecasts without Supplier obligations do not improve supply assurance. Requiring Supplier to plan capacity and allocate proportionally during shortages gives Distributor meaningful benefit from provi"
+    },
+    {
+      "clause": "Advertising (7.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad prior approval enables delay and micro-management. Narrowing to materials that materially reference Trademarks and adding a reasonableness standard, response SLA, and deemed approval preserves b"
+    },
+    {
+      "clause": "Trademark License (8.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Distributor needs its resellers to use marks in market. Allowing controlled sublicensing to Approved Resellers enables coherent channel marketing while maintaining Supplier’s brand standards. This cla"
+    },
+    {
+      "clause": "Product Warranty (9.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original warranty lacks remedies and compliance assurances. Specifying repair/replace/refund timelines and freight responsibility ensures practical, timely correction of issues. Adding legal compl"
+    },
+    {
+      "clause": "Warranty Disclaimer (9.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The disclaimer should not swallow the express warranty. Adding a non-derogation sentence and compliance with applicable law preserves the benefit of negotiated warranties. This avoids Supplier relying"
+    },
+    {
+      "clause": "Limitation of Liability – Exclusion (10.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A blanket exclusion would bar recovery for serious harms like IP infringement and data breaches. Adding standard carve-outs preserves accountability for high-impact events, ensuring the Distributor ca"
+    },
+    {
+      "clause": "Limitation of Liability – Cap (10.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The current cap is too low and lacks carve-outs, leaving Distributor undercompensated for high-impact events. Increasing the cap and excluding critical categories aligns with industry norms and ensure"
+    },
+    {
+      "clause": "Effect of Termination (11.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A 90-day sell-off is tight and no buyback shifts all exit risk to Distributor. Extending sell-through and adding a repurchase option reduces stranded inventory exposure and enables an orderly wind-dow"
+    },
+    {
+      "clause": "Confidentiality (12.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard confidentiality carve-outs and compelled disclosure procedures are missing, creating undue risk that ordinary operations could violate the clause. Adding these customary elements preserves co"
+    },
+    {
+      "clause": "Governing Law (13.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Illinois law may increase cost and uncertainty for a non-Illinois Distributor. Selecting the Distributor’s home law balances the relationship and reduces enforcement friction. Excluding conflicts prin"
+    },
+    {
+      "clause": "Dispute Resolution (13.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mandatory arbitration in Chicago burdens an out-of-state Distributor. Moving venue to Distributor’s location and specifying rules increases fairness and predictability. The interim relief carve-out pr"
+    },
+    {
+      "clause": "Assignment (13.3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prohibiting assignment impedes financing and corporate transactions. Allowing assignment to affiliates and upon change of control with notice is market-standard and protects the Distributor’s corporat"
+    },
+    {
+      "clause": "Force Majeure (13.7)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The existing clause lacks notice, mitigation, allocation, and termination mechanics. Adding these elements promotes transparency and fair allocation during disruptions and gives the Distributor an exi"
+    },
+    {
+      "clause": "New Clause – Supplier Indemnification (N1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 14 following Article 13. The Agreement lacks indemnities, leaving the Distributor exposed to third-party risks inherent in distribution. A Supplier indemnity for produ"
+    },
+    {
+      "clause": "New Clause – Product Recall & Safety (N2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 9.2 as Section 9.3. Without a recall clause, responses can be slow and costly for Distributor. Assigning leadership to Supplier and allocating costs where the defect or"
+    },
+    {
+      "clause": "New Clause – Compliance (N3)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 13.8 under General Provisions. Regulatory failures can interrupt supply and expose Distributor to serious penalties. A concise compliance clause and termination right "
+    },
+    {
+      "clause": "New Clause – Inspection & Acceptance (N4)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 4.2 as new Section 4.2A. The Agreement lacks acceptance mechanics, risking that defects become Distributor’s problem. An inspection window and rejection process ensure "
+    },
+    {
+      "clause": "New Clause – Price Protection/Rebates (N5)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.1 as new Section 5.1A. Without price protection, sudden list price drops can strand the Distributor with over-costed inventory. Credits for recent purchases and open "
+    },
+    {
+      "clause": "New Clause – Service Levels (N6)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 4.1 as new Section 4.1A. Service levels provide accountability for delivery performance and give the Distributor leverage if chronic shortfalls harm customer commitment"
+    },
+    {
+      "clause": "New Clause – Data/Privacy (N7)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 12.1 as new Section 12.2. If warranty or customer registrations involve personal data, the Distributor faces privacy obligations. A concise data protection clause clari"
+    },
+    {
+      "clause": "New Clause – Audit/Records (N8)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.3 as new Section 5.4. Price changes and rebates are difficult to verify without records access. Limited audit rights promote transparency and ensure the Distributor r"
+    },
+    {
+      "clause": "New Clause – Termination for Convenience",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 11.2 as new Section 11.2A. A convenience termination right lets the Distributor exit if commercial conditions change or persistent issues arise without fitting narrow c"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 2,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 2,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 6,
+    "t1_detected": 6,
+    "total_detection_points": 67.0,
+    "total_quality_points": 111,
+    "total_points": 178.0,
+    "weighted_max": 75,
+    "additional_issues_count": 53
+  }
+}

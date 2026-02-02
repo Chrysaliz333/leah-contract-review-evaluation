@@ -1,0 +1,362 @@
+{
+  "gt_metadata": {
+    "contract_id": "Partnership_VentureAlliance",
+    "contract_type": "Partnership",
+    "parties": {
+      "partner_a": "Venture Alliance Capital LLC",
+      "partner_b": "Growth Dynamics Partners LP"
+    },
+    "representing_party": "Growth Dynamics Partners LP (Partner B)",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "revision_notes": "v3.0: Tier changes: GT-07: T2 -> T3. Previous: 2.4_corrected_2026-01-14_v3_LOCKED",
+    "schema_version": "3.0",
+    "v3_migration_date": "2026-01-14",
+    "v4_enhancement_date": "2026-01-20"
+  },
+  "ground_truth": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "expected_classification": "❌",
+      "key_elements": [
+        "Section 10.1 is [Reserved]",
+        "No exit rights defined",
+        "No buyout provisions",
+        "No liquidity mechanism",
+        "5-year term with no early exit path",
+        "Should add put/call rights",
+        "Should add buyout at FMV"
+      ],
+      "contract_text": "10.1 [Reserved]",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "All major decisions require unanimous consent",
+        "Creates veto power for either partner",
+        "No tie-breaker or escalation mechanism",
+        "Combined with [Reserved] exit = trapped",
+        "Should add escalation path",
+        "Should add swing vote mechanism"
+      ],
+      "contract_text": "The Partners shall jointly manage the Partnership Activities. Major decisions require unanimous consent of both Partners.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "expected_classification": "❌",
+      "key_elements": [
+        "References 'default provisions in Section 10.3'",
+        "But 10.3 is Effect of Termination, not default provisions",
+        "No actual default consequences defined",
+        "Could fail to fund without consequence",
+        "Should add actual default provisions",
+        "Should fix cross-reference"
+      ],
+      "contract_text": "A Partner that fails to fund a capital call shall be subject to the default provisions in Section 10.3. [But Section 10.3 is Effect of Termination]",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Equal profit/loss split regardless of contributions",
+        "Partner contributing more capital gets same return",
+        "Economic misalignment with capital at risk",
+        "Should allocate returns pro rata to capital",
+        "Or add preferred return to larger contributor"
+      ],
+      "contract_text": "All profits and losses from Co-Investments shall be allocated fifty percent (50%) to Partner A and fifty percent (50%) to Partner B, regardless of the relative capital contributions made by each Partner to any particular Co-Investment.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "expected_classification": "❌",
+      "key_elements": [
+        "No cap on damages between partners",
+        "Unlimited liability exposure",
+        "Fundamental risk allocation missing",
+        "Should add mutual liability cap",
+        "Should add consequential damages exclusion"
+      ],
+      "contract_text": "N/A - No limitation of liability clause exists in contract Articles 1-14",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "expected_classification": "❌",
+      "key_elements": [
+        "No mutual indemnification for breach",
+        "No coverage for third-party claims",
+        "No protection for regulatory issues",
+        "Should add mutual indemnification",
+        "Should add third-party claim procedures"
+      ],
+      "contract_text": "N/A - No indemnification provisions exist in contract",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "❌",
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "60 days may be too short for complex due diligence",
+        "No consequences for breach of exclusivity",
+        "No post-period disclosure requirements",
+        "Should extend to 90-120 days",
+        "Should add penalty for breach"
+      ],
+      "contract_text": "Once a Target Company is presented to the Investment Committee, neither Partner may pursue an independent investment in such company for sixty (60) days.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "Must continue managing existing investments until liquidation",
+        "Could be years before all investments exit",
+        "Forced continued relationship after termination",
+        "Should add maximum wind-down period",
+        "Should add buyout right for portfolio interests"
+      ],
+      "contract_text": "Upon termination, the Partners shall continue to manage existing Co-Investments until liquidation or transfer, sharing profits and losses per Section 6.1.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "4.3 requires monthly Investment Committee meetings",
+        "But no formal reporting requirements",
+        "No portfolio financial statements requirement",
+        "No material event notices",
+        "No inspection rights",
+        "Should add quarterly portfolio reports",
+        "Should add material event notification"
+      ],
+      "contract_text": "The Investment Committee shall meet at least monthly to review deal pipeline and portfolio performance. [No formal reporting provisions exist]",
+      "expected_action": "ADD",
+      "acceptable_actions": [
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ],
+      "detection_logic": "new_clause_recommendation",
+      "expected_output_patterns": []
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "1-year post-term restriction on hiring partner employees",
+        "Mutual and limited scope",
+        "Standard provision",
+        "Consider whether needed at all"
+      ],
+      "contract_text": "Neither Partner shall solicit or hire employees of the other Partner during the Term and for one (1) year thereafter.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "5-year survival period for confidentiality",
+        "Investment partnership involves proprietary deal flow and strategies",
+        "Trade secrets (investment thesis, portfolio analysis) have indefinite value",
+        "5 years may be insufficient for competitive protection",
+        "Should add perpetual protection for trade secrets",
+        "Should differentiate trade secrets from general confidential info"
+      ],
+      "contract_text": "9.1 Confidentiality Obligations. Each Partner shall maintain strict confidentiality regarding deal flow, investment terms, portfolio company information, and the terms of this Agreement. This obligation survives termination for five (5) years.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "expected_classification": "⚠️",
+      "key_elements": [
+        "90-day notice required for non-renewal",
+        "Partnership has complex wind-down requirements (existing investments)",
+        "90 days insufficient to prepare for orderly transition",
+        "Combined with indefinite post-termination continuation (12.3) creates planning uncertainty",
+        "Should extend to 180 days minimum for investment partnership",
+        "Should add transition planning requirements",
+        "Should specify wind-down procedures in notice period"
+      ],
+      "contract_text": "This Agreement shall automatically renew for successive one (1) year periods unless either Partner provides written notice of non-renewal at least ninety (90) days prior to the end of the then-current term.",
+      "expected_action": "AMEND",
+      "acceptable_actions": [
+        "AMEND",
+        "ADD"
+      ],
+      "acceptable_classifications": [
+        "⚠️"
+      ]
+    }
+  ],
+  "tier_summary": {
+    "T1": {
+      "count": 6,
+      "weight": 8,
+      "issues": [
+        "GT-01 (10.1 - No Exit/Buyout Mechanism - Art)",
+        "GT-02 (4.1 - Unanimous Consent Creates Dead)",
+        "GT-03 (3.3 - Default Provisions Cross-Refer)",
+        "GT-04 (6.1 - Fixed 50/50 Split Regardless o)",
+        "GT-05 (N/A (Missing) - No Limitation of Liability)",
+        "GT-06 (N/A (Missing) - No Indemnification Provisions)"
+      ]
+    },
+    "T2": {
+      "count": 4,
+      "weight": 5,
+      "issues": [
+        "GT-08 (12.3 - Continuation Post-Termination )",
+        "GT-09 (N/A (Missing) - No Information Rights or Repor)",
+        "GT-11 (9.1 - Confidentiality Survival Inade)",
+        "GT-12 (10.2 - Non-Renewal Notice Period Too )"
+      ]
+    },
+    "T3": {
+      "count": 2,
+      "weight": 1,
+      "issues": [
+        "GT-07 (5.3 - 60-Day Exclusivity Period May )",
+        "GT-10 (11.2 - Non-Solicitation Standard Term)"
+      ]
+    },
+    "weighted_max": 70
+  },
+  "validation_notes": {
+    "phantom_clause_fixed": [
+      "Original :008 referenced '15.x' but contract only has Articles 1-14",
+      "Changed to 'N/A (Missing)' format as GT-09"
+    ],
+    "critical_gaps_added": [
+      "GT-05 - No limitation of liability clause exists",
+      "GT-06 - No indemnification provisions exist"
+    ],
+    "contract_verification": [
+      "10.1 [Reserved] confirmed",
+      "3.3 cross-references 10.3 which is Effect of Termination, not default provisions",
+      "No limitation of liability article exists",
+      "No indemnification article exists",
+      "Contract ends at Article 14"
+    ]
+  }
+}

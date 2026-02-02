@@ -1,0 +1,620 @@
+{
+  "meta": {
+    "contract": "jv",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-25T19:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "No Deadlock Resolution - Article 8 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Deadlock",
+      "evidence": {
+        "proposed_revision_excerpt": "8.2 Deadlock Resolution. If the Steering Committee is unable to reach agreement on a Material Decision within thirty (30) days, the matter shall be escalated to the chief executive officers of each Party. If the executives do not resolve the issue within fifteen (15) days, either Party may require binding baseball-style arbitration limited to selecting one of the Parties' last written proposals.",
+        "effective_rationale_excerpt": "Introducing a structured deadlock mechanism prevents paralysis in 50/50 governance, ensuring timely decisions and operational continuity. Baseball arbitration promotes reasonable positions and protects Quantum Dynamics LLC from stalemates that could stall product development or funding rounds.",
+        "judge_reasoning": "Leah's risk table at 8.1 correctly identifies the absent deadlock mechanism with classification NEW and recommends ADD. The proposed redline provides a comprehensive staged escalation mechanism (executive escalation then baseball arbitration) addressing all GT key elements including escalation, mediation equivalent, and final resolution. The rationale explicitly connects to 50/50 governance paralysis risk and business impact. Comprehensive fix with excellent drafting."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Rights",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Termination for Convenience",
+      "evidence": {
+        "proposed_revision_excerpt": "10.5 Termination for Convenience. After the second anniversary of the Effective Date, either Party may terminate this MOU without cause upon one hundred twenty (120) days' prior written notice, provided that such terminating Party repurchases the non-terminating Party's interest in the Joint Venture at fair market value as determined by an independent appraiser mutually selected by the Parties.",
+        "effective_rationale_excerpt": "Provides a balanced off-ramp enabling Quantum Dynamics LLC to exit if strategic priorities shift, while compensating the other Party, thereby minimizing potential contention and financial uncertainty.",
+        "judge_reasoning": "Pathfinder proposes termination for convenience with FMV buyout, addressing the core exit concern. However, this is not flagged in the risk table as a missing clause, and the proposal comes after Year 2 rather than Year 3 (GT suggests). The mechanism provides an exit path with valuation but lacks GT-recommended put/call distinctions and explicit change-of-control triggers. Partial detection for addressing exit concept but missing key structural elements."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent + No Tiebreaker",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10.0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Requires both Parties' written approval for key matters, giving Party B equal veto power and protecting against unilateral changes by Party A.",
+        "judge_reasoning": "Pathfinder's risk table at 4.1 classifies unanimous consent as FAVORABLE, treating it as protective rather than identifying the critical paralysis risk. The issue is partially detected at 4.4 where voting mechanics and deadlock concerns are raised (classification: WARNING), and the deadlock mechanism at 8.2 would indirectly address this. However, no direct amendment to 4.1 is proposed for tiered decision rights. Partial credit for related detection via deadlock mechanism but missing direct 4.1 remediation."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Broad Post-Term Non-Compete",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Non-Compete Obligation",
+      "evidence": {
+        "proposed_revision_excerpt": "During the Term and for twelve (12) months thereafter, neither Party shall, directly or indirectly, commercialize products that are substantially similar to, and marketed to the same enterprise customers as, the Joint Venture's then-current offerings within North America. This restriction shall not apply to (a) R&D activities, (b) government-funded projects, or (c) existing customer contracts.",
+        "effective_rationale_excerpt": "Reduces duration and clarifies scope to avoid restraining Party B's broader quantum initiatives, while still protecting the JV's immediate market. Carve-outs maintain compliance with California's pro-competition policy and safeguard Quantum Dynamics LLC's future business lines.",
+        "judge_reasoning": "Strong detection. Risk table at 9.1 flags with FAVORABLE classification but detailed_reasoning correctly identifies: 2-year post-term, undefined Territory, blocks broader quantum activities, and may be unenforceable. Redline narrows duration to 12 months, defines geography (North America), limits to substantially similar products, and adds critical carve-outs. Comprehensive fix addressing all GT concerns with practical drafting."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.2",
+      "tier": "T1",
+      "issue": "Developed IP Consent Lock-Up",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Developed IP",
+      "evidence": {
+        "proposed_revision_excerpt": "Either Party may, after providing thirty (30) days' written notice and a reasonable opportunity for the other Party to participate, grant non-exclusive licenses of Developed IP to third parties on commercially reasonable terms, provided that (a) such licenses do not impair the Joint Venture's business and (b) net revenues from such licenses are shared equally between the Parties.",
+        "effective_rationale_excerpt": "Joint ownership bars either Party from licensing without the other's consent, which may stall commercialization and reduce revenue opportunities for Party B if Party A withholds consent. Needs clear fallback licensing rights or dispute path.",
+        "judge_reasoning": "Strong detection. Risk table at 6.2 correctly identifies consent requirement creates commercialization gridlock. The proposed redline adds a notice-based licensing mechanism with revenue sharing, directly addressing the GT key elements of adding licensing rights with revenue share. The 30-day notice period provides reasonable dispute path. Comprehensive fix that unlocks monetization while preserving JV integrity."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Limitation of Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "13.1 Limitation of Liability. Except for (a) a Party's willful misconduct or gross negligence, (b) breach of confidentiality obligations, or (c) indemnification obligations for third-party IP infringement, neither Party shall be liable to the other for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to this MOU, even if advised of the possibility of such damages. Each Party's aggregate liability under this MOU shall not exceed the total amounts actually contributed by that Party to the Joint Venture during the preceding twelve (12) months.",
+        "effective_rationale_excerpt": "Contract lacks any liability cap or exclusion for indirect damages, exposing Party B to unlimited risk for consequential losses.",
+        "judge_reasoning": "Strong detection. Risk table entry with clause '—' (missing) correctly identifies no liability cap or consequential damages exclusion, classified as NEW. The proposed redline adds comprehensive liability limitation with appropriate carve-outs for willful misconduct, confidentiality breach, and IP indemnity. Cap tied to contributions provides mutual protection. All GT key elements addressed."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Capital Call Dilution Risk",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Additional Capital Contributions",
+      "evidence": {
+        "proposed_revision_excerpt": "3.4 Additional Capital. Additional capital contributions exceeding an aggregate of One Million Dollars ($1,000,000) in any calendar year shall require the unanimous written approval of the Parties. A Party that does not fund an approved capital call shall have sixty (60) days to cure such shortfall before any ownership dilution occurs, and any dilution shall be limited to the percentage necessary to reflect the unfunded amount relative to the total additional contribution.",
+        "effective_rationale_excerpt": "Clause enables unlimited future capital calls with automatic dilution for non-payment. No cap, notice period, or cure right is stated, exposing Party B to unplanned cash demands.",
+        "judge_reasoning": "Strong detection. Risk table at 3.4 correctly identifies unlimited capital calls, automatic dilution, no cap, no notice, no cure period. Proposed redline adds annual cap ($1M), 60-day cure period, and proportionate dilution limit. All GT key elements addressed: cure period added (60 days vs GT suggested 30-60), dispute mechanism implicit in cure, strategic dilution protection via proportionate limits."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Improvement Ownership Unclear on Termination",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Pathfinder does not have a risk table entry specifically for 6.3. The general IP treatment concerns at 6.2 partially relate to this issue but do not specifically address what happens to improvement licenses on termination. The 10.4 termination effects discussion mentions IP generally but not improvement-specific license survival. Partial detection for related IP concerns but missing specific 6.3 termination license scope."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "General Manager Authority Unbounded",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No risk table entry for 4.3 General Manager. Pathfinder does not flag the unbounded GM authority, missing reporting requirements, or removal process issues identified in the GT. This issue is not mentioned anywhere in the output."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "6.1",
+      "tier": "T2",
+      "issue": "Contributed IP License Gaps",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No specific risk table entry for 6.1. The IP section focuses on 6.2 (Developed IP) rather than 6.1 (Contributed IP). The termination effects at 10.4 mention returning Contributed IP but do not address the GT concerns about license scope limits, wind-down periods, or sublicensing restrictions. Partial credit for general IP awareness but missing specific 6.1 gaps."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.4",
+      "tier": "T2",
+      "issue": "Termination IP Allocation Undefined",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-Termination Rights",
+      "evidence": {
+        "proposed_revision_excerpt": "10.2 Termination for Cause. Either Party may terminate this MOU upon written notice if the other Party materially breaches any material obligation and fails to cure within sixty (60) days, or upon the other Party's insolvency, bankruptcy filing, or inability to perform for a continuous period exceeding ninety (90) days due to a Force Majeure Event.",
+        "effective_rationale_excerpt": "Lacks clear allocation method for jointly owned Developed IP or ongoing customer contracts, risking post-exit disputes and stranded assets.",
+        "judge_reasoning": "Risk table at 10.4 identifies unclear Developed IP allocation and stranded asset risk. However, the proposed redlines focus on termination triggers (10.2) rather than the 10.4 allocation issue itself. The 'as agreed' language is flagged but not directly remediated with default allocation mechanism. Adequate detection with partial fix via insolvency triggers but missing specific IP allocation fallback."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Indemnification Regime",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": "Redline-Warranties",
+      "evidence": {
+        "proposed_revision_excerpt": "13.4 Warranties and Disclaimers. Each Party represents and warrants that (a) it has full power and authority to enter into this MOU, (b) its Contributed IP does not, to its knowledge, infringe any third-party intellectual property rights...",
+        "effective_rationale_excerpt": "No express warranties, performance disclaimers, or mutual representations regarding authority, IP ownership, or non-infringement, leaving Party B exposed to implied warranties and third-party claims.",
+        "judge_reasoning": "Risk table identifies missing warranties but does not specifically flag absence of indemnification. The proposed warranties clause addresses IP non-infringement representation but is not a full indemnification regime. The limitation of liability clause references 'indemnification obligations for third-party IP infringement' implying some coverage but no dedicated indemnity clause is proposed. Partial credit for related coverage."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Change of Control Provision",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Pathfinder does not flag the absence of change of control provisions. The risk table does not mention CoC notice, consent, or buyout rights. The termination for convenience proposal does not link to CoC triggers. This GT issue is not mentioned anywhere."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vague Reserve Rights",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No risk table entry for 5.2 Distributions. The 'reasonable reserves' issue and potential for indefinite distribution delays is not flagged. Pathfinder does not address this minor issue."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "11.1-11.3",
+      "tier": "T3",
+      "issue": "Multi-Step Dispute Resolution",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "quality_points": 3,
+      "total_points": 3.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Escalation path (negotiation to mediation to arbitration) is cost-effective; arbitration in San Francisco is convenient for Party B.",
+        "judge_reasoning": "Risk table at 11.1-11.3 classifies dispute resolution as FAVORABLE, noting cost-effective escalation. This is the opposite of GT concern about delays. No mention of emergency arbitration option or timing concerns. The classification as favorable indicates Pathfinder did not see this as problematic. Minimal partial credit for awareness of the clause structure."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "1.4",
+      "tier": "T3",
+      "issue": "No Conditions Precedent for JV Entity",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No risk table entry for 1.4 JV Entity definition. The optional formation language and lack of timeline/conditions precedent is not flagged. Pathfinder does not address this issue."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Data Protection",
+      "evidence": {
+        "proposed_revision_excerpt": "13.3 Data Protection. The Parties shall comply with all applicable data protection and privacy laws, including the California Consumer Privacy Act (CCPA) and the EU General Data Protection Regulation (GDPR) where applicable. Each Party shall implement and maintain industry-standard administrative, technical, and physical safeguards to protect Personal Data processed in connection with the Joint Venture.",
+        "effective_rationale_excerpt": "JV will process sensitive enterprise data; absence of data-protection obligations risks regulatory non-compliance and liability for Party B.",
+        "judge_reasoning": "Strong detection. Risk table entry with clause '—' correctly identifies missing data protection obligations, classified as NEW. The proposed redline adds comprehensive CCPA/GDPR compliance with security standards and evidence requirements. All GT key elements addressed including regulatory compliance and data security obligations."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Confidentiality Survival",
+      "evidence": {
+        "proposed_revision_excerpt": "7.2 Survival. The confidentiality obligations shall survive termination of this MOU for (a) an indefinite period with respect to trade secrets and (b) five (5) years for all other Confidential Information.",
+        "effective_rationale_excerpt": "Five-year survival may not adequately protect trade secrets or long-tail quantum R&D data. No carve-out for residual knowledge or compelled-disclosure process.",
+        "judge_reasoning": "Strong detection. Risk table at 7.1-7.2 flags 5-year survival as insufficient for trade secrets and long-tail quantum data. The proposed redline adds indefinite protection for trade secrets while maintaining 5-year period for other confidential information. This precisely addresses GT concern about differentiated treatment for trade secrets vs general confidential info."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "3.4",
+      "issue_summary": "Additional Capital Contributions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Clause enables unlimited future capital calls with automatic dilution for non-payment. No cap, notice period, or cure right is stated, exposing Party B to unplanned cash demands."
+    },
+    {
+      "clause": "4.4",
+      "issue_summary": "Steering Committee Voting",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD (Deadlock Clause",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Majority vote, with each Party having one vote” conflicts with two representatives per Party, creating potential deadlock and interpretive gaps."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Developed IP – Joint Ownership",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Joint ownership bars either Party from licensing without the other’s consent, which may stall commercialization and reduce revenue opportunities for Party B if Party A withholds consent. Needs clear f"
+    },
+    {
+      "clause": "7.1-7.2",
+      "issue_summary": "Confidentiality & Survival",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Five-year survival may not adequately protect trade secrets or long-tail quantum R&D data. No carve-out for residual knowledge or compelled-disclosure process."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Reserved – Deadlock",
+      "leah_classification": "🆕",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of a deadlock mechanism risks operational paralysis, especially given 50/50 governance."
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Termination for Cause",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND / ADD (Termina",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No termination for prolonged force-majeure, insolvency, or failure to meet milestones. Cure period is fixed at 60 days, potentially too short for complex quantum issues."
+    },
+    {
+      "clause": "10.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Lacks clear allocation method for jointly owned Developed IP or ongoing customer contracts, risking post-exit disputes and stranded assets."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Governing Law – Delaware",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Delaware law is neutral, but Party B (California) may prefer CA substantive law for quantum IP nuances and stronger employee IP protections. Consider split: corporate issues DE, IP issues CA."
+    },
+    {
+      "clause": "—",
+      "issue_summary": "Limitation of Liability",
+      "leah_classification": "🆕",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Contract lacks any liability cap or exclusion for indirect damages, exposing Party B to unlimited risk for consequential losses."
+    },
+    {
+      "clause": "—",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "🆕",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No clause excusing performance for events beyond control (e.g., chip supply shortages). This omission could unfairly trigger breach."
+    },
+    {
+      "clause": "—",
+      "issue_summary": "Data Protection & Privacy",
+      "leah_classification": "🆕",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "JV will process sensitive enterprise data; absence of data-protection obligations risks regulatory non-compliance and liability for Party B."
+    },
+    {
+      "clause": "—",
+      "issue_summary": "Warranties & Disclaimers",
+      "leah_classification": "🆕",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No express warranties, performance disclaimers, or mutual representations regarding authority, IP ownership, or non-infringement, leaving Party B exposed to implied warranties and third-party claims."
+    },
+    {
+      "clause": "Exclusivity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace existing Section 2.3 in situ. The original clause imposes an overly broad blanket restriction on Party B’s core quantum business. Narrowing scope to direct competition, limiting geo"
+    },
+    {
+      "clause": "Additional Capital Contributions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace existing Section 3.4. The amendment sets an annual cap, establishes a cure period, and limits dilution strictly to the unpaid portion, preventing disproportionate equity loss for Pa"
+    },
+    {
+      "clause": "Developed IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace existing Section 6.2. The revision mitigates commercial gridlock by allowing Party B to license jointly owned IP when Party A is unresponsive, while preserving equal revenue sharing"
+    },
+    {
+      "clause": "Confidentiality Survival",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace existing Section 7.2. Quantum technology trade secrets often retain commercial value far beyond five years. Extending protection indefinitely for trade secrets minimizes leakage ris"
+    },
+    {
+      "clause": "Deadlock",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert immediately after current Section 8.1. Introducing a structured deadlock mechanism prevents paralysis in 50/50 governance, ensuring timely decisions and operational continuity. Baseb"
+    },
+    {
+      "clause": "Non-Compete Obligation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace existing Section 9.1. Reduces duration and clarifies scope to avoid restraining Party B’s broader quantum initiatives, while still protecting the JV’s immediate market. Carve-outs m"
+    },
+    {
+      "clause": "Termination Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace existing Section 10.2. Adds insolvency and prolonged force-majeure triggers, giving Quantum Dynamics LLC clearer exit rights when Party A cannot perform, thereby reducing operationa"
+    },
+    {
+      "clause": "Termination for Convenience",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 10.4. Provides a balanced off-ramp enabling Quantum Dynamics LLC to exit if strategic priorities shift, while compensating the other Party, thereby minimizing potential"
+    },
+    {
+      "clause": "Limitation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 13 immediately before the Signature Page. Caps Quantum Dynamics LLC’s exposure and excludes consequential damages, aligning liability with financial stake and protecti"
+    },
+    {
+      "clause": "Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert immediately after new Section 13.1. Provides explicit relief for unforeseen events such as quantum chip shortages, preventing automatic breach and safeguarding Quantum Dynamics LLC’s"
+    },
+    {
+      "clause": "Data Protection",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert immediately after new Section 13.2. Establishes clear compliance obligations, reducing regulatory exposure and protecting Quantum Dynamics LLC from fines or customer claims arising f"
+    },
+    {
+      "clause": "Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert immediately after new Section 13.3. Provides mutual baseline assurances while expressly disclaiming implied warranties, limiting Quantum Dynamics LLC’s exposure to unforeseen liabili"
+    },
+    {
+      "clause": "Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Replace existing Section 12.1. Splitting governing law leverages Delaware’s corporate jurisprudence while applying California law—more mature in tech-IP and privacy—to issues critical to Qu"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 10,
+      "P": 5,
+      "N": 0,
+      "NMI": 3
+    },
+    "t1_gate_pass": true,
+    "t1_count": 5,
+    "t1_all_detected": true,
+    "total_detection_points": 65.0,
+    "total_quality_points": 98,
+    "total_points": 163.0,
+    "additional_issues_count": 25
+  }
+}

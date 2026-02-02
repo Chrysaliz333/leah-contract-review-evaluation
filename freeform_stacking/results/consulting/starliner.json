@@ -1,0 +1,357 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "starliner",
+    "model_display_name": "Starliner",
+    "environment": "hotfix",
+    "evaluation_timestamp": "2026-01-25T22:15:00Z",
+    "gt_version": "1.0",
+    "part_b_gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "CONSULTING_01",
+      "clause": "3.4",
+      "cp_redline_description": "Payment terms shortened to 15 days, late fee increased to 2%, dispute window reduced to 5 days",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing redline shortens payment to 15 days, increases late fee, and waives Client's right to dispute invoices after 5 days, which is highly unfavorable. Modify to restore 30-day payment, reduce late fee to 1%, and allow 30 days for invoice disputes.",
+        "judge_reasoning": "Starliner correctly identified all problematic elements of the CP redline (15-day payment, 2% late fee, 5-day dispute waiver) and proposed restoring the baseline 30-day terms. Action scored 1 because MODIFY was selected instead of REJECT, but the proposed revision effectively reverts to baseline language. Revision addresses all key elements (30 days, 1% interest, dispute rights). Reasoning is sound - identifies cash flow impact and unfairness of waiving dispute rights."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_02",
+      "clause": "5.1",
+      "cp_redline_description": "Consultant retains all IP ownership, Client receives only non-exclusive, non-transferable license for internal use",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing redline gives Consultant ownership of all deliverables, only licensing use to Client. This is highly unfavorable and undermines Client's business objectives. Modify to restore Client's exclusive ownership of deliverables created for Client, with Consultant retaining only Background IP.",
+        "judge_reasoning": "Starliner correctly identified the CP redline fundamentally undermines Client's position by transferring ownership to Consultant. The proposed revision restores work-for-hire and Client ownership. Action scored 1 because MODIFY chosen over REJECT, though the revision essentially reverts to baseline. Revision captures key elements (work-for-hire, exclusive ownership, Background IP carve-out). Reasoning correctly identifies the dependency risk of license-only model."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_03",
+      "clause": "5.2",
+      "cp_redline_description": "Background IP license limited to 3 years with competitive use restriction and termination provision",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 1,
+      "total_points": 4,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing redline expands Consultant's rights to all improvements and general knowledge, which is overbroad. Modify to limit Background IP to pre-existing IP and exclude project-specific improvements.",
+        "judge_reasoning": "Starliner identified the CP redline as overbroad but focused on the improvement/knowledge capture aspect rather than the 3-year time limit and competitive restriction that are the core GT concerns. Action scored 1 (MODIFY vs REJECT). Revision addresses pre-existing IP limitation but doesn't explicitly address perpetual license requirement or territorial/competitive restrictions from GT. Reasoning partially addresses the concern but misses the time-limited and competitive restriction elements."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_04",
+      "clause": "7.1",
+      "cp_redline_description": "Asymmetric termination: Consultant 15 days notice, Client 90 days plus 3-month termination fee",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing redline allows Consultant to terminate on 15 days' notice, but requires Client to give 90 days' notice and pay a 3-month fee penalty. This is highly unfavorable and restricts Client's flexibility. Modify to allow both parties to terminate on 30 days' notice, with no penalty.",
+        "judge_reasoning": "Starliner correctly identified all asymmetric elements: Consultant's 15-day vs Client's 90-day notice period, and the 3-month termination fee penalty. Proposed revision restores symmetric 30-day notice with no penalty, which addresses all GT key elements. Action scored 1 (MODIFY vs REJECT). Revision covers symmetric notice and no fee. Reasoning identifies the lock-in effect and penalty as unfair."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 19,
+    "max_score": 24,
+    "percentage": 79.2,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10,
+      "matched_redline_id": "5.1",
+      "evidence": {
+        "proposed_revision_excerpt": "All deliverables created by Consultant specifically for Client pursuant to this Agreement shall be considered work-for-hire and shall be owned exclusively by Client upon full payment of all fees due hereunder. Consultant retains ownership only of its Background IP, as defined herein, and grants Client a perpetual, royalty-free, transferable license to use any Background IP incorporated in the Deliverables.",
+        "effective_rationale_excerpt": "Existing redline gives Consultant ownership of all deliverables, only licensing use to Client. This is highly unfavorable and undermines Client's business objectives.",
+        "judge_reasoning": "Partial detection. Starliner flagged 5.1 as Unfavourable and proposed restoring work-for-hire, but did NOT identify the core GT issue: that work-for-hire designation itself may be ineffective for independent contractors under 17 U.S.C. 101. The GT requires explicit assignment language as fallback. Starliner's revision retains work-for-hire reliance without addressing the statutory limitation. Detection scored P because the clause was flagged and ownership concern raised, but the specific legal defect (work-for-hire inapplicability) was not articulated. Quality scores reflect adequate drafting that addresses surface issue but misses the deeper IP ownership risk."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12,
+      "matched_redline_id": "9.2",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT FOR BREACHES OF CONFIDENTIALITY OBLIGATIONS, INDEMNIFICATION OBLIGATIONS, GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR INTELLECTUAL PROPERTY INFRINGEMENT, NEITHER PARTY'S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT SHALL EXCEED THE TOTAL FEES PAID OR PAYABLE BY CLIENT TO CONSULTANT UNDER THE APPLICABLE STATEMENT OF WORK GIVING RISE TO THE CLAIM.",
+        "effective_rationale_excerpt": "Liability capped at SOW value, but carve-outs only for confidentiality and indemnity. May be insufficient for other critical breaches. Amend to exclude liability cap for gross negligence, willful misconduct, and IP infringement.",
+        "judge_reasoning": "Full detection. Starliner correctly identified the liability cap lacks sufficient carve-outs and proposed adding gross negligence, willful misconduct, and IP infringement. This addresses the GT key elements for IP infringement and gross negligence carve-outs. The GT also mentions data breach carve-out which Starliner did not explicitly add, but the coverage is substantially complete. Amendment score 3 for comprehensive fix. Rationale score 2 as risk is identified but no specific values cited. Redline quality 2 as drafting is clear but standard."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12,
+      "matched_redline_id": "9.1",
+      "evidence": {
+        "proposed_revision_excerpt": "IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES... EXCEPT TO THE EXTENT SUCH DAMAGES RESULT FROM A PARTY'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR INTENTIONAL BREACH OF CONFIDENTIALITY OR INTELLECTUAL PROPERTY OBLIGATIONS.",
+        "effective_rationale_excerpt": "Excludes indirect damages for both parties, but may limit Client's recovery for consequential losses. Amend to carve out exclusions for Consultant's gross negligence, willful misconduct, or IP infringement.",
+        "judge_reasoning": "Full detection. Starliner correctly identified the consequential damages exclusion needs carve-outs and proposed appropriate exceptions for gross negligence, willful misconduct, confidentiality breach, and IP obligations. This aligns with GT key elements requiring carve-outs for confidentiality breach and IP infringement. Amendment score 3 for comprehensive carve-out coverage. Rationale score 2 as impact on recovery is noted but lacks specificity. Redline quality 2 for clear but standard drafting."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "7.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Either party may terminate this Agreement or any Statement of Work for convenience upon thirty (30) days' prior written notice to the other party, with no penalty or additional fees.",
+        "effective_rationale_excerpt": "Existing redline allows Consultant to terminate on 15 days' notice, but requires Client to give 90 days' notice and pay a 3-month fee penalty. This is highly unfavorable and restricts Client's flexibility.",
+        "judge_reasoning": "Full detection. Starliner flagged 7.1 termination issues and proposed SOW-level termination rights. The GT notes Client may need shorter notice period and SOW-level TfC right. Starliner's revision adds SOW termination but retains 30 days rather than proposing shorter. Amendment score 2 as SOW termination added but no transition assistance. Rationale score 2 as flexibility concern raised. Redline quality 2 as drafting is clear."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "5.2",
+      "evidence": {
+        "proposed_revision_excerpt": "To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client a non-exclusive, perpetual, royalty-free, transferable, and sublicensable license to use such Background IP as part of the Deliverables and for any internal business purpose.",
+        "effective_rationale_excerpt": "Existing redline expands Consultant's rights to all improvements and general knowledge, which is overbroad.",
+        "judge_reasoning": "Full detection. Starliner identified Background IP concerns and proposed expanding license to include transferable, sublicensable, and internal business use rights. This addresses GT key elements of modification rights and broader use. The revision adds sublicensing for affiliates/successors as GT suggests. Amendment score 2 as core expansion addressed but doesn't explicitly mention derivative works. Rationale score 2 as concern is identified. Redline quality 2 as drafting is functional."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not mentioned. Starliner marked 6.4 (Return of Confidential Information) and 13.10 (Survival) as Favorable with no action required. The GT identifies that Article 6 survives per 13.10 but lacks explicit duration and trade secret treatment. Starliner did not flag the missing explicit survival period or trade secret carve-out. No proposed redline addresses this issue."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 6.5,
+      "matched_redline_id": "3.4",
+      "evidence": {
+        "proposed_revision_excerpt": "Client may dispute any invoice in good faith within thirty (30) days of receipt, with payment of any undisputed portion due as stated.",
+        "effective_rationale_excerpt": "The existing redline is highly unfavorable to Client, shortening payment terms, increasing late fees, and limiting dispute rights. The proposed revision restores reasonable payment and dispute timelines, protecting Client's cash flow and ability to challenge incorrect invoices.",
+        "judge_reasoning": "Partial detection. Starliner's revision adds a dispute mechanism with 30-day window and good faith requirement, which addresses the GT concern about formal invoice dispute process. However, the primary focus was on responding to the CP redline (restoring 30 days, 1% interest) rather than independently identifying the missing dispute mechanism as a gap. The dispute mechanism appears as an enhancement to the revision. Scored P as the issue was addressed but not independently flagged as a baseline deficiency. Quality scores reflect adequate dispute language."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": "13.1_13.2",
+      "evidence": {
+        "proposed_revision_excerpt": "This Agreement shall be governed by and construed in accordance with the laws of the State of Nevada... courts of competent jurisdiction in Clark County, Nevada.",
+        "effective_rationale_excerpt": "Texas law governs; Client is based in Nevada. This may disadvantage Client in legal disputes. This amendment aligns governing law with Client's home state, reducing legal and logistical burdens.",
+        "judge_reasoning": "Full detection. Starliner correctly identified that Texas law and Travis County forum favour the Consultant when Client is Nevada-based. The proposed revision changes both to Nevada/Clark County, fully addressing GT concern. Amendment score 2 as change is complete but standard. Rationale score 2 as inconvenience is noted but no arbitration alternative discussed. Redline quality 2 as clean substitution."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "NCR_DataProtection",
+      "evidence": {
+        "proposed_revision_excerpt": "Consultant shall comply with all applicable data protection and privacy laws in connection with the performance of Services under this Agreement. Consultant shall implement appropriate technical and organizational measures to protect Client's data against unauthorized access, disclosure, alteration, or destruction, and shall promptly notify Client of any actual or suspected data breach involving Client data.",
+        "effective_rationale_excerpt": "No data protection/privacy obligations specified, risking non-compliance with applicable laws if personal data is processed. This clause ensures Consultant is contractually bound to protect Client's data and comply with privacy laws, reducing regulatory and reputational risk for Client.",
+        "judge_reasoning": "Full detection. Starliner included a New Clause Recommendation for Data Protection & Privacy, correctly identifying the gap. The proposed clause covers compliance with privacy laws, security measures, and breach notification. However, it does not explicitly address GDPR/CCPA, controller/processor roles, or subprocessor/audit rights mentioned in GT. Amendment score 2 for covering core elements but missing specifics. Rationale score 2 for identifying regulatory risk. Redline quality 2 for functional but generic clause."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Missed - marked as compliant. Starliner's risk_table entry for 10.1 states 'Consultant indemnifies Client for IP infringement and gross negligence, which is appropriate' and marked it Favorable with 'No Action Required'. The GT identifies that limiting indemnification to gross negligence/willful misconduct is too narrow (high bar to prove) and should expand to ordinary negligence and warranty/confidentiality breaches. Starliner accepted the current limitation as adequate rather than flagging it as insufficient coverage."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not mentioned. Starliner's risk_table entry for 11.1 (Insurance Requirements) marked it Favorable, noting 'Consultant must maintain adequate insurance and provide certificates, protecting Client'. No new clause recommendation for cyber insurance was made. The GT identifies that CGL and E&O are required but cyber liability insurance is missing, which is a gap given Consultant may handle sensitive data/systems."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 6,
+      "P": 2,
+      "N": 1,
+      "NMI": 2
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 0,
+        "N": 1,
+        "NMI": 2
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 1,
+    "t1_detected": 1,
+    "total_detection_points": 25.5,
+    "total_quality_points": 50,
+    "total_points": 75.5,
+    "max_detection_points": 50,
+    "max_quality_points": 99,
+    "percentage": 50.7,
+    "pass_fail": "MARGINAL",
+    "weighted_max": 50
+  },
+  "additional_issues": [],
+  "summary": {
+    "part_a": {
+      "total_score": 19,
+      "max_score": 24,
+      "percentage": 79.2,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "total_detection_points": 25.5,
+      "total_quality_points": 50,
+      "total_points": 75.5,
+      "max_detection_points": 50,
+      "max_quality_points": 99,
+      "percentage": 50.7,
+      "t1_gate_pass": true,
+      "pass_fail": "MARGINAL"
+    },
+    "combined": {
+      "pass": true
+    }
+  }
+}

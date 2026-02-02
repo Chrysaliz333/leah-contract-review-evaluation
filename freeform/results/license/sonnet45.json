@@ -1,0 +1,873 @@
+{
+  "meta": {
+    "contract": "license",
+    "model_id": "sonnet45",
+    "evaluation_timestamp": "2026-01-25T18:15:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.2",
+      "tier": "T1",
+      "issue": "Improvements owned by Licensor - loses R&D investment",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-3.2 Improvements",
+      "evidence": {
+        "proposed_revision_excerpt": "Improvements conceived solely by Licensee using Licensee's resources shall be owned by Licensee. Improvements developed jointly by the Parties shall be jointly owned, with each Party having the right to use, license, and commercialize such improvements without accounting to the other Party.",
+        "effective_rationale_excerpt": "The original clause creates a severe disincentive for TechPro to invest in R&D by automatically transferring all improvement value to Licensor without compensation. By granting TechPro ownership of solely-developed improvements and fair joint ownership for collaborative work, this amendment incentivizes innovation while ensuring both parties benefit.",
+        "judge_reasoning": "Sonnet45 fully detected the improvements ownership issue and proposed a balanced solution granting Licensee ownership of its developments and joint ownership for collaborative improvements. This addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Licensor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.2 Cap",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS PROVIDED IN SUBSECTION (b), LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF (A) $2,000,000 OR (B) THE ROYALTIES PAID IN THE TWELVE MONTHS PRECEDING THE CLAIM, PROVIDED THAT THIS LIMITATION SHALL NOT APPLY TO LIABILITY ARISING FROM BREACHES OF CONFIDENTIALITY, INTELLECTUAL PROPERTY INFRINGEMENT, OR WILLFUL MISCONDUCT.",
+        "effective_rationale_excerpt": "The original cap of twelve months of royalties is grossly inadequate compared to TechPro's total investment. This revision increases the cap to the greater of total fees paid or $2M, ensuring the cap scales with TechPro's investment.",
+        "judge_reasoning": "Sonnet45 detected the inadequate liability cap and proposed raising it to the greater of $2M or 12-month royalties with comprehensive carve-outs. This addresses the GT concern about low cap versus total investment."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Mandatory minimum royalty regardless of sales",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-4.1 Minimum Annual Royalty",
+      "evidence": {
+        "proposed_revision_excerpt": "Beginning in Year 3, Licensee shall pay a minimum annual royalty according to the following schedule: Year 3: $100,000; Year 4: $150,000; Year 5 and thereafter: $200,000. Minimum royalties shall be waived for any year in which: (i) a force majeure event prevents Licensee from manufacturing or selling for more than ninety (90) consecutive days; (ii) Licensee is enjoined from selling due to third-party IP claims; or (iii) Licensor materially breaches this Agreement.",
+        "effective_rationale_excerpt": "The original provision imposes immediate and inflexible financial obligations that ignore market realities. This revision implements a graduated minimum structure that aligns with typical product lifecycle curves, reducing TechPro's early-stage risk.",
+        "judge_reasoning": "Sonnet45 fully detected the minimum royalty issue and proposed comprehensive fixes: graduated structure starting Year 3, reduced amounts, and force majeure/IP claims/breach waivers. This addresses all key GT elements."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.2",
+      "tier": "T1",
+      "issue": "AS-IS disclaimer with limited warranties",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-9.2 Disclaimer",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS EXPRESSLY SET FORTH IN SECTION 9.1, LICENSOR MAKES NO OTHER WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. NOTWITHSTANDING THE FOREGOING, LICENSOR WARRANTS THAT THE LICENSED IP IS FUNCTIONAL AND SUITABLE FOR COMMERCIAL APPLICATION IN THE FIELD OF USE AS OF THE EFFECTIVE DATE.",
+        "effective_rationale_excerpt": "The original blanket 'AS IS' disclaimer eliminates all implied warranties, leaving TechPro with no recourse if the Licensed IP is non-functional despite paying $500,000 upfront. The revision maintains the disclaimer but adds a minimum functionality warranty ensuring the Licensed IP actually works.",
+        "judge_reasoning": "Sonnet45 detected the AS-IS disclaimer issue and proposed carving out Section 9.1 warranties plus adding a functionality warranty for commercial application. This comprehensively addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High royalty rate",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-5.1 Running Royalty",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee shall pay Licensor a royalty on Net Sales of Licensed Products according to the following tiered structure: (a) Seven percent (7%) on the first $5,000,000 of cumulative annual Net Sales; (b) Six percent (6%) on cumulative annual Net Sales between $5,000,001 and $15,000,000; (c) Five percent (5%) on cumulative annual Net Sales exceeding $15,000,000.",
+        "effective_rationale_excerpt": "The flat 10% royalty rate may exceed market standards and reduces TechPro's profit margins without consideration for volume. This revision implements a tiered structure that rewards TechPro's sales success through volume-based rate reductions.",
+        "judge_reasoning": "Sonnet45 detected the high 10% rate and proposed a comprehensive tiered structure (7%/6%/5%) with volume thresholds. This addresses the GT concern about industry benchmarks and volume discounts."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Sublicensing requires Licensor consent",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-2.2 Sublicensing",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensee may grant sublicenses with Licensor's prior written consent, such consent not to be unreasonably withheld, conditioned, or delayed. Licensor shall respond to any sublicense request within fifteen (15) business days of receipt. Failure to respond within such period shall be deemed consent. Licensor may only withhold consent based on reasonable concerns regarding the proposed sublicensee's financial stability, technical capability, or reputation.",
+        "effective_rationale_excerpt": "The original provision grants Licensor unilateral and unrestricted control over TechPro's strategic partnerships. This revision implements a reasonableness standard that prevents arbitrary refusals while protecting legitimate Licensor interests.",
+        "judge_reasoning": "Sonnet45 fully detected the sublicensing consent issue and proposed comprehensive fixes: reasonableness standard, 15-day deemed consent, and objective withholding criteria. This addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.1 Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS PROVIDED IN SUBSECTION (b), NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES. (b) The exclusion shall not apply to: (i) damages arising from breach of confidentiality; (ii) damages arising from third-party claims for which a Party is obligated to indemnify; (iii) damages arising from Licensor's breach of exclusivity; (iv) damages arising from infringement or misappropriation of intellectual property rights; or (v) damages arising from willful misconduct or fraud.",
+        "effective_rationale_excerpt": "The blanket exclusion severely disadvantages TechPro because the primary damages from material Licensor breaches are consequential damages like lost profits. This revision carves out critical breach categories where consequential damages are natural and foreseeable.",
+        "judge_reasoning": "Sonnet45 detected the consequential damages exclusion and proposed comprehensive carve-outs for confidentiality, indemnity, exclusivity breach, IP infringement, and willful misconduct. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No termination for convenience - 10-year lock-in",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Sonnet45 did not detect the missing termination for convenience right. No redline or risk_table entry addresses the 10-year lock-in with no exit option."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Non-refundable upfront fee",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-5.2 Upfront Fee",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon execution, Licensee shall pay an upfront license fee of $500,000. The upfront fee shall be refundable on a pro-rata basis if: (i) Licensor materially breaches its representations and warranties under Section 9.1 and fails to cure within thirty (30) days; (ii) the Licensed IP is found to infringe third-party rights and Licensor cannot provide non-infringing alternatives within ninety (90) days; or (iii) Licensor breaches the exclusivity provisions. In the event of refund, Licensor shall return the upfront fee less a pro-rata amount calculated based on full months elapsed at a rate of $50,000 per month.",
+        "effective_rationale_excerpt": "The non-refundable structure creates extreme asymmetric risk where TechPro loses $500,000 if the Licensed IP proves defective, infringing, or if Licensor breaches fundamental obligations. This revision provides partial refund protection for scenarios where Licensor fails to deliver promised value.",
+        "judge_reasoning": "Sonnet45 detected the non-refundable upfront fee risk and proposed comprehensive refund mechanisms for breach, IP infringement, and exclusivity violations with pro-rata calculations. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "7.1",
+      "tier": "T3",
+      "issue": "Audit cost-shifting threshold favors Licensor",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-7.1 Mutual Audit Rights",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor may audit Licensee's books and records relating to Net Sales and royalty calculations once per calendar year upon thirty (30) days' prior written notice during normal business hours. Licensor shall bear all audit costs unless the audit reveals an underpayment exceeding five percent (5%), in which case Licensee shall bear the reasonable audit costs. Licensee shall have the right to seek a reciprocal audit of any Licensor records that directly affect Licensee's rights.",
+        "effective_rationale_excerpt": "The original provision grants one-sided audit rights to Licensor while providing TechPro with no verification mechanism for Licensor's critical obligations. The revision establishes reciprocal audit rights that enable TechPro to verify Licensor's compliance.",
+        "judge_reasoning": "Sonnet45 detected the audit issue and proposed adding reciprocal audit rights plus procedural protections, though kept the 5% threshold rather than raising it to 10%. Partial address of GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit A",
+      "tier": "T2",
+      "issue": "Licensed IP schedule (Exhibit A) not attached - undefined scope",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exhibit A - Licensed Intellectual Property",
+      "evidence": {
+        "proposed_revision_excerpt": "EXHIBIT A - LICENSED INTELLECTUAL PROPERTY. PATENTS: To be completed with patent title, number, filing date, issue date, jurisdiction, and status. TRADEMARKS: To be completed with trademark, registration number, date, jurisdiction, class, and status. TRADE SECRETS: Detailed description of trade secrets, know-how, processes, specifications. Licensor represents that the foregoing constitutes all intellectual property included as of the Effective Date.",
+        "effective_rationale_excerpt": "The contract references Exhibit A for the Licensed IP schedule but the exhibit is not attached, meaning TechPro cannot determine what IP it is licensing. This proposed exhibit provides a comprehensive framework for listing all Licensed IP with sufficient detail.",
+        "judge_reasoning": "Sonnet45 detected the missing Exhibit A and proposed a detailed template covering patents, trademarks, trade secrets with all necessary fields. This comprehensively addresses the GT concern about undefined scope."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "Exhibit B",
+      "tier": "T2",
+      "issue": "Territory definition (Exhibit B) not attached - exclusivity meaningless",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exhibit B - Territory",
+      "evidence": {
+        "proposed_revision_excerpt": "EXHIBIT B - TERRITORY. The 'Territory' for purposes of this Agreement shall mean worldwide, including all countries and territories globally. Licensee may manufacture, use, sell, offer for sale, import, export, and distribute Licensed Products in any and all countries and territories without geographic restriction.",
+        "effective_rationale_excerpt": "The contract references Exhibit B for Territory definition but the exhibit is completely missing. The proposed worldwide Territory maximizes TechPro's commercial opportunities and return on its substantial investment.",
+        "judge_reasoning": "Sonnet45 detected the missing Exhibit B and proposed worldwide territory as the default. This fully addresses the GT concern by ensuring exclusivity has meaning with a Licensee-favorable scope."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No IP infringement indemnification from Licensor",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-New Article 16 - Indemnification",
+      "evidence": {
+        "proposed_revision_excerpt": "ARTICLE 16 - INDEMNIFICATION. Licensor shall indemnify, defend, and hold harmless Licensee from and against any and all claims arising from: (a) any claim that the Licensed IP or Licensee's use infringes third-party intellectual property rights; (b) Licensor's breach of representations, warranties, or obligations; or (c) Licensor's gross negligence or willful misconduct. If the Licensed IP becomes subject of an infringement claim, Licensor shall procure for Licensee the right to continue using, replace or modify to make non-infringing, or terminate and refund upfront fee and all royalties.",
+        "effective_rationale_excerpt": "The contract completely lacks indemnification provisions for third-party IP infringement claims. The proposed indemnification provides comprehensive protection requiring Licensor to defend and pay for infringement claims with practical remediation options.",
+        "judge_reasoning": "Sonnet45 detected the missing IP indemnification and proposed comprehensive Article 16 covering defense, hold harmless, and remediation options (procure rights, modify, replace, refund). This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-11.1 Confidentiality Obligations",
+      "evidence": {
+        "proposed_revision_excerpt": "Each Party shall maintain confidentiality of the other's confidential information for five (5) years following disclosure, except that confidential information constituting trade secrets shall be protected for so long as such information remains a trade secret under applicable law. Upon termination, each Party shall return or destroy all confidential information, except one copy may be retained for legal compliance.",
+        "effective_rationale_excerpt": "The arbitrary five-year limit inadequately protects trade secrets that may have indefinite commercial value. This revision implements perpetual protection for trade secrets (standard legal practice) while maintaining the five-year term for other confidential information.",
+        "judge_reasoning": "Sonnet45 detected the inadequate confidentiality survival and proposed extending protection for trade secrets indefinitely plus return/destruction provisions. This fully addresses the GT concern about perpetual protection."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "Non-infringement warranty qualified 'to knowledge' - inadequate for IP license",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-9.1 Licensor Warranties",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor represents and warrants that: (a) it has full right, power, and authority to grant the license; (b) the Licensed IP does not infringe, misappropriate, or violate any third-party intellectual property rights; (c) Licensor has conducted reasonable patent clearance searches and freedom-to-operate analysis; (d) all Licensed IP is valid, subsisting, and enforceable; (e) Licensor has paid all maintenance fees and taken all actions to maintain the Licensed IP in good standing; and (f) Licensor has not granted any rights that conflict with the exclusive license.",
+        "effective_rationale_excerpt": "The original warranty is severely weakened by the 'to its knowledge' qualifier. The revised language eliminates the knowledge qualifier and requires Licensor to affirmatively represent it has conducted clearance searches, creating meaningful protection for TechPro's investment.",
+        "judge_reasoning": "Sonnet45 detected the weak 'to knowledge' qualifier and proposed comprehensive strengthened warranties removing the qualifier and adding clearance search, validity, maintenance, and exclusivity representations. This fully addresses the GT concern."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Field of Use Definition",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to broaden the",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The Field of Use is limited to \"consumer electronics and related accessories\" which may be too narrow for TechPro's business expansion. The term \"related accessories\" is ambiguous and could lead to di"
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Sublicensing Restrictions",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to include \"no",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Sublicensing requires Licensor's prior written consent, which gives Licensor unilateral control over TechPro's business partnerships and limits commercial flexibility. This creates operational delays "
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Improvements Ownership",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to provide Tec",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "All improvements developed by TechPro automatically vest in Licensor, meaning TechPro loses ownership of its own innovations and investments in R&D. This creates severe disincentive for TechPro to imp"
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Minimum Annual Royalty",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to include ram",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The $250,000 minimum annual royalty beginning in Year 2 creates guaranteed payment obligation regardless of TechPro's actual sales success or market conditions. This shifts commercial risk entirely to"
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Running Royalty Rate",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to include tie",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 10% royalty rate on Net Sales may be above market standards depending on the technology value and industry norms. Without benchmarking data, this rate could be excessive and impact TechPro's profi"
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Upfront Fee",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to make a port",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The $500,000 non-refundable upfront fee represents significant capital commitment with no performance guarantees from Licensor. If the Licensed IP proves defective, non-functional, or infringes third-"
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Audit Rights Imbalance",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to provide Tec",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensor has unilateral audit rights while TechPro has no reciprocal rights to verify Licensor's compliance with exclusivity, quality of Licensed IP, or proper maintenance of patents. The cost-shiftin"
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Quality Control Obligations",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to define spec",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "TechPro must meet Licensor's quality standards and allow facility inspections, but the standards are undefined and subject to Licensor's unilateral determination. This gives Licensor arbitrary control"
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Limited Licensor Warranties",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to strengthen ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensor's warranty is heavily qualified (\"to its knowledge\") regarding non-infringement, which provides minimal protection to TechPro against third-party IP claims. The knowledge qualifier allows Lic"
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Broad Warranty Disclaimer",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to provide min",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The \"AS IS\" disclaimer eliminates all implied warranties including merchantability and fitness for purpose, leaving TechPro with no recourse if the Licensed IP is defective, non-functional, or unsuita"
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Infringement Enforcement",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to provide Tec",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While Licensor has primary enforcement rights, the equal sharing of net recoveries (after costs) may be insufficient given TechPro's exclusive license and market investment. TechPro bears market harm "
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Confidentiality Duration",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend conf",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The five-year confidentiality period following disclosure may be insufficient for trade secrets and proprietary technology that could have indefinite commercial value. Once the period expires, Licenso"
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Exclusion of Consequential Damages",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to carve out c",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The mutual exclusion of consequential damages appears balanced but actually disadvantages TechPro significantly. If Licensor breaches (e.g., Licensed IP infringes, exclusivity violated), TechPro canno"
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Liability Cap",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to increase li",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Licensor's total liability is capped at twelve months of royalties, which could be grossly inadequate compared to TechPro's total investment (upfront fee, minimum royalties, product development costs)"
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Termination for Cause",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to define mate",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 60-day cure period for material breach may be excessive for certain breaches (e.g., breach of exclusivity, disclosure of confidential information) where immediate harm occurs and cannot be cured. "
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Post-Termination Obligations",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to extend sell",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 90-day sell-off period for existing inventory may be insufficient depending on TechPro's inventory levels and sales cycles. TechPro must cease all use of Licensed IP but the contract is silent on "
+    },
+    {
+      "clause": "14.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to change gove",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "English law governs despite TechPro being a Delaware corporation with principal operations in Massachusetts. This creates significant disadvantage as TechPro must navigate foreign legal system, incur "
+    },
+    {
+      "clause": "14.2",
+      "issue_summary": "Arbitration in London",
+      "leah_classification": "❌",
+      "leah_action": "AMEND to change arbi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "London arbitration under LCIA Rules requires TechPro to travel internationally for dispute resolution, incur substantial additional costs (travel, foreign counsel, arbitrator fees in pounds sterling),"
+    },
+    {
+      "clause": "14.3",
+      "issue_summary": "Assignment Restrictions",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND to permit assi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual consent requirement for assignment appears balanced but may restrict TechPro's corporate flexibility for mergers, acquisitions, or internal restructuring. If TechPro is acquired or reorganizes,"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Territory Definition Missing",
+      "leah_classification": "❌",
+      "leah_action": "ADD Exhibit B with c",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract references Exhibit B for Territory definition but the exhibit is not attached or defined. This creates fundamental uncertainty about where TechPro can operate, manufacture, or sell Licens"
+    },
+    {
+      "clause": "N/A",
+      "issue_summary": "Licensed IP Schedule Missing",
+      "leah_classification": "❌",
+      "leah_action": "ADD Exhibit A with c",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit A listing the Licensed IP (patents, trademarks, trade secrets) is not attached. TechPro cannot determine what IP it is licensing, making it impossible to assess the value, scope, or adequacy o"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Performance Guarantees",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract lacks any performance guarantees from Licensor regarding the Licensed IP's functionality, market readiness, or technical specifications. Given TechPro's substantial financial commitments "
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: IP Maintenance Obligations",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract is silent on Licensor's obligation to maintain, renew, and defend the Licensed IP (patents, trademarks). If Licensor fails to pay maintenance fees or allows patents to lapse, TechPro's ex"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Indemnification for IP Infringement",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause requi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract lacks indemnification provisions for third-party IP infringement claims. If the Licensed IP infringes third-party rights, TechPro faces direct liability to third parties plus potential in"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Competitive Restrictions",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause prohi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Despite granting TechPro an exclusive license, the contract does not prohibit Licensor from competing directly with TechPro using non-licensed IP or developing competing products outside the Licensed "
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Royalty Audit Trail",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause speci",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While Licensor has audit rights (Section 7.1), the contract does not require TechPro to maintain specific records or documentation standards. This creates ambiguity about what records satisfy audit re"
+    },
+    {
+      "clause": "🆕",
+      "issue_summary": "New Clause Recommendation: Change of Control",
+      "leah_classification": "🆕",
+      "leah_action": "ADD new clause provi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract does not address what happens if Licensor undergoes change of control (acquisition, merger). If Licensor is acquired by a TechPro competitor or entity with conflicting interests, TechPro'"
+    },
+    {
+      "clause": "1.1 Field of Use Definition",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original definition restricts TechPro to an overly narrow market scope with ambiguous boundaries. The term \"related accessories\" is undefined and subject to dispute, creating uncertainty about per"
+    },
+    {
+      "clause": "2.2 Sublicensing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision grants Licensor unilateral and unrestricted control over TechPro's strategic partnerships, creating operational bottlenecks and potential lost business opportunities. This revis"
+    },
+    {
+      "clause": "3.2 Improvements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause creates a severe disincentive for TechPro to invest in R&D by automatically transferring all improvement value to Licensor without compensation. This one-sided provision allows Lic"
+    },
+    {
+      "clause": "4.1 Minimum Annual Royalty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision imposes immediate and inflexible financial obligations that ignore market realities and shift all commercial risk to TechPro. Beginning minimums in Year 2 provides insufficient "
+    },
+    {
+      "clause": "5.1 Running Royalty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The flat 10% royalty rate may exceed market standards and reduces TechPro's profit margins without consideration for volume, market maturity, or economies of scale. This revision implements a tiered s"
+    },
+    {
+      "clause": "5.2 Upfront Fee",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The non-refundable structure creates extreme asymmetric risk where TechPro loses $500,000 if the Licensed IP proves defective, infringing, or if Licensor breaches fundamental obligations. This revisio"
+    },
+    {
+      "clause": "7.1 Licensor Audit Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision grants one-sided audit rights to Licensor while providing TechPro with no verification mechanism for Licensor's critical obligations including exclusivity maintenance and IP upk"
+    },
+    {
+      "clause": "8.1 Quality Standards",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause grants Licensor undefined and unlimited inspection rights with subjective quality standards, creating risk of arbitrary demands and operational interference. The absence of defined"
+    },
+    {
+      "clause": "9.1 Licensor Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original warranty is severely weakened by the \"to its knowledge\" qualifier, which allows Licensor to avoid responsibility for infringement risks discoverable through reasonable diligence. This shi"
+    },
+    {
+      "clause": "9.2 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original blanket \"AS IS\" disclaimer eliminates all implied warranties, leaving TechPro with no recourse if the Licensed IP is non-functional or unsuitable for its intended purpose despite paying $"
+    },
+    {
+      "clause": "10.2 Enforcement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original provision leaves TechPro defenseless if Licensor fails to enforce against infringers, allowing ongoing market harm to TechPro's exclusive position without remedy. The equal recovery split"
+    },
+    {
+      "clause": "11.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The arbitrary five-year limit inadequately protects trade secrets and proprietary technology that may have indefinite commercial value. Once the period expires, Licensor could freely use or disclose T"
+    },
+    {
+      "clause": "12.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The blanket exclusion appears balanced but severely disadvantages TechPro because the primary damages TechPro would suffer from material Licensor breaches (infringement, exclusivity violations, confid"
+    },
+    {
+      "clause": "12.2 Cap",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original cap of twelve months of royalties is grossly inadequate compared to TechPro's total investment (upfront fee, minimum royalties, product development costs potentially totaling millions). I"
+    },
+    {
+      "clause": "13.2 Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 60-day cure period is excessive for certain breaches where immediate and irreparable harm occurs, such as confidentiality breaches or exclusivity violations. This delay prolongs damage to TechPro "
+    },
+    {
+      "clause": "13.3 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The 90-day sell-off period may be grossly insufficient depending on TechPro's inventory levels, sales cycles, and customer commitments, potentially forcing TechPro to destroy valuable inventory or bre"
+    },
+    {
+      "clause": "14.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "English law creates significant disadvantage for TechPro, a Delaware corporation with operations in Massachusetts. TechPro must navigate a foreign legal system, incur substantially higher legal costs "
+    },
+    {
+      "clause": "14.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "London arbitration creates severe disadvantage for TechPro by requiring international travel, incurring substantially higher costs (travel, foreign counsel, arbitrator fees in pounds sterling), and na"
+    },
+    {
+      "clause": "14.3 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The blanket consent requirement restricts TechPro's corporate flexibility for mergers, acquisitions, or internal restructuring. If TechPro is acquired or reorganizes, it cannot transfer this valuable "
+    },
+    {
+      "clause": "Exhibit B - Territory",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as Exhibit B to the Agreement, referenced in Section 2.1. The contract currently references Exhibit B for Territory definition but the exhibit is completely missing, creating fundame"
+    },
+    {
+      "clause": "Exhibit A - Licensed Intellectual Property",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as Exhibit A to the Agreement, referenced in Section 1.2 and throughout the contract. The contract references Exhibit A for the Licensed IP schedule but the exhibit is not attached, "
+    },
+    {
+      "clause": "New Article 15 - Performance Guarantees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 15 after Article 14. The contract completely lacks performance guarantees from Licensor regarding the Licensed IP's functionality, commercial viability, or technical a"
+    },
+    {
+      "clause": "New Section 3.3 - IP Maintenance Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 3.3 within Article 3 (Intellectual Property Ownership), immediately following Section 3.2. The contract is completely silent on Licensor's obligation to maintain the L"
+    },
+    {
+      "clause": "New Article 16 - Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 16 after the newly added Article 15. The contract completely lacks indemnification provisions for third-party IP infringement claims, leaving TechPro fully exposed to "
+    },
+    {
+      "clause": "New Section 2.4 - Non-Compete Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 2.4 within Article 2 (License Grant), immediately following Section 2.3. Despite granting TechPro an exclusive license, the contract does not prohibit Licensor from di"
+    },
+    {
+      "clause": "New Section 6.2 - Record-Keeping Requirements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 6.2 within Article 6 (Reporting), immediately following Section 6.1. While Licensor has audit rights under Section 7.1, the contract does not specify what records Tech"
+    },
+    {
+      "clause": "New Section 14.4 - Change of Control",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Section 14.4 within Article 14 (General Provisions), immediately following Section 14.3. The contract does not address what happens if Licensor undergoes change of control thr"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 14,
+      "P": 0,
+      "N": 0,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "total_detection_points": 66.0,
+    "total_quality_points": 126,
+    "total_points": 192.0,
+    "additional_issues_count": 54
+  }
+}

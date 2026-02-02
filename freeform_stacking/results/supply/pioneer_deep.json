@@ -1,0 +1,426 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "pioneer_deep",
+    "environment": "hotfix",
+    "evaluation_timestamp": "2026-01-26T12:00:00Z",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "stacking_gt_version": "1.0",
+    "evaluator_note": "Re-evaluated with canonical JSON from 2026-01-26. Leah output correctly identifies Buyer as representing party and properly responds to all 4 CP redlines with REJECT actions."
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "SUPPLY_01",
+      "clause": "4.2",
+      "section": "Payment Terms",
+      "cp_redline_description": "Buyer shall pay all invoices within fifteen (15) days of invoice date. Supplier may suspend deliveries if payment is late.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "CPR-01 leah_action: REJECT. Rationale: 'The Supplier's proposed Net 15, higher interest rate, and suspension right create undue leverage and risk supply disruption. Automotive programs require predictable cash flow and protection against coercive delivery suspension on disputed invoices. Reverting to the original enables negotiating Buyer-favorable improvements separately while preventing immediate deterioration of terms. The Buyer requires broader protections including setoff, extended dispute windows, and delivery non-suspension.'",
+        "judge_reasoning": "Leah correctly REJECTs the CP redline that reduces payment terms from Net 30 to Net 15 and adds suspension rights. The rationale addresses all key GT elements: insufficient time for AP cycles (15 days), need for cure period/notice before suspension, and industry standard Net 30. Full marks awarded for action (correct REJECT), revision (revert to baseline), and reasoning (addresses all required points)."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_02",
+      "clause": "5.1",
+      "section": "Product Warranty",
+      "cp_redline_description": "Supplier warrants Products free from defects for sixty (60) days from delivery, excluding normal wear, improper use, unauthorised modifications, environmental damage, and third-party components.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "CPR-02 leah_action: REJECT. Rationale: 'The Supplier's redline drastically shortens coverage to 60 days and narrows scope, undermining Buyer's ability to recover for defects aligned to OEM warranty horizons. Automotive parts often reveal defects beyond 60 days. The original is comparatively better, and Buyer intends to strengthen it to include longer duration, latent defects, and regulatory conformity. Therefore, the Supplier's redline must be rejected.'",
+        "judge_reasoning": "Leah correctly REJECTs the CP redline reducing warranty from 1 year to 60 days. The rationale addresses key GT elements: 60 days is grossly inadequate, automotive industry standard is 12-24 months, and defects manifest beyond 60 days. Full marks: action correct (REJECT), revision implies revert to baseline, reasoning addresses all required points."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_03",
+      "clause": "11.2",
+      "section": "Liability Cap",
+      "cp_redline_description": "Supplier's total liability shall not exceed the lesser of product price or $50,000.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "CPR-03 leah_action: REJECT. Rationale: 'The Supplier's proposed $50,000 cap or per-product paid amount is grossly insufficient relative to recall and line shutdown exposures, effectively externalizing risk onto Buyer. Rejecting this redline maintains a more reasonable baseline while Buyer proposes a tailored cap with carve-outs to reflect automotive risk realities and maintain Supplier accountability.'",
+        "judge_reasoning": "Leah correctly REJECTs the CP redline capping liability at $50K or product price. The rationale addresses key GT elements: $50K inadequate for automotive supply relationship, cap should scale with purchase volume, and maintains 12-month baseline cap. Full marks for correct action (REJECT), revision (revert to baseline), and reasoning (addresses cap inadequacy and scaling)."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_04",
+      "clause": "14.3",
+      "section": "Termination",
+      "cp_redline_description": "Supplier may terminate upon 30 days notice. Buyer may not terminate for convenience.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "CPR-04 leah_action: REJECT. Rationale: 'Supplier's proposal removes Buyer's flexibility and imposes pipeline purchase obligations, undermining program management and cost control. Buyer requires unilateral convenience termination rights to respond to customer and program changes. Rejecting the redline preserves negotiating room to implement Buyer-favorable convenience termination with controlled wind-down costs.'",
+        "judge_reasoning": "Leah correctly REJECTs the CP redline that creates asymmetric termination (Supplier 30 days, Buyer no convenience termination). The rationale addresses key GT elements: symmetric rights required, need for Buyer flexibility, asymmetric provision creates vendor lock-in. Full marks for action (REJECT), revision (revert to baseline 180-day symmetric), and reasoning (addresses flexibility and asymmetry)."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "RL-21",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-21: 'Supplier's total liability shall not exceed the greater of five million dollars (US $5,000,000) or two hundred percent (200%) of amounts paid by Buyer for Products in the twelve (12) months preceding the claim; provided that this cap shall not apply to indemnification obligations, recall or field action costs, breach of confidentiality, infringement, or Supplier's gross negligence or willful misconduct.'",
+        "effective_rationale_excerpt": "Risk table 11.2: 'Cap may be inadequate vs. recall or shutdown exposures; Supplier proposed $50k cap is highly unfavorable.' RL-21 rationale: 'A higher cap with explicit carve-outs reflects the magnitude of potential automotive losses and ensures recoverability for critical categories.'",
+        "judge_reasoning": "Leah fully detects the liability cap issue and proposes a comprehensive amendment. The proposed revision increases the cap to $5M or 200% of 12-month payments (addressing GT key element of increasing to 24+ months equivalent), adds explicit carve-outs for IP, willful misconduct, gross negligence (GT key elements), and excludes indemnification from cap (GT key element). Full detection and maximum quality scores."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "RL-06",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-06: 'Upon notice, Supplier shall immediately implement containment and, at Buyer's option, repair, replace, rework, or credit defective Products. Supplier shall reimburse Buyer for all reasonable costs arising from defective Products, including inspection, sorting, rework, line downtime, premium freight, and recall or field action expenses attributable to Supplier's Products.'",
+        "effective_rationale_excerpt": "Risk table 5.2: 'Sole remedy limits Buyer to narrow options, excluding cover, rework, containment, logistics, line shutdown costs, and recall/field actions.' RL-06 rationale: 'Limiting remedies to repair/replace/refund is insufficient for automotive quality escapes, which trigger real costs like line shutdown and expedited logistics.'",
+        "judge_reasoning": "Leah fully detects the limited warranty remedy issue. The proposed revision gives Buyer option to choose remedy (not Supplier's option - GT key element), adds third-party repair/rework rights, includes recall cost allocation, and covers consequential damages from defects (line downtime, premium freight). All GT key elements addressed comprehensively."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "RL-07",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-07: 'Except as expressly set forth herein, Supplier makes no other warranties; provided that nothing in this Section limits or disclaims Supplier's express warranties, statutory non-waivable warranties, or liabilities arising from nonconformity with Specifications, applicable law, or quality standards.'",
+        "effective_rationale_excerpt": "Risk table 5.3: 'Standard disclaimer but should be carved-out by express quality, compliance, and fitness to Buyer's specifications.' RL-07 rationale: 'The amendment preserves standard disclaimers while preventing them from eroding the strengthened express warranties and statutory protections.'",
+        "judge_reasoning": "Leah detects the warranty disclaimer issue and proposes amendment preserving express warranties while carving out specifications compliance (GT key element), statutory protections, and quality standards. This addresses GT concern about disclaimer undermining quality assurance by ensuring disclaimers don't negate fitness for specifications."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "RL-19",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-19: 'This exclusion shall not apply to damages arising from Supplier's breach of warranty, quality obligations, recall or field actions, infringement, confidentiality breach, gross negligence, or willful misconduct, including Buyer's costs for cover, line shutdown, premium freight, and recall administration where attributable to Supplier.'",
+        "effective_rationale_excerpt": "Risk table 11.1: 'Blanket exclusion prevents recovery of line shutdown, recall, and cover costs caused by Supplier nonperformance—critical in automotive.' RL-19 rationale: 'Carving out key categories preserves Buyer's ability to recover the most material categories of damages caused by Supplier performance failures.'",
+        "judge_reasoning": "Leah fully detects the consequential damages exclusion issue. The proposed revision adds carve-outs for: product liability/warranty breach (GT key element), IP infringement (GT key element), willful misconduct/gross negligence (GT key element), and explicitly covers line shutdown and recall costs (GT key element about production shutdowns and customer claims). Comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "RL-08",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-08: 'Unless otherwise agreed, all Products shall be delivered DDP Buyer's designated facility (Incoterms 2020). Title and risk of loss shall pass to Buyer upon receipt and acceptance at Buyer's facility.'",
+        "effective_rationale_excerpt": "Risk table 6.1: 'FCA shifts risk to Buyer at Supplier dock; this increases in-transit loss risk and diminishes control. Automotive best practice favors FOB Destination/DDP.' RL-08 rationale: 'Shifting to DDP or destination transfer of risk aligns with Buyer's need to avoid in-transit loss exposure and secure predictable landed costs.'",
+        "judge_reasoning": "Leah fully detects the FCA transit risk issue. The proposed revision changes to DDP (GT key element - prefer DDP/DAP), risk passes at Buyer facility (GT key element - Supplier bears risk until delivery), and aligns title with risk transfer (GT key element). This comprehensively addresses all GT concerns about transit risk allocation."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "RL-33",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-33: 'Supplier shall accept or reject each Purchase Order within two (2) business days; failure to respond constitutes acceptance. Releases transmitted via EDI are binding to the extent of lead-time parameters set forth herein.'",
+        "effective_rationale_excerpt": "Risk table 2.2: 'Supplier may accept/reject POs within 5 business days, potentially enabling silent delay and logistics slippage.' RL-33 rationale: 'Shortening response time and deeming acceptance prevent silent delay and improve scheduling certainty.'",
+        "judge_reasoning": "Leah fully detects the supply obligation issue. The proposed revision shortens response time from 5 to 2 days (GT key element), adds deemed acceptance if no rejection (GT key element), and makes EDI releases binding within lead times (addresses supply assurance). This addresses GT concern about Supplier rejection risk creating supply uncertainty."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "RL-11",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-11: 'Buyer shall inspect Products within thirty (30) days of receipt for patent nonconformities and may reject latent defects upon discovery at any time within the applicable warranty period.' RL-12: 'Acceptance shall not be deemed to waive defects not reasonably discoverable during the inspection period, and shall not limit Buyer's rights under warranties or applicable law.'",
+        "effective_rationale_excerpt": "Risk table 7.1: 'Short window risks deemed acceptance despite latent defects; automotive defects often discovered in-process or field.' Risk table 7.2: 'Deemed acceptance without latent defect carve-out undermines warranty enforcement.'",
+        "judge_reasoning": "Leah fully detects the short inspection/deemed acceptance issue. RL-11 extends inspection to 30 days (GT key element), adds latent defect exception (GT key element), and links to warranty period (GT key element). RL-12 ensures acceptance doesn't waive latent defect rights. Comprehensive fix addressing all GT concerns."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "RL-22",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-22: 'Supplier shall defend, indemnify, and hold harmless Buyer, its affiliates, and customers from all claims, damages, costs, and expenses (including reasonable attorneys' fees) arising from or related to: (a) nonconforming Products; (b) Supplier's acts or omissions; (c) actual or alleged infringement (including process and method patents); and (d) recalls or field actions attributable to Supplier's Products.'",
+        "effective_rationale_excerpt": "Risk table 12.1: 'Covers defects, negligence, IP infringement but omits recall/field action, regulatory noncompliance, and duty to defend with selection/approval of counsel.' RL-22 rationale: 'Adding duty to defend, including recall costs, and covering process patents broadens protection commensurate with automotive risk.'",
+        "judge_reasoning": "Leah fully detects the indemnification gaps. The proposed revision explicitly includes recall/field action costs (GT key element), adds duty to defend with attorneys' fees (GT key element - defense costs), and broadens IP coverage. Addresses GT concern about indemnification lacking recall costs and being subject to liability cap (carve-out in RL-21 removes cap for indemnification)."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": "RL-02",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-02: 'Buyer shall pay all undisputed invoice amounts within sixty (60) days of the invoice date (Net 60). Any amounts subject to a good faith dispute shall be withheld without penalty pending resolution, and no interest shall accrue on disputed amounts.'",
+        "effective_rationale_excerpt": "Risk table 4.2: 'Net 30 with 1.5% monthly interest is standard, but lacks setoff rights, early payment discounts, and prohibition on delivery suspension for disputes.'",
+        "judge_reasoning": "Leah detects payment terms issues and addresses interest rate indirectly. The proposed revision tolls interest on disputed amounts (GT key element - should not apply to disputed amounts) and extends to Net 60. While not explicitly reducing the 1.5% rate, the focus on disputed amount protection addresses a key GT concern. Quality scores at 2 because the rate itself is not explicitly reduced, though the broader payment protection is strong."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "RL-31",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-31: 'After the initial twelve (12) months, any price adjustment shall be mutual, based on verifiable changes in agreed indices (e.g., steel, resin, energy), subject to caps and floors, include downward adjustments when costs decrease, and require Supplier to provide open-book cost substantiation upon request.'",
+        "effective_rationale_excerpt": "Risk table 3.2: 'Supplier unilateral adjustments up to 5% create asymmetry; no symmetrical downward adjustments or open-book substantiation tied to indices.' RL-31 rationale: 'Replacing unilateral increases with mutual, data-driven adjustments protects Buyer against opportunistic pricing while allowing fair cost recovery.'",
+        "judge_reasoning": "Leah fully detects the price adjustment issue. The proposed revision adds CPI/index-linked adjustments (GT key element), requires mutual agreement (addresses asymmetry), requires cost justification (GT key element), and includes downward adjustments. Comprehensive fix addressing compounding concern through index-based controls."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "New-5",
+      "evidence": {
+        "proposed_revision_excerpt": "New-5 Business Continuity: 'Supplier shall maintain and test business continuity and disaster recovery plans addressing natural disasters, pandemics, cyber incidents, and utility outages, and upon request provide summaries to Buyer. Supplier shall promptly notify Buyer of any event impacting supply and cooperate in implementing alternative sourcing or mitigation.' New-10 Priority Allocation: 'In the event of supply constraints, Supplier shall allocate available supply to Buyer in proportion to, or better than, Buyer's historical purchases and forecast share.'",
+        "effective_rationale_excerpt": "Risk table identifies missing business continuity. New-5 rationale: 'Maintaining BCP/DR reduces risk of supply interruption.' New-10 rationale: 'Priority allocation reduces the risk of shortages and protects Buyer's line operations during market tightness or disruptions.'",
+        "judge_reasoning": "Leah fully detects the missing business continuity gap. New-5 addresses disaster recovery/BCP (GT key element), and New-10 addresses capacity reservation/priority allocation (GT key element). RL-34 on forecasts adds capacity reservation and safety stock. Together these address GT concerns about last-time-buy, dual sourcing, capacity reservation, and disaster recovery."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "RL-18",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-18: 'Each Party shall protect the other's Confidential Information; obligations shall continue for five (5) years from disclosure, and indefinitely for trade secrets. Upon request or termination, the receiving Party shall return or destroy Confidential Information. Breach may be enjoined by equitable relief.'",
+        "effective_rationale_excerpt": "Risk table 10.1: 'Three-year term is too short for automotive know-how; no trade secret indefinite protection, no return/destroy obligations, or equitable relief.' RL-18 rationale: 'Extending duration and adding trade secret perpetuity reflect the long tail of automotive programs.'",
+        "judge_reasoning": "Leah fully detects the confidentiality survival issue. Note: GT references 13.1 but Leah's entry is at 10.1 (same confidentiality clause, different numbering). The proposed revision extends to 5 years (GT key element - beyond 3 years), adds perpetual protection for trade secrets (GT key element), and differentiates trade secrets from general info (GT key element). Comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "RL-24",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-24: 'Supplier shall maintain: (a) CGL of $5,000,000 per occurrence; (b) Products/Completed Operations of $10,000,000 aggregate; (c) Product Recall insurance of $5,000,000; (d) Workers' Compensation/Employers Liability as required by law; and shall name Buyer as additional insured on a primary and non-contributory basis with waiver of subrogation and provide annual certificates.'",
+        "effective_rationale_excerpt": "Risk table 13.1: 'Limits are modest; no additional insured, primary/non-contributory status, waiver of subrogation, or product recall insurance—misaligned with automotive risk profile.' RL-24 rationale: 'Elevating limits and adding recall coverage reflects exposure from quality escapes.'",
+        "judge_reasoning": "Leah fully detects the insurance requirements gap. Note: GT says missing but clause 13.1 exists with insufficient coverage. The proposed revision adds product liability insurance ($10M products/completed ops - GT key element $5M+), requires additional insured status (GT key element), primary/non-contributory (implied in GT), and adds insurance certificates (GT key element). Comprehensive fix exceeding GT minimums."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "RL-25",
+      "evidence": {
+        "proposed_revision_excerpt": "RL-25: 'Buyer may terminate immediately for critical quality or delivery failures, insolvency, cessation of business, or repeated breaches, and otherwise after an uncured breach with a ten (10) day cure period. Supplier shall provide transition support to ensure continuity of supply.'",
+        "effective_rationale_excerpt": "Risk table 14.2: '30-day cure may be too long for quality or delivery failures; no immediate termination for repeat or severe issues.' RL-25 rationale: 'Shortening cure periods and allowing immediate termination for critical failures protects production continuity and customer relations.'",
+        "judge_reasoning": "Leah fully detects the termination cure period asymmetry. The proposed revision allows immediate termination for critical supply/quality issues (GT key element - shorter/no cure for supply breaches), reduces general cure to 10 days (from 30), and adds immediate termination for safety-critical defects/insolvency (GT key element). Comprehensive fix addressing Buyer's need for faster response to critical failures."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 14,
+      "P": 0,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 8,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_detected": 4,
+    "total_detection_points": 74,
+    "total_quality_points": 123,
+    "total_points": 197,
+    "max_detection_points": 74,
+    "part_b_percentage": 100.0
+  },
+  "part_b_summary": {
+    "total_detection_points": 74,
+    "total_quality_points": 123,
+    "total_points": 197,
+    "max_detection_points": 74,
+    "max_quality_points": 126,
+    "max_total_points": 200,
+    "percentage": 98.5,
+    "t1_gate": "PASS",
+    "pass_fail": "PASS"
+  },
+  "combined_summary": {
+    "part_a": {
+      "total_score": 24,
+      "max_score": 24,
+      "percentage": 100.0,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "total_detection_points": 74,
+      "total_quality_points": 123,
+      "total_points": 197,
+      "max_points": 200,
+      "percentage": 98.5,
+      "t1_gate": "PASS",
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true,
+      "notes": "Exceptional performance. Part A: All 4 CP redlines correctly REJECTED with comprehensive reasoning. Part B: All 14 GT issues fully detected with high-quality proposed revisions addressing all key elements."
+    }
+  }
+}

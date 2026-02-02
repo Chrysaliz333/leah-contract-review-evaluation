@@ -1,0 +1,474 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T18:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-General Authorization for Sub-processors",
+      "evidence": {
+        "proposed_revision_excerpt": "Processor may not engage any Sub-processor without the Controller's prior written consent for each Sub-processor... Controller reserves the right to withhold consent at its sole discretion.",
+        "effective_rationale_excerpt": "Requiring prior written consent for each sub-processor, rather than general authorization, gives the controller direct oversight and veto power, reducing exposure to unknown or high-risk sub-processors.",
+        "judge_reasoning": "Starliner identifies the sub-processor authorization issue at clause 4.1, classifying it as ✅ (though reasoning notes concerns) and stating 'general authorization gives processor broad discretion, and objection right is limited to written notice. This weakens controller's ability to control sub-processor risk.' The proposed redline replaces general authorization with prior written consent for each Sub-processor, extending the notice period to 30 days and granting Controller sole discretion to withhold consent. This addresses all key GT elements. The rationale explains the oversight benefit clearly. The redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The risk table classifies clause 5.1 as ✅ Favorable with no action required, stating 'Processor must implement appropriate security, including encryption and regular testing, which is robust and aligns with controller's interests.' Starliner does not identify the vagueness of 'appropriate' measures or propose adding specific mandatory controls. The GT issue about subjective standards and examples not being required is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "8.1",
+      "tier": "T3",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The risk table classifies clause 8.1 as ✅ Favorable with no action required, stating 'Processor must notify within 72 hours, aligning with legal requirements.' Starliner does not identify that 72 hours may be too slow for high-risk breaches or suggest adding faster notification for critical incidents. The GT concern about the 72-hour timeframe being the maximum allowed is not mentioned."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1 / 9.2",
+      "tier": "T2",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Allocation of Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "Notwithstanding the foregoing, the Controller's liability under this Agreement shall be limited to direct damages only and capped at the fees paid under the Principal Agreement. The Processor's liability shall not be subject to any cap or exclusion in respect of breaches of this DPA",
+        "effective_rationale_excerpt": "Limiting the controller's liability and ensuring the processor's liability is not capped for data protection breaches prevents disproportionate exposure for the controller",
+        "judge_reasoning": "Starliner identifies the liability allocation issue at clause 9.1, classifying it as ⚠️ and noting 'References legal liability but lacks specific caps or exclusions, which could create uncertainty or unfavorable exposure for the controller.' The proposed redline addresses the GT concern by explicitly limiting Controller liability while ensuring Processor liability is not capped for DPA breaches. This prevents indemnification from being subject to hidden caps. The rationale explains the financial protection clearly. The redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability in DPA",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Allocation of Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "the Controller's liability under this Agreement shall be limited to direct damages only and capped at the fees paid under the Principal Agreement. The Processor's liability shall not be subject to any cap or exclusion",
+        "effective_rationale_excerpt": "Limiting the controller's liability and ensuring the processor's liability is not capped for data protection breaches prevents disproportionate exposure for the controller and incentivizes the processor to maintain high compliance standards.",
+        "judge_reasoning": "Starliner's amendment to clause 9.1 addresses the missing limitation of liability by establishing a Controller liability cap tied to fees while ensuring Processor liability is uncapped for DPA breaches. This directly addresses the GT concern about the DPA lacking clarity on liability treatment. The amendment prevents hidden exposure from Principal Agreement terms and establishes clear allocation, which addresses the GT issue."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Deletion Timeline Unspecified",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Data Deletion/Return on Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon termination of the Principal Agreement, Processor shall, within thirty (30) days, delete or return all Personal Data to Controller... Processor shall provide written certification of such deletion or return to Controller.",
+        "effective_rationale_excerpt": "Specifying a thirty-day timeframe and requiring written certification ensures timely and verifiable data handling upon termination. This amendment protects the controller by providing evidence of compliance and reducing the risk of data lingering with the processor.",
+        "judge_reasoning": "Starliner identifies the deletion timeline gap at clause 3.4, classifying it as ⚠️ and noting 'lacks a clear timeframe and verification mechanism, which could delay or weaken data return/deletion.' The proposed redline adds a 30-day deletion timeline with written certification, directly addressing the GT concern. The rationale explains the residual data risk clearly. The redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.2",
+      "tier": "T3",
+      "issue": "All Audit Costs on Controller",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Audit Rights",
+      "evidence": {
+        "proposed_revision_excerpt": "In addition to annual audits, Controller may conduct additional audits for cause... Where an audit is required by a supervisory authority or regulator, Processor shall bear the reasonable costs.",
+        "effective_rationale_excerpt": "Expanding audit rights to include additional audits for cause and shifting costs for regulatory audits to the processor strengthens the controller's oversight and ability to respond to regulatory demands.",
+        "judge_reasoning": "Starliner identifies the audit cost issue at clauses 7.1 and 7.2, classifying them as ⚠️ and noting the limitation and cost burden. The proposed redline addresses the GT concern by allowing additional for-cause audits and shifting costs to Processor for regulatory audits. The rationale correctly explains how Controller-only costs discourage oversight. The redline is well-drafted and addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "10.1",
+      "tier": "T3",
+      "issue": "Indefinite Duration",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The risk table classifies clause 10.1 as ✅ Favorable with no action required, stating 'DPA aligns with principal agreement, ensuring data protection obligations persist as long as processing occurs.' Starliner does not identify the indefinite duration risk or suggest adding maximum retention periods or periodic review requirements. The GT concern is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "Exhibit A / 2.2",
+      "tier": "T2",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Processing Details in Exhibit A",
+      "evidence": {
+        "proposed_revision_excerpt": "The subject matter, duration, nature, and purpose of Processing... must be completed, agreed upon, and attached to this Agreement prior to execution. No processing shall commence until Exhibit A is finalized and signed by both Parties.",
+        "effective_rationale_excerpt": "Requiring Exhibit A to be completed and attached before execution ensures the processing scope is clearly defined and agreed, reducing ambiguity and risk for the controller.",
+        "judge_reasoning": "Starliner identifies the Exhibit A issue at clause 2.2, classifying it as ⚠️ and noting 'Details deferred to Exhibit A, which is not attached. This creates risk if the exhibit is incomplete or ambiguous.' The proposed redline makes Exhibit A completion a condition precedent to execution, directly addressing the GT concern about GDPR Art 28 non-compliance from blank processing details. The rationale explains the oversight benefit clearly. The redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "Exhibit B / 5.1",
+      "tier": "T2",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exhibit B – Security Measures (Missing)",
+      "evidence": {
+        "proposed_revision_excerpt": "The Parties shall complete and attach Exhibit B prior to the commencement of any processing. Exhibit B shall specify the technical and organizational security measures implemented by the Processor",
+        "effective_rationale_excerpt": "Without a detailed security schedule, the controller cannot verify the adequacy of protections. This clause mandates clear, agreed security standards before processing starts, reducing the risk of inadequate safeguards.",
+        "judge_reasoning": "Starliner identifies the blank Exhibit B issue, classifying it as ✅ (though reasoning indicates ❌) and noting 'No attached Exhibit B means specific security measures are undefined, increasing risk of inadequate protection.' The proposed new clause requires Exhibit B completion before processing commences, directly addressing the GT concern about GDPR Art 32 verification. The rationale explains the verification gap clearly. The redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit C / 4.1",
+      "tier": "T2",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Exhibit C – Approved Sub-processors (Missing)",
+      "evidence": {
+        "proposed_revision_excerpt": "The Parties shall complete and attach Exhibit C prior to the commencement of any processing. Exhibit C shall list all Sub-processors approved by the Controller. No Sub-processor shall be engaged unless expressly listed in Exhibit C",
+        "effective_rationale_excerpt": "The lack of an approved sub-processor list undermines the controller's ability to manage third-party risk. This clause ensures only vetted and approved sub-processors are used, protecting data integrity and compliance.",
+        "judge_reasoning": "Starliner identifies the blank Exhibit C issue, classifying it as ✅ (though reasoning indicates ❌) and noting 'No attached Exhibit C creates risk of unapproved sub-processors, undermining controller's oversight.' The proposed new clause requires Exhibit C completion and listing of approved Sub-processors before processing, directly addressing the GT concern that without a baseline list, objection rights are meaningless. The rationale explains the third-party risk clearly. The redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Cyber Insurance Requirement",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Starliner does not propose a cyber insurance requirement. The GT issue about ensuring Processor maintains cyber insurance to honor indemnification obligations is not addressed. No new clause recommendation for insurance appears in the proposed redlines."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.2",
+      "issue_summary": "Processing Details in Exhibit A",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND – Require Exhi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Details deferred to Exhibit A, which is not attached. This creates risk if the exhibit is incomplete or ambiguous, potentially undermining controller oversight."
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Data deletion/return on termination",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND – Specify time",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Controller's option for deletion or return is positive, but lacks a clear timeframe and verification mechanism, which could delay or weaken data return/deletion."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Audit rights",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND – Permit addit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Audit right is present but limited to once per year and at controller’s expense, which may restrict effective oversight."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Audit procedures",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND – Allow for im",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Procedural limits (notice, business hours) are standard, but may not suffice in urgent or regulatory scenarios."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Allocation of liability",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND – Clarify and ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "References legal liability but lacks specific caps or exclusions, which could create uncertainty or unfavorable exposure for the controller."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Governing law",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND – Allow contro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "English law applies; if controller is outside the UK, this may be less favorable."
+    },
+    {
+      "clause": "Processing Details in Exhibit A",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requiring Exhibit A to be completed and attached before execution ensures the processing scope is clearly defined and agreed, reducing ambiguity and risk for the controller. This amendment protects th"
+    },
+    {
+      "clause": "Data Deletion/Return on Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding a specific timeframe and requiring written certification ensures prompt and verifiable data deletion or return, reducing residual risk for the controller. This amendment enhances accountability"
+    },
+    {
+      "clause": "General Authorization for Sub-processors",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requiring prior written consent for each sub-processor, rather than general authorization, gives the controller direct oversight and veto power, reducing exposure to unknown or high-risk sub-processor"
+    },
+    {
+      "clause": "Data Deletion/Return on Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Specifying a thirty-day timeframe and requiring written certification ensures timely and verifiable data handling upon termination. This amendment protects the controller by providing evidence of comp"
+    },
+    {
+      "clause": "Audit Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Expanding audit rights to include additional audits for cause and shifting costs for regulatory audits to the processor strengthens the controller’s oversight and ability to respond to regulatory dema"
+    },
+    {
+      "clause": "Allocation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limiting the controller’s liability and ensuring the processor’s liability is not capped for data protection breaches prevents disproportionate exposure for the controller and incentivizes the process"
+    },
+    {
+      "clause": "Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allowing the controller to select the governing law and jurisdiction if located outside the UK ensures the legal framework is not unduly unfavorable or inconvenient for the controller. This amendment "
+    },
+    {
+      "clause": "Exhibit A – Processing Details (Missing)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as Exhibit A. The absence of Exhibit A creates significant risk as processing details are undefined. Requiring completion and attachment of Exhibit A before any processing begins ens"
+    },
+    {
+      "clause": "Exhibit B – Security Measures (Missing)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as Exhibit B. Without a detailed security schedule, the controller cannot verify the adequacy of protections. This clause mandates clear, agreed security standards before processing "
+    },
+    {
+      "clause": "Exhibit C – Approved Sub-processors (Missing)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as Exhibit C. The lack of an approved sub-processor list undermines the controller’s ability to manage third-party risk. This clause ensures only vetted and approved sub-processors a"
+    },
+    {
+      "clause": "Dispute Resolution Mechanism (New Clause Recommendation)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 11.4. A clear dispute resolution clause provides a structured process for resolving disagreements, reducing uncertainty and potential litigation costs for the controlle"
+    },
+    {
+      "clause": "Force Majeure (New Clause Recommendation)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Dispute Resolution clause. A force majeure clause protects both parties from liability for events outside their control, ensuring the controller is not unfairly penalized for u"
+    },
+    {
+      "clause": "Warranties Regarding Data Accuracy and Lawful Collection (New Clause Recommendation)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 3.4. Explicit warranties regarding lawful collection and accuracy of data reduce regulatory and operational risk for the controller, ensuring the processor cannot proce"
+    },
+    {
+      "clause": "Assignment and Change of Control (New Clause Recommendation)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 11.4. Restricting assignment and change of control prevents the controller’s data from being transferred to unknown or higher-risk entities, preserving data security an"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 0,
+      "N": 0,
+      "NMI": 3
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      },
+      "T2": {
+        "Y": 5,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      }
+    },
+    "t1_all_detected": false,
+    "total_detection_points": 42.0,
+    "total_quality_points": 72,
+    "total_points": 114.0,
+    "additional_issues_count": 20
+  }
+}

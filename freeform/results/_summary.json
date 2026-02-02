@@ -1,0 +1,833 @@
+{
+  "meta": {
+    "environment": "hotfix",
+    "generated": "2026-01-25T20:28:22.960513",
+    "total_evaluations": 60,
+    "contracts": 10,
+    "models": 6
+  },
+  "by_model": {
+    "scale": {
+      "total_points": 1678.0,
+      "t1_pass": 7,
+      "t1_fail": 3,
+      "contracts": [
+        "license",
+        "distribution",
+        "dpa",
+        "reseller",
+        "supply",
+        "consulting",
+        "sla",
+        "partnership",
+        "jv",
+        "services"
+      ],
+      "detection_counts": {
+        "Y": 114,
+        "P": 21,
+        "N": 2,
+        "NMI": 23
+      },
+      "quality_totals": {
+        "rationale": 352,
+        "amendment": 342,
+        "redline": 344
+      }
+    },
+    "pioneer_deep": {
+      "total_points": 2049.5,
+      "t1_pass": 6,
+      "t1_fail": 4,
+      "contracts": [
+        "license",
+        "distribution",
+        "dpa",
+        "reseller",
+        "supply",
+        "consulting",
+        "sla",
+        "partnership",
+        "jv",
+        "services"
+      ],
+      "detection_counts": {
+        "Y": 147,
+        "P": 5,
+        "N": 1,
+        "NMI": 7
+      },
+      "quality_totals": {
+        "rationale": 442,
+        "amendment": 438,
+        "redline": 436
+      }
+    },
+    "pathfinder": {
+      "total_points": 1691.0,
+      "t1_pass": 5,
+      "t1_fail": 5,
+      "contracts": [
+        "license",
+        "distribution",
+        "dpa",
+        "reseller",
+        "supply",
+        "consulting",
+        "sla",
+        "partnership",
+        "jv",
+        "services"
+      ],
+      "detection_counts": {
+        "Y": 119,
+        "P": 16,
+        "N": 5,
+        "NMI": 21
+      },
+      "quality_totals": {
+        "rationale": 356,
+        "amendment": 351,
+        "redline": 350
+      }
+    },
+    "starliner": {
+      "total_points": 1736.5,
+      "t1_pass": 3,
+      "t1_fail": 7,
+      "contracts": [
+        "license",
+        "distribution",
+        "dpa",
+        "reseller",
+        "supply",
+        "consulting",
+        "sla",
+        "partnership",
+        "jv",
+        "services"
+      ],
+      "detection_counts": {
+        "Y": 125,
+        "P": 15,
+        "N": 3,
+        "NMI": 17
+      },
+      "quality_totals": {
+        "rationale": 364,
+        "amendment": 352,
+        "redline": 352
+      }
+    },
+    "sonnet45": {
+      "total_points": 2048.0,
+      "t1_pass": 5,
+      "t1_fail": 5,
+      "contracts": [
+        "license",
+        "distribution",
+        "dpa",
+        "reseller",
+        "supply",
+        "consulting",
+        "sla",
+        "partnership",
+        "jv",
+        "services"
+      ],
+      "detection_counts": {
+        "Y": 148,
+        "P": 3,
+        "N": 1,
+        "NMI": 8
+      },
+      "quality_totals": {
+        "rationale": 447,
+        "amendment": 446,
+        "redline": 421
+      }
+    },
+    "velocity": {
+      "total_points": 1148.5,
+      "t1_pass": 2,
+      "t1_fail": 8,
+      "contracts": [
+        "license",
+        "distribution",
+        "dpa",
+        "reseller",
+        "supply",
+        "consulting",
+        "sla",
+        "partnership",
+        "jv",
+        "services"
+      ],
+      "detection_counts": {
+        "Y": 74,
+        "P": 32,
+        "N": 0,
+        "NMI": 54
+      },
+      "quality_totals": {
+        "rationale": 239,
+        "amendment": 219,
+        "redline": 231
+      }
+    }
+  },
+  "by_contract": {
+    "license": {
+      "scale": {
+        "total_points": 162.5,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 10,
+          "P": 4,
+          "N": 0,
+          "NMI": 1
+        }
+      },
+      "pioneer_deep": {
+        "total_points": 206.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 15,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "pathfinder": {
+        "total_points": 203.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 15,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "starliner": {
+        "total_points": 185.5,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 12,
+          "P": 3,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "sonnet45": {
+        "total_points": 192.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 14,
+          "P": 0,
+          "N": 0,
+          "NMI": 1
+        }
+      },
+      "velocity": {
+        "total_points": 90.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 7,
+          "P": 0,
+          "N": 0,
+          "NMI": 8
+        }
+      }
+    },
+    "distribution": {
+      "scale": {
+        "total_points": 152.5,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 8,
+          "P": 5,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "pioneer_deep": {
+        "total_points": 178.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 11,
+          "P": 2,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "pathfinder": {
+        "total_points": 192.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 13,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "starliner": {
+        "total_points": 175.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 11,
+          "P": 2,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "sonnet45": {
+        "total_points": 192.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 13,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "velocity": {
+        "total_points": 139.5,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 9,
+          "P": 1,
+          "N": 0,
+          "NMI": 3
+        }
+      }
+    },
+    "dpa": {
+      "scale": {
+        "total_points": 75.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 5,
+          "P": 2,
+          "N": 0,
+          "NMI": 5
+        }
+      },
+      "pioneer_deep": {
+        "total_points": 139.5,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 10,
+          "P": 1,
+          "N": 0,
+          "NMI": 1
+        }
+      },
+      "pathfinder": {
+        "total_points": 89.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 6,
+          "P": 0,
+          "N": 0,
+          "NMI": 6
+        }
+      },
+      "starliner": {
+        "total_points": 114.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 9,
+          "P": 0,
+          "N": 0,
+          "NMI": 3
+        }
+      },
+      "sonnet45": {
+        "total_points": 148.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 11,
+          "P": 0,
+          "N": 0,
+          "NMI": 1
+        }
+      },
+      "velocity": {
+        "total_points": 58.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 2,
+          "P": 4,
+          "N": 0,
+          "NMI": 6
+        }
+      }
+    },
+    "reseller": {
+      "scale": {
+        "total_points": 183.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 13,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "pioneer_deep": {
+        "total_points": 184.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 13,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "pathfinder": {
+        "total_points": 179.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 13,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "starliner": {
+        "total_points": 173.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 11,
+          "P": 2,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "sonnet45": {
+        "total_points": 170.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 11,
+          "P": 2,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "velocity": {
+        "total_points": 104.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 7,
+          "P": 5,
+          "N": 0,
+          "NMI": 1
+        }
+      }
+    },
+    "supply": {
+      "scale": {
+        "total_points": 171.5,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 11,
+          "P": 3,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "pioneer_deep": {
+        "total_points": 195.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 14,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "pathfinder": {
+        "total_points": 162.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 12,
+          "P": 1,
+          "N": 1,
+          "NMI": 1
+        }
+      },
+      "starliner": {
+        "total_points": 166.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 11,
+          "P": 2,
+          "N": 0,
+          "NMI": 1
+        }
+      },
+      "sonnet45": {
+        "total_points": 186.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 13,
+          "P": 0,
+          "N": 1,
+          "NMI": 0
+        }
+      },
+      "velocity": {
+        "total_points": 103.5,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 3,
+          "P": 10,
+          "N": 0,
+          "NMI": 1
+        }
+      }
+    },
+    "consulting": {
+      "scale": {
+        "total_points": 105.5,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 7,
+          "P": 1,
+          "N": 0,
+          "NMI": 3
+        }
+      },
+      "pioneer_deep": {
+        "total_points": 143.5,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 10,
+          "P": 1,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "pathfinder": {
+        "total_points": 119.5,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 9,
+          "P": 1,
+          "N": 1,
+          "NMI": 0
+        }
+      },
+      "starliner": {
+        "total_points": 81.5,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 6,
+          "P": 1,
+          "N": 1,
+          "NMI": 3
+        }
+      },
+      "sonnet45": {
+        "total_points": 149.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 11,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "velocity": {
+        "total_points": 149.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 11,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      }
+    },
+    "sla": {
+      "scale": {
+        "total_points": 256.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 19,
+          "P": 2,
+          "N": 0,
+          "NMI": 5
+        }
+      },
+      "pioneer_deep": {
+        "total_points": 334.5,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 24,
+          "P": 1,
+          "N": 0,
+          "NMI": 1
+        }
+      },
+      "pathfinder": {
+        "total_points": 278.5,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 18,
+          "P": 4,
+          "N": 0,
+          "NMI": 4
+        }
+      },
+      "starliner": {
+        "total_points": 311.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 22,
+          "P": 1,
+          "N": 0,
+          "NMI": 3
+        }
+      },
+      "sonnet45": {
+        "total_points": 362.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 26,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "velocity": {
+        "total_points": 139.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 10,
+          "P": 1,
+          "N": 0,
+          "NMI": 15
+        }
+      }
+    },
+    "partnership": {
+      "scale": {
+        "total_points": 114.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 7,
+          "P": 3,
+          "N": 0,
+          "NMI": 2
+        }
+      },
+      "pioneer_deep": {
+        "total_points": 115.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 7,
+          "P": 0,
+          "N": 0,
+          "NMI": 5
+        }
+      },
+      "pathfinder": {
+        "total_points": 129.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 9,
+          "P": 3,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "starliner": {
+        "total_points": 134.5,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 9,
+          "P": 1,
+          "N": 0,
+          "NMI": 2
+        }
+      },
+      "sonnet45": {
+        "total_points": 130.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 8,
+          "P": 0,
+          "N": 0,
+          "NMI": 4
+        }
+      },
+      "velocity": {
+        "total_points": 93.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 6,
+          "P": 2,
+          "N": 0,
+          "NMI": 4
+        }
+      }
+    },
+    "jv": {
+      "scale": {
+        "total_points": 205.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 14,
+          "P": 1,
+          "N": 0,
+          "NMI": 3
+        }
+      },
+      "pioneer_deep": {
+        "total_points": 245.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 18,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "pathfinder": {
+        "total_points": 163.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 10,
+          "P": 5,
+          "N": 0,
+          "NMI": 3
+        }
+      },
+      "starliner": {
+        "total_points": 150.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 10,
+          "P": 3,
+          "N": 2,
+          "NMI": 3
+        }
+      },
+      "sonnet45": {
+        "total_points": 213.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 15,
+          "P": 1,
+          "N": 0,
+          "NMI": 2
+        }
+      },
+      "velocity": {
+        "total_points": 101.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 8,
+          "P": 0,
+          "N": 0,
+          "NMI": 10
+        }
+      }
+    },
+    "services": {
+      "scale": {
+        "total_points": 253.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 20,
+          "P": 0,
+          "N": 2,
+          "NMI": 4
+        }
+      },
+      "pioneer_deep": {
+        "total_points": 309.0,
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 25,
+          "P": 0,
+          "N": 1,
+          "NMI": 0
+        }
+      },
+      "pathfinder": {
+        "total_points": 176.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 14,
+          "P": 2,
+          "N": 3,
+          "NMI": 7
+        }
+      },
+      "starliner": {
+        "total_points": 246.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 24,
+          "P": 0,
+          "N": 0,
+          "NMI": 2
+        }
+      },
+      "sonnet45": {
+        "total_points": 306.0,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 26,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        }
+      },
+      "velocity": {
+        "total_points": 171.5,
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 11,
+          "P": 9,
+          "N": 0,
+          "NMI": 6
+        }
+      }
+    }
+  },
+  "model_comparison": {
+    "scale": {
+      "t1_pass_rate": "7/10",
+      "detection_rate": 84.4,
+      "avg_quality": 2.56
+    },
+    "pioneer_deep": {
+      "t1_pass_rate": "6/10",
+      "detection_rate": 95.0,
+      "avg_quality": 2.89
+    },
+    "pathfinder": {
+      "t1_pass_rate": "5/10",
+      "detection_rate": 83.9,
+      "avg_quality": 2.61
+    },
+    "starliner": {
+      "t1_pass_rate": "3/10",
+      "detection_rate": 87.5,
+      "avg_quality": 2.54
+    },
+    "sonnet45": {
+      "t1_pass_rate": "5/10",
+      "detection_rate": 94.4,
+      "avg_quality": 2.9
+    },
+    "velocity": {
+      "t1_pass_rate": "2/10",
+      "detection_rate": 66.2,
+      "avg_quality": 2.17
+    }
+  }
+}

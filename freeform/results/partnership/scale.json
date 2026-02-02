@@ -1,0 +1,508 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "scale",
+    "evaluation_timestamp": "2026-01-25T18:10:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Exit and Buyout (Section 10.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "Exit and Buyout. In the event that a Partner seeks to exit the Partnership or transfer its interest in a Co-Investment, the exiting Partner shall first offer its interest to the remaining Partner on the same terms as any bona fide third-party offer... Valuation for buyouts shall be determined by mutual agreement or, failing agreement within thirty (30) days, by an independent valuation expert...",
+        "effective_rationale_excerpt": "The Agreement lacked exit and buyout mechanics, creating significant uncertainty on transfers and liquidity. This new clause provides a structured right of first offer/refusal, valuation mechanism, and transfer controls...",
+        "judge_reasoning": "Scale correctly identifies that Section 10.1 is Reserved with no exit/buyout provisions. The proposed clause provides ROFR, third-party sale fallback, independent valuation methodology, and affiliate transfer controls. This comprehensively addresses all GT key elements for liquidity and orderly exits."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 4.0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Requiring unanimous consent for major decisions gives Growth Dynamics veto power on significant matters, protecting strategic interests and preventing unilateral major changes.",
+        "judge_reasoning": "Scale's risk table (4.1) marks unanimous consent as Favorable, focusing on the veto power benefit but completely missing the deadlock risk. No redline proposes escalation, tie-breaker, or deadlock resolution. Partial credit for acknowledging the governance structure exists."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 4.0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "The clause defers to Section 10.3 but does not define specific capital-call remedies (e.g., dilution, interest, forced transfer), leaving Growth Dynamics exposed if Partner A defaults or vice versa.",
+        "judge_reasoning": "Scale's risk table (3.3) flags that the clause references undefined Section 10.3 and notes the need for explicit default remedies. However, no redline is provided to fix the broken reference or add the missing Section 10.3. Partial credit for identifying the problem but no solution proposed."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Profit and Loss Sharing (Section 6.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "Unless otherwise agreed in writing for a specific Co-Investment, profits and losses from Co-Investments shall be allocated pro rata based on each Partner's capital contributions to the specific Co-Investment, after applying any agreed preferred return.",
+        "effective_rationale_excerpt": "The existing fixed 50/50 split irrespective of capital contribution can create substantial economic unfairness. This revision ties profit and loss allocation to actual capital contributions by default, with express ability to contract otherwise for specific deals.",
+        "judge_reasoning": "Scale identifies the severe economic inequity where fixed 50/50 sharing penalizes larger contributors. The redline shifts to pro-rata allocation based on actual capital with optional preferred return and flexibility for deal-specific agreements. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Limitation of Liability (New Clause)",
+      "evidence": {
+        "proposed_revision_excerpt": "Limitation of Liability. Except for liability arising from (a) fraud, (b) willful misconduct, (c) gross negligence, (d) breach of confidentiality obligations with respect to trade secrets, or (e) a Party's indemnification obligations under this Agreement, neither Party shall be liable to the other for indirect, incidental, consequential, special or punitive damages, including lost profits. The aggregate liability of each Party for claims arising out of or related to this Agreement shall not exceed the total amount of capital contributions actually made by that Party to the specific Co-Investment that gives rise to the claim.",
+        "effective_rationale_excerpt": "There is currently no cap or exclusion of consequential damages, exposing Growth Dynamics to excessive, potentially unbounded liability. This clause provides customary exclusions for egregious conduct while protecting each Party from speculative, indirect losses and ties aggregate liability to amounts invested...",
+        "judge_reasoning": "Scale recognizes the absence of any limitation of liability clause. The proposed new provision caps aggregate liability at capital contributed, excludes consequential damages, and includes carve-outs for fraud, willful misconduct, and confidentiality breaches. This comprehensively addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Indemnification (New Clause)",
+      "evidence": {
+        "proposed_revision_excerpt": "Indemnification. Each Partner (the \"Indemnifying Party\") shall defend, indemnify and hold harmless the other Partner and its affiliates, officers, directors and employees (the \"Indemnified Parties\") from and against any and all losses, liabilities, damages, costs and expenses (including reasonable attorneys' fees) arising out of: (a) the Indemnifying Party's breach of this Agreement; (b) the Indemnifying Party's gross negligence or willful misconduct in connection with Partnership Activities; or (c) any misrepresentation or breach of representation or warranty made by the Indemnifying Party herein.",
+        "effective_rationale_excerpt": "The contract contains no indemnity protections, leaving Growth Dynamics exposed to third-party claims and counterparties' misconduct. This addition creates mutual indemnities for breaches, gross negligence, and misrepresentations...",
+        "judge_reasoning": "Scale identifies the complete absence of indemnification provisions. The proposed clause establishes mutual indemnification for breaches, gross negligence/willful misconduct, and misrepresentations, with cooperation duties and contribution allocation. This comprehensively addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "A 60-day exclusivity without exceptions or carve-outs can lock Growth Dynamics out of parallel opportunities and may be excessive for rapid markets. It also lacks ability to terminate exclusivity for inactivity or defined milestones.",
+        "judge_reasoning": "Scale's risk table (5.3) notes that 60 days may be excessive and suggests shortening or adding performance-based termination. However, the GT concern is that 60 days is too SHORT (not too long) for complex due diligence. Scale identifies an issue with the exclusivity provision but in the opposite direction. While no redline is provided, the concern is flagged. Quality scores reduced for directional mismatch."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 2.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "The clause requires ongoing management post-termination but lacks wind-down procedures, expense allocation, governance during wind-down, and transfer mechanics, exposing Growth Dynamics to indefinite obligations.",
+        "judge_reasoning": "Scale's risk table (12.3) flags the lack of wind-down mechanics, governance, and transfer procedures but does not propose amendments to add maximum wind-down periods or buyout rights. Partial credit for identifying the structural gap."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract lacks formal information rights and reporting provisions. Scale does not propose adding quarterly portfolio reports, material event notices, or inspection rights. This T2 structural gap is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "One-year non-solicit is common, but the clause lacks definition of solicitation, employees covered, and remedies, potentially overbroad or ambiguous for recruiting activity.",
+        "judge_reasoning": "Scale's risk table (11.2) notes the provision needs definition and carve-outs but does not question whether the 1-year restriction is necessary at all (as GT suggests). Partial credit for acknowledging the clause but not addressing the core GT concern about reconsidering the need."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Confidentiality (Section 9.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "The confidentiality obligations shall survive termination for five (5) years, except that obligations with respect to trade secrets and information that is otherwise subject to confidentiality under applicable law shall survive indefinitely. Permitted disclosures to legal counsel, auditors, regulators, and as required by law are allowed provided the disclosing Party gives prior notice to the other Party where legally permitted...",
+        "effective_rationale_excerpt": "The original five-year survival is inadequate for trade secrets, exposing the Parties to loss of long-term proprietary value. This amendment creates perpetual protection for trade secrets and clarifies permitted disclosures with notice obligations...",
+        "judge_reasoning": "Scale identifies that 5-year survival is insufficient for trade secrets and proposes perpetual protection for trade secrets and legally protected information, with standard disclosure carve-outs and notice requirements. This fully addresses the GT concern about inadequate protection for investment strategies and proprietary methodologies."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Term and Renewal (Section 12.1)",
+      "evidence": {
+        "proposed_revision_excerpt": "This Agreement shall continue for five (5) years from the Effective Date, with automatic renewal for successive two-year periods unless either Partner provides one hundred eighty (180) days' written notice of non-renewal prior to the applicable renewal date.",
+        "effective_rationale_excerpt": "The original one-year notice to avoid renewal is commercially restrictive, potentially locking Growth Dynamics into an unwanted extension. This amendment shortens required notice windows to 180 days for renewal prevention...",
+        "judge_reasoning": "Scale identifies that one-year notice is excessively restrictive (at 12.1, semantically related to 10.2 term provisions). The redline reduces to 180 days and adds 90-day anniversary opt-out. The GT expects 180 days minimum with transition planning; Scale meets the 180-day expectation and provides additional flexibility. This addresses the core GT concern."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.2",
+      "issue_summary": "Scope: investment target revenue and geography",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add measure",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The revenue band and geography are specified but rigid, which could exclude attractive opportunities or create disputes about applicability (e.g., revenue timing, conglomerates). The clause lacks meas"
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Initial Commitment: deal-by-deal capital commitments",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to specify com",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause leaves capital commitment mechanics unspecified (e.g., commitment amounts, prioritization, binding nature), creating ambiguity about funding expectations and risk for Growth Dynamics."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Default: referral to Section 10.3",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add explici",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause defers to Section 10.3 but does not define specific capital-call remedies (e.g., dilution, interest, forced transfer), leaving Growth Dynamics exposed if Partner A defaults or vice versa."
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Meetings: monthly Investment Committee meetings",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add notice ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Monthly meetings are reasonable but the clause lacks notice, quorum, and recording requirements, creating procedural ambiguity that could impair decision timeliness or create disputes over approvals."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Due Diligence: collaborative allocation of responsibilities",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define time",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Responsibilities are to be allocated based on expertise, but there is no mechanism for dispute, timelines, cost allocation, or decision authority arising from diligence results, risking misaligned exp"
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Distributions: within 30 days of receipt",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add reserve",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Thirty-day distribution timing is acceptable, but there is no reserve, dispute, withholding, or tax gross-up mechanism, risking cashflow mismatch or disputes on timing and amounts."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Expenses: shared equally unless agreed",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define expe",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Equal sharing by default may be unfair if expenses are partner-specific or due to one partner's actions; lacks expense categories, pre-approval thresholds, and reimbursement timing, creating cost allo"
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Regulatory Compliance: compliance with applicable laws",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to include sta",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause is general; missing are specific AML/KYC, securities law compliance, and notification duties. For investment activities, absent specifics increase regulatory risk."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Exit and Buyout: reserved",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a detailed exit ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The reservation indicates the clause is missing, leaving a material gap regarding buyout rights, valuation, drag/tag, and exit mechanics, which creates significant post-termination uncertainty."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Portfolio Company Non-Compete: no independent investments in direct competitors without consent",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define comp",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The standard is vague—\"directly competes\" and \"consent\" aren't defined, and no waiver/notice process exists. This could unintentionally restrict Growth Dynamics' independent activities or be unenforce"
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Non-Solicitation: employees for Term + 1 year",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define soli",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "One-year non-solicit is common, but the clause lacks definition of solicitation, employees covered, and remedies, potentially overbroad or ambiguous for recruiting activity."
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Termination for Cause: material breach uncured after 60 days",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to define mate",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Sixty-day cure period may be reasonable, but there is no definition of material breach, emergency termination, or interim injunctive relief, weakening Growth Dynamics' ability to halt harm quickly."
+    },
+    {
+      "clause": "12.3",
+      "issue_summary": "Effect of Termination: continue to manage existing Co-Investments; share per Section 6.1",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to set clear w",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause requires ongoing management post-termination but lacks wind-down procedures, expense allocation, governance during wind-down, and transfer mechanics, exposing Growth Dynamics to indefinite "
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Arbitration: binding arbitration in New York under AAA rules",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to specify sea",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Arbitration is reasonable, but New York seat may disadvantage Growth Dynamics (Delaware principal place) and clause lacks rules for emergency relief, discovery scope, or appointment mechanics, which m"
+    },
+    {
+      "clause": "Capital Calls (Section 3.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 3.2 in place of the original sentence. The original imposes a ten-business-day funding window which is operationally restrictive. This amendment increases the standard funding"
+    },
+    {
+      "clause": "Investment Committee (Section 4.2)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 4.2 in place of the original paragraph. The existing text permits a single committee representative to bind a Partner without senior ratification, creating execution risk. Thi"
+    },
+    {
+      "clause": "Profit and Loss Sharing (Section 6.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 6.1 in place of the original sentence. The existing fixed 50/50 split irrespective of capital contribution can create substantial economic unfairness. This revision ties profi"
+    },
+    {
+      "clause": "Confidentiality (Section 9.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 9.1 in place of the original paragraph. The original five-year survival is inadequate for trade secrets, exposing the Parties to loss of long-term proprietary value. This amen"
+    },
+    {
+      "clause": "Term and Renewal (Section 12.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Amend Section 12.1 in place of the original paragraph. The original one-year notice to avoid renewal is commercially restrictive, potentially locking Growth Dynamics into an unwanted extens"
+    },
+    {
+      "clause": "Exit and Buyout (Section 10.1)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 10.1 (currently reserved). The Agreement lacked exit and buyout mechanics, creating significant uncertainty on transfers and liquidity. This new clause provides a struc"
+    },
+    {
+      "clause": "Indemnification (New Clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 8.2 (Regulatory Compliance). The contract contains no indemnity protections, leaving Growth Dynamics exposed to third-party claims and counterparties' misconduct. This "
+    },
+    {
+      "clause": "Limitation of Liability (New Clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after the Indemnification clause. There is currently no cap or exclusion of consequential damages, exposing Growth Dynamics to excessive, potentially unbounded liability. This clause"
+    },
+    {
+      "clause": "Intellectual Property; Data Protection (New Clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 9.1 (Confidentiality). The Agreement lacks IP and data protections, risking ownership disputes and regulatory non-compliance. This new clause clarifies pre-existing IP "
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 3,
+      "N": 0,
+      "NMI": 2
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 2,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 2,
+        "P": 1,
+        "N": 0,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 54.0,
+    "total_quality_points": 60,
+    "weighted_score": 76.5,
+    "max_possible": 70.0,
+    "percentage": 109.29,
+    "total_points": 114.0,
+    "additional_issues_count": 23
+  }
+}

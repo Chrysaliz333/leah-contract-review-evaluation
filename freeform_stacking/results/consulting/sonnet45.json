@@ -1,0 +1,356 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "sonnet45",
+    "model_display_name": "Sonnet 4.5",
+    "environment": "hotfix",
+    "evaluation_timestamp": "2026-01-25T22:00:00Z",
+    "gt_version": "1.0",
+    "gt_file": "consulting_stacking.json",
+    "part_b_gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "CONSULTING_01",
+      "clause": "3.4",
+      "cp_redline_description": "CP shortened payment terms from 30 to 15 days and removed late payment interest provision",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Accelerated payment timeline from 30 to 15 days creates cash flow pressure on Meridian. Doubled interest rate (2% vs 1%) significantly increases late payment penalties. Five-day dispute window is unreasonably short and effectively waives dispute rights for invoices not challenged immediately, creating risk of paying for defective or non-conforming Services. This redline is heavily one-sided favoring Consultant and removes standard commercial protections.",
+        "judge_reasoning": "Leah correctly identified the CP redline as unfavourable (classification: Unfavourable) and recommended REJECT. The reasoning addresses all GT key elements: (1) payment terms must remain at 30 days - Leah flags the shortened 15-day period as creating cash flow pressure; (2) retain late payment interest provision - Leah notes the changed interest rate; (3) retain Client dispute rights - Leah specifically identifies the 5-day dispute window as effectively waiving dispute rights. The rationale addresses the GT reasoning requirement about cash flow strain and industry standard Net 30. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_02",
+      "clause": "5.1",
+      "cp_redline_description": "CP reversed ownership from work-for-hire (Client owns) to Consultant retains IP with license to Client",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Complete reversal of work-for-hire ownership to Consultant fundamentally undermines Meridian's ability to control and leverage the work product it pays for. Non-exclusive, non-transferable license severely limits Meridian's business flexibility and prevents resale, sublicensing, or transfer to affiliates. Consultant's right to reuse deliverables for competitors creates direct competitive disadvantage and potential disclosure of Meridian's confidential business strategies embedded in the deliverables. This represents a material degradation of Meridian's IP position.",
+        "judge_reasoning": "Leah correctly identified this as Unfavourable and recommended REJECT. All GT key elements addressed: (1) work-for-hire designation for bespoke deliverables - Leah explicitly flags the reversal of work-for-hire; (2) Client owns deliverables - Leah identifies Client losing ownership; (3) payment condition acceptable - implicitly preserved by rejecting the license-only model. Leah's reasoning addresses GT requirements: Client pays for custom work and must own it, license-only creates dependency risk. Full marks."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_03",
+      "clause": "5.2",
+      "cp_redline_description": "CP changed Background IP license from perpetual to 3-year term with competitive use restrictions",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Complete removal of the perpetual, royalty-free license for Background IP incorporated into Deliverables eliminates Meridian's ability to use the work product it commissioned and paid for. Replacement language declaring 'methodologies, frameworks, tools, or reusable components' as Consultant's Background IP is circular and self-serving, allowing Consultant to retroactively claim ownership of deliverable components. This creates legal uncertainty and potential future licensing fees for using work Meridian funded.",
+        "judge_reasoning": "Leah correctly identified this as Unfavourable at clause '5.2 (License Grant)' and recommended REJECT. All GT key elements addressed: (1) perpetual license duration - Leah explicitly identifies removal of perpetual license; (2) no territorial restrictions - implicitly covered by rejecting the restrictive redline; (3) no competitive use restrictions - Leah's Background IP Retention entry notes the overbroad expansion; (4) royalty-free - Leah notes potential future licensing fees. The reasoning addresses GT requirements about Client paying for deliverables and needing perpetual use rights. Full marks."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_04",
+      "clause": "7.1",
+      "cp_redline_description": "CP made termination asymmetric: 15 days for Consultant vs 90 days + 3-month fee for Client",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Asymmetric termination rights (15 days for Consultant vs 90 days for Meridian) trap Meridian in unfavorable engagements while allowing Consultant easy exit. Three-month termination fee represents a substantial penalty with no corresponding obligation on Consultant, creating financial exposure potentially exceeding the value of remaining Services. This one-sided provision eliminates Meridian's flexibility to respond to changing business needs or Consultant underperformance, while Consultant retains full flexibility.",
+        "judge_reasoning": "Leah correctly identified this as Unfavourable and recommended REJECT. All GT key elements addressed: (1) symmetric notice periods - Leah explicitly flags the asymmetric 15 vs 90 day periods; (2) no termination fee for Client - Leah identifies the 3-month fee as a penalty without justification; (3) reasonable notice for both parties (30 days) - Leah's recommendation to reject restores the original symmetric 30-day provision. Reasoning addresses GT requirements about asymmetric terms trapping Client, termination fee as penalty, and market standard for symmetric terms. Full marks."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10,
+      "matched_redline_id": "risk_table_5.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table flags 5.1 but focuses on CP redline reversal rather than inherent work-for-hire ineffectiveness. The detailed reasoning discusses work-for-hire reversal, non-exclusive license, and competitive risk but does NOT address the core GT issue: that work-for-hire doctrine has limited application to independent contractors under 17 U.S.C. Section 101.",
+        "effective_rationale_excerpt": "Complete reversal of work-for-hire ownership to Consultant fundamentally undermines Meridian's ability to control and leverage the work product it pays for.",
+        "judge_reasoning": "Partial detection awarded. Leah's risk_table entry at 5.1 correctly identifies IP ownership concerns and the work-for-hire structure, but focuses on the CP redline reversal rather than the inherent legal defect in the baseline clause. The GT requires identification that work-for-hire has LIMITED APPLICATION to independent contractors and that no express assignment exists as fallback. Leah's reasoning does mention work-for-hire but does not address 17 U.S.C. Section 101 limitations or recommend adding explicit IP assignment language as backup. Quality scores awarded at 2/3 as the analysis is substantive but misses the core statutory issue."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_9.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Carve-outs for confidentiality and indemnification are insufficient - should also exclude gross negligence, willful misconduct, and IP infringement. Mutual cap ignores that Meridian's potential damages far exceed Consultant's.",
+        "effective_rationale_excerpt": "Liability cap at fees paid under applicable SOW is grossly inadequate for potential damages from defective consulting advice or deliverables. Per-SOW limitation rather than aggregate could result in minimal recovery on small engagements.",
+        "judge_reasoning": "Full detection. Leah's risk_table at 9.2 correctly identifies the liability cap issue and specifically calls out missing carve-outs for IP infringement and gross negligence/willful misconduct, which match GT key elements. The detailed proposed revision in the risk_table recommendations section proposes adding carve-outs for IP breaches, gross negligence, willful misconduct, fraud, data security breaches, and payment obligations. High quality scores for comprehensive analysis and proposed fix that addresses all GT key elements. Minor deduction on redline quality as the fix is embedded in risk_table rather than a standalone proposed_redline."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_9.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Mutual exclusion of consequential damages appears balanced but disproportionately harms Meridian as the party receiving Services and more likely to suffer business losses from defective deliverables. 'Loss of profits, loss of data, or loss of business opportunity' are primary damages Meridian would suffer from Consultant failures. All-caps format maximizes enforceability. No carve-out for gross negligence, willful misconduct, or IP infringement.",
+        "effective_rationale_excerpt": "The risk_table detailed reasoning proposes: 'This exclusion shall not apply to: (A) either party's breach of confidentiality obligations under Article 6; (B) either party's indemnification obligations under Article 10; (C) Consultant's breach of intellectual property obligations under Article 5; (D) either party's gross negligence, willful misconduct, or fraud; or (E) Consultant's breach of data security obligations.'",
+        "judge_reasoning": "Full detection. Leah correctly identifies the consequential damages exclusion at 9.1 as problematic and specifically flags the missing carve-outs for confidentiality breach, IP infringement, gross negligence, and willful misconduct - all matching GT key elements. The proposed amendment adds comprehensive carve-outs. High quality scores for thorough analysis and legally sound proposed revision."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 5,
+      "total_points": 7.5,
+      "matched_redline_id": "risk_table_7.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Leah's risk_table at 7.1 focuses on the CP redline creating asymmetric terms (15 vs 90 days) and recommends REJECT to restore baseline symmetric 30-day terms.",
+        "effective_rationale_excerpt": "This one-sided provision eliminates Meridian's flexibility to respond to changing business needs or Consultant underperformance, while Consultant retains full flexibility.",
+        "judge_reasoning": "Partial detection. Leah correctly flags 7.1 but focuses primarily on the CP redline asymmetry rather than the GT issue which concerns the baseline clause inadequacy. The GT issue is that even the original 30-day notice may be too long for Client agility, there's no SOW-level termination right, and no transition assistance provisions. Leah's analysis addresses flexibility concerns but recommends simply restoring the baseline rather than improving it with SOW-level TfC or transition assistance as the GT requires. Quality scores reduced as the fix doesn't address the GT's core concerns about baseline inadequacy."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_5.2",
+      "evidence": {
+        "proposed_revision_excerpt": "The risk_table entry for Background IP Retention and the proposed modification includes: 'a perpetual, irrevocable, worldwide, royalty-free, fully paid-up license to use, reproduce, modify, create derivative works from, and sublicense such Background IP solely as incorporated in the Deliverables and for Client's business purposes.'",
+        "effective_rationale_excerpt": "Complete removal of the perpetual, royalty-free license for Background IP incorporated into Deliverables eliminates Meridian's ability to use the work product it commissioned and paid for.",
+        "judge_reasoning": "Full detection. While Leah's primary focus is on the CP redline removing the perpetual license, the proposed modification explicitly addresses the GT issue by expanding the baseline license scope to include modification, derivative works, and sublicensing rights - exactly what GT-05 requires. The GT asks for expansion to include modification, internal use, derivative works, and sublicensing for affiliates/successors. Leah's proposed revision covers all of these elements. High quality scores for comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12,
+      "matched_redline_id": "risk_table_6.4_13.10",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk_table entry at 13.10 Survival: 'Survival provision lists key articles but omits critical provisions: warranties (Article 8), insurance (Article 11), and payment obligations (Article 3). No specified survival period - unclear if surviving provisions continue indefinitely or for reasonable period.'",
+        "effective_rationale_excerpt": "The proposed revision for 13.10 includes: '(c) Article 6 (Confidentiality) - for five (5) years after termination or indefinitely for trade secrets'. Risk_table at 6.4 notes: 'Return or destroy gives receiving Party unilateral choice, but destruction should require certification.'",
+        "judge_reasoning": "Full detection. Leah's risk_table entries at both 6.4 and 13.10 address the GT issue. At 13.10, Leah explicitly identifies the lack of specified survival periods and proposes a fix with 5-year confidentiality survival and indefinite trade secret protection - exactly matching GT key elements. At 6.4, Leah identifies the certification requirement gap. The rationale addresses survival period concerns though could have been more explicit about trade secrets in the initial analysis. Minor deduction on rationale for not explicitly flagging trade secret treatment upfront."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 5,
+      "total_points": 5.5,
+      "matched_redline_id": "risk_table_3.4",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk_table at 3.4 mentions 'undisputed invoices' and flags the CP redline's 5-day dispute window as 'effectively waiving dispute rights'. The analysis notes 'creating risk of paying for defective or non-conforming Services.'",
+        "effective_rationale_excerpt": "Five-day dispute window is unreasonably short and effectively waives dispute rights for invoices not challenged immediately, creating risk of paying for defective or non-conforming Services.",
+        "judge_reasoning": "Partial detection. Leah's focus is primarily on rejecting the CP redline's restrictive 5-day dispute window, but in doing so implicitly recognises the importance of dispute rights. However, the GT issue is that even the BASELINE clause lacks a formal invoice dispute mechanism - Leah does not propose adding a dispute process to the baseline, just rejecting the CP redline. The GT expects a recommendation to ADD a dispute window and good faith resolution process. Quality scores moderate as the analysis identifies the concept but doesn't propose the affirmative addition the GT requires."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "risk_table_13.1_13.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk_table at 13.1: 'Texas law is unfavorable to Meridian, a Nevada corporation with principal place of business in Nevada. Forces Meridian to litigate under unfamiliar law in a distant jurisdiction.' Proposed: 'This Agreement shall be governed by and construed in accordance with the laws of the State of Nevada.'",
+        "effective_rationale_excerpt": "Risk_table at 13.2: '30-day negotiation period is insufficient for complex disputes. Travis County, Texas courts require Meridian to litigate far from home (Nevada), creating significant cost and inconvenience.' Proposed change to Las Vegas arbitration with multi-tier dispute resolution.",
+        "judge_reasoning": "Full detection. Leah correctly identifies both 13.1 (governing law) and 13.2 (dispute forum) as favouring the Texas-based Consultant over the Nevada-based Client. The proposed revisions change governing law to Nevada and relocate dispute resolution to Las Vegas with arbitration option - directly addressing GT key elements. High quality scores for comprehensive analysis and practical fix. The GT notes this is T3 as it's standard for drafter to choose home jurisdiction, but Leah appropriately flags and proposes remedy."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "new_clauses_proposed_data_security",
+      "evidence": {
+        "proposed_revision_excerpt": "New Clause Recommendation: Data Security & Breach Notification - 'No data security obligations despite Consultant likely accessing Meridian's confidential business data and systems. No breach notification requirements or incident response protocols. Given increasing cyber threats and regulatory requirements (CCPA, GDPR if applicable), absence of specific security standards, encryption requirements, and breach notification timelines creates significant legal and business risk.'",
+        "effective_rationale_excerpt": "The proposed new clause 6.5 includes: 'Consultant shall comply with all applicable data protection and privacy laws, including without limitation CCPA, GDPR (if applicable), and any industry-specific regulations applicable to Client's business.' Also includes encryption requirements (AES-256), MFA, security assessments, and 24-hour breach notification.",
+        "judge_reasoning": "Full detection. Leah's new_clauses_proposed explicitly identifies the missing data protection clause as a gap and proposes comprehensive addition. The proposed clause addresses all GT key elements: GDPR/CCPA compliance requirements, security measures (encryption, MFA, penetration testing), breach notification (24-hour requirement), controller/processor roles (implied in compliance language), and audit rights. High quality scores for comprehensive, detailed proposed addition that exceeds GT expectations."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "risk_table_10.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk_table at 10.1: 'Indemnification limited to gross negligence or willful misconduct excludes ordinary negligence, which is inadequate for professional services. IP infringement indemnification lacks defense obligation, settlement approval rights, or procedural requirements. No indemnification for data breaches, regulatory violations, or third-party claims arising from Consultant's Services.'",
+        "effective_rationale_excerpt": "Proposed revision expands indemnification to include: '(a) Consultant's negligence, gross negligence, or willful misconduct in performing the Services; (b) any claim that the Deliverables or any component thereof infringes, misappropriates, or violates any third-party intellectual property rights; (c) Consultant's breach of its confidentiality obligations under Article 6; (d) Consultant's violation of applicable laws or regulations; (e) any claim by Consultant's personnel for employment-related benefits; or (f) Consultant's breach of its data security obligations.'",
+        "judge_reasoning": "Full detection. Leah precisely identifies the GT issue: indemnification limited to gross negligence/willful misconduct excludes ordinary negligence. The proposed revision expands to include ordinary negligence, adds confidentiality breach coverage, warranty breaches (implicit via law violations), and data breaches - addressing all GT key elements. High quality scores for thorough analysis and comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "risk_table_11.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk_table at 11.1: 'No requirement for cyber liability insurance despite Consultant accessing Meridian systems and data.' Proposed revision: '(c) cyber liability and data breach insurance with limits of not less than $3,000,000 per occurrence and annual aggregate, covering third-party claims and first-party costs related to data breaches, network security failures, and privacy violations'",
+        "effective_rationale_excerpt": "'$1M general liability and $2M professional liability may be insufficient for high-value consulting engagements or potential damages. No requirement for cyber liability insurance despite Consultant accessing Meridian systems and data.'",
+        "judge_reasoning": "Full detection. Leah explicitly identifies the missing cyber insurance requirement in the risk_table entry for 11.1 and proposes adding $3M cyber liability coverage with specific scope (data breaches, network security, privacy violations). The proposed revision also includes Client named as additional insured requirement. All GT key elements addressed: cyber insurance if handling data (yes, $3M), Client as additional insured (yes). High quality scores for specific, actionable proposed amendment."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 2,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 7,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 1,
+    "t1_detected": 1,
+    "total_detection_points": 42.0,
+    "total_quality_points": 82,
+    "total_points": 124.0,
+    "max_detection_points": 50,
+    "detection_percentage": 84.0,
+    "weighted_max": 50
+  },
+  "additional_issues": [],
+  "summary": {
+    "part_a": {
+      "total_score": 24,
+      "max_score": 24,
+      "percentage": 100.0,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "total_detection_points": 42.0,
+      "max_detection_points": 50,
+      "detection_percentage": 84.0,
+      "total_quality_points": 82,
+      "total_points": 124.0,
+      "t1_gate": "PASS",
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true,
+      "overall_assessment": "Strong performance across both Part A (CP redlines) and Part B (whole document). Perfect score on Part A with all 4 CP redlines correctly identified and REJECT recommended with comprehensive reasoning. Part B shows excellent detection with 9/11 issues fully detected and 2 partial detections. The T1 issue (work-for-hire ineffectiveness) was partially detected - Leah identified the IP ownership concern but focused on the CP redline reversal rather than the inherent statutory limitation of work-for-hire for independent contractors. Overall, a high-quality evaluation demonstrating thorough contract review capabilities."
+    }
+  }
+}

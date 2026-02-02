@@ -1,0 +1,723 @@
+{
+  "meta": {
+    "contract": "sla",
+    "model_id": "velocity",
+    "evaluation_timestamp": "2026-01-25T18:55:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "Unlimited Licensee Liability",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "8.1 Liability. Liability for breach of this Agreement shall be limited in accordance with Articles 10.1 and 10.2, and Licensor shall not be liable for any indirect, incidental, special, or consequential damages to the extent such damages are excluded by those Articles. The foregoing shall not limit Licensor's liability for (a) breach of confidentiality, (b) data security/privacy breaches caused by Licensor's negligence or willful misconduct, or (c) IP infringement, to the extent permitted by law.",
+        "effective_rationale_excerpt": "The clause contemplates unlimited liability to Licensor for any breach, which creates a one-way, potentially catastrophic exposure for Licensee. This is misaligned with typical risk allocation and with the rest of the liability framework.",
+        "judge_reasoning": "Velocity detected the unlimited liability issue and proposed aligning it with the capped liability framework in Articles 10.1-10.2 with appropriate carve-outs. The risk_table classifies it favorably (tick) but the detailed_reasoning and redline clearly address the issue."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "8.3",
+      "tier": "T1",
+      "issue": "Full AS-IS Disclaimer",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The AS-IS disclaimer at 8.3 is not present in Velocity's risk_table or proposed_redlines. The clause is not analyzed or addressed, leaving this T1 issue undetected."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Consequential Damages Exclusion - Licensor Only",
+      "detection": "P",
+      "detection_points": 4.0,
+      "match_strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "Licensor shall not be liable for any indirect, incidental, special, or consequential damages to the extent such damages are excluded by those Articles.",
+        "effective_rationale_excerpt": "The liability redline addresses exclusions but not mutuality specifically at 10.1.",
+        "judge_reasoning": "Velocity's 8.1 redline references consequential damages exclusions but does not directly address the one-sided nature at 10.1 or add carve-outs. The issue is tangentially addressed but not comprehensively."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Low Liability Cap - Licensor Only",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14.0,
+      "matched_redline_id": "Risk table at 10.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Amend to create carve-outs for data security, IP infringement, and confidentiality breaches; raise the cap or establish a higher floor for critical breaches; align with 9.x indemnities.",
+        "effective_rationale_excerpt": "Liability cap tied to fees paid in the prior 12 months is standard, but it may be insufficient for high-risk events (data breach, IP infringement, or confidentiality breaches) that could cause outsized harm beyond fees.",
+        "judge_reasoning": "Velocity's risk_table correctly identifies the cap issues and recommends carve-outs and raising the cap. No specific redline implements this but the issue is properly flagged."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "12.4",
+      "tier": "T1",
+      "issue": "Asymmetric Assignment",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The asymmetric assignment at 12.4 is not present in Velocity's risk_table or proposed_redlines. This T1 issue is not detected."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "9.1 / 9.2",
+      "tier": "T1",
+      "issue": "Narrow Indemnification - No Licensee Protection Defined",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-Data Breach Indemnification",
+      "evidence": {
+        "proposed_revision_excerpt": "9.2 Data Breach Indemnification. Licensor shall indemnify Licensee against third-party claims arising from a data breach or security incident caused by Licensor's negligence, willful misconduct, or failure to adhere to the Data Processing Agreement, including reasonable costs to remediate and notify affected individuals, to the extent permitted by law.",
+        "effective_rationale_excerpt": "The indemnity covers only third-party IP infringement related to the Software. It excludes data protection, privacy, security, and non-IP claims, leaving Licensee exposed to potentially costly non-IP claims.",
+        "judge_reasoning": "Velocity detected the narrow indemnification and proposed a new 9.2 for data breach indemnification. The 9.1 risk_table also recommends widening indemnity to include data protection. This addresses key GT concerns."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Section 5.1 Security Measures is not present in Velocity's risk_table or proposed_redlines. The vague 'reasonable safeguards' language is not flagged or addressed."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "11.4",
+      "tier": "T1",
+      "issue": "No Data Export on Termination",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Section 11.4 Effect of Termination and data export are not present in Velocity's risk_table or proposed_redlines. This T1 issue is not detected."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "2.1",
+      "tier": "T2",
+      "issue": "Non-Transferable License",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity's risk_table marks 2.1 Grant of License as favorable with no issues. The restrictive nature of the non-transferable, non-sublicensable license is not flagged."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.1",
+      "tier": "T3",
+      "issue": "Annual Advance Payment",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The annual advance payment at 3.1 is not present in Velocity's risk_table or proposed_redlines."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": "Risk table at 3.3",
+      "evidence": {
+        "proposed_revision_excerpt": "Amend to reduce rate (e.g., 1.0% per month) or provide a longer grace period and explicit cure mechanics; clarify daily accrual and potential waivers for first-delayed payment due to bona fide disputes.",
+        "effective_rationale_excerpt": "Interest at 1.5% per month, with 'the maximum rate permitted by law' floor. While typical, this can be punitive for late payments and could strain licensee cash flows.",
+        "judge_reasoning": "Velocity identified the high late fee in the risk_table and recommended reducing rate and adding grace period. No specific redline implements this but the issue is properly flagged."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Weak Uptime SLA",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Service Credits for Availability",
+      "evidence": {
+        "proposed_revision_excerpt": "4.1 Availability. Licensor shall use commercially reasonable efforts to make the Software available 99.9% of the time during each calendar month, measured by industry-standard monitoring. If availability falls below 99.9% in a calendar month, Licensee shall receive service credits as set forth in the Order Form, calculated as a percentage credit against the Subscription Fees for the affected month, scaled to the severity and duration of the outage, subject to exclusions for planned maintenance and force majeure.",
+        "effective_rationale_excerpt": "Target of 99.5% uptime per calendar month is reasonable, but lack of service credits or clear measurement methodology creates risk that outages impact Licensee without remedy.",
+        "judge_reasoning": "Velocity comprehensively addressed the weak SLA by raising uptime to 99.9%, adding measurement methodology, and service credits. This fully addresses the GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "Limited Support Hours",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Risk table at 4.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Amend to introduce severity-based response times, 24/7 or extended support options, and mandatory escalation paths; tie response times to service impact levels.",
+        "effective_rationale_excerpt": "'Normal business hours' support with a 4-hour response is basic but may be insufficient for mission-critical use; no severity tiers or time-to-restore commitments.",
+        "judge_reasoning": "Velocity identified the limited support in the risk_table and recommended severity tiers and 24/7 options. No specific redline implements this but the issue is properly flagged with correct remediation direction."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Feedback Ownership",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Section 6.2 Feedback is not present in Velocity's risk_table or proposed_redlines. The overbroad ownership transfer is not flagged."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "11.1",
+      "tier": "T2",
+      "issue": "Auto-Renewal Terms",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Renewal Flexibility and Change of Control",
+      "evidence": {
+        "proposed_revision_excerpt": "Either Party may terminate for convenience upon 90 days' prior written notice, and Licensee shall have the right to terminate on notice if there is a material adverse change in Licensor's business or a change of control that adversely impacts Licensee's rights and obligations under this Agreement.",
+        "effective_rationale_excerpt": "Initial Term of 1 year with automatic 1-year renewals unless 60 days' notice. This is reasonable but may hinder Licensee's flexibility in renegotiation or exit; does not explicitly address purchasers' change-in-control or business needs.",
+        "judge_reasoning": "Velocity addressed auto-renewal by adding convenience termination with 90-day notice and change of control termination rights. This addresses the GT concern about adding flexibility."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "2.3",
+      "tier": "T2",
+      "issue": "Usage Restrictions Overbroad",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Risk table at 2.3",
+      "evidence": {
+        "proposed_revision_excerpt": "Amend to add limited internal customization/integration carve-outs (and backups) and specify permitted activities (e.g., internal testing, data exports for compliance) without enabling third-party exploitation.",
+        "effective_rationale_excerpt": "Restrictions prohibit copying, modification, reverse engineering, renting, sublicensing, etc. While standard, the scope may impede legitimate internal workflows (e.g., integrations, backups, or internal security testing).",
+        "judge_reasoning": "Velocity identified the overbroad restrictions in the risk_table and recommended carve-outs for integrations, backups, and testing. No specific redline but issue is properly flagged."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "DPA Optional / No Timing",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-Data Processing Agreement",
+      "evidence": {
+        "proposed_revision_excerpt": "Data Processing Agreement. The Parties shall execute a Data Processing Agreement within 30 days of the Effective Date or prior to processing Licensee Personal Data, whichever is earlier, incorporating standard data protection terms, roles (controller/processor), security measures, data subject rights, breach notification timelines, subprocessor approvals, and cross-border transfer mechanisms as required by applicable law.",
+        "effective_rationale_excerpt": "The contract defers to a separate DPA. Without a signed DPA, personal data processing could be non-compliant, and cross-border transfers or subprocessor engagements may be inadequately governed.",
+        "judge_reasoning": "Velocity comprehensively addressed the DPA issue by proposing a new clause requiring DPA within 30 days or before processing with detailed minimum terms. Excellent."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "8.2",
+      "tier": "T2",
+      "issue": "Performance Warranty Weak",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Section 8.2 Performance Warranty is not present in Velocity's risk_table or proposed_redlines. The weak remedy structure is not flagged."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "12.10",
+      "tier": "T2",
+      "issue": "Survival Incomplete",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Section 12.10 Survival is not present in Velocity's risk_table or proposed_redlines. The incomplete survival provisions are not flagged."
+      }
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Audit Rights",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No audit rights are proposed or identified as missing. This gap is not flagged in Velocity's output."
+      }
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Business Continuity",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No business continuity or disaster recovery provisions are proposed or identified as missing."
+      }
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Force Majeure",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No force majeure clause is proposed or identified as missing, though the 4.1 redline mentions 'force majeure' as an exclusion category."
+      }
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Vendor Insurance Requirements",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No vendor insurance requirements are proposed or identified as missing."
+      }
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "6.3",
+      "tier": "T3",
+      "issue": "Aggregated Data Use",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Section 6.3 Aggregated Data is not present in Velocity's risk_table or proposed_redlines. The re-identification risk is not flagged."
+      }
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "12.2",
+      "tier": "T3",
+      "issue": "Arbitration Required",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-Dispute Resolution - Injunctive Relief Carve-out",
+      "evidence": {
+        "proposed_revision_excerpt": "The arbitration shall be conducted in San Francisco, California; provided, however, that either Party may seek provisional or injunctive relief in any court of competent jurisdiction to preserve its rights, including for confidentiality, IP, or data security, pending the outcome of arbitration.",
+        "effective_rationale_excerpt": "Mandatory AAA arbitration in San Francisco; no explicit carve-outs for injunctive relief or interim relief in courts; possibly burdensome for Licensee and inconsistent with where Licensee operates.",
+        "judge_reasoning": "Velocity addressed arbitration by adding injunctive relief carve-out. Does not change venue or add mediation step but improves flexibility for urgent matters."
+      }
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "4.3",
+      "tier": "T3",
+      "issue": "Short Maintenance Notice",
+      "detection": "NMI",
+      "detection_points": 0,
+      "match_strength": null,
+      "confidence": null,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Section 4.3 Maintenance is not present in Velocity's risk_table or proposed_redlines. The short notice period is not flagged."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.3 Usage Restrictions",
+      "issue_summary": "Usage Restrictions",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to add limited",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Restrictions prohibit copying, modification, reverse engineering, renting, sublicensing, etc. While standard, the scope may impede legitimate internal workflows (e.g., integrations, backups, or intern"
+    },
+    {
+      "clause": "3.3 Late Fees",
+      "issue_summary": "Late Fees",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to reduce rate",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Interest at 1.5% per month, with “the maximum rate permitted by law” floor. While typical, this can be punitive for late payments and could strain licensee cash flows, especially in annual-in-advance "
+    },
+    {
+      "clause": "4.1 Availability",
+      "issue_summary": "Availability",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to include ser",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Target of 99.5% uptime per calendar month is reasonable, but lack of service credits or clear measurement methodology creates risk that outages impact Licensee without remedy. Also no explicit exclusi"
+    },
+    {
+      "clause": "4.2 Support",
+      "issue_summary": "Support",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to introduce s",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Normal business hours” support with a 4-hour response is basic but may be insufficient for mission-critical use; no severity tiers or time-to-restore commitments."
+    },
+    {
+      "clause": "5.3 Data Processing Agreement",
+      "issue_summary": "Data Processing Agreement",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to require exe",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The contract defers to a separate DPA. Without a signed DPA, personal data processing could be non-compliant, and cross-border transfers or subprocessor engagements may be inadequately governed."
+    },
+    {
+      "clause": "11.1 Term",
+      "issue_summary": "Term",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to include mor",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Initial Term of 1 year with automatic 1-year renewals unless 60 days’ notice. This is reasonable but may hinder Licensee’s flexibility in renegotiation or exit; does not explicitly address purchasers’"
+    },
+    {
+      "clause": "12.2 Dispute Resolution",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "⚠️",
+      "leah_action": "Amend to permit inju",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mandatory AAA arbitration in San Francisco; no explicit carve-outs for injunctive relief or interim relief in courts; possibly burdensome for Licensee and inconsistent with where Licensee operates."
+    },
+    {
+      "clause": "Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: This amendment aligns Licensor liability with the overall liability framework in Articles 10.1–10.2, eliminating the inadvertent risk of unlimited exposure from Licensee breaches. It preser"
+    },
+    {
+      "clause": "Data Processing Agreement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 5.3 Data Processing. This new clause ensures legal compliance for processing Licensee Personal Data and provides a formal, recognizable baseline for data protection obl"
+    },
+    {
+      "clause": "Data Breach Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After Section 9.1 Indemnification by Licensor. This clause provides robust protection for Licensee against data security incidents attributable to Licensor, addressing a critical gap in the"
+    },
+    {
+      "clause": "Service Credits for Availability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after the existing 4.1 Availability clause. This new clause creates a tangible remedy for downtime and aligns expectations with Licensee’s operational dependencies, reducing financia"
+    },
+    {
+      "clause": "Dispute Resolution - Injunctive Relief Carve-out",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After the existing text of 12.2. This change preserves the binding arbitration mechanism while ensuring urgent, interim relief is accessible through courts when necessary to protect essenti"
+    },
+    {
+      "clause": "Renewal Flexibility and Change of Control",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: After 11.1. This adds practical flexibility for Licensee to disengage in certain business-change scenarios while preserving a predictable renewal cadence. It also provides a protective exit"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 10,
+      "P": 1,
+      "N": 0,
+      "NMI": 15
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 1,
+        "N": 0,
+        "NMI": 4
+      },
+      "T2": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 6
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 0,
+        "NMI": 5
+      }
+    },
+    "t1_all_detected": false,
+    "t1_count": 8,
+    "total_detection_points": 55.0,
+    "total_quality_points": 84,
+    "total_points": 139.0,
+    "additional_issues_count": 13
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "velocity",
+    "evaluation_timestamp": "2026-01-25T18:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10.0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Controller authorizes Sub-processors with 30 days' notice; Controller may object. Reasonableness depends on business needs; no explicit right to pause processing or to obtain security assurances prior to changes.",
+        "judge_reasoning": "Velocity identifies the sub-processor authorization issue at clause 4.1, classifying it as ⚠️ and noting the lack of explicit objection mechanism and security assurances. However, there is no proposed redline to address this issue - only a recommended action in the risk table ('Consider adding a documented objection mechanism for material changes'). The risk is identified but not remediated with a concrete proposal. Partial detection awarded for recognizing the concern but without a specific fix."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "P",
+      "detection_points": 4.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10.0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Requires 'appropriate' measures including encryption, pseudonymisation, access controls, regular security testing. Ambiguity around what constitutes 'appropriate' and the level of ongoing testing.",
+        "judge_reasoning": "Velocity identifies the vague security measures at clause 5.1, classifying it as ⚠️ and noting 'Ambiguity around what constitutes \"appropriate\" and the level of ongoing testing.' The recommended action suggests specifying minimum controls and auditability. However, there is no proposed redline to address this - only the risk table recommendation. The issue is recognized but not remediated with concrete language. Partial detection awarded."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "8.1",
+      "tier": "T3",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The risk table classifies clause 8.1 as ✅ Favorable with no action required, stating '72-hour breach notification window; aligns with common standards.' The recommendation suggests considering emergency notification for high-severity breaches but this is not flagged as requiring amendment. Velocity does not identify that 72 hours may be too slow or propose a specific faster timeline. The GT concern is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1 / 9.2",
+      "tier": "T2",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The risk table classifies clause 9.1 as ✅ Favorable and clause 9.2 as ✅ Favorable. Velocity notes that 9.2 'lacks carve-outs (e.g., for gross negligence, willful misconduct)' but does not identify the GT concern about indemnification potentially being subject to hidden caps from the Principal Agreement. The specific issue about caps is not mentioned or addressed."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability in DPA",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not propose a new limitation of liability clause for the DPA. While clause 9.1 is classified as favorable, there is no identification that the DPA lacks its own limitation of liability clause or proposal to add Controller liability caps. The GT issue is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Deletion Timeline Unspecified",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Clause 3.4",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon termination of the Principal Agreement, Processor shall delete or return all Personal Data to Controller in a structured, commonly used, machine-readable format and shall provide written confirmation of deletion within 30 days",
+        "effective_rationale_excerpt": "Enhances data portability and verifiability of data deletion, reducing residual data risk and confirming compliance.",
+        "judge_reasoning": "Velocity identifies the deletion timeline gap at clause 3.4, classifying it as ✅ (though reasoning indicates ⚠️) and noting 'Controller's option for deletion or return is positive, but lacks specifics on format, timelines, certification of deletion.' The proposed redline adds a 30-day timeline with written confirmation and machine-readable format requirement, directly addressing the GT concern. The rationale explains the verification benefit clearly. The redline is well-drafted."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.2",
+      "tier": "T3",
+      "issue": "All Audit Costs on Controller",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Clause 7.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Audits shall be conducted with reasonable notice during normal business hours, no more than once per year, and at Processor's expense.",
+        "effective_rationale_excerpt": "Shifts audit cost burden from Controller to Processor, enhancing Controller's ability to verify compliance without bearing the entire audit cost.",
+        "judge_reasoning": "Velocity identifies the audit cost issue at clause 7.2, classifying it as ✅ (though reasoning indicates ⚠️) and noting the once-yearly limitation and Controller expense. The proposed redline directly addresses the GT concern by shifting costs to Processor. The rationale explains the oversight enhancement clearly. The redline is concise and addresses the core GT issue."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "10.1",
+      "tier": "T3",
+      "issue": "Indefinite Duration",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 5,
+      "total_points": 5.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Term extends with Principal Agreement; no explicit data retention/return window post-termination.",
+        "judge_reasoning": "Velocity identifies a concern with clause 10.1, classifying it as ⚠️ and noting the lack of explicit retention/return window post-termination. The recommended action suggests adding a sunset/deletion timeline. However, there is no proposed redline to address this - only the risk table recommendation. The concern is recognized but not remediated with specific language. Partial detection awarded for identifying the issue."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "Exhibit A / 2.2",
+      "tier": "T2",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 8.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Refers to Exhibit A for matter, duration, nature, purpose, data types, etc. The risk is that Exhibit A may be incomplete or out of date.",
+        "judge_reasoning": "Velocity identifies concerns with Exhibit A at clause 2.2, classifying it as ⚠️ and noting the risk of incomplete or outdated exhibits. The recommended action is to 'Ensure Exhibit A is filled with precise, current details; require Controller approval of Exhibit A updates.' However, there is no proposed redline to make this mandatory. The issue is recognized but not remediated with concrete contract language. Partial detection awarded."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "Exhibit B / 5.1",
+      "tier": "T2",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "While Velocity identifies vagueness in clause 5.1 security measures, there is no explicit identification that Exhibit B is blank and this creates a compliance gap. The GT issue is about the missing exhibit preventing verification, not just the vagueness of 5.1. Velocity does not separately flag the blank Exhibit B as a GDPR Art 32 verification issue."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit C / 4.1",
+      "tier": "T2",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "While Velocity identifies issues with clause 4.1 sub-processor authorization, there is no explicit identification that Exhibit C is blank and this prevents Controller from exercising objection rights. The GT issue is specifically about the blank exhibit making objection rights meaningless at contract execution. Velocity does not separately flag this compliance gap."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Cyber Insurance Requirement",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Velocity does not propose a cyber insurance requirement. The GT issue about ensuring Processor maintains cyber insurance to honor indemnification obligations is not addressed. No new clause recommendation for insurance appears in the proposed redlines."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Data Protection Laws",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a clarifying sen",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The definition references UK GDPR, the Data Protection Act 2018, and “any other applicable data protection legislation.” While standard, it lacks explicit acknowledgement of amendments or UK-EU diverg"
+    },
+    {
+      "clause": "1.6",
+      "issue_summary": "Sub-processor",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider adding requ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Definition is generic; does not specify obligations for Sub-processors beyond contractual obligations in 4.2. Potential risk if Controller needs visibility into Sub-processor roster and changes."
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Processing Details",
+      "leah_classification": "⚠️",
+      "leah_action": "Ensure Exhibit A is ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Refers to Exhibit A for matter, duration, nature, purpose, data types, etc. The risk is that Exhibit A may be incomplete or out of date."
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Controller Instructions",
+      "leah_classification": "⚠️",
+      "leah_action": "Add clarifying langu",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Processor shall process only on documented Controller instructions unless required by law. This is standard, but in practice it should address urgent legal obligations and potential conflicts. It’s no"
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Compliance",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider adding expl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires compliance with Data Protection Laws; lacks explicit reference to handling of data subject rights, breach notification timelines, and audit rights in detail."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Assistance",
+      "leah_classification": "⚠️",
+      "leah_action": "Add concrete respons",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires assistance with data subject requests, security, breach notification, and impact assessments. While favorable, the standard could be more concrete on timelines and cooperation scope."
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "General Authorisation",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider adding a do",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Controller authorizes Sub-processors with 30 days’ notice; Controller may object. Reasonableness depends on business needs; no explicit right to pause processing or to obtain security assurances prior"
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Technical and Organisational Measures",
+      "leah_classification": "⚠️",
+      "leah_action": "Specify minimum cont",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires “appropriate” measures including encryption, pseudonymisation, access controls, regular security testing. Ambiguity around what constitutes “appropriate” and the level of ongoing testing."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Security Standards",
+      "leah_classification": "⚠️",
+      "leah_action": "Add renewal/certific",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "ISO 27001 or equivalent; “throughout the term.” Certification status and renewal requirements are not specified."
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Transfer Restrictions",
+      "leah_classification": "⚠️",
+      "leah_action": "Tighten to require s",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Restricts transfers outside UK/EEA unless safeguards are in place. It’s standard but could be vague on what safeguards exactly."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Audit",
+      "leah_classification": "⚠️",
+      "leah_action": "Ensure alignment wit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires making information available to Controller or auditor; lacks detail on frequency beyond 7.2 and scope of audits."
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Notification Contents",
+      "leah_classification": "⚠️",
+      "leah_action": "Add explicit timelin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Lists required contents but could specify timelines for data subject/authorities in certain jurisdictions."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Term",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a sunset/deletio",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Term extends with Principal Agreement; no explicit data retention/return window post-termination."
+    },
+    {
+      "clause": "10.2",
+      "issue_summary": "Survival",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify exactly whic",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Survival covers confidentiality, liability, and data deletion; but scope of data deletion survival could be clearer."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider adding disp",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "England and Wales law chosen; may not align with Controller’s locale. Disputes venue not specified."
+    },
+    {
+      "clause": "Audit Procedures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Shifts audit cost burden from Controller to Processor, enhancing Controller's ability to verify compliance without bearing the entire audit cost. This aligns audit cost with the expectation that Proce"
+    },
+    {
+      "clause": "Controller Instructions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds explicit notice and minimises scope when emergency processing is legally compelled, preserving Controller control while enabling lawful compliance."
+    },
+    {
+      "clause": "Deletion",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Enhances data portability and verifiability of data deletion, reducing residual data risk and confirming compliance."
+    },
+    {
+      "clause": "Transfer Restrictions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds precise mechanisms and aligns with current cross-border transfer requirements."
+    },
+    {
+      "clause": "New Clause Recommendation: Right to Independent Audit",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides independent verification of compliance, strengthening Controller’s assurance and risk management."
+    },
+    {
+      "clause": "New Clause Recommendation: Security Incident Response & Testing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Establishes concrete security testing cadence and incident response expectations, improving protection of Controller data."
+    },
+    {
+      "clause": "New Clause Recommendation: Structured Deletion Verification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds audit-ready verification for deletion, ensuring compliance and record-keeping."
+    },
+    {
+      "clause": "New Clause Recommendation: Dispute Resolution Alignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Aligns dispute resolution with Controller’s legal home, reducing cross-border risk and tailoring remedies to Controller’s location."
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 2,
+      "P": 4,
+      "N": 0,
+      "NMI": 6
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 2,
+        "N": 0,
+        "NMI": 1
+      },
+      "T2": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 4
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 1
+      }
+    },
+    "t1_all_detected": false,
+    "total_detection_points": 17.0,
+    "total_quality_points": 41,
+    "total_points": 58.0,
+    "additional_issues_count": 23
+  }
+}

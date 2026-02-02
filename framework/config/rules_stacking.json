@@ -1,0 +1,80 @@
+{
+  "mode": "rules_stacking",
+  "display_name": "Rules Stacking Evaluation",
+  "description": "Evaluates Leah's response to CP redlines using deterministic rules. Redlined clauses ONLY.",
+  "contract_types": [
+    "nda",
+    "subcontract"
+  ],
+  "contracts_per_type": 5,
+  "models": [
+    "pathfinder",
+    "starliner",
+    "velocity",
+    "scale",
+    "sonnet45",
+    "pioneer_deep"
+  ],
+  "paths": {
+    "base_dir": "rules_stacking",
+    "canonical_json_pattern": "canonical_json_{env}",
+    "ground_truth": "ground_truth",
+    "rule_files": "rule_files",
+    "redlined_contracts": "redlined_contracts"
+  },
+  "gt_structure": {
+    "type": "per_contract_type",
+    "files": [
+      "nda.json",
+      "subcontract.json"
+    ],
+    "item_key": "ground_truth"
+  },
+  "scoring": {
+    "per_redline_max": 6,
+    "dimensions": {
+      "action": {
+        "max": 2,
+        "description": "Correct ACCEPT/MODIFY/REJECT per rules"
+      },
+      "revision": {
+        "max": 2,
+        "description": "Follows prescribed language"
+      },
+      "reasoning": {
+        "max": 2,
+        "description": "Rule citation present"
+      }
+    }
+  },
+  "detection_values": [
+    "Y",
+    "P",
+    "N",
+    "NMI"
+  ],
+  "actions": [
+    "ACCEPT",
+    "MODIFY",
+    "REJECT",
+    "ACCEPT WITH RISK"
+  ],
+  "pass_criteria": {
+    "pass": {
+      "min_percentage": 70,
+      "max_scope_violations": 0
+    },
+    "marginal": {
+      "min_percentage": 50,
+      "max_scope_violations": 1
+    },
+    "fail": {
+      "below": 50,
+      "or": "scope_violations >= 2"
+    }
+  },
+  "critical_failures": {
+    "scope_violation": "Commenting on unchanged text"
+  },
+  "scope_constraint": "redlines_only"
+}

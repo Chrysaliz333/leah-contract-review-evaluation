@@ -1,0 +1,638 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "velocity",
+    "evaluation_timestamp": "2026-01-25T18:25:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-10.1 Exit and Buyout Framework",
+      "evidence": {
+        "proposed_revision_excerpt": "Exit and Buyout: Upon termination of the Partnership or at the request of either Partner with at least [six] months' prior written notice, the Partners shall negotiate in good faith to determine an orderly exit and buyout of each Partner's interest in Co-Investments. Valuation shall be conducted by a mutually agreed independent valuer using published market multiples, discounted cash flow, and other objective indicators...",
+        "effective_rationale_excerpt": "Establishes a clear mechanism for exits and buyouts, reducing uncertainty and potential litigation in moments of strategic disagreement or dissolution.",
+        "judge_reasoning": "Velocity correctly identifies that Section 10.1 is Reserved with no exit/buyout provisions. The proposed clause provides exit triggers (termination or 6-month notice), good-faith negotiation, independent valuation methodology (market multiples, DCF), installment payment structure with interest, and dissolution fallback. Addresses all core GT elements for liquidity and orderly exits."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 16.0,
+      "matched_redline_id": "4.4 Deadlock Resolution",
+      "evidence": {
+        "proposed_revision_excerpt": "In the event the Investment Committee cannot reach a decision on any matter within fifteen (15) business days after full discussion, the matter shall be escalated to the CEOs of Partner A and Partner B. If still unresolved within fifteen (15) additional business days, the matter shall be referred to an Independent Investment Committee member mutually agreed by the Partners to provide a non-binding recommendation or, if necessary, an expert determination consistent with objective industry standards.",
+        "effective_rationale_excerpt": "Ensures timely decision-making and avoids prolonged stalemate while preserving dual-partner control and fairness. Provides an objective mechanism to break ties without undermining the co-equal structure.",
+        "judge_reasoning": "Velocity identifies the deadlock risk but addresses it through a new Section 4.4 (Deadlock Resolution) rather than amending 4.1 directly. The proposed escalation path (15 days IC, 15 days CEOs, then independent expert) provides a resolution mechanism. However, the expert provides only a 'non-binding recommendation,' which may not fully resolve deadlock. Amendment score reduced to 2 for non-binding nature."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "10.3 Default",
+      "evidence": {
+        "proposed_revision_excerpt": "If a Partner fails to fund a capital call within ten (10) business days after notice, the non-defaulting Partner may (i) fund the shortfall and acquire an equivalent pro rata interest in the relevant Co-Investment, (ii) charge interest on the unpaid amount at the rate of [X]% per annum, (iii) dilute the defaulting Partner's economic interest in the affected Co-Investment pro rata to the amount funded by the non-defaulting Partner, and (iv) require the defaulting Partner to transfer its interest to the non-defaulting Partner or to a mutually agreeable third party at fair market value... The non-defaulting Partner shall also have the right to terminate this Agreement with respect to the affected Co-Investment if the default is not cured within [30] days.",
+        "effective_rationale_excerpt": "Establishes clear remedies for missed capital calls, prevents indefinite capital gaps, and preserves the Partnership's ability to fund investments while protecting non-defaulting interests.",
+        "judge_reasoning": "Velocity correctly identifies the broken cross-reference to non-existent Section 10.3 and proposes a comprehensive new Section 10.3 with multiple remedies: funding the shortfall with equivalent interest acquisition, interest charges, dilution, forced transfer at FMV, and termination rights (30-day cure). This addresses both the reference error and provides substantive default remedies."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "6.1 Profit/Loss Sharing Amendment",
+      "evidence": {
+        "proposed_revision_excerpt": "Sharing Ratio of profits and losses shall be allocated first to return each Partner's contributed capital pro rata. Once both Partners have recovered their contributed capital, any remaining profits and losses from Co-Investments shall be allocated 50/50 between Partner A and Partner B...",
+        "effective_rationale_excerpt": "Aligns economic outcomes with actual capital at risk, providing a more balanced and predictable return for both Partners. Enhances alignment with risk tolerance and capital commitments.",
+        "judge_reasoning": "Velocity identifies the economic inequity from fixed 50/50 sharing regardless of capital. The redline adds a waterfall: first return of contributed capital pro rata, then 50/50 split of remaining profits. This ensures capital is returned before profit sharing, addressing the GT concern about economic misalignment while maintaining the 50/50 split for gains above capital."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract contains no limitation of liability clause. Velocity does not propose adding a liability cap or excluding consequential damages. This is a complete miss of a critical T1 structural gap."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract has no indemnification provisions. Velocity does not propose adding mutual indemnification for breaches or third-party claims. This is a complete miss of a critical T1 issue."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9.0,
+      "matched_redline_id": "5.4 Exclusivity Clarifications",
+      "evidence": {
+        "proposed_revision_excerpt": "Exclusivity applies only to a Target Company that has been formally presented to and approved for exclusivity by both Partners in writing. The 60-day period shall commence upon such written approval and shall not apply to opportunities independently pursued outside of the Target Company as presented. Either Partner may terminate exclusivity with respect to a Target Company for breach of material terms, withdrawal of the Target Company, or if milestones defined in the exclusive term sheet are not met.",
+        "effective_rationale_excerpt": "Adds clarity around when exclusivity starts, what triggers termination, and an orderly path to pursue superior proposals, reducing strategic rigidity and potential antitrust or competition concerns.",
+        "judge_reasoning": "Velocity proposes clarifications to the exclusivity provision: formal written approval trigger, milestone-based termination, and matching rights for superior proposals. However, it does not address the GT's core concern that 60 days may be too short for complex due diligence. Amendment score reduced to 2 for not extending the duration."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 2.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Requires continued management of existing investments post-termination; unclear on wind-down, buyout, or transfer mechanics.",
+        "judge_reasoning": "Velocity's risk table (12.3) flags the lack of wind-down process, valuation, and transition obligations but does not propose amendments to add maximum time periods or buyout rights for post-termination management. Partial credit for identifying the structural gap."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The contract lacks formal information rights and reporting requirements. Velocity does not propose adding quarterly reports, material event notices, or inspection rights. This T2 structural gap is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "1-year post-termination; lacks exceptions for general solicitations or for hires initiated by the candidate.",
+        "judge_reasoning": "Velocity's risk table (11.2) notes the provision needs carve-outs for unsolicited inquiries and general solicitations but does not question whether the 1-year restriction is necessary at all (as GT suggests). Partial credit for acknowledging the provision but not addressing the core GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "9.1 Confidentiality Return/Destruction",
+      "evidence": {
+        "proposed_revision_excerpt": "Upon termination, each Party shall promptly return or destroy Confidential Information (except information required to be retained by law or regulatory records). This obligation survives termination for five (5) years.",
+        "effective_rationale_excerpt": "Clarifies post-termination handling of confidential information, reducing retention risk and ensuring compliance with data protection standards.",
+        "judge_reasoning": "Velocity's redline adds return/destruction obligations for confidential information post-termination, which is valuable for data hygiene. However, it does not address the GT's core concern that 5-year survival is inadequate for trade secrets and investment strategies. The redline maintains the 5-year period without extending it or creating perpetual protection for trade secrets. Quality scores awarded for the return/destruction mechanism but the duration issue remains unaddressed."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The GT expects concern about 90-day non-renewal notice being too short for investment partnership wind-down. Velocity's risk table (12.1) suggests adding termination for convenience with longer notice but does not specifically address the non-renewal notice period adequacy at 10.2. The specific GT concern about planning uncertainty and transition requirements is not identified."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Co-Investment (definition)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add clarifying langu",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The term is defined but lacks scope on what constitutes a Co-Investment (e.g., who negotiates terms, which documents govern, whether certain deal types are excluded). Ambiguity can trigger disputes ab"
+    },
+    {
+      "clause": "1.2",
+      "issue_summary": "Investment Committee (definition)",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify scope, autho",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Establishes an \"Investment Committee\" but does not specify voting mechanics beyond 4.2. It's unclear whether the Committee has powers beyond deal evaluation (e.g., governance, budget)."
+    },
+    {
+      "clause": "1.3",
+      "issue_summary": "Partnership Activities (definition)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add examples or a Sc",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad term; lacks granularity on what activities are included/excluded (e.g., sourcing, due diligence, portfolio management)."
+    },
+    {
+      "clause": "1.4",
+      "issue_summary": "Target Company (definition)",
+      "leah_classification": "⚠️",
+      "leah_action": "Define Target Compan",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No objective criteria beyond later sections; risk that \"Target Company\" scope is ambiguous for diligence and exclusivity."
+    },
+    {
+      "clause": "2.1",
+      "issue_summary": "Purpose (growth tech co-investments)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add scope boundaries",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Focus is stated but lacks guardrails on alignment with risk appetite, geographies, or sectors beyond technology."
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Non-Exclusivity",
+      "leah_classification": "⚠️",
+      "leah_action": "Confirm how exclusiv",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Pursuit of independent opportunities is allowed, but competing interests are managed by other sections (e.g., 11.1). Interplay is unclear."
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Initial Commitment",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider a baseline ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No numeric commitment; deal-by-deal basis can create cash-flow uncertainty and alignments risks for capital planning."
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Capital Calls (10 business days)",
+      "leah_classification": "⚠️",
+      "leah_action": "Extend to 15–20 busi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "10 business days is tight for multi-issuer funds; may cause cash shortfalls or administrative strain."
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Management (joint, unanimous on major decisions)",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider a defined l",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Unanimous major decisions may lead to gridlock; no deadlock mechanism."
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Meetings (monthly)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add quorum requireme",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Lacks quorum requirements, minutes, and record-keeping; possible operational ambiguity."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Deal Flow (sharing opportunities)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add deal-flow criter",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No defined pipeline quality criteria, prioritization, or confidentiality handling for shared opportunities."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Due Diligence (collaboration; responsibilities allocated)",
+      "leah_classification": "⚠️",
+      "leah_action": "Define responsibilit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Roles not clearly allocated; potential duplication or gaps in responsibility for critical due diligence areas."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Distributions (within 30 days of receipt)",
+      "leah_classification": "⚠️",
+      "leah_action": "Confirm distribution",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Timeframe may be aggressive given tax, valuation, and administrative processes."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Expenses (shared equally)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add an expense defin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of explicit caps or audit rights; ambiguity on what constitutes \"expenses.\""
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Management Fees (none)",
+      "leah_classification": "⚠️",
+      "leah_action": "If no fees, add expl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absence of management fees could reduce alignment incentives; may shift costs to each Partner outside the Partnership."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Carried Interest (none)",
+      "leah_classification": "⚠️",
+      "leah_action": "Consider a modest ca",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No carried interest may reduce alignment with performance; creates questions on value capture for successful investments."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Authority (full authority to enter into this Agreement)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add representations ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "May be insufficient to cover corporate approvals, conflicts of interest, and capacity limits."
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Regulatory Compliance",
+      "leah_classification": "⚠️",
+      "leah_action": "Add explicit regulat",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Generic compliance; lacks affirmative representations on investment-specific regulatory constraints (e.g., SEC exemptions, anti-money-laundering, sanctions)."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Confidentiality (5-year tail)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add return/destructi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard tail; but needs handling of post-termination return/destruction of information."
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Non-Solicitation",
+      "leah_classification": "⚠️",
+      "leah_action": "Add carve-outs for h",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "1-year post-termination; lacks exceptions for general solicitations or for hires initiated by the candidate."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Term (5 years; auto-renew; 1-year non-renew)",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a right to termi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Auto-renew with short notice; may trap Partners in an unfavorable term."
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Termination for Cause",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify cure mechani",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Material breach cure period is 60 days; no explicit \"for convenience\" termination or interim rights."
+    },
+    {
+      "clause": "12.3",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "Add wind-down proces",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires continued management of existing Co-Investments; unclear on wind-down, buyout, or transfer mechanics."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Dispute Resolution – Negotiation",
+      "leah_classification": "⚠️",
+      "leah_action": "Add a structured esc",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "High-level; lacks detailed escalation steps (mediation, timing)."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution – Arbitration (AAA, New York)",
+      "leah_classification": "⚠️",
+      "leah_action": "Ensure arbitration c",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Governing venue fixed; potential geographic mismatch with Partner B (Boston). Not inherently problematic but requires enforceability checks."
+    },
+    {
+      "clause": "14.1",
+      "issue_summary": "Governing Law (Delaware)",
+      "leah_classification": "⚠️",
+      "leah_action": "Confirm Delaware law",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Common for partnerships; ensure enforceability of specific terms and alignment with Partners' regulatory environments."
+    },
+    {
+      "clause": "10.3 Default",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Establishes clear remedies for missed capital calls, prevents indefinite capital gaps, and preserves the Partnership's ability to fund investments while protecting non-defaulting interests. Ensures al"
+    },
+    {
+      "clause": "4.4 Deadlock Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensures timely decision-making and avoids prolonged stalemate while preserving dual-partner control and fairness. Provides an objective mechanism to break ties without undermining the co-equal structu"
+    },
+    {
+      "clause": "5.4 Exclusivity Clarifications",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds clarity around when exclusivity starts, what triggers termination, and an orderly path to pursue superior proposals, reducing strategic rigidity and potential antitrust or competition concerns."
+    },
+    {
+      "clause": "6.1 Profit/Loss Sharing Amendment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Aligns economic outcomes with actual capital at risk, providing a more balanced and predictable return for both Partners. Enhances alignment with risk tolerance and capital commitments."
+    },
+    {
+      "clause": "10.1 Exit and Buyout Framework",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Establishes a clear mechanism for exits and buyouts, reducing uncertainty and potential litigation in moments of strategic disagreement or dissolution."
+    },
+    {
+      "clause": "11.1 Non-Compete Narrowing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Improves enforceability and reasonableness by narrowing scope and adding straightforward definitions; addresses potential antitrust and overbreadth concerns while preserving strategic collaboration."
+    },
+    {
+      "clause": "14.2 Assignment Flexibility",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allows strategic reorganizations while preserving protections and ensuring continuity of control and confidentiality."
+    },
+    {
+      "clause": "2.2 Scope Enhancement",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds specificity and flexibility for Growth Dynamics Partners LP to pursue viable opportunities while maintaining guardrails."
+    },
+    {
+      "clause": "3.2 Capital Calls Timing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "More realistic window for large capital calls, reduces risk of default, and aligns with typical institutional funding cycles."
+    },
+    {
+      "clause": "9.1 Confidentiality Return/Destruction",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Clarifies post-termination handling of confidential information, reducing retention risk and ensuring compliance with data protection standards."
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 6,
+      "P": 2,
+      "N": 0,
+      "NMI": 4
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      },
+      "T2": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 2
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "total_detection_points": 41.0,
+    "total_quality_points": 52,
+    "weighted_score": 60.84,
+    "max_possible": 70.0,
+    "percentage": 86.91,
+    "total_points": 93.0,
+    "additional_issues_count": 36
+  }
+}

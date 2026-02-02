@@ -1,0 +1,248 @@
+{
+  "gt_metadata": {
+    "mode": "freeform_stacking",
+    "contract_id": "Consulting_TechAdvisors_Beta",
+    "contract_type": "Consulting",
+    "parties": {
+      "consultant": "Beta Tech Advisors LLC",
+      "client": "Meridian Enterprises Inc."
+    },
+    "representing_party": "Client",
+    "gt_version": "1.0",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-16",
+    "schema_version": "1.0",
+    "note": "Freeform Stacking: Leah reviews entire document including CP redlines. Representing party is SAME as Freeform Baseline."
+  },
+  "input_files": {
+    "clause_analysis": {
+      "pattern": "*_Cl*.doc",
+      "format": "HTML",
+      "used_for": [
+        "part_a",
+        "part_b"
+      ]
+    },
+    "redline_document": {
+      "pattern": "*_Redline_*.docx",
+      "format": "Word with tracked changes",
+      "used_for": [
+        "part_c"
+      ]
+    }
+  },
+  "part_a_cp_redlines": [
+    {
+      "test_id": "CONSULTING_01",
+      "clause_ref": "Payment Terms",
+      "section": "3.4",
+      "original_text": "Client shall pay all undisputed invoices within thirty (30) days of receipt. Late payments shall bear interest at the rate of one percent (1%) per month or the maximum rate permitted by law, whichever is less.",
+      "cp_redline": "Client shall pay all undisputed invoices within fifteen (15) days of receipt.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Client shall pay all undisputed invoices within thirty (30) days of receipt. Late payments shall bear interest at the rate of one percent (1%) per month or the maximum rate permitted by law, whichever is less.",
+      "key_elements": [
+        "1) Payment terms remain at 30 days 2) Retain late payment interest provision 3) Retain Client right to dispute invoices"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline 30 days (required)",
+        "May add invoice dispute process with timelines",
+        "May add withholding rights for non-conforming services"
+      ],
+      "unacceptable_responses": [
+        "Accepting 15-day payment terms",
+        "Payment terms under 30 days",
+        "Removing late payment interest",
+        "Removing Client dispute rights"
+      ],
+      "reasoning_must_address": "Halving payment period strains cash flow; removes Client dispute rights; industry standard is Net 30; no justification for acceleration",
+      "category": "6. General Risk & Fairness",
+      "subcategory": "Economic risk allocation"
+    },
+    {
+      "test_id": "CONSULTING_02",
+      "clause_ref": "IP Ownership",
+      "section": "5.1",
+      "original_text": "All deliverables created by Consultant specifically for Client pursuant to this Agreement shall be considered work-for-hire and shall be owned exclusively by Client upon full payment of all fees due hereunder.",
+      "cp_redline": "Consultant retains all intellectual property rights in deliverables, methodologies, and work product. Client receives a non-exclusive, non-transferable license to use deliverables for its internal business purposes only.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "All deliverables created by Consultant specifically for Client pursuant to this Agreement shall be considered work-for-hire and shall be owned exclusively by Client upon full payment of all fees due hereunder.",
+      "key_elements": [
+        "1) Work-for-hire designation for bespoke deliverables 2) Client owns deliverables created for it 3) Payment condition acceptable as protective mechanism"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May add explicit assignment language as backup to work-for-hire",
+        "May clarify background IP remains with Consultant",
+        "May add Client sublicense rights for affiliates/successors"
+      ],
+      "unacceptable_responses": [
+        "Consultant retaining ownership of bespoke deliverables",
+        "License-only model for custom work",
+        "Non-exclusive or revocable Client rights",
+        "Internal-use-only restrictions on Client-paid deliverables"
+      ],
+      "reasoning_must_address": "Client pays for custom work and must own it; license-only model creates dependency risk; work-for-hire is appropriate for bespoke consulting deliverables",
+      "category": "3. Intellectual Property & Data",
+      "subcategory": "IP ownership"
+    },
+    {
+      "test_id": "CONSULTING_03",
+      "clause_ref": "Background IP",
+      "section": "5.2",
+      "original_text": "To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client a non-exclusive, perpetual, royalty-free license to use such Background IP solely as part of the Deliverables.",
+      "cp_redline": "To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client a non-exclusive, royalty-free license to use such Background IP solely as part of the Deliverables for a period of three (3) years from delivery, subject to termination if Client competes with Consultant in North America.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client a non-exclusive, perpetual, royalty-free license to use such Background IP solely as part of the Deliverables.",
+      "key_elements": [
+        "1) Perpetual license duration 2) No territorial restrictions 3) No competitive use restrictions 4) Royalty-free"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline (required)",
+        "May expand: modification and derivative works rights",
+        "May expand: sublicense rights for affiliates",
+        "May expand: use independently of Deliverables for internal purposes"
+      ],
+      "unacceptable_responses": [
+        "Time-limited license on deliverables Client paid for",
+        "Revocable license",
+        "Territorial restrictions on Client use",
+        "Competitive use restrictions that block Client's business",
+        "License termination provisions"
+      ],
+      "reasoning_must_address": "Client paid for deliverables and must use them perpetually; 3-year limit renders deliverables obsolete; competitive restriction could block Client's core business; Background IP license must enable Deliverable use",
+      "category": "3. Intellectual Property & Data",
+      "subcategory": "IP licensing"
+    },
+    {
+      "test_id": "CONSULTING_04",
+      "clause_ref": "Termination for Convenience",
+      "section": "7.1",
+      "original_text": "Either party may terminate this Agreement for convenience upon thirty (30) days' prior written notice to the other party.",
+      "cp_redline": "Consultant may terminate this Agreement for convenience upon fifteen (15) days' prior written notice. Client may terminate for convenience upon ninety (90) days' prior written notice and payment of a termination fee equal to three (3) months of fees under all active Statements of Work.",
+      "acceptable_actions": [
+        "REJECT"
+      ],
+      "primary_action": "REJECT",
+      "example_revision": "Either party may terminate this Agreement for convenience upon thirty (30) days' prior written notice to the other party.",
+      "key_elements": [
+        "1) Symmetric notice periods 2) No termination fee for Client 3) Reasonable notice for both parties (30 days)"
+      ],
+      "acceptable_variations": [
+        "Full reversion to baseline symmetric 30 days (required)",
+        "May reduce to 21 days if symmetric",
+        "May add transition assistance requirements",
+        "May add SOW-level termination rights"
+      ],
+      "unacceptable_responses": [
+        "Asymmetric notice periods favouring Consultant",
+        "Client termination fees or penalties",
+        "Client notice period exceeding 30 days",
+        "Consultant notice period under 30 days"
+      ],
+      "reasoning_must_address": "Asymmetric terms trap Client in underperforming relationship; termination fee is penalty without justification; 90-day notice with fee eliminates Client flexibility; symmetric terms are market standard",
+      "category": "4. Term, Termination & Exit",
+      "subcategory": "Termination rights"
+    }
+  ],
+  "part_b_whole_document": {
+    "reference": {
+      "source_file": "../../freeform/ground_truth/consulting.json",
+      "gt_version": "3.0_v4-enhanced_LOCKED",
+      "total_issues": 11,
+      "tier_breakdown": {
+        "T1": 1,
+        "T2": 8,
+        "T3": 2
+      },
+      "weighted_max": 50
+    },
+    "note": "Part B uses the Freeform Baseline GT. Same contract, same issues. Evaluate whether Leah still detects these risks when CP redlines are present."
+  },
+  "part_c_document_quality": {
+    "scope": "Every redline Leah produces in the output .docx",
+    "per_redline_capture": {
+      "redline_id": "Sequential ID (e.g., RL-01)",
+      "location": "Clause/section reference",
+      "type": "CP_RESPONSE | NEW_REDLINE",
+      "linked_gt_id": "GT ID if NEW_REDLINE addresses Part B issue, else null",
+      "action_stated": "ACCEPT | MODIFY | REJECT | ADD | DELETE",
+      "redline_exists": "Y | N",
+      "action_executed": "ACCEPT | MODIFY | REJECT | ADD | DELETE | NONE",
+      "execution_match": "Y | N | NA (NA if redline_exists=N)",
+      "is_wholesale": "Y | N",
+      "precision_score": "0-2 (aligned pair average)",
+      "insertion_accuracy": "0-2 | NA (aligned pair average, NA for DELETE/simple swaps)",
+      "notes": "Optional observations"
+    },
+    "aggregation_rules": {
+      "binary_fields": "Most confident determination wins",
+      "quality_fields": "Averaged across evaluations; median used for divergent scores",
+      "na_handling": "Exclude from averages"
+    }
+  },
+  "scoring_summary": {
+    "part_a": {
+      "items": 4,
+      "max_per_item": 6,
+      "max_total": 24,
+      "dimensions": {
+        "action": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "revision": {
+          "max": 2,
+          "weight": "40%"
+        },
+        "reasoning": {
+          "max": 2,
+          "weight": "20%"
+        }
+      },
+      "pass_threshold": ">=70% AND 0 critical failures",
+      "critical_failures": [
+        "REJECT-only scored as ACCEPT",
+        "ACCEPT-only scored as REJECT",
+        "Revision contains unacceptable element"
+      ]
+    },
+    "part_b": {
+      "items": 11,
+      "weighted_max": 50,
+      "tier_weights": {
+        "T1": 8,
+        "T2": 5,
+        "T3": 1
+      },
+      "pass_threshold": "T1 Gate PASS AND >=70%",
+      "t1_gate": "Any T1 miss = FAIL"
+    },
+    "part_c": {
+      "per_redline_max": 6,
+      "dimensions": {
+        "precision": "0-2",
+        "insertion_accuracy": "0-2 or NA"
+      },
+      "metrics": [
+        "Wholesale Rate",
+        "Execution Mismatch Count",
+        "Missing Redline Count",
+        "Avg Precision",
+        "Avg Insertion Accuracy"
+      ],
+      "separate_reporting": [
+        "CP_RESPONSE",
+        "NEW_REDLINE"
+      ]
+    }
+  }
+}

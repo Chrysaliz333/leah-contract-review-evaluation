@@ -1,0 +1,804 @@
+{
+  "gt_metadata": {
+    "mode": "rules",
+    "contract_type": "NDA",
+    "representing_party": "Receiving Party",
+    "rule_file": "NDA_Rules_Deterministic.csv",
+    "gt_version": "1.0_LOCKED",
+    "gt_author": "Liz",
+    "gt_date": "2026-01-14",
+    "total_tests": 38,
+    "notes": "Converted from Rules Evaluation.xlsx"
+  },
+  "contracts": [
+    "NDA_TechPartners_Bilateral",
+    "NDA_Meridian_Unilateral",
+    "NDA_GlobalPharm_Research",
+    "NDA_Vertex_Strategic",
+    "NDA_Quantum_JointVenture",
+    "NDA_Sterling_Mutual",
+    "NDA_Cascade_Supplier",
+    "NDA_Nexus_Investment",
+    "NDA_Atlas_Employment",
+    "NDA_Vanguard_Technical"
+  ],
+  "ground_truth": [
+    {
+      "test_id": "TechPartners_Bi_01",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "1.1",
+      "rule_name": "CI Definition - Unmarked Information Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "whether or not expressly designated or labeled as confidential",
+      "key_elements": [
+        "Delete unmarked/undesignated language",
+        "Preserve remainder of CI definition"
+      ],
+      "rationale_must_include": [
+        "Unmarked info creates overbroad scope",
+        "Receiving Party cannot identify what to protect"
+      ],
+      "unacceptable": [
+        "Deleting entire CI definition",
+        "Marking as compliant",
+        "Adding marking requirement instead of deletion"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "TechPartners_Bi_02",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "1.1",
+      "rule_name": "CI Definition - Residual Knowledge Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "retained in the unaided memory of employees as residual knowledge",
+      "key_elements": [
+        "Delete residual knowledge language",
+        "Delete unaided memory reference",
+        "Preserve core CI definition"
+      ],
+      "rationale_must_include": [
+        "Residual knowledge is unenforceable",
+        "Creates chilling effect on employee mobility"
+      ],
+      "unacceptable": [
+        "Keeping any residual knowledge language",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "TechPartners_Bi_03",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "4.1",
+      "rule_name": "Term and Survival - Perpetual Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "shall survive in perpetuity",
+      "key_elements": [
+        "three (3) years",
+        "following termination or expiration"
+      ],
+      "rationale_must_include": [
+        "Perpetual obligations unreasonable",
+        "Standard survival is 3 years"
+      ],
+      "unacceptable": [
+        "Survival > 5 years",
+        "Keeping perpetual language",
+        "Deleting survival entirely"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "TechPartners_Bi_04",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "7.1",
+      "rule_name": "Non-Solicitation - Excessive Duration Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "two (2) years",
+      "key_elements": [
+        "twelve (12) months",
+        "non-solicitation"
+      ],
+      "rationale_must_include": [
+        "Excessive duration",
+        "Standard is 12 months"
+      ],
+      "unacceptable": [
+        "Duration > 12 months",
+        "Deleting non-solicitation entirely",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "TechPartners_Bi_05",
+      "contract": "NDA_TechPartners_Bilateral",
+      "clause_ref": "8.1",
+      "rule_name": "Indemnification - Broad-form Trigger Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "whether or not caused by the negligence of the Disclosing Party",
+      "key_elements": [
+        "Delete negligence trigger",
+        "Preserve indemnification for breach"
+      ],
+      "rationale_must_include": [
+        "Broad-form shifts risk unfairly",
+        "Receiving Party should not indemnify for Disclosing Party negligence"
+      ],
+      "unacceptable": [
+        "Keeping any negligence/fault language",
+        "Deleting entire indemnity",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Meridian_Unilat_01",
+      "contract": "NDA_Meridian_Unilateral",
+      "clause_ref": "3.2",
+      "rule_name": "Compelled Disclosure - Prohibition Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "express written authorization...sole discretion",
+      "key_elements": [
+        "may disclose to extent required by law",
+        "prompt written notice",
+        "protective order"
+      ],
+      "rationale_must_include": [
+        "Cannot prohibit legally compelled disclosure",
+        "Receiving Party must comply with law"
+      ],
+      "unacceptable": [
+        "Keeping consent requirement for legal disclosure",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Meridian_Unilat_02",
+      "contract": "NDA_Meridian_Unilateral",
+      "clause_ref": "7.2",
+      "rule_name": "Non-Compete - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "refrain from...engaging in...competitive",
+      "key_elements": [
+        "Delete entire non-compete provision"
+      ],
+      "rationale_must_include": [
+        "Non-competes overly restrictive",
+        "Restraint of trade"
+      ],
+      "unacceptable": [
+        "Keeping any non-compete language",
+        "Amending duration instead of deletion"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Meridian_Unilat_03",
+      "contract": "NDA_Meridian_Unilateral",
+      "clause_ref": "7.2",
+      "rule_name": "Non-Solicitation - Excessive Duration Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "twenty-four (24) months",
+      "key_elements": [
+        "twelve (12) months"
+      ],
+      "rationale_must_include": [
+        "24 months excessive",
+        "Standard is 12 months"
+      ],
+      "unacceptable": [
+        "Duration > 12 months",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Meridian_Unilat_04",
+      "contract": "NDA_Meridian_Unilateral",
+      "clause_ref": "9.1",
+      "rule_name": "Limitation of Liability - Unlimited Exposure Flag",
+      "expected_action": "FLAG",
+      "trigger_quote": "unlimited liability",
+      "key_elements": [
+        "Flag for review",
+        "Recommend mutual liability cap"
+      ],
+      "rationale_must_include": [
+        "Unlimited exposure creates unquantifiable risk",
+        "Commercial discussion needed"
+      ],
+      "unacceptable": [
+        "Auto-deleting without flagging",
+        "Marking as compliant",
+        "Ignoring the issue"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "GlobalPharm_Res_01",
+      "contract": "NDA_GlobalPharm_Research",
+      "clause_ref": "1.1",
+      "rule_name": "CI Definition - Public Information Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "regardless of whether such information is publicly available",
+      "key_elements": [
+        "Delete public information inclusion",
+        "Preserve CI definition"
+      ],
+      "rationale_must_include": [
+        "Public info cannot be confidential",
+        "Contradicts standard carve-outs"
+      ],
+      "unacceptable": [
+        "Keeping public info language",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "GlobalPharm_Res_02",
+      "contract": "NDA_GlobalPharm_Research",
+      "clause_ref": "5.1",
+      "rule_name": "Return and Destruction - Compliance Exception Addition",
+      "expected_action": "AMEND",
+      "trigger_quote": "without exception and without retaining any portion",
+      "key_elements": [
+        "archival copy",
+        "legal compliance",
+        "backup systems",
+        "continuing confidentiality"
+      ],
+      "rationale_must_include": [
+        "Legal retention requirements",
+        "Backup systems impractical to purge"
+      ],
+      "unacceptable": [
+        "Keeping without exception language",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "GlobalPharm_Res_03",
+      "contract": "NDA_GlobalPharm_Research",
+      "clause_ref": "6.1",
+      "rule_name": "Injunctive Relief - Bond Waiver Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "waives any requirement...post any bond",
+      "key_elements": [
+        "Delete bond waiver"
+      ],
+      "rationale_must_include": [
+        "Bond waiver removes judicial protection",
+        "Receiving Party entitled to bond requirement"
+      ],
+      "unacceptable": [
+        "Keeping bond waiver",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "GlobalPharm_Res_04",
+      "contract": "NDA_GlobalPharm_Research",
+      "clause_ref": "10.1",
+      "rule_name": "Governing Law - Offshore Jurisdiction Flag",
+      "expected_action": "FLAG",
+      "trigger_quote": "Cayman Islands",
+      "key_elements": [
+        "Flag for review",
+        "Recommend jurisdiction with nexus"
+      ],
+      "rationale_must_include": [
+        "Offshore jurisdiction",
+        "No apparent nexus to parties"
+      ],
+      "unacceptable": [
+        "Auto-amending without flagging",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Vertex_Strategi_01",
+      "contract": "NDA_Vertex_Strategic",
+      "clause_ref": "4.1",
+      "rule_name": "Term and Survival - Perpetual Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "indefinitely...without limitation as to time",
+      "key_elements": [
+        "three (3) years",
+        "following termination"
+      ],
+      "rationale_must_include": [
+        "Indefinite survival unreasonable"
+      ],
+      "unacceptable": [
+        "Survival > 5 years",
+        "Keeping indefinite",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Vertex_Strategi_02",
+      "contract": "NDA_Vertex_Strategic",
+      "clause_ref": "9.2",
+      "rule_name": "Assignment - Asymmetric Rights Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "at any time without notice or consent",
+      "key_elements": [
+        "Neither party may assign",
+        "prior written consent",
+        "not unreasonably withheld"
+      ],
+      "rationale_must_include": [
+        "Asymmetric assignment unfair",
+        "Rights should be mutual"
+      ],
+      "unacceptable": [
+        "Keeping asymmetric rights",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Vertex_Strategi_03",
+      "contract": "NDA_Vertex_Strategic",
+      "clause_ref": "9.3",
+      "rule_name": "Limitation of Liability - Unlimited Exposure Flag",
+      "expected_action": "FLAG",
+      "trigger_quote": "unlimited and not subject to any monetary limitation",
+      "key_elements": [
+        "Flag for review",
+        "Recommend liability cap"
+      ],
+      "rationale_must_include": [
+        "Unlimited liability unquantifiable",
+        "Commercial discussion needed"
+      ],
+      "unacceptable": [
+        "Auto-amending without flag",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Quantum_JointVe_01",
+      "contract": "NDA_Quantum_JointVenture",
+      "clause_ref": "1.1",
+      "rule_name": "CI Definition - Residual Knowledge Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "skills, ideas...even if derived from",
+      "key_elements": [
+        "Delete residual knowledge language"
+      ],
+      "rationale_must_include": [
+        "Residual knowledge unenforceable",
+        "Chilling effect"
+      ],
+      "unacceptable": [
+        "Keeping residual language",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Quantum_JointVe_02",
+      "contract": "NDA_Quantum_JointVenture",
+      "clause_ref": "3.1",
+      "rule_name": "Compelled Disclosure - Prohibition Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "no right to disclose...to the fullest extent",
+      "key_elements": [
+        "may disclose if required by law",
+        "prompt notice",
+        "protective order"
+      ],
+      "rationale_must_include": [
+        "Cannot prohibit legal compliance"
+      ],
+      "unacceptable": [
+        "Keeping prohibition",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Quantum_JointVe_03",
+      "contract": "NDA_Quantum_JointVenture",
+      "clause_ref": "6.1",
+      "rule_name": "Injunctive Relief - Bond Waiver Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "waives any requirement for...bond",
+      "key_elements": [
+        "Delete bond waiver"
+      ],
+      "rationale_must_include": [
+        "Bond waiver removes protection"
+      ],
+      "unacceptable": [
+        "Keeping waiver",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Quantum_JointVe_04",
+      "contract": "NDA_Quantum_JointVenture",
+      "clause_ref": "7.1",
+      "rule_name": "Non-Solicitation - Excessive Duration Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "thirty-six calendar months",
+      "key_elements": [
+        "twelve (12) months"
+      ],
+      "rationale_must_include": [
+        "36 months excessive",
+        "Standard is 12 months"
+      ],
+      "unacceptable": [
+        "Duration > 12 months",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Sterling_Mutual_01",
+      "contract": "NDA_Sterling_Mutual",
+      "clause_ref": "4.1",
+      "rule_name": "Term and Survival - Excessive Duration Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "one hundred twenty (120) months",
+      "key_elements": [
+        "three (3) years"
+      ],
+      "rationale_must_include": [
+        "120 months (10 years) excessive"
+      ],
+      "unacceptable": [
+        "Survival > 5 years",
+        "Marking as compliant"
+      ],
+      "marker": "[COMPOUND]"
+    },
+    {
+      "test_id": "Sterling_Mutual_02",
+      "contract": "NDA_Sterling_Mutual",
+      "clause_ref": "7.1",
+      "rule_name": "Non-Compete - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "not to engage in, own, manage...competes",
+      "key_elements": [
+        "Delete entire non-compete"
+      ],
+      "rationale_must_include": [
+        "Non-compete overly restrictive"
+      ],
+      "unacceptable": [
+        "Keeping any non-compete",
+        "Amending instead of deleting"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Sterling_Mutual_03",
+      "contract": "NDA_Sterling_Mutual",
+      "clause_ref": "8.1",
+      "rule_name": "Indemnification - Broad-form Trigger Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "without regard to the contributing fault",
+      "key_elements": [
+        "Delete fault/negligence trigger"
+      ],
+      "rationale_must_include": [
+        "Broad-form indemnity unfair"
+      ],
+      "unacceptable": [
+        "Keeping fault language",
+        "Marking as compliant"
+      ],
+      "marker": "[COMPOUND]"
+    },
+    {
+      "test_id": "Sterling_Mutual_04",
+      "contract": "NDA_Sterling_Mutual",
+      "clause_ref": "8.1",
+      "rule_name": "Governing Law - Distant Jurisdiction Flag",
+      "expected_action": "FLAG",
+      "trigger_quote": "Singapore...exclusive jurisdiction",
+      "key_elements": [
+        "Flag for review",
+        "Recommend jurisdiction with nexus"
+      ],
+      "rationale_must_include": [
+        "Distant jurisdiction",
+        "No apparent nexus"
+      ],
+      "unacceptable": [
+        "Auto-amending",
+        "Marking as compliant"
+      ],
+      "marker": "[COMPOUND]"
+    },
+    {
+      "test_id": "Cascade_Supplie_01",
+      "contract": "NDA_Cascade_Supplier",
+      "clause_ref": "1.1",
+      "rule_name": "CI Definition - Oral Disclosure Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "oral disclosures need not be confirmed in writing",
+      "key_elements": [
+        "confirmed in writing",
+        "ten (10) business days"
+      ],
+      "rationale_must_include": [
+        "Oral disclosures need written confirmation",
+        "Avoid disputes"
+      ],
+      "unacceptable": [
+        "Keeping no-confirmation language",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Cascade_Supplie_02",
+      "contract": "NDA_Cascade_Supplier",
+      "clause_ref": "5.1",
+      "rule_name": "Return and Destruction - Compliance Exception Addition",
+      "expected_action": "AMEND",
+      "trigger_quote": "no copies...have been retained",
+      "key_elements": [
+        "archival copy",
+        "legal compliance",
+        "backup systems"
+      ],
+      "rationale_must_include": [
+        "Legal retention needs",
+        "Backup purge impractical"
+      ],
+      "unacceptable": [
+        "Keeping strict destruction",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Cascade_Supplie_03",
+      "contract": "NDA_Cascade_Supplier",
+      "clause_ref": "9.1",
+      "rule_name": "Assignment - Asymmetric Rights Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "at any time...without notice to or consent from",
+      "key_elements": [
+        "Neither party",
+        "prior written consent",
+        "not unreasonably withheld"
+      ],
+      "rationale_must_include": [
+        "Asymmetric rights unfair",
+        "Should be mutual"
+      ],
+      "unacceptable": [
+        "Keeping asymmetric",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Nexus_Investmen_01",
+      "contract": "NDA_Nexus_Investment",
+      "clause_ref": "3.1",
+      "rule_name": "Compelled Disclosure - Prohibition Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "shall not disclose unless and until",
+      "key_elements": [
+        "may disclose if required by law",
+        "prompt notice"
+      ],
+      "rationale_must_include": [
+        "Cannot prohibit legal compliance"
+      ],
+      "unacceptable": [
+        "Keeping prohibition",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Nexus_Investmen_02",
+      "contract": "NDA_Nexus_Investment",
+      "clause_ref": "7.1",
+      "rule_name": "Non-Solicitation - Excessive Duration Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "eighteen (18) months",
+      "key_elements": [
+        "twelve (12) months"
+      ],
+      "rationale_must_include": [
+        "18 months excessive"
+      ],
+      "unacceptable": [
+        "Duration > 12 months",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Nexus_Investmen_03",
+      "contract": "NDA_Nexus_Investment",
+      "clause_ref": "6.1",
+      "rule_name": "Injunctive Relief - Bond Waiver Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "post any form of bond",
+      "key_elements": [
+        "Delete bond waiver"
+      ],
+      "rationale_must_include": [
+        "Bond waiver removes protection"
+      ],
+      "unacceptable": [
+        "Keeping waiver",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Nexus_Investmen_04",
+      "contract": "NDA_Nexus_Investment",
+      "clause_ref": "9.1",
+      "rule_name": "Limitation of Liability - Unlimited Exposure Flag",
+      "expected_action": "FLAG",
+      "trigger_quote": "without any monetary ceiling",
+      "key_elements": [
+        "Flag for review"
+      ],
+      "rationale_must_include": [
+        "Unlimited liability unquantifiable"
+      ],
+      "unacceptable": [
+        "Auto-amending",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Atlas_Employmen_01",
+      "contract": "NDA_Atlas_Employment",
+      "clause_ref": "1.1",
+      "rule_name": "CI Definition - Residual Knowledge Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "embedded in the skills and experience",
+      "key_elements": [
+        "Delete residual knowledge"
+      ],
+      "rationale_must_include": [
+        "Residual knowledge unenforceable"
+      ],
+      "unacceptable": [
+        "Keeping residual",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Atlas_Employmen_02",
+      "contract": "NDA_Atlas_Employment",
+      "clause_ref": "4.1",
+      "rule_name": "Term and Survival - Perpetual Amendment",
+      "expected_action": "AMEND",
+      "trigger_quote": "continue in force forever",
+      "key_elements": [
+        "three (3) years"
+      ],
+      "rationale_must_include": [
+        "Perpetual unreasonable"
+      ],
+      "unacceptable": [
+        "Keeping perpetual",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Atlas_Employmen_03",
+      "contract": "NDA_Atlas_Employment",
+      "clause_ref": "7.1",
+      "rule_name": "Non-Compete - Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "shall not...engage in any capacity",
+      "key_elements": [
+        "Delete entire non-compete"
+      ],
+      "rationale_must_include": [
+        "Non-compete overly restrictive"
+      ],
+      "unacceptable": [
+        "Keeping any non-compete"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Atlas_Employmen_04",
+      "contract": "NDA_Atlas_Employment",
+      "clause_ref": "8.1",
+      "rule_name": "Indemnification - Broad-form Trigger Deletion",
+      "expected_action": "DELETE",
+      "trigger_quote": "including claims...contributed to",
+      "key_elements": [
+        "Delete fault trigger"
+      ],
+      "rationale_must_include": [
+        "Broad-form unfair"
+      ],
+      "unacceptable": [
+        "Keeping fault language",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Vanguard_Techni_01",
+      "contract": "NDA_Vanguard_Technical",
+      "clause_ref": "5.1",
+      "rule_name": "Return and Destruction - Compliance Exception Addition",
+      "expected_action": "AMEND",
+      "trigger_quote": "for any purpose, including legal",
+      "key_elements": [
+        "archival copy",
+        "legal compliance"
+      ],
+      "rationale_must_include": [
+        "Legal retention needs"
+      ],
+      "unacceptable": [
+        "Keeping strict destruction",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Vanguard_Techni_02",
+      "contract": "NDA_Vanguard_Technical",
+      "clause_ref": "10.1",
+      "rule_name": "Governing Law - Distant Jurisdiction Flag",
+      "expected_action": "FLAG",
+      "trigger_quote": "Dubai, United Arab Emirates",
+      "key_elements": [
+        "Flag for review"
+      ],
+      "rationale_must_include": [
+        "Distant jurisdiction",
+        "No nexus"
+      ],
+      "unacceptable": [
+        "Auto-amending",
+        "Marking as compliant"
+      ],
+      "marker": null
+    },
+    {
+      "test_id": "Vanguard_Techni_03",
+      "contract": "NDA_Vanguard_Technical",
+      "clause_ref": "9.1",
+      "rule_name": "Limitation of Liability - Unlimited Exposure Flag",
+      "expected_action": "FLAG",
+      "trigger_quote": "unlimited in amount and scope",
+      "key_elements": [
+        "Flag for review"
+      ],
+      "rationale_must_include": [
+        "Unlimited liability"
+      ],
+      "unacceptable": [
+        "Auto-amending",
+        "Marking as compliant"
+      ],
+      "marker": null
+    }
+  ]
+}

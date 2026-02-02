@@ -1,0 +1,1064 @@
+{
+  "meta": {
+    "contract": "services",
+    "model_id": "pioneer_deep",
+    "evaluation_timestamp": "2026-01-25T19:15:00Z",
+    "evaluator_model": "opus",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Exclusion of Damages - No Carve-outs",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-10.1 Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM THIS AGREEMENT; PROVIDED, HOWEVER, THIS EXCLUSION SHALL NOT APPLY TO A PARTY'S BREACH OF CONFIDENTIALITY, INFRINGEMENT OR MISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS, DATA SECURITY INCIDENTS, OR A PARTY'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT, OR ITS INDEMNIFICATION OBLIGATIONS.",
+        "effective_rationale_excerpt": "Standard, but add carve-outs for breach of confidentiality, IP infringement, data/security incidents, gross negligence/willful misconduct, and indemnities; otherwise Client may lack meaningful recovery.",
+        "judge_reasoning": "Pioneer Deep comprehensively identifies the issue and proposes all the carve-outs expected by GT (confidentiality, IP infringement, data security, gross negligence, willful misconduct, indemnities). The redline is well-drafted with proper legal language and immediate usability."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Liability Cap SOW-Based - Creates Variable Exposure Per Engagement",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-10.2 Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT FOR A PARTY'S BREACH OF CONFIDENTIALITY, INFRINGEMENT OR MISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS, DATA SECURITY INCIDENTS, GROSS NEGLIGENCE OR WILLFUL MISCONDUCT, OR INDEMNIFICATION OBLIGATIONS, AGENCY'S TOTAL LIABILITY UNDER AN APPLICABLE SOW SHALL NOT EXCEED TWO (2) TIMES THE FEES PAID BY CLIENT UNDER SUCH SOW.",
+        "effective_rationale_excerpt": "Cap to fees under the applicable SOW is low and lacks carve-outs. Increase to 2x-3x fees paid under the SOW (or annual fees) and carve out confidentiality, IP infringement, data breaches, gross negligence, willful misconduct, and indemnity obligations.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the SOW-based cap as insufficient and proposes 2x SOW fees with comprehensive carve-outs. Addresses all GT key elements including the need for higher multiplier and exclusions for serious breaches."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Agency IP License Restrictive",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-5.2 Agency IP",
+      "evidence": {
+        "proposed_revision_excerpt": "Agency grants Client a non-exclusive, perpetual, worldwide, royalty-free license to use, reproduce, display, perform, modify, and create derivative works of such Agency IP as necessary to use and exploit the Deliverables, including sublicensing to Client's affiliates and service providers.",
+        "effective_rationale_excerpt": "License is 'solely as part of the Deliverables,' which may restrict internal adaptations. Expand to allow internal modifications and sublicensing to affiliates, vendors, and channels necessary to exploit the Deliverables.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the restrictive 'solely as part of Deliverables' limitation and proposes comprehensive expansion including modification rights, derivative works, and sublicensing to affiliates and service providers. Directly addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Silence = Rejection (UNUSUAL)",
+      "detection": "Y",
+      "detection_points": 8.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17.0,
+      "matched_redline_id": "Redline-6.1 Review Period",
+      "evidence": {
+        "proposed_revision_excerpt": "If Client fails to provide written notice within such period, the Deliverable shall be deemed accepted. For any timely rejection, Agency shall promptly cure the specified deficiencies and resubmit for review.",
+        "effective_rationale_excerpt": "Deemed rejection by silence is atypical and penalizes Client. Standard is deemed acceptance or a clear cure process. Replace with deemed acceptance if no response and require Agency to cure any timely, specific rejections.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the highly unusual 'silence = rejection' provision and proposes replacing it with industry-standard 'deemed acceptance'. The redline also adds a proper cure process for timely rejections. Comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-3.4 Payment Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "Late payments on undisputed amounts shall bear interest at the lesser of one percent (1.0%) per month or the maximum rate permitted by law.",
+        "effective_rationale_excerpt": "30 days is fine, but no right to withhold disputed amounts; interest at 1.5%/month is high, and no cap to the lesser of legal limit. Add bona fide dispute mechanism, suspend interest on disputed sums, and cap at 1%/month or legal maximum.",
+        "judge_reasoning": "Pioneer Deep identifies the high 1.5% monthly rate and proposes reducing to 1% or legal maximum. Also adds dispute mechanism and suspension of interest on disputed amounts. Comprehensive fix addressing all GT concerns."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "Delays - Open-ended Fees",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-4.3 Delays",
+      "evidence": {
+        "proposed_revision_excerpt": "Any additional fees shall apply only to documented, incremental costs reasonably incurred after such notice.",
+        "effective_rationale_excerpt": "Automatic timeline extensions plus 'additional fees' for delays shifts risk entirely to Client without a cure period or proportionality. Require written notice, mitigation efforts, and fees only for documented incremental costs after notice.",
+        "judge_reasoning": "Pioneer Deep comprehensively addresses the GT concern with requirements for written notice, mitigation, and limitation of fees to documented incremental costs. Directly addresses all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T2",
+      "issue": "Ownership Excludes Non-Final Materials",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-5.1 Ownership of Deliverables",
+      "evidence": {
+        "proposed_revision_excerpt": "To the fullest extent permitted by law, the final approved Deliverables created specifically for Client are 'works made for hire' for Client. To the extent not so deemed, upon full payment Agency hereby irrevocably assigns to Client all right, title, and interest therein, including all intellectual property rights, and will deliver editable/source files unless expressly excluded in the SOW.",
+        "effective_rationale_excerpt": "Grants ownership upon full payment but lacks work-made-for-hire/assignment language and does not ensure transfer of source files. Add work-made-for-hire plus assignment and obligation to deliver editable/source files unless excluded in SOW.",
+        "judge_reasoning": "Pioneer Deep identifies the limitation to 'final approved Deliverables' and proposes comprehensive fix with work-for-hire language, assignment, and source file delivery requirement. Addresses GT concerns about missing non-final materials."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "Preliminary Work Retained by Agency",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-5.3 Preliminary Work",
+      "evidence": {
+        "proposed_revision_excerpt": "Client shall have a non-exclusive, royalty-free license to use such materials internally for evaluation, testing, and to facilitate integration into the final Deliverables.",
+        "effective_rationale_excerpt": "Client gets no license to internal comps/drafts used in production handoff; this can impede finalization. Provide a limited internal-use license to preliminary work for evaluation and integration into final Deliverables.",
+        "judge_reasoning": "Pioneer Deep identifies the issue and proposes granting Client a limited internal-use license. This is adequate but GT suggests full ownership transfer, so the license approach is a partial solution. Score reduced as it doesn't fully address competitive reuse concern."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Use in Commerce = Final Acceptance",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11.0,
+      "matched_redline_id": "Redline-6.3 Final Acceptance",
+      "evidence": {
+        "proposed_revision_excerpt": "Client's external commercial use or public distribution of any Deliverable shall constitute final acceptance of such Deliverable; provided that internal use for testing, evaluation, staging, or demonstrations shall not constitute acceptance.",
+        "effective_rationale_excerpt": "Practical, but clarify that incidental internal use for testing, staging, or demos is not acceptance.",
+        "judge_reasoning": "Pioneer Deep identifies the use=acceptance issue and adds carve-out for internal testing/staging. However, GT concern is broader about waiving rights to reject defects when urgent use is needed. The fix is adequate but doesn't fully address the warranty waiver concern."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Warranties - No Duration or Specific Remedy",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 2,
+      "rationale_score": 3,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12.0,
+      "matched_redline_id": "Redline-8.1 Agency Warranties",
+      "evidence": {
+        "proposed_revision_excerpt": "Agency represents and warrants that: (a) it has the right to enter into this Agreement; (b) the Services will be performed in a professional and workmanlike manner in accordance with industry standards; (c) the Deliverables will conform to the specifications in the applicable SOW; (d) the Deliverables (including third-party materials selected by Agency) will not infringe third-party rights; and (e) Agency will comply with applicable laws, regulations, and advertising standards.",
+        "effective_rationale_excerpt": "Professional manner and conformity are good; add re-performance remedy window, compliance with laws/advertising standards, and no malware. Ensure IP non-infringement includes third-party materials curated by Agency.",
+        "judge_reasoning": "Pioneer Deep proposes adding industry standards, legal compliance, and coverage of third-party materials. The rationale mentions re-performance remedy window but the redline doesn't explicitly add a warranty duration period as GT expects. Good but incomplete on duration."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "8.3",
+      "tier": "T2",
+      "issue": "Broad Disclaimer",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-8.3 Disclaimer",
+      "evidence": {
+        "proposed_revision_excerpt": "EXCEPT AS EXPRESSLY SET FORTH HEREIN, AND SUBJECT TO SECTIONS 8.1 AND 11, AGENCY MAKES NO OTHER WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. NOTHING IN THIS SECTION LIMITS LIABILITY FOR FRAUD, GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR NON-EXCLUDABLE STATUTORY RIGHTS.",
+        "effective_rationale_excerpt": "Broad disclaimer could negate performance warranties. Add carve-outs for express warranties, fraud, gross negligence, statutory non-waivables, and IP infringement commitments.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the broad disclaimer issue and proposes comprehensive carve-outs for express warranties (8.1), indemnities (11), fraud, gross negligence, willful misconduct, and non-excludable statutory rights. Excellent fix."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality - 3 Years Only",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-9.1 Confidentiality Obligations",
+      "evidence": {
+        "proposed_revision_excerpt": "Obligations survive for three (3) years, except trade secrets and personal data, which shall be protected for so long as they remain confidential. Upon request or termination, each Party shall promptly return or destroy Confidential Information.",
+        "effective_rationale_excerpt": "Three-year survival is too short for trade secrets and sensitive brand plans. Define Confidential Information, include typical exclusions, require protection standards, and make trade secret protection indefinite; add return/destruction obligations.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the 3-year limit as insufficient and proposes indefinite protection for trade secrets and personal data with return/destruction obligations. Comprehensive fix addressing all GT key elements."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "12.4",
+      "tier": "T2",
+      "issue": "Termination - No Data Return",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-12.4 Effect of Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "(b) Agency shall deliver all completed and in-progress work product (including editable/source files) and assign related rights for which Client has paid; and (c) Agency shall refund any prepaid amounts for Services not performed.",
+        "effective_rationale_excerpt": "Only completed, paid work is delivered; no obligation to deliver work-in-progress or refund prepaid amounts for unperformed work. Require delivery of WIP, transition assistance, IP assignment, and refund of unearned fees.",
+        "judge_reasoning": "Pioneer Deep comprehensively addresses the termination provisions with WIP delivery, source files, IP assignment, and refunds. The rationale mentions transition assistance. Fully addresses GT concern about data return."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "13.2",
+      "tier": "T2",
+      "issue": "Mandatory Arbitration in NY",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-13.2 Dispute Resolution",
+      "evidence": {
+        "proposed_revision_excerpt": "The Parties shall escalate disputes to senior management for good-faith negotiation, then to non-binding mediation. Unresolved disputes shall be resolved by arbitration in New York, New York, and either Party may seek temporary injunctive relief in court to protect intellectual property or Confidential Information. Hearings may be conducted virtually by agreement.",
+        "effective_rationale_excerpt": "Add good-faith escalation/mediation step, allow injunctive relief in court for IP/confidentiality, and permit virtual hearings to reduce burden.",
+        "judge_reasoning": "Pioneer Deep proposes adding negotiation and mediation steps before arbitration, preserving court access for injunctive relief, and allowing virtual hearings. Comprehensive fix addressing all GT concerns about mandatory arbitration."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection Clause",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-New-1 Data Protection and Security",
+      "evidence": {
+        "proposed_revision_excerpt": "To the extent Agency processes personal data on behalf of Client, Agency shall implement appropriate technical and organizational measures to protect such data; process it only on documented instructions from Client; promptly notify Client of any personal data breach; and execute a data processing addendum as required by applicable laws.",
+        "effective_rationale_excerpt": "No data protection obligations, despite likely processing of personal data in campaigns. Require compliance with applicable privacy laws (e.g., CCPA, GDPR where applicable), security controls, breach notification, and DPAs where needed.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the missing data protection clause and proposes comprehensive language with technical measures, processing on instructions, breach notification, and DPA requirements. Fully addresses GT."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements",
+      "detection": "Y",
+      "detection_points": 5.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14.0,
+      "matched_redline_id": "Redline-New-3 Insurance",
+      "evidence": {
+        "proposed_revision_excerpt": "During the term, Agency shall maintain commercially reasonable insurance, including commercial general liability, professional/media liability, and cyber liability, each with limits customary for the industry and scope of Services. Upon request, Agency shall provide certificates of insurance and name Client as an additional insured where applicable.",
+        "effective_rationale_excerpt": "No insurance commitment from Agency. Require professional liability, media liability, cyber, and general liability with proof of coverage and Client as additional insured where applicable.",
+        "judge_reasoning": "Pioneer Deep correctly identifies missing insurance requirements and proposes comprehensive coverage including CGL, professional/media liability, and cyber liability with certificates and additional insured status. Fully addresses GT."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.4",
+      "tier": "T3",
+      "issue": "Portfolio Rights - Subject to Confidentiality",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-5.4 Portfolio Rights",
+      "evidence": {
+        "proposed_revision_excerpt": "Agency may display Deliverables in its portfolio, website, and marketing materials only with Client's prior written consent (not to be unreasonably withheld) and not before the public launch of the applicable campaign. Upon Client's written notice for regulatory or brand reasons, Agency shall promptly remove any such displays.",
+        "effective_rationale_excerpt": "Agency may display Deliverables subject to confidentiality, but lacks launch timing, approval, or takedown rights. Add prior written consent (not to be unreasonably withheld) and no use before public launch; include takedown upon notice for regulatory or brand reasons.",
+        "judge_reasoning": "Pioneer Deep comprehensively addresses the portfolio rights issue with prior consent requirement, pre-launch protection, and takedown rights. Excellent fix going beyond GT minimum expectations."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "1.1",
+      "tier": "T3",
+      "issue": "Agency IP Definition Broad",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-1.1 Definition of Agency IP",
+      "evidence": {
+        "proposed_revision_excerpt": "For clarity, Deliverables and any work products created specifically for Client are not Agency IP, except embedded Agency IP components.",
+        "effective_rationale_excerpt": "The definition is broad and could sweep in items developed during the relationship if not carefully limited to pre-existing and independently developed materials. Without an express reservation for Client-funded developments, ambiguity may arise over what is Agency IP versus Deliverables.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the broad Agency IP definition issue and proposes clarifying that Client-funded work is excluded from Agency IP. Directly addresses GT concern."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Change Orders - No Response Timeline",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Risk table for 2.2: 'Requires written change orders; protects Client from unilateral scope or fee changes.' - Classified as Favorable, No Action Required.",
+        "judge_reasoning": "Pioneer Deep marked 2.2 as Favorable without identifying the GT concern about no deadline for Agency to respond to change requests and no dispute process. This is N - marked compliant when issue exists."
+      }
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Expenses - Documentation Unclear",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-3.2 Expenses",
+      "evidence": {
+        "proposed_revision_excerpt": "Client shall reimburse Agency for pre-approved, documented out-of-pocket expenses at cost (without markup), including stock photography, fonts, printing, and travel. Expenses exceeding $500 require Client's prior written approval. Agency shall provide receipts for all expenses and obtain Client's prior written approval for any single expense over $500 or any month in which aggregate expenses exceed $2,500.",
+        "effective_rationale_excerpt": "Pre-approval is required and a $500 threshold is helpful, but lacks caps, documentation standards, and pass-through at cost. Add monthly caps, receipt requirements, and cost-at-cost plus pre-approval for travel.",
+        "judge_reasoning": "Pioneer Deep comprehensively addresses expense documentation with receipt requirements, pass-through at cost, monthly aggregate caps, and no markup. Fully addresses GT concern about unclear documentation."
+      }
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Deposit Triggers Unclear",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-3.3 Invoicing; deposits",
+      "evidence": {
+        "proposed_revision_excerpt": "For project work, any deposit shall be tied to clearly defined milestones, and subsequent invoices shall be issued upon achievement of milestone deliverables and Client's acceptance under Section 6. Milestone schedules and amounts shall be set forth in the applicable SOW.",
+        "effective_rationale_excerpt": "Deposit up to 50% is common, but no invoicing cadence or milestone-based billing requirement is specified. Require milestone-based invoices and linkage to acceptance criteria to protect cash flow against nonconforming work.",
+        "judge_reasoning": "Pioneer Deep addresses the deposit concern by tying deposits to milestones and acceptance criteria. Clarifies when deposits apply through SOW linkage. Comprehensive fix."
+      }
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Revisions - No Definition",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 8.0,
+      "matched_redline_id": "Redline-6.2 Revisions",
+      "evidence": {
+        "proposed_revision_excerpt": "revisions necessary to correct nonconformity with the SOW or prior written specifications shall be at Agency's cost.",
+        "effective_rationale_excerpt": "Reasonable baseline, but should tie to achievement of specifications and allow additional rounds if nonconformity persists at Agency's cost.",
+        "judge_reasoning": "Pioneer Deep proposes tying revisions to conformity with SOW and putting non-conforming revisions at Agency's cost. However, GT concern is specifically about defining what constitutes a 'revision' - this isn't explicitly addressed. Good but slightly off-target."
+      }
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "13.1",
+      "tier": "T3",
+      "issue": "Governing Law - No Flexibility",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7.0,
+      "matched_redline_id": "Redline-13.1 Governing Law",
+      "evidence": {
+        "proposed_revision_excerpt": "This Agreement shall be governed by the laws of the State of New York, without regard to its conflicts of laws principles.",
+        "effective_rationale_excerpt": "Acceptable, but consider adding conflicts-of-law waiver and specify that UCC/choice-of-law exclusions don't limit statutory consumer/marketing laws where applicable.",
+        "judge_reasoning": "Pioneer Deep adds the conflicts-of-law waiver but doesn't address the GT concern about flexibility for Client's jurisdiction. The fix focuses on conflicts principles rather than jurisdiction flexibility. Partial fix."
+      }
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "N/A (Missing)",
+      "tier": "T3",
+      "issue": "No Force Majeure",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-New-2 Force Majeure",
+      "evidence": {
+        "proposed_revision_excerpt": "Neither Party shall be liable for failure or delay in performance (other than payment obligations) due to events beyond its reasonable control, provided it gives prompt notice and uses commercially reasonable efforts to mitigate. If such event continues for thirty (30) days, the unaffected Party may terminate the affected SOW or this Agreement upon written notice.",
+        "effective_rationale_excerpt": "No clause excusing performance for unforeseeable events; this creates uncertainty and disputes risk. Add standard force majeure with notice, mitigation, and termination if extended.",
+        "judge_reasoning": "Pioneer Deep correctly identifies the missing force majeure clause and proposes comprehensive language with notice, mitigation requirement, and 30-day termination trigger. Fully addresses GT."
+      }
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "N/A (Missing)",
+      "tier": "T3",
+      "issue": "No Service Level Commitments",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-New-6 Service Levels and Escalation",
+      "evidence": {
+        "proposed_revision_excerpt": "Agency shall meet response and resolution timelines agreed in the applicable SOW. If Agency misses a milestone or service level, the Parties shall escalate to designated senior managers to develop a remediation plan, and Agency shall, at no additional charge, allocate additional resources reasonably necessary to meet revised timelines.",
+        "effective_rationale_excerpt": "No service levels or escalation path for delays/defects. Add response/resolution timelines and management escalation to drive timely performance.",
+        "judge_reasoning": "Pioneer Deep proposes comprehensive SLA clause with response/resolution timelines, escalation to senior management, and resource allocation requirements. Fully addresses GT concern about missing service levels."
+      }
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "13.3",
+      "tier": "T3",
+      "issue": "Assignment - No M&A Exception (Mutual)",
+      "detection": "Y",
+      "detection_points": 1.0,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10.0,
+      "matched_redline_id": "Redline-13.3 Assignment",
+      "evidence": {
+        "proposed_revision_excerpt": "Client may assign to its affiliates or in connection with a merger, acquisition, corporate reorganization, or sale of substantially all assets upon notice. Agency shall not subcontract material obligations without Client's prior written consent and remains responsible for its subcontractors.",
+        "effective_rationale_excerpt": "Restrictive for Client corporate transactions. Permit Client assignment to affiliates or upon change of control without consent; restrict Agency assignment/subcontracting without consent and maintain responsibility.",
+        "judge_reasoning": "Pioneer Deep addresses the assignment restriction by adding M&A exception for Client, affiliate assignment, and subcontracting controls for Agency. Comprehensive fix addressing all GT elements."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Agency IP",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The definition is broad and could sweep in items developed during the relationship if not carefully limited to pre-existing and independently developed materials. Without an express reservation for Cl"
+    },
+    {
+      "clause": "1.3",
+      "issue_summary": "Definition of Deliverables",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Tangible work product” risks excluding source files, native design files, and editable assets necessary for ongoing use. This can limit Client’s ability to modify or reuse Deliverables post-project. "
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Expenses reimbursement",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Pre-approval is required and a $500 threshold is helpful, but lacks caps, documentation standards, and pass-through at cost. Add monthly caps, receipt requirements, and cost-at-cost plus pre-approval "
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Invoicing; deposits",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Deposit up to 50% is common, but no invoicing cadence or milestone-based billing requirement is specified. Require milestone-based invoices and linkage to acceptance criteria to protect cash flow agai"
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Client Materials provision",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Client obligations are broad without reciprocal obligations on Agency to provide clear specs/requests. Add Agency duty to specify required inputs and lead times, reducing risk of alleged Client-caused"
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Ownership of Deliverables upon payment",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Grants ownership upon full payment but lacks work-made-for-hire/assignment language and does not ensure transfer of source files. Add work-made-for-hire plus assignment and obligation to deliver edita"
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Agency IP retained; license to Client",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "License is “solely as part of the Deliverables,” which may restrict internal adaptations. Expand to allow internal modifications and sublicensing to affiliates, vendors, and channels necessary to expl"
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Two revision rounds",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Reasonable baseline, but should tie to achievement of specifications and allow additional rounds if nonconformity persists at Agency’s cost."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Use equals final acceptance",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Practical, but clarify that incidental internal use for testing, staging, or demos is not acceptance."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "License costs borne by Client",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cost allocation is acceptable, but require prior written approval, pass-through at cost, and delivery of license documents to Client."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Agency warranties",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Professional manner and conformity are good; add re-performance remedy window, compliance with laws/advertising standards, and no malware. Ensure IP non-infringement includes third-party materials cur"
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Exclusion of consequential damages",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard, but add carve-outs for breach of confidentiality, IP infringement, data/security incidents, gross negligence/willful misconduct, and indemnities; otherwise Client may lack meaningful recover"
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Agency IP indemnity",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Good baseline, but should include duty to defend, obtain replacements, or refund, and cover third-party materials curated by Agency. Add control-of-defense and settlement protections for Client."
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Client indemnity to Agency",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Reasonable scope for Client Materials/instructions, but ensure it excludes Agency’s negligence and misuse, and is reciprocal in structure to Agency’s indemnity with equivalent defense/settlement proce"
+    },
+    {
+      "clause": "12.3",
+      "issue_summary": "Termination for cause; 15-day cure",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Short cure may be fine, but clarify material breach definition and allow immediate termination for data/security incidents, compliance violations, or insolvency."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Governing law: New York",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Acceptable, but consider adding conflicts-of-law waiver and specify that UCC/choice-of-law exclusions don’t limit statutory consumer/marketing laws where applicable."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Arbitration in New York",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Add good-faith escalation/mediation step, allow injunctive relief in court for IP/confidentiality, and permit virtual hearings to reduce burden."
+    },
+    {
+      "clause": "New-5",
+      "issue_summary": "Compliance with laws and advertising standards",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limited compliance commitments. Add explicit compliance with advertising, consumer protection, endorsements, accessibility, and industry guidelines applicable to campaigns."
+    },
+    {
+      "clause": "New-6",
+      "issue_summary": "Escalation and service levels",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No service levels or escalation path for delays/defects. Add response/resolution timelines and management escalation to drive timely performance."
+    },
+    {
+      "clause": "1.1 Definition of Agency IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause defines Agency IP broadly, risking overreach into Client-funded outputs. This amendment narrowly confirms Agency IP excludes items created specifically for Client while recognizing"
+    },
+    {
+      "clause": "1.3 Definition of Deliverables",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original definition limits Deliverables to “tangible work product,” risking exclusion of editable/source files needed for ongoing use. This change clarifies that Deliverables include editable and "
+    },
+    {
+      "clause": "3.2 Expenses",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks documentation and caps, exposing Client to unexpected costs. This revision adds pass-through “at cost,” receipt requirements, and monthly and per-item pre-approval controls. "
+    },
+    {
+      "clause": "3.3 Invoicing; deposits",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original language permits large upfront deposits without linking to delivery. The revision ties deposits and invoicing to milestone achievement and acceptance, aligning cash flow to performance. F"
+    },
+    {
+      "clause": "3.4 Payment Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks a dispute mechanism and applies a high default interest. This revision allows good-faith withholding of disputed amounts with notice and lowers interest to a reasonable, lega"
+    },
+    {
+      "clause": "4.1 Client Responsibilities",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause imposes broad duties on Client without reciprocal clarity. By requiring Agency to specify what is needed, when, and in what form, this change reduces the risk of alleged Client-cau"
+    },
+    {
+      "clause": "4.3 Delays",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause automatically extends timelines and adds fees without notice or mitigation, shifting risk to Client. This revision requires written notice, proportional extensions, and limits fees"
+    },
+    {
+      "clause": "5.1 Ownership of Deliverables",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original grants ownership but lacks work-made-for-hire and assignment language and does not commit to delivering source files. This revision ensures clear vesting of IP in Client and access to edi"
+    },
+    {
+      "clause": "5.2 Agency IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original license “solely as part of the Deliverables” may block reasonable modifications and sublicensing to affiliates or vendors. This revision permits necessary exploitation, modifications, and"
+    },
+    {
+      "clause": "5.3 Preliminary Work",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause denies Client any rights to preliminary materials, which can impede review and integration. This revision provides a limited internal-use license to evaluate and support finalizati"
+    },
+    {
+      "clause": "5.4 Portfolio Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original grants broad publicity rights subject only to confidentiality. The revision adds pre-launch protection, prior consent, and takedown on notice. From Client’s perspective, it protects brand"
+    },
+    {
+      "clause": "6.1 Review Period",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original deems silence as rejection, creating unnecessary churn and dispute risk. The revision implements standard deemed acceptance and preserves a clear cure process for timely, specific rejecti"
+    },
+    {
+      "clause": "6.2 Revisions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original caps revisions and charges extra regardless of fault. This change clarifies that fixes for nonconforming work remain at Agency’s expense while preserving the two-round baseline for prefer"
+    },
+    {
+      "clause": "6.3 Final Acceptance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original could treat internal testing as final acceptance. The revision narrows acceptance to external commercial/public use and excludes internal evaluation. From Client’s perspective, it preserv"
+    },
+    {
+      "clause": "7.1 Third-Party Licenses",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original requires “appropriate” licenses but doesn’t ensure fitness for intended use or transferability, risking re-licensing costs or infringement. This revision adds scope fitness and transferab"
+    },
+    {
+      "clause": "7.2 License Costs",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original assigns costs but lacks transparency and approval safeguards. The revision requires prior approval, delivery of license documents, and pass-through at cost. From Client’s perspective, it "
+    },
+    {
+      "clause": "8.1 Agency Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original is directionally sound but lacks industry-standard language, legal compliance, and explicit coverage of third-party materials curated by Agency. This revision strengthens performance and "
+    },
+    {
+      "clause": "8.3 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original broad disclaimer could undercut express warranties. The revision preserves express warranties and carves out non-excludable liabilities. From Client’s perspective, it prevents Agency from"
+    },
+    {
+      "clause": "9.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original lacks standard protections, exclusions, and indefinite treatment of trade secrets. The revision adds care standards, permitted disclosures, indefinite protection for trade secrets/persona"
+    },
+    {
+      "clause": "10.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original blanket exclusion can nullify meaningful remedies for key risks. The revision adds standard carve-outs for confidentiality, IP, data incidents, gross negligence/willful misconduct, and in"
+    },
+    {
+      "clause": "10.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original cap is low and lacks carve-outs, potentially leaving Client undercompensated. The revision raises the cap to 2x SOW fees and carves out critical categories. From Client’s perspective, it "
+    },
+    {
+      "clause": "11.1 Agency Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original indemnity lacks a duty to defend and meaningful remedies. This revision adds defense, broader coverage including third-party materials, and standard remediation options or refunds. From C"
+    },
+    {
+      "clause": "11.2 Client Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original indemnity is broad and could capture Agency-caused harms. This revision narrows to written instructions and excludes Agency negligence/breach, preserving fair allocation. From Client’s pe"
+    },
+    {
+      "clause": "12.2 Termination for Convenience",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original prevents termination of SOWs, locking Client into projects even if priorities or budgets shift. The revision provides Client SOW-level termination with equitable wind-down terms. From Cli"
+    },
+    {
+      "clause": "12.3 Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original applies a single cure period for all breaches. The revision adds immediate termination for critical events (security, legal, insolvency) where cure is impractical. From Client’s perspecti"
+    },
+    {
+      "clause": "12.4 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original limits delivery to completed work and omits refunds, disadvantaging Client. The revision requires delivery of WIP and refunds for unperformed services, ensuring value for amounts paid. Fr"
+    },
+    {
+      "clause": "13.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original lacks a conflicts-of-law disclaimer, which could invite application of another jurisdiction’s law. The revision clarifies New York law applies without conflicts principles. From Client’s "
+    },
+    {
+      "clause": "13.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original mandates arbitration without escalation and blocks urgent injunctive relief. The revision adds negotiation/mediation steps and preserves court access for urgent IP/confidentiality issues,"
+    },
+    {
+      "clause": "13.3 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original restricts corporate flexibility and is silent on subcontracting. The revision allows Client assignment in standard corporate transactions and requires consent for Agency subcontracting, w"
+    },
+    {
+      "clause": "New-1 Data Protection and Security",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Article 9 (Confidentiality) as new Article 9A. The Agreement lacks data protection obligations despite likely consumer data handling. This clause adds baseline security, breach"
+    },
+    {
+      "clause": "New-2 Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert as new Article 14 (Force Majeure) before the signature page. The Agreement omits force majeure, creating uncertainty during uncontrollable events. This clause excuses performance whi"
+    },
+    {
+      "clause": "New-3 Insurance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Article 11 (Indemnification) as new Article 11A. No insurance requirements exist, leaving Client exposed if Agency lacks coverage. This clause ensures Agency maintains appropri"
+    },
+    {
+      "clause": "New-4 Disputed Invoices and Set-off",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 3.4 as new Section 3.5. While 3.4 now covers disputes, this dedicated clause clarifies withholding and set-off. From Client’s perspective, it strengthens billing govern"
+    },
+    {
+      "clause": "New-5 Compliance with Laws and Standards",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Section 8.1 within Article 8 as new Section 8.1A. The Agreement lacks explicit commitment to advertising/marketing standards. This clause ensures legal and policy compliance re"
+    },
+    {
+      "clause": "New-6 Service Levels and Escalation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Placement: Insert after Article 2 as new Section 2.4. The Agreement has no service levels or escalation, limiting leverage to correct slippage. This clause introduces measurable expectations and escal"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 25,
+      "P": 0,
+      "N": 1,
+      "NMI": 0
+    },
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_all_detected": true,
+    "t1_detected": 4,
+    "t1_missed": [],
+    "total_detection_points": 97.0,
+    "total_quality_points": 212,
+    "total_points": 309.0,
+    "additional_issues_count": 54
+  }
+}
