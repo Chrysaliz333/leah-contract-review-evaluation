@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "environment": "test_prod2",
+    "aggregation_timestamp": "2026-01-25T18:29:17.149031Z",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "models": [
+      "pathfinder",
+      "starliner"
+    ],
+    "contracts": [
+      "consulting",
+      "distribution",
+      "dpa",
+      "jv",
+      "license",
+      "partnership",
+      "reseller",
+      "services",
+      "sla",
+      "supply"
+    ]
+  },
+  "by_model": {
+    "pathfinder": {
+      "t1_pass": 8,
+      "t1_fail": 2,
+      "detection_counts": {
+        "Y": 119,
+        "P": 13,
+        "N": 25,
+        "NMI": 4
+      },
+      "contracts": {
+        "consulting": true,
+        "distribution": true,
+        "dpa": true,
+        "jv": true,
+        "license": true,
+        "partnership": false,
+        "reseller": true,
+        "services": false,
+        "sla": true,
+        "supply": true
+      }
+    },
+    "starliner": {
+      "t1_pass": 7,
+      "t1_fail": 3,
+      "detection_counts": {
+        "Y": 110,
+        "P": 16,
+        "N": 23,
+        "NMI": 11
+      },
+      "contracts": {
+        "consulting": false,
+        "distribution": false,
+        "dpa": true,
+        "jv": false,
+        "license": true,
+        "partnership": true,
+        "reseller": true,
+        "services": true,
+        "sla": true,
+        "supply": true
+      }
+    }
+  },
+  "by_contract": {
+    "consulting": {
+      "pathfinder": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 7,
+          "P": 2,
+          "N": 2,
+          "NMI": 0
+        },
+        "t1_count": 0,
+        "t1_missed": []
+      },
+      "starliner": {
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 5,
+          "P": 4,
+          "N": 1,
+          "NMI": 2
+        },
+        "t1_count": 0,
+        "t1_missed": []
+      }
+    },
+    "distribution": {
+      "pathfinder": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 13,
+          "P": 0,
+          "N": 0,
+          "NMI": 0
+        },
+        "t1_count": 6,
+        "t1_missed": []
+      },
+      "starliner": {
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 11,
+          "P": 0,
+          "N": 2,
+          "NMI": 0
+        },
+        "t1_count": 6,
+        "t1_missed": [
+          "GT-11"
+        ]
+      }
+    },
+    "dpa": {
+      "pathfinder": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 9,
+          "P": 1,
+          "N": 1,
+          "NMI": 1
+        },
+        "t1_count": 3,
+        "t1_missed": []
+      },
+      "starliner": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 7,
+          "P": 1,
+          "N": 2,
+          "NMI": 2
+        },
+        "t1_count": 3,
+        "t1_missed": []
+      }
+    },
+    "jv": {
+      "pathfinder": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 12,
+          "P": 2,
+          "N": 5,
+          "NMI": 0
+        },
+        "t1_count": 5,
+        "t1_missed": []
+      },
+      "starliner": {
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 9,
+          "P": 1,
+          "N": 6,
+          "NMI": 2
+        },
+        "t1_count": 5,
+        "t1_missed": [
+          "GT-02",
+          "GT-03"
+        ]
+      }
+    },
+    "license": {
+      "pathfinder": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 11,
+          "P": 2,
+          "N": 2,
+          "NMI": 0
+        },
+        "t1_count": 4,
+        "t1_missed": []
+      },
+      "starliner": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 11,
+          "P": 3,
+          "N": 1,
+          "NMI": 0
+        },
+        "t1_count": 4,
+        "t1_missed": []
+      }
+    },
+    "partnership": {
+      "pathfinder": {
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 7,
+          "P": 0,
+          "N": 4,
+          "NMI": 1
+        },
+        "t1_count": 6,
+        "t1_missed": [
+          "GT-02"
+        ]
+      },
+      "starliner": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 7,
+          "P": 0,
+          "N": 4,
+          "NMI": 1
+        },
+        "t1_count": 6,
+        "t1_missed": []
+      }
+    },
+    "reseller": {
+      "pathfinder": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 12,
+          "P": 1,
+          "N": 0,
+          "NMI": 0
+        },
+        "t1_count": 4,
+        "t1_missed": []
+      },
+      "starliner": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 11,
+          "P": 0,
+          "N": 2,
+          "NMI": 0
+        },
+        "t1_count": 4,
+        "t1_missed": []
+      }
+    },
+    "services": {
+      "pathfinder": {
+        "t1_gate_pass": false,
+        "detection_counts": {
+          "Y": 13,
+          "P": 3,
+          "N": 10,
+          "NMI": 0
+        },
+        "t1_count": 4,
+        "t1_missed": [
+          "GT-04"
+        ]
+      },
+      "starliner": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 19,
+          "P": 3,
+          "N": 2,
+          "NMI": 2
+        },
+        "t1_count": 4,
+        "t1_missed": []
+      }
+    },
+    "sla": {
+      "pathfinder": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 22,
+          "P": 2,
+          "N": 0,
+          "NMI": 2
+        },
+        "t1_count": 8,
+        "t1_missed": []
+      },
+      "starliner": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 20,
+          "P": 2,
+          "N": 1,
+          "NMI": 2
+        },
+        "t1_count": 8,
+        "t1_missed": []
+      }
+    },
+    "supply": {
+      "pathfinder": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 13,
+          "P": 0,
+          "N": 1,
+          "NMI": 0
+        },
+        "t1_count": 4,
+        "t1_missed": []
+      },
+      "starliner": {
+        "t1_gate_pass": true,
+        "detection_counts": {
+          "Y": 10,
+          "P": 2,
+          "N": 2,
+          "NMI": 0
+        },
+        "t1_count": 4,
+        "t1_missed": []
+      }
+    }
+  },
+  "t1_gate_results": {
+    "pathfinder": {
+      "consulting": "PASS",
+      "distribution": "PASS",
+      "dpa": "PASS",
+      "jv": "PASS",
+      "license": "PASS",
+      "partnership": "FAIL",
+      "reseller": "PASS",
+      "services": "FAIL",
+      "sla": "PASS",
+      "supply": "PASS"
+    },
+    "starliner": {
+      "consulting": "FAIL",
+      "distribution": "FAIL",
+      "dpa": "PASS",
+      "jv": "FAIL",
+      "license": "PASS",
+      "partnership": "PASS",
+      "reseller": "PASS",
+      "services": "PASS",
+      "sla": "PASS",
+      "supply": "PASS"
+    }
+  },
+  "detection_totals": {
+    "Y": 229,
+    "P": 29,
+    "N": 48,
+    "NMI": 15
+  },
+  "detection_percentages": {
+    "Y": 71.3,
+    "P": 9.0,
+    "N": 15.0,
+    "NMI": 4.7
+  },
+  "model_comparison": {
+    "pathfinder": {
+      "t1_pass_rate": "8/10",
+      "detection_rate": 82.0
+    },
+    "starliner": {
+      "t1_pass_rate": "7/10",
+      "detection_rate": 78.8
+    }
+  }
+}

@@ -1,0 +1,469 @@
+{
+  "meta": {
+    "contract": "license",
+    "model_id": "pathfinder",
+    "model_display_name": "Pathfinder",
+    "environment": "testing_prod2",
+    "representing_party": "Licensee",
+    "evaluation_timestamp": "2026-01-26T00:00:00Z",
+    "gt_version": "1.0",
+    "part_b_gt_version": "3.0_v4-enhanced_LOCKED",
+    "evaluator": "Liz",
+    "data_quality_warning": "Canonical JSON incomplete - proposed_redlines contain empty strings for all substantive fields. Part A responses found in risk_table but lack proper structure."
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "LICENSE_01",
+      "clause": "3.2",
+      "cp_redline_description": "Improvements to the Licensed IP developed by Licensee shall be owned by Licensor. Licensee hereby grants Licensor an irrevocable, perpetual, royalty-free license to use, modify, and sublicense any Licensee Background Technology incorporated into such Improvements.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 0,
+      "reasoning_score": 1,
+      "total_points": 3,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "3.2 Improvements. Improvements to the Licensed IP developed by Licensee shall be owned by Licensor. Classification: All improvements, derivatives, and modifications to the Licensed IP developed by Licensee shall be owned exclusively by Licensor… Detailed reasoning: Directly conflicts with Licensee's objective to own or at least jointly own its own developments. Recommended action: Reject Licensor redline; propose Licensee ownership with grant-back.",
+        "judge_reasoning": "Action: Leah correctly identified this as REJECT-worthy in the recommended_action field. Score: 2/2. Revision: No actual proposed revision text provided in canonical JSON - the proposed_redlines entry for Improvements has empty strings for all fields. Score: 0/2. Reasoning: Leah states 'Directly conflicts with Licensee's objective to own or at least jointly own its own developments' which partially addresses the concern about losing R&D investment, but does not mention the grant-back of Licensee Background Technology (the CP redline addition) or explain why Licensor getting both ownership AND access to Licensee proprietary tech is overreach. Score: 1/2."
+      }
+    },
+    {
+      "gt_id": "LICENSE_02",
+      "clause": "4.1",
+      "cp_redline_description": "Beginning in Year 1, Licensee shall pay minimum annual royalty of $500,000, regardless of actual Net Sales, escalating by fifteen percent (15%) annually thereafter. Running royalties shall be credited against this minimum.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 0,
+      "reasoning_score": 1,
+      "total_points": 3,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "4.1 Minimum Annual Royalty. Beginning in Year 2, Licensee shall pay minimum annual royalty of $250,000… Classification: Beginning in Year 1, Licensee shall pay minimum annual royalty of $500,000, increasing 15% annually… Detailed reasoning: Materially worsens financial terms for Licensee. Recommended action: Reject; renegotiate lower thresholds & credit running royalties.",
+        "judge_reasoning": "Action: Leah correctly identified this as REJECT-worthy in the recommended_action field. Score: 2/2. Revision: No actual proposed revision text provided in canonical JSON - the proposed_redlines entry for Minimum Annual Royalty has empty strings for all fields. Score: 0/2. Reasoning: Leah states 'Materially worsens financial terms for Licensee' which is accurate but generic. Does not specifically address: (1) Year 1 start eliminating ramp-up, (2) doubling to $500K creating unsustainable fixed cost, (3) 15% escalator compounding effect, or (4) baseline $250K Year 2 already being material. Score: 1/2."
+      }
+    },
+    {
+      "gt_id": "LICENSE_03",
+      "clause": "12.2",
+      "cp_redline_description": "LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE UPFRONT LICENSE FEE PAID UNDER SECTION 5.2. LIABILITY SHALL EXCLUDE DAMAGES FOR PRODUCT RECALLS, LOST PROFITS, OR COMMERCIAL LOSS ARISING FROM LICENSED PRODUCT DEFECTS.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 0,
+      "reasoning_score": 1,
+      "total_points": 3,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "12.2 Cap. LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE ROYALTIES PAID IN THE TWELVE MONTHS PRECEDING THE CLAIM. Classification: LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE UPFRONT LICENSE FEE… Detailed reasoning: Further narrows Licensor liability & adds carve-outs. Recommended action: Reject; seek mutual, higher cap with carve-outs benefiting Licensee.",
+        "judge_reasoning": "Action: Leah correctly identified this as REJECT-worthy in the recommended_action field. Score: 2/2. Revision: No actual proposed revision text provided in canonical JSON - the proposed_redlines entry for Liability Cap has empty strings for all fields. Score: 0/2. Reasoning: Leah states 'Further narrows Licensor liability & adds carve-outs' which identifies the problem directionally but lacks specifics. Does not explain: (1) upfront fee ($500K) may be exhausted in Year 1, (2) 10-year term needs liability tied to ongoing royalties, (3) product recall/commercial loss exclusions eliminate remedies for IP defects, or (4) baseline already limits liability (concern is cap too LOW). Score: 1/2."
+      }
+    },
+    {
+      "gt_id": "LICENSE_04",
+      "clause": "13.2",
+      "cp_redline_description": "Licensor may terminate this Agreement immediately upon written notice if Licensee materially breaches this Agreement. Licensee may terminate only if Licensor materially breaches and fails to cure within one hundred twenty (120) days after written notice.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 0,
+      "reasoning_score": 1,
+      "total_points": 3,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "13.2 Termination for Cause. Either Party may terminate upon material breach that remains uncured for 60 days… Classification: Licensor may terminate immediately…Licensee may terminate only after 120 days… Detailed reasoning: One-sided, dilutes Licensee rights. Recommended action: Reject; preserve symmetry; add Licensee termination for convenience.",
+        "judge_reasoning": "Action: Leah correctly identified this as REJECT-worthy in the recommended_action field. Score: 2/2. Revision: No actual proposed revision text provided in canonical JSON - proposed_redlines entry has empty strings. Score: 0/2. Reasoning: Leah states 'One-sided, dilutes Licensee rights' which is accurate but insufficient. Does not address: (1) asymmetric termination creating power imbalance given Licensee's major investment (upfront fee, minimum royalties, development costs), (2) 120-day cure vs immediate being grossly unfair, or (3) mutual 60-day cure being market standard. Score: 1/2."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 12,
+    "max_score": 24,
+    "percentage": 50.0,
+    "critical_failures": 0,
+    "pass_fail": "MARGINAL"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.2",
+      "tier": "T1",
+      "issue": "Improvements owned by Licensor - loses R&D investment",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The risk_table entry for 3.2 Improvements addresses the CP redline version (which adds grant-back of Licensee Background Technology) but does not separately address the baseline contract issue that improvements are owned by Licensor. The proposed_redlines entry for 'Improvements' has all fields as empty strings, providing no proposed fix for the baseline issue. Detection: NMI for the baseline GT-01 issue."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Licensor liability cap too low",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The risk_table entry for 12.2 Cap addresses the CP redline version (which lowers cap to upfront fee only and adds exclusions) but does not separately address the baseline contract issue that 12 months royalties may be too low. The proposed_redlines entry for 'Liability Cap' has all fields as empty strings. Detection: NMI for the baseline GT-02 issue."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Mandatory minimum royalty regardless of sales",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The risk_table entry for 4.1 Minimum Annual Royalty addresses the CP redline version (Year 1 start, $500K, 15% escalator) but does not separately address the baseline contract issue that $250K from Year 2 is a significant fixed cost. The proposed_redlines entry for 'Minimum Annual Royalty' has all fields as empty strings. Detection: NMI for the baseline GT-03 issue."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.2",
+      "tier": "T1",
+      "issue": "AS-IS disclaimer with limited warranties",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The proposed_redlines entry for 'Disclaimer' has all fields as empty strings - no proposed revision, no original clause language, no rationale. No evidence in risk_table or elsewhere that Leah identified the AS-IS disclaimer issue at 9.2. Detection: NMI."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High royalty rate",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No evidence in canonical JSON that Leah flagged the 10% royalty rate as high or above market. No risk_table entry for 5.1, no proposed_redlines entry with substance. Detection: NMI."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Sublicensing requires Licensor consent",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": null,
+      "quality_points": 2,
+      "total_points": 2.5,
+      "matched_redline_id": "Sublicensing",
+      "evidence": {
+        "proposed_revision_excerpt": "Proposed_redlines entry for 'Sublicensing' exists but all fields (proposed_revision, original_clause_language, rationale) are empty strings.",
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The proposed_redlines array includes 'Sublicensing' with proposed_change_type: 'Amend', indicating Leah identified this clause as requiring modification. However, all substantive fields are empty strings, so there is no actual proposed fix or rationale. Detection: P (partial - identified but incomplete). Amendment score: 1 (weak attempt - no actual language provided). Rationale score: 1 (no substance). Redline quality: null (no text to evaluate)."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No evidence that Leah addressed the consequential damages exclusion at 12.1. The risk_table entry for 12.2 addresses the liability cap but does not mention 12.1. No separate proposed_redlines entry for consequential damages. Detection: NMI."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No termination for convenience - 10-year lock-in",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The risk_table entry for 13.2 Termination for Cause recommends 'add Licensee termination for convenience' in the recommended_action field, which suggests awareness of the missing TfC. However, this is mentioned only as part of responding to the CP redline on termination for cause - there is no separate new_clause_proposed entry or proposed_redlines entry specifically addressing the missing TfC provision as a baseline contract gap. Detection: NMI (not treated as a standalone whole-document issue)."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Non-refundable upfront fee",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No evidence that Leah flagged the non-refundable nature of the $500K upfront fee. No risk_table entry for 5.2, no proposed_redlines entry. Detection: NMI."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "7.1",
+      "tier": "T3",
+      "issue": "Audit cost-shifting threshold favors Licensor",
+      "detection": "P",
+      "detection_points": 0.5,
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": null,
+      "quality_points": 2,
+      "total_points": 2.5,
+      "matched_redline_id": "Audit Rights",
+      "evidence": {
+        "proposed_revision_excerpt": "Proposed_redlines entry for 'Audit Rights' exists but all fields (proposed_revision, original_clause_language, rationale) are empty strings.",
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The proposed_redlines array includes 'Audit Rights' with proposed_change_type: 'Amend', indicating Leah identified this clause as requiring modification. However, all substantive fields are empty strings. Detection: P (partial - identified but incomplete). Amendment score: 1 (weak attempt). Rationale score: 1 (no substance). Redline quality: null."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit A",
+      "tier": "T2",
+      "issue": "Licensed IP schedule (Exhibit A) not attached - undefined scope",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No evidence that Leah identified the missing Exhibit A (Licensed IP schedule) as a critical contract gap. No risk_table entry, no proposed_redlines entry, no new_clause recommendation. Detection: NMI."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "Exhibit B",
+      "tier": "T2",
+      "issue": "Territory definition (Exhibit B) not attached - exclusivity meaningless",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "No evidence that Leah identified the missing Exhibit B (Territory definition) as a critical contract gap. No risk_table entry, no proposed_redlines entry, no new_clause recommendation. Detection: NMI."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No IP infringement indemnification from Licensor",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": null,
+      "quality_points": 2,
+      "total_points": 6,
+      "matched_redline_id": "IP Indemnification",
+      "evidence": {
+        "proposed_revision_excerpt": "Proposed_redlines entry for 'IP Indemnification' exists with proposed_change_type: 'Add', but all substantive fields (proposed_revision, original_clause_language, rationale) are empty strings.",
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The proposed_redlines array includes 'IP Indemnification' with proposed_change_type: 'Add', indicating Leah identified the missing IP indemnification clause as a gap requiring a new provision. However, all substantive fields are empty strings - no actual proposed language, no rationale explaining why this is critical. Detection: P (partial - identified the gap but provided no actual clause language or reasoning). Amendment score: 1 (weak - recognized need but no substance). Rationale score: 1 (no explanation provided). Redline quality: null (no text)."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": null,
+      "quality_points": 2,
+      "total_points": 4.5,
+      "matched_redline_id": "Confidentiality Obligations",
+      "evidence": {
+        "proposed_revision_excerpt": "Proposed_redlines entry for 'Confidentiality Obligations' exists but all fields (proposed_revision, original_clause_language, rationale) are empty strings.",
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The proposed_redlines array includes 'Confidentiality Obligations' with proposed_change_type: 'Amend', indicating Leah identified this clause as requiring modification. However, all substantive fields are empty strings. Detection: P (partial - identified but incomplete). Amendment score: 1 (weak attempt). Rationale score: 1 (no substance). Redline quality: null."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "Non-infringement warranty qualified 'to knowledge' - inadequate for IP license",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": null,
+      "quality_points": 2,
+      "total_points": 6,
+      "matched_redline_id": "Licensor Warranties",
+      "evidence": {
+        "proposed_revision_excerpt": "Proposed_redlines entry for 'Licensor Warranties' exists but all fields (proposed_revision, original_clause_language, rationale) are empty strings.",
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "The proposed_redlines array includes 'Licensor Warranties' with proposed_change_type: 'Amend', indicating Leah identified this clause as requiring modification. The issue at 9.1 is that the non-infringement warranty is qualified 'to knowledge'. However, all substantive fields in the proposed_redlines entry are empty strings. Detection: P (partial - identified as needing amendment but provided no actual fix or rationale). Amendment score: 1 (weak). Rationale score: 1 (no substance). Redline quality: null."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 0,
+      "P": 5,
+      "N": 0,
+      "NMI": 10
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 2,
+        "N": 0,
+        "NMI": 2
+      },
+      "T2": {
+        "Y": 0,
+        "P": 1,
+        "N": 0,
+        "NMI": 6
+      },
+      "T3": {
+        "Y": 0,
+        "P": 2,
+        "N": 0,
+        "NMI": 2
+      }
+    },
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "t1_detected": 2,
+    "total_detection_points": 13.5,
+    "total_quality_points": 10,
+    "total_points": 23.5,
+    "max_points": 71,
+    "percentage": 33.1,
+    "pass_fail": "FAIL",
+    "additional_issues_count": 4
+  },
+  "combined_summary": {
+    "part_a": {
+      "percentage": 50.0,
+      "critical_failures": 0,
+      "pass_fail": "MARGINAL"
+    },
+    "part_b": {
+      "percentage": 33.1,
+      "t1_gate": "FAIL",
+      "pass_fail": "FAIL"
+    },
+    "combined_pass": false,
+    "data_quality_issues": [
+      "Canonical JSON severely incomplete - proposed_redlines contain empty strings for all substantive fields",
+      "Part A responses extracted from risk_table but lack proper revision text and detailed rationale",
+      "Part B evaluation limited by missing proposed revision language and rationale fields",
+      "This appears to be an extraction/conversion failure from raw Leah output to canonical JSON format"
+    ]
+  },
+  "additional_issues": [
+    {
+      "clause": "3.2 Improvements",
+      "issue_summary": "Improvements to the Licensed IP developed by Licensee shall be owned by Licensor.",
+      "leah_classification": "All improvements, derivatives, and modifications to the Licensed IP developed by Licensee shall be owned exclusively by Licensor…",
+      "leah_action": "Reject Licensor redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "4.1 Minimum Annual Royalty",
+      "issue_summary": "Beginning in Year 2, Licensee shall pay minimum annual royalty of $250,000…",
+      "leah_classification": "Beginning in Year 1, Licensee shall pay minimum annual royalty of $500,000, increasing 15% annually…",
+      "leah_action": "Reject; renegotiate ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "12.2 Cap",
+      "issue_summary": "LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE ROYALTIES PAID IN THE TWELVE MONTHS PRECEDING THE CL",
+      "leah_classification": "LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE UPFRONT LICENSE FEE…",
+      "leah_action": "Reject; seek mutual,",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "13.2 Termination for Cause",
+      "issue_summary": "Either Party may terminate upon material breach that remains uncured for 60 days…",
+      "leah_classification": "Licensor may terminate immediately…Licensee may terminate only after 120 days…",
+      "leah_action": "Reject; preserve sym",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    }
+  ]
+}

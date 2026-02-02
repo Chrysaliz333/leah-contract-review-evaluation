@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "contract": "jv",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T14:30:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "8.1",
+        "excerpt": "In the event of a deadlock on any material decision... the matter shall be escalated to the Chief Executive Officers... If the deadlock is not resolved within thirty (30) days, either Party may initiate mediation... If mediation fails, the matter shall be resolved by binding arbitration",
+        "reasoning": "Starliner correctly identifies [Reserved] deadlock issue and proposes escalation to CEOs, then mediation/arbitration. However, does NOT include buy-sell mechanism unlike Pathfinder.",
+        "judge_reasoning": "In the event of a deadlock on any material decision... the matter shall be escalated to the Chief Executive Officers... If the deadlock is not resolved within thirty (30) days, either Party may initiate mediation... If mediation fails, the matter shall be resolved by binding arbitration",
+        "proposed_revision_excerpt": "In the event of a deadlock on any material decision... the matter shall be escalated to the Chief Executive Officers... If the deadlock is not resolved within thirty (30) days, either Party may initiate mediation... If mediation fails, the matter shall be resolved by binding arbitration",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 4,
+      "total_points": 12,
+      "clause": "8.1",
+      "issue": "No Deadlock Resolution - Article 8 [Reserved]",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T1",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "CRITICAL MISS: Not mentioned anywhere. Starliner's deadlock resolution (8.1) escalates to arbitration but provides NO exit/buyout mechanism. No put/call options, no buy-sell, no path out of 5-year term. T1 gate FAIL.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "N/A (Missing)",
+      "issue": "No Exit/Buyout Rights",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T1",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "CRITICAL MISS: Risk table 4.1 marked ✅ Favorable: 'Requires unanimous consent for key decisions, giving Party B veto power. No Action Required'. Starliner sees unanimous consent as protective but fails to recognize the paralysis risk with 50/50 structure and no tiebreaker. T1 gate FAIL.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "4.1",
+      "issue": "Unanimous Consent + No Tiebreaker",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T2",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "MISS: Risk table 9.1 marked ✅ Favorable: 'Protects Party B by restricting Party A's ability to compete. No Action Required'. GT expects concern about overbroad scope, undefined Territory, and application even if wrongfully terminated.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "9.1",
+      "issue": "Broad Post-Term Non-Compete",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T1",
+      "detection": "P",
+      "match_strength": "MODERATE",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.2",
+        "excerpt": "The Parties shall enter into a separate written agreement setting forth the procedures for management, licensing, enforcement, and commercialization of Developed IP",
+        "reasoning": "Partial detection: Starliner identifies lack of management/dispute mechanism for Developed IP but proposes a process fix (future agreement) rather than addressing the core commercialization veto. Does NOT add license-back for post-termination exploitation.",
+        "judge_reasoning": "The Parties shall enter into a separate written agreement setting forth the procedures for management, licensing, enforcement, and commercialization of Developed IP",
+        "proposed_revision_excerpt": "The Parties shall enter into a separate written agreement setting forth the procedures for management, licensing, enforcement, and commercialization of Developed IP",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 4,
+      "quality_points": 4,
+      "total_points": 8,
+      "clause": "6.2",
+      "issue": "Developed IP Consent Lock-Up",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New - LoL",
+        "excerpt": "in no event shall either Party be liable to the other for any indirect, incidental, consequential, special, or punitive damages... The aggregate liability of each Party... shall not exceed the total amount of capital contributions made by such Party",
+        "reasoning": "Risk table NCR correctly identifies missing LoL exposing Party B to unlimited damages. Amendment provides cap and consequential exclusion.",
+        "judge_reasoning": "in no event shall either Party be liable to the other for any indirect, incidental, consequential, special, or punitive damages... The aggregate liability of each Party... shall not exceed the total amount of capital contributions made by such Party",
+        "proposed_revision_excerpt": "in no event shall either Party be liable to the other for any indirect, incidental, consequential, special, or punitive damages... The aggregate liability of each Party... shall not exceed the total amount of capital contributions made by such Party",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "New - LoL",
+      "issue": "No Limitation of Liability",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.4",
+        "excerpt": "failing to make a required capital contribution after receiving written notice and a thirty (30) day cure period shall have its ownership interest diluted in accordance with a mutually agreed formula",
+        "reasoning": "Risk table flags missing dilution details. Amendment adds cure period and requires mutually agreed formula. Less detailed than Pathfinder but addresses core concern.",
+        "judge_reasoning": "failing to make a required capital contribution after receiving written notice and a thirty (30) day cure period shall have its ownership interest diluted in accordance with a mutually agreed formula",
+        "proposed_revision_excerpt": "failing to make a required capital contribution after receiving written notice and a thirty (30) day cure period shall have its ownership interest diluted in accordance with a mutually agreed formula",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "3.4",
+      "issue": "Capital Call Dilution Risk",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "MISS: Risk table 6.3 marked ✅ Favorable. GT expects concern about what happens to improvement license post-termination.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "6.3",
+      "issue": "Improvement Ownership Unclear on Termination",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T2",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "MISS: Risk table 4.3 marked ✅ Favorable. GT expects concern about GM reporting, removal process, oversight.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "4.3",
+      "issue": "General Manager Authority Unbounded",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T2",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "MISS: Risk table 6.1 marked ✅ Favorable. GT expects concern about license scope, wind-down period, sublicensing rules.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "6.1",
+      "issue": "Contributed IP License Gaps",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-12",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.4",
+        "excerpt": "Developed IP shall be divided or licensed in accordance with a pre-agreed written schedule or, if no such schedule exists, shall be jointly owned with each Party granted a perpetual, royalty-free, non-exclusive license to use, commercialize, and further develop such Developed IP",
+        "reasoning": "Risk table correctly flags vague 'as agreed' language. Amendment provides default cross-license mechanism.",
+        "judge_reasoning": "Developed IP shall be divided or licensed in accordance with a pre-agreed written schedule or, if no such schedule exists, shall be jointly owned with each Party granted a perpetual, royalty-free, non-exclusive license to use, commercialize, and further develop such Developed IP",
+        "proposed_revision_excerpt": "Developed IP shall be divided or licensed in accordance with a pre-agreed written schedule or, if no such schedule exists, shall be jointly owned with each Party granted a perpetual, royalty-free, non-exclusive license to use, commercialize, and further develop such Developed IP",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "10.4",
+      "issue": "Termination IP Allocation Undefined",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-13",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New - Indemnification",
+        "excerpt": "Each Party... shall indemnify, defend, and hold harmless the other Party... from and against any and all losses... arising out of... any third-party claim alleging that the Indemnifying Party's Contributed IP infringes any intellectual property right",
+        "reasoning": "Risk table NCR correctly identifies missing indemnification. Mutual IP indemnification addresses the gap.",
+        "judge_reasoning": "Each Party... shall indemnify, defend, and hold harmless the other Party... from and against any and all losses... arising out of... any third-party claim alleging that the Indemnifying Party's Contributed IP infringes any intellectual property right",
+        "proposed_revision_excerpt": "Each Party... shall indemnify, defend, and hold harmless the other Party... from and against any and all losses... arising out of... any third-party claim alleging that the Indemnifying Party's Contributed IP infringes any intellectual property right",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "New - Indemnification",
+      "issue": "No Indemnification Regime",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-14",
+      "tier": "T2",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Not mentioned. Risk table 12.4 marked ✅ Favorable ('Consent required for assignment, protecting Party B'). Assignment consent is related but distinct from Change of Control provision. No CoC notice, termination right, or buyout option proposed.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "N/A (Missing)",
+      "issue": "No Change of Control Provision",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-15",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.2",
+        "excerpt": "reserves shall not exceed twenty percent (20%) of the net profits for the applicable quarter unless both Parties otherwise agree in writing. The Steering Committee shall provide a written explanation for any decision to retain reserves in excess",
+        "reasoning": "Risk table flags vague reserves could be abused. Amendment adds objective 20% cap with justification requirement.",
+        "judge_reasoning": "reserves shall not exceed twenty percent (20%) of the net profits for the applicable quarter unless both Parties otherwise agree in writing. The Steering Committee shall provide a written explanation for any decision to retain reserves in excess",
+        "proposed_revision_excerpt": "reserves shall not exceed twenty percent (20%) of the net profits for the applicable quarter unless both Parties otherwise agree in writing. The Steering Committee shall provide a written explanation for any decision to retain reserves in excess",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 1,
+      "quality_points": 5,
+      "total_points": 6,
+      "clause": "5.2",
+      "issue": "Vague Reserve Rights",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-16",
+      "tier": "T3",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "MISS: Risk table 11.3 marked ✅ Favorable. GT expects concern about delay in multi-step resolution, no emergency arbitration option.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "11.1-11.3",
+      "issue": "Multi-Step Dispute Resolution",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-17",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "1.4",
+        "excerpt": "formation of the JV Entity is mandatory within ninety (90) days of the Effective Date, unless otherwise mutually agreed in writing",
+        "reasoning": "Risk table correctly identifies ambiguity in optional entity formation. Amendment requires formation within 90 days or written structure agreement.",
+        "judge_reasoning": "formation of the JV Entity is mandatory within ninety (90) days of the Effective Date, unless otherwise mutually agreed in writing",
+        "proposed_revision_excerpt": "formation of the JV Entity is mandatory within ninety (90) days of the Effective Date, unless otherwise mutually agreed in writing",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 1,
+      "quality_points": 4,
+      "total_points": 5,
+      "clause": "1.4",
+      "issue": "No Conditions Precedent for JV Entity",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-18",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New - Data Protection",
+        "excerpt": "Each Party shall comply with all applicable data protection and privacy laws... implement appropriate technical and organizational measures to protect personal data... promptly notify the other Party of any data breach",
+        "reasoning": "Risk table NCR correctly identifies missing data protection. Amendment addresses the gap but less comprehensive than Pathfinder (no specific GDPR/CCPA citation).",
+        "judge_reasoning": "Each Party shall comply with all applicable data protection and privacy laws... implement appropriate technical and organizational measures to protect personal data... promptly notify the other Party of any data breach",
+        "proposed_revision_excerpt": "Each Party shall comply with all applicable data protection and privacy laws... implement appropriate technical and organizational measures to protect personal data... promptly notify the other Party of any data breach",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "New - Data Protection",
+      "issue": "No Data Protection / Privacy Clause",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-19",
+      "tier": "T2",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "MISS: Risk table 7.2 marked ✅ Favorable: 'Five-year survival of confidentiality post-termination is reasonable and protective. No Action Required'. GT expects concern that 5 years is inadequate for quantum trade secrets with perpetual commercial value.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "7.2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.4",
+      "issue_summary": "Definition of JV Entity",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify whether form",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause states “if the Parties elect to form such entity,” which is ambiguous and could create uncertainty about legal structure, liability, and IP holding."
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Additional Capital & Dilution",
+      "leah_classification": "⚠️",
+      "leah_action": "Specify the dilution",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While additional capital is subject to mutual approval, the mechanism for dilution is not detailed (e.g., calculation, notice, cure period)."
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Steering Committee",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Committee structure is clear, but decision-making process in case of deadlock is not addressed (see 8.1 Reserved)."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Distributions",
+      "leah_classification": "⚠️",
+      "leah_action": "Specify objective cr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Distributions are subject to retention of reserves “as determined by the Steering Committee,” which could be ambiguous or subject to abuse."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Developed IP Joint Ownership",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Joint ownership is stated, but no mechanism for resolving disputes over use, licensing, or enforcement is provided."
+    },
+    {
+      "clause": "10.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "Specify default rule",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Division or licensing of Developed IP upon termination is left to future agreement, which is uncertain and risky for Party B."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Delaware law governs, but Party B is a California entity; potential for conflict of laws or unfamiliarity."
+    },
+    {
+      "clause": "1.4 JV Entity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause is ambiguous as to whether a JV Entity will actually be formed, which could create uncertainty regarding liability, IP holding, and contractual rights. The revision requires format"
+    },
+    {
+      "clause": "3.4 Additional Capital",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause lacks detail on the dilution mechanism and does not provide a cure period, which could result in unfair or arbitrary dilution of Quantum Dynamics LLC’s interest. The revision adds "
+    },
+    {
+      "clause": "8.1 Deadlock",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The absence of a deadlock resolution mechanism creates significant risk of operational paralysis and impasse, which could harm Quantum Dynamics LLC’s interests. This provision provides a clear, staged"
+    },
+    {
+      "clause": "5.2 Distributions",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original language allows the Steering Committee to unilaterally determine reserves, which could be abused to withhold distributions. The revision sets an objective cap and requires justification f"
+    },
+    {
+      "clause": "6.2 Developed IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "While joint ownership is stated, the lack of a management or dispute resolution mechanism for Developed IP could lead to future conflict or deadlock. The revision requires a separate agreement to addr"
+    },
+    {
+      "clause": "10.4 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Leaving the division or licensing of Developed IP to future agreement is risky and could result in prolonged disputes or loss of value for Quantum Dynamics LLC. The revision provides a clear default m"
+    },
+    {
+      "clause": "12.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "As a California-based entity, Quantum Dynamics LLC may be subject to California laws on IP, data, and employment. The revision provides protection by ensuring California law applies to these critical "
+    },
+    {
+      "clause": "Limitation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The absence of a limitation of liability clause exposes Quantum Dynamics LLC to potentially unlimited damages, which is not commercially reasonable. This clause caps liability, except for egregious co"
+    },
+    {
+      "clause": "Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Without indemnification, Quantum Dynamics LLC is exposed to third-party claims or losses caused by Party A’s actions or IP. This clause provides mutual protection and should be inserted in the General"
+    },
+    {
+      "clause": "Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A force majeure clause is standard and protects Quantum Dynamics LLC from liability for non-performance due to events outside its control. This clause should be inserted in the General Provisions sect"
+    },
+    {
+      "clause": "Data Protection & Privacy",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Given the nature of quantum AI solutions, the JV will likely process sensitive data. The absence of a data protection clause exposes Quantum Dynamics LLC to regulatory and reputational risk. This clau"
+    },
+    {
+      "clause": "Warranties & Representations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The absence of warranties and representations increases risk for Quantum Dynamics LLC regarding authority, compliance, and IP. This clause provides baseline assurances and should be inserted in the Ge"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 1,
+      "N": 6,
+      "NMI": 2
+    },
+    "confidence_counts": {
+      "HIGH": 18,
+      "MEDIUM": 0,
+      "LOW": 0
+    },
+    "t1_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 5,
+    "t1_missed": [
+      "GT-02",
+      "GT-03"
+    ],
+    "total_detection_points": 42,
+    "total_quality_points": 40,
+    "total_points": 82,
+    "max_detection_points": 93,
+    "weighted_max": 93,
+    "additional_issues_count": 19,
+    "t1_all_detected": false,
+    "detection_by_tier": {
+      "T1": {
+        "Y": 2,
+        "P": 1,
+        "N": 1,
+        "NMI": 1
+      },
+      "T2": {
+        "Y": 4,
+        "P": 0,
+        "N": 5,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    }
+  }
+}

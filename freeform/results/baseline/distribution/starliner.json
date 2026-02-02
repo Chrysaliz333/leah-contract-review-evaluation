@@ -1,0 +1,731 @@
+{
+  "meta": {
+    "contract": "distribution",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T13:30:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.1/3.2",
+        "excerpt": "Supplier hereby appoints Distributor as the exclusive distributor... Supplier shall not: (a) sell Products directly... (b) appoint other distributors... without Distributor's prior written consent",
+        "reasoning": "Correctly identifies non-exclusivity risk and proposes conversion to exclusive with compensation mechanism.",
+        "judge_reasoning": "Supplier hereby appoints Distributor as the exclusive distributor... Supplier shall not: (a) sell Products directly... (b) appoint other distributors... without Distributor's prior written consent",
+        "proposed_revision_excerpt": "Supplier hereby appoints Distributor as the exclusive distributor... Supplier shall not: (a) sell Products directly... (b) appoint other distributors... without Distributor's prior written consent",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "3.1/3.2",
+      "issue": "Non-exclusive appointment with Supplier competition rights",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.1",
+        "excerpt": "Supplier may modify prices no more than once per calendar year... any price increase shall not exceed five percent (5%) per annum",
+        "reasoning": "Adds annual cap at 5%. Less sophisticated than pathfinder (no CPI link, no exit right) but addresses core concern.",
+        "judge_reasoning": "Supplier may modify prices no more than once per calendar year... any price increase shall not exceed five percent (5%) per annum",
+        "proposed_revision_excerpt": "Supplier may modify prices no more than once per calendar year... any price increase shall not exceed five percent (5%) per annum",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 4,
+      "total_points": 12,
+      "clause": "5.1",
+      "issue": "Unilateral price changes with no cap",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.1",
+        "excerpt": "subject to adjustment in the event of market downturns, force majeure events, or other circumstances beyond Distributor's reasonable control. Failure to meet minimum purchase requirements... absent good faith renegotiation, shall constitute a material breach",
+        "reasoning": "Adds flexibility for external factors and good faith renegotiation requirement.",
+        "judge_reasoning": "subject to adjustment in the event of market downturns, force majeure events, or other circumstances beyond Distributor's reasonable control. Failure to meet minimum purchase requirements... absent good faith renegotiation, shall constitute a material breach",
+        "proposed_revision_excerpt": "subject to adjustment in the event of market downturns, force majeure events, or other circumstances beyond Distributor's reasonable control. Failure to meet minimum purchase requirements... absent good faith renegotiation, shall constitute a material breach",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 4,
+      "total_points": 12,
+      "clause": "6.1",
+      "issue": "Mandatory minimum purchase with automatic breach trigger",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.3",
+        "excerpt": "Neither Party may assign this Agreement without the prior written consent of the other Party, except that either Party may assign this Agreement to an affiliate or in connection with a merger, acquisition, or sale",
+        "reasoning": "Makes assignment mutual and adds affiliate/M&A exception.",
+        "judge_reasoning": "Neither Party may assign this Agreement without the prior written consent of the other Party, except that either Party may assign this Agreement to an affiliate or in connection with a merger, acquisition, or sale",
+        "proposed_revision_excerpt": "Neither Party may assign this Agreement without the prior written consent of the other Party, except that either Party may assign this Agreement to an affiliate or in connection with a merger, acquisition, or sale",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "13.3",
+      "issue": "Asymmetric assignment rights",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.2",
+        "excerpt": "this limitation shall not apply to liability arising from Supplier's indemnification obligations, gross negligence, willful misconduct, or breach of confidentiality",
+        "reasoning": "Adds carve-outs but doesn't increase cap amount.",
+        "judge_reasoning": "this limitation shall not apply to liability arising from Supplier's indemnification obligations, gross negligence, willful misconduct, or breach of confidentiality",
+        "proposed_revision_excerpt": "this limitation shall not apply to liability arising from Supplier's indemnification obligations, gross negligence, willful misconduct, or breach of confidentiality",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "10.2",
+      "issue": "Low liability cap for both parties",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "Indemnification (New Clause)",
+        "excerpt": "Each Party ('Indemnifying Party') shall indemnify, defend, and hold harmless... Supplier shall specifically indemnify Distributor for any product liability claims relating to the Products",
+        "reasoning": "Comprehensive indemnification clause with product liability coverage.",
+        "judge_reasoning": "Each Party ('Indemnifying Party') shall indemnify, defend, and hold harmless... Supplier shall specifically indemnify Distributor for any product liability claims relating to the Products",
+        "proposed_revision_excerpt": "Each Party ('Indemnifying Party') shall indemnify, defend, and hold harmless... Supplier shall specifically indemnify Distributor for any product liability claims relating to the Products",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "Indemnification (New Clause)",
+      "issue": "No indemnification clause - Distributor exposed to product claims",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "4.2",
+        "excerpt": "Title and risk of loss shall pass to Distributor upon actual receipt of the Products at Distributor's designated facility",
+        "reasoning": "Changes risk transfer point to actual receipt. Simpler than DDP but addresses transit risk.",
+        "judge_reasoning": "Title and risk of loss shall pass to Distributor upon actual receipt of the Products at Distributor's designated facility",
+        "proposed_revision_excerpt": "Title and risk of loss shall pass to Distributor upon actual receipt of the Products at Distributor's designated facility",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "4.2",
+      "issue": "FOB shipping terms shift all transit risk to Distributor",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.3",
+        "excerpt": "interest at the lower of one percent (1%) per month or the maximum rate permitted by applicable law",
+        "reasoning": "Reduces rate and adds usury law compliance.",
+        "judge_reasoning": "interest at the lower of one percent (1%) per month or the maximum rate permitted by applicable law",
+        "proposed_revision_excerpt": "interest at the lower of one percent (1%) per month or the maximum rate permitted by applicable law",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 1,
+      "quality_points": 4,
+      "total_points": 5,
+      "clause": "5.3",
+      "issue": "High late payment interest rate",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "7.2",
+        "excerpt": "Supplier shall respond within ten (10) business days of receipt, and approval shall be deemed granted if no response is provided",
+        "reasoning": "Adds 10-day deemed approval. Longer than pathfinder's 5 days but addresses delay concern.",
+        "judge_reasoning": "Supplier shall respond within ten (10) business days of receipt, and approval shall be deemed granted if no response is provided",
+        "proposed_revision_excerpt": "Supplier shall respond within ten (10) business days of receipt, and approval shall be deemed granted if no response is provided",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "7.2",
+      "issue": "Marketing approval required for all materials",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "11.3",
+        "excerpt": "Distributor may sell remaining inventory for one hundred eighty (180) days; and (d) Supplier shall, at Distributor's option, repurchase any unsold inventory at the original purchase price. Supplier shall provide reasonable transition assistance",
+        "reasoning": "Extends sell-off to 180 days, adds buyback and transition assistance.",
+        "judge_reasoning": "Distributor may sell remaining inventory for one hundred eighty (180) days; and (d) Supplier shall, at Distributor's option, repurchase any unsold inventory at the original purchase price. Supplier shall provide reasonable transition assistance",
+        "proposed_revision_excerpt": "Distributor may sell remaining inventory for one hundred eighty (180) days; and (d) Supplier shall, at Distributor's option, repurchase any unsold inventory at the original purchase price. Supplier shall provide reasonable transition assistance",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "11.3",
+      "issue": "Termination effects lack buyback and transition",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T1",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "CRITICAL MISS: Risk_table 4.1 marked ✅ Favorable with reasoning 'Supplier must accept/reject orders within 5 days, providing certainty to Distributor.' This misses the core issue - Supplier has DISCRETION to reject orders, creating supply uncertainty. The 5-day response time is irrelevant to the no-supply-obligation risk. T1 gate FAIL.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "4.1",
+      "issue": "Supplier can reject purchase orders - no supply obligation",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-12",
+      "tier": "T3",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Risk_table 3.3 marked ✅ Favorable: 'Restricts Distributor from selling outside the Territory, which is standard.' No proposed redline. GT expects concern about growth limitation and passive sales clarification.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "3.3",
+      "issue": "Territory restriction on outside sales",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-13",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.1",
+        "excerpt": "this limitation shall not apply to damages arising from Supplier's breach of confidentiality, intellectual property infringement, or willful misconduct",
+        "reasoning": "Adds carve-outs for confidentiality, IP, and willful misconduct.",
+        "judge_reasoning": "this limitation shall not apply to damages arising from Supplier's breach of confidentiality, intellectual property infringement, or willful misconduct",
+        "proposed_revision_excerpt": "this limitation shall not apply to damages arising from Supplier's breach of confidentiality, intellectual property infringement, or willful misconduct",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "10.1",
+      "issue": "Consequential Damages Exclusion Missing Critical Carve-Outs",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Approved Resellers",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The clause gives Supplier sole discretion to approve resellers, which could limit Distributor’s ability to expand its sales network and impact revenue predictability. The approval process and criteria"
+    },
+    {
+      "clause": "1.3",
+      "issue_summary": "Definition of Products",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Products are defined by Exhibit A, which may be amended by mutual written agreement, but the process for amendment is not specified. This could lead to disputes over product scope."
+    },
+    {
+      "clause": "1.4",
+      "issue_summary": "Definition of Territory",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The Territory is defined by Exhibit C, but the process for changes is not addressed. Sudden changes could negatively impact Distributor’s business."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Late Payment Interest",
+      "leah_classification": "⚠️",
+      "leah_action": "Negotiate a lower in",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "1.5% per month is high (18% annualized); may be excessive or unenforceable in some jurisdictions."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Product Warranty",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify or reference",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "12-month warranty is standard, but “Specifications” are not defined in the contract body (only in Exhibit B, which is not provided)."
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Termination for Cause",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day cure period is standard, but no right to terminate for convenience or for insolvency/bankruptcy."
+    },
+    {
+      "clause": "13.7",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Standard, but does not specify process for notification, duration, or remedies if event is prolonged."
+    },
+    {
+      "clause": "Exhibit A",
+      "issue_summary": "Products",
+      "leah_classification": "⚠️",
+      "leah_action": "Ensure Exhibit A is ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Not attached; lack of detail could create disputes."
+    },
+    {
+      "clause": "Exhibit B",
+      "issue_summary": "Specifications",
+      "leah_classification": "⚠️",
+      "leah_action": "Ensure Exhibit B is ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Not attached; lack of detail could create disputes over warranty and performance."
+    },
+    {
+      "clause": "Exhibit C",
+      "issue_summary": "Territory",
+      "leah_classification": "⚠️",
+      "leah_action": "Ensure Exhibit C is ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Not attached; lack of detail could create disputes."
+    },
+    {
+      "clause": "Exhibit D",
+      "issue_summary": "Trademarks",
+      "leah_classification": "⚠️",
+      "leah_action": "Ensure Exhibit D is ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Not attached; lack of detail could create disputes."
+    },
+    {
+      "clause": "1.1 \"Approved Resellers\"",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment ensures that Supplier cannot arbitrarily withhold approval of resellers, which is critical for Distributor’s ability to expand its market and achieve sales targets. By requiring Supplie"
+    },
+    {
+      "clause": "1.3 \"Products\"",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Clarifying the amendment process for Exhibit A ensures that Distributor is not subject to sudden or unilateral changes in the scope of Products, which could disrupt business planning and operations. T"
+    },
+    {
+      "clause": "1.4 \"Territory\"",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment protects Distributor from unilateral or abrupt changes to the Territory, which could undermine investments and market development. Advance notice and mutual agreement are essential to s"
+    },
+    {
+      "clause": "3.1 Non-Exclusive Appointment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Changing to exclusivity strengthens Distributor’s market position and incentivizes investment in marketing and sales. If exclusivity is not possible, alternative protections (such as right of first re"
+    },
+    {
+      "clause": "3.2 Reservation of Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment limits Supplier’s ability to undermine Distributor’s market and provides a mechanism for compensation if Supplier’s actions negatively impact Distributor’s business. It ensures that Dis"
+    },
+    {
+      "clause": "4.2 Delivery Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This revision ensures that Distributor does not bear the risk of loss or damage during transit, which is outside its control. It aligns risk transfer with actual delivery, reducing exposure to losses "
+    },
+    {
+      "clause": "5.1 Prices",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment provides predictability and protection against sudden or excessive price increases, allowing Distributor to plan and manage its business effectively. Limiting the frequency and amount o"
+    },
+    {
+      "clause": "5.3 Late Payments",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This change ensures compliance with local usury laws and avoids excessive penalties for late payment, reducing the risk of unenforceable or punitive charges against Distributor."
+    },
+    {
+      "clause": "6.1 Minimum Purchase Commitment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment provides flexibility for Distributor in the face of unforeseen market or external events, reducing the risk of automatic breach and termination if minimums cannot be met for reasons out"
+    },
+    {
+      "clause": "7.2 Advertising",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment prevents undue delays in Distributor’s marketing efforts and ensures that approval cannot be withheld indefinitely, promoting efficient promotion and sales activities."
+    },
+    {
+      "clause": "9.1 Product Warranty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Referencing a detailed and attached Exhibit B ensures that the warranty is meaningful and enforceable, reducing ambiguity over what constitutes a defect or non-conformance."
+    },
+    {
+      "clause": "9.2 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment ensures that Distributor retains the benefit of any mandatory statutory warranties and remedies, protecting against overbroad disclaimers that could otherwise leave Distributor without "
+    },
+    {
+      "clause": "10.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Carving out exceptions ensures that Distributor is not left without adequate remedies for serious breaches by Supplier, such as IP infringement or willful misconduct, which could have significant busi"
+    },
+    {
+      "clause": "10.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment ensures that the liability cap does not apply to the most serious breaches or to indemnification, which could otherwise leave Distributor inadequately protected in the event of signific"
+    },
+    {
+      "clause": "11.2 Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding rights to terminate for insolvency or for convenience provides Distributor with greater flexibility and protection against being locked into an unfavorable or unworkable arrangement."
+    },
+    {
+      "clause": "11.3 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Extending the sell-off period and adding a buy-back obligation reduces financial risk for Distributor and ensures an orderly wind-down of business. Transition assistance helps mitigate disruption and "
+    },
+    {
+      "clause": "13.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment protects Distributor from being disadvantaged by unfamiliar or unfavorable foreign laws and ensures compliance with mandatory local legal requirements."
+    },
+    {
+      "clause": "13.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This revision addresses the practical and financial burden on Distributor of arbitrating in a distant jurisdiction, making dispute resolution more accessible and equitable."
+    },
+    {
+      "clause": "13.3 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment ensures parity and flexibility for Distributor, allowing assignment in the context of corporate transactions and preventing Supplier from unilaterally assigning to an unknown third part"
+    },
+    {
+      "clause": "13.7 Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding notification and termination provisions ensures clarity on the process and provides Distributor with an exit if performance is frustrated for an extended period."
+    },
+    {
+      "clause": "Exhibit A, B, C, D Attachments",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensuring that all referenced Exhibits are attached and comprehensive is essential for enforceability and to avoid disputes over the scope of Products, Specifications, Territory, and Trademarks. This a"
+    },
+    {
+      "clause": "Indemnification (New Clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clause is critical for protecting Distributor from third-party claims, including IP infringement and product liability, which could otherwise result in significant financial and reputational harm"
+    },
+    {
+      "clause": "Data Protection & Privacy (New Clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clause addresses legal and regulatory risks associated with the handling of personal data, ensuring both Parties are aligned on compliance and notification obligations. It should be inserted as a"
+    },
+    {
+      "clause": "Audit Rights (New Clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clause provides Distributor with a mechanism to verify compliance and prevent overcharging or other breaches, supporting transparency and trust in the commercial relationship. It should be insert"
+    },
+    {
+      "clause": "Transition Assistance (New Clause)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clause mitigates business disruption and protects Distributor’s customer relationships in the event of contract termination. It should be inserted as a new section following Article 11 (Term and "
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 11,
+      "P": 0,
+      "N": 2,
+      "NMI": 0
+    },
+    "confidence_counts": {
+      "HIGH": 13,
+      "MEDIUM": 0,
+      "LOW": 0
+    },
+    "t1_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 6,
+    "t1_missed": [
+      "GT-11"
+    ],
+    "total_detection_points": 66,
+    "total_quality_points": 48,
+    "total_points": 114,
+    "max_detection_points": 75,
+    "weighted_max": 75,
+    "additional_issues_count": 36,
+    "t1_all_detected": false,
+    "detection_by_tier": {
+      "T1": {
+        "Y": 5,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    }
+  }
+}

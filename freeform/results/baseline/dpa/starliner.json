@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T14:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "4.1",
+        "excerpt": "If Controller objects to a proposed Sub-processor, Processor shall suspend engagement of the Sub-processor pending good faith resolution between the parties. If the parties cannot resolve the objection within a reasonable period, Controller shall have the right to terminate the relevant services without penalty.",
+        "reasoning": "Starliner correctly identifies the objection consequence gap and proposes suspension mechanism with termination right. Addresses core GT concern.",
+        "judge_reasoning": "If Controller objects to a proposed Sub-processor, Processor shall suspend engagement of the Sub-processor pending good faith resolution between the parties. If the parties cannot resolve the objection within a reasonable period, Controller shall have the right to terminate the relevant services without penalty.",
+        "proposed_revision_excerpt": "If Controller objects to a proposed Sub-processor, Processor shall suspend engagement of the Sub-processor pending good faith resolution between the parties. If the parties cannot resolve the objection within a reasonable period, Controller shall have the right to terminate the relevant services without penalty.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "4.1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T1",
+      "detection": "P",
+      "match_strength": "MODERATE",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.1",
+        "excerpt": "Processor shall implement and maintain technical and organisational measures as set out in Exhibit B... Any material changes to these measures must be notified to Controller in advance and are subject to Controller's approval.",
+        "reasoning": "Partial detection: Starliner flags 'appropriate' measures as vague but fix merely ties to Exhibit B without specifying mandatory minimum controls (no pen testing requirement, no security baseline). Less comprehensive than GT expects.",
+        "judge_reasoning": "Processor shall implement and maintain technical and organisational measures as set out in Exhibit B... Any material changes to these measures must be notified to Controller in advance and are subject to Controller's approval.",
+        "proposed_revision_excerpt": "Processor shall implement and maintain technical and organisational measures as set out in Exhibit B... Any material changes to these measures must be notified to Controller in advance and are subject to Controller's approval.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 4,
+      "quality_points": 3,
+      "total_points": 7,
+      "clause": "5.1",
+      "issue": "Vague Security Measures",
+      "amendment_score": 2,
+      "rationale_score": 1,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T3",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Risk table 8.1 marked ✅ Favorable: '72-hour notification is compliant and protective. No Action Required'. GT expects concern for high-severity breaches needing faster notification.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "8.1",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "9.1",
+        "excerpt": "Processor shall be fully liable to Controller for any damages, losses, or regulatory fines... Nothing in this Agreement shall limit Processor's liability to Controller for breaches of this DPA or applicable Data Protection Laws.",
+        "reasoning": "Starliner correctly identifies vague 'applicable law' liability and proposes unlimited Processor liability with explicit carve-out from any contractual caps.",
+        "judge_reasoning": "Processor shall be fully liable to Controller for any damages, losses, or regulatory fines... Nothing in this Agreement shall limit Processor's liability to Controller for breaches of this DPA or applicable Data Protection Laws.",
+        "proposed_revision_excerpt": "Processor shall be fully liable to Controller for any damages, losses, or regulatory fines... Nothing in this Agreement shall limit Processor's liability to Controller for breaches of this DPA or applicable Data Protection Laws.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "9.1",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "9.1",
+        "excerpt": "Nothing in this Agreement shall limit Processor's liability to Controller for breaches of this DPA or applicable Data Protection Laws.",
+        "reasoning": "Starliner's 9.1 amendment explicitly addresses the missing limitation of liability clause by ensuring no cap applies to data protection breaches.",
+        "judge_reasoning": "Nothing in this Agreement shall limit Processor's liability to Controller for breaches of this DPA or applicable Data Protection Laws.",
+        "proposed_revision_excerpt": "Nothing in this Agreement shall limit Processor's liability to Controller for breaches of this DPA or applicable Data Protection Laws.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "9.1",
+      "issue": "No Limitation of Liability in DPA",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T2",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "MISS: Risk table 3.4 marked ✅ Favorable: 'Controller has the option to require deletion or return of data, giving flexibility and control. No Action Required'. GT expects concern about unspecified timeline and missing deletion certificate.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "3.4",
+      "issue": "Deletion Timeline Unspecified",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "7.2",
+        "excerpt": "additional audits may be conducted at Controller's expense in the event of a Personal Data Breach, suspected non-compliance, or upon request of a regulatory authority. In such cases, the parties will agree in advance on reasonable cost allocation.",
+        "reasoning": "Starliner addresses audit cost concern by allowing additional audits and proposing cost allocation. Less protective than Pathfinder (no automatic cost shift if fault found) but addresses core GT issue.",
+        "judge_reasoning": "additional audits may be conducted at Controller's expense in the event of a Personal Data Breach, suspected non-compliance, or upon request of a regulatory authority. In such cases, the parties will agree in advance on reasonable cost allocation.",
+        "proposed_revision_excerpt": "additional audits may be conducted at Controller's expense in the event of a Personal Data Breach, suspected non-compliance, or upon request of a regulatory authority. In such cases, the parties will agree in advance on reasonable cost allocation.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 1,
+      "quality_points": 4,
+      "total_points": 5,
+      "clause": "7.2",
+      "issue": "All Audit Costs on Controller",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T3",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Not mentioned. Risk table 10.1 marked ✅ Favorable. GT expects concern about indefinite duration without periodic review.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "10.1",
+      "issue": "Indefinite Duration",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "Exhibit A / 2.2",
+        "excerpt": "To be completed and specified in detail by Processor and reviewed/approved by Controller prior to execution",
+        "reasoning": "Starliner correctly identifies blank Exhibit A issue. Amendment is adequate (requires completion before execution) but less detailed than Pathfinder (no annual review requirement).",
+        "judge_reasoning": "To be completed and specified in detail by Processor and reviewed/approved by Controller prior to execution",
+        "proposed_revision_excerpt": "To be completed and specified in detail by Processor and reviewed/approved by Controller prior to execution",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "Exhibit A / 2.2",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "Exhibit B",
+        "excerpt": "To be completed in detail by Processor and submitted for Controller's review and approval prior to execution. Any subsequent changes must be notified to Controller and subject to Controller's approval.",
+        "reasoning": "Starliner correctly identifies blank Exhibit B undermines security compliance. Amendment requires completion and change approval.",
+        "judge_reasoning": "To be completed in detail by Processor and submitted for Controller's review and approval prior to execution. Any subsequent changes must be notified to Controller and subject to Controller's approval.",
+        "proposed_revision_excerpt": "To be completed in detail by Processor and submitted for Controller's review and approval prior to execution. Any subsequent changes must be notified to Controller and subject to Controller's approval.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "Exhibit B",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "Exhibit C",
+        "excerpt": "To be completed and submitted by Processor for Controller's review and approval prior to execution. Any proposed changes to the list must be notified to Controller in accordance with Section 4.1.",
+        "reasoning": "Starliner correctly identifies blank Exhibit C prevents sub-processor due diligence. Amendment requires completion with change notification.",
+        "judge_reasoning": "To be completed and submitted by Processor for Controller's review and approval prior to execution. Any proposed changes to the list must be notified to Controller in accordance with Section 4.1.",
+        "proposed_revision_excerpt": "To be completed and submitted by Processor for Controller's review and approval prior to execution. Any proposed changes to the list must be notified to Controller in accordance with Section 4.1.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "Exhibit C",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-12",
+      "tier": "T2",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Not mentioned anywhere. No reference to cyber insurance in risk table or proposed redlines. GT expects insurance requirement to protect against Processor insolvency risk.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "N/A (Missing)",
+      "issue": "No Cyber Insurance Requirement",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.2",
+      "issue_summary": "Processing Details (Exhibit A)",
+      "leah_classification": "⚠️",
+      "leah_action": "Request Processor to",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit A is referenced but not included; lack of detail on processing specifics could expose the Controller to ambiguity."
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Sub-processor Authorisation & Notification",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "General authorisation is granted, but Controller can only object within 30 days. There is no explicit requirement for Processor to suspend engagement if Controller objects, and no escalation process."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Technical and Organisational Measures",
+      "leah_classification": "⚠️",
+      "leah_action": "Request detailed Exh",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires “appropriate” measures but lacks specificity without Exhibit B."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Audit Procedures",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limits audits to once per year and at Controller’s expense, which may be too restrictive in case of incidents or regulatory requirements."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Allocation of Liability",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Liability is allocated “in accordance with applicable law,” which may be too vague and not sufficiently protective."
+    },
+    {
+      "clause": "Exhibit A",
+      "issue_summary": "Processing Details",
+      "leah_classification": "⚠️",
+      "leah_action": "Require Processor to",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Not provided; lack of detail exposes Controller to risk."
+    },
+    {
+      "clause": "Exhibit B",
+      "issue_summary": "Technical and Organisational Measures",
+      "leah_classification": "⚠️",
+      "leah_action": "Require Processor to",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Not provided; lack of detail exposes Controller to risk."
+    },
+    {
+      "clause": "Exhibit C",
+      "issue_summary": "Approved Sub-processors",
+      "leah_classification": "⚠️",
+      "leah_action": "Require Processor to",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Not provided; lack of detail exposes Controller to risk."
+    },
+    {
+      "clause": "Exhibit A – Processing Details",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A completed Exhibit A is essential to ensure the Controller is fully aware of, and has approved, all relevant processing details. This amendment ensures that the Processor cannot begin processing with"
+    },
+    {
+      "clause": "Exhibit B – Technical and Organisational Measures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Without a detailed Exhibit B, the Controller cannot adequately assess the sufficiency of security measures. This amendment ensures that the Controller has the right to review and approve security arra"
+    },
+    {
+      "clause": "Exhibit C – Approved Sub-processors",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A completed and up-to-date list of Sub-processors is essential for the Controller to assess risk and exercise its rights under the DPA. This amendment ensures transparency and ongoing oversight of Sub"
+    },
+    {
+      "clause": "4.1 Sub-processor Authorisation & Notification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment ensures that the Controller’s objection rights are meaningful and that the Processor cannot proceed with a contested Sub-processor without resolution. It also provides a clear escalatio"
+    },
+    {
+      "clause": "5.1 Technical and Organisational Measures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment ties the security obligations directly to a detailed, agreed Exhibit B and ensures that the Controller retains oversight of any material changes, thereby reducing operational and compli"
+    },
+    {
+      "clause": "7.2 Audit Procedures",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment ensures that the Controller can conduct additional audits in response to incidents or regulatory requests, which is essential for compliance and risk management, while providing a fair "
+    },
+    {
+      "clause": "9.1 Allocation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment clarifies that the Processor bears full liability for its own and its Sub-processors’ breaches, and that no contractual limitation of liability applies to such breaches, providing stron"
+    },
+    {
+      "clause": "New Clause – Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding a dispute resolution clause provides a clear, cost-effective mechanism for resolving disagreements and reduces the risk of protracted litigation. This clause should be inserted after Section 11"
+    },
+    {
+      "clause": "New Clause – Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A force majeure clause protects both parties from liability for non-performance due to events outside their control, ensuring fairness and predictability. This clause should be inserted after Section "
+    },
+    {
+      "clause": "New Clause – Change Management",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A change management clause ensures that the Controller is informed of, and can approve, significant changes that may impact data protection or compliance, reducing operational and legal risk. This cla"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 1,
+      "N": 2,
+      "NMI": 2
+    },
+    "confidence_counts": {
+      "HIGH": 12,
+      "MEDIUM": 0,
+      "LOW": 0
+    },
+    "t1_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 3,
+    "t1_all_detected": true,
+    "total_detection_points": 41,
+    "total_quality_points": 34,
+    "total_points": 75,
+    "max_detection_points": 57,
+    "weighted_max": 57,
+    "additional_issues_count": 18,
+    "detection_by_tier": {
+      "T1": {
+        "Y": 2,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 4,
+        "P": 0,
+        "N": 1,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,554 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T15:30:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.1",
+        "excerpt": "exiting Partner shall first offer its interest to the other Partner on terms no less favorable than those offered to any third party... If the Partners are unable to agree within sixty (60) days, either Partner may initiate binding arbitration",
+        "reasoning": "Risk table 10.1 reasoning correctly identifies 'exposing Growth Dynamics Partners LP to risk of being locked in'. Buy-sell mechanism proposed (though less comprehensive than Pathfinder - no tag/drag-along).",
+        "judge_reasoning": "exiting Partner shall first offer its interest to the other Partner on terms no less favorable than those offered to any third party... If the Partners are unable to agree within sixty (60) days, either Partner may initiate binding arbitration",
+        "proposed_revision_excerpt": "exiting Partner shall first offer its interest to the other Partner on terms no less favorable than those offered to any third party... If the Partners are unable to agree within sixty (60) days, either Partner may initiate binding arbitration",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 4,
+      "total_points": 12,
+      "clause": "10.1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "4.1 + New Deadlock",
+        "excerpt": "In the event of a deadlock on any major decision, the matter shall be escalated to the senior-most executives of each Partner... If the deadlock persists for thirty (30) days, either Partner may initiate the deadlock resolution procedure... If mediation fails, either Partner may elect to initiate a buy-sell process",
+        "reasoning": "Risk table 4.1 correctly flags 'Unanimous consent for major decisions can lead to deadlock; no deadlock resolution mechanism specified.' Amendment adds escalation to executives, mediation, then buy-sell - comprehensive resolution path.",
+        "judge_reasoning": "In the event of a deadlock on any major decision, the matter shall be escalated to the senior-most executives of each Partner... If the deadlock persists for thirty (30) days, either Partner may initiate the deadlock resolution procedure... If mediation fails, either Partner may elect to initiate a buy-sell process",
+        "proposed_revision_excerpt": "In the event of a deadlock on any major decision, the matter shall be escalated to the senior-most executives of each Partner... If the deadlock persists for thirty (30) days, either Partner may initiate the deadlock resolution procedure... If mediation fails, either Partner may elect to initiate a buy-sell process",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "4.1 + New Deadlock",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.3",
+        "excerpt": "In the absence of operative provisions in Section 10.3, the non-defaulting Partner shall have the right to (a) fund the defaulting Partner's share and recover such amount with interest... (b) reduce the defaulting Partner's economic interest",
+        "reasoning": "Risk table correctly identifies 10.3 'is reserved'. Amendment adds fallback remedies if 10.3 remains inoperative - pragmatic fix though less comprehensive than adding new 10.3.",
+        "judge_reasoning": "In the absence of operative provisions in Section 10.3, the non-defaulting Partner shall have the right to (a) fund the defaulting Partner's share and recover such amount with interest... (b) reduce the defaulting Partner's economic interest",
+        "proposed_revision_excerpt": "In the absence of operative provisions in Section 10.3, the non-defaulting Partner shall have the right to (a) fund the defaulting Partner's share and recover such amount with interest... (b) reduce the defaulting Partner's economic interest",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 4,
+      "total_points": 12,
+      "clause": "3.3",
+      "issue": "Default Provisions Cross-Reference Error",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.1",
+        "excerpt": "All profits and losses from Co-Investments shall be allocated between the Partners in proportion to their respective capital contributions to each Co-Investment",
+        "reasoning": "Risk table 6.1 correctly identifies fixed 50/50 as 'potentially inequitable and exposes Growth Dynamics Partners LP to disproportionate risk'. Pro-rata amendment directly addresses.",
+        "judge_reasoning": "All profits and losses from Co-Investments shall be allocated between the Partners in proportion to their respective capital contributions to each Co-Investment",
+        "proposed_revision_excerpt": "All profits and losses from Co-Investments shall be allocated between the Partners in proportion to their respective capital contributions to each Co-Investment",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 4,
+      "total_points": 12,
+      "clause": "6.1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New - LoL",
+        "excerpt": "the aggregate liability of either Partner for any claim arising under this Agreement shall not exceed the total amount of capital contributed by such Partner to Co-Investments under this Agreement",
+        "reasoning": "Risk table NCR correctly identifies missing LoL. Amendment adds cap and consequential exclusion with appropriate carve-outs.",
+        "judge_reasoning": "the aggregate liability of either Partner for any claim arising under this Agreement shall not exceed the total amount of capital contributed by such Partner to Co-Investments under this Agreement",
+        "proposed_revision_excerpt": "the aggregate liability of either Partner for any claim arising under this Agreement shall not exceed the total amount of capital contributed by such Partner to Co-Investments under this Agreement",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 4,
+      "total_points": 12,
+      "clause": "New - LoL",
+      "issue": "No Limitation of Liability",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New - Indemnification",
+        "excerpt": "Each Partner shall indemnify, defend, and hold harmless the other Partner and its affiliates... from and against any and all losses, claims, damages, liabilities, costs, and expenses",
+        "reasoning": "Risk table NCR correctly identifies missing indemnification 'leaves Growth Dynamics Partners LP exposed to third-party claims'. Mutual indemnification addresses the gap.",
+        "judge_reasoning": "Each Partner shall indemnify, defend, and hold harmless the other Partner and its affiliates... from and against any and all losses, claims, damages, liabilities, costs, and expenses",
+        "proposed_revision_excerpt": "Each Partner shall indemnify, defend, and hold harmless the other Partner and its affiliates... from and against any and all losses, claims, damages, liabilities, costs, and expenses",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 4,
+      "total_points": 12,
+      "clause": "New - Indemnification",
+      "issue": "No Indemnification Provisions",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T3",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "MISS: Risk table 5.3 marked ✅ Favorable: 'Prevents poaching of opportunities for a defined period, protecting joint interests.' GT expects concern that 60 days may be insufficient for growth-equity due diligence.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "5.3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T2",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "MISS: Risk table 12.3 marked ✅ Favorable: 'Obligation to manage existing investments post-termination provides continuity.' GT expects concern about indefinite forced continuation without wind-down period or buyout right.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "12.3",
+      "issue": "Continuation Post-Termination Indefinite",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Not mentioned anywhere. No proposed redline for formal reporting requirements, quarterly portfolio reports, or material event notification beyond monthly meetings.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "N/A (Missing)",
+      "issue": "No Information Rights or Reporting",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T3",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Risk table 11.2 marked ✅ Favorable: 'Protects talent by restricting poaching of employees.' GT flags this as standard provision to potentially question.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "11.2",
+      "issue": "Non-Solicitation Standard Term",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "9.1",
+        "excerpt": "The confidentiality obligation shall survive termination for five (5) years, except with respect to trade secrets or highly sensitive information, for which the obligation shall survive indefinitely. Permitted disclosures include those to legal, financial, or other professional advisors",
+        "reasoning": "Risk table correctly identifies 'five-year duration may be insufficient for sensitive information'. Amendment extends perpetually for trade secrets + adds permitted disclosures - fully addresses GT concern.",
+        "judge_reasoning": "The confidentiality obligation shall survive termination for five (5) years, except with respect to trade secrets or highly sensitive information, for which the obligation shall survive indefinitely. Permitted disclosures include those to legal, financial, or other professional advisors",
+        "proposed_revision_excerpt": "The confidentiality obligation shall survive termination for five (5) years, except with respect to trade secrets or highly sensitive information, for which the obligation shall survive indefinitely. Permitted disclosures include those to legal, financial, or other professional advisors",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "9.1",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-12",
+      "tier": "T2",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "MISS: Risk table 12.1 marked ✅ Favorable: 'Clear term and renewal process with advance notice requirement.' GT expects concern that 90-day notice is too short for investment partnership wind-down - should extend to 180 days.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "10.2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "2.3",
+      "issue_summary": "Non-Exclusivity",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify what excepti",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ambiguity exists regarding exceptions to non-exclusivity; \"except as otherwise provided herein\" is not cross-referenced."
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Initial Commitment",
+      "leah_classification": "⚠️",
+      "leah_action": "Specify minimum comm",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Deal-by-deal basis\" may cause uncertainty in capital planning and enforceability."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Default",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Default consequences are referenced but not specified here; must refer to Section 10.3, which is reserved."
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Management",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Unanimous consent for major decisions can lead to deadlock; no deadlock resolution mechanism specified."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Expenses",
+      "leah_classification": "⚠️",
+      "leah_action": "Specify process for ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Unless otherwise agreed in writing\" is vague and could lead to disputes over expense allocation."
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Regulatory Compliance",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No ongoing obligation to maintain compliance or notify of breaches; only a representation at signing."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Confidentiality Obligations",
+      "leah_classification": "⚠️",
+      "leah_action": "Specify permitted di",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Scope and permitted disclosures are not specified; five-year duration may be insufficient for sensitive information."
+    },
+    {
+      "clause": "2.3 Non-Exclusivity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause references exceptions that are not clearly cross-referenced or defined, creating ambiguity and potential for dispute. This amendment clarifies that any exceptions must be explicit "
+    },
+    {
+      "clause": "3.1 Initial Commitment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original language is too open-ended and may lead to disputes or uncertainty regarding capital contributions. This revision requires a documented process for agreeing on commitments, giving Growth "
+    },
+    {
+      "clause": "3.3 Default",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Section 10.3 is reserved and does not provide operative remedies. This amendment ensures that Growth Dynamics Partners LP has clear and enforceable remedies in the event of a default by the other part"
+    },
+    {
+      "clause": "4.1 Management",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The existing clause risks operational paralysis in the event of a deadlock. This amendment provides a structured escalation and resolution process, protecting Growth Dynamics Partners LP from indefini"
+    },
+    {
+      "clause": "6.1 Profit and Loss Sharing",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A fixed 50/50 split regardless of capital contributed is potentially unfair and exposes Growth Dynamics Partners LP to disproportionate risk. This amendment ensures a fair allocation based on actual i"
+    },
+    {
+      "clause": "6.3 Expenses",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original language is vague and could lead to disputes. This amendment clarifies the process for agreeing to different expense allocations, ensuring that Growth Dynamics Partners LP is not exposed "
+    },
+    {
+      "clause": "8.2 Regulatory Compliance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The original clause only provides a representation at signing, not an ongoing obligation. The amendment ensures continuing compliance and notification, reducing regulatory risk for Growth Dynamics Par"
+    },
+    {
+      "clause": "9.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The amendment clarifies the scope of confidentiality, permitted disclosures, and extends protection for trade secrets beyond five years, providing stronger protection for Growth Dynamics Partners LP’s"
+    },
+    {
+      "clause": "10.1 Exit and Buyout",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The absence of an exit or buyout mechanism creates significant risk for Growth Dynamics Partners LP, as it may become locked in or unable to exit on fair terms. This amendment introduces a fair proces"
+    },
+    {
+      "clause": "Limitation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clause is necessary to cap Growth Dynamics Partners LP’s liability exposure, except for egregious conduct or confidentiality breaches. It should be inserted as a new section following Article 9 ("
+    },
+    {
+      "clause": "Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clause is critical to allocate risk and ensure that Growth Dynamics Partners LP is protected against breaches, negligence, or third-party claims caused by the other party. It should be inserted a"
+    },
+    {
+      "clause": "Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A force majeure clause is essential to protect Growth Dynamics Partners LP from liability or breach due to unforeseen events outside its control. It should be inserted as a new section following Artic"
+    },
+    {
+      "clause": "Deadlock Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clause provides a clear process to resolve deadlocks, ensuring that Growth Dynamics Partners LP is not subject to indefinite gridlock. It should be inserted as a new section following Article 4 ("
+    },
+    {
+      "clause": "Data Protection and Privacy",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Given the likelihood of handling sensitive data, this clause is necessary to ensure compliance and mitigate regulatory risk for Growth Dynamics Partners LP. It should be inserted as a new section foll"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 0,
+      "N": 4,
+      "NMI": 1
+    },
+    "confidence_counts": {
+      "HIGH": 12,
+      "MEDIUM": 0,
+      "LOW": 0
+    },
+    "t1_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 6,
+    "t1_all_detected": true,
+    "total_detection_points": 53,
+    "total_quality_points": 30,
+    "total_points": 83,
+    "max_detection_points": 70,
+    "weighted_max": 70,
+    "additional_issues_count": 21,
+    "detection_by_tier": {
+      "T1": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 1,
+        "P": 0,
+        "N": 2,
+        "NMI": 1
+      },
+      "T3": {
+        "Y": 0,
+        "P": 0,
+        "N": 2,
+        "NMI": 0
+      }
+    }
+  }
+}

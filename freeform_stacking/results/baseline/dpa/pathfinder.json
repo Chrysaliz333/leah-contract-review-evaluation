@@ -1,0 +1,437 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "pathfinder",
+    "environment": "testing_prod2",
+    "evaluation_timestamp": "2026-01-26T10:30:00Z",
+    "gt_version": "1.0",
+    "evaluator": "Liz",
+    "representing_party": "Controller",
+    "data_source": "Word document (FFS2 DPA PF_Clause ana....doc)",
+    "note": "Re-evaluated from Word document due to missing CP redlines in canonical JSON"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "DPA_CP_01",
+      "clause": "4.1",
+      "section": "Sub-processor Consent",
+      "cp_redline_description": "Removes 30-day advance notice; removes Controller objection right; reduces to passive list maintenance only",
+      "expected_action": "REJECT",
+      "acceptable_actions": ["REJECT", "MODIFY"],
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing Redline Check table: '4.1 Sub-processors... Replaces notice/objection with mere list availability... Directly conflicts – existing edit weakens Controller rights; our new request strengthens... Reject existing redline; apply Controller-friendly amendment below.' Proposed redline: '4.1 Prior Written Consent. Processor shall not engage any Sub-processor to process Personal Data without Controller's prior written consent. Processor shall submit a written request identifying the proposed Sub-processor at least forty-five (45) days in advance and shall not proceed until consent is granted. Controller may withhold consent at its sole discretion and, if consent is withheld, may terminate the Principal Agreement without penalty.'",
+        "leah_reasoning_excerpt": "The existing redline strips Controller control and substitutes a passive list approach, exposing data to unknown subcontractors. The proposed revision reinstates strict consent, extends notice to 45 days for due diligence, and adds a termination right, reflecting EDPB Guidelines 07/2020 and empowering Controller to police its supply chain.",
+        "judge_reasoning": "Leah correctly identified the CP redline as adversarial and explicitly rejected it in the overlap check table. The proposed revision goes beyond simple reversion - it strengthens Controller position by requiring PRIOR written consent (not just objection rights), extends notice to 45 days, and adds termination right. This comprehensively addresses all three key elements: (1) advance notice restored and enhanced, (2) objection right upgraded to full consent, (3) termination consequence explicitly stated. Reasoning correctly identifies EDPB Guidelines and supply chain control rationale. Full marks."
+      }
+    },
+    {
+      "gt_id": "DPA_CP_02",
+      "clause": "8.1",
+      "section": "Breach Notification",
+      "cp_redline_description": "Extends notification from 72 hours to 5 business days; changes trigger from 'becoming aware' to 'confirming'; limits information to Processor's discretion",
+      "expected_action": "REJECT",
+      "acceptable_actions": ["REJECT", "MODIFY"],
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing Redline Check table: '8.1 Breach Notification... 72-hour notice... Extends to 5 business days & limits info... Conflicts – existing edit dilutes protection; we tighten... Reject existing redline; apply new amendment.' Proposed redline: '8.1 Notification. Processor shall notify Controller of any Personal Data Breach immediately and in any case within twenty-four (24) hours of becoming aware of such breach, providing all information required under Clause 8.2 and continuous updates every twelve (12) hours until containment is achieved.'",
+        "leah_reasoning_excerpt": "ICO guidance urges notification 'without undue delay,' and 24-hour notice is market standard for high-risk data sets. Continuous updates enable Controller to meet its 72-hour regulatory obligation. Rejecting the existing redline averts unacceptable delay and information throttling.",
+        "judge_reasoning": "Leah correctly identified the CP redline as adversarial and explicitly rejected it. The proposed revision addresses all three key elements: (1) 24-hour window (exceeds 72-hour minimum), (2) 'becoming aware' trigger preserved and strengthened, (3) information requirements specified with continuous updates. Reasoning correctly identifies Controller's 72-hour regulatory obligation under GDPR Art 33 and ICO guidance. The 24-hour timeline is Controller-favorable and market-leading. Full marks."
+      }
+    },
+    {
+      "gt_id": "DPA_CP_03",
+      "clause": "9.2",
+      "section": "Indemnification",
+      "cp_redline_description": "Narrows trigger from 'breach' to 'gross negligence or wilful misconduct'; excludes regulatory fines entirely; limits to direct damages only",
+      "expected_action": "REJECT",
+      "acceptable_actions": ["REJECT", "MODIFY"],
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing Redline Check table: '9.2 Indemnification (extract)... 'any claims, damages, or regulatory fines...'... Limits to direct damages & excludes fines... Conflicts – existing edit guts indemnity; we retain full... Reject existing redline; keep original wording.' Risk table clause 9.2: '✅ Processor indemnifies for claims & fines—favourable. Reject any narrowing language.'",
+        "leah_reasoning_excerpt": "Table shows awareness that the CP redline 'guts indemnity' and correctly directs rejection. Risk assessment at 9.2 marks the baseline indemnification as favorable and explicitly states 'Reject any narrowing language.'",
+        "judge_reasoning": "Leah correctly identified the CP redline as adversarial and explicitly rejected it. The proposed action is to 'keep original wording' which retains: (1) breach trigger (not gross negligence), (2) regulatory fines included, (3) 'any claims, damages' language which is broader than direct damages only. While the reasoning could have been more expansive (citing GDPR fine exposure), the action and revision are sound. Full marks awarded as reversion is the primary acceptable action and reasoning demonstrates understanding of the adversarial nature."
+      }
+    },
+    {
+      "gt_id": "DPA_CP_04",
+      "clause": "7.2",
+      "section": "Audit Rights",
+      "cp_redline_description": "Extends notice from 'reasonable' to 60 days minimum; reduces frequency from annual to biennial; requires Processor approval of audit scope; allows SOC 2 substitution",
+      "expected_action": "MODIFY",
+      "acceptable_actions": ["REJECT", "MODIFY"],
+      "leah_action": "MODIFY",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Existing Redline Check table: '7.2 Audit Procedures... 'Audits shall be conducted with reasonable notice...'... Adds 60-day notice, once/2 yrs, SOC 2 substitute... Conflicts – existing edit restricts audits; we propose broader rights... Reject existing redline; apply new amendment.' Proposed redline: '7.2 Audit Procedures. Controller (or its mandated auditor) may conduct remote or on-site audits up to twice per calendar year on fifteen (15) days' prior written notice (or shorter where required by a supervisory authority). Processor shall bear the reasonable costs of the first audit each year; additional audits shall be at Controller's expense. Provision of a SOC 2 report may satisfy an audit only if accepted in writing by Controller.'",
+        "leah_reasoning_excerpt": "Existing redline unduly restricts audit frequency and shifts cost. Our amendment restores timely oversight, maintains proportional cost-sharing, and prevents Processor from unilaterally substituting a SOC 2 report. This conforms to ICO expectations and preserves Controller's verification rights.",
+        "judge_reasoning": "Leah correctly identified the CP redline as adversarial and rejected it, proposing a modified version that strengthens Controller position. The revision addresses all four key elements: (1) 15-day notice (well below 60 days, within 14-30 day acceptable range), (2) twice per year (exceeds baseline annual right), (3) no Processor approval required for scope, (4) SOC 2 supplements only with Controller written acceptance (does not replace direct audit). Reasoning identifies ICO expectations and audit independence. This is an excellent MODIFY response that goes beyond simple reversion. Full marks."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "dimension_breakdown": {
+      "action": {
+        "total": 8,
+        "max": 8
+      },
+      "revision": {
+        "total": 8,
+        "max": 8
+      },
+      "reasoning": {
+        "total": 8,
+        "max": 8
+      }
+    },
+    "pass_fail": "PASS",
+    "notes": "Pathfinder achieved perfect score on all four CP redline responses. All adversarial redlines were correctly identified and rejected/modified appropriately. Proposed revisions consistently strengthened Controller position beyond baseline. Reasoning demonstrated strong understanding of GDPR obligations and regulatory guidance."
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "Sub-processor Consent",
+      "evidence": {
+        "proposed_revision_excerpt": "4.1 Prior Written Consent. Processor shall not engage any Sub-processor to process Personal Data without Controller's prior written consent. Processor shall submit a written request identifying the proposed Sub-processor at least forty-five (45) days in advance and shall not proceed until consent is granted. Controller may withhold consent at its sole discretion and, if consent is withheld, may terminate the Principal Agreement without penalty.",
+        "effective_rationale_excerpt": "Automatic authorisation weakens Controller control; only allows objection after notice. [...] The existing redline strips Controller control and substitutes a passive list approach, exposing data to unknown subcontractors. The proposed revision reinstates strict consent, extends notice to 45 days for due diligence, and adds a termination right, reflecting EDPB Guidelines 07/2020 and empowering Controller to police its supply chain.",
+        "judge_reasoning": "Leah fully detected this T1 issue and flagged 4.1 as ❌ in the risk table. The proposed revision upgrades from general authorization to prior written consent model, addresses all key elements (specific consent requirement, extended notice period, termination right for objection). Amendment is comprehensive and legally sound (score 3). Rationale identifies the control weakness, references EDPB Guidelines, and explains supply chain risk (score 3). Redline is precisely drafted with clear placement and immediately usable language (score 3). This is exemplary whole-document detection despite the CP redline attempting to worsen this clause."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 16,
+      "matched_redline_id": "Technical Measures Exhibit Reference",
+      "evidence": {
+        "proposed_revision_excerpt": "5.1 Technical and Organisational Measures. Processor shall implement and maintain the technical and organisational measures set out in Exhibit B (Technical and Organisational Measures), which Exhibit may be updated only with Controller's prior written approval. Such measures shall include, at a minimum, encryption, pseudonymisation, access controls, regular security testing, and documented vulnerability remediation timelines.",
+        "effective_rationale_excerpt": "Generic list only; lacks reference to Exhibit B and measurable standards. [...] Referencing Exhibit B embeds concrete TOMs, preventing Processor from relying on vague adjectives. Controller approval of any changes closes a common loophole and secures consistent protection.",
+        "judge_reasoning": "Leah detected this T1 issue and flagged 5.1 as ⚠️ in the risk table. The amendment references Exhibit B for concrete TOMs, requires Controller approval for changes, and specifies minimum mandatory controls including vulnerability remediation timelines - addressing the vagueness concern comprehensively (score 3). Rationale identifies the 'vague adjectives' problem and Controller approval mechanism but does not mention mandatory vs. optional status of listed controls or annual pen testing (score 2). Redline is well-drafted with clear integration point (score 3). Strong detection and fix."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "8.1",
+      "tier": "T3",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "Breach Notification Timing",
+      "evidence": {
+        "proposed_revision_excerpt": "8.1 Notification. Processor shall notify Controller of any Personal Data Breach immediately and in any case within twenty-four (24) hours of becoming aware of such breach, providing all information required under Clause 8.2 and continuous updates every twelve (12) hours until containment is achieved.",
+        "effective_rationale_excerpt": "72-hour maximum acceptable, but 'without undue delay' vague. [...] ICO guidance urges notification 'without undue delay,' and 24-hour notice is market standard for high-risk data sets. Continuous updates enable Controller to meet its 72-hour regulatory obligation.",
+        "judge_reasoning": "Leah detected this T3 issue and flagged 8.1 as ⚠️ in the risk table. The amendment tightens to 24-hour notification with continuous 12-hour updates - comprehensively addressing the slow timeline concern and adding interim notification for ongoing incidents (score 3). Rationale identifies the 72-hour backstop issue and ICO guidance but characterizes it as 'acceptable' rather than focusing on high-risk breach scenarios (score 2). Redline is precise and actionable (score 3). Good detection and strong fix for a T3 item."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1 / 9.2",
+      "tier": "T2",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "Liability Allocation Cap",
+      "evidence": {
+        "proposed_revision_excerpt": "9.1 Allocation of Liability. Processor's liability to Controller for any breach of this DPA or Data Protection Laws shall be unlimited. Controller's aggregate liability to Processor under this DPA shall not exceed the total fees paid by Controller to Processor during the twelve (12) months preceding the event giving rise to liability. Nothing in this clause limits either Party's liability for wilful misconduct or fraud.",
+        "effective_rationale_excerpt": "Uncapped mutual liability may expose Controller; no clarity on indirect loss. [...] This cap structure is industry-standard and reflects the fundamental asymmetry: Processor controls processing operations and should bear uncapped exposure, whereas Controller's risk is principally monetary. The amendment safeguards Controller's balance sheet without weakening data-subject rights.",
+        "judge_reasoning": "Leah detected this T2 issue and flagged 9.1 as ⚠️ in the risk table. The amendment makes Processor liability explicit and unlimited, caps Controller liability at 12-month fees, and carves out fraud/wilful misconduct - fully addressing the hidden cap risk (score 3). Rationale explains the asymmetric risk structure and Controller balance sheet protection but does not explicitly reference the Principal Agreement cap risk mentioned in GT key elements (score 2). Redline is well-structured and immediately usable (score 3). Strong detection and fix."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability in DPA",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 16,
+      "matched_redline_id": "Controller Liability Cap Clause (New)",
+      "evidence": {
+        "proposed_revision_excerpt": "Controller Liability Cap. Except for liability arising from Controller's wilful misconduct or fraud, Controller's aggregate liability to Processor under this Agreement shall not exceed the total fees paid or payable to Processor in the twelve (12) months preceding the event giving rise to liability.",
+        "effective_rationale_excerpt": "New Clause – Controller Liability Cap... Currently uncapped; introduce cap equal to 12 months' fees. [...] Adding an explicit cap for Controller harmonises with the amended liability allocation above and prevents disproportionate exposure. This market-standard protection encourages efficient risk allocation and favours Controller's financial interests without undermining data-subject protections.",
+        "judge_reasoning": "Leah detected this missing T1 clause and proposed a new Controller liability cap. The amendment adds the missing limitation, caps Controller at 12-month fees, carves out fraud/wilful misconduct, and provides clear placement (after 9.1) - comprehensively addressing the gap (score 3). Rationale identifies the uncapped exposure and market-standard protection but does not explicitly discuss how Principal Agreement caps would apply or the regulatory fine carve-out aspect (score 2). Redline includes placement guidance and is immediately usable (score 3). Excellent new clause recommendation."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Deletion Timeline Unspecified",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "Deletion Certification",
+      "evidence": {
+        "proposed_revision_excerpt": "3.4 Deletion. Upon termination of the Principal Agreement, Processor shall, within thirty (30) days, delete or return all Personal Data to Controller, at Controller's option, unless retention is required by law, and shall provide a written certificate of complete deletion or return signed by an authorised officer of Processor.",
+        "effective_rationale_excerpt": "No requirement for written certification of deletion; timing unspecified. [...] GDPR Recital 39 stresses verifiable deletion. A 30-day deadline and certification guarantee timely, auditable compliance, enabling Controller to demonstrate accountability. This materially benefits Controller in audits and regulator enquiries.",
+        "judge_reasoning": "Leah detected this T2 issue and flagged 3.4 as ⚠️ in the risk table. The amendment adds a 30-day deadline (within acceptable 30-60 day range) and deletion certificate signed by authorized officer - addressing both key elements comprehensively (score 3). Rationale cites GDPR Recital 39, identifies verifiable deletion requirement, and explains accountability benefits (score 3). Redline is precise and actionable (score 3). Excellent detection and fix."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.2",
+      "tier": "T3",
+      "issue": "All Audit Costs on Controller",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "Audit Procedures",
+      "evidence": {
+        "proposed_revision_excerpt": "7.2 Audit Procedures. Controller (or its mandated auditor) may conduct remote or on-site audits up to twice per calendar year on fifteen (15) days' prior written notice (or shorter where required by a supervisory authority). Processor shall bear the reasonable costs of the first audit each year; additional audits shall be at Controller's expense. Provision of a SOC 2 report may satisfy an audit only if accepted in writing by Controller.",
+        "effective_rationale_excerpt": "Limits to once/year, at Controller cost; restricts flexibility. [...] Our amendment restores timely oversight, maintains proportional cost-sharing, and prevents Processor from unilaterally substituting a SOC 2 report.",
+        "judge_reasoning": "Leah detected this T3 issue and flagged 7.2 as ❌ in the risk table. The amendment shifts first audit cost to Processor with Controller bearing additional audits - directly addressing the cost imbalance (score 3). Also adds SOC 2 option with Controller written acceptance. Rationale identifies proportional cost-sharing and oversight flexibility but does not explicitly mention cost shift when deficiencies are found (score 2). Redline is comprehensive and well-structured (score 3). Good detection and fix for T3 item."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "10.1",
+      "tier": "T3",
+      "issue": "Indefinite Duration",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah flagged 10.1 as ✅ Favorable in the risk table, stating 'Aligned with Principal Agreement.' The risk assessment acknowledges the term structure but does not identify the indefinite processing duration concern or propose periodic review requirement. No amendment proposed. This is a miss - the GT identifies that while the structure is appropriate, the potentially indefinite nature and lack of maximum retention periods or periodic review requirement is a minor risk. Marked as Favorable when it should be at least ⚠️ with amendment."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "Exhibit A / 2.2",
+      "tier": "T2",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "Exhibit A Completion",
+      "evidence": {
+        "proposed_revision_excerpt": "2.2 Processing Details. The subject matter, duration, nature, and purpose of Processing, the types of Personal Data, and categories of Data Subjects shall be fully completed in Exhibit A and approved in writing by Controller prior to commencement of any Processing. Processor shall update Exhibit A only with Controller's prior written consent.",
+        "effective_rationale_excerpt": "Exhibit A placeholders mean key parameters (types of data, duration, purpose) are undefined, creating compliance risk. [...] The original clause merely references Exhibit A, but that schedule is presently blank, leaving critical GDPR Article 28(3) particulars undefined. This exposes Controller to regulatory findings for processing without documented scope. The proposed language compels Processor to populate Exhibit A and bars any processing until Controller approval is secured, ensuring GDPR compliance and giving Controller absolute visibility. It further prohibits unilateral updates, preserving Controller's supervisory powers.",
+        "judge_reasoning": "Leah detected this T2 issue and flagged 2.2 as ⚠️ (should be ❌ per GT) in the risk table. The amendment requires Exhibit A completion and Controller approval before processing, with consent required for updates - comprehensively addressing the blank exhibit risk (score 3). Rationale explicitly cites GDPR Art 28(3), identifies regulatory exposure, and explains Controller visibility and supervisory powers (score 3). Redline is well-drafted with clear integration (score 3). Strong detection despite classification being one level too lenient."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "Exhibit B / 5.1",
+      "tier": "T2",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "Technical Measures Exhibit Reference",
+      "evidence": {
+        "proposed_revision_excerpt": "5.1 Technical and Organisational Measures. Processor shall implement and maintain the technical and organisational measures set out in Exhibit B (Technical and Organisational Measures), which Exhibit may be updated only with Controller's prior written approval. Such measures shall include, at a minimum, encryption, pseudonymisation, access controls, regular security testing, and documented vulnerability remediation timelines.",
+        "effective_rationale_excerpt": "Generic list only; lacks reference to Exhibit B and measurable standards. [...] Referencing Exhibit B embeds concrete TOMs, preventing Processor from relying on vague adjectives. Controller approval of any changes closes a common loophole and secures consistent protection.",
+        "judge_reasoning": "Leah detected this T2 issue and flagged 5.1 as ⚠️ (should be ❌ per GT) in the risk table. The amendment explicitly references Exhibit B, requires its completion, and mandates Controller approval for changes - directly addressing the blank exhibit verification gap (score 3). Rationale identifies the vague baseline, the need for concrete documented measures, and Controller approval mechanism, though does not explicitly cite GDPR Art 32 (score 3 - strong reasoning even without explicit citation). Redline is comprehensive and actionable (score 3). Strong detection despite classification being one level too lenient."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit C / 4.1",
+      "tier": "T2",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 7,
+      "total_points": 9.5,
+      "matched_redline_id": "Sub-processor Consent",
+      "evidence": {
+        "proposed_revision_excerpt": "4.1 Prior Written Consent. Processor shall not engage any Sub-processor to process Personal Data without Controller's prior written consent. Processor shall submit a written request identifying the proposed Sub-processor at least forty-five (45) days in advance and shall not proceed until consent is granted. Controller may withhold consent at its sole discretion and, if consent is withheld, may terminate the Principal Agreement without penalty.",
+        "effective_rationale_excerpt": "The existing redline strips Controller control and substitutes a passive list approach, exposing data to unknown subcontractors. The proposed revision reinstates strict consent, extends notice to 45 days for due diligence, and adds a termination right, reflecting EDPB Guidelines 07/2020 and empowering Controller to police its supply chain.",
+        "judge_reasoning": "Leah's 4.1 amendment addresses the sub-processor authorization mechanism but does not explicitly require population of Exhibit C or address the blank list problem. The shift to prior written consent model means individual sub-processors are approved case-by-case rather than listed upfront, which functionally addresses the gap but in a different way than expected. The risk table flags 4.1 as ❌ for authorization weakness but does not separately flag the blank Exhibit C as a distinct issue. Partial detection: Leah solved the underlying problem (Controller control of sub-processors) but not via the expected path (populating Exhibit C baseline list). Amendment score 2: addresses the control gap but not the transparency/due diligence aspect of having a known baseline. Rationale score 2: focuses on authorization mechanism, not baseline list requirement. Redline quality 3: well-drafted for what it addresses."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Cyber Insurance Requirement",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "Processor Cyber Insurance (New)",
+      "evidence": {
+        "proposed_revision_excerpt": "Processor Insurance. Processor shall maintain, at its own expense, cyber and professional indemnity insurance with minimum limits of GBP 5,000,000 per claim and in the aggregate, covering liabilities arising under this Agreement, and shall provide certificates of insurance to Controller upon request. Processor shall not cancel or materially reduce such coverage without thirty (30) days' prior written notice to Controller.",
+        "effective_rationale_excerpt": "New Clause – Processor Cyber Insurance... No insurance obligation; increases recovery risk. [...] Insurance is a core risk-mitigation tool. By mandating GBP 5 m coverage, Controller gains confidence in Processor's ability to satisfy potential judgments or regulatory fines. Advance notice of cancellation enables Controller to act before coverage lapses, strongly protecting Controller's position.",
+        "judge_reasoning": "Leah detected this missing T2 clause and proposed cyber insurance requirement. The amendment adds GBP 5M cyber and professional indemnity insurance, certificate provision on request, and 30-day cancellation notice - comprehensively addressing all key elements (score 3). Rationale identifies recovery risk, Processor financial ability concern, and advance notice benefits (score 3). Does not mention Controller as additional insured but this is a minor gap. Redline includes clear placement guidance (after 9.2) and is immediately usable (score 3). Excellent new clause recommendation."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 10,
+      "P": 1,
+      "N": 1,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 3,
+    "t1_detected": 3,
+    "total_detection_points": 53.5,
+    "total_quality_points": 85,
+    "total_points": 138.5,
+    "max_detection_points": 57,
+    "max_quality_points": 132,
+    "weighted_max": 189,
+    "percentage": 73.28,
+    "pass_fail": "PASS",
+    "notes": "Pathfinder detected 11 of 12 GT issues (10 Y, 1 P). All three T1 issues detected, passing the T1 gate. Quality scores were consistently high (3/3 or 2/3 across most items). Single N detection was GT-08 (Indefinite Duration T3), marked Favorable when should be flagged. GT-11 (Exhibit C blank) received P because Leah solved the sub-processor control problem via consent mechanism rather than baseline list population. Overall strong performance with excellent quality of proposed amendments and rationales."
+  },
+  "combined_summary": {
+    "part_a": {
+      "score": 24,
+      "max": 24,
+      "percentage": 100.0,
+      "pass_fail": "PASS",
+      "critical_failures": 0
+    },
+    "part_b": {
+      "detection_points": 53.5,
+      "quality_points": 85,
+      "total_points": 138.5,
+      "max_detection": 57,
+      "max_quality": 132,
+      "weighted_max": 189,
+      "percentage": 73.28,
+      "t1_gate": "PASS",
+      "pass_fail": "PASS"
+    },
+    "overall_pass": true,
+    "baseline_comparison": {
+      "freeform_baseline_percentage": null,
+      "stacking_percentage": 73.28,
+      "baseline_delta": null,
+      "degradation_flag": false,
+      "notes": "Baseline comparison requires Freeform evaluation data. Will be calculated during aggregation."
+    },
+    "quality_assessment": {
+      "strengths": [
+        "Perfect Part A score - all CP redlines correctly identified and rejected/modified",
+        "All T1 issues detected in Part B",
+        "Consistently high quality scores (amendment 3/3, rationale 2-3/3, redline 3/3)",
+        "Strong legal reasoning citing GDPR articles, EDPB Guidelines, and ICO guidance",
+        "Proposed amendments frequently strengthened Controller position beyond baseline"
+      ],
+      "weaknesses": [
+        "Missed GT-08 (Indefinite Duration) - marked Favorable when should flag periodic review need",
+        "GT-11 (Exhibit C blank) partial detection - solved via consent mechanism rather than baseline list",
+        "Some rationales scored 2/3 for missing specific GT elements despite strong overall reasoning"
+      ],
+      "notable_patterns": [
+        "Pathfinder consistently rejected adversarial CP redlines in favor of Controller-protective amendments",
+        "New clause recommendations (GT-05, GT-12) were comprehensive and well-placed",
+        "Risk table classifications occasionally too lenient (⚠️ when should be ❌) but amendments still addressed issues"
+      ]
+    }
+  },
+  "additional_issues": [],
+  "additional_issues_summary": {
+    "truly_additional": 0,
+    "overlaps_gt": 0,
+    "not_material": 0,
+    "notes": "No additional issues evaluation performed - focus was on correcting Part A scoring from Word document source."
+  }
+}

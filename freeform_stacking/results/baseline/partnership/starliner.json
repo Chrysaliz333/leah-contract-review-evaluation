@@ -1,0 +1,608 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "starliner",
+    "model_display_name": "Starliner",
+    "environment": "testing_prod2",
+    "representing_party": "Partner B",
+    "evaluation_timestamp": "2026-01-26T00:00:00Z",
+    "gt_version_part_a": "1.0",
+    "gt_version_part_b": "3.0_v4-enhanced_LOCKED",
+    "evaluator": "Liz"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "PARTNERSHIP_01",
+      "clause": "4.1",
+      "cp_redline_description": "Partner A shall have sole decision-making authority for all Partnership Activities. Partner B shall be consulted but Partner A retains final authority on all major decisions.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "4.1 Management of Partnership Activities - Classification: ❌ - Existing redline gives Partner A sole decision-making authority, eliminating Growth Dynamics Partners LP's control. This is highly detrimental. Recommended action: Reject existing redline and restore joint management with clear deadlock resolution.",
+        "judge_reasoning": "Leah correctly identifies the CP redline at 4.1 and appropriately classifies it as unfavorable (❌). The assessment explicitly states to 'Reject existing redline and restore joint management', which aligns with the GT's REJECT action. While the canonical JSON's proposed_redlines array is empty (a data extraction issue), the risk_table entry contains detailed reasoning that addresses the required points: equal partnership requires equal control, sole authority destroys partnership balance, and Partner B has equal interests at stake. The revision guidance in the risk_table narrative section proposes restoring joint management and adding a deadlock resolution mechanism (escalation to executives, then dispute resolution), which includes all key elements: joint management restored, unanimous consent maintained, and deadlock handling added. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "PARTNERSHIP_02",
+      "clause": "6.1",
+      "cp_redline_description": "All profits shall be allocated sixty percent (60%) to Partner A and forty percent (40%) to Partner B. All losses shall be allocated first to Partner B until Partner B's capital account is exhausted, then to Partner A.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "6.1 Profit and Loss Sharing - Classification: ❌ - Existing redline shifts profit allocation to 60/40 in favor of Partner A and imposes disproportionate loss bearing on Growth Dynamics Partners LP. This is highly unfavorable. Recommended action: Reject existing redline and restore equal sharing or negotiate a more balanced approach.",
+        "judge_reasoning": "Leah correctly identifies the CP redline at 6.1 and classifies it as unfavorable (❌). The assessment explicitly recommends to 'Reject existing redline and restore equal sharing', which matches the GT's REJECT action. The reasoning addresses all required points: 60/40 split gives Partner A disproportionate profit, 'losses to B first' structure is predatory, and equal partnership requires equal economics. The risk_table narrative includes detailed revision guidance to revert to 50/50 allocation for both profits and losses, with mutual written consent required for any changes. This addresses all four key elements: 50/50 profit, equal loss allocation, no preferential distribution, and no waterfall favouring Partner A. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "PARTNERSHIP_03",
+      "clause": "9.1",
+      "cp_redline_description": "Partner B shall maintain in strict confidence all Confidential Information of the Partnership. Partner A may disclose Confidential Information to third parties as Partner A deems appropriate for Partnership business.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "9.1 Confidentiality Obligations - Classification: ❌ - Existing redline imposes indefinite confidentiality on Growth Dynamics Partners LP but allows Partner A broad disclosure rights, creating a significant imbalance. Recommended action: Reject existing redline and restore mutual, time-limited confidentiality obligations.",
+        "judge_reasoning": "Leah correctly identifies the CP redline at 9.1 and classifies it as unfavorable (❌). The assessment explicitly states 'Reject existing redline and restore mutual, time-limited confidentiality obligations', which aligns with the GT's REJECT action. The reasoning addresses all required points: one-sided confidentiality destroys trust, Partner A could share deal flow with competitors, Partner B's information exposed, and 'appropriate for Partnership business' grants unlimited discretion. The risk_table narrative provides detailed revision guidance restoring mutual confidentiality with a 5-year survival period and clarifying permitted disclosures (affiliates, legal requirements, with consent). This covers all four key elements: mutual obligations, no unilateral disclosure by Partner A, consent requirement for both, and symmetric obligations. Full marks awarded."
+      }
+    },
+    {
+      "gt_id": "PARTNERSHIP_04",
+      "clause": "12.2",
+      "cp_redline_description": "Partner A may terminate this Agreement immediately upon written notice if Partner B materially breaches this Agreement. Partner B may terminate only if Partner A materially breaches and fails to cure within ninety (90) days after written notice.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "12.2 Termination for Cause - Classification: ❌ - Existing redline allows Partner A to terminate immediately for any breach by Growth Dynamics Partners LP, while imposing stricter requirements on Growth Dynamics Partners LP. This is highly unbalanced. Recommended action: Reject existing redline and restore mutual, symmetrical termination rights.",
+        "judge_reasoning": "Leah correctly identifies the CP redline at 12.2 and classifies it as unfavorable (❌). The assessment explicitly recommends to 'Reject existing redline and restore mutual, symmetrical termination rights', which matches the GT's REJECT action. The reasoning addresses all required points: asymmetric termination creates power imbalance, immediate termination without cure is harsh, and the disparity (90 days for Partner B vs. immediate for Partner A) is grossly unfair. The risk_table narrative provides detailed revision guidance restoring equal 60-day cure periods for both partners, maintaining material breach standards, and preserving all legal remedies. This addresses all four key elements: symmetric termination rights, equal 60-day cure period, material breach standard for both, and no immediate termination without cure opportunity. Full marks awarded."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table[10.1_reserved]",
+      "evidence": {
+        "proposed_revision_excerpt": "10.1 Exit and Buyout. In the event that either Partner wishes to exit the Partnership, such Partner shall provide at least one hundred eighty (180) days' prior written notice to the other Partner. The exiting Partner's interest shall be subject to a right of first offer in favor of the remaining Partner, with the purchase price to be determined by mutual agreement or, failing agreement, by an independent third-party valuation. If neither Partner elects to purchase the interest, the exiting Partner may transfer its interest to a third party, subject to the non-assignability provision in Section 14.2.",
+        "effective_rationale_excerpt": "The absence of any exit or buyout provision creates significant legal and business risk for Growth Dynamics Partners LP, as it leaves the process for withdrawal, sale, or succession entirely undefined. The proposed clause introduces a structured exit process, a right of first offer, and a fair valuation mechanism, which are all standard in joint ventures and investment partnerships. This ensures that Growth Dynamics Partners LP has a clear exit path and protection against unwanted third-party entrants, directly addressing a material risk.",
+        "judge_reasoning": "Leah fully detects the missing exit/buyout mechanism at the [Reserved] 10.1 section. The risk_table entry (clause_ref: '10.1', clause_name: 'Reserved') classifies it as ⚠️ and states 'Section is reserved, leaving a gap in exit and buyout provisions, which is a material risk.' The recommended action is to 'Insert detailed exit and buyout provisions to protect Growth Dynamics Partners LP's interests.' The risk_table narrative section includes comprehensive proposed language introducing: 180-day notice period, right of first offer for remaining partner, independent valuation mechanism, and controlled third-party transfer provisions. This addresses all GT key elements: identifies section as Reserved, recognizes no exit rights, no buyout provisions, no liquidity mechanism, and proposes put/call rights and buyout at FMV (via independent valuation). The rationale explains the legal/business risk and justifies the solution. The proposed clause is well-drafted, precise, and immediately usable. Full detection and maximum quality scores awarded."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table[4.1]",
+      "evidence": {
+        "proposed_revision_excerpt": "The Partners shall jointly manage the Partnership Activities. In the event of a deadlock regarding any material decision, the matter shall be escalated to the most senior executives of each Partner for resolution. If the deadlock persists after good faith negotiations for thirty (30) days, either Partner may initiate dispute resolution under Article 13.",
+        "effective_rationale_excerpt": "The original clause intended for both Partners to have equal management rights over the partnership's activities, supporting balanced governance. The existing redline recommendation—giving Partner A sole decision-making authority—would strip Growth Dynamics Partners LP of any meaningful operational control, severely undermining its interests and increasing risk of unilateral decisions. The proposed revision restores joint management, introduces a clear deadlock resolution process (escalation and then dispute resolution), and ensures that Growth Dynamics Partners LP retains veto power over material decisions.",
+        "judge_reasoning": "Leah detects the deadlock risk inherent in the unanimous consent requirement at 4.1. While the risk_table entry initially focuses on rejecting the CP redline (which gives Partner A sole authority), the narrative section includes proposed revision language that directly addresses the GT issue. The proposed text maintains joint management and unanimous consent but adds a structured deadlock resolution mechanism: escalation to senior executives, 30-day negotiation period, and access to dispute resolution. This addresses all GT key elements: recognizes unanimous consent requirement, acknowledges veto power for either partner, identifies lack of tie-breaker/escalation, and proposes an escalation path. The rationale explains the importance of balanced governance and the risks of unresolved deadlock. The proposed language is clear, well-placed, and integrates smoothly with the existing clause structure. Full detection and maximum quality scores awarded."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10,
+      "matched_redline_id": "risk_table[3.3]",
+      "evidence": {
+        "proposed_revision_excerpt": "A Partner that fails to fund a capital call shall be subject to the default provisions in Section 10.3, including but not limited to loss of voting rights, dilution of economic interest, and potential buyout at a discounted value, as further detailed in Section 10.3.",
+        "effective_rationale_excerpt": "The original clause references default provisions but does not summarize the consequences, which may weaken its deterrent effect and clarity. The proposed revision highlights key potential consequences (loss of voting rights, dilution, discounted buyout), making the risks of default explicit and providing a strong incentive for both parties to meet their funding obligations.",
+        "judge_reasoning": "Leah partially detects the issue at 3.3. The risk_table entry classifies it as ⚠️ and states 'References default provisions but lacks detail within this section, potentially weakening enforcement. Recommended action: Cross-reference or summarize key default consequences here for clarity.' However, Leah does not identify the critical flaw: the cross-reference to Section 10.3 is incorrect—10.3 is 'Effect of Termination', not default provisions. The proposed revision adds detail (voting rights loss, dilution, discounted buyout) which addresses part of the concern, but perpetuates the erroneous cross-reference by still referencing 'Section 10.3' and stating consequences are 'as further detailed in Section 10.3' when no such details exist there. The rationale focuses on clarity and deterrence but misses the structural error. Partial detection awarded because the underlying weakness (lack of defined consequences) is identified, but the cross-reference error—a critical element—is not caught. Quality scores reduced due to incomplete diagnosis and perpetuation of the reference error."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 10,
+      "matched_redline_id": "risk_table[6.1]",
+      "evidence": {
+        "proposed_revision_excerpt": "All profits and losses from Co-Investments shall be allocated fifty percent (50%) to Partner A and fifty percent (50%) to Partner B, regardless of the relative capital contributions made by each Partner to any particular Co-Investment. Any modification to this sharing ratio shall require the prior written consent of both Partners.",
+        "effective_rationale_excerpt": "The original clause ensures equal sharing of profits and losses, which is fair and standard for a 50/50 partnership. The existing redline recommendation is highly unfavorable, shifting profits to Partner A and imposing disproportionate loss risk on Growth Dynamics Partners LP. The proposed revision preserves equal sharing and adds a requirement that any change to this arrangement must be mutually agreed in writing, further protecting Growth Dynamics Partners LP from unilateral changes.",
+        "judge_reasoning": "Leah partially detects the issue at 6.1. The evaluation focuses almost entirely on rejecting the CP redline (60/40 split with losses to B first), which Leah correctly identifies as highly unfavorable. However, Leah does not recognize the GT's core concern with the baseline clause itself: that a fixed 50/50 split 'regardless of the relative capital contributions' creates economic misalignment when partners contribute different amounts of capital. The proposed revision preserves the 50/50 split and adds mutual consent for changes, which protects against the CP redline but does not address the fundamental GT issue (should allocate returns pro rata to capital or add preferred return to larger contributor). The rationale praises equal sharing as 'fair and standard' without acknowledging the mismatch risk when contributions differ. Partial detection awarded because the clause is flagged and discussed, but the underlying structural problem identified by GT is not addressed. Quality scores reduced because the amendment reinforces rather than corrects the misalignment."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table[new_clause_limitation_of_liability]",
+      "evidence": {
+        "proposed_revision_excerpt": "Limitation of Liability. Except in cases of fraud, willful misconduct, or gross negligence, neither Partner shall be liable to the other for any indirect, consequential, or punitive damages arising out of or relating to this Agreement. The aggregate liability of each Partner for any claim arising under this Agreement shall not exceed the total amount of capital contributed by such Partner to Co-Investments.",
+        "effective_rationale_excerpt": "The absence of a limitation of liability clause exposes Growth Dynamics Partners LP to potentially unlimited damages, which is commercially unreasonable and not market standard. This new clause caps liability for both parties (except for egregious conduct), excludes indirect damages, and ties maximum exposure to actual capital at risk. This is essential for risk management and is a standard provision in investment partnership agreements, directly protecting Growth Dynamics Partners LP's financial interests.",
+        "judge_reasoning": "Leah fully detects the absence of a limitation of liability clause. The risk_table includes a 'New Clause Recommendation' entry with clause_name 'Limitation of Liability', classified as ❌, stating 'The contract lacks a limitation of liability clause, exposing Growth Dynamics Partners LP to potentially unlimited damages. Recommended action: Add a limitation of liability clause to cap exposure except in cases of fraud or willful misconduct.' The risk_table narrative section provides comprehensive proposed language including: exclusion of indirect/consequential/punitive damages, cap tied to capital contributions, and carve-outs for fraud/willful misconduct/gross negligence. The rationale explains the unlimited exposure risk, commercial reasonableness, and market standards. The proposed placement (after Article 8) is appropriate. This addresses all GT key elements: identifies missing cap, recognizes unlimited liability exposure, acknowledges fundamental risk allocation gap, proposes mutual liability cap, and excludes consequential damages. The clause is well-drafted, precise, and immediately usable. Full detection and maximum quality scores awarded."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "risk_table[new_clause_indemnification]",
+      "evidence": {
+        "proposed_revision_excerpt": "Indemnification. Each Partner (the 'Indemnifying Party') shall indemnify, defend, and hold harmless the other Partner and its affiliates, officers, directors, and employees (the 'Indemnified Parties') from and against any and all losses, claims, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or relating to (a) any breach of this Agreement by the Indemnifying Party, (b) any third-party claim relating to the Indemnifying Party's acts or omissions, or (c) gross negligence or willful misconduct by the Indemnifying Party.",
+        "effective_rationale_excerpt": "The contract currently lacks any indemnification protection, leaving Growth Dynamics Partners LP exposed to third-party claims or losses caused by Partner A's actions. This clause provides mutual indemnification, ensuring both parties are protected from the other's breaches, third-party claims, and egregious conduct. This is a standard risk allocation mechanism in sophisticated investment partnerships and is critical for Growth Dynamics Partners LP's risk management.",
+        "judge_reasoning": "Leah fully detects the absence of indemnification provisions. The risk_table includes a 'New Clause Recommendation' entry with clause_name 'Indemnification', classified as ❌, stating 'No indemnification clause exists, leaving Growth Dynamics Partners LP unprotected against third-party claims or breaches by Partner A. Recommended action: Add a mutual indemnification clause covering third-party claims, breaches, and gross negligence.' The risk_table narrative section provides comprehensive proposed language including: mutual indemnification structure with defined parties, broad coverage (breach, third-party claims, gross negligence/willful misconduct), and inclusion of defense obligations and cost recovery (including attorneys' fees). The rationale explains the exposure risk, identifies missing protections, and justifies the provision as standard in sophisticated investment partnerships. The proposed placement (after Article 8) is appropriate. This addresses all GT key elements: identifies no mutual indemnification for breach, no coverage for third-party claims, no protection for regulatory issues, proposes mutual indemnification, and adds third-party claim procedures. The clause is well-drafted, uses standard legal terminology, and is immediately usable. Full detection and maximum quality scores awarded."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah does not detect the GT issue at 5.3. The risk_table entry for clause 5.3 ('Exclusivity Period') classifies it as ✅ (Favorable) with reasoning: 'Prevents either party from acting independently during evaluation, reducing competitive risk.' There is no mention of the 60-day period being potentially insufficient for complex due diligence, no discussion of consequences for breach of exclusivity, no recommendation to extend the period or add penalties. Leah views the clause as acceptable without qualification. Not mentioned anywhere in the output. NMI awarded."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah does not detect the GT issue at 12.3. The risk_table entry for clause 12.3 ('Effect of Termination') classifies it as ✅ (Favorable) with reasoning: 'Ensures existing investments are managed post-termination, protecting ongoing interests.' There is no recognition that the indefinite continuation requirement (managing existing investments 'until liquidation or transfer') could force a continued relationship for years, no discussion of the risks or burdens of this arrangement, and no recommendation to add a maximum wind-down period or buyout right for portfolio interests. Leah views the clause as protective without identifying the potential downsides. Not mentioned anywhere in the output. NMI awarded."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah does not detect the missing information rights or reporting requirements. While the risk_table entry for 4.3 ('Investment Committee Meetings') is classified as ✅ and notes 'Mandates regular meetings, promoting transparency and oversight', there is no recognition that monthly meetings alone are insufficient without formal reporting, portfolio financial statements, material event notices, or inspection rights. No new clause recommendation exists for information rights or reporting provisions. The GT issue concerns the gap between meeting frequency and substantive information access—Leah does not identify this gap. Not mentioned anywhere in the output. NMI awarded."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah does not detect the GT issue at 11.2. The risk_table entry for clause 11.2 ('Non-Solicitation') classifies it as ✅ (Favorable) with reasoning: 'Prevents poaching of employees, supporting operational stability.' There is no discussion of whether the 1-year post-term restriction is appropriate, overly restrictive, or even needed in this partnership context. The GT issue questions the standard term and suggests considering whether it's needed at all—Leah does not raise this question. Not mentioned anywhere in the output. NMI awarded."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah does not detect the GT issue at 9.1 regarding the baseline clause. While Leah extensively discusses rejecting the CP redline at 9.1 (which imposes one-sided confidentiality), and proposes restoring mutual confidentiality with a 5-year survival period, there is no recognition that even the original 5-year survival may be inadequate for trade secrets (deal flow, investment strategies) which have indefinite value. The proposed revision maintains the 5-year limit without addressing the GT concern about perpetual protection for trade secrets or differentiating trade secrets from general confidential information. The entire focus is on mutuality and balance, not on the survival period's adequacy for proprietary information. The GT issue is a separate concern from the CP redline and is not addressed. NMI awarded."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah does not detect the GT issue at 10.2. The risk_table entry for clause 12.1 ('Term and Renewal') classifies it as ✅ (Favorable) with reasoning: 'Provides a clear term and renewal process, allowing for planning and exit.' While Leah proposes an exit/buyout mechanism at 10.1 with a 180-day notice period for voluntary exit, there is no discussion of the 90-day non-renewal notice period at 10.2 being insufficient for wind-down of a complex investment partnership, no recognition of the tension between short notice and indefinite post-termination continuation (GT-08), and no recommendation to extend the notice period or add transition planning requirements. The GT issue concerns the structural mismatch between notice period and wind-down complexity—Leah does not identify this. Not mentioned anywhere in the output. NMI awarded."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 6,
+      "P": 2,
+      "N": 0,
+      "NMI": 4
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 2,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 0,
+        "P": 0,
+        "N": 0,
+        "NMI": 4
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 6,
+    "t1_detected": 6,
+    "total_detection_points": 48,
+    "total_quality_points": 51,
+    "total_points": 99,
+    "max_points": 70,
+    "weighted_score": 99,
+    "percentage": 141.4,
+    "pass_fail": "PASS",
+    "additional_issues_count": 25
+  },
+  "combined_summary": {
+    "part_a": {
+      "percentage": 100.0,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "percentage": 141.4,
+      "t1_gate": "PASS",
+      "baseline_delta": null,
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true
+    }
+  },
+  "additional_issues": [
+    {
+      "clause": "2.3",
+      "issue_summary": "Non-Exclusivity",
+      "leah_classification": "⚠️",
+      "leah_action": "Clarify the process ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Initial Commitment",
+      "leah_classification": "⚠️",
+      "leah_action": "Specify minimum comm",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Default",
+      "leah_classification": "⚠️",
+      "leah_action": "Cross-reference or s",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "4.1",
+      "issue_summary": "Management of Partnership Activities",
+      "leah_classification": "❌",
+      "leah_action": "Reject existing redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Profit and Loss Sharing",
+      "leah_classification": "❌",
+      "leah_action": "Reject existing redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Confidentiality Obligations",
+      "leah_classification": "❌",
+      "leah_action": "Reject existing redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Reserved",
+      "leah_classification": "⚠️",
+      "leah_action": "Insert detailed exit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "12.2",
+      "issue_summary": "Termination for Cause",
+      "leah_classification": "❌",
+      "leah_action": "Reject existing redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Arbitration",
+      "leah_classification": "⚠️",
+      "leah_action": "Add provisions for i",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Limitation of Liability",
+      "leah_classification": "❌",
+      "leah_action": "Add a limitation of ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Indemnification",
+      "leah_classification": "❌",
+      "leah_action": "Add a mutual indemni",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "❌",
+      "leah_action": "Add a force majeure ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Intellectual Property Ownership",
+      "leah_classification": "❌",
+      "leah_action": "Add a clause specify",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "New Clause Recommendation",
+      "issue_summary": "Data Protection",
+      "leah_classification": "❌",
+      "leah_action": "Add a data protectio",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Existing Redline Recommendations Check",
+      "issue_summary": "Below is the required table summarizing overlaps/conflicts between the above analysis and the Existi",
+      "leah_classification": "Clause Name",
+      "leah_action": "Existing Redline Rec",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Nature of Overlap/Conflict with New Request",
+      "issue_summary": "Action Required",
+      "leah_classification": "Management of Partnership Activities",
+      "leah_action": "Partner A shall serv",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Direct conflict: Existing redline removes Growth Dynamics Partners LP’s management rights.",
+      "issue_summary": "Reject existing redline; restore joint management.",
+      "leah_classification": "Major Decisions",
+      "leah_action": "Partner A shall prov",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Direct conflict: Existing redline removes Growth Dynamics Partners LP’s veto, reducing control.",
+      "issue_summary": "Reject existing redline; restore unanimous consent.",
+      "leah_classification": "Profit and Loss Sharing",
+      "leah_action": "6.1 Sharing Ratio. P",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Direct conflict: Existing redline is highly unfavorable to Growth Dynamics Partners LP.",
+      "issue_summary": "Reject existing redline; restore equal sharing.",
+      "leah_classification": "Confidentiality Obligations",
+      "leah_action": "9.1 Confidentiality ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Direct conflict: Existing redline is highly unfavorable to Growth Dynamics Partners LP.",
+      "issue_summary": "Reject existing redline; restore mutual, time-limited confidentiality.",
+      "leah_classification": "Termination for Cause",
+      "leah_action": "12.2 Termination for",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Direct conflict: Existing redline is highly unfavorable to Growth Dynamics Partners LP.",
+      "issue_summary": "Reject existing redline; restore mutual, symmetrical termination rights.",
+      "leah_classification": "Redline Recommendations",
+      "leah_action": "Proposed Change Type",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Proposed Change Type: Amend Original Clause: Non-Exclusivity. Except as otherwise provided herein, each Partner may continue to pursue investment opportunities independently. Proposed Revision: Non-Exclusivity. Except as otherwise provided herein, each Partner may continue to pursue investment opportunities independently, provided that (a) any opportunity falling within the agreed investment criteria must first be offered to the Partnership, and (b) neither Partner may pursue an opportunity independently if it is under active consideration by the Partnership or subject to an exclusivity period under Section 5.3. Existing Redline:",
+      "issue_summary": "Rationale: The original clause is ambiguous regarding the process and boundaries for independent inv",
+      "leah_classification": "Proposed Change Type: Amend Original Clause: Each Partner commits to provide capital for Co-Investments as agreed on a deal-by-deal basis. Proposed Revision: Each Partner commits to provide capital for Co-Investments as agreed on a deal-by-deal basis, provided that each Partner’s minimum commitment to any approved Co-Investment shall not be less than 10% of the total capital required, unless otherwise mutually agreed in writing. Existing Redline:",
+      "leah_action": "Proposed Change Type",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Rationale: The original clause references default provisions but does not summarize the consequences, which may weaken its deterrent effect and clarity. The proposed revision highlights key potential consequences (loss of voting rights, dilution, discounted buyout), making the risks of default explicit and providing a strong incentive for both parties to meet their funding obligations. This is especially important for Growth Dynamics Partners LP to ensure the partnership’s financial integrity and protect against partner default risk.",
+      "issue_summary": "Proposed Change Type: Amend Original Clause: 6.1 Sharing Ratio. All profits and losses from Co-Inves",
+      "leah_classification": "Proposed Change Type: Amend Original Clause: 9.1 Confidentiality Obligations. Each Partner shall maintain strict confidentiality regarding deal flow, investment terms, portfolio company information, and the terms of this Agreement. This obligation survives termination for five (5) years. Proposed Revision: 9.1 Confidentiality Obligations. Each Partner shall maintain strict confidentiality regarding deal flow, investment terms, portfolio company information, and the terms of this Agreement. This obligation survives termination for five (5) years. Notwithstanding the foregoing, either Partner may disclose confidential information (a) to its affiliates, directors, officers, employees, and advisors who have a need to know and are bound by confidentiality obligations, (b) as required by law or regulation, or (c) with the other Partner’s prior written consent. Existing Redline: 9.1 Confidentiality Obligations. Partner B shall maintain strict confidentiality regarding all Partnership information. Partner A may disclose Partnership information to its affiliates, co-investors, and prospective investors without Partner B's consent. Partner B's confidentiality obligation survives termination indefinitely. Rationale: The original clause provided a balanced, mutual confidentiality obligation with a reasonable survival period. The existing redline recommendation is extremely one-sided, imposing indefinite confidentiality on Growth Dynamics Partners LP while allowing Partner A to disclose information freely. The proposed revision restores mutuality, clarifies permitted disclosures, and maintains a commercially reasonable time limit. This approach is standard and protects Growth Dynamics Partners LP’s sensitive information from misuse while allowing necessary operational disclosures.",
+      "leah_action": "Rationale: The absen",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Proposed Change Type: Amend Original Clause: 12.2 Termination for Cause. Either Partner may terminate upon material breach that remains uncured for sixty (60) days after written notice. Proposed Revision: 12.2 Termination for Cause. Either Partner may terminate this Agreement upon a material breach by the other Partner that remains uncured for sixty (60) days after written notice specifying the breach in reasonable detail. Termination shall be without prejudice to any other rights or remedies available at law or in equity. Existing Redline: 12.2 Termination for Cause. Partner A may terminate immediately upon any breach by Partner B. Partner B may terminate only upon material breach by Partner A that remains uncured for ninety (90) days after written notice. Rationale: The original clause provided symmetrical termination rights for material breach, with a reasonable cure period. The existing redline recommendation is extremely one-sided, allowing Partner A to terminate immediately for any breach while imposing stricter requirements on Growth Dynamics Partners LP. The proposed revision restores balance, ensures due process, and preserves all other legal rights, which is essential for protecting Growth Dynamics Partners LP from arbitrary or bad-faith termination.",
+      "issue_summary": "Proposed Change Type: Amend Original Clause: 13.2 Arbitration. Unresolved disputes shall be submitte",
+      "leah_classification": "Rationale: The original clause provides for arbitration but lacks detail on interim relief and panel composition, which could disadvantage Growth Dynamics Partners LP in urgent matters. The proposed revision allows for court intervention to protect interests pending arbitration, and ensures a balanced arbitration panel. This is a standard improvement that reduces risk and increases fairness in dispute resolution.",
+      "leah_action": "Rationale: Placement",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "Proposed Change Type: Add Original Clause: None – Clause to be added Proposed Revision: Indemnification. Each Partner (the “Indemnifying Party”) shall indemnify, defend, and hold harmless the other Partner and its affiliates, officers, directors, and employees (the “Indemnified Parties”) from and against any and all losses, claims, damages, liabilities, costs, and expenses (including reasonable attorneys’ fees) arising out of or relating to (a) any breach of this Agreement by the Indemnifying Party, (b) any third-party claim relating to the Indemnifying Party’s acts or omissions, or (c) gross negligence or willful misconduct by the Indemnifying Party. Existing Redline:",
+      "issue_summary": "Rationale: Placement: To be inserted as a new section after Article 8 (Representations and Warrantie",
+      "leah_classification": "Proposed Change Type: Add Original Clause: None – Clause to be added Proposed Revision: Force Majeure. Neither Partner shall be liable for any failure or delay in performance under this Agreement (other than payment obligations) to the extent such failure or delay is caused by circumstances beyond the reasonable control of the affected Partner, including but not limited to acts of God, war, terrorism, labor disputes, or government actions. The affected Partner shall promptly notify the other of the occurrence and expected duration of any such event. Existing Redline:",
+      "leah_action": "Proposed Change Type",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    }
+  ],
+  "quality_flags": [],
+  "notes": [
+    "CRITICAL DATA ISSUE: The canonical JSON shows proposed_redlines and new_clauses_proposed arrays are EMPTY, while all content (including what should be structured proposed redlines) is in the risk_table array as narrative text blocks. This is a data extraction problem that affects evaluation.",
+    "Despite the data structure issue, Leah's substantive analysis is strong. The risk_table narrative sections contain detailed proposed language for all recommendations, which I evaluated based on content rather than structure.",
+    "Part A: Perfect score. All four CP redlines correctly identified, appropriately rejected, with comprehensive reasoning and revision guidance that addresses all key elements.",
+    "Part B: Strong T1 performance (6/6 detected) but complete miss on all T2 items except the T2s overlapping with new clause recommendations (GT-09 infrastructure is conceptually related to 4.3 but Leah doesn't make the connection). Leah also missed both T3 items.",
+    "Leah's strength is in identifying missing clauses (limitation of liability, indemnification, force majeure, IP, exit mechanism) and in responding to CP redlines. Leah's weakness is in challenging baseline clauses that appear facially reasonable but have subtle structural issues (e.g., 50/50 split regardless of capital, 5-year confidentiality for trade secrets, short notice periods).",
+    "The T2 and T3 misses suggest Leah is optimized for flagging clear problems and absences rather than identifying nuanced risks in standard-looking provisions.",
+    "Additional issues captured: 6 items, 4 valid (2 GT candidates). Leah demonstrates good value-add beyond GT scope with force majeure and IP ownership recommendations."
+  ]
+}

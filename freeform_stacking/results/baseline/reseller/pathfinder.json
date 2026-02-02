@@ -1,0 +1,457 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-26T00:00:00Z",
+    "gt_version": "1.0",
+    "evaluator": "Liz",
+    "data_quality_alert": "CRITICAL: Canonical JSON incomplete. No proposed_redlines, no new_clauses_proposed. Risk table contains 6 entries addressing CP redlines but no actionable redlines. Part B whole-document detection appears absent. This is a DATA ISSUE requiring investigation before scoring."
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "RESELLER_01",
+      "clause": "4.1",
+      "cp_redline_description": "Price modification: 30-day notice reduced to 7 days; retroactive application to unfulfilled orders",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 0,
+      "reasoning_score": 2,
+      "total_points": 4,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause 4.1 - Price Modification Notice: 'DIRECT CONFLICT – We will seek longer notice (≥ 60 days) and protection for already-placed POs, whereas Vendor seeks shorter notice. Recommended action: Reject Vendor redline; propose counter-amendment favouring Reseller.' Clause 4.1 - Price Change Applicability: 'DIRECT CONFLICT – Vendor wants retroactive increases. We require price protection for accepted POs. Recommended action: Reject Vendor redline; preserve original sentence; add explicit PO price-lock.'",
+        "judge_reasoning": "Action: REJECT correctly identified for both aspects of RESELLER_01 (notice period and retroactive application). Score 2/2. Revision: NO proposed redline exists in canonical JSON - proposed_redlines array is empty. Despite identifying the need to 'reject Vendor redline' and 'counter-amend', no actual revision provided. Score 0/2. Reasoning: Addresses key concerns - 7 days inadequate vs 60+ day requirement, retroactive application unacceptable, need for PO price protection. However, does not quantify why 7 days is insufficient for reseller planning. Score 2/2. CRITICAL DATA ISSUE: Risk table identifies conflicts but provides no executable redlines."
+      }
+    },
+    {
+      "gt_id": "RESELLER_02",
+      "clause": "5.1",
+      "cp_redline_description": "Payment terms: 30 days reduced to 15 days; interest increased to 2%; delivery suspension added",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 0,
+      "reasoning_score": 2,
+      "total_points": 4,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause 5.1 - Payment Terms: 'DIRECT CONFLICT – Vendor shortens payment window and weaponises suspension. We want 45-day terms and cure period before any suspension. Recommended action: Reject Vendor redline; counter-amend payment and suspension provisions.'",
+        "judge_reasoning": "Action: REJECT correctly identified. Score 2/2. Revision: NO proposed redline exists - proposed_redlines array empty. Despite stating intent to 'counter-amend payment and suspension provisions', no revision provided. Score 0/2. Reasoning: Identifies that Vendor 'weaponises suspension', correctly advocates for longer 45-day terms (better than baseline 30) and cure period. Addresses cash flow impact and suspension concerns. Score 2/2. CRITICAL DATA ISSUE: No executable redline provided."
+      }
+    },
+    {
+      "gt_id": "RESELLER_03",
+      "clause": "9.1",
+      "cp_redline_description": "Term: 2-year reduced to 1-year initial term; Vendor-only 30-day convenience termination added",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 0,
+      "reasoning_score": 2,
+      "total_points": 4,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause 9.1 - Term & Convenience Termination: 'DIRECT CONFLICT – Vendor takes one-sided rights. We want bilateral 2-year term with 30-day convenience termination for either party. Recommended action: Reject Vendor redline; propose balanced termination right.'",
+        "judge_reasoning": "Action: REJECT correctly identified. Score 2/2. Revision: NO proposed redline exists - proposed_redlines array empty. Despite recommending 'balanced termination right', no revision provided. Score 0/2. Reasoning: Identifies asymmetric rights issue ('Vendor takes one-sided rights'), advocates for bilateral convenience termination, maintains 2-year term requirement. However, GT expects argument about inadequate time to recover reseller investments - this is implicit but not explicit. Score 2/2 for addressing core power imbalance. CRITICAL DATA ISSUE: No executable redline provided."
+      }
+    },
+    {
+      "gt_id": "RESELLER_04",
+      "clause": "12.2",
+      "cp_redline_description": "Liability cap: 12-month amounts paid reduced to lesser of product price or $25,000",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 0,
+      "reasoning_score": 2,
+      "total_points": 4,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause 12.2 - Liability Cap: 'DIRECT CONFLICT – Vendor's redline slashes cap. We seek higher, mutual cap (e.g., 2× fees paid in prior 24 months) and carve-outs. Recommended action: Reject Vendor redline; counter-amend liability section.'",
+        "judge_reasoning": "Action: REJECT correctly identified. Score 2/2. Revision: NO proposed redline exists - proposed_redlines array empty. Despite proposing '2× fees paid in prior 24 months and carve-outs', no revision provided. Score 0/2. Reasoning: Identifies that redline 'slashes cap', correctly advocates for higher cap (24 months vs baseline 12) and carve-outs. However, does not explain WHY product price or $25K is inadequate (GT expects: 'could be $100 software license', '$25K inadequate for software reseller relationship'). Score 2/2 for directional correctness despite missing quantified argument. CRITICAL DATA ISSUE: No executable redline provided."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 16,
+    "max_score": 24,
+    "percentage": 66.7,
+    "critical_failures": 0,
+    "pass_fail": "MARGINAL",
+    "note": "All actions correctly identified as REJECT (8/8 points). All reasoning demonstrates understanding of core conflicts (8/8 points). ZERO revision points due to empty proposed_redlines array - canonical JSON provides no executable redlines despite identifying need to 'counter-amend' in all 4 cases. This is a DATA ISSUE, not model performance issue. With complete data, likely would achieve PASS threshold."
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": null,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "quality_points": 2,
+      "total_points": 6,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Clause 4.1 - Price Modification Notice: 'DIRECT CONFLICT – We will seek longer notice (≥ 60 days) and protection for already-placed POs, whereas Vendor seeks shorter notice.'",
+        "judge_reasoning": "Detection: P - Risk table identifies price modification concern and advocates for longer notice (60+ days vs baseline 30), addressing GT key element 'extend notice to 60-90 days'. However, this appears in context of CP redline response (7-day notice), not baseline review. No standalone assessment of baseline 30-day provision. No proposed redline to implement the fix. P awarded for partial identification but incomplete treatment. Amendment: null (no proposed redline). Rationale: Risk table excerpt shows understanding that longer notice needed and PO protection required. Score 2/3 - identifies need but lacks depth about planning/budgeting requirements."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "No termination for convenience during Term",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": null,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "quality_points": 2,
+      "total_points": 6,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Clause 9.1 - Term & Convenience Termination: 'We want bilateral 2-year term with 30-day convenience termination for either party.'",
+        "judge_reasoning": "Detection: P - Risk table advocates for bilateral convenience termination right, addressing GT key element 'add mutual TfC right on reasonable notice'. However, this appears in context of rejecting Vendor's one-sided convenience termination CP redline, not as standalone baseline assessment. No proposed redline to implement mutual TfC. P awarded for identifying the need but incomplete treatment. Amendment: null (no proposed redline). Rationale: Identifies need for balanced rights but does not explain why being 'locked in even if relationship not working' is problematic. Score 2/3."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Vendor liability cap too low",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": null,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "quality_points": 2,
+      "total_points": 4.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Clause 12.2 - Liability Cap: 'We seek higher, mutual cap (e.g., 2× fees paid in prior 24 months) and carve-outs.'",
+        "judge_reasoning": "Detection: P - Risk table advocates for higher cap (24 months vs baseline 12) and carve-outs, addressing GT key elements 'Increase to 24+ months' and 'Add carve-outs for critical claims'. However, this appears in context of CP redline response (product price/$25K cap), not baseline assessment. No proposed redline implementing 24-month cap. P awarded for identifying direction of improvement. Amendment: null (no proposed redline). Rationale: Identifies need for higher cap and carve-outs. Score 2/3 for directional correctness."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.2",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Detection: NMI - No mention of warranty provisions in risk_table, proposed_redlines, or new_clauses_proposed. Clause 11.2 not assessed. T1 GATE FAIL."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "2.1 / 2.2",
+      "tier": "T2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Detection: NMI - No mention of non-exclusivity or Vendor direct sales rights in risk_table. Clauses 2.1/2.2 not assessed."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Detection: NMI - Risk table mentions 5.1 payment terms in context of CP redline (15-day/2% interest) but does not assess baseline 1.5% monthly interest rate as problematic. No recognition that baseline 18% APR is above typical commercial rates."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vendor can require prepayment on credit issues",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Detection: NMI - No mention of prepayment provisions in risk_table. Clause 5.2 not assessed."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Sales reports require End User information",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Detection: NMI - No mention of End User information reporting or privacy concerns in risk_table. Clause 8.1 not assessed."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Detection: NMI - No mention of consequential damages exclusion or carve-outs in risk_table. Clause 12.1 not assessed."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "9.3",
+      "tier": "T2",
+      "issue": "Termination effects - no sell-off period",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Detection: NMI - No mention of termination effects, sell-off period, or inventory concerns in risk_table. Clause 9.3 not assessed."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Detection: NMI - No mention of missing indemnification clause in risk_table or new_clauses_proposed. No recommendation to add IP infringement or product liability indemnification. T1 GATE FAIL."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Detection: NMI - No mention of data protection, privacy, GDPR, or CCPA concerns in risk_table or new_clauses_proposed despite GT noting that 8.1 requires End User information reporting."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Detection: NMI - No mention of support SLAs, response times, or service level commitments in risk_table or new_clauses_proposed. Clause 7.2 not assessed."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "4.1 – Price Modification Notice",
+      "issue_summary": "“Vendor may modify prices, discounts, or product offerings at any time upon thirty (30) days' prior ",
+      "leah_classification": "Reduce notice to seven (7) days.",
+      "leah_action": "Reject Vendor redlin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "4.1 – Purchase Price Reference",
+      "issue_summary": "“Reseller shall purchase Products at the prices set forth in Exhibit B, which reflect a discount fro",
+      "leah_classification": "Replace with “Reseller shall purchase Products at Vendor's then-current prices.”",
+      "leah_action": "Reject Vendor redlin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "4.1 – Price Change Applicability",
+      "issue_summary": "“Price changes shall apply to orders placed after the effective date of such changes.”",
+      "leah_classification": "“Price increases shall apply to all orders, including orders placed but not yet fulfilled.”",
+      "leah_action": "Reject Vendor redlin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "5.1 – Payment Terms",
+      "issue_summary": "“Reseller shall pay all invoices within thirty (30) days of invoice date. Late payments bear interes",
+      "leah_classification": "Tighten to 15-day terms, 2% interest, plus right to suspend & withhold license keys.",
+      "leah_action": "Reject Vendor redlin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "9.1 – Term & Convenience Termination",
+      "issue_summary": "2-year initial term, auto-renew, no convenience termination.",
+      "leah_classification": "Reduce initial term to 1 year, give Vendor only a 30-day convenience termination right, strip Reseller’s right.",
+      "leah_action": "Reject Vendor redlin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "12.2 – Liability Cap",
+      "issue_summary": "“VENDOR'S TOTAL LIABILITY SHALL NOT EXCEED AMOUNTS PAID BY RESELLER IN THE TWELVE MONTHS PRECEDING T",
+      "leah_classification": "Cap lowered to (a) amounts paid for specific product or (b) $25,000, whichever is less.",
+      "leah_action": "Reject Vendor redlin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 0,
+      "P": 3,
+      "N": 0,
+      "NMI": 10
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 2,
+        "N": 0,
+        "NMI": 2
+      },
+      "T2": {
+        "Y": 0,
+        "P": 1,
+        "N": 0,
+        "NMI": 6
+      },
+      "T3": {
+        "Y": 0,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      }
+    },
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "t1_detected": 2,
+    "total_detection_points": 10.5,
+    "total_quality_points": 6,
+    "total_points": 16.5,
+    "weighted_max": 69,
+    "percentage": 23.9,
+    "pass_fail": "FAIL",
+    "note": "T1 GATE FAIL: 2/4 T1 issues detected (GT-04 warranty disclaimer and GT-11 indemnification both NMI). Only 3/13 issues partially detected, all in context of CP redline responses rather than standalone whole-document assessment. No new clause recommendations despite 3 missing clauses in GT. CRITICAL DATA ISSUE: Risk table contains only 6 entries focused on CP redlines. No evidence of comprehensive whole-document review.",
+    "additional_issues_count": 6
+  },
+  "combined_summary": {
+    "part_a": {
+      "percentage": 66.7,
+      "critical_failures": 0,
+      "pass_fail": "MARGINAL"
+    },
+    "part_b": {
+      "percentage": 23.9,
+      "t1_gate": "FAIL",
+      "pass_fail": "FAIL"
+    },
+    "combined_pass": false,
+    "overall_assessment": "FAIL - Part B T1 Gate failure (2/4 T1 issues NMI). Part A shows correct action identification (REJECT) for all 4 CP redlines but lacks executable revisions (proposed_redlines array empty). Part B shows severe underperformance with only 23.9% detection, though this appears to be a DATA ISSUE rather than model performance issue. The canonical JSON contains only 6 risk_table entries addressing CP redlines with no proposed_redlines, no new_clauses_proposed, suggesting incomplete extraction or incomplete Leah output."
+  },
+  "quality_flags": [
+    "CRITICAL_DATA_ISSUE: proposed_redlines array empty despite 4 'counter-amend' recommendations",
+    "CRITICAL_DATA_ISSUE: new_clauses_proposed array empty despite GT expecting 3 new clause recommendations",
+    "CRITICAL_DATA_ISSUE: Risk table contains only 6 entries, all CP redline focused - no evidence of whole-document assessment",
+    "T1_GATE_FAIL: GT-04 (warranty disclaimer) NMI",
+    "T1_GATE_FAIL: GT-11 (indemnification) NMI",
+    "INCOMPLETE_EXTRACTION: Canonical JSON appears to contain only partial Leah output",
+    "ZERO_REDLINES: No executable redlines provided for any identified issue",
+    "INVESTIGATION_REQUIRED: Verify source Leah output file FFS_2_RESELLER_PF.json for completeness"
+  ],
+  "validation_notes": {
+    "data_integrity": "FAILED - Multiple critical fields empty (proposed_redlines, new_clauses_proposed, existing_redlines_check). This evaluation should NOT be aggregated until data issue resolved.",
+    "extraction_verification_needed": "Check source file: leah_output/testing-prod2/FFS_2_RESELLER_PF.json to determine if Leah output is incomplete or if extraction failed to capture full output.",
+    "recommended_action": "DO NOT AGGREGATE. Diagnose: canonical JSON → source Leah output → extraction process. Fix data issue and re-evaluate."
+  }
+}

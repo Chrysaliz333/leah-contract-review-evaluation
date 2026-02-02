@@ -1,0 +1,454 @@
+{
+  "meta": {
+    "contract": "distribution",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-26T12:00:00Z",
+    "gt_version": "1.0",
+    "evaluator": "Liz",
+    "environment": "testing_prod2"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "DISTRIBUTION_01",
+      "clause": "Prices",
+      "section": "5.1",
+      "cp_redline_description": "Supplier may modify prices upon fifteen (15) days' prior written notice, and such changes shall apply retroactively to purchase orders placed but not yet fulfilled.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause 5.1 'Prices' classification: ❌ Unfavorable. Detailed reasoning: 'Existing redline allows Supplier to change prices with only 15 days' notice and to apply increases retroactively, which is highly unfavorable for Distributor.' Recommended action: 'Reject existing redline; restore original 60-day notice and prevent retroactive price increases.'",
+        "judge_reasoning": "Leah correctly identified this CP redline as requiring rejection. The risk table flags clause 5.1 as Unfavorable and explicitly addresses the 15-day notice period and retroactive application issues. The recommended action explicitly states to reject the existing redline and restore the original 60-day notice while preventing retroactive price increases. This addresses all three key elements: (1) restoring the 60-day notice period, (2) eliminating retroactive price changes, and (3) ensuring changes apply only to future orders. The reasoning correctly identifies both the inadequate notice period and the retroactive application as highly unfavorable to the Distributor, covering the GT requirement to address planning time, pipeline protection, customer pricing adjustments, and market standards."
+      }
+    },
+    {
+      "gt_id": "DISTRIBUTION_02",
+      "clause": "Minimum Purchase",
+      "section": "6.1",
+      "cp_redline_description": "Distributor agrees to purchase a minimum of Two Hundred Fifty Thousand Dollars ($250,000) of Products per calendar quarter during the Term of this Agreement, with an automatic ten percent (10%) annual escalator. Failure to meet minimum purchase requirements for one (1) quarter shall constitute a material breach.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause 6.1 'Minimum Purchase Commitment' classification: ❌ Unfavorable. Detailed reasoning: 'Existing redline increases minimums to $250,000/quarter, annual increases, and immediate termination for a single miss—excessively harsh and risky for Distributor.' Recommended action: 'Reject existing redline; restore original clause or negotiate lower minimums and cure periods.'",
+        "judge_reasoning": "Leah correctly identifies this CP redline as requiring rejection. The risk table flags clause 6.1 as Unfavorable, explicitly calling out the $250,000 increase, annual escalators, and single-quarter breach trigger as 'excessively harsh and risky for Distributor'. The recommended action is to reject the existing redline and restore the original clause or negotiate lower minimums with cure periods. This addresses all three key elements: (1) rejecting the $250K minimum in favour of the original $100K, (2) eliminating the automatic escalator, and (3) restoring the two consecutive quarter grace period before breach. The reasoning correctly identifies the 2.5x increase plus escalator as unsustainable, the one-quarter breach as eliminating flexibility, and characterises the overall structure as 'excessively harsh', which aligns with the GT requirement to address the lack of justification for the increase."
+      }
+    },
+    {
+      "gt_id": "DISTRIBUTION_03",
+      "clause": "Non-Exclusive",
+      "section": "3.1",
+      "cp_redline_description": "Supplier hereby appoints Distributor as a non-exclusive distributor of the Products within the Territory. Distributor agrees not to distribute, market, or sell any products that compete with the Products during the Term and for two (2) years thereafter.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause 3.1 'Non-Exclusive Appointment' classification: ❌ Unfavorable. Detailed reasoning: 'Existing redline restricts Distributor from selling competing products, which is highly unfavorable and anti-competitive.' Recommended action: 'Reject existing redline; restore original clause or amend to allow Distributor to sell non-competing products.'",
+        "judge_reasoning": "Leah correctly identifies this CP redline as requiring rejection. The risk table flags clause 3.1 as Unfavorable, explicitly noting that the 'existing redline restricts Distributor from selling competing products, which is highly unfavorable and anti-competitive'. The recommended action is to reject the existing redline and restore the original clause or amend to allow selling non-competing products. This addresses all three key elements: (1) maintaining non-exclusive appointment without non-compete, (2) retaining the right to carry competing products, and (3) eliminating post-term restrictions. The reasoning correctly identifies the one-sided nature of imposing a non-compete (including a 2-year post-term restriction) alongside a non-exclusive appointment, and characterises it as 'highly unfavorable and anti-competitive', which aligns with the GT's requirement to address portfolio diversification, Supplier's retained competition rights, and post-term business development restrictions."
+      }
+    },
+    {
+      "gt_id": "DISTRIBUTION_04",
+      "clause": "Term",
+      "section": "11.1",
+      "cp_redline_description": "This Agreement shall have an initial term of one (1) year from the Effective Date. Thereafter, it shall automatically renew for successive one (1) year periods unless either Party provides ninety (90) days' notice of non-renewal prior to the expiration. Supplier may terminate this Agreement for convenience upon sixty (60) days' written notice at any time.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause 11.1 'Term and Renewal' classification: ❌ Unfavorable. Detailed reasoning: 'Existing redline shortens initial term, allows Supplier to terminate for convenience, and reduces non-renewal notice—creates instability for Distributor.' Recommended action: 'Reject existing redline; restore original term and remove Supplier's right to terminate for convenience.'",
+        "judge_reasoning": "Leah correctly identifies this CP redline as requiring rejection. The risk table flags clause 11.1 as Unfavorable, noting that the 'existing redline shortens initial term, allows Supplier to terminate for convenience, and reduces non-renewal notice—creates instability for Distributor'. The recommended action is to reject the existing redline, restore the original term, and remove Supplier's unilateral termination for convenience right. This addresses all three key elements: (1) restoring the three-year initial term, (2) eliminating the unilateral Supplier termination for convenience, and (3) maintaining symmetric renewal/termination rights. The reasoning correctly identifies that the shortened term and unilateral termination create instability, which aligns with the GT's requirement to address insufficient time for market investment recovery, elimination of Distributor certainty, the 3-year standard for territory development, and asymmetric one-sided risk."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.1 / 3.2",
+      "tier": "T1",
+      "issue": "Non-exclusive appointment with Supplier competition rights",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "Grant of Distribution Rights / Reservation of Rights by Supplier",
+      "evidence": {
+        "proposed_revision_excerpt": "Clause 'Grant of Distribution Rights' (2.1): 'Amend to clarify scope, and consider seeking limited exclusivity or right of first refusal.' Clause 'Reservation of Rights by Supplier' (3.2): 'Amend to require notice to Distributor and/or right of first negotiation for new distribution channels.' Rationale for 2.1: 'The grant is subject to all terms and conditions, but there is no exclusivity and no minimum protections for Distributor.' Rationale for 3.2: 'Supplier can appoint other distributors and sell directly in the Territory, undermining Distributor's market and investment.'",
+        "effective_rationale_excerpt": "Risk table clause 3.1 notes the CP redline issue separately, but the proposed redlines for 2.1 and 3.2 address the baseline non-exclusive structure. The rationale for 3.2 explicitly states: 'Supplier can appoint other distributors and sell directly in the Territory, undermining Distributor's market and investment.'",
+        "judge_reasoning": "Leah detected this issue. The proposed_redlines array includes two separate entries addressing the non-exclusive appointment structure: one for 'Grant of Distribution Rights' (2.1) and one for 'Reservation of Rights by Supplier' (3.2). The rationale for clause 3.2 explicitly identifies that 'Supplier can appoint other distributors and sell directly in the Territory, undermining Distributor's market and investment', which directly addresses the core GT issue. The proposed remediation suggests seeking limited exclusivity or right of first refusal (for 2.1) and requiring notice plus right of first negotiation for new channels (for 3.2). While not as comprehensive as the GT's suggestion to negotiate exclusive territory or product lines with limits on direct Supplier competition, the proposed amendments demonstrate understanding of the risk and offer reasonable protective measures. Amendment score: 2 (addresses core issue with reasonable protective measures, though less comprehensive than GT ideal). Rationale score: 2 (identifies risk to market investment and lack of protections, missing some specificity about unprotected territory development investment). Redline quality score: 2 (clear proposed amendments with reasonable implementation path)."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Unilateral price changes with no cap",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 5,
+      "total_points": 9,
+      "matched_redline_id": "Prices",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table clause 5.1 flags the CP redline issue (15 days, retroactive). However, there is no separate proposed_redline entry for the baseline 60-day unilateral price change issue from the original contract. The risk table entry addresses the CP redline but does not propose amendments to add a price cap, extend notice period beyond 60 days, or add termination rights for material increases.",
+        "effective_rationale_excerpt": "The risk table reasoning focuses on the CP redline: 'Existing redline allows Supplier to change prices with only 15 days' notice and to apply increases retroactively, which is highly unfavorable for Distributor.' This addresses the immediate CP redline threat but does not discuss the underlying baseline issue of uncapped unilateral price changes.",
+        "judge_reasoning": "Partial detection. Leah clearly identifies the CP redline issue at 5.1 (15 days, retroactive changes) as Unfavorable and recommends rejecting it to restore the 60-day notice. However, the GT issue concerns the baseline contract provision itself: even with 60 days' notice, Supplier can modify prices unilaterally with no cap, no termination right, and no protection against material increases. Leah's risk table entry focuses on reverting the CP redline but does not propose amendments to address the underlying baseline risk (adding price caps, longer notice, termination rights). The proposed_redlines array contains an empty duplicate entry for 'Prices' with no proposed revision or rationale, suggesting the issue was flagged but not fully developed. Detection: P (identified price change risk in context of CP redline but did not fully address baseline unilateral price change issue). Amendment score: 2 (correctly identifies need to restore 60 days and block retroactive changes, but misses baseline protections like caps or termination rights). Rationale score: 2 (explains retroactive and short notice risks, but does not discuss exposure to unlimited price increases or locked-in minimums at unknown future prices). Redline quality score: 1 (CP redline response is clear, but baseline issue lacks specific proposed language)."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Mandatory minimum purchase with automatic breach trigger",
+      "detection": "P",
+      "detection_points": 4,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 1,
+      "quality_points": 5,
+      "total_points": 9,
+      "matched_redline_id": "Minimum Purchase Commitment",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table clause 6.1 flags the CP redline issue ($250K, annual escalator, one-quarter breach). However, there is no separate proposed_redline entry for the baseline $100K minimum with automatic breach after two consecutive quarters. The risk table entry focuses on rejecting the CP redline to restore the original clause or negotiate lower minimums and cure periods, but does not propose specific amendments to the baseline provision.",
+        "effective_rationale_excerpt": "The risk table reasoning focuses on the CP redline: 'Existing redline increases minimums to $250,000/quarter, annual increases, and immediate termination for a single miss—excessively harsh and risky for Distributor.' This addresses the CP redline escalation but does not discuss the baseline issue of automatic breach after two consecutive misses with no cure period.",
+        "judge_reasoning": "Partial detection. Leah clearly identifies the CP redline issue at 6.1 ($250K, escalator, one-quarter breach) as Unfavorable and recommends rejecting it to restore the original clause or negotiate lower minimums with cure periods. However, the GT issue concerns the baseline contract provision itself: even at $100K/quarter, the automatic material breach after two consecutive misses provides no cure period, no good faith negotiation, and no adjustment for market conditions. Leah's risk table entry mentions 'cure periods' as a negotiation point, which shows awareness of this gap, but does not propose specific amendments to add a cure period before breach declaration or negotiation rights. The proposed_redlines array contains an empty duplicate entry for 'Minimum Purchase Commitment' with no proposed revision or rationale, suggesting the issue was flagged but not fully developed. Detection: P (identified minimum purchase risk in context of CP redline and mentioned cure periods as a gap, but did not fully develop baseline amendments). Amendment score: 2 (correctly identifies need to restore $100K and two-quarter grace period, and mentions cure periods as desirable, but lacks specific cure period language or market adjustment provisions). Rationale score: 2 (explains unsustainable commitment and lack of flexibility from CP redline, touches on cure period gap, but does not fully discuss baseline automatic breach trigger or lack of negotiation rights). Redline quality score: 1 (CP redline response is clear, but baseline issue lacks specific proposed language for cure period or market condition adjustments)."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "13.3",
+      "tier": "T1",
+      "issue": "Asymmetric assignment rights",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "Assignment",
+      "evidence": {
+        "proposed_revision_excerpt": "Clause 'Assignment' (13.3): 'Amend to allow assignment in connection with merger, acquisition, or sale of business.' Rationale: 'Distributor cannot assign without Supplier's consent, limiting flexibility for business changes.'",
+        "effective_rationale_excerpt": "Rationale: 'Distributor cannot assign without Supplier's consent, limiting flexibility for business changes.'",
+        "judge_reasoning": "Leah detected this issue. The proposed_redlines array includes an entry for 'Assignment' (13.3) that identifies the lack of assignment rights for Distributor and proposes amending to allow assignment in connection with merger, acquisition, or sale of business. The rationale explicitly states that Distributor cannot assign without Supplier's consent, which limits flexibility. This addresses the GT concern about blocking M&A or business sale. The proposed remediation (M&A carve-out) aligns with one of the GT's acceptable variations ('Add M&A/affiliate exception for Distributor'). While the proposed amendment does not explicitly address the asymmetry (no stated restriction on Supplier assignment) or add 'consent not to be unreasonably withheld' language, the M&A exception is a material improvement and directly responsive to the core GT issue. Amendment score: 2 (adds critical M&A exception, though does not address full asymmetry or reasonableness standard). Rationale score: 2 (identifies lack of flexibility for business changes, though could be more explicit about asymmetry and Supplier's unrestricted assignment rights). Redline quality score: 2 (clear proposed amendment with common M&A carve-out language)."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Low liability cap for both parties",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "Clause 'Cap on Liability' (10.2): 'Amend to increase cap or carve out exceptions for certain breaches (e.g., IP, confidentiality, willful misconduct).' Rationale: 'Caps liability to amounts paid in previous 12 months, which may be insufficient for significant losses.'",
+        "effective_rationale_excerpt": "Rationale: 'Caps liability to amounts paid in previous 12 months, which may be insufficient for significant losses.'",
+        "judge_reasoning": "Leah detected this issue. The proposed_redlines array includes an entry for 'Cap on Liability' (10.2) that identifies the 12-month payments cap as potentially insufficient for significant losses and proposes amending to increase the cap or carve out exceptions for IP, confidentiality, and willful misconduct. This directly addresses the GT concern about low liability caps and missing carve-outs. The proposed remediation aligns with multiple GT key elements: increasing the cap and adding carve-outs for critical claims. While the proposal does not specifically mention increasing to 24+ months, product liability/recalls, indemnification obligations, or a higher cap for Supplier as manufacturer, it demonstrates clear understanding of the risk and proposes reasonable protective measures. Amendment score: 2 (addresses core issue with cap increase and critical carve-outs, though less comprehensive than GT ideal regarding product liability). Rationale score: 2 (identifies insufficiency for significant losses and names key carve-out categories, though does not discuss product liability or recalls specifically). Redline quality score: 2 (clear proposed amendment with standard carve-out categories)."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause - Distributor exposed to product claims",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "Indemnification (new clause recommendation)",
+      "evidence": {
+        "proposed_revision_excerpt": "New clause recommendation 'Indemnification': 'Add clause requiring Supplier to indemnify, defend, and hold harmless Distributor.' Rationale: 'No clause requiring Supplier to indemnify Distributor for third-party claims arising from defective products, IP infringement, or Supplier's negligence.'",
+        "effective_rationale_excerpt": "Rationale: 'No clause requiring Supplier to indemnify Distributor for third-party claims arising from defective products, IP infringement, or Supplier's negligence.'",
+        "judge_reasoning": "Leah detected this issue. The proposed_redlines array includes a new clause recommendation for 'Indemnification' that explicitly identifies the absence of Supplier indemnification for third-party claims arising from defective products, IP infringement, or Supplier's negligence. The proposed addition is to 'indemnify, defend, and hold harmless Distributor', which aligns with standard indemnification language. The rationale explicitly names all three critical categories from the GT: product defects, IP infringement, and negligence. While the proposal does not specifically mention recalls or defense costs/settlements, the 'defend and hold harmless' language implies coverage of defense costs. This is a comprehensive detection of a T1 issue. Amendment score: 2 (proposes indemnity, defense, and hold harmless language covering the three key categories). Rationale score: 2 (identifies absence of protection for product defects, IP infringement, and negligence; clearly states Distributor exposure to third-party claims). Redline quality score: 2 (standard indemnification clause structure with defend and hold harmless language)."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "FOB shipping terms shift all transit risk to Distributor",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 1,
+      "redline_quality_score": 2,
+      "quality_points": 5,
+      "total_points": 10,
+      "matched_redline_id": "Delivery Terms (FOB Supplier's Facility)",
+      "evidence": {
+        "proposed_revision_excerpt": "Risk table clause 4.2 'Delivery Terms (FOB Supplier's Facility)' classification: ❌ Unfavorable. Rationale: 'Distributor bears risk and cost once goods leave Supplier, which is standard, but may not be favorable if Supplier's shipping practices are poor.' Recommended action: 'Negotiate for FOB Destination or require Supplier to use reputable carriers and provide shipping insurance.'",
+        "effective_rationale_excerpt": "Risk table rationale: 'Distributor bears risk and cost once goods leave Supplier, which is standard, but may not be favorable if Supplier's shipping practices are poor.'",
+        "judge_reasoning": "Leah detected this issue. The risk_table entry for clause 4.2 flags 'Delivery Terms (FOB Supplier's Facility)' as Unfavorable and identifies that Distributor bears risk and cost once goods leave Supplier. The recommended action is to negotiate for FOB Destination or require reputable carriers and shipping insurance. This addresses the GT concern about transit risk shifting to Distributor. The proposed remediation aligns with GT key elements: negotiating DDP or CIF terms (similar to FOB Destination), requiring Supplier-arranged transit insurance, and shifting risk to pass at Distributor facility. However, the rationale is somewhat weak, characterising FOB as 'standard' and only raising concern 'if Supplier's shipping practices are poor', which understates the inherent risk transfer. Amendment score: 2 (proposes FOB Destination and insurance requirements, which directly address the risk transfer). Rationale score: 1 (acknowledges risk and cost transfer but characterises it as standard and conditional on poor practices rather than emphasising the inherent exposure). Redline quality score: 2 (clear proposed alternatives with FOB Destination and insurance requirements)."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": "Late Payments",
+      "evidence": {
+        "proposed_revision_excerpt": "Clause 'Late Payments' (5.3): 'Amend to add a 10-day grace period and cap late fees.' Rationale: '1.5% per month is high; no grace period is provided.'",
+        "effective_rationale_excerpt": "Rationale: '1.5% per month is high; no grace period is provided.'",
+        "judge_reasoning": "Leah detected this issue. The proposed_redlines array includes an entry for 'Late Payments' (5.3) that identifies the 1.5% per month rate as high and notes the lack of a grace period. The proposed remediation is to add a 10-day grace period and cap late fees. This addresses multiple GT key elements: reducing the rate (via capping), excluding disputed amounts (indirectly via grace period), and adding a grace period before interest accrues. While the proposal does not specify reducing the rate to 1% or prime + margin as the GT suggests, adding a grace period and capping fees are reasonable protective measures that reduce exposure. Amendment score: 2 (adds grace period and fee caps, reasonable protective measures though not explicit rate reduction). Rationale score: 2 (identifies high rate and lack of grace period, the two core issues). Redline quality score: 2 (clear proposed amendment with specific 10-day grace period)."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Marketing approval required for all materials",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 7,
+      "total_points": 12,
+      "matched_redline_id": "Advertising Approvals",
+      "evidence": {
+        "proposed_revision_excerpt": "Clause 'Advertising Approvals' (7.2): 'Amend to provide deemed approval if no response within a set period (e.g., 10 business days).' Rationale: 'All materials require Supplier approval, which could cause delays and stifle Distributor's marketing.'",
+        "effective_rationale_excerpt": "Rationale: 'All materials require Supplier approval, which could cause delays and stifle Distributor's marketing.'",
+        "judge_reasoning": "Leah detected this issue. The proposed_redlines array includes an entry for 'Advertising Approvals' (7.2) that identifies the requirement for approval on all materials and the risk of delays that could stifle marketing. The proposed remediation is to add deemed approval if no response within 10 business days. This precisely matches the GT's first suggested remediation: 'Add deemed approval if no response within 10 business days'. The rationale clearly explains the risk of time-sensitive marketing delays. This is a comprehensive and well-executed detection. Amendment score: 3 (proposes the exact GT remedy with specific timeline). Rationale score: 2 (identifies approval requirement and delay risk with business impact on marketing). Redline quality score: 2 (clear proposed amendment with specific 10-business-day deemed approval mechanism)."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.3",
+      "tier": "T2",
+      "issue": "Termination effects lack buyback and transition",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "Effect of Termination",
+      "evidence": {
+        "proposed_revision_excerpt": "Clause 'Effect of Termination' (11.3): 'Amend to include inventory buyback or return rights.' Rationale: 'Allows sale of inventory for 90 days, but no process for return or buyback of unsold inventory.'",
+        "effective_rationale_excerpt": "Rationale: 'Allows sale of inventory for 90 days, but no process for return or buyback of unsold inventory.'",
+        "judge_reasoning": "Leah detected this issue. The proposed_redlines array includes an entry for 'Effect of Termination' (11.3) that identifies the lack of inventory buyback or return rights despite the 90-day sell-off period. The proposed remediation is to add inventory buyback or return rights. This directly addresses the GT's first suggested remediation: 'Should add Supplier buyback at cost for remaining inventory'. The rationale acknowledges the 90-day sell-off period and identifies the gap regarding unsold inventory after that period. While the proposal does not address transition assistance or refund of prepaid amounts (other GT elements), it targets the primary issue. Amendment score: 2 (proposes buyback/return rights, addressing the primary GT concern, though does not cover transition assistance or prepaid refunds). Rationale score: 2 (identifies 90-day period and lack of buyback process for remaining inventory). Redline quality score: 2 (clear proposed amendment with buyback or return mechanism)."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Supplier can reject purchase orders - no supply obligation",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Not detected. Leah's risk_table entry for clause 4.1 'Purchase Orders' is marked as ✅ Favorable with the reasoning: 'Supplier must accept/reject orders within 5 business days; this provides clarity and predictability.' This represents a mischaracterisation of the risk. The GT issue is that Supplier can reject each purchase order at will, creating supply uncertainty despite Distributor's minimum purchase commitment. Leah views the 5-day response time as providing clarity, but does not recognise that the ability to reject orders is asymmetric (Distributor commits to minimums but Supplier does not commit to supply). There is no proposed_redline entry for clause 4.1, and no mention of adding deemed acceptance, supply assurance, or restricting rejection rights. The issue was not identified. Detection: NMI."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Territory restriction on outside sales",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Risk table clause 3.3 'Sales Outside Territory' classification: ✅ Favorable. Rationale: 'Reasonable restriction to protect Supplier's market segmentation.'",
+        "judge_reasoning": "Not detected (marked as favourable). Leah's risk_table entry for clause 3.3 'Sales Outside Territory' is marked as ✅ Favorable with the reasoning: 'Reasonable restriction to protect Supplier's market segmentation.' This indicates Leah did not identify the GT concern that territory restrictions may limit Distributor's growth opportunities and that passive sales outside the Territory should be permitted. The GT characterises this as a T3 (minor) issue requiring clarification or amendment to ensure passive sales are allowed. Leah's assessment that this is 'reasonable' and favourable to Supplier's interests suggests the issue was recognised but dismissed as acceptable, which constitutes an affirmative determination of compliance rather than an oversight. Detection: N (marked as Favorable when GT expects ⚠️)."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consequential Damages Exclusion Missing Critical Carve-Outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "Clause 'Exclusion of Damages' (10.1): 'Amend to allow for recovery of certain consequential damages, especially for Supplier's willful misconduct or gross negligence.' Rationale: 'Excludes all indirect, incidental, special, consequential, or punitive damages, which may be too broad and leave Distributor with inadequate remedies.'",
+        "effective_rationale_excerpt": "Rationale: 'Excludes all indirect, incidental, special, consequential, or punitive damages, which may be too broad and leave Distributor with inadequate remedies.'",
+        "judge_reasoning": "Leah detected this issue. The proposed_redlines array includes an entry for 'Exclusion of Damages' (10.1) that identifies the broad exclusion of all indirect, incidental, special, consequential, or punitive damages as potentially too broad and leaving Distributor with inadequate remedies. The proposed remediation is to allow recovery of certain consequential damages, especially for Supplier's willful misconduct or gross negligence. This addresses one of the GT's key carve-out requirements (willful misconduct/gross negligence). While the proposal does not explicitly mention carve-outs for confidentiality breach, IP infringement, or indemnification obligations (other GT elements), it demonstrates understanding that the mutual exclusion is too broad and proposes a reasonable protective carve-out. Amendment score: 2 (proposes carve-out for willful misconduct/gross negligence, addressing a key GT element, though not comprehensive across all suggested carve-outs). Rationale score: 2 (identifies breadth of exclusion and inadequacy of remedies, though does not discuss lost profits from product defects, supply failures, or opportunity costs specific to distribution relationships). Redline quality score: 2 (clear proposed amendment with standard carve-out for willful misconduct/gross negligence)."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 10,
+      "P": 2,
+      "N": 1,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 2,
+        "N": 0,
+        "NMI": 1
+      },
+      "T2": {
+        "Y": 5,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": false,
+    "t1_count": 6,
+    "t1_detected": 5,
+    "total_detection_points": 60,
+    "total_quality_points": 63,
+    "total_points": 123,
+    "weighted_max": 75,
+    "percentage": 82.0,
+    "additional_issues_count": 7
+  },
+  "combined_summary": {
+    "part_a": {
+      "percentage": 100.0,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "percentage": 82.0,
+      "t1_gate": "FAIL",
+      "t1_detected": "5/6",
+      "pass_fail": "FAIL"
+    },
+    "overall_pass": false,
+    "overall_result": "FAIL",
+    "failure_reason": "T1 Gate FAIL: GT-11 (4.1 - Supplier can reject purchase orders) not detected"
+  },
+  "additional_issues": [
+    {
+      "clause": "3.1",
+      "issue_summary": "Non-Exclusive Appointment",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Reject existing redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Delivery Terms (FOB Supplier’s Facility)",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Negotiate for FOB De",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Prices",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Reject existing redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Minimum Purchase Commitment",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Reject existing redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Marketing Efforts",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Define specific, mea",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Term and Renewal",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Reject existing redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Termination for Cause",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Define “material bre",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "starliner",
+    "model_display_name": "Starliner",
+    "environment": "testing-prod2",
+    "evaluation_timestamp": "2026-01-26T00:00:00Z",
+    "gt_version": "1.0",
+    "evaluator": "Liz",
+    "schema_version": "1.0"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "DPA_CP_01",
+      "clause_ref": "4.1",
+      "clause": "Sub-processor Consent",
+      "cp_redline_description": "Removes 30-day advance notice requirement; removes Controller objection right; reduces to passive list maintenance only",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "action_reasoning": "Leah proposes to 'Reject existing redline' but recommends AMEND rather than full reversion. While the intent is protective, this is scored as MODIFY since Leah proposes an amended version requiring 'explicit prior written consent' rather than pure reversion to baseline.",
+      "revision_score": 2,
+      "revision_reasoning": "Leah's proposed revision addresses all key elements: requires explicit prior written consent for new sub-processors, maintains Controller's right to object. The revision is actually stronger than the baseline by requiring explicit consent rather than general authorization with objection rights. Fully protective of Controller interests.",
+      "reasoning_score": 2,
+      "reasoning_reasoning": "Leah correctly identifies that the clause gives broad authority with only notice, notes the existing redline weakens Controller's position further by removing objection rights, and explains this is not favorable for Controller. Addresses GDPR Art 28(2) implicitly by emphasizing consent requirements. Strong reasoning.",
+      "total_points": 5,
+      "max_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Proposed Redlines[0]: 'Reject existing redline. Amend clause to require Controller's explicit prior written consent for new Sub-processors and maintain right to object.' Rationale: 'The clause, as originally drafted, gives Processor broad authority to appoint Sub-processors with only notice to Controller. The existing redline (by Processor) further weakens Controller's position by removing the right to object and only requiring a list on request. This is not favorable for Controller.'",
+        "judge_reasoning": "Leah recognized the CP redline as adverse and proposed a protective revision. The action is technically MODIFY rather than REJECT (which would mean pure reversion), costing 1 action point. However, the revision quality is excellent—it goes beyond baseline protections by requiring explicit consent. Reasoning is strong and correctly identifies the risks. Overall strong performance with minor technical variance on action categorization."
+      }
+    },
+    {
+      "gt_id": "DPA_CP_02",
+      "clause_ref": "8.1",
+      "clause": "Breach Notification",
+      "cp_redline_description": "Extends notification from 72 hours to 5 business days; changes trigger from 'becoming aware' to 'confirming'; limits information to Processor's discretion",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "action_reasoning": "Leah correctly identifies the need to reject the existing redline and restore the original 72-hour notification requirement. Perfect action match.",
+      "revision_score": 2,
+      "revision_reasoning": "Leah proposes to 'Reject existing redline. Restore original 72-hour notification and require full disclosure of relevant information.' This addresses both key timing elements (72-hour window, 'becoming aware' trigger) and the information disclosure requirement. Fully addresses all key elements.",
+      "reasoning_score": 2,
+      "reasoning_reasoning": "Leah's rationale explicitly addresses regulatory compliance requirements and notes that the redline delays notification to five business days and limits information provided, correctly identifying this as 'not compliant with regulatory requirements and not favorable to Controller.' Strong recognition of Controller's regulatory obligations.",
+      "total_points": 6,
+      "max_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause 8.1 - Risk Table: Classification ❌ Unfavorable. Detailed Reasoning: 'The existing redline (by Processor) delays notification to five business days and limits information provided, which is not compliant with regulatory requirements and not favorable to Controller.' Recommended Action: 'Reject existing redline. Restore original 72-hour notification and require full disclosure of relevant information.'",
+        "judge_reasoning": "Perfect response. Leah correctly classified the CP redline as unfavorable in the risk table, proposed rejection with full reversion to baseline, and provided strong regulatory-focused reasoning. Addresses Controller's 72-hour GDPR notification obligation and information needs. Exemplary performance on this CP redline."
+      }
+    },
+    {
+      "gt_id": "DPA_CP_03",
+      "clause_ref": "9.2",
+      "clause": "Indemnification",
+      "cp_redline_description": "Narrows trigger from 'breach' to 'gross negligence or wilful misconduct'; excludes regulatory fines entirely; limits to direct damages only",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "action_reasoning": "Leah proposes to 'Reject existing redline' and restore full indemnification coverage. Correct action selected.",
+      "revision_score": 2,
+      "revision_reasoning": "Leah's revision addresses all key elements: 'Amend clause to require Processor to indemnify Controller for all losses, including regulatory fines, arising from Processor's breach.' This explicitly includes regulatory fines and removes the gross negligence limitation. Fully protective.",
+      "reasoning_score": 2,
+      "reasoning_reasoning": "Leah correctly identifies that 'The existing redline (by Processor) limits indemnification to direct damages and excludes regulatory fines. This is not favorable for Controller, who may face significant third-party or regulatory exposure.' Strong understanding of Controller's risk exposure under GDPR fine regime.",
+      "total_points": 6,
+      "max_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Proposed Redlines[2]: 'Indemnification' - 'Reject existing redline. Amend clause to require Processor to indemnify Controller for all losses, including regulatory fines, arising from Processor's breach.' Rationale: 'The existing redline (by Processor) limits indemnification to direct damages and excludes regulatory fines. This is not favorable for Controller, who may face significant third-party or regulatory exposure.'",
+        "judge_reasoning": "Excellent response. Leah identified the adverse CP redline, proposed rejection with full restoration of indemnification coverage including regulatory fines, and provided strong rationale emphasizing Controller's regulatory exposure. Perfect execution across all dimensions."
+      }
+    },
+    {
+      "gt_id": "DPA_CP_04",
+      "clause_ref": "7.2",
+      "clause": "Audit Rights",
+      "cp_redline_description": "Extends notice from 'reasonable' to 60 days; reduces frequency from annual to biennial; requires Processor approval of audit scope; allows SOC 2 substitution",
+      "expected_action": "MODIFY",
+      "leah_action": "MODIFY",
+      "action_score": 2,
+      "action_reasoning": "Leah correctly proposes MODIFY rather than full rejection. Recognizes that some audit restrictions can be negotiated while preserving core Controller rights. Perfect action match.",
+      "revision_score": 2,
+      "revision_reasoning": "Leah's revision addresses all key elements: rejects existing redline, proposes annual audits (not biennial), reasonable notice without Processor approval of scope, and clarifies SOC 2 supplements but does not replace direct audit rights. Matches the acceptable variation framework perfectly: 'Reject existing redline. Amend clause to allow at least annual audits on reasonable notice, without requiring Processor approval of scope, and without limiting to SOC 2 reports.'",
+      "reasoning_score": 2,
+      "reasoning_reasoning": "Leah correctly identifies that 'The existing redline (by Processor) significantly restricts Controller's audit rights (longer notice, reduced frequency, scope approval, SOC 2 in lieu of audit). This is not favorable for Controller.' Demonstrates understanding of audit independence and GDPR Art 28(3)(h) requirements.",
+      "total_points": 6,
+      "max_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Proposed Redlines[1]: 'Audit Procedures' - 'Reject existing redline. Amend clause to allow at least annual audits on reasonable notice, without requiring Processor approval of scope, and without limiting to SOC 2 reports.' Rationale: 'The existing redline (by Processor) significantly restricts Controller's audit rights (longer notice, reduced frequency, scope approval, SOC 2 in lieu of audit). This is not favorable for Controller.'",
+        "judge_reasoning": "Perfect response. Leah correctly identified the action as MODIFY, provided a revision that preserves all critical Controller protections (annual frequency, reasonable notice, independent scope determination, direct audit rights), and explained the risks clearly. Exemplary performance demonstrating sophisticated understanding of audit right negotiation."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 23,
+    "max_score": 24,
+    "percentage": 95.8,
+    "critical_failures": 0,
+    "pass_fail": "PASS",
+    "quality_notes": "Excellent performance on Part A. Leah correctly identified all four CP redlines as adverse to Controller interests and proposed protective responses. All revisions were substantively strong and addressed key elements. Minor technical variance on DPA_CP_01 action classification (MODIFY vs REJECT) but the revision quality was actually superior to baseline. No critical failures."
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "detection": "P",
+      "detection_reasoning": "Leah identified the sub-processor authorization issue in proposed redlines but DID NOT flag the baseline clause 4.1 in the risk table (clause 4.1 not separately assessed, only 4.2 and 4.3 marked Favorable). The proposed redline addresses the CP redline (which worsens the issue) but does not explicitly identify the baseline weakness that objection has no consequence. Partial detection because Leah proposed strengthening the clause but missed flagging the baseline gap.",
+      "detection_points": 4,
+      "amendment_score": 3,
+      "amendment_reasoning": "Leah's proposed amendment requires 'explicit prior written consent' which is actually stronger than GT expectation (which would accept general authorization with effective objection rights). The amendment fully addresses the consent gap issue.",
+      "rationale_score": 2,
+      "rationale_reasoning": "Rationale identifies the broad authority problem and notes the CP redline worsens it by removing objection rights. However, does not explicitly address the baseline weakness that objection has no stated consequence. Missing one GT key element.",
+      "redline_quality_score": 2,
+      "redline_quality_reasoning": "The proposed revision is clear and protective ('require Controller's explicit prior written consent for new Sub-processors and maintain right to object') but lacks specific drafting detail on what happens upon objection. Good intent, needs minor refinement.",
+      "quality_points": 7,
+      "total_points": 11,
+      "max_points": 15,
+      "matched_redline_id": "proposed_redlines[0] - General Authorisation for Sub-processors",
+      "evidence": {
+        "risk_table_excerpt": "Clause 4.1 not flagged in risk table (4.2 and 4.3 marked ✅ Favorable but 4.1 not assessed separately)",
+        "proposed_revision_excerpt": "Reject existing redline. Amend clause to require Controller's explicit prior written consent for new Sub-processors and maintain right to object.",
+        "effective_rationale_excerpt": "The clause, as originally drafted, gives Processor broad authority to appoint Sub-processors with only notice to Controller. The existing redline (by Processor) further weakens Controller's position by removing the right to object and only requiring a list on request. This is not favorable for Controller.",
+        "judge_reasoning": "Partial detection because Leah addressed the sub-processor authorization issue in response to the CP redline but did not flag the baseline 4.1 weakness in the risk table. The proposed amendment is strong (actually exceeds GT by requiring explicit consent), but the detection is incomplete because the baseline gap wasn't explicitly identified. Quality scores are high because the proposed fix is comprehensive and well-reasoned."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "P",
+      "detection_reasoning": "Leah flagged clause 5.1 in the risk table as ⚠️ Requires Clarification, noting 'Exhibit B (which should specify the measures) is missing.' However, Leah did not identify the vagueness of the clause language itself ('appropriate measures' is subjective, examples not required). Partial detection because Leah identified the Exhibit B gap but missed the baseline clause vagueness issue.",
+      "detection_points": 4,
+      "amendment_score": 2,
+      "amendment_reasoning": "Leah recommends 'Complete Exhibit B with detailed technical and organisational measures' which addresses one GT key element (specificity) but does not propose making any measures mandatory or requiring pen testing. Adequate but incomplete.",
+      "rationale_score": 2,
+      "rationale_reasoning": "Rationale identifies the missing Exhibit B as creating risk, which is valid, but does not address the subjective 'appropriate' standard or the fact that listed measures are examples not requirements. Addresses risk but misses key vulnerability.",
+      "redline_quality_score": 2,
+      "redline_quality_reasoning": "The recommendation to 'Complete Exhibit B' is clear but lacks specificity about what should be included. Doesn't propose contractual language strengthening the clause itself. Adequate direction but not fully drafted.",
+      "quality_points": 6,
+      "total_points": 10,
+      "max_points": 15,
+      "matched_redline_id": "risk_table[clause_ref='5.1']",
+      "evidence": {
+        "risk_table_excerpt": "Clause 5.1 - Classification: ⚠️ Requires Clarification. Detailed Reasoning: 'The clause is generally favorable, but Exhibit B (which should specify the measures) is missing. This creates risk if security measures are not clearly defined.' Recommended Action: 'Complete Exhibit B with detailed technical and organisational measures.'",
+        "proposed_revision_excerpt": "Exhibit B - 'Complete Exhibit B with detailed security measures.'",
+        "effective_rationale_excerpt": "The clause is generally favorable, but Exhibit B (which should specify the measures) is missing. This creates risk if security measures are not clearly defined.",
+        "judge_reasoning": "Partial detection because Leah correctly identified that security measures need specificity and flagged the missing Exhibit B, but did not identify the vagueness of the clause language itself. The GT issue focuses on 'appropriate' being subjective and measures being examples not requirements. Leah's response addresses the Exhibit gap but doesn't propose strengthening the clause language. Quality scores reflect adequate but incomplete response."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "8.1",
+      "tier": "T3",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "detection": "N",
+      "detection_reasoning": "Leah flagged 8.1 as ❌ Unfavorable in the risk table, but this was in response to the CP redline that extends the timeline to 5 business days. Leah did not identify the GT issue that 72 hours itself may be too slow for high-risk breaches. Leah's proposed action is to restore the 72-hour baseline, which does not address the GT concern about needing faster notification for high-severity incidents. Marked as N because Leah treated 72 hours as acceptable standard.",
+      "detection_points": 0,
+      "amendment_score": null,
+      "amendment_reasoning": null,
+      "rationale_score": null,
+      "rationale_reasoning": null,
+      "redline_quality_score": null,
+      "redline_quality_reasoning": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "max_points": 4,
+      "matched_redline_id": "risk_table[clause_ref='8.1']",
+      "evidence": {
+        "risk_table_excerpt": "Clause 8.1 - Classification: ❌ Unfavorable. Detailed Reasoning: 'The existing redline (by Processor) delays notification to five business days and limits information provided, which is not compliant with regulatory requirements and not favorable to Controller.' Recommended Action: 'Reject existing redline. Restore original 72-hour notification and require full disclosure of relevant information.'",
+        "proposed_revision_excerpt": "Reject existing redline. Restore original 72-hour notification and require full disclosure of relevant information.",
+        "effective_rationale_excerpt": "The existing redline (by Processor) delays notification to five business days and limits information provided, which is not compliant with regulatory requirements and not favorable to Controller.",
+        "judge_reasoning": "Not detected. Leah correctly responded to the CP redline by rejecting the 5-day extension, but did not identify the GT issue that 72 hours may be too slow for high-severity breaches. The GT suggests adding 24-hour notification for high-risk incidents or interim notification for ongoing incidents. Leah's response treats 72 hours as the appropriate standard, missing the GT's more aggressive protection recommendation. This is a T3 issue so lower impact."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1 / 9.2",
+      "tier": "T2",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "detection": "P",
+      "detection_reasoning": "Leah flagged 9.1 in the risk table as ⚠️ Requires Clarification, noting uncertainty about liability caps and exclusions. Leah also responded to the CP redline on 9.2 by rejecting limitations. However, Leah did not explicitly identify the hidden cap risk that the Principal Agreement may impose caps that override the indemnification clause. Partial detection because liability uncertainty was noted but the specific Principal Agreement cross-reference risk was not articulated.",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "amendment_reasoning": "Leah's risk table recommendation is to 'Clarify liability caps, exclusions, and direct/indirect damages' which addresses the uncertainty but is generic. Leah's proposed redline response (rejecting CP limitation and requiring full indemnification for regulatory fines) is strong but doesn't explicitly carve indemnification out of any Principal Agreement caps. Addresses core issue but missing explicit carve-out.",
+      "rationale_score": 2,
+      "rationale_reasoning": "Leah's risk table reasoning notes uncertainty about limits/exclusions. Proposed redline rationale correctly identifies Controller's regulatory exposure. However, does not explicitly mention the Principal Agreement cross-reference risk in 9.1. Addresses risk generally but misses specific GT concern.",
+      "redline_quality_score": 2,
+      "redline_quality_reasoning": "Proposed redline to reject CP limitation and restore indemnification is clear and protective. However, lacks specific language about carving indemnification out of any Principal Agreement caps. Good direction but not fully specified.",
+      "quality_points": 6,
+      "total_points": 8.5,
+      "max_points": 12.5,
+      "matched_redline_id": "risk_table[clause_ref='9.1'] and proposed_redlines[2]",
+      "evidence": {
+        "risk_table_excerpt": "Clause 9.1 - Classification: ⚠️ Requires Clarification. Detailed Reasoning: 'The clause references liability \"in accordance with applicable law,\" but does not specify limits or exclusions. This could create uncertainty.' Recommended Action: 'Clarify liability caps, exclusions, and direct/indirect damages.'",
+        "proposed_revision_excerpt": "Indemnification - 'Reject existing redline. Amend clause to require Processor to indemnify Controller for all losses, including regulatory fines, arising from Processor's breach.'",
+        "effective_rationale_excerpt": "The existing redline (by Processor) limits indemnification to direct damages and excludes regulatory fines. This is not favorable for Controller, who may face significant third-party or regulatory exposure.",
+        "judge_reasoning": "Partial detection. Leah identified liability uncertainty in 9.1 and responded strongly to the CP redline on 9.2, but did not explicitly articulate the GT concern that Principal Agreement caps may silently override the indemnification clause. The proposed fix restores strong indemnification language but doesn't explicitly address the cross-reference risk. Quality scores reflect good but incomplete response."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability in DPA",
+      "detection": "NMI",
+      "detection_reasoning": "Leah did not identify that the DPA lacks its own limitation of liability clause. Leah flagged 9.1 as requiring clarification about liability caps but did not propose adding a new limitation of liability article to the DPA itself. The GT issue is that the DPA is silent on liability limits, creating uncertainty about how the Principal Agreement caps apply to data breach damages. Not mentioned.",
+      "detection_points": 0,
+      "amendment_score": null,
+      "amendment_reasoning": null,
+      "rationale_score": null,
+      "rationale_reasoning": null,
+      "redline_quality_score": null,
+      "redline_quality_reasoning": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "max_points": 15,
+      "matched_redline_id": null,
+      "evidence": {
+        "risk_table_excerpt": "No entry for missing limitation of liability clause",
+        "proposed_revision_excerpt": "No new clause proposed for limitation of liability",
+        "effective_rationale_excerpt": "N/A",
+        "judge_reasoning": "Not mentioned. Leah flagged 9.1 uncertainty about caps but did not identify that the DPA itself lacks a limitation of liability article. The GT issue is structural: the DPA needs its own liability framework to clarify how data breach damages are treated relative to Principal Agreement caps. This is a T1 miss which triggers automatic gate failure."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Deletion Timeline Unspecified",
+      "detection": "N",
+      "detection_reasoning": "Leah assessed clause 3.4 in the risk table as ✅ Favorable: 'The clause gives Controller the option to require deletion or return of data, maximizing Controller's control. No action required.' Leah did not identify that the timeline for deletion is unspecified, which is the GT concern. Treated as compliant when improvement needed.",
+      "detection_points": 0,
+      "amendment_score": null,
+      "amendment_reasoning": null,
+      "rationale_score": null,
+      "rationale_reasoning": null,
+      "redline_quality_score": null,
+      "redline_quality_reasoning": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "max_points": 12.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "risk_table_excerpt": "Clause 3.4 - Classification: ✅ Favorable. Detailed Reasoning: 'The clause gives Controller the option to require deletion or return of data, maximizing Controller's control.' Recommended Action: 'No action required.'",
+        "proposed_revision_excerpt": "No proposed redline for clause 3.4",
+        "effective_rationale_excerpt": "N/A",
+        "judge_reasoning": "Marked compliant when not. Leah praised the clause for giving Controller choice but missed the GT issue that no specific deletion timeline is stated, allowing indefinite retention. Should have recommended adding 30-60 day deletion requirement and deletion certificate. Marked as N because Leah affirmatively stated no action required."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.2",
+      "tier": "T3",
+      "issue": "All Audit Costs on Controller",
+      "detection": "N",
+      "detection_reasoning": "Leah assessed clause 7.1 (Audit Rights) as ✅ Favorable without addressing the 7.2 cost allocation issue. Leah's proposed redline on audit procedures focuses on rejecting the CP redline restrictions (60-day notice, biennial frequency, SOC 2 substitution) but does not address the baseline cost burden on Controller. The GT issue is that Controller bears all audit costs which may discourage oversight, and costs should shift to Processor if deficiencies found. Not detected.",
+      "detection_points": 0,
+      "amendment_score": null,
+      "amendment_reasoning": null,
+      "rationale_score": null,
+      "rationale_reasoning": null,
+      "redline_quality_score": null,
+      "redline_quality_reasoning": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "max_points": 4,
+      "matched_redline_id": null,
+      "evidence": {
+        "risk_table_excerpt": "Clause 7.1 - Classification: ✅ Favorable. Detailed Reasoning: 'The clause preserves Controller's right to audit, which is essential for oversight.' Recommended Action: 'No action required.'",
+        "proposed_revision_excerpt": "Audit Procedures - 'Reject existing redline. Amend clause to allow at least annual audits on reasonable notice, without requiring Processor approval of scope, and without limiting to SOC 2 reports.' [does not address cost allocation]",
+        "effective_rationale_excerpt": "N/A for baseline cost issue",
+        "judge_reasoning": "Not detected. Leah responded to the CP redline on audit procedures but did not identify the baseline issue that Controller bears all audit costs. The GT suggests costs should shift to Processor if deficiencies are found, or SOC 2 reports should be provided as alternative. This is a T3 issue so lower impact."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "10.1",
+      "tier": "T3",
+      "issue": "Indefinite Duration",
+      "detection": "N",
+      "detection_reasoning": "Leah assessed clause 10.1 (Term of DPA) as ✅ Favorable: 'The clause ensures the DPA remains in effect as long as data is processed, protecting Controller's interests. No action required.' Leah did not identify the GT concern that this structure is potentially indefinite without maximum retention periods or periodic review requirements. Treated as compliant.",
+      "detection_points": 0,
+      "amendment_score": null,
+      "amendment_reasoning": null,
+      "rationale_score": null,
+      "rationale_reasoning": null,
+      "redline_quality_score": null,
+      "redline_quality_reasoning": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "max_points": 4,
+      "matched_redline_id": null,
+      "evidence": {
+        "risk_table_excerpt": "Clause 10.1 - Classification: ✅ Favorable. Detailed Reasoning: 'The clause ensures the DPA remains in effect as long as data is processed, protecting Controller's interests.' Recommended Action: 'No action required.'",
+        "proposed_revision_excerpt": "No proposed redline for clause 10.1",
+        "effective_rationale_excerpt": "N/A",
+        "judge_reasoning": "Not detected. Leah treated the indefinite duration structure as protective without identifying the GT concern that it could allow indefinite processing without maximum retention periods. This is a T3 minor issue."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "Exhibit A / 2.2",
+      "tier": "T2",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "detection": "Y",
+      "detection_reasoning": "Leah correctly identified this issue in two places: (1) Risk table clause 2.2 flagged as ⚠️ Requires Clarification noting 'Exhibit A is incomplete (placeholders remain)' and (2) Exhibit A separately flagged as ❌ Unfavorable stating 'Exhibit A is incomplete, with placeholders instead of actual details. This creates significant risk of uncertainty and regulatory non-compliance.' Full detection with appropriate severity.",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "amendment_reasoning": "Leah recommends 'Complete Exhibit A with specific details on subject matter, duration, nature, types of data, and categories of data subjects' (for 2.2) and 'Complete Exhibit A with all required details' (for Exhibit A). Both recommendations are comprehensive and address all GT key elements. Fully specified fix.",
+      "rationale_score": 3,
+      "rationale_reasoning": "Leah's rationale explicitly identifies regulatory risk: 'This creates significant risk of uncertainty and regulatory non-compliance.' Notes the missing details create ambiguity risk. Strong recognition of GDPR Art 28(3) compliance requirement implicit in 'regulatory non-compliance' language.",
+      "redline_quality_score": 2,
+      "redline_quality_reasoning": "The recommendation to 'Complete Exhibit A with all required details' is clear and actionable but lacks specific contractual language or example content. Good direction but not fully drafted.",
+      "quality_points": 8,
+      "total_points": 13,
+      "max_points": 12.5,
+      "matched_redline_id": "risk_table[clause_ref='2.2'] and risk_table[clause_ref='Exhibit A']",
+      "evidence": {
+        "risk_table_excerpt": "Clause 2.2 - Classification: ⚠️ Requires Clarification. Detailed Reasoning: 'The clause references Exhibit A for key processing details, but Exhibit A is incomplete (placeholders remain). This creates risk of ambiguity.' Recommended Action: 'Complete Exhibit A with specific details on subject matter, duration, nature, types of data, and categories of data subjects.' | Exhibit A - Classification: ❌ Unfavorable. Detailed Reasoning: 'Exhibit A is incomplete, with placeholders instead of actual details. This creates significant risk of uncertainty and regulatory non-compliance.' Recommended Action: 'Complete Exhibit A with all required details.'",
+        "proposed_revision_excerpt": "Processing Details (Exhibit A) - 'Complete Exhibit A with all required details.'",
+        "effective_rationale_excerpt": "Exhibit A is incomplete, with placeholders instead of actual details. This creates significant risk of uncertainty and regulatory non-compliance.",
+        "judge_reasoning": "Full detection. Leah identified the blank Exhibit A issue in multiple locations with appropriate severity (⚠️ for the clause reference, ❌ for the exhibit itself), provided comprehensive recommendations covering all required details, and articulated the regulatory compliance risk. Quality scores are high across all dimensions. Exemplary performance on this issue."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "Exhibit B / 5.1",
+      "tier": "T2",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "detection": "Y",
+      "detection_reasoning": "Leah correctly identified this issue in two places: (1) Risk table clause 5.1 flagged as ⚠️ Requires Clarification noting 'Exhibit B (which should specify the measures) is missing' and (2) Exhibit B separately flagged as ❌ Unfavorable stating 'Exhibit B is missing, so there is no binding commitment to specific security measures. This is a major risk for Controller.' Full detection with appropriate severity.",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "amendment_reasoning": "Leah recommends 'Complete Exhibit B with detailed technical and organisational measures' (for 5.1) and 'Complete Exhibit B with detailed security measures' (for Exhibit B). Both recommendations are comprehensive and address the GT key element of requiring documented security measures. Fully specified fix.",
+      "rationale_score": 3,
+      "rationale_reasoning": "Leah's rationale identifies the risk clearly: 'Exhibit B is missing, so there is no binding commitment to specific security measures. This is a major risk for Controller.' Strong recognition of Controller's due diligence needs and GDPR Art 32 compliance requirement.",
+      "redline_quality_score": 2,
+      "redline_quality_reasoning": "The recommendation to 'Complete Exhibit B with detailed security measures' is clear and actionable but lacks specific examples of required controls. Good direction but not fully specified.",
+      "quality_points": 8,
+      "total_points": 13,
+      "max_points": 12.5,
+      "matched_redline_id": "risk_table[clause_ref='5.1'] and risk_table[clause_ref='Exhibit B']",
+      "evidence": {
+        "risk_table_excerpt": "Clause 5.1 - Classification: ⚠️ Requires Clarification. Detailed Reasoning: 'The clause is generally favorable, but Exhibit B (which should specify the measures) is missing. This creates risk if security measures are not clearly defined.' Recommended Action: 'Complete Exhibit B with detailed technical and organisational measures.' | Exhibit B - Classification: ❌ Unfavorable. Detailed Reasoning: 'Exhibit B is missing, so there is no binding commitment to specific security measures. This is a major risk for Controller.' Recommended Action: 'Complete Exhibit B with detailed security measures.'",
+        "proposed_revision_excerpt": "Technical and Organisational Measures (Exhibit B) - 'Complete Exhibit B with detailed security measures.'",
+        "effective_rationale_excerpt": "Exhibit B is missing, so there is no binding commitment to specific security measures. This is a major risk for Controller.",
+        "judge_reasoning": "Full detection. Leah identified the missing Exhibit B in multiple locations with appropriate severity, provided comprehensive recommendations for completing the exhibit, and articulated the Controller risk clearly. Quality scores are high across all dimensions. Exemplary performance on this issue."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit C / 4.1",
+      "tier": "T2",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "detection": "Y",
+      "detection_reasoning": "Leah correctly identified this issue in the risk table: Exhibit C flagged as ❌ Unfavorable stating 'Exhibit C is missing, so there is no clarity or control over approved Sub-processors.' Leah also addressed sub-processor authorization in proposed redlines. Full detection with appropriate severity.",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "amendment_reasoning": "Leah recommends 'Complete Exhibit C with a list of approved Sub-processors.' This directly addresses the GT key element of requiring a populated baseline sub-processor list. Fully specified fix.",
+      "rationale_score": 3,
+      "rationale_reasoning": "Leah's rationale identifies the control gap: 'Exhibit C is missing, so there is no clarity or control over approved Sub-processors.' Strong recognition that the missing list undermines the authorization framework. Addresses the GT concern that objection rights are meaningless without a baseline list.",
+      "redline_quality_score": 2,
+      "redline_quality_reasoning": "The recommendation to 'Complete Exhibit C with a list of approved Sub-processors' is clear and actionable. Could be enhanced with guidance on required details (entity name, location, processing activities) but the core directive is sound.",
+      "quality_points": 8,
+      "total_points": 13,
+      "max_points": 12.5,
+      "matched_redline_id": "risk_table[clause_ref='Exhibit C']",
+      "evidence": {
+        "risk_table_excerpt": "Exhibit C - Classification: ❌ Unfavorable. Detailed Reasoning: 'Exhibit C is missing, so there is no clarity or control over approved Sub-processors.' Recommended Action: 'Complete Exhibit C with a list of approved Sub-processors.'",
+        "proposed_revision_excerpt": "Approved Sub-processors (Exhibit C) - 'Complete Exhibit C with a list of approved Sub-processors.'",
+        "effective_rationale_excerpt": "Exhibit C is missing, so there is no clarity or control over approved Sub-processors.",
+        "judge_reasoning": "Full detection. Leah identified the missing Exhibit C with appropriate severity (❌), provided a clear recommendation to complete the list, and articulated the control risk. Quality scores are high across all dimensions. Strong performance on this issue."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Cyber Insurance Requirement",
+      "detection": "NMI",
+      "detection_reasoning": "Leah did not identify the absence of a cyber insurance requirement. No new clause proposed for insurance coverage. Not mentioned anywhere in the risk table or proposed redlines.",
+      "detection_points": 0,
+      "amendment_score": null,
+      "amendment_reasoning": null,
+      "rationale_score": null,
+      "rationale_reasoning": null,
+      "redline_quality_score": null,
+      "redline_quality_reasoning": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "max_points": 12.5,
+      "matched_redline_id": null,
+      "evidence": {
+        "risk_table_excerpt": "No entry for cyber insurance requirement",
+        "proposed_revision_excerpt": "No new clause proposed for insurance",
+        "effective_rationale_excerpt": "N/A",
+        "judge_reasoning": "Not mentioned. Leah did not identify that the DPA lacks a cyber insurance requirement. The GT issue is that Controller faces regulatory exposure for Processor breaches but has no assurance of Processor's financial ability to honour indemnification. Should have proposed requiring minimum cyber/E&O insurance with Controller as additional insured. This is a T2 miss."
+      }
+    }
+  ],
+  "additional_issues": [
+    {
+      "issue_id": "ADD-01",
+      "clause": "N/A (Missing)",
+      "leah_classification": "🆕",
+      "issue_description": "No dispute resolution mechanism specified",
+      "leah_proposed_action": "Add a clause requiring good faith negotiation, escalation, and mediation/arbitration before litigation.",
+      "leah_rationale": "The contract does not specify a dispute resolution process beyond governing law. This could lead to costly or protracted litigation.",
+      "assessment": "Valid",
+      "assessment_reasoning": "Legitimate gap. DPA lacks dispute resolution process which is standard in commercial contracts, especially for cross-border data processing relationships. Adding tiered dispute resolution (negotiation → mediation → arbitration) reduces litigation risk and cost.",
+      "gt_candidate": false,
+      "gt_candidate_reasoning": "Not a GT candidate because dispute resolution is a commercial/operational issue rather than a data protection-specific concern. DPA focuses on regulatory compliance and data handling; dispute resolution is typically governed by the Principal Agreement."
+    },
+    {
+      "issue_id": "ADD-02",
+      "clause": "N/A (Missing)",
+      "leah_classification": "🆕",
+      "issue_description": "No force majeure clause",
+      "leah_proposed_action": "Add a standard force majeure clause excusing performance for specified events.",
+      "leah_rationale": "The contract does not address force majeure events, creating risk if events beyond either party's control occur.",
+      "assessment": "Valid",
+      "assessment_reasoning": "Legitimate gap. Force majeure is standard in commercial contracts to address unforeseeable circumstances. Particularly relevant for data processing agreements where Controller may have continuing regulatory obligations even during force majeure events.",
+      "gt_candidate": false,
+      "gt_candidate_reasoning": "Not a GT candidate because force majeure is a general commercial issue rather than a data protection-specific concern. While valid, it's typically addressed in the Principal Agreement rather than the DPA."
+    },
+    {
+      "issue_id": "ADD-03",
+      "clause": "N/A (Missing)",
+      "leah_classification": "🆕",
+      "issue_description": "No detailed confidentiality clause",
+      "leah_proposed_action": "Add a detailed confidentiality clause or exhibit.",
+      "leah_rationale": "While confidentiality is referenced, there is no detailed clause specifying scope, exceptions, and duration.",
+      "assessment": "Valid",
+      "assessment_reasoning": "Legitimate observation. DPA clause 3.2 requires confidentiality commitments but lacks detail on scope, permitted disclosures, duration after termination, and remedies. A detailed confidentiality framework would strengthen data protection.",
+      "gt_candidate": true,
+      "gt_candidate_reasoning": "Strong T2 candidate. Confidentiality is core to data protection. While 3.2 establishes the obligation, detailed specifications (scope, exceptions, survival period, remedies) are material to Controller protection. Should be added to GT in future versions."
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 4,
+      "P": 3,
+      "N": 4,
+      "NMI": 1
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 2,
+        "N": 0,
+        "NMI": 1
+      },
+      "T2": {
+        "Y": 4,
+        "P": 1,
+        "N": 1,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 0,
+        "N": 3,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": false,
+    "t1_gate_failure_reason": "GT-05 (No Limitation of Liability in DPA) not detected - T1 NMI triggers automatic gate failure",
+    "t1_count": 3,
+    "t1_detected": 2,
+    "t1_detected_detail": "GT-01: P (4 pts), GT-02: P (4 pts), GT-05: NMI (0 pts)",
+    "total_detection_points": 36.5,
+    "total_quality_points": 43,
+    "total_points": 79.5,
+    "max_detection_points": 57,
+    "max_quality_points": 81,
+    "max_total_points": 138,
+    "percentage": 57.6,
+    "weighted_percentage": 64.0,
+    "pass_fail": "FAIL",
+    "quality_notes": "Part B performance is mixed. Strengths: Excellent detection of all three blank exhibit issues (GT-09, GT-10, GT-11) with strong recommendations and rationale. Good partial detection of T1 sub-processor and security issues (GT-01, GT-02). Weaknesses: Critical T1 miss on GT-05 (No Limitation of Liability) triggers automatic gate failure. Missed T2 issues GT-04 (hidden caps), GT-06 (deletion timeline), GT-12 (cyber insurance). Missed all three T3 issues (GT-03, GT-07, GT-08). Strong on structural/exhibit gaps but weaker on contractual nuance and commercial terms."
+  },
+  "combined_summary": {
+    "part_a": {
+      "score": 23,
+      "max_score": 24,
+      "percentage": 95.8,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "score": 79.5,
+      "max_score": 138,
+      "percentage": 57.6,
+      "t1_gate": "FAIL",
+      "pass_fail": "FAIL"
+    },
+    "overall_pass": false,
+    "overall_reasoning": "Overall FAIL due to Part B T1 gate failure (GT-05 NMI). Part A performance was excellent (95.8%, 0 critical failures). Part B detection of obvious gaps (blank exhibits) was strong, but missed critical T1 issue on limitation of liability structure. The T1 gate failure overrides the strong Part A performance.",
+    "quality_flags": []
+  }
+}

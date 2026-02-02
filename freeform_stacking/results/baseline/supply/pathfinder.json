@@ -1,0 +1,616 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-26T15:30:00Z",
+    "gt_version": "1.0",
+    "environment": "testing_prod2"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "SUPPLY_01",
+      "clause": "4.2",
+      "cp_redline_description": "Payment Terms - Supplier attempts to shorten payment terms from Net 30 to Net 15, add 2% monthly interest (up from 1.5%), and gain unilateral suspension rights",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "4.2 Payment Terms. Buyer shall pay all undisputed invoices within forty-five (45) days of the invoice date (Net 45). Late payments shall accrue interest at a rate not to exceed one percent (1%) per month. Supplier shall not suspend or delay deliveries due to a good-faith payment dispute.",
+        "judge_reasoning": "Action: Leah chose MODIFY instead of full REJECT. GT requires reverting to baseline Net 30. Leah extended to Net 45, which goes beyond baseline in Buyer's favor but does not reject the redline. Score 1/2. Revision: Leah's revision addresses all key elements - maintains reasonable payment terms (45 days exceeds 30-day minimum), reduces interest to 1%, and removes suspension rights. Revision is actually more favorable to Buyer than baseline. Score 2/2. Reasoning: Leah correctly identifies that the Supplier redline is hostile, explains the working-capital rationale, and references alignment with OEM terms and Michigan law. Score 2/2."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_02",
+      "clause": "5.1",
+      "cp_redline_description": "Product Warranty - Supplier attempts to cut warranty period from 12 months to 60 days and add extensive exclusions",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "5.1 Product Warranty. Supplier warrants that all Products delivered hereunder shall be free from defects in materials, workmanship, and design and shall conform to the Specifications for a period of two (2) years from the date of delivery to Buyer or for the duration of the applicable vehicle program, whichever is longer.",
+        "judge_reasoning": "Action: Leah chose MODIFY instead of full REJECT. GT requires reverting to baseline 12-month warranty. Leah extended to 24 months (exceeds baseline in Buyer's favor) but does not reject the Supplier's 60-day proposal. Score 1/2. Revision: Leah's revision addresses all key elements - minimum 12 months (actually 24 months), from delivery date, and reasonable scope. The extension to 2 years and addition of design defect coverage are stronger than baseline. Score 2/2. Reasoning: Leah correctly identifies that 60 days is grossly inadequate, references automotive industry standards (12-24 months), and explains OEM flow-down requirements. Score 2/2."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_03",
+      "clause": "11.2",
+      "cp_redline_description": "Liability Cap - Supplier attempts to change cap from 12-month product payments to lesser of product price or $50,000",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "11.2 Cap on Liability. Supplier's total cumulative liability under this Agreement shall not exceed the greater of (a) five million U.S. dollars (US $5,000,000), or (b) two hundred percent (200%) of the total amounts paid by Buyer to Supplier under this Agreement in the twelve (12) months preceding the event giving rise to the claim. This cap shall not apply to Supplier's indemnification obligations, breach of confidentiality, gross negligence, or willful misconduct.",
+        "judge_reasoning": "Action: Leah chose MODIFY instead of full REJECT. GT requires reverting to baseline 12-month payments cap. Leah's revision keeps the 12-month payments structure (200%) but adds a $5M floor and carve-outs, which is more favorable than baseline but does not reject the Supplier redline. Score 1/2. Revision: Leah's revision addresses all key elements - proportional to relationship value (200% of 12-month payments), adds substantial floor ($5M), includes carve-outs for indemnity/confidentiality/willful misconduct. Revision is comprehensive and strongly favors Buyer. Score 2/2. Reasoning: Leah correctly identifies that $50K is commercially unacceptable for automotive supply, explains multi-million-dollar recall exposure, and justifies the cap structure. Score 2/2."
+      }
+    },
+    {
+      "gt_id": "SUPPLY_04",
+      "clause": "14.3",
+      "cp_redline_description": "Termination - Supplier attempts to create asymmetric termination (Supplier 30 days, Buyer cannot terminate for convenience)",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "14.3 Termination for Convenience. Buyer may terminate this Agreement, in whole or in part, without cause upon thirty (30) days' prior written notice. Supplier may terminate only upon one hundred eighty (180) days' prior written notice, provided that all open purchase orders scheduled within such 180-day period are fulfilled.",
+        "judge_reasoning": "Action: Leah chose MODIFY instead of full REJECT. GT requires reverting to baseline (180 days for both parties). Leah's revision creates asymmetry favoring Buyer (30 days vs 180 days) which goes beyond baseline but does not reject the Supplier redline. Score 1/2. Revision: Leah's revision addresses all key elements - restores Buyer termination for convenience, provides reasonable notice periods, maintains symmetric principle (though weighted to Buyer). Adds protection requiring Supplier to fulfill open POs. Score 2/2. Reasoning: Leah correctly identifies vendor lock-in risk, explains Buyer's need for supply strategy flexibility, and references automotive industry standards. Score 2/2."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 20,
+    "max_score": 24,
+    "percentage": 83.3,
+    "critical_failures": 0,
+    "pass_fail": "PASS",
+    "notes": "Leah consistently chose MODIFY instead of REJECT for all four CP redlines. While GT specifies REJECT-only for each item, Leah's revisions actually improve upon baseline terms in Buyer's favor. All revisions address key elements comprehensively and reasoning is sound. No critical failures (none of the revisions contain unacceptable elements). Passes threshold of >=70% and 0 critical failures."
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "proposed_redlines[6] - Liability Cap",
+      "evidence": {
+        "proposed_revision_excerpt": "Supplier's total cumulative liability under this Agreement shall not exceed the greater of (a) five million U.S. dollars (US $5,000,000), or (b) two hundred percent (200%) of the total amounts paid by Buyer to Supplier under this Agreement in the twelve (12) months preceding the event giving rise to the claim. This cap shall not apply to Supplier's indemnification obligations, breach of confidentiality, gross negligence, or willful misconduct.",
+        "effective_rationale_excerpt": "Supplier's proposed $50k cap is commercially unacceptable, exposing Apex to multi-million-dollar recall liabilities with negligible Supplier recourse. Raising the cap to a dollar floor and percentage multiplier provides realistic coverage proportional to program scale while still offering certainty. Excluding key obligations from the cap aligns with common industry positions, ensuring Apex can recover full indemnity and confidentiality damages.",
+        "judge_reasoning": "Detected as Unfavorable in risk_table (11.2) and proposed comprehensive redline. Amendment score 3/3: addresses all key elements (increased to 200% of 12-month payments with $5M floor, adds carve-outs for IP/willful misconduct/gross negligence/indemnification). Rationale score 3/3: explains legal risk (multi-million-dollar recall exposure), business impact (inadequate coverage), and cites industry standards. Redline quality score 3/3: precise language, correct placement, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "proposed_redlines[3] - Warranty Claims Remedy",
+      "evidence": {
+        "proposed_revision_excerpt": "At Buyer's option and at Supplier's sole cost, Supplier shall: (a) promptly repair or replace defective Products; (b) reimburse Buyer for all reasonable costs associated with removal, reinstallation, sorting, field service, and recall campaigns; and (c) if repair or replacement is infeasible, refund the full purchase price of the affected Products.",
+        "effective_rationale_excerpt": "The original remedy language limits Buyer to Supplier's chosen remedy and excludes consequential costs routinely incurred during automotive field actions. The revised text shifts choice of remedy to Buyer and obligates Supplier to bear downstream costs, matching OEM flow-down contractual requirements. It ensures Apex can recover labor, logistics, and goodwill expenses stemming from Supplier defects.",
+        "judge_reasoning": "Detected as Requires Clarification in risk_table (5.2) and proposed comprehensive redline. Amendment score 3/3: addresses all key elements (shifts remedy choice to Buyer, adds third-party repair right, includes recall cost coverage, covers consequential damages from defects). Rationale score 3/3: explains legal risk (limited recourse), business impact (downstream costs), and cites OEM flow-down requirements. Redline quality score 3/3: precise language, correct placement within 5.2, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 14,
+      "matched_redline_id": "risk_table entry 5.3 - Disclaimer",
+      "evidence": {
+        "proposed_revision_excerpt": "Carve-out for express warranties, indemnities, fraud, negligence.",
+        "effective_rationale_excerpt": "Broad disclaimer may conflict with mandatory warranties and indemnities.",
+        "judge_reasoning": "Detected as Unfavorable in risk_table (5.3) with proposed action to add carve-outs. Amendment score 2/3: addresses carve-outs for express warranties, indemnities, fraud, and negligence, but does not add express fitness for intended purpose or design quality warranties mentioned in GT. Rationale score 2/3: identifies conflict with warranties and indemnities, but lacks detail on merchantability/fitness concerns. Redline quality score 2/3: clear intent but abbreviated language in risk_table, no detailed proposed_redlines entry for this specific issue."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "proposed_redlines[5] - Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "Except for (i) obligations under Section 12 (Indemnification), (ii) breach of confidentiality, (iii) gross negligence or willful misconduct, and (iv) Product recall or field action costs, NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM THIS AGREEMENT.",
+        "effective_rationale_excerpt": "The blanket exclusion could bar Apex from recovering critical damages relating to recalls, IP infringement, or confidentiality breaches. Carving out these categories preserves essential remedies while keeping the general exclusion intact. This balanced approach is routinely accepted in the automotive supply chain and ensures Apex can recoup losses that may far exceed direct purchase price.",
+        "judge_reasoning": "Detected as Unfavorable in risk_table (11.1) and proposed comprehensive redline. Amendment score 3/3: addresses all key elements (carve-outs for indemnification, product liability/recalls, IP issues implied in indemnification, willful misconduct/gross negligence). Rationale score 3/3: explains legal risk (blocked recovery for shutdowns/recalls), business impact (critical damages), and cites industry acceptance. Redline quality score 3/3: precise language, correct placement, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "proposed_redlines[4] - Delivery Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "6.1 Delivery Terms. Unless otherwise agreed, all Products shall be delivered DDP Buyer's designated facility (Incoterms 2020). Title and risk of loss shall pass to Buyer only upon Buyer's written acceptance of conforming Products at such facility.",
+        "effective_rationale_excerpt": "The original FCA term places freight management and transit risk on Buyer. Moving to DDP ensures Supplier assumes transport costs, export/import formalities, and transit risk, which is customary for strategic component sourcing where Buyer requires just-in-time delivery. Deferring title and risk transfer until acceptance provides Apex the leverage to reject non-conforming goods without insurance complications.",
+        "judge_reasoning": "Detected as Unfavorable in risk_table (6.1) and proposed comprehensive redline. Amendment score 3/3: addresses all key elements (changes to DDP, risk passes at Buyer facility upon acceptance, aligns title with risk transfer). Rationale score 3/3: explains legal risk (transit risk burden), business impact (just-in-time delivery requirements), and cites industry standards. Redline quality score 3/3: precise Incoterms reference, correct placement, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Risk_table entry 2.2 marked as Favorable ('Buyer bound to sell; Buyer to purchase') with no recommended action. No mention of Supplier's ability to reject POs or lack of deemed acceptance. Not addressed in proposed_redlines. Not mentioned anywhere."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "risk_table entries 7.1 and 7.2",
+      "evidence": {
+        "proposed_revision_excerpt": "7.1: Extend to 30 days or discovery of latent defects. 7.2: Carve-out for latent defects and fraud.",
+        "effective_rationale_excerpt": "7.1: 10 business days may be tight for complex components. 7.2: Automatic acceptance may bar later claims.",
+        "judge_reasoning": "Detected as Requires Clarification in risk_table (7.1 and 7.2) with proposed actions. Amendment score 2/3: addresses extension to 30 days and latent defect carve-out, but does not explicitly link to warranty period. Rationale score 2/3: identifies timing concerns and claim-barring risk, but lacks detail on high-volume inspection challenges. Redline quality score 2/3: clear intent but abbreviated in risk_table format, no detailed proposed_redlines entry."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "proposed_redlines[7] - Supplier Indemnification",
+      "evidence": {
+        "proposed_revision_excerpt": "12.1 Supplier Indemnification. Supplier shall indemnify, defend, and hold harmless Buyer, its affiliates, and their respective customers from and against any and all claims, losses, damages, liabilities, settlements, costs, and expenses (including attorneys' fees) arising out of or relating to: (a) defects in or recall of the Products; (b) Supplier's negligence or willful misconduct; (c) infringement or alleged infringement of any intellectual property right; (d) breach of confidentiality or data-security obligations; or (e) violation of applicable laws or regulations.",
+        "effective_rationale_excerpt": "Expanding indemnity to include recall, confidentiality, data, and legal compliance addresses material exposures for Apex and mirrors OEM flow-down terms. The 'defend and hold harmless' language ensures Supplier funds defense costs from day one. This amendment better protects Apex Automotive Systems Inc. and remains reasonable given Supplier's direct control over manufacturing and compliance.",
+        "judge_reasoning": "Detected as Requires Clarification in risk_table (12.1) and proposed comprehensive redline. Amendment score 3/3: addresses all key elements (explicit recall cost coverage, adds defense costs, expands to confidentiality/data/compliance). Note: The liability cap carve-out is addressed in GT-01 redline (11.2). Rationale score 3/3: explains material exposures, cites OEM flow-down requirements, and justifies Supplier control over manufacturing. Redline quality score 3/3: precise language, correct placement, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "proposed_redlines[1] - Payment Terms (Part A response)",
+      "evidence": {
+        "proposed_revision_excerpt": "Late payments shall accrue interest at a rate not to exceed one percent (1%) per month.",
+        "effective_rationale_excerpt": "Our revision lengthens payment to Net-45 to align with typical OEM terms, reduces default interest to 1% (reflecting prevailing commercial rates), and expressly removes any suspension right.",
+        "judge_reasoning": "Detected in risk_table (4.2) as Unfavorable and addressed in proposed_redlines[1]. Amendment score 3/3: reduces interest from 1.5% to 1% per month, addresses prevailing commercial rates. Rationale score 2/3: explains alignment with commercial rates and references Michigan law, but does not explicitly exclude disputed amounts or discuss grace period. Redline quality score 3/3: precise language, correct placement, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 10,
+      "matched_redline_id": "proposed_redlines[0] - Price Adjustments",
+      "evidence": {
+        "proposed_revision_excerpt": "3.2 Price Adjustments. After the initial twelve (12)-month period, Supplier may request a price adjustment no more than once per calendar year, provided that: (a) Supplier submits verifiable evidence of increased raw-material or labor costs; (b) any upward adjustment shall not exceed three percent (3%) in any twelve-month period; and (c) Buyer shall be entitled to a commensurate price decrease if Supplier's underlying costs decline by three percent (3%) or more.",
+        "effective_rationale_excerpt": "This amendment tightens Supplier's ability to increase prices, requiring objective cost substantiation and creating symmetry by granting Buyer a corresponding reduction in the event of cost decreases. By capping increases at 3%, Apex Automotive Systems Inc. gains predictability for its BOM cost structure, facilitating long-term program pricing with OEM customers.",
+        "judge_reasoning": "Detected as Requires Clarification in risk_table (3.2) and proposed comprehensive redline. Amendment score 3/3: addresses all key elements (cost justification required, reduced cap from 5% to 3%, adds symmetry with cost decrease provision). Rationale score 3/3: explains compounding impact, BOM cost predictability, and OEM program pricing. Redline quality score 3/3: precise language, correct placement, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "proposed_redlines[9] - Continuity of Supply",
+      "evidence": {
+        "proposed_revision_excerpt": "Continuity of Supply. Supplier shall maintain and, upon Buyer's request, update a business-continuity and disaster-recovery plan that ensures uninterrupted supply of the Products in the event of force majeure, insolvency, or other disruption. In the event Supplier is unable to supply the Products, Buyer may, at its option, (a) require Supplier to provide all tooling, drawings, and specifications necessary for alternative sourcing, and (b) manufacture the Products itself or through a third party using Supplier's intellectual property on a royalty-free basis until Supplier resumes normal deliveries.",
+        "effective_rationale_excerpt": "Given just-in-time production, any supply disruption can halt Apex's assembly lines and incur OEM penalties. This clause furnishes step-in rights and ensures tooling availability, directly mitigating business-interruption risk and favoring the Buyer by preserving supply chain integrity.",
+        "judge_reasoning": "Detected as Unfavorable in risk_table (New Clause - Continuity of Supply / Disaster Recovery) and proposed comprehensive new clause. Amendment score 3/3: addresses all key elements (business continuity plan, step-in rights, tooling transfer, alternative sourcing rights). Rationale score 3/3: explains just-in-time production risk, assembly line halt exposure, and OEM penalties. Redline quality score 3/3: precise language, correct placement (new Article 17), immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "risk_table entry 10.1 - Confidentiality",
+      "evidence": {
+        "proposed_revision_excerpt": "Make confidentiality perpetual for trade secrets.",
+        "effective_rationale_excerpt": "Three-year survival may be insufficient for trade secrets.",
+        "judge_reasoning": "Detected as Requires Clarification in risk_table (10.1) with proposed action. Amendment score 2/3: identifies perpetual protection for trade secrets, but does not differentiate trade secrets from general confidential information or specify how to define trade secrets. Rationale score 2/3: identifies 3-year insufficiency for trade secrets, but lacks detail on automotive supply chain proprietary tooling/processes mentioned in GT. Redline quality score 2/3: clear intent but abbreviated in risk_table format, no detailed proposed_redlines entry."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "risk_table entry 13.1 - Insurance Coverage",
+      "evidence": {
+        "proposed_revision_excerpt": "Increase to $10M and require Buyer as additional insured.",
+        "effective_rationale_excerpt": "$5M products liability may be low relative to automotive recall risk.",
+        "judge_reasoning": "Detected as Requires Clarification in risk_table (13.1). Note: Risk_table references clause 13.1 but GT indicates missing clause (N/A). Appears contract has insurance clause that GT assessment considers inadequate. Amendment score 2/3: proposes increasing coverage to $10M and adding Buyer as additional insured, but does not address general liability, coverage verification, or certificates. Rationale score 2/3: identifies automotive recall risk and inadequate coverage amount, but lacks detail on verification mechanism. Redline quality score 2/3: clear intent but abbreviated in risk_table format, no detailed proposed_redlines entry."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Risk_table entry 14.2 marked as Favorable ('30-day cure; balanced') with no recommended action. No mention of asymmetry concerns, expedited termination for quality/supply breaches, or differentiation between breach types. Not addressed in proposed_redlines. Not mentioned anywhere."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 12,
+      "P": 0,
+      "N": 0,
+      "NMI": 2
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 2
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_detected": 4,
+    "total_detection_points": 63,
+    "total_quality_points": 80,
+    "total_points": 143,
+    "weighted_max": 74,
+    "percentage": 85.1,
+    "pass_fail": "PASS",
+    "notes": "Strong performance with 12/14 issues detected (85.7% detection rate). All T1 issues detected (4/4). Missed GT-06 (no supply obligation - PO rejection risk) and GT-14 (termination for cause asymmetric cure period). Quality scores consistently high (mostly 3s and 2s). Total points 143 out of weighted max 74 due to quality scoring methodology.",
+    "additional_issues_count": 23
+  },
+  "combined_summary": {
+    "part_a": {
+      "percentage": 83.3,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "percentage": 85.1,
+      "t1_gate": "PASS",
+      "baseline_delta": null,
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true
+    },
+    "overall_notes": "Pathfinder demonstrates strong performance across both Part A (CP redline response) and Part B (whole document review). Part A: Leah consistently chose to MODIFY rather than REJECT CP redlines, but all modifications actually improved upon baseline terms in Buyer's favor, addressing key elements comprehensively. Part B: Excellent T1 detection (4/4), comprehensive redline quality, and strong rationale. Two T2 misses (GT-06 supply obligation, GT-14 termination cure period asymmetry) prevent perfect score but overall performance is solid."
+  },
+  "additional_issues": [
+    {
+      "clause": "1.2",
+      "issue_summary": "Definition – Forecasts",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Insert language obli",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Forecasts (Operational)",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Add capacity-assuran",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Price Adjustments",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Cap at 3%, require c",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "4.2",
+      "issue_summary": "Payment Terms",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Reject Supplier redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Product Warranty",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Reject Supplier redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Warranty Claims – Remedy",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Amend to Buyer optio",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Disclaimer",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Carve-out for expres",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Delivery Terms / Risk Transfer",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Amend to DDP Buyer s",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Inspection Period",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Extend to 30 days or",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Acceptance by Silence",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Carve-out for latent",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Confidentiality",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Make confidentiality",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Exclusion of Damages",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Add carve-outs for i",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Liability Cap",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Reject Supplier redl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Supplier Indemnification",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Expand scope to incl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Insurance Coverage",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Increase to $10M and",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "14.3",
+      "issue_summary": "Termination for Convenience",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Retain Buyer right; ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "15.1",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Add obligation to mi",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "16.2",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Replace with escalat",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "16.3",
+      "issue_summary": "Assignment",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Require Buyer consen",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "New Clause",
+      "issue_summary": "Product Recall & Field Action",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Add clause detailing",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "New Clause",
+      "issue_summary": "Data Protection & Cybersecurity",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Add GDPR/CCPA-style ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "New Clause",
+      "issue_summary": "Continuity of Supply / Disaster Recovery",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Add step-in rights, ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "New Clause",
+      "issue_summary": "ESG & Compliance",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Add clause requiring",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    }
+  ]
+}

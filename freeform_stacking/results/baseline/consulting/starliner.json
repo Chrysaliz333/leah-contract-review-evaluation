@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-26T19:00:00Z",
+    "gt_version": "1.0",
+    "evaluator": "Liz",
+    "environment": "testing_prod2"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "CONSULTING_01",
+      "clause": "3.4",
+      "cp_redline_description": "Client shall pay all invoices within fifteen (15) days of receipt. Late payments shall bear interest at the rate of two percent (2%) per month. Client waives any right to dispute invoices not raised within five (5) days of receipt.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause: Payment Terms | Proposed Change Type: Modify | Proposed Revision: 3.4 Payment Terms. Client shall pay all undisputed invoices within thirty (30) days of receipt. Late payments shall bear interest at the rate of one percent (1%) per month or the maximum rate permitted by law, whichever is less. Client may dispute any invoice in good faith within thirty (30) days of receipt, with payment of any undisputed portion due as stated. | Rationale: The existing redline is highly unfavorable to Client, shortening payment terms, increasing late fees, and limiting dispute rights. The proposed revision restores reasonable payment and dispute timelines, protecting Client's cash flow and ability to challenge incorrect invoices.",
+        "judge_reasoning": "ACTION (1/2): Leah proposed MODIFY instead of REJECT. While the intent is correct (restore baseline terms), the GT expects full reversion (REJECT). Acceptable action since outcome is similar, but not exact match. REVISION (2/2): Leah's revision restores all key elements: 30-day payment terms, 1% late interest, and Client dispute rights. Completely addresses the CP redline. REASONING (2/2): Rationale clearly explains why the CP redline harms Client (cash flow strain, removal of dispute rights) and justifies the restoration."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_02",
+      "clause": "5.1",
+      "cp_redline_description": "Consultant retains all intellectual property rights in deliverables, methodologies, and work product. Client receives a non-exclusive, non-transferable license to use deliverables for its internal business purposes only.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause: Ownership of Deliverables | Proposed Change Type: Modify | Proposed Revision: 5.1 Ownership of Deliverables. All deliverables created by Consultant specifically for Client pursuant to this Agreement shall be considered work-for-hire and shall be owned exclusively by Client upon full payment of all fees due hereunder. Consultant retains ownership only of its Background IP, as defined herein, and grants Client a perpetual, royalty-free, transferable license to use any Background IP incorporated in the Deliverables. | Rationale: The existing redline is highly unfavorable, stripping Client of ownership and restricting use. The proposed revision restores Client's exclusive ownership, ensures broad use rights, and limits Consultant's retention to Background IP, protecting Client's business interests.",
+        "judge_reasoning": "ACTION (1/2): Leah proposed MODIFY instead of REJECT. The GT expects full reversion to baseline work-for-hire language. Acceptable since the modification achieves the same outcome (Client ownership), but not exact match. REVISION (2/2): Leah's revision fully restores all key elements: work-for-hire designation, Client exclusive ownership, and payment condition. Goes beyond baseline by clarifying Background IP treatment, which is acceptable. REASONING (2/2): Rationale correctly identifies that CP redline strips Client ownership and creates dependency risk. Explains why work-for-hire is appropriate for bespoke deliverables."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_03",
+      "clause": "5.2",
+      "cp_redline_description": "To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client a non-exclusive, royalty-free license to use such Background IP solely as part of the Deliverables for a period of three (3) years from delivery, subject to termination if Client competes with Consultant in North America.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause: Background IP in Deliverables | Proposed Change Type: Modify | Proposed Revision: To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client a non-exclusive, perpetual, royalty-free, transferable, and sublicensable license to use such Background IP as part of the Deliverables and for any internal business purpose. | Rationale: The existing redline is overreaching, capturing new IP as Background IP. The revision clarifies Client's right to use incorporated Background IP broadly, ensuring business continuity and flexibility.",
+        "judge_reasoning": "ACTION (1/2): Leah proposed MODIFY instead of REJECT. The GT expects full reversion to baseline perpetual license without restrictions. Acceptable since modification restores perpetuity and removes restrictions. REVISION (2/2): Leah's revision restores all key elements: perpetual duration, no territorial restrictions, no competitive use restrictions, royalty-free. Also adds transferable and sublicensable rights, which strengthen Client position beyond baseline. REASONING (2/2): Rationale identifies that 3-year limit renders deliverables obsolete and competitive restriction blocks Client business. Correctly explains need for perpetual, broad license."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_04",
+      "clause": "7.1",
+      "cp_redline_description": "Consultant may terminate this Agreement for convenience upon fifteen (15) days' prior written notice. Client may terminate for convenience upon ninety (90) days' prior written notice and payment of a termination fee equal to three (3) months of fees under all active Statements of Work.",
+      "expected_action": "REJECT",
+      "leah_action": "MODIFY",
+      "action_score": 1,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 5,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Clause: Termination for Convenience | Proposed Change Type: Modify | Proposed Revision: 7.1 Termination for Convenience. Either party may terminate this Agreement or any Statement of Work for convenience upon thirty (30) days' prior written notice to the other party, with no penalty or additional fees. | Rationale: The existing redline is highly unfavorable, restricting Client's exit rights and imposing penalties. The revision restores balanced, flexible termination rights, allowing Client to exit without excessive cost or delay.",
+        "judge_reasoning": "ACTION (1/2): Leah proposed MODIFY instead of REJECT. The GT expects full reversion to symmetric 30-day notice. Acceptable since modification achieves symmetric terms and removes penalty. REVISION (2/2): Leah's revision restores all key elements: symmetric notice periods (30 days), no termination fee for Client, reasonable notice for both parties. Also adds SOW-level termination right, which strengthens Client position. REASONING (2/2): Rationale clearly explains that asymmetric terms trap Client and termination fee is unjustified penalty. Identifies that symmetric terms are market standard."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 20,
+    "max_score": 24,
+    "percentage": 83.3,
+    "critical_failures": 0,
+    "pass_fail": "PASS",
+    "notes": "Leah correctly identified all 4 CP redlines as problematic and proposed substantive fixes that restore Client's baseline position. Lost 4 points total (1 per item) for using MODIFY instead of REJECT, but the revisions themselves are comprehensive and achieve the intended outcome. All key elements addressed, no critical failures."
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah flagged 5.1 in response to the CP redline (Part A), but did NOT identify the baseline work-for-hire structural defect described in GT-01. The GT issue is that work-for-hire doctrine has limited application to independent contractors under 17 U.S.C. Section 101, and the contract lacks fallback assignment language. Leah's analysis focuses solely on responding to the CP redline that tried to give Consultant ownership, not on the baseline clause's legal deficiency. No mention of 17 U.S.C., enumerated categories, or the need for express assignment as backup. This is a T1 miss - critical structural defect not detected."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "Cap on Liability",
+      "evidence": {
+        "proposed_revision_excerpt": "9.2 Cap on Liability. EXCEPT FOR BREACHES OF CONFIDENTIALITY OBLIGATIONS, INDEMNIFICATION OBLIGATIONS, GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR INTELLECTUAL PROPERTY INFRINGEMENT, NEITHER PARTY'S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT SHALL EXCEED THE TOTAL FEES PAID OR PAYABLE BY CLIENT TO CONSULTANT UNDER THE APPLICABLE STATEMENT OF WORK GIVING RISE TO THE CLAIM.",
+        "effective_rationale_excerpt": "This revision adds carve-outs for gross negligence, willful misconduct, and IP infringement, ensuring Consultant cannot use the liability cap to avoid responsibility for serious breaches.",
+        "judge_reasoning": "DETECTION: Y - Leah correctly identified that 9.2 lacks carve-outs for critical risks. AMENDMENT (3/3): Comprehensive fix adding all GT-required carve-outs: IP infringement, data breach (via indemnification), gross negligence, willful misconduct. Legally sound and addresses all gaps. RATIONALE (2/3): Identifies the risk that Consultant could avoid responsibility for serious breaches. Missing specifics on why these particular carve-outs matter (e.g., data breach exposure, IP infringement claims can exceed SOW value). REDLINE QUALITY (3/3): Precise drafting, clear placement, immediately usable tracked change format."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "Exclusion of Damages",
+      "evidence": {
+        "proposed_revision_excerpt": "9.1 Exclusion of Damages. IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION LOSS OF PROFITS, LOSS OF DATA, OR LOSS OF BUSINESS OPPORTUNITY, ARISING OUT OF OR RELATED TO THIS AGREEMENT, EXCEPT TO THE EXTENT SUCH DAMAGES RESULT FROM A PARTY'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR INTENTIONAL BREACH OF CONFIDENTIALITY OR INTELLECTUAL PROPERTY OBLIGATIONS.",
+        "effective_rationale_excerpt": "This amendment carves out damages resulting from gross negligence, willful misconduct, or key breaches, ensuring Client can recover for serious Consultant failures.",
+        "judge_reasoning": "DETECTION: Y - Leah correctly identified that 9.1's consequential damages exclusion prevents Client from recovering significant losses. AMENDMENT (3/3): Comprehensive carve-outs for gross negligence, willful misconduct, confidentiality breach, and IP infringement. Aligns with indemnification obligations as GT requires. RATIONALE (2/3): Identifies risk of Client losing recovery for serious failures. Missing specifics on business impact and alignment with indemnification. REDLINE QUALITY (3/3): Clean drafting, proper exception structure, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 2,
+      "rationale_score": 1,
+      "redline_quality_score": 2,
+      "quality_points": 5,
+      "total_points": 7.5,
+      "matched_redline_id": "Termination for Convenience",
+      "evidence": {
+        "proposed_revision_excerpt": "7.1 Termination for Convenience. Either party may terminate this Agreement or any Statement of Work for convenience upon thirty (30) days' prior written notice to the other party, with no penalty or additional fees.",
+        "effective_rationale_excerpt": "The existing redline is highly unfavorable, restricting Client's exit rights and imposing penalties. The revision restores balanced, flexible termination rights, allowing Client to exit without excessive cost or delay.",
+        "judge_reasoning": "DETECTION: P - Leah flagged 7.1 in response to CP redline (Part A), which partially addresses GT-04. However, Leah's focus was on reversing the CP redline's asymmetric terms, not on the baseline clause's inadequacy for Client flexibility. GT-04 concerns: (1) 30 days may be too long for agility, (2) no explicit SOW-level TfC, (3) no transition assistance. Leah DID add SOW-level termination right, which is a key GT element. But did not address notice period flexibility or transition assistance. AMENDMENT (2/3): Adds SOW-level TfC right (key element), but doesn't address shorter notice option or transition assistance. RATIONALE (1/3): Focuses on CP redline issues, not baseline inadequacy for Client agility. REDLINE QUALITY (2/3): Clear intent, but doesn't fully optimize for Client flexibility."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 13,
+      "matched_redline_id": "Background IP in Deliverables",
+      "evidence": {
+        "proposed_revision_excerpt": "To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client a non-exclusive, perpetual, royalty-free, transferable, and sublicensable license to use such Background IP as part of the Deliverables and for any internal business purpose.",
+        "effective_rationale_excerpt": "The existing redline is overreaching, capturing new IP as Background IP. The revision clarifies Client's right to use incorporated Background IP broadly, ensuring business continuity and flexibility.",
+        "judge_reasoning": "DETECTION: Y - Leah correctly identified that 5.2's license scope is too narrow ('solely as part of the Deliverables'). AMENDMENT (3/3): Comprehensive expansion addressing all GT elements: modification rights ('for any internal business purpose'), transferable, sublicensable. Goes beyond baseline to strengthen Client position. RATIONALE (2/3): Explains need for business continuity and flexibility. Missing specifics on maintenance, enhancement, and integration risks. REDLINE QUALITY (3/3): Precise drafting, clear grant of rights, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah classified 6.4 (Return of Confidential Information) as Favorable with 'No Action Required'. No mention of survival period duration, trade secret carve-out, or certification requirement. Article 13.10 (Survival) also classified as Favorable with no analysis of confidentiality duration. GT-06 requires explicit survival period with trade secret treatment - completely missed."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "Payment Terms",
+      "evidence": {
+        "proposed_revision_excerpt": "3.4 Payment Terms. Client shall pay all undisputed invoices within thirty (30) days of receipt. Late payments shall bear interest at the rate of one percent (1%) per month or the maximum rate permitted by law, whichever is less. Client may dispute any invoice in good faith within thirty (30) days of receipt, with payment of any undisputed portion due as stated.",
+        "effective_rationale_excerpt": "The existing redline is highly unfavorable to Client, shortening payment terms, increasing late fees, and limiting dispute rights. The proposed revision restores reasonable payment and dispute timelines, protecting Client's cash flow and ability to challenge incorrect invoices.",
+        "judge_reasoning": "DETECTION: Y - While Leah's primary focus was responding to the CP redline (Part A), the proposed revision DOES add a formal dispute mechanism: '30 days of receipt' window and 'good faith' standard. This addresses GT-07's concern about lack of dispute process. AMENDMENT (3/3): Adds explicit dispute window (30 days), good faith requirement, and partial payment provision. Comprehensive solution. RATIONALE (2/3): Focuses on CP redline issues but does mention 'ability to challenge incorrect invoices', which touches on GT-07. Missing explicit discussion of baseline gap. REDLINE QUALITY (3/3): Clean drafting, clear dispute process, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 7,
+      "total_points": 8,
+      "matched_redline_id": "Governing Law, Dispute Resolution",
+      "evidence": {
+        "proposed_revision_excerpt": "13.1 Governing Law. This Agreement shall be governed by and construed in accordance with the laws of the State of Nevada, without regard to its conflicts of law principles. | 13.2 Dispute Resolution. Any dispute arising out of or relating to this Agreement shall first be subject to good faith negotiations between the Parties. If the dispute cannot be resolved through negotiation within thirty (30) days, either Party may pursue resolution through the courts of competent jurisdiction in Clark County, Nevada.",
+        "effective_rationale_excerpt": "Governing Law: This amendment aligns governing law with Client's home state, reducing legal and logistical burdens and ensuring Client is not disadvantaged in disputes. | Dispute Resolution: This revision moves dispute resolution to Client's home jurisdiction, reducing travel costs and inconvenience, and ensuring a more favorable forum for Client.",
+        "judge_reasoning": "DETECTION: Y - Leah identified both issues: (1) Texas law governs when Client is Nevada-based, (2) Travis County, Texas forum is inconvenient for Client. AMENDMENT (2/3): Changes to Nevada law and Clark County, Nevada forum. Note: The baseline contract actually references Nevada law and Las Vegas (not Travis County, Texas), so this is Leah correcting what appears to be an error in the HTML output. Acceptable variation. RATIONALE (2/3): Explains that Consultant's home jurisdiction disadvantages Client and increases costs. Standard commercial reasoning. REDLINE QUALITY (3/3): Clean amendments to both clauses."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "Data Protection & Privacy",
+      "evidence": {
+        "proposed_revision_excerpt": "Consultant shall comply with all applicable data protection and privacy laws in connection with the performance of Services under this Agreement. Consultant shall implement appropriate technical and organizational measures to protect Client's data against unauthorized access, disclosure, alteration, or destruction, and shall promptly notify Client of any actual or suspected data breach involving Client data.",
+        "effective_rationale_excerpt": "Placement: Insert as a new section after Article 6 (Confidentiality). This clause ensures Consultant is contractually bound to protect Client's data and comply with privacy laws, reducing regulatory and reputational risk for Client.",
+        "judge_reasoning": "DETECTION: Y - Leah correctly identified that no data protection clause exists and proposed adding one as a new clause. AMENDMENT (2/3): Covers key GT elements: GDPR/CCPA compliance, security measures, breach notification. Missing: controller/processor roles, subprocessors, audit rights. Good foundation but not comprehensive. RATIONALE (2/3): Identifies regulatory and reputational risk. Missing specifics on GDPR/CCPA requirements and personal data handling. REDLINE QUALITY (2/3): Clear language and appropriate placement, but could be more detailed on compliance mechanisms."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah classified 10.1 (Consultant Indemnification) as Favorable with 'No Action Required'. Rationale: 'Consultant indemnifies Client for IP infringement and gross negligence, which is appropriate.' This completely misses GT-10's concern: indemnification should cover ordinary negligence (not just gross negligence), warranty breaches, and confidentiality breaches. The high bar of 'gross negligence' is the problem, not a feature. GT-10 issue not detected."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "NMI",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null,
+        "judge_reasoning": "Leah classified 11.1 (Insurance Requirements) as Favorable with 'No Action Required'. Rationale: 'Consultant must maintain adequate insurance and provide certificates, protecting Client.' No mention of cyber liability insurance gap. GT-11 requires adding cyber insurance if Consultant handles data - completely missed."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 6,
+      "P": 1,
+      "N": 0,
+      "NMI": 4
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 0,
+        "N": 0,
+        "NMI": 1
+      },
+      "T2": {
+        "Y": 4,
+        "P": 1,
+        "N": 0,
+        "NMI": 3
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": false,
+    "t1_count": 1,
+    "t1_detected": 0,
+    "total_detection_points": 24.5,
+    "total_quality_points": 44,
+    "total_points": 68.5,
+    "max_points": 50,
+    "percentage": 68.5,
+    "weighted_max": 50,
+    "pass_fail": "FAIL",
+    "notes": "T1 GATE FAIL: GT-01 (work-for-hire structural defect) not detected - critical miss. Leah responded to CP redline on 5.1 but did not identify the baseline clause's legal inadequacy (17 U.S.C. limitations, missing assignment language). This is a fundamental IP ownership risk. Overall percentage would be 68.5% (passing), but T1 gate failure = automatic FAIL. Part B shows mixed performance: strong on liability caps and damages exclusions, weak on indemnification scope and missing clauses (confidentiality survival, cyber insurance)."
+  },
+  "combined_summary": {
+    "part_a": {
+      "percentage": 83.3,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "percentage": 68.5,
+      "t1_gate": "FAIL",
+      "pass_fail": "FAIL"
+    },
+    "overall_pass": false,
+    "overall_notes": "Part A: Strong performance on CP redline response - all 4 items correctly identified and substantively addressed. Part B: T1 gate failure due to missing work-for-hire structural defect (GT-01). Also missed 3 T2 issues (confidentiality survival, indemnification scope, cyber insurance). The model handled obvious risks well (liability caps, damages exclusions) but failed to detect subtle legal defects and missing provisions."
+  }
+}

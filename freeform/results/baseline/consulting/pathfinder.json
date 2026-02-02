@@ -1,0 +1,815 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-25T11:30:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "5.1",
+        "excerpt": "All Deliverables created by Consultant specifically for Client pursuant to this Agreement shall be deemed 'works-made-for-hire' to the fullest extent permitted by law... To the extent any Deliverable is not deemed a work-made-for-hire, Consultant hereby irrevocably assigns, transfers, and conveys to Client all right, title, and interest therein, effective upon creation, and shall hold such rights in trust for Client until formal assignment. Consultant hereby irrevocably waives... any and all moral rights in the Deliverables.",
+        "reasoning": "Leah's amendment directly addresses the GT concern. The fix adds express assignment as fallback for work-for-hire limitation, vests ownership upon creation (removing payment condition leverage), and includes moral rights waiver. Rationale score 2 because Leah's risk_table focuses on 'payment condition leverage' rather than the core 17 U.S.C. work-for-hire doctrine limitation for independent contractors. Amendment score 3 for comprehensive IP protection.",
+        "judge_reasoning": "[proposed_redlines] All Deliverables created by Consultant specifically for Client pursuant to this Agreement shall be deemed 'works-made-for-hire' to the fullest extent permitted by law... To the extent any Deliverable is not deemed a work-made-for-hire, Consultant hereby irrevocably assigns, transfers, and conveys to Client all right, title, and interest therein, effective upon creation, and shall hold such rights in trust for Client until formal assignment. Consultant hereby irrevocably waives... any and all moral rights in the Deliverables.",
+        "proposed_revision_excerpt": "All Deliverables created by Consultant specifically for Client pursuant to this Agreement shall be deemed 'works-made-for-hire' to the fullest extent permitted by law... To the extent any Deliverable is not deemed a work-made-for-hire, Consultant hereby irrevocably assigns, transfers, and conveys to Client all right, title, and interest therein, effective upon creation, and shall hold such rights in trust for Client until formal assignment. Consultant hereby irrevocably waives... any and all moral rights in the Deliverables.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "5.1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "9.2",
+        "excerpt": "EXCEPT FOR (i) BREACHES OF CONFIDENTIALITY OBLIGATIONS, (ii) A PARTY'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT, (iii) VIOLATIONS OF DATA PROTECTION OR SECURITY REQUIREMENTS, OR (iv) INDEMNIFICATION OBLIGATIONS, NEITHER PARTY'S TOTAL CUMULATIVE LIABILITY... SHALL EXCEED THE GREATER OF TWO (2) TIMES THE TOTAL FEES... OR ONE MILLION U.S. DOLLARS (US $1,000,000).",
+        "reasoning": "Leah adds carve-outs for confidentiality, gross negligence/willful misconduct, data protection, and indemnification - addressing GT's concern about missing carve-outs for data breach, gross negligence. Also increases cap quantum. Risk_table correctly identified cap as inadequate for data breach/IP infringement scenarios.",
+        "judge_reasoning": "[proposed_redlines] EXCEPT FOR (i) BREACHES OF CONFIDENTIALITY OBLIGATIONS, (ii) A PARTY'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT, (iii) VIOLATIONS OF DATA PROTECTION OR SECURITY REQUIREMENTS, OR (iv) INDEMNIFICATION OBLIGATIONS, NEITHER PARTY'S TOTAL CUMULATIVE LIABILITY... SHALL EXCEED THE GREATER OF TWO (2) TIMES THE TOTAL FEES... OR ONE MILLION U.S. DOLLARS (US $1,000,000).",
+        "proposed_revision_excerpt": "EXCEPT FOR (i) BREACHES OF CONFIDENTIALITY OBLIGATIONS, (ii) A PARTY'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT, (iii) VIOLATIONS OF DATA PROTECTION OR SECURITY REQUIREMENTS, OR (iv) INDEMNIFICATION OBLIGATIONS, NEITHER PARTY'S TOTAL CUMULATIVE LIABILITY... SHALL EXCEED THE GREATER OF TWO (2) TIMES THE TOTAL FEES... OR ONE MILLION U.S. DOLLARS (US $1,000,000).",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "9.2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "9.1",
+        "excerpt": "EXCEPT FOR DAMAGES RESULTING FROM A PARTY'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, BREACH OF ITS CONFIDENTIALITY OBLIGATIONS, VIOLATION OF DATA PROTECTION REQUIREMENTS, OR INDEMNIFICATION OBLIGATIONS, IN NO EVENT SHALL EITHER PARTY BE LIABLE... FOR THE AVOIDANCE OF DOUBT, LOSS OR CORRUPTION OF DATA SHALL BE CONSIDERED A DIRECT DAMAGE.",
+        "reasoning": "Leah adds carve-outs matching GT expectations (confidentiality breach, data loss) and explicitly treats data loss as direct damage. Risk_table correctly identified that exclusion 'bars loss of data recovery even if caused by Consultant.'",
+        "judge_reasoning": "[proposed_redlines] EXCEPT FOR DAMAGES RESULTING FROM A PARTY'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, BREACH OF ITS CONFIDENTIALITY OBLIGATIONS, VIOLATION OF DATA PROTECTION REQUIREMENTS, OR INDEMNIFICATION OBLIGATIONS, IN NO EVENT SHALL EITHER PARTY BE LIABLE... FOR THE AVOIDANCE OF DOUBT, LOSS OR CORRUPTION OF DATA SHALL BE CONSIDERED A DIRECT DAMAGE.",
+        "proposed_revision_excerpt": "EXCEPT FOR DAMAGES RESULTING FROM A PARTY'S GROSS NEGLIGENCE, WILLFUL MISCONDUCT, BREACH OF ITS CONFIDENTIALITY OBLIGATIONS, VIOLATION OF DATA PROTECTION REQUIREMENTS, OR INDEMNIFICATION OBLIGATIONS, IN NO EVENT SHALL EITHER PARTY BE LIABLE... FOR THE AVOIDANCE OF DOUBT, LOSS OR CORRUPTION OF DATA SHALL BE CONSIDERED A DIRECT DAMAGE.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "9.1",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T2",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": null,
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Leah marked clause 7.1 as Favorable (checkmark) with reasoning '30-day right favourable to Client.' GT expects concerns about: (1) need for shorter notice period, (2) no SOW-level TfC right, (3) no transition assistance. While 7.4 addresses work-in-progress delivery, it doesn't cover transition assistance. Clear miss - marked favorable when substantive issues exist.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "7.1",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "5.2",
+        "excerpt": "Consultant hereby grants Client a worldwide, irrevocable, perpetual, transferable, sublicenseable, royalty-free license to use, reproduce, modify, distribute, display, perform, and create derivative works of such Background IP as necessary or desirable for Client's and its affiliates' internal business purposes and exploitation of the Deliverables.",
+        "reasoning": "Leah comprehensively expands the Background IP license to include all rights GT identified as missing: modification, derivative works, sublicensing for affiliates/successors. Also adds non-infringement warranty. Risk_table at 5.2 correctly flagged scope concerns.",
+        "judge_reasoning": "[proposed_redlines] Consultant hereby grants Client a worldwide, irrevocable, perpetual, transferable, sublicenseable, royalty-free license to use, reproduce, modify, distribute, display, perform, and create derivative works of such Background IP as necessary or desirable for Client's and its affiliates' internal business purposes and exploitation of the Deliverables.",
+        "proposed_revision_excerpt": "Consultant hereby grants Client a worldwide, irrevocable, perpetual, transferable, sublicenseable, royalty-free license to use, reproduce, modify, distribute, display, perform, and create derivative works of such Background IP as necessary or desirable for Client's and its affiliates' internal business purposes and exploitation of the Deliverables.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "5.2",
+      "issue": "Background IP license scope too narrow",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T2",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "6.4",
+        "excerpt": "the receiving Party may retain one (1) archival copy solely for the purpose of monitoring its continuing obligations under this Agreement or as otherwise required by applicable law, in each case subject to the confidentiality obligations herein.",
+        "reasoning": "Partial detection: Leah flags clause 6.4 and addresses data retention concerns, but does NOT address the core GT issue - confidentiality survival period and trade secret treatment. GT expects explicit survival period (3-5 years) with trade secret carve-out (indefinite). Leah's amendment only limits retention copies. Risk_table at 13.10 (Survival) marked favorable. Confidence MEDIUM because the issue is adjacent but not the core concern.",
+        "judge_reasoning": "[proposed_redlines] the receiving Party may retain one (1) archival copy solely for the purpose of monitoring its continuing obligations under this Agreement or as otherwise required by applicable law, in each case subject to the confidentiality obligations herein.",
+        "proposed_revision_excerpt": "the receiving Party may retain one (1) archival copy solely for the purpose of monitoring its continuing obligations under this Agreement or as otherwise required by applicable law, in each case subject to the confidentiality obligations herein.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 2.5,
+      "quality_points": 3,
+      "total_points": 5.5,
+      "clause": "6.4",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T3",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": null,
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Leah marked clause 3.4 as Favorable (checkmark) with reasoning '30-day net common; interest rate capped.' GT expects formal invoice dispute mechanism and right to withhold for non-conforming services. The contract's 'undisputed invoices' language implies dispute right exists but provides no mechanism. Clear miss - marked favorable when improvement warranted.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "3.4",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "13.1",
+        "excerpt": "This Agreement shall be governed by and construed in accordance with the laws of the State of Nevada, without regard to its conflicts-of-law principles.",
+        "reasoning": "Leah correctly identifies Texas law/venue as unfavorable for Nevada-based Client (risk_table marked 13.1 and 13.2 as red X). Amendment changes governing law to Nevada and adds tiered negotiation-mediation-arbitration in Las Vegas. Excellent rationale citing Client's domicile and litigation cost concerns. Comprehensive fix.",
+        "judge_reasoning": "[proposed_redlines] This Agreement shall be governed by and construed in accordance with the laws of the State of Nevada, without regard to its conflicts-of-law principles.",
+        "proposed_revision_excerpt": "This Agreement shall be governed by and construed in accordance with the laws of the State of Nevada, without regard to its conflicts-of-law principles.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 1,
+      "quality_points": 6,
+      "total_points": 7,
+      "clause": "13.1",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "Article 14 (new)",
+        "excerpt": "ARTICLE 14 - DATA PROTECTION & SECURITY 14.1 Compliance. Consultant shall comply with all applicable... data protection and privacy laws, including, without limitation, the California Consumer Privacy Act ('CCPA'), the EU General Data Protection Regulation ('GDPR')... 14.2 Security Program... 14.3 Breach Notification... within forty-eight (48) hours... 14.4 Sub-Processors... 14.5 Audit and Certification.",
+        "reasoning": "Leah's risk_table at NC-1 correctly identifies contract is 'silent on data privacy, cybersecurity, and compliance.' Proposed new Article 14 is comprehensive: GDPR/CCPA compliance, security program, 48-hour breach notification, sub-processor controls, audit rights. Addresses all GT key_elements.",
+        "judge_reasoning": "[proposed_redlines] ARTICLE 14 - DATA PROTECTION & SECURITY 14.1 Compliance. Consultant shall comply with all applicable... data protection and privacy laws, including, without limitation, the California Consumer Privacy Act ('CCPA'), the EU General Data Protection Regulation ('GDPR')... 14.2 Security Program... 14.3 Breach Notification... within forty-eight (48) hours... 14.4 Sub-Processors... 14.5 Audit and Certification.",
+        "proposed_revision_excerpt": "ARTICLE 14 - DATA PROTECTION & SECURITY 14.1 Compliance. Consultant shall comply with all applicable... data protection and privacy laws, including, without limitation, the California Consumer Privacy Act ('CCPA'), the EU General Data Protection Regulation ('GDPR')... 14.2 Security Program... 14.3 Breach Notification... within forty-eight (48) hours... 14.4 Sub-Processors... 14.5 Audit and Certification.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "Article 14 (new)",
+      "issue": "Data protection / privacy clause missing entirely",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T2",
+      "detection": "P",
+      "match_strength": "MODERATE",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "10.1",
+        "excerpt": "Consultant shall indemnify... from and against any and all third-party claims... arising out of or related to: (a) Consultant's gross negligence or willful misconduct; (b) any allegation that the Services, Deliverables, or Background IP infringe... (c) Consultant's breach of its confidentiality obligations or of Article 14 (Data Protection & Security); or (d) Consultant's violation of applicable laws or regulations.",
+        "reasoning": "Partial detection: Leah expands indemnification to cover confidentiality breaches, data protection, and legal violations - addressing several GT concerns. However, GT also expects coverage for ordinary negligence and warranty breaches, which Leah's amendment does not include. Risk_table correctly identified scope limitation. Amendment improves but doesn't fully address GT expectations.",
+        "judge_reasoning": "[proposed_redlines] Consultant shall indemnify... from and against any and all third-party claims... arising out of or related to: (a) Consultant's gross negligence or willful misconduct; (b) any allegation that the Services, Deliverables, or Background IP infringe... (c) Consultant's breach of its confidentiality obligations or of Article 14 (Data Protection & Security); or (d) Consultant's violation of applicable laws or regulations.",
+        "proposed_revision_excerpt": "Consultant shall indemnify... from and against any and all third-party claims... arising out of or related to: (a) Consultant's gross negligence or willful misconduct; (b) any allegation that the Services, Deliverables, or Background IP infringe... (c) Consultant's breach of its confidentiality obligations or of Article 14 (Data Protection & Security); or (d) Consultant's violation of applicable laws or regulations.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 2.5,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "clause": "10.1",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "11.1",
+        "excerpt": "(c) cyber liability insurance with limits of not less than $2,000,000 per claim",
+        "reasoning": "Leah's proposed redline adds cyber liability insurance requirement, directly addressing GT concern. However, rationale score 1 because risk_table at 11.1 was marked Favorable (checkmark) - the gap wasn't flagged in initial analysis. Amendment score 3 because the fix comprehensively adds cyber coverage with appropriate limits and extends tail coverage.",
+        "judge_reasoning": "[proposed_redlines] (c) cyber liability insurance with limits of not less than $2,000,000 per claim",
+        "proposed_revision_excerpt": "(c) cyber liability insurance with limits of not less than $2,000,000 per claim",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "11.1",
+      "issue": "No cyber insurance requirement",
+      "amendment_score": 3,
+      "rationale_score": 1,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition – Background IP",
+      "leah_classification": "⚠️",
+      "leah_action": "Expand license to wo",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "License to Client is non-exclusive and limited to use “solely as part of the Deliverables.” This may restrict future enhancements or sublicensing."
+    },
+    {
+      "clause": "1.2",
+      "issue_summary": "Definition – Confidential Information",
+      "leah_classification": "⚠️",
+      "leah_action": "Insert statement pre",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Missing express carve-out for attorney–client privilege or injunctive relief."
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Standard of Performance",
+      "leah_classification": "⚠️",
+      "leah_action": "Add minimum SLAs, ac",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Industry standards” is vague; no measurable service levels or re-performance obligations."
+    },
+    {
+      "clause": "2.4",
+      "issue_summary": "Client Cooperation",
+      "leah_classification": "⚠️",
+      "leah_action": "Add clause: Consulta",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Shifts risk if delays occur; no obligation on Consultant to mitigate."
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Fees – Time & Materials",
+      "leah_classification": "⚠️",
+      "leah_action": "Cap total fees or re",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No not-to-exceed cap; exposes Client to cost overruns."
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Reimbursable Expenses",
+      "leah_classification": "⚠️",
+      "leah_action": "Require pre-approval",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Reasonable” subjective; $500 threshold may be high."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Ownership of Deliverables",
+      "leah_classification": "⚠️",
+      "leah_action": "State ownership vest",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Transfer conditioned on full payment, creating leverage risk; no assignment of moral rights."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Background IP License",
+      "leah_classification": "⚠️",
+      "leah_action": "Broaden license; add",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Same concerns as 1.1; no indemnity for infringement of Background IP."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Third-Party Materials",
+      "leah_classification": "⚠️",
+      "leah_action": "Require perpetual, r",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No obligation to secure perpetual licenses or identify open-source components."
+    },
+    {
+      "clause": "6.4",
+      "issue_summary": "Return / Destruction",
+      "leah_classification": "⚠️",
+      "leah_action": "Limit retention to a",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Consultant may retain copies for “legal compliance,” undefined."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Termination for Cause",
+      "leah_classification": "⚠️",
+      "leah_action": "Permit immediate ter",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "15-day cure may be too long for confidentiality or IP breaches."
+    },
+    {
+      "clause": "7.4",
+      "issue_summary": "Effects of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "Require delivery of ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Delivery of in-progress work tied to payment; weakens leverage in dispute."
+    },
+    {
+      "clause": "8.2",
+      "issue_summary": "Consultant Warranties",
+      "leah_classification": "⚠️",
+      "leah_action": "Add 12-month warrant",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No warranty duration; lacks warranty of non-infringement “free from viruses.”"
+    },
+    {
+      "clause": "8.3",
+      "issue_summary": "Warranty Disclaimer",
+      "leah_classification": "⚠️",
+      "leah_action": "Add “except as expre",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Could negate 8.2 via broad language."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Exclusion of Damages",
+      "leah_classification": "⚠️",
+      "leah_action": "Carve out data loss,",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Bars loss of data recovery even if caused by Consultant."
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Liability Cap",
+      "leah_classification": "❌",
+      "leah_action": "Increase cap to 2× t",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cap limited to fees for the specific SOW—likely inadequate if data breach/IP infringement."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Consultant Indemnity",
+      "leah_classification": "⚠️",
+      "leah_action": "Expand scope to incl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limited to gross negligence and IP infringement; omits confidentiality, data breaches, regulatory fines."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "❌",
+      "leah_action": "Change governing law",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Texas law and venue unfavorable; Client is Nevada entity."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "❌",
+      "leah_action": "Insert tiered escala",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Litigation in Texas courts; no mandatory negotiation escalation or arbitration; cost/time risk."
+    },
+    {
+      "clause": "–NC-1",
+      "issue_summary": "New Clause – Data Protection & Security",
+      "leah_classification": "⚠️",
+      "leah_action": "Add comprehensive da",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Contract is silent on data privacy, cybersecurity, and compliance with laws such as GDPR/CCPA."
+    },
+    {
+      "clause": "–NC-2",
+      "issue_summary": "New Clause – Force Majeure",
+      "leah_classification": "⚠️",
+      "leah_action": "Insert standard forc",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No force majeure clause; performance risk for uncontrollable events."
+    },
+    {
+      "clause": "–NC-3",
+      "issue_summary": "New Clause – Audit Rights",
+      "leah_classification": "⚠️",
+      "leah_action": "Add audit rights lim",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No right for Client to audit time records or security controls."
+    },
+    {
+      "clause": "–NC-4",
+      "issue_summary": "New Clause – Service Levels & Credits",
+      "leah_classification": "⚠️",
+      "leah_action": "Include measurable K",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Absent SLA metrics or remedies."
+    },
+    {
+      "clause": "–NC-5",
+      "issue_summary": "New Clause – Escrow of Source Code",
+      "leah_classification": "⚠️",
+      "leah_action": "Add escrow triggered",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "If software deliverables critical, escrow absent."
+    },
+    {
+      "clause": "Section 1.2 – Confidential Information Definition",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment expressly preserves attorney–client privilege and clarifies that Meridian may seek injunctive relief for confidentiality breaches. Without these carve-outs, privileged communications ri"
+    },
+    {
+      "clause": "Section 2.2 – Standard of Performance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding measurable Service Levels, a cure timeline, and a no-cost re-performance obligation provides Meridian with concrete quality assurances and a remedy process, mitigating risks of sub-par work and"
+    },
+    {
+      "clause": "Section 2.4 – Client Cooperation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The revision prevents Consultant from using minor access issues to justify missed deadlines, placing responsibility on Consultant to manage and mitigate delays. By limiting Consultant’s relief to dela"
+    },
+    {
+      "clause": "Section 3.1 – Fees",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Introducing a not-to-exceed cap and 90 % notification threshold controls budget exposure and ensures Meridian’s proactive consent for any cost overruns, aligning cost management practices with best-in"
+    },
+    {
+      "clause": "Section 3.2 – Reimbursable Expenses",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requiring advance approval for all travel expenses and aligning with Client policy tightens cost control and prevents disputes over “reasonableness.” This protects Meridian’s budget and ensures consis"
+    },
+    {
+      "clause": "Section 5.1 – Ownership of Deliverables",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This change eliminates the “payment-condition” leverage, vesting ownership upon creation and ensuring Meridian’s uninterrupted rights even amidst fee disputes. Adding an express assignment, trust obli"
+    },
+    {
+      "clause": "Section 5.2 – Background IP License",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The broadened license ensures Meridian can fully utilize and evolve the Deliverables across jurisdictions, subsidiaries, and future platforms. Including an infringement warranty aligns Consultant’s ob"
+    },
+    {
+      "clause": "Section 5.3 – Third-Party Materials",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requiring a Bill of Materials and perpetual rights mitigates hidden license exposure and open-source copyleft risks, preserving Meridian’s proprietary advantage and ensuring downstream distribution fl"
+    },
+    {
+      "clause": "Section 6.4 – Return of Materials",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limiting retention to a single archival copy curtails unnecessary data exposure while accommodating legal hold requirements, thus tightening Meridian’s data-privacy posture."
+    },
+    {
+      "clause": "Section 7.2 – Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allowing immediate termination for IP or confidentiality breaches ensures Meridian can swiftly mitigate irreparable harm arising from sensitive data or IP misuse."
+    },
+    {
+      "clause": "Section 7.4 – Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This change secures Meridian’s access to all work product, prevents Consultant from withholding assets as leverage, and institutes an escrow mechanism to balance outstanding payment disputes while pro"
+    },
+    {
+      "clause": "Section 8.2 – Consultant Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Introducing a defined warranty period, security warranty, and explicit coverage of Background IP enhances Meridian’s post-delivery protection and aligns supplier obligations with industry expectations"
+    },
+    {
+      "clause": "Section 8.3 – Warranty Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The revision prevents Section 8.3 from undercutting the expanded warranties in Section 8.2, ensuring consistency and enforceability of Consultant’s obligations."
+    },
+    {
+      "clause": "Section 9.1 – Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Carving out key liabilities and treating data loss as a direct damage preserves Meridian’s right to recover meaningful damages in high-impact scenarios, while still retaining a balanced limitation on "
+    },
+    {
+      "clause": "Section 9.2 – Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Raising the cap and applying it across all SOWs ensures Meridian receives meaningful recourse relative to project value and aligns liability with potential exposure, especially for multi-phase engagem"
+    },
+    {
+      "clause": "Section 10.1 – Consultant Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Expanding indemnity to cover confidentiality, data protection, and statutory breaches ensures Meridian is insulated from high-risk liabilities originating from Consultant’s actions, aligning with mark"
+    },
+    {
+      "clause": "Section 11.1 – Insurance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding cyber liability, extended tail coverage, and additional-insured status materially strengthens Meridian’s protection against modern risk vectors and ensures continuous visibility into Consultant"
+    },
+    {
+      "clause": "Section 13.1 – Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Shifting governing law to Nevada aligns with Meridian’s domicile, facilitating predictable interpretation, reduced travel costs for disputes, and familiarity with local counsel and statutory framework"
+    },
+    {
+      "clause": "Section 13.2 – Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The tiered negotiation-mediation-arbitration framework offers faster, confidential, and expert dispute resolution, while Nevada venue complements the governing law change and reduces Meridian’s litiga"
+    },
+    {
+      "clause": "Article 14 – Data Protection & Security",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "A dedicated data-protection article establishes baseline security controls, breach response, and regulatory compliance vital for Meridian’s risk management, especially when handling sensitive or perso"
+    },
+    {
+      "clause": "Article 15 – Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding a force-majeure clause clarifies risk allocation for unforeseen events, enabling Meridian to excuse delays and mitigate default exposure during global disruptions such as pandemics or supply-ch"
+    },
+    {
+      "clause": "Article 16 – Audit Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Audit rights afford Meridian transparency into costs and security compliance, enabling early detection of discrepancies and reinforcing accountability without imposing disruptive open-book obligations"
+    },
+    {
+      "clause": "Article 17 – Service Levels & Credits",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Embedding service-level tracking and credits supplies a tangible, financial incentive for consistent performance and affords Meridian swift compensation for shortfalls without resorting to dispute pro"
+    },
+    {
+      "clause": "Article 18 – Source Code Escrow",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Source-code escrow guards Meridian against service disruption or abandonment scenarios, ensuring operational continuity and safeguarding critical systems reliant on Consultant’s proprietary code."
+    }
+  ],
+  "proposed_upgrades": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 2,
+      "N": 2,
+      "NMI": 0
+    },
+    "confidence_counts": {
+      "HIGH": 10,
+      "MEDIUM": 1,
+      "LOW": 0
+    },
+    "additional_valid_new": 9,
+    "additional_overlaps": 2,
+    "additional_noise": 0,
+    "proposed_upgrades": 0,
+    "t1_detected": true,
+    "t1_gate_pass": true,
+    "total_detection_points": 39.0,
+    "total_quality_points": 43,
+    "total_points": 82.0,
+    "max_detection_points": 50,
+    "weighted_max": 50,
+    "additional_issues_count": 48,
+    "t1_all_detected": true,
+    "detection_by_tier": {
+      "T1": {
+        "Y": 1,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 2,
+        "N": 1,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    }
+  }
+}

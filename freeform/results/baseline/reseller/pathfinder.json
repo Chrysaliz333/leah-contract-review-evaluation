@@ -1,0 +1,758 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-25T16:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "4.1",
+        "excerpt": "Vendor may modify prices, discounts, or product offerings no more than twice in any rolling twelve (12) month period and only upon at least sixty (60) days' prior written notice... all bona fide quotations issued within sixty (60) days prior to the effective date remain valid at the prior pricing",
+        "reasoning": "Risk table correctly identifies 30-day notice creates 'margin squeeze and quote invalidation'. Amendments address all GT elements: extends notice to 60 days, limits frequency to 2x/year, adds quote protection.",
+        "judge_reasoning": "Vendor may modify prices, discounts, or product offerings no more than twice in any rolling twelve (12) month period and only upon at least sixty (60) days' prior written notice... all bona fide quotations issued within sixty (60) days prior to the effective date remain valid at the prior pricing",
+        "proposed_revision_excerpt": "Vendor may modify prices, discounts, or product offerings no more than twice in any rolling twelve (12) month period and only upon at least sixty (60) days' prior written notice... all bona fide quotations issued within sixty (60) days prior to the effective date remain valid at the prior pricing",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "4.1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "9.1",
+        "excerpt": "Reseller may terminate this Agreement for convenience at any time after the first anniversary of the Effective Date upon sixty (60) days' prior written notice to Vendor",
+        "reasoning": "Risk table correctly identifies 'locks Reseller in for full term'. Amendment adds TfC right after first year with 60-day notice - directly addresses GT concern.",
+        "judge_reasoning": "Reseller may terminate this Agreement for convenience at any time after the first anniversary of the Effective Date upon sixty (60) days' prior written notice to Vendor",
+        "proposed_revision_excerpt": "Reseller may terminate this Agreement for convenience at any time after the first anniversary of the Effective Date upon sixty (60) days' prior written notice to Vendor",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "9.1",
+      "issue": "No termination for convenience during Term",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T2",
+      "detection": "P",
+      "match_strength": "MODERATE",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "12.2",
+        "excerpt": "EXCEPT FOR LIABILITY ARISING FROM A PARTY'S INDEMNIFICATION OBLIGATIONS, BREACH OF CONFIDENTIALITY, OR WILLFUL MISCONDUCT, THE TOTAL AGGREGATE LIABILITY OF EITHER PARTY... SHALL NOT EXCEED THE TOTAL AMOUNTS PAID AND PAYABLE",
+        "reasoning": "Partial detection: Pathfinder addresses carve-outs (indemnity, confidentiality, misconduct) but does NOT increase the 12-month cap amount. GT expects increase to 24+ months or minimum floor. Making cap mutual is useful but doesn't address the quantum issue.",
+        "judge_reasoning": "EXCEPT FOR LIABILITY ARISING FROM A PARTY'S INDEMNIFICATION OBLIGATIONS, BREACH OF CONFIDENTIALITY, OR WILLFUL MISCONDUCT, THE TOTAL AGGREGATE LIABILITY OF EITHER PARTY... SHALL NOT EXCEED THE TOTAL AMOUNTS PAID AND PAYABLE",
+        "proposed_revision_excerpt": "EXCEPT FOR LIABILITY ARISING FROM A PARTY'S INDEMNIFICATION OBLIGATIONS, BREACH OF CONFIDENTIALITY, OR WILLFUL MISCONDUCT, THE TOTAL AGGREGATE LIABILITY OF EITHER PARTY... SHALL NOT EXCEED THE TOTAL AMOUNTS PAID AND PAYABLE",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 2.5,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "clause": "12.2",
+      "issue": "Vendor liability cap too low",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "11.1 / 11.2",
+        "excerpt": "the Products and the use thereof in accordance with this Agreement and the EULA do not and will not infringe any intellectual property rights of any third party... EXCLUDING VENDOR'S OBLIGATIONS UNDER SECTION 14 (INDEMNIFICATION)",
+        "reasoning": "Risk table 11.1 correctly identifies missing non-infringement warranty; 11.2 identifies broad disclaimer. Amendments add IP warranty and carve out indemnification from disclaimer.",
+        "judge_reasoning": "the Products and the use thereof in accordance with this Agreement and the EULA do not and will not infringe any intellectual property rights of any third party... EXCLUDING VENDOR'S OBLIGATIONS UNDER SECTION 14 (INDEMNIFICATION)",
+        "proposed_revision_excerpt": "the Products and the use thereof in accordance with this Agreement and the EULA do not and will not infringe any intellectual property rights of any third party... EXCLUDING VENDOR'S OBLIGATIONS UNDER SECTION 14 (INDEMNIFICATION)",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "11.1 / 11.2",
+      "issue": "Broad warranty disclaimer",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "2.2",
+        "excerpt": "Vendor shall not knowingly undercut Reseller's quoted pricing for a registered sales opportunity for a period of six (6) months after registration, and (b) Vendor shall establish a commercially reasonable lead-registration program",
+        "reasoning": "Risk table correctly identifies 'risk of channel conflict and price erosion'. Amendment adds lead registration and price protection - directly addresses GT concern about Reseller investment protection.",
+        "judge_reasoning": "Vendor shall not knowingly undercut Reseller's quoted pricing for a registered sales opportunity for a period of six (6) months after registration, and (b) Vendor shall establish a commercially reasonable lead-registration program",
+        "proposed_revision_excerpt": "Vendor shall not knowingly undercut Reseller's quoted pricing for a registered sales opportunity for a period of six (6) months after registration, and (b) Vendor shall establish a commercially reasonable lead-registration program",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "2.2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.1",
+        "excerpt": "Late payments bear interest at the lesser of one percent (1%) per month or the maximum rate permitted by applicable law",
+        "reasoning": "Risk table correctly identifies '1.5% monthly interest is 18% APR, high in some jurisdictions'. Amendment reduces to 1% and caps at legal max - addresses GT concern about above-market rate.",
+        "judge_reasoning": "Late payments bear interest at the lesser of one percent (1%) per month or the maximum rate permitted by applicable law",
+        "proposed_revision_excerpt": "Late payments bear interest at the lesser of one percent (1%) per month or the maximum rate permitted by applicable law",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 1,
+      "quality_points": 5,
+      "total_points": 6,
+      "clause": "5.1",
+      "issue": "High late payment interest rate",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.2",
+        "excerpt": "Vendor may establish and modify credit limits for Reseller upon not less than fifteen (15) days' prior written notice, and shall engage in good-faith discussion... Vendor may require reasonable pre-payment only if Reseller exceeds the then-current credit limits or has undisputed past-due balances exceeding thirty (30) days",
+        "reasoning": "Risk table correctly identifies 'may cripple Reseller's ability to fulfill deals'. Amendment adds notice period, good-faith discussion, and limits prepayment to undisputed amounts.",
+        "judge_reasoning": "Vendor may establish and modify credit limits for Reseller upon not less than fifteen (15) days' prior written notice, and shall engage in good-faith discussion... Vendor may require reasonable pre-payment only if Reseller exceeds the then-current credit limits or has undisputed past-due balances exceeding thirty (30) days",
+        "proposed_revision_excerpt": "Vendor may establish and modify credit limits for Reseller upon not less than fifteen (15) days' prior written notice, and shall engage in good-faith discussion... Vendor may require reasonable pre-payment only if Reseller exceeds the then-current credit limits or has undisputed past-due balances exceeding thirty (30) days",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 1,
+      "quality_points": 5,
+      "total_points": 6,
+      "clause": "5.2",
+      "issue": "Vendor can require prepayment on credit issues",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "8.1",
+        "excerpt": "End User information (limited to company name, industry, and country), and aggregate pipeline data, all of which shall be deemed Reseller Confidential Information under Section 10 and used by Vendor solely for internal analytics",
+        "reasoning": "Risk table correctly identifies 'no confidentiality carve-out' and 'could enable Vendor to go direct'. Amendment limits scope and adds confidentiality protection.",
+        "judge_reasoning": "End User information (limited to company name, industry, and country), and aggregate pipeline data, all of which shall be deemed Reseller Confidential Information under Section 10 and used by Vendor solely for internal analytics",
+        "proposed_revision_excerpt": "End User information (limited to company name, industry, and country), and aggregate pipeline data, all of which shall be deemed Reseller Confidential Information under Section 10 and used by Vendor solely for internal analytics",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "8.1",
+      "issue": "Sales reports require End User information",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "12.1",
+        "excerpt": "EXCEPT WITH RESPECT TO (i) A PARTY'S INDEMNIFICATION OBLIGATIONS, (ii) A BREACH OF CONFIDENTIALITY, OR (iii) A PARTY'S WILLFUL MISCONDUCT OR GROSS NEGLIGENCE",
+        "reasoning": "Risk table correctly identifies 'no carve-outs for indemnity, confidentiality, or willful misconduct'. Amendment adds all GT-expected carve-outs.",
+        "judge_reasoning": "EXCEPT WITH RESPECT TO (i) A PARTY'S INDEMNIFICATION OBLIGATIONS, (ii) A BREACH OF CONFIDENTIALITY, OR (iii) A PARTY'S WILLFUL MISCONDUCT OR GROSS NEGLIGENCE",
+        "proposed_revision_excerpt": "EXCEPT WITH RESPECT TO (i) A PARTY'S INDEMNIFICATION OBLIGATIONS, (ii) A BREACH OF CONFIDENTIALITY, OR (iii) A PARTY'S WILLFUL MISCONDUCT OR GROSS NEGLIGENCE",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "12.1",
+      "issue": "Consequential damages exclusion",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "9.3",
+        "excerpt": "it may fulfill all accepted purchase orders and quotations issued prior to the effective date of termination... trademark licenses shall terminate at the end of a six (6) month sell-off period applicable to Reseller's existing inventory",
+        "reasoning": "Risk table correctly identifies 'immediate cessation could cause losses & customer disruption'. Amendment adds 6-month sell-off period (exceeds GT's 90-day expectation).",
+        "judge_reasoning": "it may fulfill all accepted purchase orders and quotations issued prior to the effective date of termination... trademark licenses shall terminate at the end of a six (6) month sell-off period applicable to Reseller's existing inventory",
+        "proposed_revision_excerpt": "it may fulfill all accepted purchase orders and quotations issued prior to the effective date of termination... trademark licenses shall terminate at the end of a six (6) month sell-off period applicable to Reseller's existing inventory",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "9.3",
+      "issue": "Termination effects - no sell-off period",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New - 14",
+        "excerpt": "Vendor shall indemnify, defend, and hold harmless Reseller... from and against any and all claims... arising out of (a) any allegation that the Products infringe or misappropriate any patent, copyright, trademark, trade secret, or other intellectual-property right; (b) product liability claims attributable to defects; or (c) Vendor's breach of its data-security obligations",
+        "reasoning": "Risk table NCR correctly identifies missing indemnity. Comprehensive vendor indemnification for IP, product defects, and data breaches addresses all GT key elements.",
+        "judge_reasoning": "Vendor shall indemnify, defend, and hold harmless Reseller... from and against any and all claims... arising out of (a) any allegation that the Products infringe or misappropriate any patent, copyright, trademark, trade secret, or other intellectual-property right; (b) product liability claims attributable to defects; or (c) Vendor's breach of its data-security obligations",
+        "proposed_revision_excerpt": "Vendor shall indemnify, defend, and hold harmless Reseller... from and against any and all claims... arising out of (a) any allegation that the Products infringe or misappropriate any patent, copyright, trademark, trade secret, or other intellectual-property right; (b) product liability claims attributable to defects; or (c) Vendor's breach of its data-security obligations",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 5,
+      "total_points": 13,
+      "clause": "New - 14",
+      "issue": "No indemnification clause",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-12",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New - 16",
+        "excerpt": "Vendor shall comply with all applicable data-protection laws (including GDPR and CCPA) and maintain administrative, technical, and physical safeguards... Vendor shall notify Reseller within seventy-two (72) hours of discovering any data breach",
+        "reasoning": "Risk table NCR correctly identifies contract 'silent on compliance with data-privacy laws'. Amendment adds comprehensive data protection with GDPR/CCPA and 72-hour breach notification.",
+        "judge_reasoning": "Vendor shall comply with all applicable data-protection laws (including GDPR and CCPA) and maintain administrative, technical, and physical safeguards... Vendor shall notify Reseller within seventy-two (72) hours of discovering any data breach",
+        "proposed_revision_excerpt": "Vendor shall comply with all applicable data-protection laws (including GDPR and CCPA) and maintain administrative, technical, and physical safeguards... Vendor shall notify Reseller within seventy-two (72) hours of discovering any data breach",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "New - 16",
+      "issue": "No Data Protection / Privacy Clause",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-13",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "7.2 + Exhibit C",
+        "excerpt": "Vendor shall provide second-level technical support to Reseller in accordance with the Service Level Addendum attached hereto as Exhibit C... Severity 1: Response within 2 hours; resolution or acceptable workaround within 8 hours... Service Credits: 2% credit for SLA breaches",
+        "reasoning": "Risk table correctly identifies 'no Vendor service-level commitment' at 7.2. Comprehensive SLA exhibit with tiered response times and service credits addresses all GT key elements.",
+        "judge_reasoning": "Vendor shall provide second-level technical support to Reseller in accordance with the Service Level Addendum attached hereto as Exhibit C... Severity 1: Response within 2 hours; resolution or acceptable workaround within 8 hours... Service Credits: 2% credit for SLA breaches",
+        "proposed_revision_excerpt": "Vendor shall provide second-level technical support to Reseller in accordance with the Service Level Addendum attached hereto as Exhibit C... Severity 1: Response within 2 hours; resolution or acceptable workaround within 8 hours... Service Credits: 2% credit for SLA breaches",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "7.2 + Exhibit C",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.3",
+      "issue_summary": "“Products” Definition",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "References Exhibit A, which is blank; without the list the scope of Products is uncertain."
+    },
+    {
+      "clause": "1.4",
+      "issue_summary": "“Territory” Definition",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Territory is limited to the U.S. & Canada; no clarity on online or cross-border sales to customers with global operations."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Payment Terms",
+      "leah_classification": "⚠️",
+      "leah_action": "Cap late-fee interes",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day net is acceptable, but 1.5% monthly interest is 18% APR, high in some jurisdictions."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Credit",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Vendor can alter credit limits unilaterally; may cripple Reseller’s ability to fulfill deals."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Marketing Materials",
+      "leah_classification": "⚠️",
+      "leah_action": "Permit modifications",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prohibits modifications, even minor localization; may hinder marketing effectiveness."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Training",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Vendor provides training but no service-level standard (frequency, format, cost)."
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Sales Reports",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Quarterly pipeline disclosure may include confidential customer information; no confidentiality carve-out."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Confidentiality",
+      "leah_classification": "⚠️",
+      "leah_action": "Extend to perpetual ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Obligations expire after 3 years; trade secrets may need perpetual protection."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Vendor Warranties",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Only “performance” warranty; no IP non-infringement warranty."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Exclusion of Damages",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Mutual exclusion is fine, but no carve-outs for indemnity, confidentiality, or willful misconduct."
+    },
+    {
+      "clause": "—",
+      "issue_summary": "New Clause – Insurance",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No requirement for Vendor to maintain errors & omissions / cyber liability cover; exposes Reseller."
+    },
+    {
+      "clause": "13.3",
+      "issue_summary": "Assignment",
+      "leah_classification": "⚠️",
+      "leah_action": "Permit assignment to",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prohibits assignment without consent; hampers corporate restructuring."
+    },
+    {
+      "clause": "Exhibit A – Products",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "An empty exhibit renders the definition of “Products” uncertain, exposing Reseller to the risk of unintentionally selling unapproved items or losing the right to sell new releases. A populated exhibit"
+    },
+    {
+      "clause": "1.4 Territory",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "The addition allows Pacific Tech to accommodate global customers headquartered in the Territory and operate modern e-commerce channels without breaching territorial limits, while still respecting Vend"
+    },
+    {
+      "clause": "2.2 No Exclusivity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds concrete lead-registration and price-protection measures to mitigate channel conflict, encouraging Reseller investment in demand generation while preserving Vendor’s overall non-exclusive model."
+    },
+    {
+      "clause": "3.3 End User Agreements",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Shifts legal risk of the EULA’s enforceability and content back to Vendor, who controls the EULA language, thereby protecting Reseller from downstream litigation exposure."
+    },
+    {
+      "clause": "4.1 Pricing and Modifications",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Introduces rational limits on frequency and extends notice, allowing Reseller to manage customer quotations and forecast margins with reasonable certainty."
+    },
+    {
+      "clause": "4.1 Pricing and Modifications (Quote Protection)",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Protects Reseller from financial exposure on outstanding quotes already provided to customers."
+    },
+    {
+      "clause": "5.1 Payment Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Aligns interest rate with usury limits and industry norms, preventing unenforceable or excessive charges."
+    },
+    {
+      "clause": "5.2 Credit",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensures operational continuity by providing notice and a dialogue mechanism before credit restrictions take effect."
+    },
+    {
+      "clause": "6.2 Marketing Materials",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides flexibility for localization and campaign tailoring while preserving Vendor brand integrity."
+    },
+    {
+      "clause": "7.1 Training",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds a measurable standard and no-cost commitment, ensuring adequate enablement for Reseller’s team."
+    },
+    {
+      "clause": "7.2 End User Support",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Anchors Vendor’s support obligations to concrete metrics, improving customer satisfaction and reducing Reseller support costs."
+    },
+    {
+      "clause": "8.1 Sales Reports",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Limits sensitive detail and makes data share subject to existing confidentiality protections."
+    },
+    {
+      "clause": "9.1 Term",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides Reseller with an exit path if market conditions change, while giving Vendor revenue-planning certainty for the first year."
+    },
+    {
+      "clause": "9.3 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Enables orderly wind-down, avoids stranded inventory, and clarifies survival of critical protections."
+    },
+    {
+      "clause": "10.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Aligns confidentiality term with industry best practice and perpetual protection for trade secrets, mitigating disclosure risk."
+    },
+    {
+      "clause": "11.1 Vendor Warranties",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides critical IP non-infringement assurance which is standard in software distribution agreements."
+    },
+    {
+      "clause": "11.2 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prevents Vendor from disavowing its newly added indemnity and IP warranty obligations via the disclaimer."
+    },
+    {
+      "clause": "12.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensures meaningful remedies remain for the most serious breaches."
+    },
+    {
+      "clause": "12.2 Limitation of Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Creates a mutual, balanced cap, carving out serious misconduct, thus aligning risk profiles."
+    },
+    {
+      "clause": "14 Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Establishes customary, balanced indemnity structure protecting Reseller from key risks. Position: Add as new Article 14 immediately following Article 13."
+    },
+    {
+      "clause": "15 Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds standard relief for unforeseeable events, preserving the relationship during crises. Position: Insert immediately after new Article 14."
+    },
+    {
+      "clause": "16 Data Protection & Security",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Addresses statutory compliance obligations and reputational risk arising from data breaches. Position: Insert after Article 15."
+    },
+    {
+      "clause": "17 Insurance",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensures Vendor has financial resources to cover product and data-related claims, indirectly protecting Reseller. Position: Insert after Article 16."
+    },
+    {
+      "clause": "Exhibit C – Support Service Levels",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Gives Reseller enforceable metrics and remedies for support performance, enabling consistent customer experience. Position: Add as new Exhibit C."
+    },
+    {
+      "clause": "13.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Aligns governing law with Reseller’s domicile, reducing travel cost and improving predictability of legal outcomes."
+    },
+    {
+      "clause": "13.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Moves venue to Reseller’s home state and allows virtual hearings, lowering dispute-resolution friction and cost."
+    },
+    {
+      "clause": "13.3 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides operational flexibility for corporate restructuring and affiliate transactions while preserving the other Party’s protections."
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 12,
+      "P": 1,
+      "N": 0,
+      "NMI": 0
+    },
+    "confidence_counts": {
+      "HIGH": 13,
+      "MEDIUM": 0,
+      "LOW": 0
+    },
+    "t1_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_all_detected": true,
+    "total_detection_points": 66.5,
+    "total_quality_points": 64,
+    "total_points": 130.5,
+    "max_detection_points": 69,
+    "weighted_max": 69,
+    "additional_issues_count": 39,
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 6,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    }
+  }
+}

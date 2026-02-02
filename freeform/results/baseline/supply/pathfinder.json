@@ -1,0 +1,902 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-25T17:30:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "11.2",
+        "excerpt": "SUPPLIER'S TOTAL AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED TWO HUNDRED PERCENT (200 %) OF THE AMOUNTS PAID BY BUYER FOR PRODUCTS DURING THE TWENTY-FOUR (24) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM. THIS CAP SHALL NOT APPLY TO (i) SUPPLIER'S INDEMNIFICATION OBLIGATIONS, (ii) BREACH OF CONFIDENTIALITY, OR (iii) CLAIMS ARISING FROM FRAUD, GROSS NEGLIGENCE, OR WILLFUL MISCONDUCT",
+        "reasoning": "Risk table 11.2 correctly identifies cap as 'far too low relative to potential automotive recall exposure'. Amendment doubles timeframe to 24 months, increases to 200%, and adds comprehensive carve-outs - fully addresses all GT key elements.",
+        "judge_reasoning": "SUPPLIER'S TOTAL AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED TWO HUNDRED PERCENT (200 %) OF THE AMOUNTS PAID BY BUYER FOR PRODUCTS DURING THE TWENTY-FOUR (24) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM. THIS CAP SHALL NOT APPLY TO (i) SUPPLIER'S INDEMNIFICATION OBLIGATIONS, (ii) BREACH OF CONFIDENTIALITY, OR (iii) CLAIMS ARISING FROM FRAUD, GROSS NEGLIGENCE, OR WILLFUL MISCONDUCT",
+        "proposed_revision_excerpt": "SUPPLIER'S TOTAL AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED TWO HUNDRED PERCENT (200 %) OF THE AMOUNTS PAID BY BUYER FOR PRODUCTS DURING THE TWENTY-FOUR (24) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM. THIS CAP SHALL NOT APPLY TO (i) SUPPLIER'S INDEMNIFICATION OBLIGATIONS, (ii) BREACH OF CONFIDENTIALITY, OR (iii) CLAIMS ARISING FROM FRAUD, GROSS NEGLIGENCE, OR WILLFUL MISCONDUCT",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "11.2",
+      "issue": "Supplier liability cap too low",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.2",
+        "excerpt": "Supplier's obligations shall include, at Buyer's option and Supplier's sole cost, (a) prompt repair or replacement of defective Products, (b) reimbursement of all reasonable costs incurred by Buyer as a result of the defect, including but not limited to sorting, inspection, line-stop, rework, field service, and vehicle recall expenses, and (c) refund of the purchase price",
+        "reasoning": "Risk table 5.2 correctly identifies 'Excludes consequential costs (field failures, line-stop)'. Amendment gives Buyer option on remedy and adds comprehensive consequential cost coverage including recall - directly addresses all GT key elements.",
+        "judge_reasoning": "Supplier's obligations shall include, at Buyer's option and Supplier's sole cost, (a) prompt repair or replacement of defective Products, (b) reimbursement of all reasonable costs incurred by Buyer as a result of the defect, including but not limited to sorting, inspection, line-stop, rework, field service, and vehicle recall expenses, and (c) refund of the purchase price",
+        "proposed_revision_excerpt": "Supplier's obligations shall include, at Buyer's option and Supplier's sole cost, (a) prompt repair or replacement of defective Products, (b) reimbursement of all reasonable costs incurred by Buyer as a result of the defect, including but not limited to sorting, inspection, line-stop, rework, field service, and vehicle recall expenses, and (c) refund of the purchase price",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 6,
+      "total_points": 14,
+      "clause": "5.2",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.3",
+        "excerpt": "NOTHING IN THIS SECTION SHALL LIMIT (i) THE WARRANTIES EXPRESSLY PROVIDED IN THIS AGREEMENT, (ii) ANY STATUTORY WARRANTIES THAT CANNOT BE DISCLAIMED, OR (iii) SUPPLIER'S LIABILITY FOR FRAUD, WILLFUL MISCONDUCT, OR GROSS NEGLIGENCE",
+        "reasoning": "Risk table 5.3 correctly identifies 'Broad disclaimer undermines statutory and custom warranties'. Amendment carves out express warranties, statutory rights, and safety-related warranties - fully addresses GT concern about merchantability/fitness disclaimers.",
+        "judge_reasoning": "NOTHING IN THIS SECTION SHALL LIMIT (i) THE WARRANTIES EXPRESSLY PROVIDED IN THIS AGREEMENT, (ii) ANY STATUTORY WARRANTIES THAT CANNOT BE DISCLAIMED, OR (iii) SUPPLIER'S LIABILITY FOR FRAUD, WILLFUL MISCONDUCT, OR GROSS NEGLIGENCE",
+        "proposed_revision_excerpt": "NOTHING IN THIS SECTION SHALL LIMIT (i) THE WARRANTIES EXPRESSLY PROVIDED IN THIS AGREEMENT, (ii) ANY STATUTORY WARRANTIES THAT CANNOT BE DISCLAIMED, OR (iii) SUPPLIER'S LIABILITY FOR FRAUD, WILLFUL MISCONDUCT, OR GROSS NEGLIGENCE",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 6,
+      "total_points": 14,
+      "clause": "5.3",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "11.1",
+        "excerpt": "Except for (i) indemnification obligations, (ii) breach of confidentiality, (iii) infringement of intellectual property rights, and (iv) gross negligence or wilful misconduct, NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES",
+        "reasoning": "Risk table 11.1 correctly identifies exclusion 'Carves out Buyer's key remedies (recall, line-stop)'. Amendment adds all GT-expected carve-outs for indemnity, confidentiality, IP, and gross negligence - comprehensive protection.",
+        "judge_reasoning": "Except for (i) indemnification obligations, (ii) breach of confidentiality, (iii) infringement of intellectual property rights, and (iv) gross negligence or wilful misconduct, NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES",
+        "proposed_revision_excerpt": "Except for (i) indemnification obligations, (ii) breach of confidentiality, (iii) infringement of intellectual property rights, and (iv) gross negligence or wilful misconduct, NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 6,
+      "total_points": 14,
+      "clause": "11.1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "6.1",
+        "excerpt": "all Products shall be delivered DDP Buyer's designated facility (Incoterms 2020). Title and risk of loss shall pass to Buyer upon completion of unloading at the Buyer's facility",
+        "reasoning": "Risk table 6.1 correctly identifies 'Risk transfers to Buyer too early; Buyer bears freight/insurance'. Amendment changes from FCA to DDP with risk passing at Buyer facility - exactly matches GT expectation for preferred Incoterms.",
+        "judge_reasoning": "all Products shall be delivered DDP Buyer's designated facility (Incoterms 2020). Title and risk of loss shall pass to Buyer upon completion of unloading at the Buyer's facility",
+        "proposed_revision_excerpt": "all Products shall be delivered DDP Buyer's designated facility (Incoterms 2020). Title and risk of loss shall pass to Buyer upon completion of unloading at the Buyer's facility",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 6,
+      "total_points": 14,
+      "clause": "6.1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "2.2",
+        "excerpt": "Failure to provide written rejection within such period shall be deemed acceptance of the purchase order. Supplier may reject a purchase order only for documented capacity constraints or mutually agreed technical infeasibility",
+        "reasoning": "Risk table 2.2 correctly identifies 'Supplier may reject orders within 5 business days, giving unilateral control'. Amendment adds deemed acceptance mechanism and limits rejection grounds - directly addresses GT concern about supply uncertainty.",
+        "judge_reasoning": "Failure to provide written rejection within such period shall be deemed acceptance of the purchase order. Supplier may reject a purchase order only for documented capacity constraints or mutually agreed technical infeasibility",
+        "proposed_revision_excerpt": "Failure to provide written rejection within such period shall be deemed acceptance of the purchase order. Supplier may reject a purchase order only for documented capacity constraints or mutually agreed technical infeasibility",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "2.2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "7.1",
+        "excerpt": "Buyer shall inspect all Products within thirty (30) business days of receipt and shall notify Supplier in writing of any non-conformities or defects; latent defects may be notified within a commercially reasonable period after discovery",
+        "reasoning": "Risk table 7.1 correctly identifies 'Too short for complex parts; latent defects not covered'. Amendment extends to 30 days and preserves latent defect rights - fully addresses GT concern.",
+        "judge_reasoning": "Buyer shall inspect all Products within thirty (30) business days of receipt and shall notify Supplier in writing of any non-conformities or defects; latent defects may be notified within a commercially reasonable period after discovery",
+        "proposed_revision_excerpt": "Buyer shall inspect all Products within thirty (30) business days of receipt and shall notify Supplier in writing of any non-conformities or defects; latent defects may be notified within a commercially reasonable period after discovery",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "7.1",
+      "issue": "Short inspection period with deemed acceptance",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "12.1",
+        "excerpt": "indemnify, defend, and hold harmless Buyer, its affiliates, and their respective directors, officers, and employees from and against any and all losses, damages, liabilities, costs, and expenses (including reasonable attorneys' fees, recall, field service, and line-stop costs) arising out of or related to: (a) actual or alleged defects in the Products; (b) Supplier's negligence, breach of this Agreement, or violation of applicable laws; (c) infringement or alleged infringement of any intellectual property right; or (d) any government-mandated or voluntary recall attributable to the Products",
+        "reasoning": "Risk table 12.1 correctly flags 'silent on recall, non-compliance with laws, fraud'. Amendment adds explicit recall cost coverage, breach of law, defense obligation, and affiliate protection - comprehensive indemnification.",
+        "judge_reasoning": "indemnify, defend, and hold harmless Buyer, its affiliates, and their respective directors, officers, and employees from and against any and all losses, damages, liabilities, costs, and expenses (including reasonable attorneys' fees, recall, field service, and line-stop costs) arising out of or related to: (a) actual or alleged defects in the Products; (b) Supplier's negligence, breach of this Agreement, or violation of applicable laws; (c) infringement or alleged infringement of any intellectual property right; or (d) any government-mandated or voluntary recall attributable to the Products",
+        "proposed_revision_excerpt": "indemnify, defend, and hold harmless Buyer, its affiliates, and their respective directors, officers, and employees from and against any and all losses, damages, liabilities, costs, and expenses (including reasonable attorneys' fees, recall, field service, and line-stop costs) arising out of or related to: (a) actual or alleged defects in the Products; (b) Supplier's negligence, breach of this Agreement, or violation of applicable laws; (c) infringement or alleged infringement of any intellectual property right; or (d) any government-mandated or voluntary recall attributable to the Products",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "12.1",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T3",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Risk table 4.2 marked ✅ Favorable: 'Reasonable and customary; Buyer cash-flow acceptable.' GT expects concern that 1.5% monthly (18% APR) is above typical commercial rates. Pathfinder did not identify the high interest rate as problematic.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "4.2",
+      "issue": "High late payment interest rate",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.2",
+        "excerpt": "Any upward adjustment must be supported by objective, verifiable cost data and shall not exceed the lesser of (a) three percent (3 %) or (b) the percentage change in the U.S. Consumer Price Index during the preceding twelve-month period. Buyer shall be entitled to annual price reductions reflecting demonstrated productivity gains, cost-down initiatives, or material cost decreases",
+        "reasoning": "Risk table 3.2 correctly identifies 'One-sided upward adjustment; no cost-down mechanism or audit rights for Buyer'. Amendment introduces CPI cap, data-driven adjustments, and cost-down benefits - comprehensive fix exceeding GT expectations.",
+        "judge_reasoning": "Any upward adjustment must be supported by objective, verifiable cost data and shall not exceed the lesser of (a) three percent (3 %) or (b) the percentage change in the U.S. Consumer Price Index during the preceding twelve-month period. Buyer shall be entitled to annual price reductions reflecting demonstrated productivity gains, cost-down initiatives, or material cost decreases",
+        "proposed_revision_excerpt": "Any upward adjustment must be supported by objective, verifiable cost data and shall not exceed the lesser of (a) three percent (3 %) or (b) the percentage change in the U.S. Consumer Price Index during the preceding twelve-month period. Buyer shall be entitled to annual price reductions reflecting demonstrated productivity gains, cost-down initiatives, or material cost decreases",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 1,
+      "quality_points": 6,
+      "total_points": 7,
+      "clause": "3.2",
+      "issue": "Annual price adjustments compound over time",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New Clause – Business Continuity",
+        "excerpt": "Supplier shall maintain and provide to Buyer upon request a written business continuity and disaster-recovery plan ('BCP') covering events such as natural disasters, epidemics, cyber incidents, and key equipment failures. Supplier shall test the BCP at least annually and implement corrective actions identified during testing",
+        "reasoning": "Risk table correctly identifies missing BC/DR 'No requirement for disaster recovery or dual tooling'. New clause adds comprehensive BCP with annual testing and notification - fully addresses GT concern about supply assurance.",
+        "judge_reasoning": "Supplier shall maintain and provide to Buyer upon request a written business continuity and disaster-recovery plan ('BCP') covering events such as natural disasters, epidemics, cyber incidents, and key equipment failures. Supplier shall test the BCP at least annually and implement corrective actions identified during testing",
+        "proposed_revision_excerpt": "Supplier shall maintain and provide to Buyer upon request a written business continuity and disaster-recovery plan ('BCP') covering events such as natural disasters, epidemics, cyber incidents, and key equipment failures. Supplier shall test the BCP at least annually and implement corrective actions identified during testing",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "New Clause – Business Continuity",
+      "issue": "No business continuity / supply assurance provisions",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-12",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "10.1",
+        "excerpt": "These obligations shall survive termination of this Agreement for as long as the information qualifies as Confidential Information under applicable law, and in any event not less than ten (10) years. Trade secrets shall be protected indefinitely",
+        "reasoning": "Risk table 10.1 correctly identifies 'Too short; Buyer trade secrets outlive 3 years'. Amendment extends to 10 years minimum with perpetual trade secret protection - exceeds GT expectation of 5 years.",
+        "judge_reasoning": "These obligations shall survive termination of this Agreement for as long as the information qualifies as Confidential Information under applicable law, and in any event not less than ten (10) years. Trade secrets shall be protected indefinitely",
+        "proposed_revision_excerpt": "These obligations shall survive termination of this Agreement for as long as the information qualifies as Confidential Information under applicable law, and in any event not less than ten (10) years. Trade secrets shall be protected indefinitely",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "10.1",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-13",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "13.1",
+        "excerpt": "(b) products and completed operations liability insurance of not less than $10,000,000 per occurrence; ... All such policies shall name Buyer as additional insured, be primary and non-contributory, and shall not be cancelled or materially altered without thirty (30) days' prior written notice to Buyer",
+        "reasoning": "Risk table 13.1 correctly identifies 'May be inadequate for major recall; no notice of cancellation requirement'. Amendment doubles products liability to $10M, adds additional insured status, and requires cancellation notice - comprehensive insurance protection.",
+        "judge_reasoning": "(b) products and completed operations liability insurance of not less than $10,000,000 per occurrence; ... All such policies shall name Buyer as additional insured, be primary and non-contributory, and shall not be cancelled or materially altered without thirty (30) days' prior written notice to Buyer",
+        "proposed_revision_excerpt": "(b) products and completed operations liability insurance of not less than $10,000,000 per occurrence; ... All such policies shall name Buyer as additional insured, be primary and non-contributory, and shall not be cancelled or materially altered without thirty (30) days' prior written notice to Buyer",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "13.1",
+      "issue": "No Insurance Requirements for Supplier",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-14",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "14.2",
+        "excerpt": "Either Party may terminate this Agreement immediately upon written notice if the other Party's breach poses an actual or potential safety risk or results in a governmental recall of the Products. For all other material breaches, termination shall be effective if such breach remains uncured for thirty (30) days",
+        "reasoning": "Risk table 14.2 correctly identifies 'No right for immediate termination for serious quality/safety breach'. Amendment adds immediate termination for safety breaches and recalls - directly addresses GT concern about asymmetric cure periods.",
+        "judge_reasoning": "Either Party may terminate this Agreement immediately upon written notice if the other Party's breach poses an actual or potential safety risk or results in a governmental recall of the Products. For all other material breaches, termination shall be effective if such breach remains uncured for thirty (30) days",
+        "proposed_revision_excerpt": "Either Party may terminate this Agreement immediately upon written notice if the other Party's breach poses an actual or potential safety risk or results in a governmental recall of the Products. For all other material breaches, termination shall be effective if such breach remains uncured for thirty (30) days",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "14.2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.2",
+      "issue_summary": "“Forecasts” definition",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "“Non-binding” language weakens Supplier’s planning commitment; Buyer bears capacity risk."
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Purchase Order acceptance",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Supplier may reject orders within 5 business days, giving unilateral control."
+    },
+    {
+      "clause": "2.3",
+      "issue_summary": "Forecasts",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Non-binding; Supplier not obligated to reserve capacity."
+    },
+    {
+      "clause": "3.2",
+      "issue_summary": "Supplier price increase right",
+      "leah_classification": "❌",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "One-sided upward adjustment; no cost-down mechanism or audit rights for Buyer."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Taxes",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Buyer bears all transaction taxes; Supplier has no obligation to minimise tax exposure."
+    },
+    {
+      "clause": "4.3",
+      "issue_summary": "Disputed invoices window (15 days)",
+      "leah_classification": "⚠️",
+      "leah_action": "Extend to 45 days an",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Short timeframe; silent on suspension of payment of disputed portion."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Product Warranty – 1 year",
+      "leah_classification": "❌",
+      "leah_action": "Extend to 3 years (o",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Duration too short for automotive; omits compliance with laws/recall."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Warranty Remedy limited to repair/replace/refund",
+      "leah_classification": "❌",
+      "leah_action": "Expand to cover Buye",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Excludes consequential costs (field failures, line-stop)."
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Warranty Disclaimer",
+      "leah_classification": "❌",
+      "leah_action": "Carve-out warranties",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Broad disclaimer undermines statutory and custom warranties."
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Delivery Terms – FCA Supplier facility",
+      "leah_classification": "❌",
+      "leah_action": "Change to DDP Buyer ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Risk transfers to Buyer too early; Buyer bears freight/insurance."
+    },
+    {
+      "clause": "6.2",
+      "issue_summary": "Shipping – Buyer pays",
+      "leah_classification": "⚠️",
+      "leah_action": "Align with revised 6",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Acceptable if 6.1 improved; currently compounds risk."
+    },
+    {
+      "clause": "6.3",
+      "issue_summary": "Partial Shipments",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Supplier can ship partially without penalty."
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Inspection period – 10 business days",
+      "leah_classification": "⚠️",
+      "leah_action": "Extend to 30 busines",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Too short for complex parts; latent defects not covered."
+    },
+    {
+      "clause": "7.2",
+      "issue_summary": "Deemed Acceptance",
+      "leah_classification": "⚠️",
+      "leah_action": "Link to revised insp",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Relies on 10-day window; same concern as 7.1."
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Supplier IP",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No express licence for Buyer to make or have made service parts if Supplier defaults."
+    },
+    {
+      "clause": "10.1",
+      "issue_summary": "Confidentiality – 3-year survival",
+      "leah_classification": "❌",
+      "leah_action": "Make obligations per",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Too short; Buyer trade secrets outlive 3 years."
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Exclusion of consequential damages (both parties)",
+      "leah_classification": "⚠️",
+      "leah_action": "Carve-out for Suppli",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Carves out Buyer’s key remedies (recall, line-stop)."
+    },
+    {
+      "clause": "11.2",
+      "issue_summary": "Liability Cap – 12-month spend",
+      "leah_classification": "❌",
+      "leah_action": "Increase to 200 % of",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Cap far too low relative to potential automotive recall exposure."
+    },
+    {
+      "clause": "12.1",
+      "issue_summary": "Supplier Indemnification",
+      "leah_classification": "⚠️",
+      "leah_action": "Expand to include re",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Covers defects/negligence/IP; silent on recall, non-compliance with laws, fraud."
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Insurance – $5 m products liability",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "May be inadequate for major recall; no notice of cancellation requirement."
+    },
+    {
+      "clause": "14.2",
+      "issue_summary": "Termination for Cause (30-day cure)",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No right for immediate termination for serious quality/safety breach."
+    },
+    {
+      "clause": "14.3",
+      "issue_summary": "Termination for Convenience – 180 days (either party)",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "180 days too long for Buyer; Supplier may need long lead time."
+    },
+    {
+      "clause": "15.1",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No obligation to allocate limited supply to Buyer, or to provide recovery plan."
+    },
+    {
+      "clause": "16.3",
+      "issue_summary": "Assignment restriction",
+      "leah_classification": "❌",
+      "leah_action": "Permit Buyer assignm",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Buyer cannot assign without consent; hinders corporate restructuring."
+    },
+    {
+      "clause": "—",
+      "issue_summary": "Product Recall / Field Action (missing)",
+      "leah_classification": "❌",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No clause allocating recall risk/cost to Supplier; high-risk gap."
+    },
+    {
+      "clause": "—",
+      "issue_summary": "Business Continuity / Supply Interruption (missing)",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No requirement for disaster recovery or dual tooling."
+    },
+    {
+      "clause": "—",
+      "issue_summary": "Data Protection (personal data)",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Contract silent; Buyer may share employee/customer data."
+    },
+    {
+      "clause": "Section 2.3 Forecasts",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensures Supplier reserves adequate capacity based on Buyer’s forecasts, reducing supply-chain risk and line-stop exposure. Insert immediately after existing Section 2.3."
+    },
+    {
+      "clause": "Section 2.2 Purchase Orders",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Removes unilateral discretion, provides automatic acceptance mechanism, and narrows permissible grounds for rejection—protecting Buyer’s production schedules."
+    },
+    {
+      "clause": "Section 3.2 Price Adjustments",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Introduces balanced, data-driven price changes, caps increases, and secures cost-down benefits—aligning with automotive industry practice and safeguarding Buyer’s margins."
+    },
+    {
+      "clause": "Section 3.3 Taxes",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires Supplier to cooperate in minimising tax burden on Buyer, ensuring efficient tax management."
+    },
+    {
+      "clause": "Section 4.3 Disputed Invoices",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Extends review window for complex automotive invoices and protects Buyer’s right to withhold genuinely contested amounts."
+    },
+    {
+      "clause": "Section 5.1 Product Warranty",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Aligns warranty duration with automotive lifecycle expectations, adds compliance with laws, and includes design-defect coverage—critical for Buyer’s downstream liability."
+    },
+    {
+      "clause": "Section 5.2 Warranty Claims",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensures Buyer is made whole for consequential costs typically arising from automotive part failures."
+    },
+    {
+      "clause": "Section 5.3 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Preserves mandatory warranties and prevents Supplier from using disclaimer to evade essential obligations."
+    },
+    {
+      "clause": "Section 6.1 Delivery Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Shifts freight, risk, and customs responsibilities to Supplier, aligning with Buyer’s preference and reducing logistical exposure."
+    },
+    {
+      "clause": "Section 6.3 Partial Shipments",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prevents unapproved partials that can disrupt production and increase freight cost."
+    },
+    {
+      "clause": "Section 7.1 Inspection",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides adequate time for thorough quality checks and preserves rights for latent defects."
+    },
+    {
+      "clause": "Section 9.2 Supplier IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensures continuity of supply and protects Buyer from production stoppages due to Supplier issues. To be inserted immediately after Section 9.2."
+    },
+    {
+      "clause": "Section 10.1 Confidentiality Obligations",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Aligns protection period with lifecycle of automotive designs and trade-secret law."
+    },
+    {
+      "clause": "Section 11.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Preserves Buyer’s ability to recover critical losses resulting from Supplier’s high-impact breaches."
+    },
+    {
+      "clause": "Section 11.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Raises cap to a commercially realistic level and excludes critical categories from limitation."
+    },
+    {
+      "clause": "Section 12.1 Supplier Indemnification",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adds recall, breach of law, and defense obligation ensuring Supplier fully protects Buyer from third-party claims."
+    },
+    {
+      "clause": "Section 13.1 Required Coverage",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Increases limits to reflect automotive exposure and ensures Buyer is insured party."
+    },
+    {
+      "clause": "Section 14.2 Termination for Cause",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Grants Buyer swift exit in event of safety-critical breaches."
+    },
+    {
+      "clause": "Section 14.3 Termination for Convenience",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Gives Buyer flexibility to manage sourcing while preserving Supplier’s longer notice need."
+    },
+    {
+      "clause": "Section 15.1 Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensures Supplier prioritises Buyer and allows exit from prolonged supply outage."
+    },
+    {
+      "clause": "Section 16.3 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides Buyer freedom to restructure while restricting Supplier transfers that could impact quality or performance."
+    },
+    {
+      "clause": "New Clause – Product Recall",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Explicitly allocates recall risk and cost to Supplier, critical in automotive sector. Insert as new Section 12.3 immediately after indemnity section."
+    },
+    {
+      "clause": "New Clause – Business Continuity",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensures Supplier preparedness for disruptions, protecting Buyer’s production lines. Insert at end of Article 15."
+    },
+    {
+      "clause": "New Clause – Data Protection",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Addresses regulatory compliance gap and protects Buyer from data-privacy liabilities. Insert as new Article 17, renumber subsequent provisions accordingly."
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 13,
+      "P": 0,
+      "N": 1,
+      "NMI": 0
+    },
+    "confidence_counts": {
+      "HIGH": 14,
+      "MEDIUM": 0,
+      "LOW": 0
+    },
+    "t1_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_all_detected": true,
+    "total_detection_points": 73,
+    "total_quality_points": 78,
+    "total_points": 151,
+    "max_detection_points": 74,
+    "weighted_max": 74,
+    "additional_issues_count": 51,
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 8,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,574 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "pathfinder",
+    "evaluation_timestamp": "2026-01-25T14:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "4.1",
+        "excerpt": "Processor shall not engage or replace any Sub-processor without the Controller's prior written consent... If Controller objects, Processor will not appoint the Sub-processor or shall suspend the Processing activities in question until the objection is resolved to Controller's satisfaction.",
+        "reasoning": "Pathfinder correctly identifies the core issue: general authorization with ineffective objection right. Risk table 4.1 notes 'insufficient control' and amendment changes to prior consent model with explicit suspension if Controller objects.",
+        "judge_reasoning": "Processor shall not engage or replace any Sub-processor without the Controller's prior written consent... If Controller objects, Processor will not appoint the Sub-processor or shall suspend the Processing activities in question until the objection is resolved to Controller's satisfaction.",
+        "proposed_revision_excerpt": "Processor shall not engage or replace any Sub-processor without the Controller's prior written consent... If Controller objects, Processor will not appoint the Sub-processor or shall suspend the Processing activities in question until the objection is resolved to Controller's satisfaction.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 6,
+      "total_points": 14,
+      "clause": "4.1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "5.1",
+        "excerpt": "implement and maintain the technical and organisational measures set out in Exhibit B, including but not limited to encryption (in transit and at rest), pseudonymisation, role-based access controls... at least annual independent penetration testing. Processor shall provide Controller with an executive summary of such test results within thirty (30) days",
+        "reasoning": "Pathfinder identifies vague 'appropriate' measures and blank Exhibit B. Amendment specifies mandatory minimum controls including pen testing - directly addresses GT concern.",
+        "judge_reasoning": "implement and maintain the technical and organisational measures set out in Exhibit B, including but not limited to encryption (in transit and at rest), pseudonymisation, role-based access controls... at least annual independent penetration testing. Processor shall provide Controller with an executive summary of such test results within thirty (30) days",
+        "proposed_revision_excerpt": "implement and maintain the technical and organisational measures set out in Exhibit B, including but not limited to encryption (in transit and at rest), pseudonymisation, role-based access controls... at least annual independent penetration testing. Processor shall provide Controller with an executive summary of such test results within thirty (30) days",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 6,
+      "total_points": 14,
+      "clause": "5.1",
+      "issue": "Vague Security Measures",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T3",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Risk table 8.1 marked ✅ Favorable: '72-hour window aligns with GDPR. No Action Required'. GT expects concern that 72hr is the maximum allowed and may be too slow for high-severity breaches (no tiered notification for critical breaches).",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "8.1",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T2",
+      "detection": "P",
+      "match_strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_clause": "9.1",
+        "excerpt": "Retain unlimited liability for Processor re Personal Data; clarify that any statutory joint liability does not reduce Processor indemnity.",
+        "reasoning": "Partial detection: Risk table 9.1 flags vague 'applicable law' reference, recommends unlimited Processor liability. But focuses on negotiation pressure risk rather than GT's core concern (hidden caps in Principal Agreement could limit indemnification).",
+        "judge_reasoning": "Retain unlimited liability for Processor re Personal Data; clarify that any statutory joint liability does not reduce Processor indemnity.",
+        "proposed_revision_excerpt": "Retain unlimited liability for Processor re Personal Data; clarify that any statutory joint liability does not reduce Processor indemnity.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 2.5,
+      "quality_points": 4,
+      "total_points": 6.5,
+      "clause": "9.1",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T1",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "9.1",
+        "excerpt": "Absence of cap is favourable but may invite negotiation pressure later... Retain unlimited liability for Processor",
+        "reasoning": "Pathfinder correctly identifies no limitation of liability clause exists in DPA and recommends retaining unlimited Processor liability. Addresses the gap GT identified.",
+        "judge_reasoning": "Absence of cap is favourable but may invite negotiation pressure later... Retain unlimited liability for Processor",
+        "proposed_revision_excerpt": "Absence of cap is favourable but may invite negotiation pressure later... Retain unlimited liability for Processor",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 8,
+      "quality_points": 4,
+      "total_points": 12,
+      "clause": "9.1",
+      "issue": "No Limitation of Liability in DPA",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "3.4",
+        "excerpt": "delete or return all Personal Data and shall provide a written certificate of deletion or return, signed by an authorised officer of Processor, within fifteen (15) days",
+        "reasoning": "Pathfinder correctly identifies missing timeline and certificate. 15-day timeline with officer-signed certificate directly addresses GT concern.",
+        "judge_reasoning": "delete or return all Personal Data and shall provide a written certificate of deletion or return, signed by an authorised officer of Processor, within fifteen (15) days",
+        "proposed_revision_excerpt": "delete or return all Personal Data and shall provide a written certificate of deletion or return, signed by an authorised officer of Processor, within fifteen (15) days",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "3.4",
+      "issue": "Deletion Timeline Unspecified",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "7.2",
+        "excerpt": "Except where the audit shows no material non-compliance, the reasonable costs of the audit shall be borne by Processor",
+        "reasoning": "Pathfinder correctly identifies audit cost concern and shifts costs to Processor when issues found - directly addresses GT's concern about cost-discouraging oversight.",
+        "judge_reasoning": "Except where the audit shows no material non-compliance, the reasonable costs of the audit shall be borne by Processor",
+        "proposed_revision_excerpt": "Except where the audit shows no material non-compliance, the reasonable costs of the audit shall be borne by Processor",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 1,
+      "quality_points": 5,
+      "total_points": 6,
+      "clause": "7.2",
+      "issue": "All Audit Costs on Controller",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T3",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Not mentioned. Risk table 10.1 marked ✅ Favorable: 'Mirrors Principal Agreement; flexible. No Action Required'. GT expects concern about potentially indefinite duration with no periodic review requirement.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "10.1",
+      "issue": "Indefinite Duration",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "2.2 / Exhibit A",
+        "excerpt": "shall be fully and accurately described in Exhibit A before any Processing commences. Exhibit A shall be reviewed and, where necessary, updated by Processor at least annually or without undue delay following any material change",
+        "reasoning": "Pathfinder correctly identifies blank Exhibit A as GDPR Art 28 non-compliance and proposes mandatory completion with annual review and Controller approval.",
+        "judge_reasoning": "shall be fully and accurately described in Exhibit A before any Processing commences. Exhibit A shall be reviewed and, where necessary, updated by Processor at least annually or without undue delay following any material change",
+        "proposed_revision_excerpt": "shall be fully and accurately described in Exhibit A before any Processing commences. Exhibit A shall be reviewed and, where necessary, updated by Processor at least annually or without undue delay following any material change",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "2.2 / Exhibit A",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "Exhibit B",
+        "excerpt": "Exhibit B (Technical & Organisational Measures) – Detailed schedule listing network security, application security, physical security, incident response, business continuity, employee training, and third-party risk management controls",
+        "reasoning": "Pathfinder correctly identifies blank Exhibit B undermines Art 32 compliance and proposes detailed schedule with all key security domains.",
+        "judge_reasoning": "Exhibit B (Technical & Organisational Measures) – Detailed schedule listing network security, application security, physical security, incident response, business continuity, employee training, and third-party risk management controls",
+        "proposed_revision_excerpt": "Exhibit B (Technical & Organisational Measures) – Detailed schedule listing network security, application security, physical security, incident response, business continuity, employee training, and third-party risk management controls",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "Exhibit B",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "Exhibit C",
+        "excerpt": "Table specifying (i) legal entity name, (ii) registered address, (iii) processing activity, (iv) country of Processing, (v) lawful transfer mechanism, and (vi) certification standards held",
+        "reasoning": "Pathfinder correctly identifies blank Exhibit C prevents due diligence on sub-processors and proposes comprehensive table with all required details.",
+        "judge_reasoning": "Table specifying (i) legal entity name, (ii) registered address, (iii) processing activity, (iv) country of Processing, (v) lawful transfer mechanism, and (vi) certification standards held",
+        "proposed_revision_excerpt": "Table specifying (i) legal entity name, (ii) registered address, (iii) processing activity, (iv) country of Processing, (v) lawful transfer mechanism, and (vi) certification standards held",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "Exhibit C",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-12",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_clause": "New - Insurance",
+        "excerpt": "Processor shall maintain, at its own expense, valid cyber-liability and professional indemnity insurance with a minimum coverage of GBP 5,000,000 per claim and in the aggregate... shall notify Controller at least thirty (30) days prior to any cancellation or material reduction in coverage",
+        "reasoning": "Pathfinder correctly identifies missing cyber insurance requirement and proposes comprehensive insurance clause with GBP 5M coverage and notification requirements.",
+        "judge_reasoning": "Processor shall maintain, at its own expense, valid cyber-liability and professional indemnity insurance with a minimum coverage of GBP 5,000,000 per claim and in the aggregate... shall notify Controller at least thirty (30) days prior to any cancellation or material reduction in coverage",
+        "proposed_revision_excerpt": "Processor shall maintain, at its own expense, valid cyber-liability and professional indemnity insurance with a minimum coverage of GBP 5,000,000 per claim and in the aggregate... shall notify Controller at least thirty (30) days prior to any cancellation or material reduction in coverage",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 6,
+      "total_points": 11,
+      "clause": "New - Insurance",
+      "issue": "No Cyber Insurance Requirement",
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Data Protection Laws",
+      "leah_classification": "⚠️",
+      "leah_action": "Expand definition to",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Scope of laws is limited to “UK GDPR” and “Data Protection Act 2018”. EU-based data subjects may still be processed, and other global regimes (e.g., Swiss FDPIC, CCPA) are not captured."
+    },
+    {
+      "clause": "2.2",
+      "issue_summary": "Processing Details",
+      "leah_classification": "⚠️",
+      "leah_action": "Mandate that Exhibit",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Exhibit A is blank → high risk: no record of processing as required by Art 28 GDPR; no binding purpose limitation."
+    },
+    {
+      "clause": "3.3",
+      "issue_summary": "Assistance to Controller",
+      "leah_classification": "⚠️",
+      "leah_action": "Insert “at Processor",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "No statement on cost allocation; Processor could charge premium fees for statutory cooperation."
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Deletion / Return of Data",
+      "leah_classification": "⚠️",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Lacks requirement to certify deletion/return; no timeline specified."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Technical & Organisational Measures (TOMs)",
+      "leah_classification": "⚠️",
+      "leah_action": "Require completed Ex",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Merely lists examples; Exhibit B blank; no minimum baseline or audit/report frequency."
+    },
+    {
+      "clause": "6.1",
+      "issue_summary": "Transfer Restrictions",
+      "leah_classification": "⚠️",
+      "leah_action": "Insert obligation to",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Silent on Transfer Impact Assessments (TIAs) and Schrems II supplementary measures."
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Allocation of Liability",
+      "leah_classification": "⚠️",
+      "leah_action": "Retain unlimited lia",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "References “applicable law” only; no contractual cap or carve-outs. Absence of cap is favourable but may invite negotiation pressure later."
+    },
+    {
+      "clause": "Exhibit C",
+      "issue_summary": "Approved Sub-processors",
+      "leah_classification": "⚠️",
+      "leah_action": "Require complete lis",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "List not included; cannot assess risk."
+    },
+    {
+      "clause": "–",
+      "issue_summary": "Force Majeure (New Clause Recommendation)",
+      "leah_classification": "⚠️",
+      "leah_action": "Include FM clause ex",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Entire agreement lacks FM clause; ambiguity on data-protection obligations in such events."
+    },
+    {
+      "clause": "Article 1, Section 1.1 “Data Protection Laws”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Expanding the definition ensures that all relevant jurisdictions governing the Controller’s Personal Data are covered, closing any loopholes where cross-border data subjects could fall outside the Pro"
+    },
+    {
+      "clause": "Article 2, Section 2.2 “Processing Details”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "GDPR Art 28(3) requires a detailed written description of processing activities. Mandating completion before processing and Controller approval for updates prevents the Processor from unilaterally exp"
+    },
+    {
+      "clause": "Article 3, Section 3.3 “Assistance”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Shifting the cost burden to the Processor aligns economic incentives with compliance obligations under Art 28(3)(e) GDPR, ensuring the Controller is not penalised financially for statutory duties trig"
+    },
+    {
+      "clause": "Article 3, Section 3.4 “Deletion”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Certification provides verifiable evidence of compliance, addressing regulatory scrutiny and reinforcing Controller’s audit rights. A 15-day timeline ensures prompt action and limits data-residual ris"
+    },
+    {
+      "clause": "Article 4, Section 4.1 “General Authorisation”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Prior-consent model offers the Controller positive control rather than a reactive veto, materially reducing the risk of unauthorised data disclosure and ensuring that any onward processing meets the C"
+    },
+    {
+      "clause": "Article 5, Section 5.1 “Technical and Organisational Measures”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Tie-ing TOMs to Exhibit B (once populated) elevates them to contractual obligations and establishes a measurable security baseline, directly protecting Controller data."
+    },
+    {
+      "clause": "Article 6, Section 6.1 “Transfer Restrictions”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Incorporating TIAs and supplementary measures aligns the clause with Schrems II requirements and provides the Controller direct oversight of cross-border risk."
+    },
+    {
+      "clause": "Article 7, Section 7.2 “Audit Procedures”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Removing the once-per-year cap and shifting costs when fault is found incentivises compliance and preserves the Controller’s regulatory defence."
+    },
+    {
+      "clause": "Exhibit A “Processing Details”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Art 28(3) GDPR mandates that such details are agreed in writing. Absence is a material compliance gap exposing Controller to regulatory fines."
+    },
+    {
+      "clause": "Exhibit B “Technical and Organisational Measures”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Provides demonstrable compliance evidence per Arts 32 & 28(3)(c) GDPR, safeguarding the Controller in the event of regulatory inspection."
+    },
+    {
+      "clause": "Exhibit C “Approved Sub-processors”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Enables transparent, proactive controller assessment of the sub-processor ecosystem in compliance with Art 28(2) & (4) GDPR."
+    },
+    {
+      "clause": "New Clause – “Insurance”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Insurance ensures there is a recoverable pool of funds if Processor breaches data-protection obligations, directly protecting Controller from insolvency risk. Clause to be inserted in Article 11, afte"
+    },
+    {
+      "clause": "New Clause – “Business Continuity and Disaster Recovery”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Ensures ongoing availability and resilience, critical for Controller’s operational obligations to data subjects. Clause to be positioned after Section 5.2."
+    },
+    {
+      "clause": "New Clause – “Force Majeure”",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Introduces clarity on unforeseen events while expressly carving out core data-protection duties, ensuring data remains safeguarded even during force majeure scenarios. Clause to be added within Articl"
+    }
+  ],
+  "summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 1,
+      "N": 1,
+      "NMI": 1
+    },
+    "confidence_counts": {
+      "HIGH": 11,
+      "MEDIUM": 1,
+      "LOW": 0
+    },
+    "t1_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 3,
+    "t1_all_detected": true,
+    "total_detection_points": 52.5,
+    "total_quality_points": 52,
+    "total_points": 104.5,
+    "max_detection_points": 57,
+    "weighted_max": 57,
+    "additional_issues_count": 23,
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 1
+      }
+    }
+  }
+}

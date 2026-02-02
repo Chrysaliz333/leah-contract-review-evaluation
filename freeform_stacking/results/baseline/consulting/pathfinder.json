@@ -1,0 +1,526 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "pathfinder",
+    "model_display_name": "Pathfinder",
+    "environment": "testing_prod2",
+    "representing_party": "Client",
+    "evaluation_timestamp": "2026-01-26T00:00:00Z",
+    "gt_version": "1.0",
+    "part_b_gt_version": "3.0_v4-enhanced_LOCKED",
+    "evaluator": "Liz"
+  },
+  "part_a_evaluations": [
+    {
+      "gt_id": "CONSULTING_01",
+      "clause": "3.4",
+      "cp_redline_description": "Client shall pay all undisputed invoices within fifteen (15) days of receipt.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "3.4 Payment Terms. Client shall pay all undisputed invoices within thirty (30) days of receipt. Late payments shall bear interest at the rate of one percent (1%) per month, or the maximum rate permitted by law, whichever is less. Consultant shall submit any invoice disputes in writing within sixty (60) days of the invoice date, and the Parties shall work in good faith to resolve such disputes; undisputed portions shall remain payable under this Section.",
+        "judge_reasoning": "Action: Leah correctly REJECTED the vendor redline and reverted to 30-day payment terms. Revision: All key elements present - 30-day payment period restored, late payment interest provision retained at 1% cap, Client dispute rights preserved, and additional dispute process added. Reasoning: Leah explained that vendor redline halves payment period, eliminates Client dispute rights, and that 30 days is standard - all required reasoning points addressed."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_02",
+      "clause": "5.1",
+      "cp_redline_description": "Consultant retains all intellectual property rights in deliverables, methodologies, and work product. Client receives a non-exclusive, non-transferable license to use deliverables for its internal business purposes only.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "5.1 Ownership of Deliverables. All Deliverables and all intellectual property rights therein, whether or not considered \"work-for-hire\" under applicable law, shall be and hereby are assigned to Client upon creation and, in any event, no later than upon Client's payment of the applicable fees. Consultant hereby irrevocably waives and assigns to Client any and all moral rights, droit moral, and similar rights in the Deliverables to the fullest extent permitted by law.",
+        "judge_reasoning": "Action: Leah correctly REJECTED the vendor redline that would have retained ownership with Consultant. Revision: All key elements present - work-for-hire designation retained, Client ownership of bespoke deliverables affirmed, payment condition acceptable, and explicit assignment language added as backup. Exceeds GT by adding assignment fallback and moral rights waiver. Reasoning: Leah explained Client pays for custom work and must own it, license-only model creates dependency risk, work-for-hire is appropriate for bespoke deliverables - all required points addressed."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_03",
+      "clause": "5.2",
+      "cp_redline_description": "To the extent any Background IP is incorporated into the Deliverables, Consultant hereby grants Client a non-exclusive, royalty-free license to use such Background IP solely as part of the Deliverables for a period of three (3) years from delivery, subject to termination if Client competes with Consultant in North America.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "Notwithstanding Section 5.1, Consultant shall retain ownership of its Background IP that was (i) created prior to the Effective Date, or (ii) developed entirely independent of the Services without use of Client Confidential Information. To the extent any such Background IP is incorporated into a Deliverable, Consultant hereby grants Client a world-wide, perpetual, irrevocable, transferable, sublicensable, royalty-free license to use, reproduce, modify, distribute, display, perform, and otherwise exploit that Background IP as necessary for Client's full enjoyment and commercial exploitation of the Deliverables.",
+        "judge_reasoning": "Action: Leah correctly REJECTED the vendor redline that imposed 3-year time limit and competitive restrictions. Revision: All key elements present - perpetual license duration restored, no territorial restrictions, no competitive use restrictions, royalty-free. Exceeds GT by clarifying Background IP definition and expanding license scope to include modification and derivative works. Reasoning: Leah explained Client paid for deliverables and must use perpetually, 3-year limit renders deliverables obsolete, competitive restriction could block Client core business - all required points addressed."
+      }
+    },
+    {
+      "gt_id": "CONSULTING_04",
+      "clause": "7.1",
+      "cp_redline_description": "Consultant may terminate this Agreement for convenience upon fifteen (15) days' prior written notice. Client may terminate for convenience upon ninety (90) days' prior written notice and payment of a termination fee equal to three (3) months of fees under all active Statements of Work.",
+      "expected_action": "REJECT",
+      "leah_action": "REJECT",
+      "action_score": 2,
+      "revision_score": 2,
+      "reasoning_score": 2,
+      "total_points": 6,
+      "critical_failure": null,
+      "evidence": {
+        "leah_response_excerpt": "7.1 Termination for Convenience. Either Party may terminate this Agreement or any individual Statement of Work for convenience upon thirty (30) days' prior written notice to the other Party, without penalty or further obligation except for payment of fees for Services properly performed through the effective date of termination.",
+        "judge_reasoning": "Action: Leah correctly REJECTED the vendor redline imposing asymmetric notice periods and termination fee. Revision: All key elements present - symmetric notice periods restored to 30 days for both parties, no termination fee for Client, reasonable notice maintained. Exceeds GT by adding SOW-level termination right and explicit 'without penalty' language. Reasoning: Leah explained asymmetric terms trap Client in underperforming relationship, termination fee is penalty without justification, symmetric terms are market standard - all required points addressed."
+      }
+    }
+  ],
+  "part_a_summary": {
+    "total_score": 24,
+    "max_score": 24,
+    "percentage": 100.0,
+    "critical_failures": 0,
+    "pass_fail": "PASS"
+  },
+  "part_b_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "Y",
+      "detection_points": 8,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 17,
+      "matched_redline_id": "5.1",
+      "evidence": {
+        "proposed_revision_excerpt": "5.1 Ownership of Deliverables. All Deliverables and all intellectual property rights therein, whether or not considered \"work-for-hire\" under applicable law, shall be and hereby are assigned to Client upon creation and, in any event, no later than upon Client's payment of the applicable fees. Consultant hereby irrevocably waives and assigns to Client any and all moral rights, droit moral, and similar rights in the Deliverables to the fullest extent permitted by law.",
+        "effective_rationale_excerpt": "Section 5.1's intent is to secure full ownership of project outputs for Meridian Enterprises Inc., ensuring unfettered exploitation and downstream flexibility. The vendor's proposed redline reverses this allocation entirely, giving Consultant ownership and offering only a narrow internal-use license—posing severe operational risk to Client's product roadmaps, valuations, and potential M&A. The proposed revision strengthens the original by adding an express assignment clause, a waiver of moral rights, and immediate vesting of ownership upon creation to close potential timing gaps.",
+        "judge_reasoning": "Leah fully detected this T1 issue. The risk table flagged clause 5.1 as Unfavorable noting vendor redline shifts ownership. The proposed revision directly addresses the work-for-hire structural defect by adding explicit assignment language ('shall be and hereby are assigned to Client') as a fallback if work-for-hire fails, which is exactly what GT requires. The rationale explicitly mentions the work-for-hire structural issue and adds assignment to close timing gaps. Amendment score 3: comprehensive fix with explicit assignment, moral rights waiver, and present-tense assignment operative upon creation. Rationale score 3: identifies legal risk (work-for-hire structural defect), business impact (ownership uncertainty), and provides specific solution (assignment clause). Redline quality score 3: precise language, legally sound, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "9.2",
+      "evidence": {
+        "proposed_revision_excerpt": "9.2 Cap on Liability. EXCEPT FOR (i) BREACHES OF CONFIDENTIALITY, (ii) INFRINGEMENT OR MISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS, (iii) CONSULTANT'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT, OR (iv) ITS INDEMNIFICATION OBLIGATIONS, NEITHER PARTY'S TOTAL LIABILITY UNDER THIS AGREEMENT SHALL EXCEED THE GREATER OF (A) TWO (2) TIMES THE AGGREGATE FEES PAID OR PAYABLE BY CLIENT UNDER ALL STATEMENTS OF WORK DURING THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM, OR (B) ONE MILLION U.S. DOLLARS (US $1,000,000).",
+        "effective_rationale_excerpt": "The original cap ties recovery to fees under a single SOW, potentially leaving Meridian under-compensated for systemic or multi-SOW failures. It also omits critical carve-outs for IP infringement, data breaches, or Consultant misconduct—events that can dwarf project fees. The proposed revision increases the cap to a meaningful level anchored to total spend and introduces a floor amount, improving deterrence and ensuring adequate recourse.",
+        "judge_reasoning": "Leah fully detected this T2 issue. The risk table flagged clause 9.2 as Unfavorable noting cap too low to cover potential loss. The proposed revision adds all three critical carve-outs required by GT: IP infringement, gross negligence/willful misconduct, and expands the cap quantum. Amendment score 3: comprehensive fix addressing all GT key elements - adds IP carve-out, adds data breach coverage through gross negligence carve-out, adds gross negligence/willful misconduct carve-out, and increases cap quantum. Rationale score 3: identifies specific legal risks (under-compensation for multi-SOW failures), business impact (events can dwarf project fees), and provides specific values/standards (2x fees or $1M floor). Redline quality score 3: precise legal drafting, correct ALL CAPS format, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 11,
+      "matched_redline_id": "9.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Carve-out damages from Consultant's gross negligence, willful misconduct, or IP breach.",
+        "effective_rationale_excerpt": "Broad exclusion may bar data loss damages critical to Client.",
+        "judge_reasoning": "Leah detected this T2 issue. The risk table flagged clause 9.1 as Requires Clarification noting broad exclusion may bar data loss damages. The recommended action states 'Carve-out damages from Consultant's gross negligence, willful misconduct, or IP breach.' This addresses the GT requirement for carve-outs but does not provide a complete redline. Amendment score 2: adequate fix identifying core carve-outs (gross negligence, willful misconduct, IP breach) but not provided as complete redlined text. Rationale score 2: risk identified with context (may bar data loss damages critical to Client) but missing specifics about alignment with indemnification. Redline quality score 2: clear intent but presented as recommendation rather than complete tracked change."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "7.1",
+      "evidence": {
+        "proposed_revision_excerpt": "7.1 Termination for Convenience. Either Party may terminate this Agreement or any individual Statement of Work for convenience upon thirty (30) days' prior written notice to the other Party, without penalty or further obligation except for payment of fees for Services properly performed through the effective date of termination.",
+        "effective_rationale_excerpt": "The clause's purpose is to afford both Parties flexibility to exit the relationship without undue burden. Consultant's redline asymmetrically accelerates its exit while binding Client for an additional 90 days plus a hefty termination fee—contradicting commercial fairness and potentially locking Meridian into unwanted spend. The proposed revision restores symmetry, preserves the 30-day notice period, explicitly allows termination at SOW level to avoid collateral disruption, and eliminates punitive fees.",
+        "judge_reasoning": "Leah fully detected this T2 issue. The risk table flagged clause 7.1 as Unfavorable noting vendor redline imposes 90-day notice plus termination fee. The proposed revision adds SOW-level TfC right as required by GT and provides transition clarity through 'payment of fees for Services properly performed through effective date' language. Amendment score 3: comprehensive fix adding SOW-level termination right and clarifying wind-down (no penalty except payment for work performed). Rationale score 3: identifies flexibility need, business impact (locking Client into unwanted spend), and symmetric terms standard. Redline quality score 3: precise language, integrates cleanly with existing clause, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "5.2",
+      "evidence": {
+        "proposed_revision_excerpt": "Notwithstanding Section 5.1, Consultant shall retain ownership of its Background IP that was (i) created prior to the Effective Date, or (ii) developed entirely independent of the Services without use of Client Confidential Information. To the extent any such Background IP is incorporated into a Deliverable, Consultant hereby grants Client a world-wide, perpetual, irrevocable, transferable, sublicensable, royalty-free license to use, reproduce, modify, distribute, display, perform, and otherwise exploit that Background IP as necessary for Client's full enjoyment and commercial exploitation of the Deliverables.",
+        "effective_rationale_excerpt": "The original clause sensibly protects Consultant's pre-existing assets while ensuring Client receives a royalty-free license for embedded Background IP. The vendor redline, however, overreaches by claiming \"all improvements\" and knowledge gained—effectively appropriating enhancements financed by Client and curtailing Client's future use. The proposed revision clarifies what qualifies as Background IP, excludes project-specific improvements, and widens the license scope so Meridian can modify or commercialise Deliverables without future fees or dependencies.",
+        "judge_reasoning": "Leah fully detected this T2 issue. The risk table flagged clause 5.2 as Requires Clarification noting vendor redline expands to improvements and dilutes Client rights. The proposed revision expands license scope to include modification ('modify'), internal use ('use, reproduce'), derivative works ('otherwise exploit'), and adds sublicensing rights ('sublicensable'). Amendment score 3: comprehensive fix addressing all GT requirements - modification rights, independent use rights, derivative works, sublicensing for affiliates/successors. Rationale score 3: explains narrow scope risk, business impact (curtails future use), and specific solution (widen license scope). Redline quality score 3: precise legal language, comprehensive license grant, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": 1,
+      "quality_points": 3,
+      "total_points": 5.5,
+      "matched_redline_id": "6.4",
+      "evidence": {
+        "proposed_revision_excerpt": "Insert 30-day return/destruction requirement; allow retained back-ups subject to confidentiality.",
+        "effective_rationale_excerpt": "Lacks timeframe for compliance and exception for backup archives.",
+        "judge_reasoning": "Leah partially detected this T2 issue. The risk table flagged clause 6.4 as Requires Clarification noting lack of timeframe for return/destruction and missing backup exception. However, Leah did not address the survival period duration or trade secret treatment required by GT. Amendment score 1: weak attempt - addresses return/destruction timeframe (30 days) and backup exception but misses explicit survival period specification and trade secret carve-out. Rationale score 1: states problem (lacks timeframe, missing backup exception) without explaining survival period importance or trade secret distinction. Redline quality score 1: presented as recommendation rather than complete redline, missing key survival period language."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": 3,
+      "quality_points": 8,
+      "total_points": 9,
+      "matched_redline_id": "3.4",
+      "evidence": {
+        "proposed_revision_excerpt": "3.4 Payment Terms. Client shall pay all undisputed invoices within thirty (30) days of receipt. Late payments shall bear interest at the rate of one percent (1%) per month, or the maximum rate permitted by law, whichever is less. Consultant shall submit any invoice disputes in writing within sixty (60) days of the invoice date, and the Parties shall work in good faith to resolve such disputes; undisputed portions shall remain payable under this Section.",
+        "effective_rationale_excerpt": "By restoring the 30-day payment term and maintaining the 1% cap, this revision preserves Client's working-capital flexibility while still compensating Consultant for late payment. The added 60-day dispute window clarifies administrative expectations and protects Client from surprise charges.",
+        "judge_reasoning": "Leah fully detected this T3 issue. The proposed redline adds formal dispute mechanism (60-day written notice window) and good faith resolution process as required by GT. Amendment score 3: comprehensive fix adding dispute window with timeframe and good faith resolution requirement. Rationale score 2: addresses administrative expectations and protection from surprise charges but does not explicitly mention withholding right for non-conforming services. Redline quality score 3: precise language, integrates cleanly, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "Y",
+      "detection_points": 1,
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": 2,
+      "quality_points": 6,
+      "total_points": 7,
+      "matched_redline_id": "13.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Shift to Nevada law and Clark County courts or require neutral venue.",
+        "effective_rationale_excerpt": "Texas law/jurisdiction; Client is Nevada-based; could increase litigation burden.",
+        "judge_reasoning": "Leah detected this T3 issue. The risk table flagged clause 13.1 as Unfavorable noting Texas law/jurisdiction increases Client litigation burden. The recommended action proposes shifting to Nevada law and Client forum. Amendment score 2: adequate recommendation (Nevada law and forum) but not provided as complete redline text. Rationale score 2: identifies litigation cost increase for Nevada-based Client but does not discuss arbitration as alternative or materiality threshold. Redline quality score 2: clear intent but presented as recommendation rather than complete tracked change."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "Y",
+      "detection_points": 5,
+      "amendment_score": 3,
+      "rationale_score": 3,
+      "redline_quality_score": 3,
+      "quality_points": 9,
+      "total_points": 14,
+      "matched_redline_id": "new_clause_data_protection",
+      "evidence": {
+        "proposed_revision_excerpt": "Data Protection and Security. Consultant shall implement and maintain administrative, physical, and technical safeguards consistent with industry best practices (including ISO 27001 or SOC 2 standards) to protect Client Data from unauthorised access, disclosure, alteration, or destruction. Consultant shall: (a) comply with all applicable data-protection laws (including GDPR, CCPA, and any successor legislation); (b) notify Client in writing within forty-eight (48) hours of discovering any actual or suspected data breach involving Client Data; (c) cooperate fully with Client's investigation and remediation efforts; and (d) indemnify, defend, and hold harmless Client from all losses, claims, and fines arising from Consultant's breach of this section.",
+        "effective_rationale_excerpt": "Given the technology-focused Services, Consultant will likely access or host sensitive Client data. The absence of any data-security obligations leaves Meridian exposed to regulatory penalties, reputational harm, and business interruption. This clause compels Consultant to follow recognised security frameworks, establishes a rapid breach-notification window, and provides a specific indemnity to make Meridian whole in case of Consultant's failure.",
+        "judge_reasoning": "Leah fully detected this missing T2 clause. The new clause proposal includes all GT requirements: GDPR/CCPA compliance, security measures defined (ISO 27001/SOC 2), breach notification (48 hours), controller/processor roles implicit, and indemnity for breaches. Amendment score 3: comprehensive new clause with industry standards, compliance requirements, breach notification, cooperation, and indemnity. Rationale score 3: identifies compliance risk, regulatory penalties, reputational harm, and business interruption with specific standards cited. Redline quality score 3: well-drafted complete clause, industry-standard language, immediately usable."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "N",
+      "detection_points": 0,
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "quality_points": 0,
+      "total_points": 0,
+      "matched_redline_id": null,
+      "evidence": {
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": "Covers IP infringement and gross negligence.",
+        "judge_reasoning": "Leah marked clause 10.1 as Favorable stating it covers IP infringement and gross negligence, missing the GT issue that indemnification is LIMITED to gross negligence (high bar to prove) and does NOT cover ordinary negligence, warranty breaches, or confidentiality breaches. No proposed redline expands indemnification scope to ordinary negligence or other triggers. Detection marked N because Leah classified as Favorable when GT expects Requires Clarification."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "P",
+      "detection_points": 2.5,
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": 1,
+      "quality_points": 3,
+      "total_points": 5.5,
+      "matched_redline_id": "11.1",
+      "evidence": {
+        "proposed_revision_excerpt": "Add requirement for additional-insured status and 30-day notice of cancellation.",
+        "effective_rationale_excerpt": "Good coverage levels, but clause lacks requirement to name Client as additional insured.",
+        "judge_reasoning": "Leah partially detected this T2 issue. The risk table flagged clause 11.1 as Requires Clarification noting lack of additional insured requirement and cancellation notice. The recommendation adds additional insured status and cancellation notice but does not add cyber insurance requirement as GT requires. Amendment score 1: weak attempt - addresses additional insured and cancellation notice but misses cyber insurance requirement entirely. Rationale score 1: notes missing additional insured but does not address cyber insurance gap for data handling. Redline quality score 1: presented as recommendation, missing key cyber insurance component."
+      }
+    }
+  ],
+  "part_b_summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 2,
+      "N": 1,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 1,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 6,
+        "P": 2,
+        "N": 1,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_gate_pass": true,
+    "t1_count": 1,
+    "t1_detected": 1,
+    "total_detection_points": 48.0,
+    "total_quality_points": 62.0,
+    "total_points": 110.0,
+    "max_detection_points": 50.0,
+    "max_quality_points": 132.0,
+    "max_total_points": 182.0,
+    "weighted_score": 48.0,
+    "weighted_max": 50.0,
+    "percentage": 96.0,
+    "additional_issues_count": 19
+  },
+  "combined_summary": {
+    "part_a": {
+      "percentage": 100.0,
+      "critical_failures": 0,
+      "pass_fail": "PASS"
+    },
+    "part_b": {
+      "percentage": 96.0,
+      "t1_gate": "PASS",
+      "pass_fail": "PASS"
+    },
+    "combined": {
+      "pass": true
+    }
+  },
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition – \"Background IP\"",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Clarify that Backgro",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "2.4",
+      "issue_summary": "Client Cooperation",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Add objective criter",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "3.1",
+      "issue_summary": "Fees",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Fix rate(s) in each ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Payment Terms",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Reject vendor redlin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Ownership of Deliverables",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Reject vendor redlin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Background IP Reservation",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Tighten language: cl",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "5.3",
+      "issue_summary": "Third-Party Materials",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Add Consultant indem",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "6.4",
+      "issue_summary": "Return/Destruction",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Insert 30-day return",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "7.1",
+      "issue_summary": "Termination for Convenience",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Reject vendor redlin",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "8.1",
+      "issue_summary": "Mutual Representations",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Narrow scope or add ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "8.3",
+      "issue_summary": "Disclaimer",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Add \"Nothing herein ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "9.1",
+      "issue_summary": "Exclusion of Damages",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Carve-out damages fr",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "9.2",
+      "issue_summary": "Cap on Liability",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Increase to 2× aggre",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "11.1",
+      "issue_summary": "Insurance",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Add requirement for ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "13.1",
+      "issue_summary": "Governing Law",
+      "leah_classification": "❌ Unfavorable",
+      "leah_action": "Shift to Nevada law ",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "⚠️ Requires Clarification",
+      "leah_action": "Insert tiered escala",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "—",
+      "issue_summary": "Force Majeure",
+      "leah_classification": "New Clause",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "—",
+      "issue_summary": "Data Protection & Security",
+      "leah_classification": "New Clause",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    },
+    {
+      "clause": "—",
+      "issue_summary": "Audit Rights",
+      "leah_classification": "New Clause",
+      "leah_action": "ADD",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false
+    }
+  ]
+}

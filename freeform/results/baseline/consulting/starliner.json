@@ -1,0 +1,575 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "starliner",
+    "evaluation_timestamp": "2026-01-25T13:00:00Z",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED"
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "tier": "T1",
+      "detection": "P",
+      "match_strength": "MODERATE",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "5.1",
+        "excerpt": "upon partial payment for any portion of the Deliverables, Client shall have a non-exclusive, royalty-free, irrevocable license to use such Deliverables for its internal business purposes until full payment is made.",
+        "reasoning": "Partial detection: Starliner addresses the payment condition issue (ownership contingent on full payment) but does NOT address the core GT concern - work-for-hire doctrine limitation for independent contractors under 17 U.S.C. No express assignment as fallback, no moral rights waiver. The license-on-partial-payment approach is a workaround, not a fix for the fundamental IP ownership risk.",
+        "judge_reasoning": "[proposed_redlines] upon partial payment for any portion of the Deliverables, Client shall have a non-exclusive, royalty-free, irrevocable license to use such Deliverables for its internal business purposes until full payment is made.",
+        "proposed_revision_excerpt": "upon partial payment for any portion of the Deliverables, Client shall have a non-exclusive, royalty-free, irrevocable license to use such Deliverables for its internal business purposes until full payment is made.",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 4,
+      "quality_points": 3,
+      "total_points": 7,
+      "clause": "5.1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "amendment_score": 1,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-02",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "9.2",
+        "excerpt": "EXCEPT FOR BREACHES OF CONFIDENTIALITY OBLIGATIONS, INFRINGEMENT OR MISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS, OR INDEMNIFICATION OBLIGATIONS, NEITHER PARTY'S TOTAL LIABILITY... SHALL EXCEED TWO TIMES (2X) THE TOTAL FEES",
+        "reasoning": "Starliner adds IP infringement carve-out and increases cap to 2x fees. Risk_table correctly identified cap may be insufficient for serious breaches.",
+        "judge_reasoning": "[proposed_redlines] EXCEPT FOR BREACHES OF CONFIDENTIALITY OBLIGATIONS, INFRINGEMENT OR MISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS, OR INDEMNIFICATION OBLIGATIONS, NEITHER PARTY'S TOTAL LIABILITY... SHALL EXCEED TWO TIMES (2X) THE TOTAL FEES",
+        "proposed_revision_excerpt": "EXCEPT FOR BREACHES OF CONFIDENTIALITY OBLIGATIONS, INFRINGEMENT OR MISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS, OR INDEMNIFICATION OBLIGATIONS, NEITHER PARTY'S TOTAL LIABILITY... SHALL EXCEED TWO TIMES (2X) THE TOTAL FEES",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "9.2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-03",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "9.1",
+        "excerpt": "THIS LIMITATION SHALL NOT APPLY TO (A) BREACHES OF CONFIDENTIALITY OBLIGATIONS, (B) INFRINGEMENT OR MISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS, OR (C) INDEMNIFICATION OBLIGATIONS",
+        "reasoning": "Starliner adds carve-outs for confidentiality, IP, and indemnity - directly addressing GT concern about missing carve-outs.",
+        "judge_reasoning": "[proposed_redlines] THIS LIMITATION SHALL NOT APPLY TO (A) BREACHES OF CONFIDENTIALITY OBLIGATIONS, (B) INFRINGEMENT OR MISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS, OR (C) INDEMNIFICATION OBLIGATIONS",
+        "proposed_revision_excerpt": "THIS LIMITATION SHALL NOT APPLY TO (A) BREACHES OF CONFIDENTIALITY OBLIGATIONS, (B) INFRINGEMENT OR MISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS, OR (C) INDEMNIFICATION OBLIGATIONS",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 5,
+      "total_points": 10,
+      "clause": "9.1",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-04",
+      "tier": "T2",
+      "detection": "P",
+      "match_strength": "MODERATE",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "7.4",
+        "excerpt": "provide reasonable transition assistance to facilitate the transfer or completion of work",
+        "reasoning": "Partial detection: Starliner's 7.4 amendment adds transition assistance (one of GT's key elements). However, risk_table marked 7.1 as Favorable and did not flag concerns about notice period or SOW-level TfC. Credit for addressing transition assistance in a related clause.",
+        "judge_reasoning": "[proposed_redlines] provide reasonable transition assistance to facilitate the transfer or completion of work",
+        "proposed_revision_excerpt": "provide reasonable transition assistance to facilitate the transfer or completion of work",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 2.5,
+      "quality_points": 3,
+      "total_points": 5.5,
+      "clause": "7.4",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "amendment_score": 2,
+      "rationale_score": 1,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-05",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "5.2",
+        "excerpt": "use such Background IP as reasonably necessary to use, maintain, modify, and support the Deliverables for Client's internal business purposes",
+        "reasoning": "Starliner correctly identifies license scope restriction and expands to include maintain, modify, support. Less comprehensive than pathfinder (no sublicensing, no affiliates) but addresses core concern.",
+        "judge_reasoning": "[proposed_redlines] use such Background IP as reasonably necessary to use, maintain, modify, and support the Deliverables for Client's internal business purposes",
+        "proposed_revision_excerpt": "use such Background IP as reasonably necessary to use, maintain, modify, and support the Deliverables for Client's internal business purposes",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "5.2",
+      "issue": "Background IP license scope too narrow",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-06",
+      "tier": "T2",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": null,
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Not mentioned. Risk_table marked 6.4 as Favorable ('Requires prompt return or destruction') and 13.10 as Favorable ('Ensures key provisions survive'). No concern raised about survival period duration, trade secret treatment, or compelled disclosure process.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "6.4 / 13.10",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-07",
+      "tier": "T3",
+      "detection": "P",
+      "match_strength": "WEAK",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "3.4",
+        "excerpt": "Consultant shall provide written notice of any late payment, and Client shall have ten (10) business days to cure such late payment before any interest accrues. Late payments shall bear interest at the rate of one-half percent (0.5%) per month",
+        "reasoning": "Partial detection: Starliner flags 3.4 and proposes changes (cure period, lower interest). However, these address payment mechanics, not the formal invoice dispute mechanism GT expects. Does not add right to withhold payment for non-conforming services.",
+        "judge_reasoning": "[proposed_redlines] Consultant shall provide written notice of any late payment, and Client shall have ten (10) business days to cure such late payment before any interest accrues. Late payments shall bear interest at the rate of one-half percent (0.5%) per month",
+        "proposed_revision_excerpt": "Consultant shall provide written notice of any late payment, and Client shall have ten (10) business days to cure such late payment before any interest accrues. Late payments shall bear interest at the rate of one-half percent (0.5%) per month",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0.5,
+      "quality_points": 2,
+      "total_points": 2.5,
+      "clause": "3.4",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "amendment_score": 1,
+      "rationale_score": 1,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-08",
+      "tier": "T3",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "13.1",
+        "excerpt": "This Agreement shall be governed by and construed in accordance with the laws of the State of Nevada... submit the dispute to non-binding mediation in Las Vegas, Nevada... courts of competent jurisdiction in Clark County, Nevada",
+        "reasoning": "Starliner correctly identifies Texas jurisdiction as unfavorable for Nevada client. Proposed amendments shift to Nevada law and venue, add mediation step.",
+        "judge_reasoning": "[proposed_redlines] This Agreement shall be governed by and construed in accordance with the laws of the State of Nevada... submit the dispute to non-binding mediation in Las Vegas, Nevada... courts of competent jurisdiction in Clark County, Nevada",
+        "proposed_revision_excerpt": "This Agreement shall be governed by and construed in accordance with the laws of the State of Nevada... submit the dispute to non-binding mediation in Las Vegas, Nevada... courts of competent jurisdiction in Clark County, Nevada",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 1,
+      "quality_points": 5,
+      "total_points": 6,
+      "clause": "13.1",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "amendment_score": 3,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-09",
+      "tier": "T2",
+      "detection": "Y",
+      "match_strength": "STRONG",
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": "proposed_redlines",
+        "matched_clause": "Data Protection & Privacy (new)",
+        "excerpt": "Consultant shall comply with all applicable data protection and privacy laws and regulations... implement and maintain reasonable administrative, technical, and physical safeguards... promptly notify Client of any actual or suspected data breach",
+        "reasoning": "Starliner identifies missing data protection clause and proposes new article. Less comprehensive than pathfinder (no CCPA/GDPR citation, no sub-processor controls, no audit rights) but addresses core concern.",
+        "judge_reasoning": "[proposed_redlines] Consultant shall comply with all applicable data protection and privacy laws and regulations... implement and maintain reasonable administrative, technical, and physical safeguards... promptly notify Client of any actual or suspected data breach",
+        "proposed_revision_excerpt": "Consultant shall comply with all applicable data protection and privacy laws and regulations... implement and maintain reasonable administrative, technical, and physical safeguards... promptly notify Client of any actual or suspected data breach",
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 5,
+      "quality_points": 4,
+      "total_points": 9,
+      "clause": "Data Protection & Privacy (new)",
+      "issue": "Data protection / privacy clause missing entirely",
+      "amendment_score": 2,
+      "rationale_score": 2,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-10",
+      "tier": "T2",
+      "detection": "N",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": null,
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Marked favorable when issue exists. Risk_table 10.1: 'Consultant indemnifies Client for IP infringement and gross negligence, which is appropriate. No Action Required.' GT expects concerns about scope limited to gross negligence (ordinary negligence excluded), missing warranty breach coverage, missing confidentiality breach coverage.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "10.1",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    },
+    {
+      "gt_id": "GT-11",
+      "tier": "T2",
+      "detection": "NMI",
+      "match_strength": null,
+      "confidence": "HIGH",
+      "evidence": {
+        "matched_source": null,
+        "matched_clause": null,
+        "excerpt": null,
+        "reasoning": "Not mentioned. Risk_table 11.1 marked as Favorable ('Consultant must maintain robust insurance, protecting Client from risk'). No mention of cyber insurance gap. No proposed redline for 11.1.",
+        "judge_reasoning": null,
+        "proposed_revision_excerpt": null,
+        "effective_rationale_excerpt": null
+      },
+      "detection_points": 0,
+      "quality_points": 0,
+      "total_points": 0,
+      "clause": "N/A (Missing)",
+      "issue": "No cyber insurance requirement",
+      "amendment_score": null,
+      "rationale_score": null,
+      "redline_quality_score": null,
+      "matched_redline_id": null
+    }
+  ],
+  "additional_issues": [
+    {
+      "clause": "1.1",
+      "issue_summary": "Definition of Background IP",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "\"Background IP\" is defined broadly, but does not specify procedures for identifying or disclosing Background IP incorporated into Deliverables. This could create ambiguity regarding what is subject to"
+    },
+    {
+      "clause": "2.4",
+      "issue_summary": "Client Cooperation",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Obligates Client to provide access and cooperation, but does not specify consequences if Consultant fails to perform due to lack of cooperation, potentially shifting excessive risk to Client."
+    },
+    {
+      "clause": "3.4",
+      "issue_summary": "Payment Terms",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "30-day payment terms are standard, but late payment interest could be capped lower for Client’s benefit."
+    },
+    {
+      "clause": "5.1",
+      "issue_summary": "Ownership of Deliverables",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Work-for-hire is favorable, but ownership is contingent on full payment, which could delay Client’s rights even for partial payments."
+    },
+    {
+      "clause": "5.2",
+      "issue_summary": "Background IP License",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "License is perpetual and royalty-free, but limited to use \"solely as part of the Deliverables,\" which may restrict Client’s flexibility."
+    },
+    {
+      "clause": "7.4",
+      "issue_summary": "Effect of Termination",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires payment for all Services and expenses, but does not specify rights to partially completed Deliverables or transition assistance."
+    },
+    {
+      "clause": "8.3",
+      "issue_summary": "Disclaimer of Warranties",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Disclaimer is broad and could undermine express warranties."
+    },
+    {
+      "clause": "13.2",
+      "issue_summary": "Dispute Resolution",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Requires negotiation, then litigation in Texas. No mediation/arbitration option and jurisdiction is unfavorable."
+    },
+    {
+      "clause": "13.4",
+      "issue_summary": "Assignment",
+      "leah_classification": "⚠️",
+      "leah_action": "AMEND",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Allows assignment to affiliates or in connection with M&A, but does not require notice to the non-assigning party."
+    },
+    {
+      "clause": "1.1 \"Background IP\"",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment ensures that Meridian Enterprises Inc. is fully informed about any Consultant-owned intellectual property being incorporated into the Deliverables. By requiring specific identification "
+    },
+    {
+      "clause": "2.4 Client Cooperation",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This change protects Meridian Enterprises Inc. by ensuring that any alleged lack of cooperation is clearly communicated and that the Client is given a fair opportunity to address the issue before Cons"
+    },
+    {
+      "clause": "3.4 Payment Terms",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment reduces Meridian Enterprises Inc.'s financial exposure by lowering the late payment interest rate and requiring Consultant to provide notice and a cure period before charging interest. "
+    },
+    {
+      "clause": "5.1 Ownership of Deliverables",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This revision ensures that Meridian Enterprises Inc. can continue to use Deliverables that have been partially paid for, even if there is a dispute or delay regarding final payment. It prevents Consul"
+    },
+    {
+      "clause": "5.2 Background IP",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This change expands the scope of the license to Background IP, ensuring that Meridian Enterprises Inc. can fully utilize, maintain, and support the Deliverables without unnecessary restrictions. It pr"
+    },
+    {
+      "clause": "7.4 Effect of Termination",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment ensures that Meridian Enterprises Inc. receives the benefit of all work performed up to termination, including in-progress Deliverables, and secures necessary transition assistance, red"
+    },
+    {
+      "clause": "8.3 Disclaimer",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This clarification ensures that the broad disclaimer does not override or undermine the express warranties that Consultant has agreed to, thereby preserving the protection and assurances Meridian Ente"
+    },
+    {
+      "clause": "9.1 Exclusion of Damages",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment carves out critical exceptions to the exclusion of damages, ensuring that Meridian Enterprises Inc. can recover consequential damages in the event of breaches that could cause significa"
+    },
+    {
+      "clause": "9.2 Cap on Liability",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This revision increases the liability cap for standard claims and ensures that there is no cap for the most serious breaches (confidentiality, IP, indemnity). This provides Meridian Enterprises Inc. w"
+    },
+    {
+      "clause": "13.1 Governing Law",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Changing the governing law to Nevada aligns with Meridian Enterprises Inc.'s home jurisdiction, providing a more familiar and potentially favorable legal environment for the Client and reducing the ri"
+    },
+    {
+      "clause": "13.2 Dispute Resolution",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This amendment moves dispute resolution to the Client’s home jurisdiction and introduces mediation before litigation, which can help resolve disputes more efficiently and cost-effectively for Meridian"
+    },
+    {
+      "clause": "13.4 Assignment",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This addition ensures that Meridian Enterprises Inc. is informed of any assignment, allowing the Client to assess potential impacts on its business relationship, compliance, or risk exposure."
+    },
+    {
+      "clause": "Data Protection & Privacy",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This new clause is necessary to ensure that Meridian Enterprises Inc. is protected from regulatory and business risks associated with data privacy and security. It requires Consultant to comply with a"
+    },
+    {
+      "clause": "Force Majeure",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "Adding a force majeure clause protects Meridian Enterprises Inc. from liability for non-performance due to events outside its control and provides a clear process for notification and termination. Thi"
+    },
+    {
+      "clause": "Audit Rights",
+      "issue_summary": "",
+      "leah_classification": "Unfavorable",
+      "leah_action": "",
+      "assessment": "Valid",
+      "proposed_tier": null,
+      "gt_candidate": false,
+      "notes": "This new clause provides Meridian Enterprises Inc. with the ability to verify Consultant’s compliance with key contractual obligations, reducing the risk of undetected breaches or overcharging. It is "
+    }
+  ],
+  "proposed_upgrades": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 5,
+      "P": 4,
+      "N": 1,
+      "NMI": 2
+    },
+    "confidence_counts": {
+      "HIGH": 10,
+      "MEDIUM": 1,
+      "LOW": 0
+    },
+    "additional_valid_new": 6,
+    "additional_overlaps": 0,
+    "additional_noise": 0,
+    "proposed_upgrades": 0,
+    "t1_detected": false,
+    "t1_gate_pass": false,
+    "total_detection_points": 28.0,
+    "total_quality_points": 31,
+    "total_points": 59.0,
+    "max_detection_points": 50,
+    "weighted_max": 50,
+    "additional_issues_count": 24,
+    "t1_all_detected": false,
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 4,
+        "P": 1,
+        "N": 1,
+        "NMI": 2
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      }
+    }
+  }
+}
