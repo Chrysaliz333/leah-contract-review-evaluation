@@ -1,0 +1,285 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://leah.ai/schemas/evaluation/mode-config.json",
+  "title": "Leah Evaluation Mode Configuration",
+  "description": "Schema for evaluation mode configuration files",
+  "type": "object",
+  "required": ["mode", "display_name", "description", "paths", "gt_structure"],
+  "properties": {
+    "mode": {
+      "type": "string",
+      "enum": ["freeform", "freeform_stacking", "rules", "rules_stacking", "guidelines"],
+      "description": "The evaluation mode identifier"
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable name for the mode"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Description of what this mode evaluates"
+    },
+    "contracts": {
+      "oneOf": [
+        {"type": "array", "items": {"type": "string"}},
+        {"type": "null"}
+      ],
+      "description": "List of contract identifiers (for modes with fixed contract list)"
+    },
+    "contract_types": {
+      "oneOf": [
+        {"type": "array", "items": {"type": "string"}},
+        {"type": "null"}
+      ],
+      "description": "List of contract type identifiers (for modes organized by type)"
+    },
+    "contracts_per_type": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Number of contracts per type (for rules/guidelines modes)"
+    },
+    "models": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1,
+      "description": "List of model identifiers to evaluate"
+    },
+    "paths": {
+      "type": "object",
+      "required": ["base_dir", "ground_truth"],
+      "properties": {
+        "base_dir": {
+          "type": "string",
+          "description": "Base directory for this mode's data"
+        },
+        "canonical_json": {
+          "type": "string",
+          "description": "Directory name for canonical JSON files"
+        },
+        "canonical_json_pattern": {
+          "type": "string",
+          "description": "Pattern for canonical JSON directory names with {env} placeholder"
+        },
+        "ground_truth": {
+          "type": "string",
+          "description": "Directory name for ground truth files"
+        },
+        "gt_pattern": {
+          "oneOf": [
+            {"type": "string"},
+            {"type": "object"}
+          ],
+          "description": "Pattern for ground truth file names"
+        },
+        "rule_files": {
+          "type": "string",
+          "description": "Directory for rule CSV files (rules modes only)"
+        },
+        "redlined_contracts": {
+          "type": "string",
+          "description": "Directory for redlined contracts (stacking modes only)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "gt_structure": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["flat", "dual_part", "per_contract_type"],
+          "description": "Structure type of ground truth files"
+        },
+        "files": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "List of GT filenames (for per_contract_type)"
+        },
+        "item_key": {
+          "type": "string",
+          "description": "Key containing the array of GT items"
+        },
+        "id_field": {
+          "type": "string",
+          "description": "Field name for unique identifier"
+        },
+        "tier_field": {
+          "type": "string",
+          "description": "Field name for tier classification"
+        },
+        "clause_field": {
+          "type": "string",
+          "description": "Field name for clause reference"
+        },
+        "issue_field": {
+          "type": "string",
+          "description": "Field name for issue description"
+        },
+        "extra_fields": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Additional fields to extract"
+        },
+        "parts": {
+          "type": "object",
+          "description": "Part definitions for dual_part structure"
+        }
+      },
+      "additionalProperties": false
+    },
+    "evaluation_structure": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["flat", "dual_part"],
+          "description": "Structure type of evaluation results"
+        },
+        "evaluations_key": {
+          "type": "string",
+          "description": "Key containing evaluations array"
+        },
+        "issue_array_field": {
+          "type": "string",
+          "description": "Field name for issues array"
+        },
+        "detection_field": {
+          "type": "string",
+          "description": "Field name for detection status"
+        },
+        "parts": {
+          "type": "object",
+          "description": "Part definitions for dual_part structure"
+        }
+      },
+      "additionalProperties": false
+    },
+    "quality_fields": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "List of quality score field names"
+    },
+    "detection_points": {
+      "type": "object",
+      "description": "Point values for detection outcomes",
+      "additionalProperties": true
+    },
+    "quality_scores": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "Whether quality scoring is enabled"
+        },
+        "part_b_only": {
+          "type": "boolean",
+          "description": "Apply quality scoring only to Part B (stacking modes)"
+        },
+        "dimensions": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "List of quality dimensions to score"
+        },
+        "max_per_dimension": {
+          "oneOf": [
+            {"type": "number"},
+            {"type": "object"}
+          ],
+          "description": "Maximum score per dimension (number or tier-specific object)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "gates": {
+      "type": "object",
+      "description": "Validation gates configuration",
+      "additionalProperties": true
+    },
+    "additional_issues": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "Whether to capture additional issues"
+        },
+        "classifications_to_capture": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Issue classifications to include"
+        },
+        "skip_classifications": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Issue classifications to skip"
+        },
+        "gt_sources": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Ground truth sources to aggregate (dual_part modes)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "semantic_matching": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "Whether semantic matching is enabled"
+        },
+        "applies_to": {
+          "type": "string",
+          "description": "Which part semantic matching applies to"
+        },
+        "model": {
+          "type": "string",
+          "description": "Model to use for semantic matching"
+        },
+        "max_tokens": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Maximum tokens for semantic matching"
+        },
+        "note": {
+          "type": "string",
+          "description": "Additional notes about semantic matching behavior"
+        }
+      },
+      "additionalProperties": false
+    },
+    "scoring": {
+      "type": "object",
+      "description": "Scoring configuration (rules modes)",
+      "additionalProperties": true
+    },
+    "detection_values": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Allowed detection values"
+    },
+    "actions": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Allowed action values"
+    },
+    "pass_criteria": {
+      "type": "object",
+      "description": "Pass/fail criteria configuration",
+      "additionalProperties": true
+    },
+    "critical_failures": {
+      "type": "object",
+      "description": "Critical failure definitions",
+      "additionalProperties": true
+    },
+    "scope_constraint": {
+      "type": "string",
+      "description": "Scope constraint for evaluation"
+    }
+  },
+  "additionalProperties": false
+}

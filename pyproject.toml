@@ -12,7 +12,11 @@ dependencies = [
     "jupyter>=1.0.0",
     "pandas>=2.0.0",
     "matplotlib>=3.7.0",
+    "jsonschema>=4.17.0",
 ]
+
+[project.scripts]
+leah-eval = "framework.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -1,0 +1,16 @@
+{
+  "ground_truth": [
+    {
+      "gt_id": "GT001",
+      "gt_tier": "T1",
+      "clause": "Section 5.1",
+      "issue": "Unlimited liability exposure"
+    },
+    {
+      "gt_id": "GT002",
+      "gt_tier": "T2",
+      "clause": "Section 8.3",
+      "issue": "Broad indemnity obligations"
+    }
+  ]
+}

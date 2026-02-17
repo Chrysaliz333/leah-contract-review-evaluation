@@ -1,0 +1,9 @@
+{
+  "ground_truth": [
+    {
+      "gt_id": "GT001",
+      "gt_tier": "T1"
+      "clause": "Missing comma above"
+    }
+  ]
+}

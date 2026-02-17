@@ -27,5 +27,8 @@ build/
 # pytest
 .pytest_cache/
 
+# Archive
+_archive/
+
 # Environment
 .env
