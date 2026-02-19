@@ -5,6 +5,8 @@ Provides high-level API for running evaluations end-to-end.
 """
 
 import json
+import logging
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 import warnings
@@ -14,6 +16,8 @@ from .scripts.gt_loader import GTLoader
 from .validators.pre_eval import validate_pre_evaluation
 from .validators.pre_aggregate import validate_pre_aggregation
 from .validators.pre_workbook import validate_pre_workbook
+
+logger = logging.getLogger(__name__)
 
 
 class EvaluationPipeline:
@@ -159,33 +163,119 @@ class EvaluationPipeline:
         """
         Score a single evaluation using mode-specific scoring logic.
 
-        Note: This is a placeholder. Actual scoring logic varies by mode
-        and should be implemented per-mode or called from existing scoring modules.
+        Current implementation: Loads pre-scored evaluation JSON.
+        Future: Implement raw model output → scored evaluation transformation.
 
         Args:
             contract: Contract identifier
             model: Model identifier
-            canonical_json_path: Path to canonical JSON output
+            canonical_json_path: Path to scored evaluation JSON
+                (currently expects already-scored evaluation with gt_evaluations array)
             contract_type: Contract type (for rules/guidelines modes)
 
         Returns:
             Dictionary containing scored evaluation with summary
+
+        Raises:
+            FileNotFoundError: If canonical JSON file doesn't exist
+            json.JSONDecodeError: If file contains invalid JSON
+            KeyError: If required fields missing from scored evaluation
         """
-        # Load GT
+        # Load GT for validation
         gt_result = self.load_ground_truth(contract, contract_type=contract_type)
+        gt_issues = gt_result["data"].get("ground_truth", [])
 
-        # Load canonical JSON
-        with open(canonical_json_path) as f:
-            canonical_json = json.load(f)
+        # Load scored evaluation (canonical JSON)
+        try:
+            with open(canonical_json_path) as f:
+                scored_eval = json.load(f)
+        except FileNotFoundError:
+            raise FileNotFoundError(
+                f"Scored evaluation not found: {canonical_json_path}\n"
+                f"Expected structure: {{contract}}/{{model}}.json"
+            )
+        except json.JSONDecodeError as e:
+            raise json.JSONDecodeError(
+                f"Invalid JSON in scored evaluation: {canonical_json_path}",
+                e.doc, e.pos
+            )
 
-        # Mode-specific scoring would go here
-        # For now, return placeholder structure
+        # Validate structure
+        if "gt_evaluations" not in scored_eval:
+            raise KeyError(
+                f"Scored evaluation missing 'gt_evaluations' array: {canonical_json_path}\n"
+                f"Found keys: {list(scored_eval.keys())}"
+            )
+
+        # Verify GT coverage
+        eval_gt_ids = {e.get("gt_id") for e in scored_eval["gt_evaluations"]}
+        expected_gt_ids = {gt.get("gt_id") for gt in gt_issues}
+
+        missing = expected_gt_ids - eval_gt_ids
+        if missing:
+            logger.warning(
+                f"Scored evaluation missing GT IDs: {missing}\n"
+                f"Contract: {contract}, Model: {model}"
+            )
+
+        # Add summary if not present
+        if "summary" not in scored_eval:
+            scored_eval["summary"] = self._calculate_summary(
+                scored_eval["gt_evaluations"],
+                gt_issues
+            )
+
+        return scored_eval
+
+    def _calculate_summary(
+        self,
+        gt_evaluations: List[Dict[str, Any]],
+        gt_issues: List[Dict[str, Any]]
+    ) -> Dict[str, Any]:
+        """Calculate summary statistics for scored evaluation."""
+        from framework.scoring import calculate_detection_points
+
+        tier_config = self.config.get("detection_points", {})
+
+        total_detection_points = 0.0
+        total_quality_points = 0.0
+        detection_counts = {"Y": 0, "P": 0, "N": 0, "NMI": 0}
+        t1_gate_pass = True
+
+        for eval_item in gt_evaluations:
+            # Detection points
+            detection = eval_item.get("detection", "NMI")
+            tier = eval_item.get("tier", "T3")
+            detection_points = calculate_detection_points(detection, tier, tier_config)
+            total_detection_points += detection_points
+
+            # Quality points
+            quality_dims = self.config.get("quality_scores", {}).get("dimensions", [])
+            for dim in quality_dims:
+                total_quality_points += eval_item.get(dim, 0)
+
+            # Detection counts
+            if detection in detection_counts:
+                detection_counts[detection] += 1
+
+            # T1 gate check
+            if tier == "T1" and detection not in ("Y", "P"):
+                t1_gate_pass = False
+
+        # Calculate max possible points
+        max_detection_points = sum(
+            tier_config.get(gt.get("tier", "T3"), {}).get("Y", 0)
+            for gt in gt_issues
+        )
+
         return {
-            "contract": contract,
-            "model": model,
-            "gt_count": len(gt_result["data"].get("ground_truth", [])),
-            "scoring": "not_implemented",
-            "note": "Use mode-specific scoring functions from framework/scoring"
+            "total_detection_points": total_detection_points,
+            "max_detection_points": max_detection_points,
+            "total_quality_points": total_quality_points,
+            "total_points": total_detection_points + total_quality_points,
+            "detection_counts": detection_counts,
+            "t1_gate_pass": t1_gate_pass,
+            "weighted_recall": total_detection_points / max_detection_points if max_detection_points > 0 else 0.0
         }
 
     def aggregate_results(
@@ -204,18 +294,99 @@ class EvaluationPipeline:
             Dictionary with aggregation summary
         """
         # Validate runs first
+        logger.info(f"Validating {len(run_dirs)} runs before aggregation")
         self.validate_runs(run_dirs)
 
-        # Create output directory
-        output_dir.mkdir(parents=True, exist_ok=True)
+        # Collect all evaluations by (contract, model) key
+        aggregated = {}
+        run_count = 0
 
-        # Aggregation logic would go here
-        # This is a placeholder for the actual aggregation implementation
+        for run_dir in run_dirs:
+            eval_dir = run_dir / "evaluations"
+            if not eval_dir.exists():
+                logger.warning(f"Evaluation directory not found: {eval_dir}, skipping")
+                continue
+
+            run_count += 1
+            logger.info(f"Processing run {run_count}: {run_dir}")
+
+            for contract_dir in eval_dir.iterdir():
+                if not contract_dir.is_dir():
+                    continue
+
+                contract = contract_dir.name
+
+                for model_file in contract_dir.glob("*.json"):
+                    model = model_file.stem
+                    key = (contract, model)
+
+                    try:
+                        with open(model_file) as f:
+                            evaluation = json.load(f)
+                    except (json.JSONDecodeError, OSError) as e:
+                        logger.error(f"Failed to load {model_file}: {e}")
+                        continue
+
+                    if key not in aggregated:
+                        aggregated[key] = {
+                            "runs": [],
+                            "contracts_models": key
+                        }
+
+                    aggregated[key]["runs"].append({
+                        "run_dir": str(run_dir),
+                        "evaluation": evaluation
+                    })
+
+        if not aggregated:
+            logger.warning("No evaluations found in any run directory")
+            return {
+                "files_written": 0,
+                "contracts": set(),
+                "models": set(),
+                "message": "No evaluations to aggregate"
+            }
+
+        # Write aggregated results
+        output_dir.mkdir(parents=True, exist_ok=True)
+        contracts_processed = set()
+        models_processed = set()
+
+        for (contract, model), data in aggregated.items():
+            contract_dir = output_dir / contract
+            contract_dir.mkdir(exist_ok=True)
+
+            output_file = contract_dir / f"{model}.json"
+
+            # Take the most recent evaluation (last run) as primary
+            primary_eval = data["runs"][-1]["evaluation"]
+
+            # Add aggregation metadata
+            aggregated_result = {
+                **primary_eval,
+                "aggregation_meta": {
+                    "num_runs": len(data["runs"]),
+                    "run_dirs": [r["run_dir"] for r in data["runs"]],
+                    "aggregated_at": datetime.now().isoformat()
+                }
+            }
+
+            with open(output_file, "w") as f:
+                json.dump(aggregated_result, f, indent=2)
+
+            contracts_processed.add(contract)
+            models_processed.add(model)
+
+        logger.info(
+            f"Aggregation complete: {len(aggregated)} files written, "
+            f"{len(contracts_processed)} contracts, {len(models_processed)} models"
+        )
 
         return {
-            "runs_aggregated": len(run_dirs),
-            "output_dir": str(output_dir),
-            "status": "placeholder_implementation"
+            "files_written": len(aggregated),
+            "contracts": sorted(contracts_processed),
+            "models": sorted(models_processed),
+            "output_dir": str(output_dir)
         }
 
     def generate_workbook(
@@ -236,12 +407,107 @@ class EvaluationPipeline:
             Path to generated workbook
         """
         # Validate prerequisites
+        logger.info(f"Validating aggregated results in {aggregated_dir}")
         self.validate_prerequisites("pre_workbook", run_dirs=[aggregated_dir])
 
-        # Workbook generation logic would go here
-        # This is a placeholder for the actual workbook generation
+        # Import workbook generation dependencies
+        try:
+            import openpyxl
+            from openpyxl import Workbook
+            from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
+        except ImportError:
+            raise ImportError(
+                "openpyxl required for workbook generation. "
+                "Install with: pip install openpyxl"
+            )
 
+        # Discover contracts and models from aggregated directory
+        contracts = []
+        models = set()
+
+        for item in sorted(aggregated_dir.iterdir()):
+            if item.is_dir():
+                contracts.append(item.name)
+                for json_file in item.glob("*.json"):
+                    models.add(json_file.stem)
+
+        models = sorted(models)
+
+        logger.info(
+            f"Found {len(contracts)} contracts and {len(models)} models "
+            f"in {aggregated_dir}"
+        )
+
+        if not contracts or not models:
+            raise ValueError(
+                f"No evaluations found in {aggregated_dir}. "
+                "Expected structure: contract_name/model_name.json"
+            )
+
+        # Create workbook
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "Summary"
+
+        # Styles
+        header_fill = PatternFill(
+            start_color="1F4E79", end_color="1F4E79", fill_type="solid"
+        )
+        header_font = Font(bold=True, color="FFFFFF")
+
+        # Write header
+        ws["A1"] = f"{self.config['display_name']} Evaluation - {env}"
+        ws["A1"].font = Font(bold=True, size=14)
+
+        ws["A3"] = "Summary"
+        ws["A3"].font = Font(bold=True, size=12)
+
+        # Write contracts and models summary
+        row = 5
+        ws[f"A{row}"] = "Contracts:"
+        ws[f"B{row}"] = ", ".join(contracts)
+        row += 1
+
+        ws[f"A{row}"] = "Models:"
+        ws[f"B{row}"] = ", ".join(models)
+        row += 2
+
+        ws[f"A{row}"] = "Contract"
+        ws[f"B{row}"] = "Model"
+        ws[f"C{row}"] = "Detection Points"
+        ws[f"D{row}"] = "T1 Gate"
+
+        for col in ["A", "B", "C", "D"]:
+            cell = ws[f"{col}{row}"]
+            cell.fill = header_fill
+            cell.font = header_font
+
+        row += 1
+
+        # Load and summarize each evaluation
+        for contract in contracts:
+            for model in models:
+                eval_path = aggregated_dir / contract / f"{model}.json"
+                if not eval_path.exists():
+                    continue
+
+                with open(eval_path) as f:
+                    evaluation = json.load(f)
+
+                summary = evaluation.get("summary", {})
+
+                ws[f"A{row}"] = contract
+                ws[f"B{row}"] = model
+                ws[f"C{row}"] = summary.get("total_detection_points", 0)
+                ws[f"D{row}"] = "PASS" if summary.get("t1_gate_pass", False) else "FAIL"
+
+                row += 1
+
+        # Save workbook
         output_path.parent.mkdir(parents=True, exist_ok=True)
+        wb.save(output_path)
+
+        logger.info(f"Workbook generated: {output_path}")
 
         return output_path
 
