@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "contract": "services",
+    "model_id": "haiku35",
+    "evaluation_timestamp": "2026-02-03T21:05:29.610801+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-3-5-haiku-20241022",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 2231,
+    "raw_output_tokens": 339,
+    "raw_latency_seconds": 17.88
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Exclusion of Damages - No Carve-outs",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Exclusion of consequential damages",
+        "judge_reasoning": "The review mentions the exclusion of consequential damages but fails to identify the key risk that there are no carve-outs for willful misconduct, gross negligence, or confidentiality breaches, which is the core concern of the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Liability Cap SOW-Based - Creates Variable Exposure Per Engagement",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Liability cap limited to project fees",
+        "judge_reasoning": "The review mentions that liability is capped at project fees, but fails to identify the core structural risk that per-SOW caps create variable exposure based on engagement size, which could leave the client vulnerable on small SOWs with major deliverables."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Agency IP License Restrictive",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions IP provisions generally and notes that 'Agency retains rights to its pre-existing IP', but does not identify or discuss the restrictive nature of the Agency IP license clause 5.2, particularly the limitation that Agency IP can only be used 'solely as part of the Deliverables' without modification or sublicensing rights."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Silence = Rejection (UNUSUAL)",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the unusual 'silence = rejection' provision in clause 6.1, nor does it discuss the problematic acceptance/rejection process for deliverables that could create perpetual revision loops."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review identifies the 1.5% monthly interest rate and suggests negotiating it, but fails to explain why this is problematic (18% APR, lack of grace period) or provide specific guidance on better terms."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "Delays - Open-ended Fees",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the issue of open-ended additional fees for client delays. While the review covers financial terms and other contract aspects, it fails to identify the specific risk regarding uncapped additional fees that may apply when clients cause project delays."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T2",
+      "issue": "Ownership Excludes Non-Final Materials",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "While the review mentions that 'Client owns final approved Deliverables' under IP rights, it does not identify or discuss the risk that this excludes non-final materials like drafts, concepts, and underlying work that the client may need access to."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "Preliminary Work Retained by Agency",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "While the review mentions intellectual property provisions and notes that the Agency retains rights to pre-existing IP and has portfolio rights, it does not identify or discuss the specific risk that preliminary work (concepts, sketches, drafts) remains Agency property even when paid for by the Client. The review fails to recognize this as a potential concern for the Client."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Use in Commerce = Final Acceptance",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the problematic acceptance provision in clause 6.3 that makes using deliverables in commerce constitute final acceptance. The review focuses on general contract strengths and areas for consideration but completely misses this specific risk that could waive the client's right to reject defective deliverables."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Warranties - No Duration or Specific Remedy",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention warranties, warranty duration, or remedies for warranty breaches at all. While it notes general strengths and potential areas of consideration, it completely misses the specific warranty issues in clause 8.1."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "8.3",
+      "tier": "T2",
+      "issue": "Broad Disclaimer",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention warranty disclaimers, merchantability, fitness for purpose, or any concerns about broad disclaimers undermining express warranties. While it discusses liability protections generally, it does not identify the specific warranty disclaimer risk in clause 8.3."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality - 3 Years Only",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions confidentiality as a provision but does not discuss the specific 3-year survival period or any concerns about its adequacy for trade secrets or creative work. The confidentiality issue identified in GT-12 is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "12.4",
+      "tier": "T2",
+      "issue": "Termination - No Data Return",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Consider adding more specifics about termination scenarios",
+        "judge_reasoning": "The review mentions a general need for more termination specifics but doesn't identify the core issue of missing data return provisions or transition assistance requirements upon termination."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "13.2",
+      "tier": "T2",
+      "issue": "Mandatory Arbitration in NY",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Review the arbitration clause for potential modifications",
+        "judge_reasoning": "The review mentions the arbitration clause and suggests it should be reviewed for modifications, but it doesn't specifically identify the core issues of mandatory NY arbitration, lack of mediation step, or inconvenience for non-NY clients."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection Clause",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention data protection, privacy obligations, GDPR/CCPA compliance, or any concerns about the absence of data protection clauses. While it notes confidentiality provisions, it fails to identify the missing data protection requirements."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention insurance requirements, coverage, or any related concerns about the agency's financial protection. While it discusses liability protections and caps, it fails to identify the absence of insurance requirements as a risk issue."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.4",
+      "tier": "T3",
+      "issue": "Portfolio Rights - Subject to Confidentiality",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Agency has portfolio rights",
+        "judge_reasoning": "The review mentions that the agency has portfolio rights but fails to identify the key risk element that these rights are 'subject to any confidentiality restrictions,' which actually provides some protection to the client. The review treats this as a simple highlight rather than analyzing the nuanced protection this clause provides."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "1.1",
+      "tier": "T3",
+      "issue": "Agency IP Definition Broad",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "While the review mentions that 'Agency retains rights to its pre-existing IP' under intellectual property highlights, it does not identify or discuss the specific risk that the Agency IP definition is overly broad and may capture project-specific developments that should belong to the client."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Change Orders - No Response Timeline",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention change orders, response timelines, or any issues related to the process for handling changes to scope, timeline, or fees. While the review touches on other aspects of the contract, it completely misses this specific risk about the lack of response deadlines for change order requests."
+      }
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Expenses - Documentation Unclear",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions financial terms including payment periods and late fees, but does not discuss expense reimbursement, documentation requirements, or the specific issue of unclear receipt requirements for pre-approved expenses."
+      }
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Deposit Triggers Unclear",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "While the review mentions 'Potential 50% deposit for project work' in the Financial Terms section, it does not identify or discuss the core risk issue that the deposit conditions are unclear or that it's uncertain when deposits may be required."
+      }
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Revisions - No Definition",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention anything about revisions, the scope of what constitutes a revision, or any issues with undefined terms related to deliverable modifications. The ground truth issue specifically concerns the lack of definition for what constitutes a 'revision' in clause 6.2, but this is not addressed anywhere in the review."
+      }
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "13.1",
+      "tier": "T3",
+      "issue": "Governing Law - No Flexibility",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention governing law, jurisdiction, or New York law anywhere in the text. While it mentions 'dispute resolution' in passing, it does not identify or discuss the specific risk that New York law governs without client jurisdiction flexibility."
+      }
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "N/A (Missing)",
+      "tier": "T3",
+      "issue": "No Force Majeure",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention force majeure provisions, excuses for uncontrollable events, or risks related to delays from disasters/pandemics. The review focuses on other contract aspects but completely misses this important missing provision."
+      }
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "N/A (Missing)",
+      "tier": "T3",
+      "issue": "No Service Level Commitments",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention any concerns about missing service level agreements, response times, quality metrics, or escalation procedures. It focuses on other contractual aspects but completely overlooks the absence of SLA commitments."
+      }
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "13.3",
+      "tier": "T3",
+      "issue": "Assignment - No M&A Exception (Mutual)",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention assignment clauses, assignment restrictions, or any related concerns about parties' ability to assign their rights under the contract. The ground truth issue about mutual assignment restrictions without M&A exceptions is not addressed anywhere in the review."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 0,
+      "P": 6,
+      "N": 20,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 2,
+        "N": 2,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 2,
+        "N": 9,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 0,
+        "P": 2,
+        "N": 9,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "t1_detected": 2,
+    "total_detection_points": 14.0,
+    "weighted_max": 98,
+    "detection_rate": 0.2308
+  }
+}

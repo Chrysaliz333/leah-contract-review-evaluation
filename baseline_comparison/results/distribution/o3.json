@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "contract": "distribution",
+    "model_id": "o3",
+    "evaluation_timestamp": "2026-02-03T20:40:01.555054+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "o3",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1648,
+    "raw_output_tokens": 2349,
+    "raw_latency_seconds": 159.81
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.1 / 3.2",
+      "tier": "T1",
+      "issue": "Non-exclusive appointment with Supplier competition rights",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "3.2(c) allows Supplier to sell outside the Territory to customers who later 'resell' inside. This undercuts Distributor's market and should be deleted or tightly limited.",
+        "judge_reasoning": "The review clearly identifies the core risk of non-exclusive distribution rights, specifically highlighting how clause 3.2(c) allows indirect competition through third-party resellers, which undermines the distributor's territorial position."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Unilateral price changes with no cap",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "PRICE-CHANGE CLAUSE \u2013 60-day notice but no cap/frequency limit. Combined with Minimum Purchases, this can squeeze Distributor margins... 5.1 \u2013 Require price increases to be (i) tied to objective factors (raw material index, inflation), (ii) no more than X% per 12-month period, or (iii) subject to mutual agreement.",
+        "judge_reasoning": "The review clearly identifies the unilateral price change risk, noting the 60-day notice period with no cap or frequency limit, and recommends adding price increase limits and objective criteria. It also recognizes how this combines with minimum purchase obligations to create financial risk for the distributor."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Mandatory minimum purchase with automatic breach trigger",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "MINIMUM PURCHASE COMMITMENT \u2013 $100K/quarter with breach after two quarters may be onerous for a new distributor, especially without market-development support or price protection. [...] Assess whether $400K/year is commercially realistic. At minimum, add (a) phase-in schedule, (b) force-majeure carve-out, and (c) ability to offset shortfall with subsequent quarters.",
+        "judge_reasoning": "The review clearly identifies the core risk of the mandatory minimum purchase requirement with automatic breach after two consecutive quarters, and specifically suggests remediation measures like phase-in schedules and force majeure carve-outs that align with the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "13.3",
+      "tier": "T1",
+      "issue": "Asymmetric assignment rights",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "13.3 \u2013 Supplier can assign; Distributor cannot. Seek mutual assignment rights in connection with merger/acquisition or to affiliates.",
+        "judge_reasoning": "The review clearly identifies the asymmetric assignment rights issue, noting that the Supplier can assign while the Distributor cannot, and specifically recommends seeking mutual assignment rights for merger/acquisition scenarios."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Low liability cap for both parties",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "10.1/10.2 \u2013 Combined with lack of indemnification, Distributor bears significant uninsured product-liability risk. Carve-outs typically negotiated: death, personal injury, gross negligence, willful misconduct, IP infringement, confidentiality breach, unpaid invoices.",
+        "judge_reasoning": "The review identifies the liability limitation clause and suggests carve-outs, but fails to mention that the cap applies to both parties equally or that the 12-month amount may be insufficient for product liability claims and recalls."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause - Distributor exposed to product claims",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "NO INDEMNITIES \u2013 Neither party indemnifies the other for third-party claims (e.g., product liability, IP infringement).",
+        "judge_reasoning": "The review explicitly identifies the absence of indemnification provisions as the #1 key risk area, specifically mentioning product liability and IP infringement claims. It also recommends adding supplier indemnification for defective products and IP infringement in the additional recommendations section."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "FOB shipping terms shift all transit risk to Distributor",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "4.2 \u2013 FOB Supplier's facility shifts risk to Distributor immediately. If Distributor has limited control over carriers, request FOB Destination or at least FCA with Supplier arranging carriage.",
+        "judge_reasoning": "The review clearly identifies the FOB shipping terms risk, noting that FOB Supplier's facility shifts all risk to the Distributor and recommends negotiating FOB Destination terms instead. This directly addresses the ground truth issue about transit risk allocation."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "5.3 \u2013 1.5 %/month = 18 % APR. Ensure this does not violate usury laws in some jurisdictions.",
+        "judge_reasoning": "The review clearly identifies the high interest rate issue by calculating the 18% APR and flagging it as potentially problematic under usury laws. While it doesn't suggest specific alternatives like reducing to 1% or adding grace periods, it demonstrates clear awareness of the excessive rate concern."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Marketing approval required for all materials",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "7.2 \u2013 Supplier approval of \"all\" materials may impede quick campaigns. Suggest deemed approval after X business days.",
+        "judge_reasoning": "The review clearly identifies the core risk that requiring approval for all marketing materials could delay time-sensitive campaigns, and suggests the exact remedy mentioned in the ground truth (deemed approval mechanism)."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.3",
+      "tier": "T2",
+      "issue": "Termination effects lack buyback and transition",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "11.3(c) \u2013 90-day sell-off may be extended to 6\u201312 months or until inventory depletion.",
+        "judge_reasoning": "The review identifies the 90-day sell-off period and suggests extending it, but fails to identify the core risks of no inventory buyback right, no transition assistance, and no refund of prepaid amounts that leave the distributor stuck with costs after termination."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Supplier can reject purchase orders - no supply obligation",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review discusses Article 4 orders and delivery but does not mention the supplier's right to reject purchase orders or the lack of supply obligation. It only notes technical issues like minimum lead times and partial shipments, missing the core risk that the supplier can refuse orders even within forecasted quantities."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Territory restriction on outside sales",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the territory restriction on actively soliciting sales or establishing operations outside the Territory. While it briefly discusses Article 3 - Territory & Exclusivity, it focuses on a different issue (Supplier's right to sell outside Territory to customers who resell inside) rather than the Distributor's restriction on active solicitation outside the Territory."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consequential Damages Exclusion Missing Critical Carve-Outs",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Carve-outs typically negotiated: death, personal injury, gross negligence, willful misconduct, IP infringement, confidentiality breach, unpaid invoices.",
+        "judge_reasoning": "The review identifies the limitation of liability clause and mentions that carve-outs are typically negotiated, listing several specific ones including IP infringement and confidentiality breach. However, it doesn't clearly identify that these carve-outs are missing from the current contract or explain the specific risk this creates in the distribution context."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 8,
+      "P": 3,
+      "N": 2,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 5,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 2,
+        "P": 3,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 6,
+    "t1_detected": 5,
+    "total_detection_points": 58.5,
+    "weighted_max": 75,
+    "detection_rate": 0.8462
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "haiku35",
+    "evaluation_timestamp": "2026-02-03T20:55:45.723413+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-3-5-haiku-20241022",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1605,
+    "raw_output_tokens": 316,
+    "raw_latency_seconds": 12.65
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Section 10.1 is marked [Reserved] - this might need specific exit/buyout provisions",
+        "judge_reasoning": "The review clearly identifies that Section 10.1 is reserved and explicitly suggests it needs exit/buyout provisions, which directly matches the ground truth issue about the missing exit/buyout mechanism."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "No explicit mechanism for handling deadlocks in Investment Committee",
+        "judge_reasoning": "The review directly identifies the deadlock risk by noting there's no mechanism for handling deadlocks in the Investment Committee, which aligns with the ground truth issue about unanimous consent creating deadlock risk without escalation mechanisms."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the cross-reference error in Section 3.3 or discuss any issues with default provisions for capital call failures. The review focuses on other structural aspects but completely misses this specific T1 risk."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Profit Sharing: 50/50 split regardless of capital contribution",
+        "judge_reasoning": "The review explicitly identifies the 50/50 profit split regardless of capital contribution in the 'Key Provisions to Note' section, which is the exact risk described in the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention liability limitations, damage caps, or unlimited liability exposure anywhere. While it covers many partnership aspects, it completely misses this fundamental risk allocation issue."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention indemnification provisions, mutual indemnification for breach, third-party claim coverage, or regulatory protection at all. Despite being a comprehensive review, it completely overlooks this critical missing provision."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the 60-day exclusivity period from clause 5.3 or any concerns about its duration being insufficient for complex due diligence. The review focuses on other aspects of the partnership agreement but completely omits this specific risk."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the post-termination continuation issue where partners must manage existing investments until liquidation, which could create an indefinite forced relationship. While the review mentions termination provisions generally, it fails to identify this specific risk."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Detailed performance metrics or partnership evaluation not specified",
+        "judge_reasoning": "The review mentions lack of performance metrics/evaluation but misses the specific information rights and reporting requirements issue. It doesn't identify the core problem of no formal reporting obligations, portfolio financial statements, or material event notices despite monthly Investment Committee meetings being required."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the non-solicitation clause or any restrictions on hiring employees between partners. While it references 'non-compete clauses' in passing, it does not specifically identify or discuss the employee solicitation restrictions in Section 11.2."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Strong confidentiality and non-compete clauses' in passing but does not identify the specific inadequacy of the 5-year survival period for trade secrets protection. It fails to recognize that investment strategies and deal flow information may require indefinite protection beyond the 5-year limit."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions the 5-year auto-renewing term structure but does not identify any concerns about the 90-day non-renewal notice period being insufficient for partnership wind-down or discuss any issues with transition planning requirements."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 3,
+      "P": 1,
+      "N": 8,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 0,
+        "N": 3,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 0,
+        "N": 2,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 0,
+        "P": 1,
+        "N": 3,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 6,
+    "t1_detected": 3,
+    "total_detection_points": 26.5,
+    "weighted_max": 70,
+    "detection_rate": 0.3333
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "contract": "distribution",
+  "model_id": "haiku35",
+  "api_model": "claude-3-5-haiku-20241022",
+  "prompt": "Review this contract",
+  "input_tokens": 1934,
+  "output_tokens": 303,
+  "latency_seconds": 11.03,
+  "timestamp": "2026-02-03T19:32:33.213892+00:00"
+}

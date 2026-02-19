@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "contract": "sla",
+    "model_id": "sonnet4",
+    "evaluation_timestamp": "2026-02-03T21:13:58.172118+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-sonnet-4-20250514",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 3367,
+    "raw_output_tokens": 801,
+    "raw_latency_seconds": 21.24
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "Unlimited Licensee Liability",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Major Red Flag: States licensee has \"unlimited liability\" for breaches - This is extremely unusual and unfavorable to the licensee - Contradicts the licensor's liability cap in Article 10.2 - Recommendation: This clause should be removed or significantly modified",
+        "judge_reasoning": "The review clearly identifies the unlimited liability issue in Article 8.1, calls it a 'Major Red Flag', notes the one-sided nature compared to the licensor's liability cap, and recommends removal or modification."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "8.3",
+      "tier": "T1",
+      "issue": "Full AS-IS Disclaimer",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the AS-IS disclaimer clause 8.3 at all. While it discusses other warranty-related provisions like beta features having no warranty (8.4), it completely misses the comprehensive AS-IS disclaimer that disclaims all implied warranties of merchantability, fitness for purpose, and non-infringement."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "Consequential Damages Exclusion - Licensor Only",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review discusses liability provisions extensively but focuses on Article 8.1's unlimited liability clause and Article 10.2's liability cap. It does not mention the one-sided consequential damages exclusion in Article 10.1 that only protects the licensor while leaving the licensee exposed."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "10.2",
+      "tier": "T1",
+      "issue": "Low Liability Cap - Licensor Only",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Contradicts the licensor's liability cap in Article 10.2",
+        "judge_reasoning": "The review mentions the licensor's liability cap in Article 10.2 and notes it contradicts the licensee's unlimited liability, but it doesn't identify the specific issue that the cap applies only to the licensor or discuss the lack of mutual liability caps with appropriate carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "12.4",
+      "tier": "T1",
+      "issue": "Asymmetric Assignment",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "**Flexible Assignment Rights**: Licensor can assign freely, licensee cannot (12.4)",
+        "judge_reasoning": "The review clearly identifies the asymmetric assignment provision in clause 12.4, noting that the licensor can assign freely while the licensee cannot. This directly captures the core risk of the asymmetric assignment issue."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "9.1 / 9.2",
+      "tier": "T1",
+      "issue": "Narrow Indemnification - No Licensee Protection Defined",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Section 9.2 is marked \"[Reserved]\" - likely missing reciprocal indemnification by licensee",
+        "judge_reasoning": "The review identifies that section 9.2 is reserved and notes missing reciprocal indemnification, but mischaracterizes this as favoring the licensee when the actual issue is that licensee protections are undefined and licensor indemnification should be expanded."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "**Data Security**: Only \"reasonable\" safeguards required (5.1)",
+        "judge_reasoning": "The review identifies the vague \"reasonable\" safeguards language in clause 5.1 but doesn't elaborate on the specific missing elements like audit rights, specific security standards, or breach notification requirements that make this a significant risk."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "11.4",
+      "tier": "T1",
+      "issue": "No Data Export on Termination",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Include data portability and deletion requirements",
+        "judge_reasoning": "The review mentions the need to 'include data portability and deletion requirements' in its recommendations, which touches on data export concerns but doesn't specifically identify the missing data export provision on termination in clause 11.4 or discuss the core risk of losing all data upon contract termination."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "2.1",
+      "tier": "T2",
+      "issue": "Non-Transferable License",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the non-transferable license issue from clause 2.1. While it covers many other contract provisions including IP assignment, liability, and usage restrictions, it completely omits any discussion of the license grant terms or transferability limitations."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.1",
+      "tier": "T3",
+      "issue": "Annual Advance Payment",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the annual advance payment requirement, cash flow impact, or suggest negotiating quarterly payment options. While it discusses many contract terms, it completely misses this specific payment timing issue."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "High Late Fee",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the high late fee rate of 1.5% per month (18% APR) or any concerns about payment terms, interest rates, or late fees. The financial terms and payment provisions are completely absent from this comprehensive contract review."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Weak Uptime SLA",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "99.5% uptime is relatively low for enterprise SaaS... No SLA remedies or credits for downtime... Negotiate SLA credits for downtime below 99.5%... Define 'commercially reasonable efforts' more specifically",
+        "judge_reasoning": "The review identifies the low uptime percentage and lack of SLA credits, and mentions the vague 'commercially reasonable efforts' language, but doesn't fully capture that there's no measurement methodology specified or emphasize the weakness of the non-binding commitment structure."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "Limited Support Hours",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Support limited to business hours only",
+        "judge_reasoning": "The review explicitly identifies that support is limited to business hours only, which directly matches the ground truth issue of limited support hours with no 24/7 emergency support. The review also recommends requesting 24/7 support for critical issues."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "6.2",
+      "tier": "T3",
+      "issue": "Feedback Ownership",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "**Broad IP Assignment**: All feedback becomes licensor's property (6.2)",
+        "judge_reasoning": "The review clearly identifies the feedback ownership issue, noting that 'All feedback becomes licensor's property (6.2)' and lists this as a provision that is 'Favorable to Licensor.' This directly matches the ground truth concern about feedback ownership with no compensation or restrictions."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "11.1",
+      "tier": "T2",
+      "issue": "Auto-Renewal Terms",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "**Automatic Renewal**: With 60-day notice requirement (11.1)",
+        "judge_reasoning": "The review mentions automatic renewal and 60-day notice requirement, but fails to identify the key concern that there's no termination for convenience during the term, which is the core risk issue requiring addition of TfC provisions."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "2.3",
+      "tier": "T2",
+      "issue": "Usage Restrictions Overbroad",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "**Usage Restrictions**: Standard but broadly worded (2.3)",
+        "judge_reasoning": "The review mentions that usage restrictions in clause 2.3 are 'broadly worded' which touches on the overbroad nature of the restrictions, but it doesn't specifically identify the lack of operational exceptions like backup, DR, or security testing that are the core concern of the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "5.3",
+      "tier": "T2",
+      "issue": "DPA Optional / No Timing",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Need Data Processing Agreement referenced in 5.3",
+        "judge_reasoning": "The review explicitly identifies that a Data Processing Agreement referenced in section 5.3 is needed as a missing key document, which directly corresponds to the ground truth issue about the DPA being optional/separate without timing requirements."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "8.2",
+      "tier": "T2",
+      "issue": "Performance Warranty Weak",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Define \"commercially reasonable efforts\" more specifically",
+        "judge_reasoning": "The review mentions the need to define 'commercially reasonable efforts' more specifically, which relates to the ground truth issue about weak performance warranty remedies, but it doesn't identify the core problem that this is the sole remedy with no meaningful alternatives like refunds or termination rights."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "12.10",
+      "tier": "T2",
+      "issue": "Survival Incomplete",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention Article 12.10's survival clause or discuss any issues with which provisions survive termination. The survival clause completeness issue is not identified despite being a T2 risk."
+      }
+    },
+    {
+      "gt_id": "GT-20",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Audit Rights",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Add compliance certifications (SOC 2, etc.)",
+        "judge_reasoning": "The review briefly mentions adding SOC 2 certifications in the recommendations section, which relates to audit/compliance verification, but it doesn't identify the core issue of missing audit rights or the inability to verify the licensor's security promises made in section 5.1."
+      }
+    },
+    {
+      "gt_id": "GT-21",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Business Continuity",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Include disaster recovery and backup commitments",
+        "judge_reasoning": "The review explicitly identifies the missing business continuity/disaster recovery provisions in its recommendations section, recognizing this as a gap that needs to be addressed in the contract."
+      }
+    },
+    {
+      "gt_id": "GT-22",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Force Majeure",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Force majeure clause",
+        "judge_reasoning": "The review explicitly lists 'Force majeure clause' under the 'MISSING PROVISIONS' section, clearly identifying the absence of this provision from the contract."
+      }
+    },
+    {
+      "gt_id": "GT-23",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Vendor Insurance Requirements",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention vendor insurance requirements, certificates of insurance, or the absence of such provisions. While it identifies many missing provisions in a dedicated section, insurance requirements are not among them."
+      }
+    },
+    {
+      "gt_id": "GT-24",
+      "clause": "6.3",
+      "tier": "T3",
+      "issue": "Aggregated Data Use",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the aggregated data use provision in clause 6.3 or discuss any concerns about re-identification of anonymised data. While the review covers many other contract provisions, it completely omits this specific privacy/data usage risk."
+      }
+    },
+    {
+      "gt_id": "GT-25",
+      "clause": "12.2",
+      "tier": "T3",
+      "issue": "Arbitration Required",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Delaware law/arbitration in SF (though may favor licensor)",
+        "judge_reasoning": "The review mentions arbitration in San Francisco but only in passing as part of a broader comment about reasonable provisions. It doesn't identify the specific risk elements like lack of mediation step, AAA Commercial Rules, or suggest adding negotiation/mediation first."
+      }
+    },
+    {
+      "gt_id": "GT-26",
+      "clause": "4.3",
+      "tier": "T3",
+      "issue": "Short Maintenance Notice",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention maintenance notice periods, scheduled maintenance, or any concerns about 48-hour notice being insufficient for business planning. While the review covers many other aspects of the SLA including uptime commitments and support terms, it completely misses the specific issue of short maintenance notice."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 10,
+      "N": 9,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 2,
+        "P": 4,
+        "N": 2,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 4,
+        "P": 5,
+        "N": 3,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 4,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 8,
+    "t1_detected": 6,
+    "total_detection_points": 66.0,
+    "weighted_max": 130,
+    "detection_rate": 0.6538
+  }
+}

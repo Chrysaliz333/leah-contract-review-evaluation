@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "o3",
+    "evaluation_timestamp": "2026-02-03T20:32:45.998411+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "o3",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 2854,
+    "raw_output_tokens": 2864,
+    "raw_latency_seconds": 51.39
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "\"Work made for hire\" language works only for copyright under U.S. law; consider adding an assignment of \"all right, title, and interest\" to cover non-copyright IP (patents, trade secrets).",
+        "judge_reasoning": "The review identifies that work-for-hire only applies to copyright and suggests adding an assignment clause, but it misses the core issue that work-for-hire doctrine has limited application to independent contractors and likely won't apply at all to most consulting deliverables."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "No carve-out for 'gross negligence' or 'willful misconduct' (many jurisdictions void liability caps for at least the latter).",
+        "judge_reasoning": "The review identifies the missing gross negligence carve-out but fails to mention the other critical missing carve-outs for IP infringement claims and data breach/security incidents that are central to this ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review discusses the liability cap in Section 9.2 but does not mention or address the consequential damages exclusion clause 9.1, which is the specific ground truth issue about excluding indirect/consequential damages without appropriate carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Termination for convenience by either side with 30-days' notice is broad... Client may want a longer notice period (e.g., 60-90 days) and an obligation to cooperate in transition... MISSING: Post-termination assistance clause",
+        "judge_reasoning": "The review identifies the 30-day termination notice and suggests longer notice periods and transition assistance, but misses key elements like the lack of SOW-level termination rights and the inadequate wind-down provisions specified in the ground truth."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "The license to Background IP is 'perpetual' but not expressly 'world-wide' or 'fully paid.' Clarify scope.",
+        "judge_reasoning": "The review identifies clause 5.2 and mentions the need to clarify scope of the Background IP license, but it focuses on missing geographical/payment terms rather than the core issue of the license being too narrow in permitted uses (limited to 'solely as part of the Deliverables' with no modification or independent use rights)."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "6.1 No duration. Typical approach: obligations survive 3\u20135 years from disclosure (or perpetually for trade secrets).",
+        "judge_reasoning": "The review clearly identifies the confidentiality survival period issue, noting the lack of duration in section 6.1 and recommending the standard approach of 3-5 years for confidential information and indefinite survival for trade secrets, which directly matches the ground truth concern."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions late payment interest and suspension rights for non-payment, but does not identify or discuss the lack of a formal invoice dispute mechanism, which is the core issue in GT-07. The review does not address the gap in dispute procedures despite the contract's reference to 'undisputed invoices'."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "13.1 Governing law Texas. Because Client is in Nevada, confirm Client is comfortable with Texas venue. 13.2 Litigation in Travis County courts only. Parties may prefer arbitration or at least federal court venue.",
+        "judge_reasoning": "The review clearly identifies that Texas governing law and Travis County courts favor the consultant's location, noting that the Nevada-based client should confirm they're comfortable with Texas venue and suggesting alternatives like arbitration or federal court."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "\u2022 Data-privacy compliance if personal data will be processed (GDPR, CCPA, etc.).",
+        "judge_reasoning": "The review clearly identifies the missing data protection/privacy clause issue, specifically mentioning the need for GDPR and CCPA compliance provisions when personal data is processed. It also suggests preparing a separate Data Processing Addendum (DPA) as a next step."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review discusses indemnification in Article 10 but only mentions process issues like 'right to cure' and missing procedural elements. It does not identify or discuss the core risk that indemnification is limited to gross negligence/willful misconduct rather than covering ordinary negligence."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "No cyber-liability coverage. If Consultant will access client systems or PII, Client may require $2-5 million cyber/E&O.",
+        "judge_reasoning": "The review clearly identifies the absence of cyber liability insurance coverage in Article 11 and specifically notes that such coverage should be required if the consultant will access client systems or personally identifiable information, which directly matches the ground truth issue."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 4,
+      "P": 4,
+      "N": 3,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 3,
+        "P": 3,
+        "N": 2,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 1,
+    "t1_detected": 1,
+    "total_detection_points": 27.5,
+    "weighted_max": 50,
+    "detection_rate": 0.7273
+  }
+}

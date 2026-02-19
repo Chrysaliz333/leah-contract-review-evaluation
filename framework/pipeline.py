@@ -128,10 +128,11 @@ class EvaluationPipeline:
                     warnings.warn(f"{warning.message} (at {warning.location})", UserWarning)
 
         elif stage == "pre_workbook":
-            if run_dirs is None:
-                raise ValueError("run_dirs parameter required for pre_workbook validation")
+            if env is None:
+                raise ValueError("env parameter required for pre_workbook validation")
 
-            result = validate_pre_workbook(run_dirs)
+            # pre_workbook validates mode_dir for aggregated results
+            result = validate_pre_workbook(self.mode_dir, env)
             result.abort_if_errors("pre-workbook")
 
             if result.warnings:
@@ -342,8 +343,8 @@ class EvaluationPipeline:
             logger.warning("No evaluations found in any run directory")
             return {
                 "files_written": 0,
-                "contracts": set(),
-                "models": set(),
+                "contracts": [],
+                "models": [],
                 "message": "No evaluations to aggregate"
             }
 
@@ -408,7 +409,7 @@ class EvaluationPipeline:
         """
         # Validate prerequisites
         logger.info(f"Validating aggregated results in {aggregated_dir}")
-        self.validate_prerequisites("pre_workbook", run_dirs=[aggregated_dir])
+        self.validate_prerequisites("pre_workbook", env=env)
 
         # Import workbook generation dependencies
         try:

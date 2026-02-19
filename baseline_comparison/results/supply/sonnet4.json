@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "sonnet4",
+    "evaluation_timestamp": "2026-02-03T21:18:08.136934+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-sonnet-4-20250514",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 2139,
+    "raw_output_tokens": 966,
+    "raw_latency_seconds": 36.81
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Section 11.2 caps Supplier liability at 12 months of payments - May be insufficient for automotive applications where defects can cause significant damages - **Recommendation**: Consider higher caps or exceptions for gross negligence/willful misconduct",
+        "judge_reasoning": "The review clearly identifies the liability cap issue, noting it may be insufficient for automotive applications and recommends higher caps or exceptions for gross negligence/willful misconduct, which directly addresses the ground truth concern."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the limited warranty remedy issue where the supplier has sole control over remediation options. While the review briefly mentions warranty disclaimers in section 4, it focuses on disclaiming implied warranties rather than the supplier's exclusive control over remedy selection."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Section 5.3 disclaims implied warranties including merchantability and fitness for purpose. May be problematic in automotive industry where strict quality standards are expected. **Recommendation**: Consider more limited disclaimer or industry-standard warranty terms",
+        "judge_reasoning": "The review clearly identifies the broad warranty disclaimer issue in Section 5.3, noting it disclaims implied warranties including merchantability and fitness for purpose, and recommends more limited disclaimers or industry-standard warranty terms."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Section 11.2 caps Supplier liability at 12 months of payments. May be insufficient for automotive applications where defects can cause significant damages. **Recommendation**: Consider higher caps or exceptions for gross negligence/willful misconduct",
+        "judge_reasoning": "The review identifies Section 11.2 as a limitation of liability issue and mentions the need for exceptions for gross negligence/willful misconduct, but it mischaracterizes the clause as a liability cap rather than recognizing it as a consequential damages exclusion that blocks critical recovery areas like production shutdowns and customer claims."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention delivery terms, Incoterms, FCA terms, or risk transfer/title passage issues at all. Despite these being critical commercial terms that would typically be addressed in a comprehensive contract review, the risk of FCA terms shifting transit risk to the Buyer is completely absent from this analysis."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the supplier's ability to reject purchase orders or the lack of supply obligation. While it discusses 'Ambiguous Purchase Commitment' and forecasting issues, it focuses on minimum purchase requirements from the buyer's perspective rather than the supplier's right to reject orders."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Adequate inspection period (10 business days)' as a positive aspect but completely fails to identify the key risk that products are deemed accepted if no written rejection is provided within this period, and does not discuss whether 10 days is sufficient for complex components or high volumes."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Section 11.2 caps Supplier liability at 12 months of payments - May be insufficient for automotive applications where defects can cause significant damages",
+        "judge_reasoning": "The review identifies that liability is capped and may be insufficient for automotive defects, but it doesn't specifically address the indemnification clause lacking recall cost coverage or the need for uncapped indemnification coverage."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention late payment interest rates, Section 4.2, or any concerns about interest terms. While it notes 'Reasonable payment terms (Net 30)' as a positive aspect, it completely misses the high 1.5% monthly interest rate issue."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Section 3.2 allows only Supplier to adjust prices - No protection for Buyer against cost increases beyond 5%",
+        "judge_reasoning": "The review identifies the unilateral price adjustment provision and mentions the 5% cap, but fails to recognize the core compounding risk over time that could lead to significant cumulative increases over the contract term."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention any business continuity or supply assurance provisions such as last-time-buy rights, dual sourcing, capacity reservation, or disaster recovery plans. While it discusses various contract issues, it completely misses this critical gap in supply chain protection."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Professional confidentiality terms' as a positive aspect but does not identify or discuss the specific issue of inadequate 3-year survival period for trade secrets protection. The ground truth issue about needing perpetual protection for trade secrets in automotive supply chains is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Insurance Requirements - Coverage amounts may be insufficient for automotive industry risks - Recommendation: Consider higher limits and add automotive-specific coverage requirements",
+        "judge_reasoning": "The review mentions insurance requirements and suggests they may be insufficient for automotive risks, but it incorrectly assumes insurance provisions exist in the contract when the ground truth indicates no insurance clause exists at all."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions termination provisions in the minor issues section but only discusses the 180-day notice period for convenience termination, not the asymmetric cure period issue for material breaches under clause 14.2. The review does not identify or discuss the problem that both parties get the same 30-day cure period despite suppliers needing immediate remedy for quality/supply issues."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 2,
+      "P": 4,
+      "N": 8,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T2": {
+        "Y": 1,
+        "P": 2,
+        "N": 5,
+        "NMI": 0
+      },
+      "T1": {
+        "Y": 1,
+        "P": 1,
+        "N": 2,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 1,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "t1_detected": 2,
+    "total_detection_points": 22.5,
+    "weighted_max": 74,
+    "detection_rate": 0.4286
+  }
+}

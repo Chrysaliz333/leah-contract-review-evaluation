@@ -1,0 +1,111 @@
+Here's a professional review of your **Reseller Agreement** highlighting key points, strengths, and potential issues or considerations for both parties. This is not legal advice, but a business-oriented and risk-focused overview:
+
+---
+
+## **Strengths & Well-Drafted Clauses**
+
+1. **Clear Definitions (Article 1):** The agreement opens with relevant, concise definitions, which helps avoid ambiguity.
+
+2. **Non-Exclusivity (2.2):** Vendor maintains the right to appoint other resellers and sell directly, supporting its channel strategy.
+
+3. **Order and Fulfillment Process (3):** Provides timeframes (three business days) and methods for ordering, which is good for predictability.
+
+4. **Pricing Change Notice (4.1):** Vendor must give 30 days’ advance written notice of price/discount changes, a fair and common practice.
+
+5. **Payment Terms (5.1):** 30-day net, with a clear late fee (1.5% per month), protects Vendor’s receivables.
+
+6. **Marketing and Trademark Use (6.2/6.3):** Requires approval for material changes and ties trademark use to compliance with guidelines.
+
+7. **Training and Support (7):** Specifies both sides’ duties—Vendor trains, Reseller provides first-level support.
+
+8. **Quarterly Reports (8):** Light but regular reporting (quarterly) can help Vendor with sales forecasting.
+
+9. **Termination for Cause (9.2):** Standard cure period (30 days) strikes a fair balance.
+
+10. **Confidentiality (10):** Reasonable timeframe (3 years).
+
+11. **Warranties & Disclaimers (11):** Appropriately limits Vendor’s obligations and excludes all but explicit warranties.
+
+12. **Limitation of Liability (12):** Caps liability; excludes indirect damages, which is customary.
+
+13. **Governing Law & Arbitration (13):** Specifies Washington law; arbitration in Seattle—this can simplify/lower the cost of disputes.
+
+---
+
+## **Possible Issues and Recommendations**
+
+### **For Reseller**
+
+1. **Price/Discount Changes (4.1):**
+   - **Risk:** Vendor can change prices/discounts and product offerings at discretion (with notice).
+   - **Mitigation:** Consider negotiating for longer notice (e.g., 60 days for significant increases), or price protection for deals already quoted (grandfathering).
+   - **Downstream Quotes:** What if Reseller has quoted End Users? Consider a clause protecting pre-existing quotations from sudden price hikes.
+
+2. **No Right to Terminate for Convenience (9.1):**
+   - **Risk:** Locked in for minimum two years with no early exit except for cause.
+   - **Mitigation:** If market changes (e.g. better alternatives, poor Vendor performance not amounting to "material breach"), Reseller is "trapped." Reseller may wish to negotiate a mutual right to terminate for convenience after the first year, or with a short notice period (e.g., 60–90 days).
+
+3. **Sales Reporting (8):**
+   - **Privacy:** Ensure information provided does not violate customer confidentiality, especially if End User information is sensitive.
+
+4. **Credit Terms (5.2):**
+   - **Risk:** Vendor can change credit limits at will and require prepayment.
+   - **Mitigation:** Negotiate predictable, reasonable criteria for changing credit terms.
+
+5. **Support Obligations (7.2):**
+   - **Support burden:** Reseller provides first-level support—it should ensure capacity and resources, and Vendor should provide sufficient escalation help.
+
+6. **Arbitration Location (13.2):**
+   - **Convenience:** Arbitration in Seattle may be inconvenient/expensive for the California-based Reseller. Consider virtual arbitration or a mutually convenient location.
+
+7. **Assignment (13.3):**
+   - **Exit/Aquisition:** Neither party may assign without consent. Can slow down M&A or corporate restructuring. Reseller may want assignment permitted as part of sale of all or substantially all assets or to affiliates.
+
+### **For Vendor**
+
+1. **IP Control (6.2/6.3):**
+   - **Brand protection:** Well-addressed with prior approval for changes and adherence to brand guidelines.
+
+2. **Reseller Conduct:**
+   - **No explicit code of conduct or compliance clause:** Consider a clause to ensure Reseller complies with applicable laws, export controls, anti-corruption.
+
+### **For Both Parties**
+
+- **Exhibits "to be attached":** Ensure Exhibits A (Products) and B (Pricing/Discounts) are finalized and attached; agreement is incomplete without these.
+
+- **End User License Agreement (3.3):** Reseller must ensure End Users accept Vendor’s EULA—ensure the process for doing this is clear, or else risk of End User disputing terms.
+
+- **Limitation of Liability Carveouts (12.1):**
+    - **Customary Exclusions:** The contract excludes indirect damages, but does **not** specify carve-outs (e.g. for breaches of confidentiality, IP infringement, payment obligations). Consider whether this is sufficient for both parties’ risk profiles.
+
+- **Confidentiality duration:** Three years is typical but may be short for trade secrets; if highly sensitive IP is involved, consider longer or perpetual for trade secrets.
+
+---
+
+## **Summary Table**
+
+| Area                  | Strengths                                           | Possible Issues/Recommendations       |
+|-----------------------|-----------------------------------------------------|--------------------------------------|
+| Appointment           | Clear non-exclusive; Vendor protected               |                                      |
+| Pricing               | Notice required for changes; Reseller sets resale   | Longer/variable protection, quote protection  |
+| Termination           | Clear for-cause right; well-defined initial term    | No convenience termination           |
+| Reporting             | Quarterly, not onerous                              | Data privacy                                                              |
+| IP/Branding           | Vendor protected                                    | Ensure comprehensive compliance       |
+| Liability/Warranty    | Standard, reasonable                               | Carve-outs for IP/confidentiality?    |
+| Dispute Resolution    | Arbitration defined                                 | Consider location convenience         |
+
+---
+
+## **Final Recommendations**
+
+- **Reseller:** Seek (a) convenience termination after first year or with notice; (b) downstream quote protection or grandfathering for large deals; (c) clarity on End User data shared and its permitted use; (d) consider a more convenient arbitration venue.
+
+- **Vendor:** Consider adding compliance requirements; carefully limit carve-outs on liability.
+
+- **Both Parties:** Do not sign until Exhibits A & B are finalized and attached.
+
+---
+
+**Disclaimer**: This is a business/legal review, not legal advice. For binding review/advice, please consult an attorney licensed in relevant states.
+
+If you need a redline or example clause language for your proposed changes, let me know!

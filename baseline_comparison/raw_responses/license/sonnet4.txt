@@ -1,0 +1,55 @@
+## Contract Review: Intellectual Property License Agreement
+
+### **Key Strengths**
+- Well-structured with clear definitions and comprehensive coverage of standard IP licensing terms
+- Balanced approach to quality control and audit rights
+- Reasonable termination provisions with sell-off period
+- Professional dispute resolution mechanism (LCIA arbitration)
+
+### **Critical Issues Requiring Attention**
+
+#### **1. Missing Essential Terms**
+- **Territory**: Referenced throughout but undefined (Exhibit B missing)
+- **Licensed IP**: Vague description with missing Exhibit A
+- **Quality Standards**: Referenced but not specified or attached
+- **Payment Methods**: No details on currency, payment methods, or banking information
+
+#### **2. Financial Terms Concerns**
+- **High Financial Exposure**: $500K upfront + 10% royalties + $250K minimum annual royalty is aggressive
+- **Interest Rate**: 1% per month (12% annual) may be excessive and potentially unenforceable in some jurisdictions
+- **Currency Risk**: No specification of payment currency given international nature
+
+#### **3. Legal and Structural Issues**
+- **Governing Law Mismatch**: English law governs but US company involved - consider conflicts
+- **IP Improvements Clause**: All licensee improvements revert to licensor (may discourage innovation)
+- **Exclusive License**: High-risk for licensee without performance guarantees from licensor
+- **Broad Infringement Indemnification**: Limited protection for licensee against IP infringement claims
+
+#### **4. Operational Risks**
+- **Quality Control**: Licensor inspection rights without defined limits or procedures
+- **Sublicensing**: Requires consent but no criteria or timeline specified
+- **Confidentiality**: Only 5-year term may be insufficient for valuable trade secrets
+
+### **Recommendations**
+
+#### **For Both Parties:**
+1. **Complete Missing Exhibits** - Define territory and specific IP assets
+2. **Add Performance Milestones** - Balance exclusive rights with development obligations
+3. **Specify Quality Standards** - Attach detailed technical specifications
+4. **Currency Clarification** - Specify USD or GBP for all payments
+
+#### **For Licensee (TechPro):**
+1. **Negotiate IP Improvements** - Request shared ownership or licensing back rights
+2. **Add Licensor Performance Warranties** - Include IP validity and non-infringement guarantees
+3. **Limit Audit Scope** - Define reasonable notice period and audit limitations
+4. **Reduce Financial Exposure** - Consider staged payments tied to milestones
+
+#### **For Licensor (Innovate IP):**
+1. **Add Development Milestones** - Protect against unused exclusive licenses
+2. **Strengthen Quality Control** - Add specific compliance procedures
+3. **Include IP Prosecution Obligations** - Commit to maintaining patent portfolio
+
+### **Risk Assessment: MEDIUM-HIGH**
+The contract framework is solid but contains significant gaps and potentially unbalanced terms favoring the licensor. The high financial commitments combined with broad licensor rights create substantial risk for the licensee.
+
+**Recommendation**: Negotiate revisions to address missing terms and rebalance key provisions before execution.

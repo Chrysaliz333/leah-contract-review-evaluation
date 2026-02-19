@@ -1,0 +1,97 @@
+DATA PROCESSING AGREEMENT – HIGH-LEVEL REVIEW  
+(Assumes UK-GDPR is the primary regime; comments are equally relevant to EU GDPR unless stated otherwise)
+
+1. Formalities & Structure  
+   • Good practice: The DPA is separated from the “Principal Agreement,” contains standard definitions, incorporates Exhibits for particulars, and states primacy over conflicting terms (clause 11.2).  
+   • Gaps: The parties’ names, dates, Exhibits A-C and the Effective Date are all blank; ensure they are completed and incorporated by reference in the Principal Agreement to avoid arguments that the DPA never became operative.
+
+2. Mandatory UK-GDPR Article 28(3) Requirements  
+   Article 28(3) lists eight elements that must be in a processor agreement. The draft covers most but is silent or thin in some areas:  
+   a. Subject-matter, duration, nature, purpose, type of data, categories of data subjects – Provided via Exhibit A but must be completed.  
+   b. Documented instructions – Present (2.3) but would benefit from wording that allows Controller to issue further instructions in writing (including email) and clarifies the consequences if Processor believes an instruction is unlawful.  
+   c. Confidentiality – Present (3.2).  
+   d. Security measures – Clause 5, but Exhibit B is blank; Article 28(3)(c) requires the measures be “set out,” not merely referenced. Add an annex that is specific (e.g., encryption standards, key management, backup, physical security).  
+   e. Sub-processor flow-down – Present (4.2) but should state that the same data-protection obligations “as set forth in this DPA” are imposed, not merely “equivalent.”  
+   f. Data Subject rights assistance – Present (3.3) but does not address cost allocation or timelines; consider adding “within 5 business days” and “reasonable, documented costs borne by Controller.”  
+   g. Breach notification – Present (Art. 8) and timeline (72 hrs) is compliant.  
+   h. Data deletion/return – Present (3.4) but Article 28(3)(g) also requires Processor to delete any existing copies unless law requires storage. Add certification requirement (“Processor shall certify in writing…”).
+
+3. Security (Article 32)  
+   • Clause 5.1 is appropriately high-level, but merely referencing “encryption, pseudonymisation, access controls” may be deemed insufficient by some regulators; add measurable details in Exhibit B.  
+   • Clause 5.2 commits Processor to maintain ISO 27001 certification “or equivalent.” This is strong for Controller but demanding for Processor; if the certification lapses, the Processor would be in breach. Consider softer language: “shall maintain ISO 27001 certification or, if not feasible, an equivalent industry-recognized standard…”.
+
+4. Sub-processor Regime (Art. 28(2))  
+   • Controller has 30 days to object (4.1). Add objective criteria for objection (“objection based on reasonable, demonstrable grounds related to data protection”) to avoid frivolous blocking.  
+   • Consider requiring Processor to provide a mechanism (portal or email list) to notify changes.  
+   • Exhibit C must list initial sub-processors (hosting provider, email relay, etc.); blank list may invalidate “general” authorization.
+
+5. International Transfers (Art. 46)  
+   • 6.2 references “Standard Contractual Clauses.” Since Brexit, transfers from the UK require (i) the UK Addendum to the EU SCCs or (ii) the UK IDTA. Add wording to that effect.  
+   • If Controller itself is outside the UK/EEA, confirm which party acts as exporter and ensure the correct transfer mechanism is referenced.  
+   • Include an obligation to inform Controller if a transfer mechanism is no longer valid (“Schrems II”-type wording) and to cooperate in adopting an alternative safeguard.
+
+6. Audit & Compliance  
+   • 7.1 “make available all information necessary” mirrors Art. 28(3)(h).  
+   • 7.2 limits audits to “once per year.” Regulators often recommend exceptions: “more frequently if required by a supervisory authority, a Personal Data Breach, or reasonable indication of non-compliance.”  
+   • Optionally allow Processor to provide recent SOC 2 / ISO reports as an alternative to on-site audits, reducing burden.
+
+7. Liability & Indemnity  
+   • Clause 9 leaves liability “in accordance with applicable law” but then adds an unlimited indemnity in 9.2. This is commercially aggressive and may be unenforceable or hotly negotiated. Typical market positions:  
+        – Mutual indemnity limited to a cap (e.g., 12 months’ fees); or  
+        – Each party liable only to the extent it violated the DPA; fines attributable to one party are borne by that party.  
+   • Clarify whether consequential, indirect, or lost-profit damages are excluded or capped.
+
+8. Costs & Fees  
+   • Assistance under 3.3, audits (7.2), and breach cooperation (8.3) are at Processor’s expense by default. Often parties agree that Controller reimburses Processor’s “reasonable and documented” costs beyond a fixed baseline. If desired, add.
+
+9. Term & Termination  
+   • 10.2 lists clauses that survive, but security (5), audit (7) and international transfers (6) often survive until deletion is certified.  
+   • Add explicit “Certification of Deletion” language and a time-frame (e.g., 30 days after termination).
+
+10. Miscellaneous Clauses Missing or Needing Clarification  
+   • Order of precedence should reference any country-specific standard clauses (SCCs/IDTA) taking precedence over the DPA if contradictory.  
+   • “Variation due to legal change” – include a clause allowing unilateral change if required to comply with new laws, subject to written notice.  
+   • Insurance – consider requiring Processor to maintain cyber liability insurance with a specified limit.  
+   • Records of Processing (Art. 30(2)) – Processor should undertake to maintain records and make them available on request.
+
+11. Commercial Points  
+   • ISO 27001 promise, unlimited indemnity, and annual audit rights favor the Controller and may be resisted by Processor.  
+   • If the parties expect large data volumes or sensitive data (special-category), add:  
+        – Data Protection Impact Assessment cooperation clause.  
+        – “No sale or use for advertising/analytics” language.  
+        – Requirement to notify Controller of any legally binding request for disclosure (government access).
+
+12. Exhibit Completion Checklist  
+   Exhibit A – must be filled out and granular:  
+        • Example types: name, email, IP, payment data, HR data, special-category data (health data, biometrics) – if yes, tick explicit Article 9 safeguards.  
+        • Purpose: hosting SaaS, payroll outsourcing, marketing automation, etc.  
+        • Retention period: either specific or “until deletion on termination.”  
+   Exhibit B – include:  
+        • Infrastructure security (data-centre certifications, network segregation).  
+        • Access controls (MFA, RBAC, least privilege).  
+        • Encryption (TLS1.2+, AES-256 at rest, key management).  
+        • Vulnerability management (patch cadence, penetration tests).  
+        • Business continuity and disaster recovery (RPO/RTO).  
+        • Logging and monitoring (SIEM, retention period).  
+   Exhibit C – list by legal entity, location, purpose, contact. Example: “Amazon Web Services EMEA SARL (Ireland) – IaaS hosting.”
+
+13. Signature Formalities  
+   • If either party signs electronically, confirm that local law accepts e-signatures and store copies.  
+   • Tie the DPA’s Effective Date to either the Principal Agreement or the last signature date to avoid gaps.
+
+14. Regulatory Guidance & Best Practice References  
+   • ICO “Guide to the UK GDPR – Contracts and Liabilities Between Controllers and Processors.”  
+   • EDPB Guidelines 07/2020 on SCCs.  
+   • ISO/IEC 27018 for cloud privacy controls (optional).
+
+Summary of Key Recommendations  
+   1. Complete Exhibits with specific, granular information.  
+   2. Add detailed Technical and Organisational Measures.  
+   3. Flesh out international transfer mechanisms (UK Addendum/IDTA).  
+   4. Revisit indemnity and liability caps to align with commercial risk.  
+   5. Expand audit clause to allow additional audits in defined circumstances and permit provision of third-party certifications.  
+   6. Insert certification of deletion and clarify survival clauses.  
+   7. Provide a mechanism and criteria for objection to new Sub-processors.  
+   8. Clarify cost allocation for assistance and audits.
+
+Implementing the above will reduce legal and operational risk for both parties and bring the DPA fully in line with UK/EU regulatory expectations.

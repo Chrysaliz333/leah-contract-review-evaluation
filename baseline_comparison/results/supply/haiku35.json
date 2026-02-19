@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "haiku35",
+    "evaluation_timestamp": "2026-02-03T21:17:15.041589+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-3-5-haiku-20241022",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 2139,
+    "raw_output_tokens": 306,
+    "raw_latency_seconds": 15.34
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Section 11 (Limitation of Liability) significantly caps Supplier's potential damages",
+        "judge_reasoning": "The review identifies that Section 11 caps supplier liability but doesn't discuss the specific concerns about the 12-month cap being too low, need for carve-outs, or potential inadequacy for major failures/recalls."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions a '1-year product warranty' in passing but does not identify or discuss the specific risk that the supplier controls warranty remediation through repair/replace/refund options, limiting buyer recourse. The core concern about supplier-controlled remedies is not addressed."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions a '1-year product warranty' but does not identify or discuss the broad warranty disclaimer issue, the limitation to only express warranties, or the need for additional warranty protections around fitness for purpose, specification compliance, or design defects."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Section 11 (Limitation of Liability) significantly caps Supplier's potential damages",
+        "judge_reasoning": "The review mentions Section 11's liability limitations but only notes damage caps rather than identifying the specific consequential damages exclusion and its critical implications for production shutdowns, customer claims, and need for carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention delivery terms, Incoterms, FCA, or any discussion of risk transfer during transit. Despite the ground truth issue being present in clause 6.1 with FCA terms that shift transit risk to the Buyer, the review completely overlooks this significant risk."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the supplier's ability to reject purchase orders or the lack of supply obligation. While it mentions that 'Forecasts are non-binding, which provides flexibility for Buyer', it completely misses the core risk that the supplier has no obligation to accept orders and can reject them within 5 business days, creating supply uncertainty."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Detailed quality and inspection requirements' but does not discuss the specific risk of the short 10-day inspection period with deemed acceptance, nor any concerns about this timeframe being insufficient for complex components or high volumes."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'balanced liability and indemnification clauses' and notes that liability is capped in Section 11, but does not identify the specific indemnification gaps such as lack of recall cost coverage, unlimited coverage needs, or missing defense costs."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Net 30 payment terms' but does not discuss late payment interest rates, the 1.5% monthly rate, or any concerns about high interest charges for late payments."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "While the review mentions 'max 5% annual adjustments' in the Notable Provisions section, it does not identify or discuss the core risk that these adjustments compound over time to create significant cumulative increases over the contract term. The review treats the 5% cap as a simple factual observation without recognizing the compounding concern."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention business continuity, supply assurance, last-time-buy rights, dual sourcing, capacity reservation, disaster recovery plans, or any provisions related to ensuring continuity of supply. The review covers termination notice periods but does not address the specific risk of lacking business continuity provisions."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Strong confidentiality and intellectual property protections' but does not identify the specific issue of inadequate 3-year survival period for trade secrets or the need for perpetual protection in automotive supply chains."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Review insurance coverage limits",
+        "judge_reasoning": "The review mentions reviewing insurance coverage limits as a recommended action, suggesting awareness that insurance is relevant to the contract, but it doesn't identify the core issue that no insurance requirements actually exist in the contract."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention termination for cause, cure periods, or any asymmetric treatment of different breach types. It only briefly mentions termination for convenience with 180 days' notice."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 0,
+      "P": 3,
+      "N": 11,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T2": {
+        "Y": 0,
+        "P": 2,
+        "N": 6,
+        "NMI": 0
+      },
+      "T1": {
+        "Y": 0,
+        "P": 1,
+        "N": 3,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 0,
+        "N": 2,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "t1_detected": 1,
+    "total_detection_points": 9.0,
+    "weighted_max": 74,
+    "detection_rate": 0.2143
+  }
+}

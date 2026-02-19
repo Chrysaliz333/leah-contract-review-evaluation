@@ -1,0 +1,10 @@
+{
+  "contract": "distribution",
+  "model_id": "gpt41",
+  "api_model": "gpt-4.1-2025-04-14",
+  "prompt": "Review this contract",
+  "input_tokens": 1649,
+  "output_tokens": 1601,
+  "latency_seconds": 46.98,
+  "timestamp": "2026-02-03T19:39:45.717196+00:00"
+}

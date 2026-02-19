@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "contract": "jv",
+    "model_id": "o3",
+    "evaluation_timestamp": "2026-02-03T20:44:34.366441+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "o3",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1821,
+    "raw_output_tokens": 2302,
+    "raw_latency_seconds": 40.73
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "No Deadlock Resolution - Article 8 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Deadlock Provision Missing (HIGH). Art 8 is \"[Reserved]\". Without an exit or tie-breaker mechanism, the JV could seize up\u2014particularly in a 50/50 structure. \u2192 Insert a deadlock resolution ladder: escalation to CEOs \u2192 mediation \u2192 \"Texas Shoot-Out,\" Russian Roulette, buy-sell, or dissolution.",
+        "judge_reasoning": "The review explicitly identifies that Article 8 is reserved and lacks deadlock resolution mechanisms, noting the specific problem of 50/50 structures getting stuck without tie-breaker mechanisms. It even recommends the exact types of escalation solutions mentioned in the ground truth."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Rights",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Art 8 is '[Reserved]'. Without an exit or tie-breaker mechanism, the JV could seize up\u2014particularly in a 50/50 structure. \u2192 Insert a deadlock resolution ladder: escalation to CEOs \u2192 mediation \u2192 'Texas Shoot-Out,' Russian Roulette, buy-sell, or dissolution.",
+        "judge_reasoning": "The review identifies the absence of exit mechanisms and recommends adding buyout provisions like 'buy-sell' arrangements, which relates to the missing exit/buyout rights issue. However, it frames this primarily as a deadlock resolution concern rather than specifically identifying the lack of put/call options or early exit rights from the 5-year term."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent + No Tiebreaker",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Each Party has one vote; majority wins; yet material matters also require unanimous consent (Art 4.1). That creates internal contradiction and near-certain deadlock on any serious issue.",
+        "judge_reasoning": "The review clearly identifies the unanimous consent requirement from Article 4.1 and explicitly warns about the deadlock risk created by the 50/50 structure combined with unanimous consent for material decisions."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Broad Post-Term Non-Compete",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "California law (Bus. & Prof. Code \u00a716600) voids most non-competes; Party B is a California LLC. Clause 9.1 could be unenforceable and expose JV to litigation. \u2013 \"Territory\" is undefined; the restriction is broad (global?) and may raise antitrust concerns. \u2192 Replace with narrower \"non-solicitation of JV customers/ employees\" or carve-out CA employees; define Territory.",
+        "judge_reasoning": "The review clearly identifies the broad post-term non-compete issue, specifically mentioning Clause 9.1, the undefined Territory creating broad geographic scope, and recommending narrower restrictions - all core elements of the ground truth risk."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.2",
+      "tier": "T1",
+      "issue": "Developed IP Consent Lock-Up",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Joint ownership in U.S. law gives each co-owner unrestricted use\u2014including licensing\u2014without accounting to the other unless expressly restricted. Art 6.2 seeks to restrict licensing, but enforcement can be cumbersome.",
+        "judge_reasoning": "The review clearly identifies the joint IP ownership consent lock-up issue, noting that Article 6.2 restricts licensing and that enforcement can be cumbersome, which directly addresses the commercialization veto concern from the ground truth."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Missing Clauses (HIGH). No representation/warranty, indemnity, limitation-of-liability or insurance provisions appear. In a technology JV these are critical. \u2192 Add mutual indemnities for IP infringement, gross negligence and breach; disclaim consequential damages (or cap liability); require commercial general liability and cyber insurance.",
+        "judge_reasoning": "The review explicitly identifies the missing limitation-of-liability provisions as a HIGH priority issue and recommends adding liability caps and consequential damages disclaimers, directly addressing the ground truth risk."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Capital Call Dilution Risk",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Additional Capital / Dilution (MEDIUM). 'Diluted proportionately' is vague. Dilution formula, valuation methodology and pre-emptive rights should be spelled out.",
+        "judge_reasoning": "The review identifies the dilution mechanism and notes it's vague, but misses the core procedural risks around capital call dilution (no cure period, no dispute mechanism, potential for strategic abuse). It treats this as a technical drafting issue rather than a substantive protection gap."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Improvement Ownership Unclear on Termination",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Improvements to Contributed IP (MEDIUM). Clause 6.3 grants the contributing Party ownership, but does not define \"improvement,\" nor require cross-licensing back to the other Party after Term. Clarify scope and post-termination use.",
+        "judge_reasoning": "The review identifies clause 6.3 and mentions the lack of clarity around post-termination use of improvements, but it focuses on cross-licensing back to the other Party rather than the specific issue of what happens to the JV's perpetual license upon termination."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "General Manager Authority Unbounded",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the General Manager role, their unbounded authority, lack of reporting requirements, or absence of removal processes. While the review extensively covers governance and deadlock issues, it focuses on the Steering Committee structure rather than operational management concerns."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "6.1",
+      "tier": "T2",
+      "issue": "Contributed IP License Gaps",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review discusses IP issues extensively but does not identify the specific licensing gaps in clause 6.1, such as the lack of wind-down period post-termination or sublicensing restrictions. The review mentions IP transition issues but focuses on different aspects like joint ownership problems and post-termination division rather than the contributed IP license scope limitations."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.4",
+      "tier": "T2",
+      "issue": "Termination IP Allocation Undefined",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "IP Transition on Termination (MEDIUM). Art 10.4 only says Developed IP 'shall be divided or licensed as agreed.' That is an agreement to agree. \u2192 Provide a default split (e.g., perpetual cross-licences) or an appraisal mechanism.",
+        "judge_reasoning": "The review clearly identifies the core risk: clause 10.4's 'as agreed' language creates an 'agreement to agree' problem and recommends adding default allocation mechanisms, which directly matches the ground truth issue about undefined IP allocation upon termination."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Indemnification Regime",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Missing Clauses (HIGH). No representation/warranty, indemnity, limitation-of-liability or insurance provisions appear. In a technology JV these are critical. \u2192 Add mutual indemnities for IP infringement, gross negligence and breach; disclaim consequential damages (or cap liability); require commercial general liability and cyber insurance.",
+        "judge_reasoning": "The review explicitly identifies the absence of indemnification provisions as a HIGH risk issue and specifically recommends adding mutual indemnities for IP infringement and breach, directly addressing the ground truth concern about missing indemnification regime."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Change of Control Provision",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Assignment (Art 12.4) \u2013 add change-of-control language and permitted assignments to affiliates.",
+        "judge_reasoning": "The review briefly mentions adding 'change-of-control language' to the assignment clause, which touches on the missing change of control provision issue. However, it doesn't discuss the core concerns like acquisition by competitors, notice requirements, termination rights, or buyout options at fair market value."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vague Reserve Rights",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention clause 5.2 or discuss the issue of vague reserve rights that could delay distributions indefinitely. While the review is comprehensive and covers many governance and financial issues, it completely omits any discussion of distribution mechanics or reserve determination powers."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "11.1-11.3",
+      "tier": "T3",
+      "issue": "Multi-Step Dispute Resolution",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Multi-Step ADR is good, but: \u2013 Delaware law applies; arbitration seat is San Francisco; potential conflict re enforcement. \u2013 Specify AAA or JAMS rules, number of arbitrators, language, discovery limits.",
+        "judge_reasoning": "The review acknowledges the multi-step ADR structure and mentions San Francisco as the arbitration seat, but it characterizes this as 'good' rather than identifying the potential delay risks for urgent matters or suggesting emergency arbitration options as noted in the ground truth."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "1.4",
+      "tier": "T3",
+      "issue": "No Conditions Precedent for JV Entity",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "JV Entity Not Yet Formed (MEDIUM). The MOU contemplates\u2014but does not require\u2014formation of a separate legal entity (\"JV Entity\"). Contributing capital directly between two separate companies without a formal entity can create unintended partnership or \"joint-enterprise\" liability. \u2192 Decide now whether (i) to form a Delaware LLC or other entity; (ii) the equity split; (iii) tax classification (partnership vs C-Corp). Incorporate those decisions into the document or into an execution-ready Operating Agreement.",
+        "judge_reasoning": "The review clearly identifies the core issue that JV entity formation is optional rather than mandatory, and notes the risks of capital contributions flowing without entity formation. It recommends deciding on entity formation and incorporating those decisions into the document."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Regulatory Compliance. No clauses on export controls (EAR/ITAR), data privacy (GDPR/CCPA), or industry-specific regulations. \u2192 Insert compliance warranties and covenants.",
+        "judge_reasoning": "The review explicitly identifies the absence of data privacy provisions, specifically mentioning GDPR/CCPA compliance requirements are missing, which directly corresponds to the ground truth issue of no data protection/privacy clause."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Duration (LOW). Five years is short for trade secrets. \u2192 State that trade-secret obligations last as long as the information remains a trade secret under applicable law.",
+        "judge_reasoning": "The review clearly identifies the core issue that the 5-year confidentiality period is inadequate for trade secrets and recommends perpetual protection tied to trade secret status under applicable law."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 10,
+      "P": 5,
+      "N": 3,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 5,
+        "P": 3,
+        "N": 2,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 5,
+    "t1_detected": 5,
+    "total_detection_points": 70.0,
+    "weighted_max": 93,
+    "detection_rate": 0.8333
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "contract": "dpa",
+  "model_id": "haiku35",
+  "api_model": "claude-3-5-haiku-20241022",
+  "prompt": "Review this contract",
+  "input_tokens": 1768,
+  "output_tokens": 324,
+  "latency_seconds": 11.27,
+  "timestamp": "2026-02-03T19:32:22.168402+00:00"
+}

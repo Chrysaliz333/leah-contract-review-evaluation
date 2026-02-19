@@ -1,0 +1,99 @@
+Certainly! Below is a **review and analysis** of the contract you provided, highlighting its **strengths, potential risks, ambiguities, and possible improvements or clarifications**.
+
+---
+
+# Contract Review: Strategic Partnership Agreement No. SPA-2025-017
+
+## 1. **Key Strengths**
+
+- **Clear Scope and Purpose**: The agreement specifies the nature of the partnership (co-investment in technology growth equity deals) and operational focus (North American companies, $10–100M revenues).
+- **Equitable Governance**: Both Partners have an equal say in management (unanimous consent), and the Investment Committee has parity representation.
+- **Transparency in Profit Sharing**: All profits and losses are split 50/50, regardless of capital contributed per deal—simple to apply and helps avoid disputes over "who put in more."
+- **Well-Defined Dispute Resolution**: The agreement provides for negotiation, then binding arbitration under AAA rules in New York—limits litigation exposure.
+- **Strong Confidentiality Provisions**: Five-year post-termination protection of sensitive business information.
+
+---
+
+## 2. **Potential Risks and Issues**
+
+### A. **Profit/Loss Split Without Reference to Capital Contributed**
+- **Section 6.1:** The 50/50 split regardless of capital contribution **could be problematic**. For example, if one Partner puts in 80% of the funds and another only 20%, a 50/50 split is arguably inequitable and may be challenged by internal stakeholders or limited partners. It could also increase the default risk—there’s limited downside to underfunding on a particular deal.
+
+    **Recommendation:** Consider adjusting the formula to pro-rata sharing based on actual capital contributed per deal, or at least allowing for such an option by mutual agreement.
+
+---
+
+### B. **No Exit/Buyout Provisions**
+
+- **10.1 [Reserved]:** There are no details on how a Partner can exit a co-investment, nor on what happens if the parties wish to separate their interests (e.g., "you get Company X, I get Company Y," forced buy/sell provisions, or structuring an exit waterfall if the partnership unwinds).
+  
+    **Risk:** Disputes or deadlocks could arise at wind-down, especially if one Partner wants out before a Co-Investment is liquidated.
+
+    **Recommendation:** Fill in Section 10.1 with detailed exit, buyout, or deadlock resolution language.
+
+---
+
+### C. **Default Provisions Unspecified**
+- **Section 3.3 ("subject to default provisions in Section 10.3")** — but Section 10.3 does not exist.
+  
+    **Implication:** The remedy for a Partner’s failure to fund a capital call is undefined. This is a critical gap.
+
+    **Recommendation:** Add a provision specifying the consequences of a capital default (e.g., dilution, loss of decision rights, forced sale, etc.).
+
+---
+
+### D. **Ambiguity in Exclusivity Obligations**
+- **Section 5.3:** 60-day exclusivity applies once a deal is presented, but what if diligence drags out beyond 60 days? Are the Partners then free to compete, or does exclusivity continue for active deals?
+- **Section 2.3 and 11.1:** These may conflict. Section 2.3 says the partnership is non-exclusive "except as provided herein," but the boundaries are not 100% clear.
+
+    **Improvement:** Clarify that, for deals not actively under diligence following Investment Committee review, exclusivity lapses after 60 days **unless otherwise agreed in writing**. For portfolio company competitors, better define "directly competes" and the scope/duration of restrictions.
+
+---
+
+### E. **No Forced Buy-Sell / Deadlock Provisions**
+- The unanimous consent required for "major decisions" (Section 4.1) means a deadlock could easily arise, particularly since profit allocations are fixed and there’s no tie-breaker. 
+
+    **Recommendation:** Consider adding a deadlock mechanism (e.g., Russian Roulette, Texas Shoot-Out, or mediation before arbitration).
+
+---
+
+### F. **Lack of Clarity on "Deal-by-Deal" Capital Commitments**
+- The agreement is silent on how "capital commitments" are agreed per deal, the process for opting into/out of an investment, and notice/response deadlines. This could lead to informality or misunderstandings.
+
+    **Improvement:** Add language describing the process and timeline for Partners to decide on participation and how non-participating Partners are treated.
+
+---
+
+### G. **General Commercial Points**
+- **No Key-Person Provisions:** What if a key executive leaves one of the Partners?
+- **No FOR clause for force majeure** (except by implication under Delaware law).
+- **Assignment clause is standard** but should also address “change of control.”
+
+---
+
+## 3. **Summary Table**
+
+| Risk/Issue                                 | Clause(s)         | Recommendation              |
+|---------------------------------------------|-------------------|-----------------------------|
+| No default mechanism for capital calls      | 3.3, 10.3         | Add detailed default terms  |
+| Profit split not tied to capital            | 6.1               | Make split pro-rata, or allow by deal |
+| No exit/buyout or deadlock terms            | 10.1, 4.1         | Add buyout/deadlock clauses |
+| Ambiguous exclusivity period                | 5.3, 11.1         | Clarify duration/scope      |
+| Opt-in/opt-out for deals not detailed       | 3, 5              | Clarify process and timelines |
+| No key-person or force majeure              | N/A               | Consider adding             |
+
+---
+
+## 4. **Other Suggestions**
+
+- **Definitions:** Consider defining "material breach," "Partnership Activities," and "Term" more robustly.
+- **Survival:** Clarify which sections (confidentiality, profit/loss sharing, etc.) survive termination.
+- **Execution:** Insert signature blocks, names, and titles for signatories.
+
+---
+
+## 5. **Conclusion**
+
+This agreement is **well-drafted and covers most of the critical commercial and legal aspects** typical for a co-investment/alliance agreement. However, **key gaps remain around default, exit, capital allocation, and deadlock**—all of which can become major pain points in practice. **Addressing these in a revised draft is strongly recommended** before signature.
+
+**If you need template language for any of these missing points or wish to discuss a specific clause, please let me know!**

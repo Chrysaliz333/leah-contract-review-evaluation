@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "o3",
+    "evaluation_timestamp": "2026-02-03T20:54:15.161426+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "o3",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1432,
+    "raw_output_tokens": 2037,
+    "raw_latency_seconds": 40.58
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Article 10 is also intended to cover \"Exit and Buyout\" (\u00a710.1 \"[Reserved]\") but contains no operative language. Without exit mechanics the parties are effectively locked together for the life of every Co-Investment.",
+        "judge_reasoning": "The review explicitly identifies that Section 10.1 is reserved and lacks exit/buyout mechanisms, directly matching the ground truth issue about missing exit rights and buyout provisions."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "All major decisions require unanimity of the two Partners (\u00a74.1) and the Investment Committee also needs one affirmative vote from each Partner (\u00a74.2). There is no tie-breaker or buy-sell remedy, so any disagreement can paralyze the partnership.",
+        "judge_reasoning": "The review clearly identifies the unanimous consent requirement and explicitly states the deadlock risk, noting the lack of tie-breaker mechanisms that can paralyze the partnership."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "\"Section 10.3 Default\" is cross-referenced in \u00a73.3 but Article 10 is marked \"[Reserved]\". You need a complete default, cure, and remedy scheme (capital call remedies, dilution, buyout, interest, forced sale, etc.).",
+        "judge_reasoning": "The review clearly identifies the exact issue: Section 3.3 references default provisions in Section 10.3, but Article 10 is reserved/empty, and notes the need for actual default provisions including capital call remedies."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "50/50 Profit Split Regardless of Capital (\u00a76.1) \u2022 If one Partner routinely funds more than the other, the agreement creates economic inequity and arguably a disguised fee. \u2022 The provision may have adverse U.S. tax consequences (partnership anti-abuse rules, disguised sale/carry regulations, Section 707 disguised payment for services). \u2022 Consider capital-weighted distributions with a promote or catch-up if the goal is parity.",
+        "judge_reasoning": "The review explicitly identifies the 50/50 profit split issue in section B.1, discussing economic inequity when one partner funds more than the other and recommending capital-weighted distributions as an alternative. This directly addresses the ground truth concern about equal profit/loss split regardless of contributions."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "No limitation of liability or indemnification provisions. Normally each Partner indemnifies the other for breaches, bad acts, or regulatory violations, and liability is otherwise several, not joint.",
+        "judge_reasoning": "The review explicitly identifies the absence of limitation of liability provisions and discusses the unlimited liability exposure between partners. It also recommends adding indemnities and caps to clarify each partner's liability exposure."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "No limitation of liability or indemnification provisions. Normally each Partner indemnifies the other for breaches, bad acts, or regulatory violations, and liability is otherwise several, not joint.",
+        "judge_reasoning": "The review explicitly identifies the absence of indemnification provisions and explains what should normally be included (mutual indemnification for breaches, bad acts, regulatory violations), which directly matches the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "\u00a75.3 imposes a 60-day exclusivity period once a deal is shown to the Committee. After 60 days the Partners are silent about whether a Partner may pursue the deal alone if the Committee rejected it. Clarify.",
+        "judge_reasoning": "The review identifies the 60-day exclusivity period and notes a post-period clarity issue, but doesn't address the core concern that 60 days may be insufficient for complex due diligence or mention other key elements like breach consequences or recommended extension to 90-120 days."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "\u00a712.3 requires the Partners to 'continue to manage existing Co-Investments until liquidation' yet provides no governance mechanics once one Partner has left (deadlock risk again).",
+        "judge_reasoning": "The review clearly identifies the core issue - that partners must continue managing investments until liquidation after termination without proper governance mechanics, creating the exact forced continued relationship problem described in the ground truth."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review extensively covers governance, economic provisions, and reporting requirements but does not identify the specific issue of missing formal reporting requirements for portfolio performance, financial statements, material event notices, or inspection rights despite mentioning Investment Committee meetings."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "\u00a711.2 Non-Solicit of employees is valid but duration (\"during the Term and one year thereafter\") should be tied to reasonableness under applicable law (particularly Massachusetts and New York).",
+        "judge_reasoning": "The review clearly identifies the non-solicitation clause in section 11.2 and discusses the 1-year post-term restriction, addressing whether the duration is reasonable under applicable law, which aligns with the ground truth issue about evaluating this standard provision."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Confidentiality survives only 5 years (\u00a79.1). Trade secrets should survive indefinitely.",
+        "judge_reasoning": "The review clearly identifies the core risk that the 5-year confidentiality survival period is inadequate for trade secrets, which should survive indefinitely. This directly matches the ground truth issue about insufficient protection for proprietary investment information."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Shorten non-renewal notice to 90\u2013180 days; add voluntary termination with a practical wind-up procedure.",
+        "judge_reasoning": "The review mentions shortening non-renewal notice to 90-180 days and adding wind-up procedures, but characterizes this as shortening rather than extending the notice period, and doesn't identify the specific concern that 90 days is too short for partnership wind-down with complex investments."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 9,
+      "P": 2,
+      "N": 1,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 2,
+        "P": 1,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 6,
+    "t1_detected": 6,
+    "total_detection_points": 62.0,
+    "weighted_max": 70,
+    "detection_rate": 0.9167
+  }
+}

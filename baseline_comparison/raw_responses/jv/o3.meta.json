@@ -1,0 +1,10 @@
+{
+  "contract": "jv",
+  "model_id": "o3",
+  "api_model": "o3-2025-04-16",
+  "prompt": "Review this contract",
+  "input_tokens": 1821,
+  "output_tokens": 2302,
+  "latency_seconds": 40.73,
+  "timestamp": "2026-02-03T19:51:46.484189+00:00"
+}

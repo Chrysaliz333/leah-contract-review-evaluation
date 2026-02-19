@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "contract": "partnership",
+    "model_id": "gpt41",
+    "evaluation_timestamp": "2026-02-03T20:55:03.289955+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "gpt-4.1",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1433,
+    "raw_output_tokens": 1365,
+    "raw_latency_seconds": 53.84
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "10.1",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Mechanism - Article 10.1 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "**10.1 [Reserved]:** There are no details on how a Partner can exit a co-investment, nor on what happens if the parties wish to separate their interests (e.g., \"you get Company X, I get Company Y,\" forced buy/sell provisions, or structuring an exit waterfall if the partnership unwinds). **Risk:** Disputes or deadlocks could arise at wind-down, especially if one Partner wants out before a Co-Investment is liquidated. **Recommendation:** Fill in Section 10.1 with detailed exit, buyout, or deadlock resolution language.",
+        "judge_reasoning": "The review directly identifies the reserved Section 10.1 and specifically discusses the lack of exit and buyout mechanisms, which is exactly the ground truth issue. It also recommends adding the missing provisions."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent Creates Deadlock Risk",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "The unanimous consent required for 'major decisions' (Section 4.1) means a deadlock could easily arise, particularly since profit allocations are fixed and there's no tie-breaker.",
+        "judge_reasoning": "The review clearly identifies the deadlock risk from unanimous consent requirements and explicitly notes the absence of a tie-breaker mechanism, which directly matches the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "3.3",
+      "tier": "T1",
+      "issue": "Default Provisions Cross-Reference Error",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Section 3.3 ('subject to default provisions in Section 10.3') \u2014 but Section 10.3 does not exist. Implication: The remedy for a Partner's failure to fund a capital call is undefined. This is a critical gap. Recommendation: Add a provision specifying the consequences of a capital default",
+        "judge_reasoning": "The review clearly identifies the exact ground truth issue - it notes that Section 3.3 references default provisions in Section 10.3 but that section doesn't exist, leaving default consequences undefined. The reviewer recognizes this as a critical gap requiring actual default provisions."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Fixed 50/50 Split Regardless of Capital",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "The 50/50 split regardless of capital contribution could be problematic. For example, if one Partner puts in 80% of the funds and another only 20%, a 50/50 split is arguably inequitable and may be challenged by internal stakeholders or limited partners.",
+        "judge_reasoning": "The review clearly identifies the core risk of the fixed 50/50 profit split regardless of capital contributions, explaining how this creates inequity when partners contribute different amounts of capital and recommending pro-rata sharing based on actual capital contributed."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention limitation of liability, liability caps, or unlimited liability exposure anywhere in its analysis. While it identifies many other risks and gaps in the partnership agreement, it completely misses the fundamental issue that partners have unlimited liability exposure to each other."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Indemnification Provisions",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention indemnification provisions at all, despite covering many other missing contractual elements like exit provisions, default mechanisms, and deadlock resolution. The absence of indemnification clauses is not identified as a risk."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "60-Day Exclusivity Period May Be Insufficient",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Section 5.3: 60-day exclusivity applies once a deal is presented, but what if diligence drags out beyond 60 days? Are the Partners then free to compete, or does exclusivity continue for active deals?",
+        "judge_reasoning": "The review identifies concerns about the 60-day exclusivity period and questions what happens if diligence extends beyond this timeframe, but it doesn't address the core issues of the period being insufficient for complex due diligence or the lack of consequences for breach."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.3",
+      "tier": "T2",
+      "issue": "Continuation Post-Termination Indefinite",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review extensively discusses exit/buyout provisions and wind-down issues but does not identify the specific risk of indefinite continuation post-termination for managing existing investments until liquidation. The review focuses on partner exit mechanisms rather than the problematic requirement to continue managing investments after partnership termination."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Information Rights or Reporting",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the lack of information rights, reporting requirements, or the need for portfolio reports and material event notifications. While it mentions the Investment Committee meetings, it doesn't identify the missing formal reporting and transparency mechanisms."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.2",
+      "tier": "T3",
+      "issue": "Non-Solicitation Standard Term",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the non-solicitation provision in clause 11.2 at all. While the review is comprehensive and covers many other contract provisions, it completely omits any reference to the employee non-solicitation restriction."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions confidentiality provisions as a strength, noting 'Five-year post-termination protection of sensitive business information,' but fails to identify that this 5-year period may be inadequate for trade secrets like investment strategies and deal flow that have indefinite competitive value. The review does not discuss the need for perpetual protection or differentiation between trade secrets and general confidential information."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Non-Renewal Notice Period Too Short for Partnership Wind-Down",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not identify the specific risk of the 90-day non-renewal notice period being insufficient for partnership wind-down. While the review mentions various gaps and issues with the partnership agreement, it does not discuss clause 10.2, renewal/termination notice periods, or the challenges of winding down a complex investment partnership within the timeframe."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 4,
+      "P": 1,
+      "N": 7,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 2,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 1,
+        "N": 1,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 0,
+        "P": 0,
+        "N": 4,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 6,
+    "t1_detected": 4,
+    "total_detection_points": 32.5,
+    "weighted_max": 70,
+    "detection_rate": 0.4167
+  }
+}

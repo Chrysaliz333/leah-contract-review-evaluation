@@ -1,0 +1,129 @@
+Certainly! Below is a **review of the contract**, focusing on strengths, weaknesses, potential risks, and suggestions for improvement. This is **not legal advice** but a practical analysis from a commercial and risk management perspective.
+
+---
+
+## **GENERAL COMMENTS**
+
+- The agreement is **well-structured and covers key commercial terms** typically found in manufacturing supply agreements.
+- The contract **allocates risk in several areas** (liability, warranty, insurance, indemnification, etc.).
+- Certain important terms (Products, Pricing, Schedule) are left to the exhibits—ensure these are completed and precise.
+
+---
+
+## **ARTICLE & SECTION-BY-SECTION REVIEW**
+
+### **Article 2: Purchase and Sale**
+- **Purchase Orders:** Supplier can accept/reject within 5 business days — recommend clarity on process if Supplier is silent.
+- **Forecasts:** Non-binding, good for Supplier, but Buyer should consider whether it needs any reliance.
+
+### **Article 3: Pricing**
+- **Price Adjustments:** Capped at 5% per year after 12 months; provides Buyer significant price certainty.
+- **Taxes:** Buyer pays all taxes except Supplier’s income taxes — standard.
+
+### **Article 4: Payment**
+- **Net 30 terms** are reasonable; 1.5%/month late fee is high but industry-standard.
+- **Dispute mechanism** for invoices is appropriate, but clauses commonly clarify that only the undisputed portion must be paid.
+
+### **Article 5: Warranty**
+- **One-year warranty** is standard.
+- Supplier’s obligations could be limited — only “repair, replace or refund purchase price.” No obligation for costs of removal, reinstall, or other consequential losses — Buyer's risk.
+- **Disclaimer of implied warranties** is favorable for Supplier.
+
+### **Article 6: Delivery**
+- Delivered FCA Supplier’s facility (Incoterms 2020): Buyer assumes risk/cost after shipment.
+- Buyer pays all shipping/insurance.
+- **Partial shipments** are default unless Buyer opts out per PO.
+
+### **Article 7: Inspection & Acceptance**
+- 10 business days for Buyer to inspect — after which acceptance is “deemed.” Buyer should ensure this is sufficient time in practice.
+- Upon rejection, Supplier must cover return shipping; fair.
+
+### **Article 8: Quality Requirements**
+- Supplier must conform to ISO 9001/IATF 16949; strong for Buyer.
+- Buyer's audit right is “upon reasonable notice,” not defined — consider specifying notice period.
+
+### **Article 9: Intellectual Property**
+- IP stays with provider (Buyer or Supplier)— GOOD, but careful wording needed in product development/engineering changes.
+- Supplier’s IP protected.
+
+### **Article 10: Confidentiality**
+- Standard; survives for 3 years post-termination.
+
+### **Article 11: Limitation of Liability**
+- **EXCLUDES indirect/consequential damages** — very favorable to Supplier.
+- **Supplier’s liability capped** at amounts paid in past 12 months — Buyer should weigh risk if critical supply.
+- Does not carve out indemnification, breach of confidentiality, or gross negligence — most robust agreements do this.
+
+### **Article 12: Indemnification**
+- Supplier indemnifies for product defects/negligence/IP infringement.
+- Buyer indemnifies for mis-use/infringing specs.
+- **No express process for managing claims (defense, settlement consent, etc).**
+- Does not say “subject to cap/limitation of liability clause.” Is this intentional? If not, consider making that explicit.
+
+### **Article 13: Insurance**
+- Strong insurance requirements.
+- No requirement for Supplier to provide Buyer “certificates of insurance” or notice of cancellation; consider adding.
+
+### **Article 14: Term & Termination**
+- Rolling 3-year term with 1-year auto-renewals; standard.
+- **Termination for Convenience**: 180 days’ notice by either party; relatively long (especially for Supplier).
+
+### **Article 15: Force Majeure**
+- Comprehensive list.
+- No mechanism for notification, mitigation, or right to terminate after prolonged events.
+
+### **Article 16: General Provisions**
+- Michigan law, Detroit arbitration.
+- Assignment is restricted, with carve-out for affiliates/successors.
+
+---
+
+## **KEY **RISKS** AND **SUGGESTIONS**
+
+### 1. **Limitation of Liability**
+- **Buyer risk:** Supplier’s total liability is capped and all indirect/consequential damages are excluded, even if Supplier’s products cause Buyer’s factory shutdown.
+- **Recommendation:** Carve-out indemnity, gross negligence, willful misconduct, and confidentiality breaches from liability cap/exclusions.
+    - Example: “The limitations in this Article shall not apply to a Party’s indemnification obligations, confidentiality, or liability for gross negligence or willful misconduct.”
+
+### 2. **Third-Party Claims Management**
+- Add indemnification process: prompt notice, right to control defense, cooperation, settlement restrictions.
+
+### 3. **Force Majeure**
+- Add required notification timeframe and mitigation requirement.
+- Option for either party to terminate if force majeure exceeds a certain period (e.g., 60 days).
+
+### 4. **Forecasts**
+- Non-binding forecasts protect Supplier, but Buyer may want minimal supply assurance during unusual demand spikes.
+
+### 5. **Inspection/Acceptance**
+- 10 business days to inspect — is this enough in your business?
+- For latent defects (not discoverable on normal inspection), contract should clarify claims can still be made.
+
+### 6. **Assignment**
+- Clarify what constitutes a permitted assignment (“successor in interest by merger, sale, etc.”).
+
+### 7. **Insurance Certificates**
+- Add clause requiring Supplier insurance certificates and notice of cancellation/coverage changes.
+
+### 8. **Dispute Resolution**
+- Arbitration is efficient but has costs; ensure this aligns with your strategy.
+
+### 9. **Data Security (if applicable)**
+- If any confidential info is personal data or sensitive IP, clarify handling and protection obligations.
+
+### 10. **Exhibits**
+- Agreement requires detailed, completed Exhibits (A: Products/Specs, B: Delivery, C: Pricing). Contract is incomplete until these are attached.
+
+---
+
+## **CONCLUSION**
+
+- The agreement is **solid and industry-standard**, but the limitation of liability section is **very favorable to Supplier**; Buyer should assess whether this risk is acceptable or if exceptions are warranted, especially for indemnification/gross negligence/breach of confidentiality.
+- Several **practical improvements** above will help reduce ambiguity and ensure both parties know their rights and obligations.
+- The contract is most protective of the Supplier, with reasonable—but not ideal—protections for Buyer.
+
+**You should have this reviewed by a commercial attorney in your jurisdiction before signing.** If you’d like, I can help draft proposed revisions for any section you’re particularly concerned about.
+
+---
+
+**Please specify if you want sample language changes for any of these sections.**

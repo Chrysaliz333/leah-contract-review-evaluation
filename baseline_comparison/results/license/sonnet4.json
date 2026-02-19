@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "contract": "license",
+    "model_id": "sonnet4",
+    "evaluation_timestamp": "2026-02-03T20:53:25.062223+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-sonnet-4-20250514",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1523,
+    "raw_output_tokens": 711,
+    "raw_latency_seconds": 18.93
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.2",
+      "tier": "T1",
+      "issue": "Improvements owned by Licensor - loses R&D investment",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "IP Improvements Clause: All licensee improvements revert to licensor (may discourage innovation)",
+        "judge_reasoning": "The review clearly identifies the core risk that licensee improvements become licensor property and notes this may discourage innovation, which matches the ground truth issue about losing R&D investment and creating disincentives to innovate."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Licensor liability cap too low",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention liability caps, limitations on licensor liability, or any concerns about the licensor's maximum financial exposure being limited to 12 months of royalties. While it discusses other financial terms and risks, it completely misses this specific liability limitation issue."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Mandatory minimum royalty regardless of sales",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "High Financial Exposure: $500K upfront + 10% royalties + $250K minimum annual royalty is aggressive",
+        "judge_reasoning": "The review clearly identifies the $250K minimum annual royalty as part of the high financial exposure concern, recognizing it as an aggressive term that creates significant financial risk for the licensee."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.2",
+      "tier": "T1",
+      "issue": "AS-IS disclaimer with limited warranties",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Add Licensor Performance Warranties - Include IP validity and non-infringement guarantees",
+        "judge_reasoning": "The review identifies the need for stronger IP warranties including non-infringement guarantees, but doesn't specifically discuss the existing AS-IS disclaimer or the weakness of the 'to knowledge' qualifier in the current warranty structure."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High royalty rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "$500K upfront + 10% royalties + $250K minimum annual royalty is aggressive",
+        "judge_reasoning": "The review explicitly identifies the 10% royalty rate as part of an aggressive financial structure, directly addressing the ground truth concern about the high royalty rate being problematic."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Sublicensing requires Licensor consent",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Sublicensing: Requires consent but no criteria or timeline specified",
+        "judge_reasoning": "The review identifies that sublicensing requires consent and notes the lack of criteria/timeline, but it doesn't fully capture the key business flexibility concerns, manufacturing restrictions, or specific recommendations like automatic affiliate rights that are central to the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the consequential damages exclusion clause at all. While it covers various other contract risks and issues, there is no reference to damage limitations, liability exclusions, or the specific consequential damages provision in clause 12.1."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No termination for convenience - 10-year lock-in",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Reasonable termination provisions with sell-off period' as a strength and discusses various other risks, but does not identify the core issue of being locked into a 10-year term without any termination for convenience rights. The review fails to recognize this as a significant risk despite the contract's lengthy commitment period."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Non-refundable upfront fee",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "High Financial Exposure: $500K upfront + 10% royalties + $250K minimum annual royalty is aggressive",
+        "judge_reasoning": "The review clearly identifies the $500K upfront payment as part of 'High Financial Exposure' concerns, recognizing it as an aggressive financial term that creates risk for the licensee, which captures the core concern about the non-refundable upfront fee."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "7.1",
+      "tier": "T3",
+      "issue": "Audit cost-shifting threshold favors Licensor",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Limit Audit Scope - Define reasonable notice period and audit limitations",
+        "judge_reasoning": "The review mentions audit limitations as a recommendation for the licensee but doesn't identify the specific issue of the 5% cost-shifting threshold being too low or discuss the cost-bearing mechanism at all."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit A",
+      "tier": "T2",
+      "issue": "Licensed IP schedule (Exhibit A) not attached - undefined scope",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Licensed IP: Vague description with missing Exhibit A",
+        "judge_reasoning": "The review clearly identifies that Exhibit A is missing, which directly corresponds to the ground truth issue about the licensed IP schedule not being attached and creating undefined scope."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "Exhibit B",
+      "tier": "T2",
+      "issue": "Territory definition (Exhibit B) not attached - exclusivity meaningless",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Territory: Referenced throughout but undefined (Exhibit B missing)",
+        "judge_reasoning": "The review clearly identifies that the Territory is undefined and Exhibit B is missing, which directly corresponds to the ground truth issue about the territory definition not being attached, making exclusivity meaningless."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No IP infringement indemnification from Licensor",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Broad Infringement Indemnification: Limited protection for licensee against IP infringement claims",
+        "judge_reasoning": "The review identifies limited protection against IP infringement claims but doesn't clearly specify that no indemnification clause exists or fully capture the severity of the licensee's exposure to third-party claims and defense costs."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Confidentiality: Only 5-year term may be insufficient for valuable trade secrets",
+        "judge_reasoning": "The review clearly identifies the core issue that the 5-year confidentiality term is insufficient for valuable trade secrets, directly matching the ground truth concern about inadequate survival periods for trade secret protection."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "Non-infringement warranty qualified 'to knowledge' - inadequate for IP license",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Add Licensor Performance Warranties - Include IP validity and non-infringement guarantees",
+        "judge_reasoning": "The review mentions needing 'non-infringement guarantees' as a recommendation for the licensee, but it doesn't specifically identify that clause 9.1's 'to knowledge' qualifier is the core problem or explain why knowledge-qualified warranties are inadequate for IP licenses."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 5,
+      "N": 3,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 1,
+        "P": 3,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 4,
+        "P": 0,
+        "N": 3,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 2,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_detected": 4,
+    "total_detection_points": 43.0,
+    "weighted_max": 71,
+    "detection_rate": 0.8
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "contract": "license",
+  "model_id": "gpt41",
+  "api_model": "gpt-4.1-2025-04-14",
+  "prompt": "Review this contract",
+  "input_tokens": 1291,
+  "output_tokens": 1312,
+  "latency_seconds": 42.86,
+  "timestamp": "2026-02-03T19:41:09.512068+00:00"
+}

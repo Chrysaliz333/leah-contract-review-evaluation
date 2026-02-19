@@ -1,0 +1,149 @@
+Master Services Agreement – Review & Risk Commentary  
+
+This review highlights (i) drafting glitches and ambiguities, (ii) business / legal risks for each side, and (iii) practical revision language the parties can adopt.  Numbered sections track the contract’s article order.  Unless stated otherwise, “Issue” = why the clause is problematic; “Agency view / Client view” = who is advantaged; “Suggestion” = sample fix.
+
+--------------------------------------------------------------------
+1.   DEFINITIONS
+--------------------------------------------------------------------
+1.1  “Agency IP” –  Fine, but include “all derivatives and improvements” to avoid a debate over modifications done during the project.
+
+1.3  “Deliverables” –  Consider adding “in final, accepted form” so drafts are not deemed “Deliverables.”
+
+1.5  “SOW” –  You may want to state that an e-mail exchange referencing this MSA will not constitute an SOW unless labeled “Statement of Work” and signed by both parties. This avoids “accidental” SOWs.
+
+--------------------------------------------------------------------
+2.   SERVICES
+--------------------------------------------------------------------
+2.2  Change Orders
+• Issue: silent on pricing method or timing of approval.
+• Suggestion: “Agency shall have no obligation to proceed until the Change Order is executed, and any schedule impact shall be mutually agreed in writing.”
+
+2.3  Additional Work
+• Issue: calls new work “proposal,” then “SOW or change order” – choose one to avoid confusion.
+
+--------------------------------------------------------------------
+3.   FEES & PAYMENT
+--------------------------------------------------------------------
+3.1  Deposit up to 50 %
+• Put the deposit amount in each SOW; some clients cap at 25 %.
+
+3.4  Late-payment interest of 1.5 % per month (≈18 % p.a.) is near the usury ceiling in some jurisdictions.
+• Agency may leave the figure but add “or the maximum rate permitted by law, whichever is less.”
+
+Missing: agency’s right to suspend work / withhold deliverables for non-payment.  Add:  
+“Agency may suspend Services and/or withhold deliverables if any invoice is more than 15 days past due after written notice.”
+
+--------------------------------------------------------------------
+4.   CLIENT RESPONSIBILITIES
+--------------------------------------------------------------------
+4.3  Delays
+• Add explicit right for Agency to charge standby / re-start fees or adjust milestone payments.
+
+--------------------------------------------------------------------
+5.   INTELLECTUAL PROPERTY
+--------------------------------------------------------------------
+5.1  Ownership of Deliverables
+• “Upon full payment” is standard.  However, to create a “work-made-for-hire” under U.S. copyright law you must list the nine statutory categories and explicitly say “and to the extent not a work-made-for-hire, Agency hereby assigns ….”  Otherwise rights may not transfer automatically.
+
+5.2  Agency IP licence
+• Scope: “solely as part of the Deliverables” blocks Client from re-using Agency code in future projects.  Acceptable for Agency, restrictive for Client.  Negotiate broader rights if Client needs flexibility.
+
+5.3  Preliminary Work – OK for Agency, but Client may request the right to purchase unused concepts at an agreed fee.
+
+5.4  Portfolio Rights
+• Add “provided that Agency first removes any Client Confidential Information or obtains Client’s written consent.”  
+
+--------------------------------------------------------------------
+6.   ACCEPTANCE OF DELIVERABLES
+--------------------------------------------------------------------
+6.1  “If Client fails to provide written notice … the Deliverable shall be deemed rejected and Agency shall have an opportunity to cure.”  
+• This is the reverse of industry custom (silence = acceptance).  It forces an affirmative rejection, then cure, prolonging sign-offs.  Probably a drafting error.
+
+Suggested replacement:  
+“If Client fails to respond within the Review Period, the Deliverable shall be deemed accepted.”
+
+6.2  Revisions
+• Clarify what constitutes a “round” (all changes consolidated into one list).  State that changes outside scope or after final acceptance are billable.
+
+--------------------------------------------------------------------
+7.   THIRD-PARTY MATERIALS
+--------------------------------------------------------------------
+7.1 / 7.2 – Good to allocate cost, but missing (a) who holds the license; (b) any usage restrictions (e.g., geographic, media, term).  Add warranties that licenses will be in Client’s name when feasible.
+
+--------------------------------------------------------------------
+8.   REPRESENTATIONS & WARRANTIES
+--------------------------------------------------------------------
+8.1(d)  Infringement warranty is welcome but undermined by liability cap in Art. 10.  Client may want IP claims carved out of the cap or a higher cap tied to insurance.
+
+8.3  Disclaimer – standard.
+
+--------------------------------------------------------------------
+9.   CONFIDENTIALITY
+--------------------------------------------------------------------
+Survival period is only three (3) years; trade-secret obligations normally survive indefinitely.  Replace with: “obligations survive for five (5) years, and as to trade secrets, for so long as they remain trade secrets.”
+
+--------------------------------------------------------------------
+10.  LIMITATION OF LIABILITY
+--------------------------------------------------------------------
+10.2  Cap = “fees paid under the applicable SOW.”  That may be insufficient for a costly campaign failure or IP claim.
+• Compromise: cap at 2-3× fees or Agency’s insurance limits.
+• Client should insist that (i) Agency’s indemnity obligations, (ii) gross negligence or willful misconduct, and (iii) confidentiality breaches are excluded from the cap.
+
+--------------------------------------------------------------------
+11.  INDEMNIFICATION
+--------------------------------------------------------------------
+No procedure for tender/defense (notice, control of defense, settlement).  Add customary procedural language.
+
+Cap conflict: 11.1 gives Agency an indemnity, but Art. 10 caps Agency’s liability to fees.  Clarify whether indemnity is uncapped or capped—and match to insurance.
+
+--------------------------------------------------------------------
+12.  TERM & TERMINATION
+--------------------------------------------------------------------
+12.2  Termination for Convenience but “shall not affect any SOW already in progress.”  
+• Client may want the right to terminate SOWs as well, paying for work to date.  Agency may request an early-termination fee (e.g., 20 % of remaining fees).
+
+12.4(b)  Deliverables “Agency shall deliver all completed work product for which Client has paid.”  Add “and return Client Materials.”  Agency should reserve the right to withhold unfinished drafts until all amounts due are paid.
+
+Missing: survival clause.  State that §§5, 8, 9, 10, 11, 13 survive termination.
+
+--------------------------------------------------------------------
+13.  GENERAL PROVISIONS
+--------------------------------------------------------------------
+13.2  Arbitration
+• Lacks governing rules (e.g., AAA Commercial Rules), number of arbitrators, language, injunctive carve-out.
+• Client may prefer court litigation for injunctive relief or small claims.
+
+Missing boilerplate:
+• Force Majeure
+• Independent contractor status
+• Non-solicitation / non-hire of personnel
+• Notice addresses and permitted methods (e-mail/courier)
+• Compliance with laws (data-protection, export, anti-spam, ADA, etc.)
+• Insurance requirements (CGL, E&O/cyber, media liability)
+• Severability & waiver
+
+--------------------------------------------------------------------
+OTHER PRACTICAL ITEMS
+--------------------------------------------------------------------
+• Service Levels / KPIs: If campaigns have performance metrics, add them to each SOW along with remedies (credit, re-work).
+• Data / Privacy: If Agency touches personal data, include a Data Processing Agreement (GDPR/CCPA).
+• Audit Rights: Client may want the right to review media-buy invoices or AdWords spends.
+• Security: Include obligation to follow industry-standard security controls and to notify of breaches.
+• Electronic Signatures: Add acceptance of electronic signatures (e.g., DocuSign).
+
+--------------------------------------------------------------------
+MODEL REVISION LANGUAGE (extracts)
+--------------------------------------------------------------------
+Work-Made-For-Hire & Assignment  
+“Subject to Section 5.2, the Deliverables (excluding Agency IP) constitute ‘works made for hire’ as that term is defined in 17 U.S.C. § 101.  To the extent any Deliverable does not qualify, Agency hereby irrevocably assigns to Client all right, title, and interest in and to such Deliverable…”
+
+Limitation-of-Liability Carve-outs  
+“Notwithstanding the foregoing, the limitations set forth in this Article 10 shall not apply to (a) a Party’s indemnification obligations under Article 11, (b) either Party’s gross negligence, willful misconduct, or fraud, or (c) a breach of Section 9 (Confidentiality).”
+
+Force Majeure  
+“Neither Party shall be liable for delay or failure in performance due to events beyond its reasonable control, including acts of God, war, terrorism, civil unrest, labor disputes, governmental orders, epidemics, Internet or power outages.  The affected Party shall promptly notify the other Party and resume performance as soon as practicable.”
+
+--------------------------------------------------------------------
+CONCLUSION
+--------------------------------------------------------------------
+The MSA is generally balanced but tilts toward Agency in (i) the “deemed rejected” acceptance mechanism, (ii) low liability cap, (iii) non-terminable SOWs, and (iv) broad portfolio rights.  The parties should correct drafting errors, flesh out missing boilerplate, and align the IP, indemnity, and liability provisions with their actual risk tolerance and insurance coverage.

@@ -1,0 +1,10 @@
+{
+  "contract": "dpa",
+  "model_id": "o3",
+  "api_model": "o3-2025-04-16",
+  "prompt": "Review this contract",
+  "input_tokens": 1548,
+  "output_tokens": 2320,
+  "latency_seconds": 40.5,
+  "timestamp": "2026-02-03T19:48:25.895589+00:00"
+}

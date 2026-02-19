@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "contract": "distribution",
+    "model_id": "sonnet4",
+    "evaluation_timestamp": "2026-02-03T20:42:55.767995+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-sonnet-4-20250514",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1934,
+    "raw_output_tokens": 803,
+    "raw_latency_seconds": 20.51
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.1 / 3.2",
+      "tier": "T1",
+      "issue": "Non-exclusive appointment with Supplier competition rights",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Broad Supplier Rights - Supplier retains extensive rights to compete directly (Section 3.2)",
+        "judge_reasoning": "The review clearly identifies the core risk under 'MODERATE CONCERNS' by noting that the Supplier retains extensive rights to compete directly, which directly addresses the ground truth issue of non-exclusive appointment with Supplier competition rights."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Unilateral price changes with no cap",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "60-day price change notice may be insufficient for Distributor planning - No price increase limitations or caps",
+        "judge_reasoning": "The review clearly identifies the core risk of unilateral price changes with insufficient notice and no price caps, which directly matches the ground truth issue about supplier's ability to modify prices with only 60 days notice and no limitations."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Mandatory minimum purchase with automatic breach trigger",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Harsh Minimum Purchase Requirements - $400K annual minimum ($100K quarterly) may be excessive - Two consecutive quarter failures = material breach is strict - Consider graduated penalties or cure periods",
+        "judge_reasoning": "The review clearly identifies the mandatory minimum purchase requirement ($400K annual/$100K quarterly) and the automatic breach trigger for two consecutive failures, specifically noting the strictness and recommending cure periods and graduated penalties."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "13.3",
+      "tier": "T1",
+      "issue": "Asymmetric assignment rights",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention assignment rights or restrictions anywhere in the text. Despite covering many other contract provisions in detail, it completely misses the asymmetric assignment clause issue from section 13.3."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Low liability cap for both parties",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention liability caps, limitations of liability, or the 12-month payment limit provision anywhere in the analysis. While it notes missing indemnification clauses, it fails to identify the existing low liability cap that applies to both parties."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause - Distributor exposed to product claims",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "**Indemnification clauses** (product liability, IP infringement)",
+        "judge_reasoning": "The review explicitly identifies the missing indemnification clauses as a key gap, specifically mentioning both product liability and IP infringement indemnification in the 'Missing Provisions to Consider' section and recommending adding indemnification provisions in the action items."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "FOB shipping terms shift all transit risk to Distributor",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "While the review mentions 'FOB terms are standard but ensure compliance with Incoterms' in passing, it does not identify or discuss the specific risk that FOB shipping terms shift all transit risk to the Distributor. The review fails to recognize this as a concern requiring negotiation to different terms like DDP or CIF."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "1.5% monthly interest (18% APR) is reasonable but confirm local usury laws",
+        "judge_reasoning": "The review mentions the 1.5% monthly interest rate and calculates it as 18% APR, but characterizes it as 'reasonable' rather than identifying it as a high rate that exceeds typical commercial standards and lacks protections for disputed amounts."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Marketing approval required for all materials",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention Section 7.2's marketing approval requirement anywhere. While it discusses various other contract provisions in detail, it completely omits any reference to advertising materials needing supplier approval or the associated risks of delays and lack of approval timelines."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.3",
+      "tier": "T2",
+      "issue": "Termination effects lack buyback and transition",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "90-day sell-off period could be inadequate for inventory liquidation - No termination compensation for non-cause termination",
+        "judge_reasoning": "The review identifies concerns about the 90-day sell-off period being potentially inadequate and mentions lack of termination compensation, but it doesn't specifically address the core issues of no inventory buyback rights, no transition assistance, or no refund of prepaid amounts."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Supplier can reject purchase orders - no supply obligation",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not identify or mention the supplier's unilateral right to reject purchase orders or the lack of supply obligations. While it discusses minimum purchase requirements from the distributor's perspective, it completely misses the fundamental supply uncertainty risk where the supplier can reject orders without obligation to supply."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Territory restriction on outside sales",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Territory Restrictions - \"Actively solicit\" language in Section 3.3 is subjective - Define passive vs. active sales more clearly",
+        "judge_reasoning": "The review identifies Section 3.3 territory restrictions and mentions the \"actively solicit\" language being subjective, but fails to identify the core risk that these restrictions may limit growth opportunities or discuss the broader implications of territorial limitations on distribution expansion."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consequential Damages Exclusion Missing Critical Carve-Outs",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention anything about consequential damages exclusions or liability limitations. While it notes missing indemnification clauses, it completely fails to identify the existing overly broad damages exclusion in Section 10.1 that lacks critical carve-outs."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 4,
+      "P": 3,
+      "N": 6,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 2,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 0,
+        "P": 1,
+        "N": 4,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 2,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 6,
+    "t1_detected": 4,
+    "total_detection_points": 35.5,
+    "weighted_max": 75,
+    "detection_rate": 0.5385
+  }
+}

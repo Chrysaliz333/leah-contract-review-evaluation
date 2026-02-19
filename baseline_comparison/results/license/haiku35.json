@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "contract": "license",
+    "model_id": "haiku35",
+    "evaluation_timestamp": "2026-02-03T20:52:01.633734+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-3-5-haiku-20241022",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1523,
+    "raw_output_tokens": 318,
+    "raw_latency_seconds": 22.99
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.2",
+      "tier": "T1",
+      "issue": "Improvements owned by Licensor - loses R&D investment",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Article 3.2 (Improvements) gives all improvements to Licensor, which might disincentivize Licensee's innovation",
+        "judge_reasoning": "The review clearly identifies the core risk from clause 3.2 where improvements go to the Licensor and explicitly notes this creates a disincentive to innovate, which matches the ground truth issue about losing R&D investment."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Licensor liability cap too low",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Limitation of liability might be restrictive",
+        "judge_reasoning": "The review mentions liability limitations as a concern but doesn't identify the specific issue of the cap being tied to 12 months of potentially low royalties or the lack of carve-outs for IP title failure and willful misconduct."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T2",
+      "issue": "Mandatory minimum royalty regardless of sales",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "While the review mentions '$250,000 minimum annual royalty (starting Year 2)' in the key provisions summary, it does not identify this as a risk or concern, nor does it discuss the problematic nature of mandatory minimum royalties regardless of sales performance."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.2",
+      "tier": "T1",
+      "issue": "AS-IS disclaimer with limited warranties",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Broad \"AS IS\" warranty disclaimer in 9.2",
+        "judge_reasoning": "The review identifies the AS-IS warranty disclaimer in clause 9.2 as a concern, but fails to discuss the core issues such as the weakened 'to knowledge' qualifier, lack of functionality warranties, or recommendations to strengthen the non-infringement warranty to be unconditional."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High royalty rate",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions the '10% running royalty on Net Sales' in the key provisions section but does not identify this as a problematic high rate or discuss any concerns about it being above typical industry rates for consumer electronics."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T3",
+      "issue": "Sublicensing requires Licensor consent",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention sublicensing requirements, consent provisions, or any related business flexibility concerns. Despite the ground truth issue being present in clause 2.2, the review completely overlooks this sublicensing restriction."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Limitation of liability might be restrictive",
+        "judge_reasoning": "The review mentions liability limitations as potentially restrictive but doesn't specifically identify the consequential damages exclusion or discuss the need for carve-outs for IP title failure, willful misconduct, or breach of exclusivity."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No termination for convenience - 10-year lock-in",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions the 10-year term as a key provision but does not identify the lack of termination for convenience as a risk or concern. It fails to recognize that being locked into a 10-year commitment without exit options could be problematic."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Non-refundable upfront fee",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions the '$500,000 upfront fee' in the key provisions section but does not identify or discuss the risk that this fee is non-refundable, nor does it mention the potential sunk cost implications if the IP proves unusable."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "7.1",
+      "tier": "T3",
+      "issue": "Audit cost-shifting threshold favors Licensor",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Detailed audit and reporting requirements' as a strength but does not discuss the specific audit cost-shifting provisions, the 5% threshold, or any concerns about the audit terms favoring the Licensor."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit A",
+      "tier": "T2",
+      "issue": "Licensed IP schedule (Exhibit A) not attached - undefined scope",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention Exhibit A being blank, undefined, or missing the patent and trademark schedule. While it discusses various contract provisions, it fails to identify that the Licensed IP scope is undefined due to the placeholder text in Exhibit A."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "Exhibit B",
+      "tier": "T2",
+      "issue": "Territory definition (Exhibit B) not attached - exclusivity meaningless",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the missing territory definition in Exhibit B or the fact that the exclusive license territory is undefined. While the review notes the exclusive license nature, it completely misses that the territory scope is blank and unattached, making the exclusivity meaningless."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No IP infringement indemnification from Licensor",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention indemnification at all, despite this being a critical T1 risk. While it discusses warranties and liability limitations, it completely misses the absence of IP infringement indemnification provisions."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Strong confidentiality and dispute resolution clauses' but does not discuss the specific issue of inadequate survival periods for confidentiality obligations, trade secrets protection, or the distinction between general confidential information and trade secrets requiring perpetual protection."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "Non-infringement warranty qualified 'to knowledge' - inadequate for IP license",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the 'to knowledge' qualification in the non-infringement warranty or discuss any concerns about the adequacy of warranty protections in clause 9.1. While it briefly notes 'Broad \"AS IS\" warranty disclaimer in 9.2' and suggests 'Consider more specific warranty language,' it completely misses the critical issue that the non-infringement warranty is qualified by the licensor's knowledge rather than being unconditional."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 1,
+      "P": 3,
+      "N": 11,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 1,
+        "P": 1,
+        "N": 2,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 0,
+        "P": 2,
+        "N": 5,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 0,
+        "N": 4,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "t1_detected": 2,
+    "total_detection_points": 17.0,
+    "weighted_max": 71,
+    "detection_rate": 0.2667
+  }
+}

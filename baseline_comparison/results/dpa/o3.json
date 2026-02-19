@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "o3",
+    "evaluation_timestamp": "2026-02-03T20:36:41.729431+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "o3",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1548,
+    "raw_output_tokens": 2320,
+    "raw_latency_seconds": 40.5
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Controller has 30 days to object (4.1). Add objective criteria for objection (\"objection based on reasonable, demonstrable grounds related to data protection\") to avoid frivolous blocking.",
+        "judge_reasoning": "The review clearly identifies the core issue with the sub-processor objection mechanism in clause 4.1, recognizing that while the Controller can object within 30 days, there are no consequences or effective mechanisms if they do object, and suggests adding objective criteria to make the objection process more meaningful."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Clause 5.1 is appropriately high-level, but merely referencing 'encryption, pseudonymisation, access controls' may be deemed insufficient by some regulators; add measurable details in Exhibit B.",
+        "judge_reasoning": "The review clearly identifies the core issue that the security measures in clause 5.1 are vague and subjective, noting that merely referencing general examples may be insufficient and recommending specific measurable details be added."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "8.1",
+      "tier": "T3",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "While the review mentions breach notification in section 2g stating 'Breach notification \u2013 Present (Art. 8) and timeline (72 hrs) is compliant,' it does not identify any risk with the 72-hour timeframe being potentially too slow for high-risk breaches or suggest shorter notification periods for severe incidents."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1 / 9.2",
+      "tier": "T2",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Clause 9 leaves liability 'in accordance with applicable law' but then adds an unlimited indemnity in 9.2. This is commercially aggressive and may be unenforceable or hotly negotiated.",
+        "judge_reasoning": "The review clearly identifies the core issue - that clause 9.1's reference to 'applicable law' creates potential caps on the indemnification provided in 9.2, making it commercially problematic and potentially unenforceable."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability in DPA",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Clause 9 leaves liability 'in accordance with applicable law' but then adds an unlimited indemnity in 9.2. This is commercially aggressive and may be unenforceable or hotly negotiated. Typical market positions: \u2013 Mutual indemnity limited to a cap (e.g., 12 months' fees); or \u2013 Each party liable only to the extent it violated the DPA; fines attributable to one party are borne by that party. \u2022 Clarify whether consequential, indirect, or lost-profit damages are excluded or capped.",
+        "judge_reasoning": "The review clearly identifies the liability issue in section 7, noting that clause 9 lacks proper liability limitations and discussing the need for caps and clarification of damage exclusions. This directly addresses the ground truth concern about missing limitation of liability provisions in the DPA."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Deletion Timeline Unspecified",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Data deletion/return \u2013 Present (3.4) but Article 28(3)(g) also requires Processor to delete any existing copies unless law requires storage. Add certification requirement (\"Processor shall certify in writing\u2026\"). ... Add explicit \"Certification of Deletion\" language and a time-frame (e.g., 30 days after termination).",
+        "judge_reasoning": "The review clearly identifies the lack of a specific deletion timeline in clause 3.4 and explicitly recommends adding a time-frame (30 days) for data deletion after termination, which directly matches the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.2",
+      "tier": "T3",
+      "issue": "All Audit Costs on Controller",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "Assistance under 3.3, audits (7.2), and breach cooperation (8.3) are at Processor's expense by default. Often parties agree that Controller reimburses Processor's 'reasonable and documented' costs beyond a fixed baseline.",
+        "judge_reasoning": "The review clearly identifies that audits are at the Controller's expense and suggests this is a common issue that parties often negotiate differently. It directly addresses the cost allocation concern from the ground truth."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "10.1",
+      "tier": "T3",
+      "issue": "Indefinite Duration",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not address the indefinite duration issue from clause 10.1. While section 9 discusses 'Term & Termination' and mentions survival clauses and certification of deletion, it does not identify or discuss the risk that the DPA continues indefinitely while processing occurs without maximum retention periods or periodic review requirements."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "Exhibit A / 2.2",
+      "tier": "T2",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "The subject matter, duration, nature, and purpose of Processing, the types of Personal Data, and categories of Data Subjects are described in Exhibit A. [...] a. Subject-matter, duration, nature, purpose, type of data, categories of data subjects \u2013 Provided via Exhibit A but must be completed.",
+        "judge_reasoning": "The review clearly identifies that Exhibit A must be completed and explicitly states this is required for GDPR Article 28(3) compliance. It recognizes that the processing details are referenced but not populated."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "Exhibit B / 5.1",
+      "tier": "T2",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Security measures \u2013 Clause 5, but Exhibit B is blank; Article 28(3)(c) requires the measures be 'set out,' not merely referenced. Add an annex that is specific (e.g., encryption standards, key management, backup, physical security).",
+        "judge_reasoning": "The review clearly identifies that Exhibit B is blank and explains this creates a GDPR Article 28(3)(c) compliance issue because security measures must be 'set out' rather than merely referenced. This directly matches the ground truth concern about inability to verify GDPR Art 32 compliance due to the blank exhibit."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit C / 4.1",
+      "tier": "T2",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Exhibit C must list initial sub-processors (hosting provider, email relay, etc.); blank list may invalidate \"general\" authorization.",
+        "judge_reasoning": "The review clearly identifies that Exhibit C is blank and that this blank list may invalidate the general authorization, which directly addresses the core issue that without a populated exhibit the objection right becomes meaningless."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Cyber Insurance Requirement",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Insurance \u2013 consider requiring Processor to maintain cyber liability insurance with a specified limit.",
+        "judge_reasoning": "The review explicitly identifies the missing cyber insurance requirement in section 10, recommending that the Processor should maintain cyber liability insurance with a specified limit, which directly addresses the ground truth issue."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 10,
+      "P": 0,
+      "N": 2,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 2,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 6,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 3,
+    "t1_detected": 3,
+    "total_detection_points": 55.0,
+    "weighted_max": 57,
+    "detection_rate": 0.8333
+  }
+}

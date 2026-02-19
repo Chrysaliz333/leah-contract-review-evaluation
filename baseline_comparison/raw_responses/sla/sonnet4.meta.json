@@ -1,0 +1,10 @@
+{
+  "contract": "sla",
+  "model_id": "sonnet4",
+  "api_model": "claude-sonnet-4-20250514",
+  "prompt": "Review this contract",
+  "input_tokens": 3367,
+  "output_tokens": 801,
+  "latency_seconds": 21.24,
+  "timestamp": "2026-02-03T19:27:40.721532+00:00"
+}

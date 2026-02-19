@@ -1,0 +1,140 @@
+Contract Review – Distribution Agreement No. DA-2025-112  
+(Last revised 2025)  
+
+IMPORTANT: This review is for general informational purposes only and is not legal advice. Engage qualified counsel licensed in the relevant jurisdiction before relying on, signing, or negotiating this agreement.  
+
+──────────────────────────────────  
+1. EXECUTIVE SUMMARY  
+──────────────────────────────────  
+Strengths  
+• Clear definitions, streamlined ordering/payment mechanics, and a logical article structure.  
+• Non-exclusive appointment gives Supplier commercial flexibility.  
+• Supplier’s IP ownership, warranty disclaimer, and liability cap are well protected.  
+• Automatic renewal provides continuity unless either party opts out.  
+
+Key Risk Areas / Negotiation Points (highest impact first)  
+1. NO INDEMNITIES – Neither party indemnifies the other for third-party claims (e.g., product liability, IP infringement).  
+2. MINIMUM PURCHASE COMMITMENT – $100K/quarter with breach after two quarters may be onerous for a new distributor, especially without market-development support or price protection.  
+3. TERMINATION RIGHTS – (a) “For cause” cure period is only 30 days; (b) no termination “for convenience” (important to Distributor if sales are slow or Supplier pricing becomes uncompetitive).  
+4. RETURN / RECALL MECHANICS – Absent. Distributor holds unsold/defective inventory risk.  
+5. PRICE-CHANGE CLAUSE – 60-day notice but no cap/frequency limit. Combined with Minimum Purchases, this can squeeze Distributor margins.  
+6. LIMITED SELL-OFF – Only 90 days to sell remaining inventory; could be unrealistic for slow-moving goods.  
+7. CONFIDENTIALITY – Survival is three years; trade secrets generally require perpetual protection.  
+8. COMPLIANCE & REGULATORY – No clauses on anti-bribery, sanctions, export controls, environmental regulations, or data privacy.  
+9. INSURANCE – Absent (product liability and general commercial liability).  
+10. DISPUTE RESOLUTION – Binding arbitration in Chicago may be expensive for foreign distributors; discovery limits and cost-sharing rules not stated.  
+
+──────────────────────────────────  
+2. CLAUSE-BY-CLAUSE COMMENTS & SUGGESTED CHANGES  
+──────────────────────────────────  
+Article 1 – Definitions  
+• “Net Sales” – Clarify whether taxes, shipping charges billed to customers, and rebates are included or excluded.  
+• Consider defining “Confidential Information” (used in Art. 12 but not defined).  
+
+Article 2 – Appointment  
+• Good. Confirm that “purchase” rights include the right to provide after-sales service and perform warranty work, if applicable.  
+
+Article 3 – Territory & Exclusivity  
+• 3.2(c) allows Supplier to sell outside the Territory to customers who later “resell” inside. This undercuts Distributor’s market and should be deleted or tightly limited.  
+• No performance standards aside from Minimum Purchases; consider adding qualitative obligations instead of or in addition to a pure dollar threshold.  
+
+Article 4 – Orders & Delivery  
+• 4.1 – Silent on minimum lead times, partial shipments, or order cancellation charges.  
+• 4.2 – FOB Supplier’s facility shifts risk to Distributor immediately. If Distributor has limited control over carriers, request FOB Destination or at least FCA with Supplier arranging carriage.  
+• Consider adding “time is of the essence” language for delivery, plus remedies for late delivery.  
+
+Article 5 – Pricing & Payment  
+• 5.1 – Require price increases to be (i) tied to objective factors (raw material index, inflation), (ii) no more than X% per 12-month period, or (iii) subject to mutual agreement.  
+• 5.3 – 1.5 %/month = 18 % APR. Ensure this does not violate usury laws in some jurisdictions.  
+• Optional: Early-payment discount or credit-limit provisions.  
+
+Article 6 – Minimum Purchases  
+• Assess whether $400K/year is commercially realistic. At minimum, add (a) phase-in schedule, (b) force-majeure carve-out, and (c) ability to offset shortfall with subsequent quarters.  
+• Include price-protection or marketing-support commitments from Supplier in exchange.  
+
+Article 7 – Marketing & Promotion  
+• 7.2 – Supplier approval of “all” materials may impede quick campaigns. Suggest deemed approval after X business days.  
+• Add co-op advertising fund or guidelines.  
+
+Article 8 – Trademark License  
+• Add quality-control standards and inspection rights to preserve trademark enforceability (Lanham Act requirement).  
+• Clarify Distributor’s right to use trademarks online, on social media, in domain names, etc.  
+
+Article 9 – Product Warranty  
+• 12-month warranty is industry-standard.  
+• Missing procedure for handling warranty claims (return authorization, credit, repair, replacement).  
+• Need clarity on who pays freight on returns.  
+• Consider pass-through of any end-user warranties; ensure Distributor is not providing warranties beyond Supplier’s scope.  
+
+Article 10 – Limitation of Liability  
+• 10.1/10.2 – Combined with lack of indemnification, Distributor bears significant uninsured product-liability risk.  
+• Carve-outs typically negotiated: death, personal injury, gross negligence, willful misconduct, IP infringement, confidentiality breach, unpaid invoices.  
+
+Article 11 – Term & Termination  
+• 11.1 – If auto-renewal is acceptable, ensure 90-day notice of non-renewal is operationally sufficient.  
+• 11.2 – Add “insolvency or bankruptcy” as automatic termination triggers.  
+• 11.3(c) – 90-day sell-off may be extended to 6–12 months or until inventory depletion.  
+• Post-termination support: spare parts, warranty fulfilment, data transfer.  
+
+Article 12 – Confidentiality  
+• Define Confidential Information; extend survival to five years or “for so long as the information remains confidential.”  
+• Include permitted disclosures (governmental request, court order) and protective steps.  
+
+Article 13 – General  
+• 13.1 – Illinois law fine, but confirm Distributor can live with it given conflict-of-laws risk.  
+• 13.2 – Specify arbitration rules (AAA, ICC, JAMS), number of arbitrators, language, and allocation of costs. Optionally add mediation tier before arbitration.  
+• 13.3 – Supplier can assign; Distributor cannot. Seek mutual assignment rights in connection with merger/acquisition or to affiliates.  
+• Add “Notices” clause (method, deemed receipt).  
+• Add “Relationship of the Parties” (independent contractors, no agency).  
+• Add “Compliance with Laws” (FCPA, UK Bribery Act, export controls, GDPR/CCPA).  
+• Add “Insurance” – Supplier to carry product liability insurance ≥ USD X million per occurrence, naming Distributor as additional insured.  
+• Add “Change of Control” notification obligations.  
+• Add “Audit Rights” if Supplier pays volume rebates or if Distributor remits royalties.  
+
+Exhibits A–D  
+• Ensure Exhibits are completed, dated, and version-controlled before signature.  
+• Exhibit A – indicate SKU numbers, pack sizes, and current pricing (or attach price list separately but referenced here).  
+• Exhibit B – include test methods, tolerances, safety data sheets.  
+• Exhibit C – define Territory precisely to avoid overlap (map, list of countries/states).  
+• Exhibit D – list trademark registrations and include correct ®/™ designations.  
+
+──────────────────────────────────  
+3. ADDITIONAL RECOMMENDATIONS  
+──────────────────────────────────  
+1. Product Liability / Indemnity  
+   • Supplier should indemnify Distributor against third-party claims arising from (i) defective manufacture or design, (ii) failure to meet specs, (iii) IP infringement. Distributor may indemnify Supplier for misuse, alteration, or marketing claims outside Supplier’s specs.  
+
+2. Product Recalls  
+   • Insert a detailed recall protocol: who decides, who bears costs, communication chain, data sharing, and post-recall credit.  
+
+3. Quality Assurance & Audit  
+   • Distributor may require the right to audit Supplier facilities or request certificates of analysis, ISO certifications, etc.  
+
+4. Inventory Management  
+   • Consider consignment stocking or buy-back of obsolete inventory if Supplier modifies or discontinues Products.  
+
+5. Electronic Ordering / EDI  
+   • If orders are placed electronically, incorporate EDI terms (error correction, timestamp, receipts).  
+
+6. Governing Law / CISG  
+   • Explicitly disclaim application of the U.N. Convention on Contracts for the International Sale of Goods (CISG) if parties are in different countries.  
+
+7. Environmental & ESG Provisions  
+   • Compliance with RoHS, REACH, WEEE, conflict minerals reporting, etc., if applicable.  
+
+8. Force Majeure Specifics  
+   • pandemics, epidemics, government shutdowns, and supply-chain disruptions expressly included.  
+
+──────────────────────────────────  
+4. ACTION PLAN BEFORE SIGNATURE  
+──────────────────────────────────  
+1. Populate blanks: Effective Date, Distributor’s legal name/entity type, address, Territory description, Product list, Specifications, Trademarks.  
+2. Decide negotiation priorities (e.g., indemnity, minimum purchase, termination rights, price-change limits).  
+3. Draft redlines incorporating the above suggestions and circulate for legal/management review.  
+4. Verify corporate authority (board resolutions, signatory powers).  
+5. Once final, ensure wet ink or e-signature compliance with internal policies.  
+
+──────────────────────────────────  
+5. DISCLAIMER  
+──────────────────────────────────  
+This review highlights material business and legal issues but is not exhaustive. Laws vary by jurisdiction, and specific circumstances may require additional provisions. Always seek specialized legal counsel before executing the agreement.

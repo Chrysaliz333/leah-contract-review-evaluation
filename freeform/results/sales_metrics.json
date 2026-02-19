@@ -1,0 +1,347 @@
+{
+  "meta": {
+    "generated": "2026-02-03T18:18:25.138016",
+    "freeform_models": [
+      "sonnet45",
+      "pioneer_deep",
+      "pathfinder",
+      "starliner",
+      "scale",
+      "velocity"
+    ],
+    "stacking_models": [
+      "sonnet45",
+      "pioneer_deep",
+      "pathfinder",
+      "starliner"
+    ],
+    "contracts": [
+      "consulting",
+      "distribution",
+      "dpa",
+      "jv",
+      "license",
+      "partnership",
+      "reseller",
+      "services",
+      "sla",
+      "supply"
+    ]
+  },
+  "models": {
+    "sonnet45": {
+      "model": "sonnet45",
+      "display_name": "Sonnet 4.5",
+      "contracts_evaluated": 10,
+      "risk_identification_accuracy": {
+        "Y": 148,
+        "P": 3,
+        "N": 1,
+        "NMI": 8,
+        "total_gt_issues": 160,
+        "detected": 151,
+        "detection_rate": 94.4
+      },
+      "additional_issues": {
+        "valid": 589,
+        "not_material": 0,
+        "hallucination": 0,
+        "other": 0,
+        "total_additional": 589,
+        "false_positive_rate": 0.0,
+        "audit_status": "pending"
+      },
+      "precision_recall_f1": {
+        "weighted_recall": 0.9327,
+        "precision": 1.0,
+        "f1": 0.9652
+      },
+      "quality_score": {
+        "dimensions": {
+          "amendment_score": 2.97,
+          "rationale_score": 2.98,
+          "redline_quality_score": 2.81
+        },
+        "overall_avg": 2.92,
+        "scored_issues": 150
+      },
+      "t1_gate": {
+        "passes": 8,
+        "total": 10,
+        "pass_rate": 80.0
+      },
+      "traceability": {
+        "detected_with_refs": 110,
+        "detected_total": 151,
+        "traceability_pct": 72.8
+      },
+      "stacking": {
+        "avg_part_a_pct": 86.7,
+        "part_a_pass_rate": 90.0,
+        "passes": 9,
+        "total": 10
+      }
+    },
+    "pioneer_deep": {
+      "model": "pioneer_deep",
+      "display_name": "Pioneer Deep",
+      "contracts_evaluated": 10,
+      "risk_identification_accuracy": {
+        "Y": 148,
+        "P": 5,
+        "N": 1,
+        "NMI": 6,
+        "total_gt_issues": 160,
+        "detected": 153,
+        "detection_rate": 95.6
+      },
+      "additional_issues": {
+        "valid": 565,
+        "not_material": 0,
+        "hallucination": 0,
+        "other": 0,
+        "total_additional": 565,
+        "false_positive_rate": 0.0,
+        "audit_status": "pending"
+      },
+      "precision_recall_f1": {
+        "weighted_recall": 0.932,
+        "precision": 1.0,
+        "f1": 0.9648
+      },
+      "quality_score": {
+        "dimensions": {
+          "amendment_score": 2.86,
+          "rationale_score": 2.89,
+          "redline_quality_score": 2.89
+        },
+        "overall_avg": 2.88,
+        "scored_issues": 153
+      },
+      "t1_gate": {
+        "passes": 8,
+        "total": 10,
+        "pass_rate": 80.0
+      },
+      "traceability": {
+        "detected_with_refs": 138,
+        "detected_total": 153,
+        "traceability_pct": 90.2
+      },
+      "stacking": {
+        "avg_part_a_pct": 94.2,
+        "part_a_pass_rate": 100.0,
+        "passes": 10,
+        "total": 10
+      }
+    },
+    "pathfinder": {
+      "model": "pathfinder",
+      "display_name": "Pathfinder",
+      "contracts_evaluated": 10,
+      "risk_identification_accuracy": {
+        "Y": 116,
+        "P": 16,
+        "N": 5,
+        "NMI": 23,
+        "total_gt_issues": 160,
+        "detected": 132,
+        "detection_rate": 82.5
+      },
+      "additional_issues": {
+        "valid": 376,
+        "not_material": 0,
+        "hallucination": 0,
+        "other": 0,
+        "total_additional": 376,
+        "false_positive_rate": 0.0,
+        "audit_status": "pending"
+      },
+      "precision_recall_f1": {
+        "weighted_recall": 0.8056,
+        "precision": 1.0,
+        "f1": 0.8923
+      },
+      "quality_score": {
+        "dimensions": {
+          "amendment_score": 2.72,
+          "rationale_score": 2.76,
+          "redline_quality_score": 2.8
+        },
+        "overall_avg": 2.76,
+        "scored_issues": 129
+      },
+      "t1_gate": {
+        "passes": 8,
+        "total": 10,
+        "pass_rate": 80.0
+      },
+      "traceability": {
+        "detected_with_refs": 110,
+        "detected_total": 132,
+        "traceability_pct": 83.3
+      },
+      "stacking": {
+        "avg_part_a_pct": 92.5,
+        "part_a_pass_rate": 100.0,
+        "passes": 10,
+        "total": 10
+      }
+    },
+    "starliner": {
+      "model": "starliner",
+      "display_name": "Starliner",
+      "contracts_evaluated": 10,
+      "risk_identification_accuracy": {
+        "Y": 124,
+        "P": 15,
+        "N": 3,
+        "NMI": 18,
+        "total_gt_issues": 160,
+        "detected": 139,
+        "detection_rate": 86.9
+      },
+      "additional_issues": {
+        "valid": 339,
+        "not_material": 0,
+        "hallucination": 0,
+        "other": 0,
+        "total_additional": 339,
+        "false_positive_rate": 0.0,
+        "audit_status": "pending"
+      },
+      "precision_recall_f1": {
+        "weighted_recall": 0.8494,
+        "precision": 1.0,
+        "f1": 0.9186
+      },
+      "quality_score": {
+        "dimensions": {
+          "amendment_score": 2.55,
+          "rationale_score": 2.64,
+          "redline_quality_score": 2.57
+        },
+        "overall_avg": 2.59,
+        "scored_issues": 138
+      },
+      "t1_gate": {
+        "passes": 6,
+        "total": 10,
+        "pass_rate": 60.0
+      },
+      "traceability": {
+        "detected_with_refs": 101,
+        "detected_total": 139,
+        "traceability_pct": 72.7
+      },
+      "stacking": {
+        "avg_part_a_pct": 55.0,
+        "part_a_pass_rate": 50.0,
+        "passes": 5,
+        "total": 10
+      }
+    },
+    "scale": {
+      "model": "scale",
+      "display_name": "Scale",
+      "contracts_evaluated": 10,
+      "risk_identification_accuracy": {
+        "Y": 114,
+        "P": 21,
+        "N": 2,
+        "NMI": 23,
+        "total_gt_issues": 160,
+        "detected": 135,
+        "detection_rate": 84.4
+      },
+      "additional_issues": {
+        "valid": 313,
+        "not_material": 0,
+        "hallucination": 0,
+        "other": 0,
+        "total_additional": 313,
+        "false_positive_rate": 0.0,
+        "audit_status": "pending"
+      },
+      "precision_recall_f1": {
+        "weighted_recall": 0.8132,
+        "precision": 1.0,
+        "f1": 0.897
+      },
+      "quality_score": {
+        "dimensions": {
+          "amendment_score": 2.61,
+          "rationale_score": 2.69,
+          "redline_quality_score": 2.63
+        },
+        "overall_avg": 2.64,
+        "scored_issues": 131
+      },
+      "t1_gate": {
+        "passes": 8,
+        "total": 10,
+        "pass_rate": 80.0
+      },
+      "traceability": {
+        "detected_with_refs": 114,
+        "detected_total": 135,
+        "traceability_pct": 84.4
+      },
+      "stacking": null
+    },
+    "velocity": {
+      "model": "velocity",
+      "display_name": "Velocity",
+      "contracts_evaluated": 10,
+      "risk_identification_accuracy": {
+        "Y": 71,
+        "P": 34,
+        "N": 0,
+        "NMI": 55,
+        "total_gt_issues": 160,
+        "detected": 105,
+        "detection_rate": 65.6
+      },
+      "additional_issues": {
+        "valid": 252,
+        "not_material": 0,
+        "hallucination": 0,
+        "other": 0,
+        "total_additional": 252,
+        "false_positive_rate": 0.0,
+        "audit_status": "pending"
+      },
+      "precision_recall_f1": {
+        "weighted_recall": 0.5839,
+        "precision": 1.0,
+        "f1": 0.7373
+      },
+      "quality_score": {
+        "dimensions": {
+          "amendment_score": 2.23,
+          "rationale_score": 2.44,
+          "redline_quality_score": 2.36
+        },
+        "overall_avg": 2.34,
+        "scored_issues": 98
+      },
+      "t1_gate": {
+        "passes": 4,
+        "total": 10,
+        "pass_rate": 40.0
+      },
+      "traceability": {
+        "detected_with_refs": 64,
+        "detected_total": 105,
+        "traceability_pct": 61.0
+      },
+      "stacking": null
+    }
+  },
+  "cross_validation_warnings": [
+    "pioneer_deep: detection rate mismatch \u2014 computed 95.6% (from gt_evaluations), summary 95.0% (stale cache)",
+    "pathfinder: detection rate mismatch \u2014 computed 82.5% (from gt_evaluations), summary 83.9% (stale cache)",
+    "starliner: detection rate mismatch \u2014 computed 86.9% (from gt_evaluations), summary 87.5% (stale cache)",
+    "velocity: detection rate mismatch \u2014 computed 65.6% (from gt_evaluations), summary 66.2% (stale cache)"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "gpt41",
+    "evaluation_timestamp": "2026-02-03T20:33:42.336947+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "gpt-4.1",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 2855,
+    "raw_output_tokens": 1677,
+    "raw_latency_seconds": 42.26
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions IP ownership in section 5.1 but only provides general commentary about work-for-hire without identifying the core legal issue that work-for-hire doctrine has limited application to independent contractors and that most consulting deliverables don't fall within the statutory categories. The review completely misses the fundamental risk that the work-for-hire designation is likely legally ineffective."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review discusses the liability cap generally but does not identify the missing carve-outs for IP infringement, data breach, or gross negligence/willful misconduct. It only notes the existing carve-outs for confidentiality and indemnification without flagging the gaps."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "**Exclusion:** No indirect, special, or consequential damages. **Cap:** Liability is capped at the fees paid or payable under the applicable SOW (*except* for confidentiality and indemnity).",
+        "judge_reasoning": "The review identifies the consequential damages exclusion and notes the carve-outs for confidentiality and indemnity, but it doesn't specifically analyze whether these carve-outs are sufficient or identify the missing carve-outs for IP infringement and data loss that the ground truth highlights as problematic."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Termination for Convenience (7.1): Either side can terminate on 30 days' notice. *Note:* If the Client needs continuity for critical projects, consider limiting unilateral convenience termination during major phases. Effect of Termination (7.4): Client pays for all work/expenses until termination, Consultant turns over paid-for Deliverables. *Question:* What happens with partially completed Deliverables? Should ensure Client has IP rights to in-progress work\u2014even if incomplete.",
+        "judge_reasoning": "The review identifies the 30-day termination for convenience clause and touches on client flexibility concerns, but misses the core issues of needing shorter notice periods for agility, lack of SOW-level termination rights, and absence of transition assistance provisions."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Background IP (5.2): Consultant keeps all rights, but grants Client a broad license to incorporated Background IP, limited to use 'as part of the Deliverables.' Recommendation (Client): Consider whether you'll need rights to modify/support/transfer Deliverables in the future.",
+        "judge_reasoning": "The review clearly identifies the core issue with Background IP license scope being too narrow, specifically noting the limitation to use 'as part of the Deliverables' and recommending the Client consider whether they need broader rights to modify/support/transfer deliverables."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions confidentiality in Article 6 as 'Standard and adequate' and notes the return/destruction provision, but completely fails to identify the core issue that confidentiality survival periods are unclear and that there's no explicit duration specified for different types of confidential information."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "While the review mentions payment terms in the fees section, it only briefly states 'Interest on late payments is reasonable, but check state usury laws.' It does not identify or discuss the lack of a formal invoice dispute mechanism, which is the core issue in the ground truth."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "Jurisdiction is limited to Texas courts, which may not be convenient for the Nevada-based Client... Governing Law/Jurisdiction: Texas law / Travis County. Confirm both parties' willingness to litigate there... May not suit Client (Nevada-based)",
+        "judge_reasoning": "The review clearly identifies that Texas jurisdiction favors the Consultant and disadvantages the Nevada-based Client, explicitly noting the inconvenience and suggesting both parties confirm their willingness to litigate in Texas."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Data Security: If sensitive data will be accessed, consider adding express data security or data protection obligations.",
+        "judge_reasoning": "The review mentions data security obligations as a recommendation but doesn't identify that data protection/privacy clauses are completely missing from the contract or discuss the specific compliance risks (GDPR/CCPA, controller/processor roles, etc.) that the ground truth issue highlights."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions indemnification in Article 10 as 'Standard, mutual, and fair' and notes that Consultant covers 'IP infringement and their own negligence/wilful misconduct' but fails to identify the key risk that indemnification is limited only to gross negligence/willful misconduct, excluding ordinary negligence and other important coverage gaps."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Data Security: If sensitive data will be accessed, consider adding express data security or data protection obligations.",
+        "judge_reasoning": "The review touches on data security concerns and mentions that sensitive data access may require additional protection obligations, but it doesn't specifically identify the missing cyber liability insurance requirement that's present in the ground truth issue."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 2,
+      "P": 4,
+      "N": 5,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 1,
+        "P": 4,
+        "N": 3,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 1,
+    "t1_detected": 0,
+    "total_detection_points": 16.0,
+    "weighted_max": 50,
+    "detection_rate": 0.5455
+  }
+}

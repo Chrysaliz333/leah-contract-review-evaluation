@@ -1,0 +1,10 @@
+{
+  "contract": "distribution",
+  "model_id": "o3",
+  "api_model": "o3-2025-04-16",
+  "prompt": "Review this contract",
+  "input_tokens": 1648,
+  "output_tokens": 2349,
+  "latency_seconds": 159.81,
+  "timestamp": "2026-02-03T19:51:05.726480+00:00"
+}

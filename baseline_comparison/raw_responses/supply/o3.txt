@@ -1,0 +1,143 @@
+LEGAL/COMMERCIAL REVIEW OF SUPPLY AGREEMENT  
+Contract No. SA-2025-078  
+(Precision Manufacturing Co. – Apex Automotive Systems Inc.)  
+
+IMPORTANT – This review is for informational purposes only and is not legal advice. Have qualified counsel adapt any suggestions to your specific facts, bargaining power and applicable law.
+
+--------------------------------------------------------------------
+A. EXECUTIVE SUMMARY
+--------------------------------------------------------------------
+1. Overall the draft is concise and covers the typical “core” terms of an automotive supply arrangement (quality, warranty, pricing, delivery, etc.).  
+2. The balance of risk generally favors the Supplier: (i) modest warranty; (ii) liability cap tied to 12-month spend; (iii) broad termination-for-convenience; (iv) no explicit service-part or PPAP obligations; (v) price-increase mechanism favorable to Supplier.  
+3. Several provisions are vague or incomplete (e.g., recall responsibility, inventory cancellation on termination, IP ownership of jointly-developed improvements, dispute-resolution procedure).  
+4. Certain statutory requirements commonly seen in U.S. automotive supply contracts (e.g., compliance with FMVSS, USMCA, conflict-minerals, anti-bribery) are absent.  
+5. Incoterms / shipping language should be harmonized with title-transfer, risk-of-loss and insurance clauses.
+
+--------------------------------------------------------------------
+B. DETAILED CLAUSE-BY-CLAUSE COMMENTS / RECOMMENDATIONS
+--------------------------------------------------------------------
+
+ARTICLE 1 – DEFINITIONS  
+• “Forecasts” defined as “non-binding.” If Buyer wants capacity assurance, consider making a certain portion of the forecast binding (e.g., first 8 weeks “firm,” next 4 weeks “flex”).  
+• No definition of “Force Majeure,” “Confidential Information,” or “Affiliate,” although these terms are later used.
+
+ARTICLE 2 – PURCHASE AND SALE  
+2.2  Purchase Orders  
+  – Add deemed-acceptance rule (e.g., Supplier’s failure to reject within 5 days = acceptance) to avoid silence.  
+  – Suggest hierarchy of documents (P.O. terms vs. Agreement) to minimize “battle-of-forms” risk.  
+
+2.3  Forecasts  
+  – Supplier “shall use them for capacity planning purposes,” but has no obligation to hold capacity. Consider minimum buffer or expedited-order parameters.
+
+ARTICLE 3 – PRICING  
+3.1  Prices are “firm” for 12 months, but nothing prevents Supplier from surcharging for raw-material spikes within that period. If Buyer needs protection, add language that prices are “all-inclusive” and “not subject to surcharges.”  
+3.2  Price Adjustments  
+  – 5 % annual cap may be acceptable; however, no reciprocal downward adjustment is required if commodity costs fall.  
+  – Require objective basis and supporting data for any increase.  
+
+ARTICLE 4 – PAYMENT  
+4.2  Net 30 is typical. Late-payment interest (1.5 %/month ≈ 18 % APR) is at the upper edge but legally enforceable in most states.  
+4.3  Buyer may withhold only disputed amounts. Consider adding a right of set-off for returns, rebates or chargebacks.
+
+ARTICLE 5 – WARRANTY  
+5.1  A one-year warranty may be insufficient for components that will ultimately be warranted to vehicle end-users for 3–5 years/36k-60k miles.  
+5.2  Remedies limited to repair/replace/refund. No coverage of removal/re-installation (labor), line-shutdown, or shipping of replacement parts. Those costs often matter in automotive.  
+5.3  Disclaimer is acceptable; ensure conspicuous formatting under UCC §2-316 (caps and bold help).
+
+ARTICLE 6 – DELIVERY  
+6.1  “FCA Supplier’s facility” places most logistics risk on Buyer. Confirm that Buyer’s insurance covers same.  
+6.3  Partial Shipments  
+  – Add that partials must not interfere with Buyer’s production schedule and must be pre-authorized if over/under by more than X %.
+
+ARTICLE 7 – INSPECTION AND ACCEPTANCE  
+7.1  Ten business days is short for latent or functional defects. Suggest adding “does not limit Buyer’s warranty rights for latent defects.”  
+7.3  Clarify destination for rejected goods, timeline for Supplier to collect/credit, and who bears risk during transit back to Supplier.
+
+ARTICLE 8 – QUALITY REQUIREMENTS  
+8.1  ISO 9001 is baseline; IATF 16949 or at least ISO 9001:2015 plus AIAG core tools are industry norm.  
+8.2  Audit Rights  
+  – Add “no more than X times per year” and confidentiality protections for Supplier’s proprietary processes.  
+8.3  Corrective Action  
+  – Require completion within specific time and use of 8D or similar methodology.
+
+ARTICLE 9 – INTELLECTUAL PROPERTY  
+9.2  Supplier IP protected, but no provision for joint developments (process tweaks, tooling). Define ownership and license back.  
+  – Add tooling and die ownership: Who pays? Who owns? Who maintains? Typical automotive agreements treat tooling as Buyer-owned even if housed at Supplier.
+
+ARTICLE 10 – CONFIDENTIALITY  
+10.1  Three-year tail may be too short for trade secrets; recommend “five years or, for trade secrets, as long as they remain trade secrets.”
+
+ARTICLE 11 – LIMITATION OF LIABILITY  
+11.1  Exclusion of consequential damages is common. Buyer should ensure it still recovers (i) costs of recall, (ii) third-party personal injury losses, which may be considered consequential.  
+11.2  Cap on liability tied to 12-month purchase volume strongly favors Supplier. Buyers often negotiate higher cap (e.g., 2× annual purchases) or carve-outs for IP infringement, breach of confidentiality, product-liability, recall.
+
+ARTICLE 12 – INDEMNIFICATION  
+12.1  Supplier indemnity includes product defects, negligence, IP infringement – good. Add “obligation to defend” and “recall campaigns.”  
+12.2  Buyer indemnity – ensure symmetrical drafting (defend & indemnify).  
+
+ARTICLE 13 – INSURANCE  
+13.1  Limits appear adequate. Require certificates of insurance naming Buyer as additional insured and providing 30-day notice of cancellation.  
+
+ARTICLE 14 – TERM & TERMINATION  
+14.3  Termination for Convenience (T4C) at 180 days can be disruptive. Address:  
+  – Liability for finished goods, WIP, raw material with long lead-time.  
+  – Amortization of Supplier’s capital investments/tooling.  
+  – Last-time-buy / service-parts support for OEM aftermarket (usually 15 years after series production).  
+
+ARTICLE 15 – FORCE MAJEURE  
+15.1  Add obligation to use commercially reasonable efforts to mitigate and provide written notice within X days; Buyer may resource if event lasts >30 days.
+
+ARTICLE 16 – GENERAL  
+16.1  Governing Law = Michigan – consistent with U.S. auto industry.  
+16.2  Arbitration  
+  – Specify rules (AAA Commercial Rules), number of arbitrators, allocation of fees, injunctive relief carve-out, discovery limits.  
+16.3  Assignment  
+  – Allow Buyer to assign to OEM or financing entity.  
+16.5  Amendment = writing and signed – add “email pdfs acceptable.”
+
+EXHIBIT GAPS  
+• Exhibit A, B, C to be completed – cannot evaluate specs, volumes, pricing tiers.  
+• Consider adding:  
+   – Exhibit D: Quality Agreement (PPAP levels, IMDS, lot traceability).  
+   – Exhibit E: EDI/portal requirements.  
+   – Exhibit F: Compliance & Regulatory (RoHS, REACH, conflict minerals, C-TPAT, cybersecurity requirements).
+
+--------------------------------------------------------------------
+C. ADDITIONAL TOPICS COMMONLY FOUND IN AUTOMOTIVE SUPPLY CONTRACTS
+--------------------------------------------------------------------
+1. Capacity & Allocation – safety stock, dual sourcing, allocation priority in shortages.  
+2. Continuous Improvement/Cost-Down – year-over-year price reductions or productivity sharing.  
+3. Service & Replacement Parts – availability, pricing formula (e.g., production price + Y %), forecast horizon for aftermarket.  
+4. Tooling – build standards, maintenance, storage, audit, scrap with Buyer approval.  
+5. Regulatory Compliance – FMVSS, NHTSA recall reporting, environmental, anti-bribery, sanctions.  
+6. Change Management – ECN process, cost impact of design or process changes.  
+7. Data Security – if EDI or connected equipment.  
+8. Sustainability & ESG clauses (increasingly requested by OEMs).
+
+--------------------------------------------------------------------
+D. SAMPLE IMPROVEMENT LANGUAGE (selected excerpts)
+--------------------------------------------------------------------
+Warranty remedy expansion:  
+“Supplier shall be responsible for all reasonable costs of inspection, removal, reinstallation, and freight associated with defective Products, and any vehicle recall, field action or warranty campaign costs arising from such defects.”
+
+Recall carve-out from liability cap:  
+“Notwithstanding Section 11.2, the limitation of liability shall not apply to (i) third-party claims for bodily injury or property damage, (ii) Supplier’s indemnity obligations under Section 12.1, or (iii) costs arising from mandatory or voluntary Product recalls.”
+
+Tooling ownership:  
+“All tooling, dies, fixtures, gauges or equipment that Buyer pays for, directly or indirectly, shall be and remain Buyer’s property, shall be labeled as such, and shall be used exclusively for the manufacture of Products for Buyer.”
+
+--------------------------------------------------------------------
+E. PRIORITIZED ACTION ITEMS BEFORE SIGNATURE
+--------------------------------------------------------------------
+1. Populate Exhibits A, B, C with complete specifications, target volumes, firm horizons and pricing tables.  
+2. Decide whether Buyer requires stronger warranty, recall and liability language; if yes, amend Articles 5, 11, 12.  
+3. Address service-part supply and tooling ownership/maintenance if relevant.  
+4. Add change-management and regulatory-compliance clauses or incorporate corporate “Supplier Manual” by reference.  
+5. Confirm dispute-resolution/arbitration mechanics with legal team.  
+6. Ensure insurance certificates with required endorsements are obtained before first shipment.  
+7. Verify export-control classification and USMCA/NAFTA certifications if parts cross borders.  
+
+--------------------------------------------------------------------
+F. CONCLUSION
+--------------------------------------------------------------------
+The Agreement is a solid starting point but requires additional detail, especially in areas that drive long-term cost and risk (warranty scope, recall, tooling, termination inventory, capacity commitments). Clarifying these issues now will help both parties avoid costly disputes and production interruptions later. Work closely with counsel and supply-chain stakeholders to tailor the contract to your actual program needs.

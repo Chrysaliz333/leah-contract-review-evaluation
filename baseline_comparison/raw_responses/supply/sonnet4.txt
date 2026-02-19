@@ -1,0 +1,99 @@
+## Contract Review: Supply Agreement SA-2025-078
+
+### Overall Assessment
+This is a well-structured automotive supply agreement with comprehensive coverage of key commercial terms. However, there are several areas that require attention and improvement.
+
+---
+
+## Critical Issues Requiring Immediate Attention
+
+### 1. **Missing Exhibits (HIGH PRIORITY)**
+- Exhibits A, B, and C are referenced throughout but not provided
+- Without these exhibits, the contract is essentially unenforceable
+- **Recommendation**: Ensure all exhibits are completed and attached before execution
+
+### 2. **Incomplete Effective Date**
+- The effective date field is blank
+- **Recommendation**: Fill in the specific date before signing
+
+---
+
+## Significant Concerns
+
+### 3. **Ambiguous Purchase Commitment**
+- Section 2.1 creates mutual obligations but lacks minimum purchase requirements
+- Forecasts are non-binding (Section 2.3), creating uncertainty for Supplier
+- **Recommendation**: Consider adding minimum purchase commitments or take-or-pay provisions
+
+### 4. **Broad Warranty Disclaimer**
+- Section 5.3 disclaims implied warranties including merchantability and fitness for purpose
+- May be problematic in automotive industry where strict quality standards are expected
+- **Recommendation**: Consider more limited disclaimer or industry-standard warranty terms
+
+### 5. **Unilateral Price Adjustment Rights**
+- Section 3.2 allows only Supplier to adjust prices
+- No protection for Buyer against cost increases beyond 5%
+- **Recommendation**: Add provisions for price decreases when costs decline, or mutual price adjustment mechanisms
+
+---
+
+## Moderate Concerns
+
+### 6. **Force Majeure Clause**
+- Section 15.1 lacks detail on notice requirements and mitigation efforts
+- No provision for contract termination if force majeure extends beyond reasonable period
+- **Recommendation**: Add specific notice periods and termination rights for extended force majeure
+
+### 7. **Quality Requirements**
+- Section 8.1 requires ISO 9001 "or IATF 16949" - IATF 16949 should be mandatory for automotive suppliers
+- **Recommendation**: Require IATF 16949 certification specifically
+
+### 8. **Limitation of Liability**
+- Section 11.2 caps Supplier liability at 12 months of payments
+- May be insufficient for automotive applications where defects can cause significant damages
+- **Recommendation**: Consider higher caps or exceptions for gross negligence/willful misconduct
+
+---
+
+## Minor Issues
+
+### 9. **Intellectual Property**
+- Section 9.1 could be clearer about restrictions on Supplier's use of Buyer's IP
+- **Recommendation**: Add explicit prohibition on use for other customers
+
+### 10. **Insurance Requirements**
+- Coverage amounts may be insufficient for automotive industry risks
+- **Recommendation**: Consider higher limits and add automotive-specific coverage requirements
+
+### 11. **Termination Provisions**
+- 180-day notice for convenience termination may be excessive
+- **Recommendation**: Consider 90-120 day notice period
+
+---
+
+## Positive Aspects
+
+✅ **Well-organized structure** with clear article divisions  
+✅ **Comprehensive coverage** of key commercial terms  
+✅ **Appropriate governing law** (Michigan) for automotive industry  
+✅ **Reasonable payment terms** (Net 30)  
+✅ **Adequate inspection period** (10 business days)  
+✅ **Mutual indemnification** provisions  
+✅ **Professional confidentiality** terms  
+
+---
+
+## Recommendations Before Execution
+
+1. **Complete all exhibits** with specific products, specifications, delivery schedules, and pricing
+2. **Fill in the effective date**
+3. **Consider adding minimum purchase commitments** or volume incentives
+4. **Revise warranty disclaimer** to be more industry-appropriate
+5. **Add price decrease mechanisms** to balance Supplier's price increase rights
+6. **Strengthen quality requirements** to mandate IATF 16949
+7. **Review insurance requirements** for adequacy in automotive context
+
+---
+
+## Risk Level: **MEDIUM-HIGH**
+While the contract framework is solid, the missing exhibits and some unbalanced terms create significant risks that should be addressed before execution.

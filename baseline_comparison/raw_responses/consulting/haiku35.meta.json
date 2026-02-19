@@ -1,0 +1,10 @@
+{
+  "contract": "consulting",
+  "model_id": "haiku35",
+  "api_model": "claude-3-5-haiku-20241022",
+  "prompt": "Review this contract",
+  "input_tokens": 3247,
+  "output_tokens": 283,
+  "latency_seconds": 13.68,
+  "timestamp": "2026-02-03T19:32:10.887279+00:00"
+}

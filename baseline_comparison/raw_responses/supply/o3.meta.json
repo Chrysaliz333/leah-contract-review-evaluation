@@ -1,0 +1,10 @@
+{
+  "contract": "supply",
+  "model_id": "o3",
+  "api_model": "o3-2025-04-16",
+  "prompt": "Review this contract",
+  "input_tokens": 1823,
+  "output_tokens": 2346,
+  "latency_seconds": 69.98,
+  "timestamp": "2026-02-03T19:56:40.387178+00:00"
+}

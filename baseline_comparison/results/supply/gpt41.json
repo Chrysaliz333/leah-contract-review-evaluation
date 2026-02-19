@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "contract": "supply",
+    "model_id": "gpt41",
+    "evaluation_timestamp": "2026-02-03T21:16:10.935280+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "gpt-4.1",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1824,
+    "raw_output_tokens": 1427,
+    "raw_latency_seconds": 35.32
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "11.2",
+      "tier": "T2",
+      "issue": "Supplier liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Supplier's liability capped at amounts paid in past 12 months \u2014 Buyer should weigh risk if critical supply. Does not carve out indemnification, breach of confidentiality, or gross negligence \u2014 most robust agreements do this.",
+        "judge_reasoning": "The review clearly identifies the core risk of the supplier liability cap being limited to 12 months of payments and explicitly recommends carve-outs for indemnification, gross negligence, and other areas, which directly matches the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.2",
+      "tier": "T1",
+      "issue": "Limited warranty remedy - Supplier controls remediation",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Supplier's obligations could be limited \u2014 only 'repair, replace or refund purchase price.' No obligation for costs of removal, reinstall, or other consequential losses \u2014 Buyer's risk.",
+        "judge_reasoning": "The review clearly identifies the core issue that the supplier's warranty obligations are limited to repair, replace, or refund at supplier's option, and notes that there's no coverage for consequential losses or additional costs like removal/reinstall, which aligns with the ground truth risk of limited warranty remedy with supplier-controlled remediation."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "5.3",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer undermines quality assurance",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "**Disclaimer of implied warranties** is favorable for Supplier.",
+        "judge_reasoning": "The review identifies that implied warranties are disclaimed and notes this is favorable to the Supplier, but it doesn't articulate the core risk of how this undermines quality assurance or suggest the specific remedies mentioned in the ground truth (express fitness for purpose, compliance warranties, design defect coverage)."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.1",
+      "tier": "T1",
+      "issue": "Consequential damages exclusion blocks critical recovery",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "EXCLUDES indirect/consequential damages \u2014 very favorable to Supplier. Supplier's liability capped at amounts paid in past 12 months \u2014 Buyer should weigh risk if critical supply. Buyer risk: Supplier's total liability is capped and all indirect/consequential damages are excluded, even if Supplier's products cause Buyer's factory shutdown. Recommendation: Carve-out indemnity, gross negligence, willful misconduct, and confidentiality breaches from liability cap/exclusions.",
+        "judge_reasoning": "The review clearly identifies the consequential damages exclusion and explicitly discusses the core risk of blocking Buyer recovery for production line shutdowns, with recommendations for carve-outs including gross negligence and willful misconduct."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "FCA terms shift all transit risk to Buyer",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Delivered FCA Supplier's facility (Incoterms 2020): Buyer assumes risk/cost after shipment. Buyer pays all shipping/insurance.",
+        "judge_reasoning": "The review clearly identifies that FCA terms shift risk to the Buyer after shipment at the supplier's facility, and notes that the Buyer bears shipping and insurance costs. This directly captures the core risk issue."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "2.2",
+      "tier": "T2",
+      "issue": "No supply obligation - Supplier can reject purchase orders",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Purchase Orders: Supplier can accept/reject within 5 business days \u2014 recommend clarity on process if Supplier is silent.",
+        "judge_reasoning": "The review identifies that the Supplier can accept/reject purchase orders within 5 business days, but only suggests clarifying the process when Supplier is silent rather than recognizing the core supply uncertainty risk that the Supplier has no obligation to accept orders."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.1 / 7.2",
+      "tier": "T2",
+      "issue": "Short inspection period with deemed acceptance",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "10 business days for Buyer to inspect \u2014 after which acceptance is \"deemed.\" Buyer should ensure this is sufficient time in practice... For latent defects (not discoverable on normal inspection), contract should clarify claims can still be made.",
+        "judge_reasoning": "The review identifies the 10-day inspection period and deemed acceptance mechanism, and mentions concern about latent defects not discoverable on normal inspection. However, it doesn't fully capture the risk of the short timeframe being insufficient for complex components or high volumes, nor does it suggest specific remedies like extending to 30 days or linking to warranty periods."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Indemnification lacks recall cost and unlimited coverage",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Does not say 'subject to cap/limitation of liability clause.' Is this intentional? If not, consider making that explicit.",
+        "judge_reasoning": "The review identifies that indemnification may not be subject to liability caps, which relates to the uncapped coverage aspect, but it doesn't address the specific missing elements like recall costs, defense costs, or the need for unlimited coverage for indemnification risks."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "4.2",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Net 30 terms are reasonable; 1.5%/month late fee is high but industry-standard.",
+        "judge_reasoning": "The review mentions the 1.5% monthly late payment rate and acknowledges it as 'high,' but incorrectly characterizes it as 'industry-standard' and fails to identify it as problematic or suggest the specific negotiation points outlined in the ground truth."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "3.2",
+      "tier": "T3",
+      "issue": "Annual price adjustments compound over time",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions the 5% annual price adjustment cap in passing under Article 3 but completely misses the key compounding risk over time. It describes the cap as providing 'significant price certainty' for the Buyer without recognizing that these annual increases compound to potentially substantial cost increases over the contract term."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No business continuity / supply assurance provisions",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Non-binding forecasts protect Supplier, but Buyer may want minimal supply assurance during unusual demand spikes.",
+        "judge_reasoning": "The review touches on supply assurance concerns by noting that forecasts are non-binding and suggesting the Buyer may need supply assurance during demand spikes, but it doesn't identify the broader business continuity risks like lack of last-time-buy rights, dual sourcing provisions, or disaster recovery plans."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "13.1",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions Article 10/Confidentiality briefly as 'Standard; survives for 3 years post-termination' but does not identify any issues with this timeframe or discuss the inadequacy of 3-year survival for trade secrets in automotive supply chains. It treats the confidentiality provision as routine without recognizing the risk."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Insurance Requirements for Supplier",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Strong insurance requirements. No requirement for Supplier to provide Buyer 'certificates of insurance' or notice of cancellation; consider adding.",
+        "judge_reasoning": "The review mentions insurance requirements and suggests adding certificates/notice provisions, but it incorrectly assumes insurance requirements already exist in the contract when the ground truth indicates no insurance provisions exist at all."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "14.2",
+      "tier": "T2",
+      "issue": "Termination for Cause Asymmetric - Supplier-Favorable Cure Period",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review discusses termination provisions in Section 14 but only mentions termination for convenience with 180 days' notice. It does not address the asymmetric cure period issue for material breaches under clause 14.2, where both parties get 30 days to cure regardless of breach type."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 4,
+      "P": 7,
+      "N": 3,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T2": {
+        "Y": 1,
+        "P": 5,
+        "N": 2,
+        "NMI": 0
+      },
+      "T1": {
+        "Y": 3,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 1,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_detected": 4,
+    "total_detection_points": 46.0,
+    "weighted_max": 74,
+    "detection_rate": 0.7857
+  }
+}

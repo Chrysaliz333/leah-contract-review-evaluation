@@ -1,0 +1,115 @@
+Certainly! Here’s a **review of your Distribution Agreement**, highlighting strengths, potential risks, and practical suggestions. *This is not formal legal advice, but a contract lawyer should review your specific situation and goals for refinement before execution.*
+
+---
+## **Key Strengths**
+- **Well-defined Structure:** The agreement covers major points needed for a distribution deal (definitions, territory, orders, pricing, marketing, IP, warranties, limitations, term & termination, confidentiality, dispute resolution, etc.).
+- **Exhibits Referenced:** Products, specifications, territory, and trademarks are all attached as exhibits, which keeps the main contract streamlined.
+- **Clear Minimum Purchase Requirement:** Quantifies expectations and the mechanism for breach (with two consecutive quarters of deficiency triggering rights).
+- **Limitation of Liability:** Reasonable attempt to cap commercial risk for both parties.
+- **Arbitration for Dispute Resolution:** Avoids court litigation, which can be more costly and public.
+
+---
+## **Potential Risks, Ambiguities, and Points for Clarification**
+
+### **1. Key Exhibits Are Missing**
+- **RISKS:** The main contract references Exhibits A-D (Products, Specifications, Territory, Trademarks). If these are not thoroughly described, you can have major ambiguity and disputes.
+- **SUGGESTION:** Attach these exhibits and ensure both parties review and initial each. Territory in particular should be geographically clear.
+
+---
+
+### **2. Exclusivity and Competition**
+- **Non-Exclusivity (3.1, 3.2):** Supplier reserves broad rights to appoint other distributors and even sell directly, possibly undercutting the Distributor.
+    - *If you are the Distributor, consider negotiating for limited exclusivity, or at least right of first refusal for new customers.*
+    - *If you are Supplier, this preserves flexibility but can disincentivize Distributor investment.*
+---
+
+### **3. Minimum Purchase (6.1)**
+- **CONSEQUENCES:** Failure to purchase $100K/quarter for two quarters is a "material breach," but the *remedies* (e.g. immediate termination?) are not specified except general termination for cause (11.2).
+    - *SUGGESTION:* Explicitly state what happens—notice period, cure rights, or immediate right of termination.
+
+---
+
+### **4. Payment Terms (5.3)**
+- **Late Payments:** 1.5% per month (18% APR) interest on overdue accounts.
+    - *Check local usury laws; 1.5%/month is typical, but make sure it’s not deemed excessive in your jurisdictions.*
+    - Consider adding right to suspend orders if Distributor is late for X days.
+
+---
+
+### **5. Warranty (9.1, 9.2) and Liability (10)**
+- **Warranty Disclaimer:** Standard, but out-of-pocket risks for end-customer complaints, recalls, or regulatory issues are not described.
+- **Limitation of Liability:** Caps liability to 12 months of Distributor’s payments—a standard clause, but broad wording on types of damages excluded (no “gross negligence or willful misconduct carve-out”).
+    - *Distributors may want exceptions for gross negligence, IP infringement, or willful misconduct.*
+
+---
+
+### **6. Term & Termination (11)**
+- **Automatic Renewal:** Agreement auto-renews and can be terminated for non-renewal with 90 days’ notice.
+- **Termination for Cause:** General, but no specific reference to bankruptcy/insolvency, breach of confidentiality, IP misuse, etc.
+- **Effect of Termination (11.3):** Allows sell-off of inventory for 90 days; what about assistance in winding down, buy-backs, or returning marketing materials?
+    - *Consider clarifying certain post-termination obligations (return of samples, customer lists, support on transition, etc.).*
+
+---
+
+### **7. Confidentiality (12)**
+- **Duration:** 3 years post-termination coverage; may be short for certain trade secrets.
+    - Consider “trade secrets survive as long as they remain trade secrets under law.”
+
+---
+
+### **8. Assignment (13.3)**
+- **Distributor cannot assign without Supplier’s consent.** Supplier is silent; does this mean Supplier *can* assign freely? If not intended, clarify.
+    - Consider bilateral assignment restrictions unless it’s an affiliate or sale of substantially all assets.
+
+---
+
+### **9. Dispute Resolution (13.2)**
+- **Arbitration location:** Chicago, Illinois. *Can pose cost and convenience issues for non-local parties; confirm both are comfortable.*
+
+---
+
+### **10. Governing Law (13.1)**
+- **Illinois law** governs. No reference to international sales conventions (e.g., CISG), which may step in by default if parties are in different countries.
+    - Add a statement excluding CISG applicability, if not desired.
+
+---
+
+### **11. Miscellaneous**
+- **No force majeure notification requirements:** Consider requiring the impacted party to notify the other promptly of events.
+- **No express obligation for Supplier to maintain adequate inventory/lead-time.** Especially important for Distributors.
+- **No non-compete:** Distributor could theoretically distribute competing products. OK for non-exclusive but may be worth reviewing.
+
+---
+
+## **Sample Additional Clauses/Suggestions**
+- **Add mutual indemnification** for third-party claims arising from breach of law, IP infringement, gross negligence, etc.
+- **Specify process for price increases**—can Distributor cancel orders pending fulfillment or deliveries if a price hike is imposed?
+- **Clarify audit rights**: Does Supplier have right to audit Distributor’s sales, returns, and compliance with territory?
+- **Define required insurance** obligations for each side (product liability, commercial general liability).
+
+---
+
+## **Summary Table**
+
+| **Section**             | **Strengths**                                  | **Potential Issues**                | **Suggested Fix**                            |
+|------------------------ |----------------------------------------------- |------------------------------------ |----------------------------------------------|
+| Definitions/Exhibits    | Comprehensive references                      | Must attach; review thoroughly      | Attach and review before signing             |
+| Exclusivity             | Supplier flexibility                          | Distributor risk                    | Negotiate limited/conditional exclusivity    |
+| Minimum Purchases       | Clear commitment                              | Vague remedies for breach           | Clarify notice & cure; termination specifics |
+| Pricing/Payment         | 60-day notice for price change                | High late fee; no suspension rights | Cap interest; add right to withhold orders   |
+| Warranties/Liability    | Standard commercial protections               | No carve-outs for gross negligence  | Add carve-outs for egregious conduct         |
+| Term/Termination        | Auto-renewal, clear termination for cause     | Narrow termination rights           | Add more detailed triggers and obligations   |
+| Confidentiality         | 3-year post-term                              | Short for trade secrets             | Add indefinite coverage for trade secrets    |
+| Governing Law/Arb       | Clear forum                                   | May burden remote party             | Confirm acceptability; exclude CISG          |
+| Assignment              | Controls unauthorized Distributor assignment  | Supplier’s right not addressed      | Make reciprocal or clarify both sides        |
+| Force Majeure           | Short clause                                  | No prompt notice required           | Add timely notification requirement          |
+| Other                   | Defined terms, IP protection                  | No insurance, non-compete, audit    | Add as needed per party’s business needs     |
+
+---
+
+## **Next Steps**
+1. Attach and review all Exhibits.
+2. Clarify/adjust any points per your (Supplier or Distributor) needs and negotiation leverage.
+3. Have counsel review before signature.
+
+**Would you like suggested language for any of the recommended clarifications or additions?** Let me know your role (Supplier or Distributor) for tailored suggestions.

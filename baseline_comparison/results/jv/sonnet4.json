@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "contract": "jv",
+    "model_id": "sonnet4",
+    "evaluation_timestamp": "2026-02-03T20:48:39.750862+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-sonnet-4-20250514",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 2092,
+    "raw_output_tokens": 951,
+    "raw_latency_seconds": 24.93
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "8.1",
+      "tier": "T1",
+      "issue": "No Deadlock Resolution - Article 8 [Reserved]",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Article 8.1 is reserved but contains no deadlock mechanism - Critical Gap: With 50/50 ownership and unanimous consent requirements, deadlocks are inevitable - Recommendation: Add specific deadlock procedures (cooling-off periods, mediation triggers, buy-sell mechanisms)",
+        "judge_reasoning": "The review clearly identifies the core issue: Article 8.1 is reserved with no deadlock mechanism, and explicitly connects this to the 50/50 ownership and unanimous consent requirements creating inevitable deadlocks. It also recommends appropriate solutions including buy-sell mechanisms."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Exit/Buyout Rights",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Missing right of first refusal or forced sale provisions... Add detailed exit procedures with valuation methodology",
+        "judge_reasoning": "The review identifies missing exit procedures and forced sale provisions, which relates to the lack of exit/buyout rights, but doesn't specifically mention the core elements like put/call options, buyout mechanisms at fair market value, or the specific recommendations for put rights after Year 3 and call rights on change of control."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unanimous Consent + No Tiebreaker",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "With 50/50 ownership and unanimous consent requirements, deadlocks are inevitable",
+        "judge_reasoning": "The review explicitly identifies the core risk of inevitable deadlocks created by combining unanimous consent requirements with a 50/50 ownership structure, directly matching the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Broad Post-Term Non-Compete",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the post-term non-compete provision in Section 9.1, despite noting that 'Territory' is undefined. The review fails to identify the broad 2-year non-compete restriction that could significantly impact Party B's quantum computing business."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "6.2",
+      "tier": "T1",
+      "issue": "Developed IP Consent Lock-Up",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Section 6.2: Joint ownership of Developed IP creates potential licensing/commercialization gridlock",
+        "judge_reasoning": "The review clearly identifies the core risk that joint ownership of developed IP creates commercialization gridlock, which directly corresponds to the ground truth issue about consent requirements blocking market opportunities."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "No allocation of liabilities between parties\nMissing indemnification provisions",
+        "judge_reasoning": "The review explicitly identifies the absence of liability allocation between parties and missing indemnification provisions, which directly corresponds to the ground truth issue of no limitation of liability clause in the contract."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Capital Call Dilution Risk",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "**Section 3.4**: Dilution mechanism is unclear for unequal additional contributions",
+        "judge_reasoning": "The review identifies that the dilution mechanism in Section 3.4 is problematic and unclear, but it doesn't capture the specific risks around lack of cure periods, dispute mechanisms, or strategic dilution potential that are central to the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "6.3",
+      "tier": "T2",
+      "issue": "Improvement Ownership Unclear on Termination",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions Section 6.3 and discusses IP concerns including vague 'improvements' definition, but it does not identify the specific issue of unclear license scope on termination or the gap in Section 10.4 regarding improvement licenses post-termination."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "4.3",
+      "tier": "T2",
+      "issue": "General Manager Authority Unbounded",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "General Manager appointment process unclear",
+        "judge_reasoning": "The review identifies that the General Manager appointment process is unclear, which touches on governance concerns around the GM role, but it doesn't specifically address the core issue of unbounded authority, lack of reporting requirements, or absence of removal/oversight mechanisms."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "6.1",
+      "tier": "T2",
+      "issue": "Contributed IP License Gaps",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review discusses IP concerns in sections 6.2 and 6.3 regarding joint ownership and improvements, but does not mention or address the specific issue with clause 6.1's contributed IP licensing gaps, such as the lack of wind-down period, sublicensing restrictions, or transition arrangements."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "10.4",
+      "tier": "T2",
+      "issue": "Termination IP Allocation Undefined",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Section 10.4: Asset distribution mechanism is vague ('as agreed')... Developed IP division process undefined",
+        "judge_reasoning": "The review explicitly identifies the core issue - that Section 10.4's 'as agreed' mechanism for dividing developed IP is vague and undefined, which matches the ground truth concern about IP allocation being stuck if parties can't agree."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Indemnification Regime",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Missing indemnification provisions",
+        "judge_reasoning": "The review explicitly identifies the absence of indemnification provisions under section 7 'Liability and Insurance', noting 'Missing indemnification provisions' as a gap in the contract. This directly corresponds to the ground truth issue of no indemnification regime."
+      }
+    },
+    {
+      "gt_id": "GT-14",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Change of Control Provision",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review comprehensively covers governance, deadlock resolution, IP, financial structure, exit provisions, and other JV issues, but does not mention change of control provisions, acquisition risks, or the need for change of control notice/consent mechanisms anywhere in the analysis."
+      }
+    },
+    {
+      "gt_id": "GT-15",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vague Reserve Rights",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the vague reserve rights issue from clause 5.2, despite covering financial structure issues and distribution mechanisms. No reference is made to quarterly distributions, reserves determination by the Steering Committee, or the risk of indefinite delays."
+      }
+    },
+    {
+      "gt_id": "GT-16",
+      "clause": "11.1-11.3",
+      "tier": "T3",
+      "issue": "Multi-Step Dispute Resolution",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the multi-step dispute resolution process (negotiation \u2192 mediation \u2192 arbitration) outlined in clauses 11.1-11.3. While the review extensively covers governance conflicts, deadlocks, and other issues, it makes no reference to dispute resolution procedures, timelines, or the San Francisco venue requirement."
+      }
+    },
+    {
+      "gt_id": "GT-17",
+      "clause": "1.4",
+      "tier": "T3",
+      "issue": "No Conditions Precedent for JV Entity",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "JV Entity formation is optional but governance assumes informal structure",
+        "judge_reasoning": "The review identifies that JV Entity formation is optional and notes governance issues with informal structure, but doesn't address the core concerns about lack of formation timeline, conditions precedent, or the risk of capital/IP flowing before entity formation."
+      }
+    },
+    {
+      "gt_id": "GT-18",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Absence of data protection/privacy provisions",
+        "judge_reasoning": "The review explicitly identifies the absence of data protection/privacy provisions as a legal and compliance issue, which directly corresponds to the ground truth missing data protection clause concern."
+      }
+    },
+    {
+      "gt_id": "GT-19",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Confidentiality Survival Inadequate for Trade Secrets",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention confidentiality provisions, survival periods, or trade secret protection at all. Despite the contract containing a 5-year confidentiality survival clause that is inadequate for quantum technology trade secrets, this risk was not identified in the review."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 7,
+      "P": 4,
+      "N": 7,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 3,
+        "P": 2,
+        "N": 5,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 1,
+        "N": 2,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 5,
+    "t1_detected": 5,
+    "total_detection_points": 56.5,
+    "weighted_max": 93,
+    "detection_rate": 0.6111
+  }
+}

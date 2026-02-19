@@ -1,0 +1,376 @@
+{
+  "generated_at": "2026-02-03T21:19:28.939478+00:00",
+  "contracts_evaluated": [
+    "consulting",
+    "dpa",
+    "distribution",
+    "jv",
+    "license",
+    "partnership",
+    "reseller",
+    "services",
+    "sla",
+    "supply"
+  ],
+  "models_evaluated": [
+    "o3",
+    "gpt41",
+    "haiku35",
+    "sonnet4"
+  ],
+  "evaluation_type": "detection_only",
+  "model_scores": {
+    "o3": {
+      "model_id": "o3",
+      "display_name": "OpenAI o3",
+      "total_detection_points": 629.5,
+      "total_weighted_max": 787,
+      "score_percentage": 0.7999,
+      "detection_rate": 0.8562,
+      "detection_counts": {
+        "Y": 101,
+        "P": 36,
+        "N": 23,
+        "NMI": 0
+      },
+      "t1_gates_passed": 9,
+      "t1_gates_total": 10,
+      "contract_scores": [
+        {
+          "contract": "consulting",
+          "detection_points": 27.5,
+          "weighted_max": 50,
+          "detection_rate": 0.7272727272727273,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "dpa",
+          "detection_points": 55.0,
+          "weighted_max": 57,
+          "detection_rate": 0.8333333333333334,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "distribution",
+          "detection_points": 58.5,
+          "weighted_max": 75,
+          "detection_rate": 0.8461538461538461,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "jv",
+          "detection_points": 70.0,
+          "weighted_max": 93,
+          "detection_rate": 0.8333333333333334,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "license",
+          "detection_points": 66.5,
+          "weighted_max": 71,
+          "detection_rate": 0.9333333333333333,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "partnership",
+          "detection_points": 62.0,
+          "weighted_max": 70,
+          "detection_rate": 0.9166666666666666,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "reseller",
+          "detection_points": 66.5,
+          "weighted_max": 69,
+          "detection_rate": 1.0,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "services",
+          "detection_points": 63.5,
+          "weighted_max": 98,
+          "detection_rate": 0.7692307692307693,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "sla",
+          "detection_points": 103.0,
+          "weighted_max": 130,
+          "detection_rate": 0.8461538461538461,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "supply",
+          "detection_points": 57.0,
+          "weighted_max": 74,
+          "detection_rate": 0.9285714285714286,
+          "t1_gate_pass": true
+        }
+      ]
+    },
+    "gpt41": {
+      "model_id": "gpt41",
+      "display_name": "GPT-4.1",
+      "total_detection_points": 411.5,
+      "total_weighted_max": 787,
+      "score_percentage": 0.5229,
+      "detection_rate": 0.6562,
+      "detection_counts": {
+        "Y": 48,
+        "P": 57,
+        "N": 55,
+        "NMI": 0
+      },
+      "t1_gates_passed": 4,
+      "t1_gates_total": 10,
+      "contract_scores": [
+        {
+          "contract": "consulting",
+          "detection_points": 16.0,
+          "weighted_max": 50,
+          "detection_rate": 0.5454545454545454,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "dpa",
+          "detection_points": 29.0,
+          "weighted_max": 57,
+          "detection_rate": 0.6666666666666666,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "distribution",
+          "detection_points": 44.0,
+          "weighted_max": 75,
+          "detection_rate": 0.7692307692307693,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "jv",
+          "detection_points": 55.0,
+          "weighted_max": 93,
+          "detection_rate": 0.7777777777777778,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "license",
+          "detection_points": 48.0,
+          "weighted_max": 71,
+          "detection_rate": 0.8666666666666667,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "partnership",
+          "detection_points": 32.5,
+          "weighted_max": 70,
+          "detection_rate": 0.4166666666666667,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "reseller",
+          "detection_points": 42.5,
+          "weighted_max": 69,
+          "detection_rate": 0.7692307692307693,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "services",
+          "detection_points": 36.5,
+          "weighted_max": 98,
+          "detection_rate": 0.5769230769230769,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "sla",
+          "detection_points": 62.0,
+          "weighted_max": 130,
+          "detection_rate": 0.5,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "supply",
+          "detection_points": 46.0,
+          "weighted_max": 74,
+          "detection_rate": 0.7857142857142857,
+          "t1_gate_pass": true
+        }
+      ]
+    },
+    "haiku35": {
+      "model_id": "haiku35",
+      "display_name": "Claude 3.5 Haiku",
+      "total_detection_points": 157.5,
+      "total_weighted_max": 787,
+      "score_percentage": 0.2001,
+      "detection_rate": 0.3,
+      "detection_counts": {
+        "Y": 8,
+        "P": 40,
+        "N": 112,
+        "NMI": 0
+      },
+      "t1_gates_passed": 0,
+      "t1_gates_total": 10,
+      "contract_scores": [
+        {
+          "contract": "consulting",
+          "detection_points": 13.5,
+          "weighted_max": 50,
+          "detection_rate": 0.45454545454545453,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "dpa",
+          "detection_points": 10.0,
+          "weighted_max": 57,
+          "detection_rate": 0.3333333333333333,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "distribution",
+          "detection_points": 17.0,
+          "weighted_max": 75,
+          "detection_rate": 0.38461538461538464,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "jv",
+          "detection_points": 24.0,
+          "weighted_max": 93,
+          "detection_rate": 0.3888888888888889,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "license",
+          "detection_points": 17.0,
+          "weighted_max": 71,
+          "detection_rate": 0.26666666666666666,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "partnership",
+          "detection_points": 26.5,
+          "weighted_max": 70,
+          "detection_rate": 0.3333333333333333,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "reseller",
+          "detection_points": 11.5,
+          "weighted_max": 69,
+          "detection_rate": 0.23076923076923078,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "services",
+          "detection_points": 14.0,
+          "weighted_max": 98,
+          "detection_rate": 0.23076923076923078,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "sla",
+          "detection_points": 15.0,
+          "weighted_max": 130,
+          "detection_rate": 0.2692307692307692,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "supply",
+          "detection_points": 9.0,
+          "weighted_max": 74,
+          "detection_rate": 0.21428571428571427,
+          "t1_gate_pass": false
+        }
+      ]
+    },
+    "sonnet4": {
+      "model_id": "sonnet4",
+      "display_name": "Claude Sonnet 4",
+      "total_detection_points": 361.5,
+      "total_weighted_max": 787,
+      "score_percentage": 0.4593,
+      "detection_rate": 0.55,
+      "detection_counts": {
+        "Y": 43,
+        "P": 45,
+        "N": 72,
+        "NMI": 0
+      },
+      "t1_gates_passed": 3,
+      "t1_gates_total": 10,
+      "contract_scores": [
+        {
+          "contract": "consulting",
+          "detection_points": 10.5,
+          "weighted_max": 50,
+          "detection_rate": 0.36363636363636365,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "dpa",
+          "detection_points": 35.5,
+          "weighted_max": 57,
+          "detection_rate": 0.8333333333333334,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "distribution",
+          "detection_points": 35.5,
+          "weighted_max": 75,
+          "detection_rate": 0.5384615384615384,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "jv",
+          "detection_points": 56.5,
+          "weighted_max": 93,
+          "detection_rate": 0.6111111111111112,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "license",
+          "detection_points": 43.0,
+          "weighted_max": 71,
+          "detection_rate": 0.8,
+          "t1_gate_pass": true
+        },
+        {
+          "contract": "partnership",
+          "detection_points": 41.0,
+          "weighted_max": 70,
+          "detection_rate": 0.5833333333333334,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "reseller",
+          "detection_points": 31.0,
+          "weighted_max": 69,
+          "detection_rate": 0.46153846153846156,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "services",
+          "detection_points": 20.0,
+          "weighted_max": 98,
+          "detection_rate": 0.3076923076923077,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "sla",
+          "detection_points": 66.0,
+          "weighted_max": 130,
+          "detection_rate": 0.6538461538461539,
+          "t1_gate_pass": false
+        },
+        {
+          "contract": "supply",
+          "detection_points": 22.5,
+          "weighted_max": 74,
+          "detection_rate": 0.42857142857142855,
+          "t1_gate_pass": false
+        }
+      ]
+    }
+  }
+}

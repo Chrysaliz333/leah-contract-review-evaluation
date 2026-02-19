@@ -1,0 +1,96 @@
+# Contract Review: Consulting Services Agreement
+
+## Overall Assessment
+This is a well-structured and comprehensive consulting services agreement that demonstrates professional drafting. The contract is generally balanced between both parties' interests and includes most essential provisions for a technology consulting engagement.
+
+## Strengths
+
+### 1. Clear Structure and Definitions
+- Well-organized with logical article progression
+- Comprehensive definitions section (Article 1)
+- Clear distinction between master agreement and individual SOWs
+
+### 2. Intellectual Property Provisions
+- Balanced approach with work-for-hire for deliverables
+- Consultant retains background IP with appropriate licensing
+- Addresses third-party materials
+
+### 3. Risk Management
+- Appropriate liability caps and exclusions
+- Mutual indemnification provisions
+- Required insurance coverage specified
+
+### 4. Professional Standards
+- Independent contractor status clearly defined
+- Professional performance standards established
+- Change order process included
+
+## Areas of Concern
+
+### 1. **Payment Terms**
+- **Issue**: 30-day payment terms may be long for consultant cash flow
+- **Recommendation**: Consider negotiating to Net 15 or include early payment discounts
+
+### 2. **Expense Approval Threshold**
+- **Issue**: $500 threshold for expense approval may be too low for technology consulting
+- **Recommendation**: Consider raising to $1,000-$2,000 or create categories of pre-approved expenses
+
+### 3. **Termination Provisions**
+- **Issue**: 30-day termination for convenience could leave consultant vulnerable
+- **Recommendation**: Consider minimum commitment periods or termination fees for SOWs
+
+### 4. **Insurance Requirements**
+- **Issue**: $2M professional liability may be expensive for smaller consultants
+- **Recommendation**: Consider scaling requirements based on project size/risk
+
+## Missing or Weak Provisions
+
+### 1. **Force Majeure**
+- No force majeure clause to address unforeseeable circumstances
+- **Add**: Standard force majeure language covering pandemics, natural disasters, etc.
+
+### 2. **Data Security/Privacy**
+- Limited provisions for data protection and cybersecurity
+- **Add**: Specific requirements for handling sensitive data, compliance with privacy laws
+
+### 3. **Dispute Escalation**
+- Basic negotiation requirement but could be enhanced
+- **Consider**: Adding mediation step before litigation
+
+### 4. **Source Code Escrow**
+- For software deliverables, no escrow provisions
+- **Consider**: Adding escrow requirements for critical software components
+
+## Technical Issues
+
+### 1. **Governing Law vs. Jurisdiction**
+- Governed by Texas law but may involve Nevada corporation
+- **Consider**: Ensuring choice of law aligns with business needs
+
+### 2. **Non-Solicitation Scope**
+- 12-month restriction may be challenged in some jurisdictions
+- **Verify**: Enforceability under applicable state laws
+
+## Recommendations for Negotiation
+
+### For the Consultant:
+1. Negotiate shorter payment terms (15-20 days)
+2. Request partial payments or milestones for longer engagements
+3. Seek minimum commitment periods to provide revenue stability
+4. Clarify scope of required insurance coverage
+
+### For the Client:
+1. Add specific data security and confidentiality requirements
+2. Include more detailed performance metrics and acceptance criteria
+3. Consider adding penalty clauses for missed deadlines
+4. Strengthen IP warranties and representations
+
+## Minor Issues
+- Inconsistent spelling ("organised" vs. "organized") - use consistent American English
+- Consider adding electronic signature provisions
+- May want to specify currency for international considerations
+
+## Conclusion
+This is a solid foundation contract that protects both parties reasonably well. The main improvements needed are in payment terms, data security provisions, and risk allocation for specific technology consulting scenarios. Both parties should ensure the template SOW (Exhibit A) is properly developed to complement this master agreement.
+
+**Overall Rating: B+** - Professional and comprehensive with room for tactical improvements.

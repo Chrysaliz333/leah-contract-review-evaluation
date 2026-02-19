@@ -1,0 +1,122 @@
+Below is a clause-by-clause “issue-spotting” review of the draft Reseller Agreement.  It is written in plain English for business people, but it flags the legal items your counsel will want to focus on.  Nothing here is legal advice.
+
+-------------------------------------------------------------------
+EXECUTIVE SUMMARY
+-------------------------------------------------------------------
+•  Good foundation: clear appointment, ordering, pricing and basic IP use.  
+•  Critical gaps: no indemnities, no mutual liability cap, no data-privacy or export-control language, no force-majeure, and a very rigid termination clause.  
+•  Commercially sensitive points for a reseller: quarterly pipeline reports, unilateral price changes, and a one-sided limitation-of-liability scheme.  
+•  Commercially sensitive points for the vendor: credit risk, lack of minimum performance, brief confidentiality period, and no audit / compliance rights.
+
+-------------------------------------------------------------------
+DETAILED COMMENTS
+-------------------------------------------------------------------
+ARTICLE 1 – DEFINITIONS  
+•  “Products” = only Exhibit A.  If services (support, implementation, SaaS) are added later the contract must be amended.  Consider “and any other products or services that Vendor makes available to Reseller from time to time unless excluded in writing.”  
+•  No definition of “Documentation,” “Confidential Information,” or “Affiliate.”  Those concepts are used later and should be defined.
+
+ARTICLE 2 – APPOINTMENT  
+•  Fine for non-exclusive.  If Vendor needs the right to audit compliance with the Territory restriction (to prevent gray-market sales), add an audit clause.  
+•  No performance metrics or minimum purchase levels.  Vendor may want them; Reseller will resist.
+
+ARTICLE 3 – ORDERS & FULFILMENT  
+•  “Vendor shall confirm or reject orders within three business days.”  Good, but no deemed-acceptance rule—what happens if Vendor is silent?  
+•  End-User Agreement: Reseller “shall ensure” acceptance but the clause does not say how acceptance is evidenced or what happens if an End User refuses.  Add a mechanism (click-wrap, etc.).  
+•  No right for Vendor to ship partial orders or substitute versions.  If physical media is ever involved, add shipment terms (FOB, risk of loss).
+
+ARTICLE 4 – PRICING  
+•  Vendor can change prices unilaterally on 30 days’ notice.  Reseller will want (i) protection for quotes already sent to customers, and (ii) notice via email + portal.  
+•  No most-favoured pricing or price-protection language—good for Vendor.  
+•  Taxes: Reseller “responsible for all applicable taxes” but Vendor may still have collection obligations in some states.  Add cooperation language.
+
+ARTICLE 5 – PAYMENT  
+•  Net-30 with 1.5 % interest monthly (≈19.6 % effective annual rate).  High; check compliance with usury caps in CA & WA.  
+•  Vendor can switch to pre-payment if credit is bad—good.  Consider adding “Vendor may suspend further deliveries or support until overdue amounts are paid.”
+
+ARTICLE 6 – MARKETING  
+•  Reseller may not “modify materials without approval,” but nothing obligates Vendor to review modifications promptly.  Consider a deemed-approval mechanism.  
+•  No explicit obligation for Reseller to follow vendor’s trademark guidelines or discontinue use when the guidelines change—add these.
+
+ARTICLE 7 – TRAINING & SUPPORT  
+•  “Vendor shall provide product training” – but nothing on frequency, format, cost, or updates.  
+•  “Second-level support” is undefined.  Add a Support Exhibit or at least response-time targets.
+
+ARTICLE 8 – REPORTING  
+•  Quarterly pipeline report with End-User info: Reseller may view this as competitively sensitive.  Ask for NDA reinforcement or limit the detail to what Vendor truly needs for forecasting and license compliance.  
+•  No audit right for Vendor to verify the reports.
+
+ARTICLE 9 – TERM & TERMINATION  
+•  No convenience termination for either side during the two-year Initial Term and each annual Renewal Term.  Very rigid—unusual in reseller deals.  At minimum, allow termination on 60-90 days’ notice after the first year.  
+•  No force-majeure clause; neither party can suspend performance in disasters.  
+•  No survival schedule (e.g., confidentiality, payment, limitation of liability).  Courts often infer survival, but better to state it explicitly.  
+•  Effect-of-Termination: silent on (i) sell-off period for existing inventory/licences, (ii) ongoing support obligations to existing End Users, (iii) return / destruction of Confidential Information.
+
+ARTICLE 10 – CONFIDENTIALITY  
+•  Three-year confidentiality period is short if source code, roadmaps or trade secrets are shared.  Either carve out “trade secrets stay confidential as long as they remain trade secrets” or extend the period to 5-7 years.  
+•  No injunctive-relief language (though courts typically allow it).
+
+ARTICLE 11 – WARRANTIES  
+•  Only a basic performance warranty; duration not stated.  Unless intended to be perpetual, specify a period (e.g., 90 days from delivery).  
+•  Reseller gives no warranties.  Vendor may require Reseller not to make additional promises.  
+•  No disclaimer of warranties BY Reseller toward Vendor (e.g., about End-User creditworthiness).
+
+ARTICLE 12 – LIMITATION OF LIABILITY  
+•  Damages cap is unilateral: Vendor’s liability is capped, Reseller’s is not.  Reseller will want symmetry (or at least a cap on its indemnity exposure).  
+•  No carve-outs for breach of confidentiality, IP infringement, or payment obligations.  Those typically sit outside the cap.
+
+ARTICLE 13 – GENERAL  
+•  Governing Law WA + arbitration in Seattle.  For a California reseller, this may be objectionable due to travel cost and CA statutory protections (e.g., Cal. Civ. Code § 1646.5).  
+•  Arbitration rules undefined—specify AAA/ JAMS, number of arbitrators, and whether discovery is allowed.  
+•  Assignment: “Neither Party may assign.”  Some states invalidate absolute prohibitions.  Add standard caveat for mergers, acquisitions, or transfers to affiliates.  
+•  No relationship clause (independent contractors, no partnership or agency).  
+•  No export-control, FCPA, or data-protection clause—even if Products are purely software, exports and personal-data processing arise.  
+•  No severability or waiver clause.  
+•  No “notices” clause (addresses, email validity, deemed receipt).
+
+EXHIBITS  
+•  A & B are blank—must be completed.  If Exhibit B contains discounts, mark it “Confidential—trade secret.”  
+•  Consider adding:  
+   – Exhibit C: Support & Maintenance SLA  
+   – Exhibit D: Data Processing Addendum (if any PII flows)  
+   – Exhibit E: Trademark Guidelines
+
+-------------------------------------------------------------------
+MISSING OR UNDERDEVELOPED CLAUSES
+-------------------------------------------------------------------
+1.  IP Indemnity.  No promise by Vendor to defend Reseller or End Users against third-party infringement claims.  This is a major red flag for most resellers.  
+2.  Reseller Indemnity.  Vendor will typically want indemnity for (i) Reseller’s marketing claims, (ii) misuse of trademarks, and (iii) violations of law.  
+3.  Compliance With Laws.  Export, sanctions, anti-bribery, import VAT, accessibility, etc.  
+4.  Audit Rights.  Vendor usually reserves the right to audit license deployments; Reseller may want limits.  
+5.  Insurance Requirements.  Especially if Reseller provides first-level support.  
+6.  Force Majeure.  Protects both parties from events beyond control.  
+7.  Survival.  List the sections that survive termination (payment, confidentiality, indemnification, warranties, liability limits, dispute resolution).  
+8.  Publicity.  Whether either party can issue a press release naming the other.  
+9.  Governing Language / Counterparts / e-Signatures clauses.  
+10. Data Security.  If Vendor provides any hosted/SaaS element, security and incident-response terms are expected.
+
+-------------------------------------------------------------------
+RECOMMENDATIONS / NEXT STEPS
+-------------------------------------------------------------------
+For the Vendor  
+•  Insert IP indemnity, audit, compliance, and minimum-performance language.  
+•  Extend confidentiality carve-out for trade secrets.  
+•  Add force-majeure and survival clauses.  
+•  Decide whether to soften the obligation to accept returned licences on termination (sell-off period).  
+•  Consider insurance requirements for Reseller.
+
+For the Reseller  
+•  Seek mutual liability cap or at least a cap on Reseller’s exposure.  
+•  Add convenience-termination right after 12 months and/or if Vendor unilaterally changes pricing or materially changes Products.  
+•  Negotiate pipeline-report detail or add NDA reinforcement.  
+•  Strengthen price-change protections (quote lock-in for 60-90 days).  
+•  Ensure a robust Vendor IP indemnity.  
+•  Extend payment terms to Net-45 or Net-60 if feasible; lower late-fee rate.  
+•  Add a provision allowing continued support for existing End Users after termination.
+
+General  
+•  Fill in Exhibits A and B before signature.  
+•  Have counsel review for state-law quirks (usury, franchise-law risk, CA automatic-renewal act, WA arbitration rules).  
+•  Ensure the final draft is no longer one-sided; balanced deals last longer.
+
+-------------------------------------------------------------------
+END OF REVIEW

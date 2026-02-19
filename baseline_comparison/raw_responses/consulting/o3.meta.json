@@ -1,0 +1,10 @@
+{
+  "contract": "consulting",
+  "model_id": "o3",
+  "api_model": "o3-2025-04-16",
+  "prompt": "Review this contract",
+  "input_tokens": 2854,
+  "output_tokens": 2864,
+  "latency_seconds": 51.39,
+  "timestamp": "2026-02-03T19:47:45.368544+00:00"
+}

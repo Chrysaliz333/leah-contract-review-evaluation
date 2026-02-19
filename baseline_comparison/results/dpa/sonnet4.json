@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "contract": "dpa",
+    "model_id": "sonnet4",
+    "evaluation_timestamp": "2026-02-03T20:39:08.786638+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-sonnet-4-20250514",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1768,
+    "raw_output_tokens": 1123,
+    "raw_latency_seconds": 29.97
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "General Sub-processor Authorization with Ineffective Objection",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Sub-processor Objection Rights - 30-day notice period may be insufficient for complex objections - No clear process for resolving objections - **Recommendation**: Add dispute resolution mechanism and specify what happens if Controller objects",
+        "judge_reasoning": "The review identifies that there's no clear process for resolving sub-processor objections and recommends adding dispute resolution mechanisms, but it doesn't fully capture the core issue that the contract provides general authorization with ineffective objection rights where no consequences are specified if the Controller objects."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Vague Security Measures",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "ISO 27001 requirement is good but could be more flexible - **Recommendation**: Allow \"equivalent\" standards with Controller approval",
+        "judge_reasoning": "The review mentions ISO 27001 flexibility concerns but fails to identify the core issue that 'appropriate' security measures are vague and subjective, or that specific mandatory minimum controls should be required instead of just examples."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "8.1",
+      "tier": "T3",
+      "issue": "72-Hour Breach Notification May Be Slow",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Article 8.1 states \"seventy-two (72) hours\" for Controller notification - UK GDPR requires processor-to-controller notification \"without undue delay\" - 72 hours is the controller-to-authority timeline - **Recommendation**: Change to \"without undue delay and in any event within 24-48 hours\"",
+        "judge_reasoning": "The review identifies the 72-hour notification timeline and recommends shortening it to 24-48 hours, but it mischaracterizes the issue as a legal compliance problem rather than recognizing that 72 hours meets GDPR minimum but may be too slow for high-risk breaches."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "9.1 / 9.2",
+      "tier": "T2",
+      "issue": "Indemnification May Be Subject to Hidden Caps",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Article 9.2 creates broad indemnification that may not align with GDPR's joint liability framework - Could create unfair risk allocation - Recommendation: Add liability caps and clarify scope of indemnification",
+        "judge_reasoning": "The review identifies concerns with the indemnification clause and mentions liability caps, but misses the specific risk that existing caps from the Principal Agreement could secretly limit indemnification without the Controller's knowledge. It focuses on adding caps rather than clarifying whether hidden caps already apply."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No Limitation of Liability in DPA",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Article 9.2 creates broad indemnification that may not align with GDPR's joint liability framework - Could create unfair risk allocation - **Recommendation**: Add liability caps and clarify scope of indemnification",
+        "judge_reasoning": "The review identifies a liability-related issue and recommends adding liability caps, but it focuses on indemnification alignment with GDPR rather than the core issue of missing limitation of liability clauses in the DPA and their interaction with data breach damages."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "3.4",
+      "tier": "T2",
+      "issue": "Deletion Timeline Unspecified",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the lack of specific deletion timeline in clause 3.4 or the need for a timeframe for data deletion/return upon termination. While the review covers many other aspects of the DPA comprehensively, this particular issue about unspecified deletion timelines is not identified."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "7.2",
+      "tier": "T3",
+      "issue": "All Audit Costs on Controller",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Limited to once per year, which may be insufficient for high-risk processing. No provision for urgent audits following incidents",
+        "judge_reasoning": "The review identifies limitations with audit frequency but focuses on operational concerns rather than the specific financial risk that the controller bears all audit costs, which could discourage necessary oversight."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "10.1",
+      "tier": "T3",
+      "issue": "Indefinite Duration",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the indefinite duration issue of the DPA. While it covers many other aspects like breach notification, liability, and missing exhibits, it completely omits any discussion about the contract's duration, retention periods, or the need for periodic review requirements."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "Exhibit A / 2.2",
+      "tier": "T2",
+      "issue": "Processing details Exhibit A is blank - GDPR Art 28 non-compliance",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Exhibits A, B, and C are referenced but contain only placeholder text - These exhibits are crucial for defining the actual scope and security measures - **Recommendation**: Complete all exhibits before execution",
+        "judge_reasoning": "The review clearly identifies that Exhibit A (along with B and C) contains only placeholder text and emphasizes these exhibits are crucial for defining scope, which directly addresses the ground truth issue of blank processing details creating GDPR compliance problems."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "Exhibit B / 5.1",
+      "tier": "T2",
+      "issue": "Security measures Exhibit B is blank - cannot verify GDPR Art 32 compliance",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Exhibits A, B, and C are referenced but contain only placeholder text - These exhibits are crucial for defining the actual scope and security measures - **Recommendation**: Complete all exhibits before execution",
+        "judge_reasoning": "The review clearly identifies that Exhibit B contains only placeholder text and emphasizes that these exhibits are crucial for defining security measures, which directly captures the core risk of being unable to verify GDPR Article 32 compliance due to the blank Exhibit B."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "Exhibit C / 4.1",
+      "tier": "T2",
+      "issue": "Approved sub-processors Exhibit C is blank - cannot exercise objection rights",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Missing Exhibit Content - Exhibits A, B, and C are referenced but contain only placeholder text - These exhibits are crucial for defining the actual scope and security measures - **Recommendation**: Complete all exhibits before execution",
+        "judge_reasoning": "The review clearly identifies that Exhibit C (along with A and B) contains only placeholder text and needs to be completed before execution. This directly captures the ground truth issue about the blank approved sub-processors exhibit making objection rights meaningless."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Cyber Insurance Requirement",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Consider requiring cyber liability insurance",
+        "judge_reasoning": "The review explicitly mentions the need to consider requiring cyber liability insurance in the 'Missing Provisions to Consider' section, which directly identifies the core risk of the DPA lacking cyber insurance requirements for the Processor."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 4,
+      "P": 6,
+      "N": 2,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 3,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 2,
+        "N": 1,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 4,
+        "P": 1,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 3,
+    "t1_detected": 3,
+    "total_detection_points": 35.5,
+    "weighted_max": 57,
+    "detection_rate": 0.8333
+  }
+}

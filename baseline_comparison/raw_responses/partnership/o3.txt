@@ -1,0 +1,71 @@
+Strategic Partnership Agreement – High-Level Legal Review
+(Non-exhaustive; not legal advice)
+
+A. Structural/Formatting Gaps
+1. “Section 10.3 Default” is cross-referenced in §3.3 but Article 10 is marked “[Reserved]”.  You need a complete default, cure, and remedy scheme (capital call remedies, dilution, buyout, interest, forced sale, etc.).
+2. Article 10 is also intended to cover “Exit and Buyout” (§10.1 “[Reserved]”) but contains no operative language.  Without exit mechanics the parties are effectively locked together for the life of every Co-Investment.
+3. No Notices clause (addresses, deemed delivery rules, email consent, etc.).
+4. No signature block for the GP of Growth Dynamics Partners LP (a Delaware LP cannot sign itself; its general partner must execute).
+
+B. Economic Provisions
+1. 50/50 Profit Split Regardless of Capital (§6.1)
+   • If one Partner routinely funds more than the other, the agreement creates economic inequity and arguably a disguised fee.  
+   • The provision may have adverse U.S. tax consequences (partnership anti-abuse rules, disguised sale/carry regulations, Section 707 disguised payment for services).
+   • Consider capital-weighted distributions with a promote or catch-up if the goal is parity.
+2. No Management Fee or Carry (§7).  Fine if intentional, but ensure each Partner’s internal investors/LPs will accept this structure and that cost-sharing rules (§6.3) are specific enough (travel, consultants, broken-deal expenses, etc.).
+3. Capital Commitments/Calls
+   • There is no maximum or minimum commitment, no capital cap, no mechanism for declining a specific deal other than refusing to approve it.  
+   • No default interest rate or dilution formula if a Partner misses a call.
+
+C. Governance / Deadlock Risk
+1. All major decisions require unanimity of the two Partners (§4.1) and the Investment Committee also needs one affirmative vote from each Partner (§4.2).  There is no tie-breaker or buy-sell remedy, so any disagreement can paralyze the partnership.
+2. No clear definition of what constitutes a “Major Decision.”  If the intent is “anything material,” list examples or adopt a materiality threshold.
+
+D. Exclusivity / Competitive Restrictions
+1. §5.3 imposes a 60-day exclusivity period once a deal is shown to the Committee.  After 60 days the Partners are silent about whether a Partner may pursue the deal alone if the Committee rejected it.  Clarify.
+2. §11.1 Portfolio Company Non-Compete (“directly competes”) is vague and could be viewed as an unenforceable industry-wide bar. Narrow scope, geography, and duration.
+3. §11.2 Non-Solicit of employees is valid but duration (“during the Term and one year thereafter”) should be tied to reasonableness under applicable law (particularly Massachusetts and New York).
+
+E. Confidentiality / IP
+1. Confidentiality survives only 5 years (§9.1).  Trade secrets should survive indefinitely.
+2. No carve-outs for disclosures required by law, portfolio company board rights, LP reporting, or routine marketing.
+
+F. Termination and Wind-Up
+1. Term is 5 years with automatic 2-year renewals (§12.1), but one year’s advance notice to avoid renewal is commercially long.
+2. Termination for cause (§12.2) exists, but there is no “voluntary withdrawal” or “without cause” exit right.
+3. §12.3 requires the Partners to “continue to manage existing Co-Investments until liquidation” yet provides no governance mechanics once one Partner has left (deadlock risk again).
+
+G. Dispute Resolution
+1. Governing law is Delaware but arbitration seat is New York.  Specify that the award may be confirmed in any NY or DE court and that AAA rules prevail over conflicting state procedure.
+2. Consider emergency relief exceptions (ability to seek injunctions in court).
+
+H. Regulatory / Compliance
+1. No representation that either Partner is (or is not) an SEC-registered investment adviser, exempt reporting adviser, or broker-dealer.  Add mutual covenants regarding ongoing compliance, Form ADV updates, custody rule, etc.
+2. No anti-corruption, sanctions, AML, or KYC clauses—standard in PE/VC co-investment deals.
+3. No ERISA, Volcker, CFIUS or foreign ownership representations (include if either LP base requires).
+
+I. Liability / Indemnification
+1. No limitation of liability or indemnification provisions.  Normally each Partner indemnifies the other for breaches, bad acts, or regulatory violations, and liability is otherwise several, not joint.
+2. No standard “No partnership/joint venture with third parties” disclaimer—important to avoid unintended tax/agency consequences.
+
+J. Miscellaneous Omissions
+• No statement that the Partners are independent contractors.
+• No address for service of process.
+• No assignment provisions for control changes (change-of-control deemed assignment?).
+• No publicity/use-of-name clause.
+• No survival clause other than confidentiality; reps, indemnities, and profit-sharing obligations on existing Co-Investments should survive.
+
+K. Risk-Mitigation Recommendations
+1. Draft the missing Article 10 in full: default waterfall (dilution, interest, forced sale, buy-sell, deemed withdrawal), voluntary withdrawal rights, and end-of-life exit.
+2. Replace blanket 50/50 split with a capital-weighted “return of capital + preferred return + split” model unless you truly intend equal economics.
+3. Add deadlock mechanisms: (a) escalation to CEOs, then (b) mediation, then (c) shotgun/buy-sell or (d) rotating casting vote.
+4. Expand confidentiality carve-outs and indefinite survivor for trade secrets.
+5. Insert indemnities and caps; clarify each Partner’s liability is several to the extent of its wrongdoing.
+6. Flesh out expense policy and broken-deal cost allocation.
+7. Insert robust compliance reps (adviser registration, AML/KYC, sanctions, anti-bribery, data privacy).
+8. Shorten non-renewal notice to 90–180 days; add voluntary termination with a practical wind-up procedure.
+9. Include notice clause, execution by GP of the LP, and schedules for capital commitments and committee reps.
+10. Run the document through tax counsel to confirm partnership allocation rules and to prepare a short-form partnership agreement for each separate Co-Investment (often formed as an SPV LLC).
+
+Conclusion
+The draft sets a solid framework but leaves several critical commercial, legal, and regulatory issues unresolved—especially Article 10, economics, deadlock, indemnification, and compliance.  Addressing the above gaps before execution will materially reduce the risk of disputes and unintended liabilities.

@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "o3",
+    "evaluation_timestamp": "2026-02-03T20:57:21.404562+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "o3",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1405,
+    "raw_output_tokens": 2517,
+    "raw_latency_seconds": 43.41
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Vendor can change prices unilaterally on 30 days' notice. Reseller will want (i) protection for quotes already sent to customers, and (ii) notice via email + portal... Add convenience-termination right after 12 months and/or if Vendor unilaterally changes pricing or materially changes Products... Strengthen price-change protections (quote lock-in for 60-90 days).",
+        "judge_reasoning": "The review clearly identifies the unilateral price change risk with short notice and recommends key protections including extending notice periods and adding termination rights for unacceptable price changes."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "No termination for convenience during Term",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "No convenience termination for either side during the two-year Initial Term and each annual Renewal Term. Very rigid\u2014unusual in reseller deals. At minimum, allow termination on 60-90 days' notice after the first year.",
+        "judge_reasoning": "The review clearly identifies the lack of termination for convenience during the initial term and characterizes it as 'very rigid' and 'unusual in reseller deals,' directly matching the ground truth issue. It also suggests adding convenience termination rights with notice periods."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Vendor liability cap too low",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Damages cap is unilateral: Vendor's liability is capped, Reseller's is not. Reseller will want symmetry (or at least a cap on its indemnity exposure). No carve-outs for breach of confidentiality, IP infringement, or payment obligations. Those typically sit outside the cap.",
+        "judge_reasoning": "The review clearly identifies the vendor liability cap issue and specifically notes the lack of carve-outs for IP infringement and other critical claims, which directly matches the ground truth concern about insufficient protection and missing carve-outs."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.2",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Only a basic performance warranty; duration not stated. Unless intended to be perpetual, specify a period (e.g., 90 days from delivery).",
+        "judge_reasoning": "The review clearly identifies the warranty limitation issue in Article 11, noting it's only a 'basic performance warranty' and recommending a specific warranty period, which directly addresses the ground truth concern about broad warranty disclaimers."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "2.1 / 2.2",
+      "tier": "T2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Fine for non-exclusive. If Vendor needs the right to audit compliance with the Territory restriction (to prevent gray-market sales), add an audit clause.",
+        "judge_reasoning": "The review explicitly acknowledges the non-exclusive nature of the reseller appointment and discusses it as acceptable ('Fine for non-exclusive'), which directly identifies the ground truth issue about non-exclusive appointment with vendor direct sales rights."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "Net-30 with 1.5 % interest monthly (\u224819.6 % effective annual rate).  High; check compliance with usury caps in CA & WA.",
+        "judge_reasoning": "The review clearly identifies the high late payment interest rate issue, noting the 1.5% monthly rate equals approximately 19.6% annually and flagging it as 'High' with concerns about usury law compliance."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vendor can require prepayment on credit issues",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "Vendor can switch to pre-payment if credit is bad\u2014good. Consider adding \"Vendor may suspend further deliveries or support until overdue amounts are paid.\"",
+        "judge_reasoning": "The review clearly identifies the prepayment provision under Article 5 - Payment, noting that the vendor can require prepayment when credit issues arise. The reviewer characterizes this as \"good\" for the vendor and suggests additional suspension rights."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Sales reports require End User information",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Quarterly pipeline report with End-User info: Reseller may view this as competitively sensitive. Ask for NDA reinforcement or limit the detail to what Vendor truly needs for forecasting and license compliance.",
+        "judge_reasoning": "The review clearly identifies the core issue - quarterly reports requiring End User information - and raises the key concerns about competitive sensitivity and the need for confidentiality protections. It also suggests limiting the detail, which aligns with the ground truth recommendations."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "No carve-outs for breach of confidentiality, IP infringement, or payment obligations. Those typically sit outside the cap.",
+        "judge_reasoning": "The review identifies that the liability limitation clause lacks carve-outs for IP infringement and confidentiality breaches, which partially aligns with the ground truth issue. However, it doesn't specifically mention the consequential damages exclusion or the need for carve-outs for willful misconduct."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "9.3",
+      "tier": "T2",
+      "issue": "Termination effects - no sell-off period",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Effect-of-Termination: silent on (i) sell-off period for existing inventory/licences, (ii) ongoing support obligations to existing End Users, (iii) return / destruction of Confidential Information... Decide whether to soften the obligation to accept returned licences on termination (sell-off period)... Add a provision allowing continued support for existing End Users after termination.",
+        "judge_reasoning": "The review clearly identifies that the termination clause is silent on sell-off periods for existing inventory/licenses and specifically recommends adding a sell-off period provision. This directly addresses the ground truth issue about the lack of inventory sell-off period upon termination."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "IP Indemnity. No promise by Vendor to defend Reseller or End Users against third-party infringement claims. This is a major red flag for most resellers.",
+        "judge_reasoning": "The review clearly identifies the missing indemnification clause, specifically calling out the lack of IP indemnity from Vendor to protect Reseller and End Users against third-party infringement claims, which matches the ground truth issue exactly."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "No export-control, FCPA, or data-protection clause\u2014even if Products are purely software, exports and personal-data processing arise.",
+        "judge_reasoning": "The review explicitly identifies the absence of a data-protection clause and notes that personal-data processing issues arise, which directly matches the ground truth issue about missing GDPR/CCPA compliance requirements and data handling responsibilities."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "\"Second-level support\" is undefined. Add a Support Exhibit or at least response-time targets.",
+        "judge_reasoning": "The review clearly identifies that support is mentioned but lacks specific SLA metrics like response-time targets, which is the core issue described in the ground truth."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 12,
+      "P": 1,
+      "N": 0,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 4,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 6,
+        "P": 1,
+        "N": 0,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 2,
+        "P": 0,
+        "N": 0,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 4,
+    "t1_detected": 4,
+    "total_detection_points": 66.5,
+    "weighted_max": 69,
+    "detection_rate": 1.0
+  }
+}

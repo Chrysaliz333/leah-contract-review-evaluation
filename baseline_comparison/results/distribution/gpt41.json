@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "contract": "distribution",
+    "model_id": "gpt41",
+    "evaluation_timestamp": "2026-02-03T20:40:54.104606+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "gpt-4.1",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1649,
+    "raw_output_tokens": 1601,
+    "raw_latency_seconds": 46.98
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "3.1 / 3.2",
+      "tier": "T1",
+      "issue": "Non-exclusive appointment with Supplier competition rights",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Non-Exclusivity (3.1, 3.2): Supplier reserves broad rights to appoint other distributors and even sell directly, possibly undercutting the Distributor. If you are the Distributor, consider negotiating for limited exclusivity, or at least right of first refusal for new customers. If you are Supplier, this preserves flexibility but can disincentivize Distributor investment.",
+        "judge_reasoning": "The review clearly identifies the non-exclusive appointment risk, explicitly mentioning the supplier's rights to appoint other distributors and sell directly, and notes the concern about disincentivizing distributor investment."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Unilateral price changes with no cap",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Specify process for price increases\u2014can Distributor cancel orders pending fulfillment or deliveries if a price hike is imposed?",
+        "judge_reasoning": "The review mentions price increases as a concern and suggests adding process clarification, but it doesn't identify the core risk of uncapped unilateral price changes with only 60 days notice and no termination rights. It only briefly touches on order cancellation rights during price changes."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "6.1",
+      "tier": "T1",
+      "issue": "Mandatory minimum purchase with automatic breach trigger",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "Failure to purchase $100K/quarter for two quarters is a 'material breach,' but the remedies (e.g. immediate termination?) are not specified except general termination for cause (11.2). SUGGESTION: Explicitly state what happens\u2014notice period, cure rights, or immediate right of termination.",
+        "judge_reasoning": "The review identifies the minimum purchase requirement and breach trigger, and suggests adding cure rights, but misses the key concern that there's no cure period currently and doesn't address the lack of adjustment mechanisms for market conditions or negotiation rights before breach declaration."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "13.3",
+      "tier": "T1",
+      "issue": "Asymmetric assignment rights",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "**Distributor cannot assign without Supplier's consent.** Supplier is silent; does this mean Supplier *can* assign freely? If not intended, clarify. Consider bilateral assignment restrictions unless it's an affiliate or sale of substantially all assets.",
+        "judge_reasoning": "The review clearly identifies the asymmetric assignment rights issue, noting that the distributor cannot assign without consent while the supplier's rights are not addressed, and specifically suggests making the restrictions bilateral and adding exceptions for affiliate/asset sales."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "10.2",
+      "tier": "T2",
+      "issue": "Low liability cap for both parties",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Limitation of Liability: Caps liability to 12 months of Distributor's payments\u2014a standard clause, but broad wording on types of damages excluded (no 'gross negligence or willful misconduct carve-out'). Distributors may want exceptions for gross negligence, IP infringement, or willful misconduct.",
+        "judge_reasoning": "The review identifies the 12-month liability cap and notes the lack of carve-outs for gross negligence/willful misconduct, but misses the key concerns about inadequacy for product liability/recalls and doesn't suggest increasing the cap amount or adding carve-outs for indemnification obligations."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause - Distributor exposed to product claims",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Add mutual indemnification for third-party claims arising from breach of law, IP infringement, gross negligence, etc.",
+        "judge_reasoning": "The review explicitly recommends adding mutual indemnification clauses including for IP infringement and third-party claims, directly identifying the missing indemnification protection that exposes the distributor to product liability and IP claims."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "4.2",
+      "tier": "T2",
+      "issue": "FOB shipping terms shift all transit risk to Distributor",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention FOB shipping terms, transit risk allocation, or delivery terms at all. Despite the contract containing FOB terms that shift significant risk to the Distributor, this issue is completely absent from the analysis."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "5.3",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Late Payments: 1.5% per month (18% APR) interest on overdue accounts. Check local usury laws; 1.5%/month is typical, but make sure it's not deemed excessive in your jurisdictions.",
+        "judge_reasoning": "The review identifies the 1.5% monthly interest rate and calculates the 18% APR, noting potential usury law concerns, but fails to identify that this rate is above typical commercial rates or suggest specific remedies like reducing the rate, excluding disputed amounts, or adding grace periods."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Marketing approval required for all materials",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention or discuss the marketing approval requirement issue from clause 7.2. While the review covers many other aspects of the distribution agreement including marketing and promotional aspects, it completely omits any discussion of the approval process for advertising materials or the associated risks of delays and lack of timelines."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "11.3",
+      "tier": "T2",
+      "issue": "Termination effects lack buyback and transition",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Effect of Termination (11.3): Allows sell-off of inventory for 90 days; what about assistance in winding down, buy-backs, or returning marketing materials? Consider clarifying certain post-termination obligations (return of samples, customer lists, support on transition, etc.).",
+        "judge_reasoning": "The review identifies the 90-day sell-off period and touches on missing buyback provisions and transition assistance, but doesn't fully capture the core risk of being stuck with unsold inventory after 90 days or the need for refunds of prepaid amounts."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Supplier can reject purchase orders - no supply obligation",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "No express obligation for Supplier to maintain adequate inventory/lead-time. Especially important for Distributors.",
+        "judge_reasoning": "The review identifies that the Supplier has no obligation to maintain inventory or ensure supply, which relates to the core issue of supply uncertainty, but it doesn't specifically mention the supplier's ability to reject purchase orders or the lack of supply obligation despite distributor commitments."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "3.3",
+      "tier": "T3",
+      "issue": "Territory restriction on outside sales",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the territory restriction on actively soliciting sales or establishing operations outside the Territory. While it discusses non-exclusivity and competition issues, it completely misses the specific restriction in clause 3.3 that limits the distributor's ability to actively pursue business outside their designated territory."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consequential Damages Exclusion Missing Critical Carve-Outs",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Limitation of Liability: Caps liability to 12 months of Distributor's payments\u2014a standard clause, but broad wording on types of damages excluded (no 'gross negligence or willful misconduct carve-out'). Distributors may want exceptions for gross negligence, IP infringement, or willful misconduct.",
+        "judge_reasoning": "The review identifies the lack of carve-outs for gross negligence, willful misconduct, and IP infringement in the limitation of liability clause, but doesn't mention the missing carve-outs for confidentiality breach or indemnification obligations, nor does it specifically address the consequential damages exclusion structure."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 3,
+      "P": 7,
+      "N": 3,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 3,
+        "N": 0,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 0,
+        "P": 3,
+        "N": 2,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 1,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": true,
+    "t1_gate_pass": true,
+    "t1_count": 6,
+    "t1_detected": 6,
+    "total_detection_points": 44.0,
+    "weighted_max": 75,
+    "detection_rate": 0.7692
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "contract": "sla",
+  "model_id": "o3",
+  "api_model": "o3-2025-04-16",
+  "prompt": "Review this contract",
+  "input_tokens": 2930,
+  "output_tokens": 2633,
+  "latency_seconds": 47.89,
+  "timestamp": "2026-02-03T19:55:30.349628+00:00"
+}

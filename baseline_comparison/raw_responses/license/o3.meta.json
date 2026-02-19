@@ -1,0 +1,10 @@
+{
+  "contract": "license",
+  "model_id": "o3",
+  "api_model": "o3-2025-04-16",
+  "prompt": "Review this contract",
+  "input_tokens": 1290,
+  "output_tokens": 2601,
+  "latency_seconds": 45.59,
+  "timestamp": "2026-02-03T19:52:32.093895+00:00"
+}

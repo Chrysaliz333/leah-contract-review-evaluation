@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "contract": "consulting",
+    "model_id": "sonnet4",
+    "evaluation_timestamp": "2026-02-03T20:35:48.547632+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-sonnet-4-20250514",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 3247,
+    "raw_output_tokens": 890,
+    "raw_latency_seconds": 22.33
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "5.1",
+      "tier": "T1",
+      "issue": "Work-for-hire designation likely ineffective - IP ownership at risk",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions IP provisions as a strength with 'balanced approach with work-for-hire for deliverables' but does not identify the critical legal flaw that work-for-hire doctrine has limited application to independent contractors and likely won't be effective for most consulting deliverables. The review completely misses the core risk that the client may not actually own the IP despite the work-for-hire language."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.2",
+      "tier": "T2",
+      "issue": "Liability cap lacks critical carve-outs",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions liability caps as a strength under 'Risk Management' but does not identify any missing carve-outs or discuss the specific gaps in IP infringement, data breach, or gross negligence exceptions that are present in the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "9.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion lacks carve-outs",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Appropriate liability caps and exclusions' under Risk Management strengths but does not specifically discuss the consequential damages exclusion clause or identify the lack of carve-outs for confidentiality breach, IP infringement, or data loss as a concern."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "7.1",
+      "tier": "T2",
+      "issue": "Termination for convenience terms inadequate for Client flexibility",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "30-day termination for convenience could leave consultant vulnerable - Consider minimum commitment periods or termination fees for SOWs",
+        "judge_reasoning": "The review identifies the 30-day termination provision and discusses SOW-level concerns, but focuses on consultant protection rather than client flexibility needs. It misses the core issue that the client may need shorter notice periods and lacks SOW-level termination rights."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "5.2",
+      "tier": "T2",
+      "issue": "Background IP license scope too narrow",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions that the consultant retains background IP with 'appropriate licensing' but does not identify or discuss the specific issue that the Background IP license scope is too narrow or limited to use 'solely as part of the Deliverables'. The review treats the IP provisions as balanced and appropriate without recognizing this restriction."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "6.4 / 13.10",
+      "tier": "T2",
+      "issue": "Confidentiality survival period and trade secret treatment unclear",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention confidentiality survival periods, trade secret treatment, or any issues related to the duration of confidentiality obligations. While it notes missing data security/privacy provisions, it does not address the specific concern about unclear confidentiality survival terms or the lack of explicit duration for confidential information protection."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "3.4",
+      "tier": "T3",
+      "issue": "Payment terms lack formal invoice dispute mechanism",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "While the review discusses payment terms extensively, it only addresses the 30-day payment period length and suggests shortening it. It does not identify or mention the lack of a formal invoice dispute mechanism, which is the core issue in the ground truth."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "13.1 / 13.2",
+      "tier": "T3",
+      "issue": "Governing law and dispute forum favour Consultant location",
+      "detection": "P",
+      "detection_points": 0.5,
+      "evidence": {
+        "excerpt": "Governed by Texas law but may involve Nevada corporation - Consider: Ensuring choice of law aligns with business needs",
+        "judge_reasoning": "The review identifies that Texas law governs despite involving a Nevada corporation and suggests considering whether the choice of law aligns with business needs, but it doesn't specifically address the jurisdictional disadvantage or litigation cost implications for the Nevada-based client."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "Data protection / privacy clause missing entirely",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Limited provisions for data protection and cybersecurity - **Add**: Specific requirements for handling sensitive data, compliance with privacy laws",
+        "judge_reasoning": "The review clearly identifies the missing data protection/privacy provisions and recommends adding specific requirements for handling sensitive data and compliance with privacy laws, which directly addresses the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "10.1",
+      "tier": "T2",
+      "issue": "Consultant indemnification limited to gross negligence/willful misconduct",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Mutual indemnification provisions' under strengths and 'Risk Management' but does not discuss the specific limitation of consultant indemnification to only gross negligence/willful misconduct, nor does it identify the absence of coverage for ordinary negligence, warranty breaches, or confidentiality breaches."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No cyber insurance requirement",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Limited provisions for data protection and cybersecurity - **Add**: Specific requirements for handling sensitive data, compliance with privacy laws",
+        "judge_reasoning": "The review identifies the need for data security provisions and mentions cybersecurity concerns, but doesn't specifically call out the missing cyber insurance requirement despite noting insurance is required in the contract."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 1,
+      "P": 3,
+      "N": 7,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 0,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 1,
+        "P": 2,
+        "N": 5,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 0,
+        "P": 1,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 1,
+    "t1_detected": 0,
+    "total_detection_points": 10.5,
+    "weighted_max": 50,
+    "detection_rate": 0.3636
+  }
+}

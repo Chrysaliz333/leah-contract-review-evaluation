@@ -1,0 +1,10 @@
+{
+  "contract": "distribution",
+  "model_id": "sonnet4",
+  "api_model": "claude-sonnet-4-20250514",
+  "prompt": "Review this contract",
+  "input_tokens": 1934,
+  "output_tokens": 803,
+  "latency_seconds": 20.51,
+  "timestamp": "2026-02-03T19:25:22.136118+00:00"
+}

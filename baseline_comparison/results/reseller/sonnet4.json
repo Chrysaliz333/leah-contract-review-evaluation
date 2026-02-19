@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "sonnet4",
+    "evaluation_timestamp": "2026-02-03T20:59:54.717551+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "claude-sonnet-4-20250514",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1635,
+    "raw_output_tokens": 928,
+    "raw_latency_seconds": 22.49
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "detection": "P",
+      "detection_points": 4,
+      "evidence": {
+        "excerpt": "No protection against price changes during pending orders... Add price protection for confirmed orders",
+        "judge_reasoning": "The review identifies a related concern about price changes affecting pending orders but misses the core issue of unilateral price modification with only 30 days notice and lack of termination rights or price caps."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "No termination for convenience during Term",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Section 9.1 states \"Neither Party may terminate this Agreement for convenience during the Term\" - this creates an unusual restriction... Allow termination for convenience with appropriate notice",
+        "judge_reasoning": "The review directly identifies and quotes the problematic clause that prevents termination for convenience during the term, and explicitly recommends allowing termination for convenience with appropriate notice, which matches the ground truth issue exactly."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Vendor liability cap too low",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Standard limitation of liability provisions' as a strength but does not discuss the specific vendor liability cap of 12 months, its adequacy, or the lack of carve-outs for IP infringement and willful misconduct. The issue is not identified or analyzed."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.2",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention warranty disclaimers, warranty limitations, or any concerns about the vendor's limited warranty obligations. The ground truth issue about broad warranty disclaimers and lack of merchantability/fitness warranties is completely absent from the review."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "2.1 / 2.2",
+      "tier": "T2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions territory management under 'Areas of Concern' but does not identify or discuss the specific risk of non-exclusive appointment with vendor direct sales competition. The review does not address the core issue that the vendor can sell directly and appoint other resellers in the same territory, creating competition for the reseller."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "1.5% monthly interest (18% annually) may be excessive in some jurisdictions",
+        "judge_reasoning": "The review clearly identifies the high interest rate issue, noting that 1.5% monthly (18% annually) may be excessive and recommends reducing it to 'market standards' in the modification recommendations."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vendor can require prepayment on credit issues",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention prepayment requirements, credit limits, or the vendor's ability to require payment in advance based on credit issues. While it discusses payment terms generally, it does not identify this specific cash flow risk."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Sales reports require End User information",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review does not mention the quarterly reporting requirements or the specific concern about End User information being disclosed in sales reports. While the review mentions 'data protection/privacy obligations' as a missing element, it does not identify the existing reporting clause that requires End User information disclosure."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions 'Standard limitation of liability provisions' as a strength but does not discuss the specific consequential damages exclusion clause or analyze whether it needs carve-outs for IP infringement, willful misconduct, or confidentiality breaches."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "9.3",
+      "tier": "T2",
+      "issue": "Termination effects - no sell-off period",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review discusses termination provisions in Article 9 but focuses on convenience termination restrictions and immediate termination rights for breaches. It does not mention the lack of inventory sell-off period or the need for transition assistance upon termination."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "**Indemnification:** - Missing mutual indemnification clauses - Should address liability for product defects, IP infringement, and reseller's modifications",
+        "judge_reasoning": "The review clearly identifies the missing indemnification provisions and specifically mentions the need to address liability for product defects and IP infringement, which are core elements of the ground truth issue regarding reseller exposure to end user claims."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Data protection/privacy obligations",
+        "judge_reasoning": "The review explicitly identifies 'Data protection/privacy obligations' as a missing element in the compliance section, which directly corresponds to the ground truth issue of no data protection/privacy clause in the contract."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "No service level agreements for support response times",
+        "judge_reasoning": "The review explicitly identifies the missing SLA issue in the support section, noting the lack of service level agreements for support response times, which directly corresponds to the ground truth issue of missing support SLAs."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 5,
+      "P": 1,
+      "N": 7,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 2,
+        "P": 1,
+        "N": 1,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 2,
+        "P": 0,
+        "N": 5,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "t1_detected": 3,
+    "total_detection_points": 31.0,
+    "weighted_max": 69,
+    "detection_rate": 0.4615
+  }
+}

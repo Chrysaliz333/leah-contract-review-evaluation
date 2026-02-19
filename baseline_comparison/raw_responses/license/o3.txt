@@ -1,0 +1,140 @@
+CONTRACT REVIEW – INTELLECTUAL PROPERTY LICENSE AGREEMENT   
+(Contract No. IPL-2025-042)
+
+This review highlights (i) gaps or ambiguities that should be clarified before signature, (ii) commercial or legal risks, and (iii) typical negotiating “asks” from each Party’s perspective.  Nothing herein is legal advice—obtain local counsel in the relevant jurisdictions (England & Wales and the U.S.).
+
+──────────────────────────────────────
+1. STRUCTURAL / FRONT-END ITEMS
+──────────────────────────────────────
+ •  Effective Date – left blank. Be sure the date coincides with signature or a defined milestone (e.g., receipt of upfront fee).
+
+ •  Exhibits A and B are empty. Without the patent list and Territory the licence scope is legally uncertain and possibly unenforceable.
+
+ •  Parties – Licensor is an English company; governing law is England & Wales. Licensee is a Delaware corporation with its principal place in Massachusetts. Confirm each Party’s full, correct legal name and registration number so the agreement is enforceable in both jurisdictions.
+
+──────────────────────────────────────
+2. KEY COMMERCIAL POINTS
+──────────────────────────────────────
+A. Scope of Rights  
+   •  2.1 states the licence is “exclusive” but does not specify whether exclusivity is worldwide or limited to Exhibit B Territory. You must align 2.1, Exhibit B and the definition of “Territory” (currently missing).  
+   •  “Field of Use” is limited to consumer electronics. Consider whether accessories, software, services, or aftermarket parts are included or excluded.  
+   •  Reserve rights for Licensee to sell into adjacent fields or for Licensor to exploit outside the Field if that is the intent.
+
+B. Sublicensing  
+   •  2.2 requires Licensor’s “prior written consent,” which it may withhold for any reason. Licensee will typically ask for (i) – automatic approval for sublicenses to controlled affiliates, contract manufacturers, distributors, and (ii) – objective standards for third-party approval (not “sole discretion”).
+
+C. Improvements – Clause 3.2  
+   •  Licensee-developed improvements automatically vest in Licensor with no compensation. This is a significant concession for Licensee. Alternatives:  
+       – Joint ownership with cross-licences;  
+       – Licensee owns its improvements but grants Licensor a royalty-free licence for fields outside consumer electronics;  
+       – Licensor owns, but pays a reduced royalty or milestone credit to Licensee.
+
+D. Minimum Annual Royalty – Clause 4  
+   •  $250,000 beginning Year 2. There is no termination right for Licensor if minimums are not met. If you intend the minimum to be an enforceable performance obligation, add “Failure to pay the Minimum Annual Royalty within 30 days after the due date shall constitute a material breach subject to immediate termination.”  
+   •  Confirm whether the minimum escalates, is CPI-indexed, or remains flat for 10 years. Licensor may wish to step-up; Licensee may seek a phase-in, or a right to terminate if the business is not commercially viable.
+
+E. Definition of Net Sales  
+   •  Exclusions are minimal. Customary deductions missing: bad-debt write-offs, VAT/GST, insurance, distributor charge-backs, packing, installation, or early-payment discounts. Clarify whether non-arm’s-length transfers (e.g., to affiliates) are valued at transfer price or fair market value.
+
+F. Up-front Fee – 5.2  
+   •  Non-refundable and silent on tax withholding or VAT. Determine whether UK VAT applies and gross-up obligations.
+
+G. Interest on Late Payments – 5.3  
+   •  1 % per month (~12 % p.a.). Ensure it is compliant with applicable usury laws; consider linking to Bank of England base rate + x %.
+
+H. Audit – 7.1  
+   •  Right limited to once per year, reasonable. Licensor should secure survival for three years post-termination. Licensee should cap record-retention obligation (e.g., 6 years) and ensure audits occur during business hours, using an independent auditor bound by confidentiality.
+
+I. Quality Control – 8  
+   •  No written quality manual incorporated, so “Licensor’s quality standards” is ambiguous. Attach a schedule or require Licensor to provide written standards.
+
+J. Limitations of Liability – 12  
+   •  Licensor’s cap equals royalties paid in prior 12 months. For Licensee this may be inadequate if Licensor’s breach causes recall, regulatory fines, or third-party IP claims.  
+   •  No cap for Licensee. Consider mutual caps or asymmetric caps aligned with economic benefit.
+
+K. Indemnities – Missing  
+   •  There is no infringement indemnity by Licensor nor product liability indemnity by Licensee. These are standard in IP licences. Suggested insertion:  
+       – Licensor indemnifies Licensee against third-party claims that the Licensed IP infringes valid IP rights;  
+       – Licensee indemnifies Licensor against claims arising from design, manufacture or sale of Licensed Products.
+
+L. Termination  
+   •  No “termination for convenience” for Licensee; no “insolvency” termination for Licensor.  
+   •  60-day cure may be long or short depending on breach nature; consider splitting monetary (15 days) vs. other breaches (60 days).  
+   •  Add survival clause: confidentiality, accrued royalties, audit, liability, and dispute resolution should survive.
+
+M. Sell-off Period – 13.3  
+   •  90 days may be too short for hardware inventory. Licensee typically seeks 6–12 months.
+
+N. Assignment – 14.3  
+   •  Blanket prohibition blocks corporate reorganisations and M&A. Carve-out for assignment to affiliates or a successor in a change of control, with notice but no consent.
+
+O. Force Majeure – Missing  
+   •  Add standard clause excusing non-performance due to events beyond reasonable control.
+
+P. Compliance – Missing  
+   •  Standard clauses for export controls, sanctions, anti-bribery (UK Bribery Act / FCPA), modern slavery, data protection (GDPR if EU personal data processed) should be inserted.
+
+──────────────────────────────────────
+3. LEGAL & DRAFTING POINTS
+──────────────────────────────────────
+1. “Exclusive licence” under UK law may constitute an assignment for competition-law purposes unless Licensor reserves some meaningful rights. Ensure exclusivity is carefully limited to the Field/Territory.
+
+2. Governing Law vs. Arbitration  
+   •  English law plus LCIA arbitration is acceptable, but arbitration clause should state seat (London), language, number of arbitrators, and how they are appointed.  
+   •  Consider carve-out for interim injunctive relief in national courts.
+
+3. Confidentiality – 11  
+   •  5-year term is inadequate for trade secrets; carve-out so obligations survive as long as information remains confidential.  
+   •  Add standard exceptions (public domain, independently developed, required disclosure).
+
+4. Exhibit A / B  
+   •  Failure to attach complete schedules could invalidate the licence. Include patent numbers, trademark registrations, publication dates, and territory definition (e.g., “Worldwide except Japan”).
+
+5. Improvements Clause interaction with U.S. Patent Law  
+   •  Ensure assignments comply with 35 U.S.C. § 261 (signed assignment, notarisation, recordation at USPTO).
+
+6. Currency & Taxes  
+   •  All payments in USD. State method (wire transfer), exchange rate for foreign sales, and responsibility for withholding taxes. Licensor may want gross-up.
+
+7. Product Marking  
+   •  Patent-marking obligations (35 U.S.C. § 287) and trademark usage guidelines should be included.
+
+8. No “most-favoured-nation” or “grant-back” rights—fine, but confirm that exclusivity + improvements assignment does not contravene UK or EU competition laws (Technology Transfer Block Exemption).
+
+9. Severability, Notices, Amendments, Counterparts, and Electronic Signatures Clauses are absent—add.
+
+──────────────────────────────────────
+4. NEGOTIATION CHECKLIST
+──────────────────────────────────────
+For Licensee (TechPro)  
+  ☐ Own or co-own improvements or at least secure a perpetual, royalty-free licence back.  
+  ☐ Add Licensor infringement indemnity and warranty of non-infringement.  
+  ☐ Remove or soften minimum royalty, or add sales-based milestone triggers.  
+  ☐ Broaden permitted sublicensees (affiliates, ODM/OEM, distributors).  
+  ☐ Insert termination-for-convenience with 90-day notice.  
+  ☐ Extend sell-off period; ensure survival of customer support obligations.  
+  ☐ Expand Net Sales deductions; clarify transfer pricing.  
+  ☐ Increase liability cap to a multiple of fees paid or secure mutual caps.  
+  ☐ Add force-majeure, assignment to affiliates, and confidentiality for trade-secret duration.
+
+For Licensor (Innovate IP)  
+  ☐ Strengthen performance obligations: minimum royalty escalation, milestone launches.  
+  ☐ Insert audit survival period (3-5 years post-termination) and right to audit sublicensees.  
+  ☐ Add right to terminate if Licensee challenges validity of Licensed IP (“no-challenge” clause).  
+  ☐ Tighten quality control ‑ right to approve marketing materials and packaging.  
+  ☐ Require Licensee to maintain insurance (product liability, IP infringement) naming Licensor as additional insured.  
+  ☐ Insert anti-corruption covenants, export compliance.
+
+──────────────────────────────────────
+5. NEXT STEPS
+──────────────────────────────────────
+1. Circulate revised draft with completed Exhibits A & B.  
+2. Decide position on improvements ownership and indemnities—these are likely key economic points.  
+3. Involve tax advisors to structure royalties to minimise withholding taxes and VAT leakage.  
+4. Run a freedom-to-operate search to validate Licensor’s “to its knowledge” warranty and quantify infringement risk.  
+5. Align product roadmap with 10-year term; decide whether renewal or buy-out option should be added.
+
+──────────────────────────────────────
+6. CONCLUSION
+──────────────────────────────────────
+The agreement is a solid skeleton but requires completion of schedules, strengthening of standard provisions, and re-balancing of risk allocation (especially improvements, indemnities, and liability cap). Addressing the above items before execution will reduce future disputes and better protect both Parties’ commercial interests.

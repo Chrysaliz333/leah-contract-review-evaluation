@@ -1,0 +1,126 @@
+NOTE: The comments below are for general informational purposes and do not constitute legal advice. Laws vary by jurisdiction and by the facts of each matter.  Engage qualified counsel before relying on—or negotiating changes on the basis of—any of these observations.  
+
+────────────────────────────────────────
+EXECUTIVE-LEVEL SNAPSHOT
+────────────────────────────────────────
+Overall the Agreement is well-structured and covers the core topics ordinarily found in a technology–consulting contract.  However, a number of provisions are either (a) missing, (b) potentially one-sided, or (c) ambiguous.  The most material issues are:
+
+• No force-majeure clause.  
+• No explicit acceptance / rejection mechanism for Deliverables.  
+• Liability cap is low from the Client’s perspective (fees under the “applicable” SOW only).  
+• No data-security, privacy, or open-source software representations.  
+• Termination for convenience is available to either Party with only 30-days’ notice—Client could disrupt an ongoing project; Consultant could walk away mid-stream.  
+• Confidentiality is silent on duration and on equitable remedies.  
+• No express right to suspend Services for non-payment.  
+• Insurance clause does not name Client as “additional insured” (CG&L) or “certificate holder” (E&O).  
+
+Depending on which side you represent, the comments that follow indicate (1) what is missing, (2) what is biased toward one Party, and (3) what may require clarification.
+
+────────────────────────────────────────
+DETAILED CLAUSE-BY-CLAUSE COMMENTS
+────────────────────────────────────────
+
+ARTICLE 1 – DEFINITIONS  
+• Consider adding definitions for “Acceptance,” “Project Materials,” “Open-Source Software,” and “Affiliate” if those concepts will matter.  
+
+ARTICLE 2 – SERVICES  
+2.2  Standard of Performance:  Industry-standard is fine, but many clients also want a covenant to comply with Client’s written policies (e.g., security, code of conduct) when on-site or accessing systems.  
+2.3  Change Orders:  Consultant might add that any delay caused by a scope change automatically extends deadlines on a day-for-day basis.  
+2.4  Client Cooperation:  Good.  Some contracts explicitly state that Consultant is not liable for failure to meet deadlines that result from Client’s delays; you could add that language.
+
+MISSING: Deliverable review / acceptance procedure (e.g., “Client shall have 10 business days to test Deliverables and either accept them in writing or provide a notice of non-conformity.  Absent notice, Deliverables are deemed accepted.”).  Without it, disputes over quality or completion shift to general breach-of-contract principles.
+
+ARTICLE 3 – FEES & EXPENSES  
+3.1  “Then-current hourly rates” allows Consultant to raise rates mid-engagement.  Client may want rates locked for the SOW term or require 60-days’ written notice of increases.  
+3.3  Level of detail:  If time-and-materials, the parties usually state that timesheets will accompany invoices.  
+3.4  Late interest is standard; Consultant may also want a right to suspend work if an invoice is > 15 days overdue.
+
+ARTICLE 4 – INDEPENDENT CONTRACTOR  
+Fine.  If Consultant staff will work on-site, Client may insist on compliance with workplace safety rules.
+
+ARTICLE 5 – INTELLECTUAL PROPERTY  
+5.1  “Work made for hire” language works only for copyright under U.S. law; consider adding an assignment of “all right, title, and interest” to cover non-copyright IP (patents, trade secrets).  
+5.2  The license to Background IP is “perpetual” but not expressly “world-wide” or “fully paid.”  Clarify scope.  
+5.3  Good.  Might add obligations re: compliance with open-source licenses (GPL, MIT, etc.).  
+
+ARTICLE 6 – CONFIDENTIALITY  
+6.1  No duration.  Typical approach: obligations survive 3–5 years from disclosure (or perpetually for trade secrets).  
+6.3  Exclusions:  Add “independent development without use of Confidential Information” “by employees who did not have access to the information”—tightens the standard slightly.  
+6.4  “Return or destroy”:  Consider allowing one archival copy for legal-and-compliance purposes.  
+
+MISSING: Injunctive relief carve-out (“Each Party agrees that breach of this Article may cause irreparable harm and that money damages may be inadequate, therefore the non-breaching Party may seek equitable relief without posting bond.”).
+
+ARTICLE 7 – TERM & TERMINATION  
+7.1  Termination for convenience by either side with 30-days’ notice is broad.  
+ ▪ Consultant risk: Client can cancel large projects mid-stream.  Consultant may seek (i) non-refundable minimum fees, (ii) a termination fee (e.g., 10% of remaining fees), or (iii) permitting termination only after any active milestone is completed.  
+ ▪ Client risk: Consultant can abandon a critical project.  Client may want a longer notice period (e.g., 60-90 days) and an obligation to cooperate in transition.  
+7.4  (b) says Consultant will deliver “in-progress Deliverables for which Client has paid.”  Clarify what happens if payment has not yet been made because the invoice has not been issued or is disputed.
+
+MISSING: Post-termination assistance clause (“Consultant shall provide reasonable transition assistance at its then-current rates for up to 60 days.”).
+
+ARTICLE 8 – REPRESENTATIONS & WARRANTIES  
+8.2(c)  IP non-infringement warranty is good for Client; Consultant may wish to add a standard carve-out for open-source components that are used in accordance with their licenses.  
+8.3  Disclaimer: valid, but Consultant should confirm it does not conflict with statutory warranties that cannot be disclaimed (e.g., certain consumer protection laws).
+
+ARTICLE 9 – LIMITATION OF LIABILITY  
+9.2  Cap equals “fees paid or payable under the applicable SOW.”  
+ • From Client’s perspective this could be very low vs. the potential damage (e.g., data loss, compliance fines).  
+ • A compromise is a multiple of fees (2×-3×) or an overall aggregate cap (e.g., fees paid in the prior 12 months).  
+No carve-out for breaches of Article 5 (IP ownership).  If IP ownership is wrongly implemented, damages could be large, so parties should discuss whether to carve that out.  
+No carve-out for “gross negligence” or “willful misconduct” (many jurisdictions void liability caps for at least the latter).
+
+ARTICLE 10 – INDEMNIFICATION  
+10.1  Infringement indemnity:  Consultant should get a “right to cure” (e.g., modify, replace, or procure a license).  
+10.2  Usage indemnity: Client indemnifies only for “use not authorised” rather than all misuse; that is fair.  
+
+MISSING: Process for indemnity claims—notice, control of defense, cooperation, settlement consent—should be explicit.
+
+ARTICLE 11 – INSURANCE  
+• Client commonly requires to be named “additional insured” (CGL) and “certificate holder” (E&O), plus 30-days’ notice of cancellation.  
+• No cyber-liability coverage.  If Consultant will access client systems or PII, Client may require $2-5 million cyber/E&O.  
+
+ARTICLE 12 – NON-SOLICITATION  
+Reasonable.  Consultant may want to ensure the restriction applies to “employees and contractors.”  Client may ask for a fee (e.g., 20% of first-year salary) if it hires a Consultant employee with consent.
+
+ARTICLE 13 – GENERAL PROVISIONS  
+13.1  Governing law Texas.  Because Client is in Nevada, confirm Client is comfortable with Texas venue.  
+13.2  Litigation in Travis County courts only.  Parties may prefer arbitration or at least federal court venue.  
+No force-majeure clause (pandemics, strikes, acts of God).  Should add.  
+13.4  Anti-assignment clause allows assignment to an affiliate or M&A “without consent.”  Some Clients like to require notice.  
+13.10  Survival clause omits Article 8 (warranties) and Article 11 (insurance obligations for claims arising).  
+
+MISSING:  
+• Publicity rights: May Consultant list Client as a reference?  
+• Export-control and sanctions compliance.  
+• Data-privacy compliance if personal data will be processed (GDPR, CCPA, etc.).  
+• Order-of-precedence clause (in the event of conflict between Agreement and SOW).  
+• No-reverse-engineering / security testing restrictions on Client (if Consultant licenses proprietary tools).  
+
+────────────────────────────────────────
+SUGGESTED “NEXT STEPS”
+────────────────────────────────────────
+1. Decide which provisions are true “deal breakers” for your side (e.g., liability cap, termination rights).  
+2. Draft concrete redlines or an issues list, referencing section numbers, with proposed alternative wording.  
+3. Secure internal approvals (finance, security, insurance, HR) before counter-proposing.  
+4. Consider attaching template SOW language that fills acceptance, milestones, deliverable descriptions, etc.  
+5. If data privacy is in scope, prepare a separate Data Processing Addendum (DPA).  
+
+────────────────────────────────────────
+EXAMPLE REDLINES (illustrative only)
+────────────────────────────────────────
+Below are sample edits you might propose if you represent the Client.  (Reverse them if you represent Consultant.)
+
+• Section 3.1  “Consultant’s hourly rates shall be fixed for the duration of the SOW.”  
+• Section 3.4  “Consultant may suspend Services if any undisputed amount is more than 15 days past due.”  
+• NEW Section 2.5  Acceptance.  
+• Section 5.1  Add irrevocable assignment of “all right, title, and interest” in Deliverables, not just copyright.  
+• Section 6.1  “Obligations survive for five (5) years after disclosure, and indefinitely for trade secrets.”  
+• Section 7.1  “Either Party may terminate for convenience upon sixty (60) days’ notice.  If Client terminates, it shall pay Consultant for Services performed plus documented, non-cancellable commitments.”  
+• Section 9.2  Cap: “an amount equal to two (2) times the total fees paid under all SOWs in the twelve (12) months preceding the claim.”  
+• Add new Article 14  Force-Majeure.  
+• Article 11  Add Client as additional insured; add $2 million cyber-liability coverage.  
+
+────────────────────────────────────────
+CONCLUSION
+────────────────────────────────────────
+With a handful of targeted changes—chiefly around acceptance testing, liability allocation, termination mechanics, confidentiality duration, and force-majeure—the Agreement can provide balanced protection to both Parties while reducing the likelihood of operational surprises.  Engage counsel to tailor the final language to the specific risk profile, regulatory environment, and project scope.

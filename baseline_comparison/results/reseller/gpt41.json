@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "contract": "reseller",
+    "model_id": "gpt41",
+    "evaluation_timestamp": "2026-02-03T20:58:13.142362+00:00",
+    "evaluator_model": "sonnet",
+    "gt_version": "3.0_v4-enhanced_LOCKED",
+    "raw_llm_baseline": true,
+    "raw_model": "gpt-4.1",
+    "raw_prompt": "Review this contract",
+    "raw_input_tokens": 1406,
+    "raw_output_tokens": 1408,
+    "raw_latency_seconds": 34.74
+  },
+  "gt_evaluations": [
+    {
+      "gt_id": "GT-01",
+      "clause": "4.1",
+      "tier": "T1",
+      "issue": "Unilateral price and discount changes with short notice",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Risk: Vendor can change prices/discounts and product offerings at discretion (with notice). Mitigation: Consider negotiating for longer notice (e.g., 60 days for significant increases), or price protection for deals already quoted (grandfathering).",
+        "judge_reasoning": "The review clearly identifies the price change risk under clause 4.1, noting the vendor's discretion to change prices with only notice, and specifically recommends longer notice periods and price protection - directly addressing the core elements of the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-02",
+      "clause": "9.1",
+      "tier": "T1",
+      "issue": "No termination for convenience during Term",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "No Right to Terminate for Convenience (9.1): Risk: Locked in for minimum two years with no early exit except for cause. Mitigation: If market changes (e.g. better alternatives, poor Vendor performance not amounting to \"material breach\"), Reseller is \"trapped.\" Reseller may wish to negotiate a mutual right to terminate for convenience after the first year, or with a short notice period (e.g., 60\u201390 days).",
+        "judge_reasoning": "The review clearly identifies the core issue that neither party can terminate for convenience during the 2-year term and recommends adding mutual termination for convenience rights with reasonable notice periods."
+      }
+    },
+    {
+      "gt_id": "GT-03",
+      "clause": "12.2",
+      "tier": "T2",
+      "issue": "Vendor liability cap too low",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Limitation of Liability Carveouts (12.1): The contract excludes indirect damages, but does not specify carve-outs (e.g. for breaches of confidentiality, IP infringement, payment obligations). Consider whether this is sufficient for both parties' risk profiles.",
+        "judge_reasoning": "The review identifies the limitation of liability clause and mentions the lack of carve-outs for IP infringement, but does not specifically address the core issue of the liability cap being too low at only 12 months of purchases or suggest increasing it to 24+ months."
+      }
+    },
+    {
+      "gt_id": "GT-04",
+      "clause": "11.2",
+      "tier": "T1",
+      "issue": "Broad warranty disclaimer",
+      "detection": "Y",
+      "detection_points": 8,
+      "evidence": {
+        "excerpt": "Warranties & Disclaimers (11): Appropriately limits Vendor's obligations and excludes all but explicit warranties.",
+        "judge_reasoning": "The review directly identifies the warranty disclaimer clause (section 11) and characterizes it as appropriately limiting vendor obligations and excluding warranties beyond those explicitly stated, which matches the ground truth issue about broad warranty disclaimers."
+      }
+    },
+    {
+      "gt_id": "GT-05",
+      "clause": "2.1 / 2.2",
+      "tier": "T2",
+      "issue": "Non-exclusive appointment with Vendor direct sales",
+      "detection": "Y",
+      "detection_points": 5,
+      "evidence": {
+        "excerpt": "Non-Exclusivity (2.2): Vendor maintains the right to appoint other resellers and sell directly, supporting its channel strategy.",
+        "judge_reasoning": "The review clearly identifies the non-exclusive nature of the reseller appointment and explicitly mentions that the Vendor can appoint other resellers and sell directly, which is the core risk identified in the ground truth issue."
+      }
+    },
+    {
+      "gt_id": "GT-06",
+      "clause": "5.1",
+      "tier": "T3",
+      "issue": "High late payment interest rate",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review mentions the 1.5% monthly late payment rate in passing as part of the strengths section but does not identify it as a risk issue or discuss that this rate is unusually high compared to commercial standards."
+      }
+    },
+    {
+      "gt_id": "GT-07",
+      "clause": "5.2",
+      "tier": "T3",
+      "issue": "Vendor can require prepayment on credit issues",
+      "detection": "Y",
+      "detection_points": 1,
+      "evidence": {
+        "excerpt": "Credit Terms (5.2): Risk: Vendor can change credit limits at will and require prepayment. Mitigation: Negotiate predictable, reasonable criteria for changing credit terms.",
+        "judge_reasoning": "The review clearly identifies the ground truth issue, specifically mentioning that the vendor can change credit limits and require prepayment, and notes this as a risk for the reseller with appropriate mitigation recommendations."
+      }
+    },
+    {
+      "gt_id": "GT-08",
+      "clause": "8.1",
+      "tier": "T2",
+      "issue": "Sales reports require End User information",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Sales Reporting (8): Privacy: Ensure information provided does not violate customer confidentiality, especially if End User information is sensitive.",
+        "judge_reasoning": "The review identifies privacy concerns with sales reporting but misses the core business risk that providing detailed End User information could enable the Vendor to bypass the Reseller and go direct to customers."
+      }
+    },
+    {
+      "gt_id": "GT-09",
+      "clause": "12.1",
+      "tier": "T2",
+      "issue": "Consequential damages exclusion",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "The contract excludes indirect damages, but does **not** specify carve-outs (e.g. for breaches of confidentiality, IP infringement, payment obligations). Consider whether this is sufficient for both parties' risk profiles.",
+        "judge_reasoning": "The review identifies the consequential damages exclusion and correctly notes the absence of carve-outs for confidentiality and IP infringement, but misses the lack of carve-outs for willful misconduct and doesn't fully emphasize the business interruption/lost profits implications."
+      }
+    },
+    {
+      "gt_id": "GT-10",
+      "clause": "9.3",
+      "tier": "T2",
+      "issue": "Termination effects - no sell-off period",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review discusses termination rights and procedures in general terms but does not identify or mention the specific issue of lacking a sell-off period for inventory after termination. The review focuses on termination for convenience rights but completely misses the operational problem of immediate cessation without inventory disposal time."
+      }
+    },
+    {
+      "gt_id": "GT-11",
+      "clause": "N/A (Missing)",
+      "tier": "T1",
+      "issue": "No indemnification clause",
+      "detection": "N",
+      "detection_points": 0,
+      "evidence": {
+        "excerpt": "",
+        "judge_reasoning": "The review thoroughly covers warranties, liability limitations, and EULA requirements but never mentions indemnification clauses or the critical risk that the reseller lacks protection from IP infringement or product liability claims from end users. This is a significant omission given the T1 risk level of this issue."
+      }
+    },
+    {
+      "gt_id": "GT-12",
+      "clause": "N/A (Missing)",
+      "tier": "T2",
+      "issue": "No Data Protection / Privacy Clause",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Privacy: Ensure information provided does not violate customer confidentiality, especially if End User information is sensitive.",
+        "judge_reasoning": "The review mentions privacy concerns related to End User information in the reporting section, but it frames this as customer confidentiality rather than identifying the core issue of missing GDPR/CCPA compliance requirements and data protection obligations."
+      }
+    },
+    {
+      "gt_id": "GT-13",
+      "clause": "7.2",
+      "tier": "T2",
+      "issue": "Support SLAs Missing - No Service Level Commitments",
+      "detection": "P",
+      "detection_points": 2.5,
+      "evidence": {
+        "excerpt": "Support Obligations (7.2): Support burden\u2014Reseller provides first-level support\u2014it should ensure capacity and resources, and Vendor should provide sufficient escalation help.",
+        "judge_reasoning": "The review mentions support obligations under section 7.2 and notes the need for escalation help, but it does not identify the core issue of missing SLAs, response times, or service level commitments that would prevent the reseller from making commitments to end users."
+      }
+    }
+  ],
+  "additional_issues": [],
+  "summary": {
+    "detection_counts": {
+      "Y": 5,
+      "P": 5,
+      "N": 3,
+      "NMI": 0
+    },
+    "detection_by_tier": {
+      "T1": {
+        "Y": 3,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      },
+      "T2": {
+        "Y": 1,
+        "P": 5,
+        "N": 1,
+        "NMI": 0
+      },
+      "T3": {
+        "Y": 1,
+        "P": 0,
+        "N": 1,
+        "NMI": 0
+      }
+    },
+    "t1_all_detected": false,
+    "t1_gate_pass": false,
+    "t1_count": 4,
+    "t1_detected": 3,
+    "total_detection_points": 42.5,
+    "weighted_max": 69,
+    "detection_rate": 0.7692
+  }
+}
